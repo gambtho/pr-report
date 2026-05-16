@@ -1,0 +1,91 @@
+name: Apply Triage
+
+# Manual-only by design. There is no cron. The first dozen-or-so runs
+# should be invoked by hand with dry_run=true (the default) so you can
+# inspect the proposed actions in the run log before flipping the
+# auto_apply flags in state/actions.yaml.
+#
+# When you're ready to enable real application:
+#   1. In state/actions.yaml, set auto_apply.{label,comment} = true for
+#      the bucket(s) you trust the recommendations on.
+#   2. Run this workflow with dry_run=true and read the log.
+#   3. Run it again with dry_run=false. The audit row lands in
+#      state/applied.jsonl and gets committed back.
+#
+# Add the recurring trigger here only after several successful manual
+# runs have confirmed the classifier and recommendations behave on real
+# data.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (no PRs are mutated)"
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write   # to commit applied.jsonl back
+
+concurrency:
+  group: apply-triage
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.SITE_PUSH_TOKEN || github.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Validate inputs
+        run: |
+          if [ "${{ inputs.dry_run }}" = "false" ] && [ -z "${{ secrets.HEADLAMP_WRITE_PAT }}" ]; then
+            echo "ERROR: dry_run=false requires HEADLAMP_WRITE_PAT secret to be set." >&2
+            echo "       Add a fine-grained PAT scoped to kubernetes-sigs/headlamp" >&2
+            echo "       with 'Pull requests: Read and write' and 'Issues: Read and write'." >&2
+            exit 1
+          fi
+
+      - name: Apply triage
+        env:
+          # Real mutations need a PAT scoped to the *target* repo with
+          # PR write + issue write (issues = comments). For dry-runs the
+          # default token is fine because no API calls are made.
+          GH_TOKEN: ${{ inputs.dry_run && github.token || secrets.HEADLAMP_WRITE_PAT }}
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/apply_triage.py
+          else
+            python scripts/apply_triage.py --apply
+          fi
+
+      - name: Commit audit log
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          set -euo pipefail
+          git config user.name  "headlamp-triage-bot"
+          git config user.email "headlamp-triage-bot@users.noreply.github.com"
+          git add state/applied.jsonl
+          if git diff --cached --quiet; then
+            echo "No actions taken; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Record applied triage actions"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          exit 1

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Headlamp PR Triage{% endblock %}
+{% block content %}
+
+<section class="intro">
+  <h1>Headlamp PR triage</h1>
+  <p class="subtitle">
+    Quick-action dashboard for <a href="https://github.com/kubernetes-sigs/headlamp">kubernetes-sigs/headlamp</a>.
+    Every open PR that needs a maintainer's attention, grouped by what's
+    blocking it.
+  </p>
+  {% if triage %}
+  <p class="meta">
+    {{ triage.actionable_total }} actionable / {{ triage.open_prs_total }} open
+    · last refreshed {{ triage.generated_at }}
+    · <a href="{{ home_prefix }}reviews/">AI reviews →</a>
+  </p>
+  {% else %}
+  <p class="meta">Triage data not generated yet. <a href="{{ home_prefix }}reviews/">View AI reviews →</a></p>
+  {% endif %}
+</section>
+
+{% set bucket_meta = {
+  "needs_rebase":        {"title": "Needs rebase",        "blurb": "Merge conflicts with the base branch. Author has to rebase before anything else moves."},
+  "ci_failing":          {"title": "CI failing",          "blurb": "Latest commit has failing checks. Author needs to push a fix."},
+  "waiting_on_reviewer": {"title": "Waiting on reviewer", "blurb": "Author pushed new commits since the last review. A reviewer should take another look."},
+  "waiting_on_author":   {"title": "Waiting on author",   "blurb": "Reviewer requested changes or asked a question; no author response since."},
+  "stale":               {"title": "Stale",               "blurb": "No activity in 30+ days. Close, ping, or commit to picking up."},
+  "approved_mergeable":  {"title": "Ready to merge",      "blurb": "Approved, no conflicts, CI green. A maintainer just needs to click merge."}
+} %}
+
+{% if triage %}
+  {% for bucket_id, meta in bucket_meta.items() %}
+    {% set prs = triage.buckets.get(bucket_id, []) %}
+    {% if prs %}
+    <section class="bucket bucket-{{ bucket_id|replace('_', '-') }}">
+      <header>
+        <h2>
+          <span class="bucket-dot"></span>
+          {{ meta.title }}
+          <span class="bucket-count">{{ prs|length }}</span>
+        </h2>
+        <p class="bucket-blurb">{{ meta.blurb }}</p>
+      </header>
+      <table class="pr-table">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th class="title-col">Title</th>
+            <th>Author</th>
+            <th>Last update</th>
+            <th>Recommended action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for pr in prs %}
+          <tr>
+            <td class="num"><a href="{{ pr.url }}">#{{ pr.number }}</a></td>
+            <td class="title-col">
+              <a href="{{ pr.url }}">{{ pr.title }}</a>
+              {% for label in pr.labels %}
+                {% if label.startswith('do-not-merge') or label == 'needs-rebase' or label.startswith('lifecycle/') %}
+                  <span class="label-tag">{{ label }}</span>
+                {% endif %}
+              {% endfor %}
+            </td>
+            <td>@{{ pr.author }}</td>
+            <td class="when">
+              {% if pr.days_since_update is not none %}
+                {{ pr.days_since_update }}d ago
+              {% endif %}
+            </td>
+            <td class="action-cell">
+              {% if pr.action.priority %}
+                <div class="action-priority">{{ pr.action.priority }}</div>
+              {% endif %}
+              {% if pr.action.recommended_label %}
+                <div class="action-detail">
+                  Label:
+                  <code>{{ pr.action.recommended_label }}</code>
+                  {% if pr.action.label_already_applied %}
+                    <span class="badge badge-ok">already applied</span>
+                  {% else %}
+                    <span class="badge badge-todo">not yet applied</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if pr.action.recommended_comment %}
+                <details class="action-detail">
+                  <summary>Suggested comment</summary>
+                  <blockquote>{{ pr.action.recommended_comment }}</blockquote>
+                </details>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endif %}
+  {% endfor %}
+
+  {% if triage.actionable_total == 0 %}
+  <section class="empty"><p>Nothing actionable. Inbox zero.</p></section>
+  {% endif %}
+{% else %}
+<section class="empty">
+  <h2>No triage data yet</h2>
+  <p>Run <code>python scripts/collect_triage.py</code> or wait for the hourly Action.</p>
+</section>
+{% endif %}
+
+{% if runs %}
+<section class="reviews-teaser">
+  <h2>Recent AI reviews</h2>
+  <ul class="run-list">
+    {% for run in runs %}
+    <li>
+      <a href="{{ home_prefix }}reviews/{{ run.date }}/">
+        <span class="date">{{ run.date }}</span>
+        <span class="count">{{ run.stats.total or run.reviews|length }} PRs</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="meta"><a href="{{ home_prefix }}reviews/">All AI reviews →</a></p>
+</section>
+{% endif %}
+
+<p class="meta footer-meta">Site generated {{ generated_at }} · Read-only — no labels or comments are applied yet.</p>
+{% endblock %}

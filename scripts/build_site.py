@@ -24,6 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent.parent
 REVIEWS_DIR = ROOT / "reviews"
+STATE_DIR = ROOT / "state"
 SITE_DIR = ROOT / "site"
 TEMPLATE_DIR = SITE_DIR / "templates"
 STATIC_DIR = SITE_DIR / "static"
@@ -130,7 +131,14 @@ def load_runs() -> list[DailyRun]:
     return runs
 
 
-def render(env: Environment, runs: list[DailyRun]) -> None:
+def load_triage() -> dict[str, Any] | None:
+    path = STATE_DIR / "triage.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def render(env: Environment, runs: list[DailyRun], triage: dict | None) -> None:
     if BUILD_DIR.exists():
         shutil.rmtree(BUILD_DIR)
     BUILD_DIR.mkdir(parents=True)
@@ -138,14 +146,30 @@ def render(env: Environment, runs: list[DailyRun]) -> None:
     if STATIC_DIR.exists():
         shutil.copytree(STATIC_DIR, BUILD_DIR / "static")
 
-    # Top-level index (at root, depth 0)
-    index_tmpl = env.get_template("index.html")
+    # Landing page: triage dashboard (if data exists) else fall back to
+    # the runs index.
+    triage_tmpl = env.get_template("triage.html")
     (BUILD_DIR / "index.html").write_text(
-        index_tmpl.render(
-            runs=runs,
+        triage_tmpl.render(
+            triage=triage,
+            runs=runs[:5],   # link to recent reviews from the dashboard
             generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
             static_prefix="",
             home_prefix="./",
+        ),
+        encoding="utf-8",
+    )
+
+    # AI reviews live under /reviews/
+    reviews_root = BUILD_DIR / "reviews"
+    reviews_root.mkdir(parents=True, exist_ok=True)
+    reviews_index_tmpl = env.get_template("reviews_index.html")
+    (reviews_root / "index.html").write_text(
+        reviews_index_tmpl.render(
+            runs=runs,
+            generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            static_prefix="../",
+            home_prefix="../",
         ),
         encoding="utf-8",
     )
@@ -155,7 +179,7 @@ def render(env: Environment, runs: list[DailyRun]) -> None:
     pr_tmpl = env.get_template("pr.html")
     deep_prefix = "../../"
     for run in runs:
-        run_out = BUILD_DIR / "reviews" / run.date
+        run_out = reviews_root / run.date
         run_out.mkdir(parents=True, exist_ok=True)
         (run_out / "index.html").write_text(
             run_tmpl.render(
@@ -177,7 +201,7 @@ def render(env: Environment, runs: list[DailyRun]) -> None:
     # 404 (root depth)
     (BUILD_DIR / "404.html").write_text(
         env.get_template("404.html").render(
-            static_prefix="/", home_prefix="/"
+            static_prefix="", home_prefix="./"
         ),
         encoding="utf-8",
     )
@@ -195,8 +219,12 @@ def main() -> int:
     }.get(v, "verdict-unknown")
 
     runs = load_runs()
-    render(env, runs)
-    print(f"Built {len(runs)} daily runs to {BUILD_DIR}")
+    triage = load_triage()
+    render(env, runs, triage)
+    print(
+        f"Built {len(runs)} review runs + triage={'yes' if triage else 'no'} "
+        f"to {BUILD_DIR}"
+    )
     return 0
 
 

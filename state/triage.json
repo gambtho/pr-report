@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-05-15T13:00:00+00:00",
+  "repo": "kubernetes-sigs/headlamp",
+  "open_prs_total": 18,
+  "open_drafts_total": 3,
+  "actionable_total": 5,
+  "buckets": {
+    "needs_rebase": [
+      {
+        "number": 2101, "title": "Fix flaky storage_test", "url": "https://github.com/kubernetes-sigs/headlamp/pull/2101",
+        "author": "carol", "bucket": "needs_rebase",
+        "updated_at": "2026-05-13T10:11:22Z", "days_since_update": 2,
+        "labels": ["area/backend"], "mergeable": "CONFLICTING", "review_decision": null, "check_state": null,
+        "action": {"priority": "ask author to rebase", "recommended_label": "needs-rebase", "label_already_applied": false,
+                   "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase against `main` and resolve the conflicts so reviewers can take another look.\n"}
+      }
+    ],
+    "ci_failing": [
+      {
+        "number": 2099, "title": "Add OIDC group claim support", "url": "https://github.com/kubernetes-sigs/headlamp/pull/2099",
+        "author": "dan", "bucket": "ci_failing",
+        "updated_at": "2026-05-14T22:00:00Z", "days_since_update": 1,
+        "labels": ["area/backend", "needs-review"], "mergeable": "MERGEABLE", "review_decision": null, "check_state": "FAILURE",
+        "action": {"priority": "ask author to fix CI", "recommended_label": null, "label_already_applied": false,
+                   "recommended_comment": "CI checks are failing on the latest commit. Please review the failed jobs and push a fix.\n"}
+      }
+    ],
+    "waiting_on_reviewer": [
+      {
+        "number": 2085, "title": "Frontend: dark mode polish", "url": "https://github.com/kubernetes-sigs/headlamp/pull/2085",
+        "author": "erin", "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-12T08:15:00Z", "days_since_update": 3,
+        "labels": ["area/frontend"], "mergeable": "MERGEABLE", "review_decision": "REVIEW_REQUIRED", "check_state": "SUCCESS",
+        "action": {"priority": "ping reviewer for re-review", "recommended_label": "needs-review", "label_already_applied": false,
+                   "recommended_comment": null}
+      }
+    ],
+    "waiting_on_author": [
+      {
+        "number": 2050, "title": "Plugin manifest schema v2", "url": "https://github.com/kubernetes-sigs/headlamp/pull/2050",
+        "author": "frank", "bucket": "waiting_on_author",
+        "updated_at": "2026-05-02T12:00:00Z", "days_since_update": 13,
+        "labels": ["area/plugins"], "mergeable": "MERGEABLE", "review_decision": "CHANGES_REQUESTED", "check_state": "SUCCESS",
+        "action": {"priority": "ping author for response", "recommended_label": null, "label_already_applied": false,
+                   "recommended_comment": "Friendly ping — there's reviewer feedback above that's waiting for a response. Please take a look when you have a moment.\n"}
+      }
+    ],
+    "stale": [],
+    "approved_mergeable": [
+      {
+        "number": 2120, "title": "Bump golangci-lint to 1.59", "url": "https://github.com/kubernetes-sigs/headlamp/pull/2120",
+        "author": "greta", "bucket": "approved_mergeable",
+        "updated_at": "2026-05-15T08:00:00Z", "days_since_update": 0,
+        "labels": ["approved", "lgtm"], "mergeable": "MERGEABLE", "review_decision": "APPROVED", "check_state": "SUCCESS",
+        "action": {"priority": "merge", "recommended_label": null, "label_already_applied": false, "recommended_comment": null}
+      }
+    ]
+  }
+}

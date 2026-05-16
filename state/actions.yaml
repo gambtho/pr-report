@@ -1,0 +1,87 @@
+# Recommended actions per triage bucket.
+#
+# This file is read by scripts/collect_triage.py (for the dashboard) and
+# scripts/apply_triage.py (when the write-side workflow runs). Editing
+# here is the single source of truth.
+#
+# Schema:
+#   <bucket>:
+#     label:    string or null   # the label that should be on the PR
+#     comment:  string or null   # the comment that should be posted
+#     priority: string           # short verb for the dashboard CTA
+#     auto_apply:                # opt-in controls for apply_triage.py
+#       label:   bool            # default false — set true to allow the
+#                                #   apply workflow to add the label
+#       comment: bool            # default false — set true to allow the
+#                                #   apply workflow to post the comment
+#     comment_cooldown_days: int # min days between re-posting the same
+#                                #   comment to the same PR in this bucket
+#                                #   (the apply script dedupes from
+#                                #   applied.jsonl). Default 7.
+#
+# Safety: every auto_apply.* defaults to FALSE. Nothing mutates PRs
+# until you explicitly flip a flag here.
+
+needs_rebase:
+  label: needs-rebase
+  comment: |
+    This PR has merge conflicts with the base branch. Please rebase
+    against `main` and resolve the conflicts so reviewers can take
+    another look.
+  priority: ask author to rebase
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 14
+
+ci_failing:
+  label: null
+  comment: |
+    CI checks are failing on the latest commit. Please review the
+    failed jobs and push a fix.
+  priority: ask author to fix CI
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 7
+
+waiting_on_reviewer:
+  label: needs-review
+  comment: null
+  priority: ping reviewer for re-review
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 7
+
+waiting_on_author:
+  label: null
+  comment: |
+    Friendly ping — there's reviewer feedback above that's waiting for
+    a response. Please take a look when you have a moment.
+  priority: ping author for response
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 14
+
+stale:
+  label: lifecycle/stale
+  comment: |
+    This PR has been inactive for 30+ days. If you're still working on
+    it, please push an update or leave a comment. Otherwise it may be
+    closed in the near future.
+  priority: ping or close
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 30
+
+approved_mergeable:
+  label: null
+  comment: null
+  priority: merge
+  auto_apply:
+    label: false
+    comment: false
+  comment_cooldown_days: 7

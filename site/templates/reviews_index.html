@@ -1,13 +1,16 @@
 {% extends "base.html" %}
-{% block title %}Headlamp PR Reviews — Daily Index{% endblock %}
+{% block title %}AI PR Reviews — Daily Index{% endblock %}
 {% block content %}
+<nav class="crumbs"><a href="{{ home_prefix }}">Triage</a> / AI reviews</nav>
+
 <section class="intro">
   <h1>Daily AI reviews of <a href="https://github.com/kubernetes-sigs/headlamp">kubernetes-sigs/headlamp</a></h1>
   <p>
     Each morning, a GitHub Action runs the Copilot CLI against open PRs on
     headlamp that have not yet received human review comments, producing a
-    structured review with verdict, findings, and a brief summary. Reviews
-    are persisted here and accumulate learnings across runs.
+    structured review with verdict, findings, and a brief summary. These
+    are AI commentary — see the <a href="{{ home_prefix }}">triage
+    dashboard</a> for actionable maintainer signals.
   </p>
 </section>
 
@@ -17,7 +20,7 @@
   <ul class="run-list">
     {% for run in runs %}
     <li>
-      <a href="reviews/{{ run.date }}/">
+      <a href="{{ run.date }}/">
         <span class="date">{{ run.date }}</span>
         <span class="count">{{ run.stats.total or run.reviews|length }} PRs</span>
         <span class="verdicts">
