@@ -27,7 +27,8 @@ This is **AI commentary, not a substitute for human review**. The site footer sa
 │   ├── pr-NNN.md             # Human-readable review per PR
 │   └── pr-NNN.json           # Machine-readable sidecar (verdict, findings)
 ├── state/                    # Persistent learning state
-│   ├── learnings.md
+│   ├── learnings.md          # Auto-maintained: style guide, common issues, author notes
+│   ├── config.md             # Human-authored: hard rules, known false positives
 │   └── previously-reviewed.json
 └── .github/workflows/daily-review.yml
 ```
@@ -94,6 +95,44 @@ findings_count: {critical: N, warning: N, suggestion: N, positive: N}
 …followed by the human-readable review body (summary + findings grouped by severity).
 
 **`pr-NNN.json`** is the same metadata plus a flat `findings` array of `{severity, confidence, file, line, description}` objects, suitable for trending across runs.
+
+## How learning works
+
+Two files in `state/` carry knowledge between runs. They're committed back to the repo at the end of each daily Action, so the full history lives in `git log state/`.
+
+### `state/learnings.md` — auto-maintained
+
+The prompt reads this at the start of every run and rewrites it at the end. It accumulates:
+
+- A **review style guide** (5–10 bullets) synthesized from real review comments on recently-merged headlamp PRs. If this section has 8+ bullets and was updated within the last 7 days, the run skips re-deriving it — saving Copilot quota.
+- **Common issues** seen across multiple PRs.
+- **False positives / project conventions** the AI has inferred.
+- **Author notes** — per-author patterns seen across 2+ PRs.
+- A **session log** of what each run did.
+
+The prompt is instructed to "consolidate and dedupe, do not just append," but LLMs are imperfect at that. Expect the file to drift over time. **Open it once a month and hand-prune it** — the next run will treat your cleaned-up version as ground truth.
+
+### `state/config.md` — human-authored
+
+This is your editorial channel. The prompt reads it as **authoritative** and never modifies it. Use it for:
+
+- Hard project conventions ("we use `slog`, don't suggest `logrus`")
+- Commit message / DCO / license header requirements
+- Patterns the AI repeatedly flags incorrectly — promote them here from `learnings.md` once you're confident they're really conventions and not real issues
+- Extra checklist items beyond the auto-detected stack defaults
+
+The convention is: if you see the AI repeat a false positive two or three runs in a row, add a one-line entry to `config.md`. That's the durable fix — entries in `learnings.md` can drift, entries in `config.md` won't.
+
+A starter `config.md` is included with examples commented out. Replace the examples with real ones as you learn what headlamp's conventions actually are.
+
+### `state/previously-reviewed.json`
+
+`[{number, head_sha, date, title}, …]`, capped at 100 entries. Used for:
+
+- **Skip detection**: PRs whose stored `head_sha` matches the current GitHub `headRefOid` aren't re-reviewed.
+- **Re-review detection**: PRs whose stored `head_sha` differs (i.e. force-pushed or new commits) are eligible for a fresh look and are preferred when filling the daily PR budget.
+
+Safe to delete if you ever want a clean slate.
 
 ## Adapting from `/review-prs`
 

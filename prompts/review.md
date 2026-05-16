@@ -43,7 +43,19 @@ directory.
 Read these if they exist; otherwise treat as empty:
 
 - `state/learnings.md` — accumulated style guide, common issues, false
-  positives, author notes.
+  positives, author notes. **Auto-maintained** by this prompt: read at the
+  start of each run, rewritten at the end.
+- `state/config.md` — **human-authored** review rules that should never be
+  overwritten. Treat anything in this file as authoritative — it overrides
+  inferences from `learnings.md` when they conflict. Typical contents:
+  hard project conventions, commit message rules, accepted patterns the AI
+  keeps flagging as false positives. If it exists, fold its checklist items
+  into the review checklist (Phase 2) and pass its false-positive list to
+  every PR review (Phase 5). **Do not modify this file under any
+  circumstances** — if you would normally promote an observation to a
+  "convention," instead note it in `learnings.md` under "False Positives /
+  Project Conventions" so a human can later decide whether to promote it
+  into `config.md`.
 - `state/previously-reviewed.json` — `[{number, head_sha, date, title}, ...]`
   capped at 100 most recent entries.
 
