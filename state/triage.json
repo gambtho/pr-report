@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T05:15:10+00:00",
+  "generated_at": "2026-05-16T07:00:19+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 183,
+  "open_prs_total": 184,
   "open_drafts_total": 50,
   "actionable_total": 170,
   "buckets": {
@@ -462,7 +462,7 @@
         "author": "gambtho",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-07T05:56:37Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -484,7 +484,7 @@
         "author": "guillaumebernard84",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-07T06:52:07Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -602,7 +602,7 @@
         "author": "aadhil2k4",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T06:04:58Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -1155,29 +1155,6 @@
         }
       },
       {
-        "number": 5597,
-        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-15T23:04:39Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5531,
         "title": "Add disclaimers regarding `Event` lifetime",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
@@ -1690,7 +1667,7 @@
         "author": "Kush172005",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T06:41:35Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1800,7 +1777,7 @@
         "author": "Athang69",
         "bucket": "ci_failing",
         "updated_at": "2026-05-08T06:13:34Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/XL",
@@ -1934,7 +1911,7 @@
         "author": "Joshna907",
         "bucket": "ci_failing",
         "updated_at": "2026-05-11T05:42:24Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1956,7 +1933,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "ci_failing",
         "updated_at": "2026-05-11T05:53:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2243,7 +2220,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-15T06:13:46Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2372,28 +2349,6 @@
         }
       },
       {
-        "number": 5669,
-        "title": "frontend: editor: add aria-controls to action buttons",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5669",
-        "author": "DashratRajpurohit",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-15T20:39:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
@@ -2466,6 +2421,28 @@
         "author": "Athang69",
         "bucket": "ci_failing",
         "updated_at": "2026-05-16T05:11:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5597,
+        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T06:43:31Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -2737,7 +2714,7 @@
         "author": "gouravi19",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-15T05:50:05Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2759,7 +2736,7 @@
         "author": "mahmoodalisha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-15T06:26:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2781,7 +2758,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-15T06:41:21Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3284,6 +3261,28 @@
           "label_already_applied": false,
           "recommended_comment": null
         }
+      },
+      {
+        "number": 5669,
+        "title": "frontend: editor: add aria-controls to action buttons",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5669",
+        "author": "DashratRajpurohit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T06:57:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
       }
     ],
     "waiting_on_author": [
@@ -3744,7 +3743,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-15T06:17:19Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3766,7 +3765,7 @@
         "author": "gouravi19",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-15T06:18:51Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3788,7 +3787,7 @@
         "author": "NAME-ASHWANIYADAV",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-15T06:26:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
