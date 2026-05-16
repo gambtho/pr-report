@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T16:27:50+00:00",
+  "generated_at": "2026-05-16T17:28:35+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 185,
+  "open_prs_total": 186,
   "open_drafts_total": 49,
-  "actionable_total": 169,
+  "actionable_total": 170,
   "buckets": {
     "needs_rebase": [
       {
@@ -1436,37 +1436,16 @@
         }
       },
       {
-        "number": 5509,
-        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T14:57:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5593,
         "title": "backend: portforward: Fix data race on Status and Error fields",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
         "author": "YadavAkhileshh",
         "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T14:58:51Z",
+        "updated_at": "2026-05-16T17:04:21Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
+          "needs-rebase",
           "size/L"
         ],
         "mergeable": "CONFLICTING",
@@ -1475,7 +1454,7 @@
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
-          "label_already_applied": false,
+          "label_already_applied": true,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
         }
       },
@@ -1485,10 +1464,11 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
         "author": "YadavAkhileshh",
         "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T14:59:58Z",
+        "updated_at": "2026-05-16T17:04:24Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
+          "needs-rebase",
           "size/L"
         ],
         "mergeable": "CONFLICTING",
@@ -1497,7 +1477,30 @@
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
-          "label_already_applied": false,
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
+        }
+      },
+      {
+        "number": 5509,
+        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
+        "author": "YadavAkhileshh",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-16T17:04:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
         }
       }
@@ -2413,28 +2416,6 @@
         }
       },
       {
-        "number": 5646,
-        "title": "frontend: Add mutating admission policy resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
-        "author": "harrshita123",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T15:01:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5681,
         "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
@@ -2445,28 +2426,6 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
-        "number": 5461,
-        "title": "frontend: Add target container support to debug containers (#4914)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
-        "author": "yush-1018",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T15:03:46Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2510,6 +2469,72 @@
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5646,
+        "title": "frontend: Add mutating admission policy resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
+        "author": "harrshita123",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T16:57:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5699,
+        "title": "backend: add a simple ApplyMeDefaults testcase",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5699",
+        "author": "nikunjkumar05",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T17:00:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5461,
+        "title": "frontend: Add target container support to debug containers (#4914)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
+        "author": "yush-1018",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T17:27:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
           "size/XXL"
         ],
         "mergeable": "MERGEABLE",
