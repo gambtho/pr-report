@@ -1,104 +1,11 @@
 {
-  "generated_at": "2026-05-16T08:44:17+00:00",
+  "generated_at": "2026-05-16T09:40:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 183,
+  "open_prs_total": 182,
   "open_drafts_total": 49,
-  "actionable_total": 171,
+  "actionable_total": 170,
   "buckets": {
-    "needs_rebase": [
-      {
-        "number": 5267,
-        "title": "frontend: node: Extract useMetrics into standalone hook",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5267",
-        "author": "aabhinavvvvvvv",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-12T18:04:52Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5509,
-        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T05:04:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5118,
-        "title": "frontend: Settings: make websocket multiplexer a setting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5118",
-        "author": "Vikaspal8923",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T05:04:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 4709,
-        "title": "frontend: Add Storybook stories for DeleteMultipleButton",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4709",
-        "author": "mastermaxx03",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      }
-    ],
+    "needs_rebase": [],
     "ci_failing": [
       {
         "number": 5001,
@@ -1365,6 +1272,29 @@
         }
       },
       {
+        "number": 5267,
+        "title": "frontend: node: Extract useMetrics into standalone hook",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5267",
+        "author": "aabhinavvvvvvv",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-12T18:04:52Z",
+        "days_since_update": 3,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
         "number": 5278,
         "title": "frontend: plugin: Re-initialize plugins when cluster becomes availabl\u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5278",
@@ -2122,6 +2052,29 @@
         }
       },
       {
+        "number": 5118,
+        "title": "frontend: Settings: make websocket multiplexer a setting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5118",
+        "author": "Vikaspal8923",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T05:04:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XL"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
         "number": 5120,
         "title": "helm: add authentication support to Helm repository operations",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5120",
@@ -2150,28 +2103,6 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-16T06:43:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
-        "number": 5593,
-        "title": "backend: portforward: Fix data race on Status and Error fields",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T07:03:23Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -2221,7 +2152,96 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 4709,
+        "title": "frontend: Add Storybook stories for DeleteMultipleButton",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4709",
+        "author": "mastermaxx03",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T08:40:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5511,
+        "title": "backend: cmd: Return errors from file utilities instead of exiting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T08:42:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5509,
+        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T08:48:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5593,
+        "title": "backend: portforward: Fix data race on Status and Error fields",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T08:49:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -2425,7 +2445,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2557,7 +2577,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2623,7 +2643,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2912,7 +2932,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3068,7 +3088,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3090,7 +3110,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3106,55 +3126,11 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5641",
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T08:32:56Z",
+        "updated_at": "2026-05-16T08:46:47Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "do-not-merge/invalid-commit-message",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
-        "number": 4668,
-        "title": "frontend:table: fix the rows-per-page settings persist among views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4668",
-        "author": "ChayanDass",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T08:40:46Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T08:42:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
           "size/L"
         ],
         "mergeable": "MERGEABLE",
@@ -3855,7 +3831,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
