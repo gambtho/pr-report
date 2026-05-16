@@ -1,64 +1,105 @@
 {% extends "base.html" %}
-{% block title %}Reviews for {{ run.date }} — Headlamp{% endblock %}
+{% block title %}AI reviews · {{ run.date }} · headlamp{% endblock %}
 {% block content %}
-<nav class="crumbs"><a href="../../">All runs</a> / {{ run.date }}</nav>
 
-<h1>Reviews — {{ run.date }}</h1>
-<p class="meta">Generated {{ run.generated_at }}</p>
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ home_prefix }}">Triage</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <a href="../">AI reviews</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <span aria-current="page">{{ run.date }}</span>
+</nav>
 
-<section class="stats">
-  <dl>
-    <dt>Total</dt><dd>{{ run.stats.total or run.reviews|length }}</dd>
-    <dt>Approve</dt><dd>{{ run.stats.verdicts.approve or 0 }}</dd>
-    <dt>Request changes</dt><dd>{{ run.stats.verdicts.request_changes or 0 }}</dd>
-    <dt>Needs discussion</dt><dd>{{ run.stats.verdicts.needs_discussion or 0 }}</dd>
-    <dt>Critical findings</dt><dd>{{ run.stats.findings.critical or 0 }}</dd>
-    <dt>Warnings</dt><dd>{{ run.stats.findings.warning or 0 }}</dd>
-  </dl>
+<section class="page-intro">
+  <h1 class="page-heading">{{ run.date }}</h1>
+  {% set total = run.stats.total or run.reviews|length %}
+  {% set v = run.stats.verdicts or {} %}
+  {% set f = run.stats.findings or {} %}
+  <p class="page-lede">
+    {{ total }} PR{{ '' if total == 1 else 's' }} reviewed.
+    {{ v.approve or 0 }} approve, {{ v.request_changes or 0 }} request changes, {{ v.needs_discussion or 0 }} needs discussion.
+    {% if (f.critical or 0) or (f.warning or 0) %}
+    {{ f.critical or 0 }} critical finding{{ '' if (f.critical or 0) == 1 else 's' }}, {{ f.warning or 0 }} warning{{ '' if (f.warning or 0) == 1 else 's' }}.
+    {% endif %}
+  </p>
+  <p class="page-meta">
+    <span class="page-meta-label">generated</span>
+    <time class="page-meta-num" datetime="{{ run.generated_at }}">{{ run.generated_at|fmt_when }}</time>
+  </p>
 </section>
 
 {% if run.reviews %}
-<section class="pr-list">
-  <h2>PRs reviewed</h2>
-  <ul>
+<section class="run-prs">
+  <h2 class="section-heading">PRs reviewed</h2>
+  <ol class="row-list" role="list">
     {% for pr in run.reviews %}
-    <li class="{{ pr.verdict|verdict_class }}">
-      <a href="{{ pr.slug }}.html">
-        <span class="num">#{{ pr.number }}</span>
-        <span class="title">{{ pr.title }}</span>
-      </a>
-      <span class="author">@{{ pr.author }}</span>
-      <span class="size">{{ pr.size_category }}</span>
-      <span class="verdict-pill {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
-      {% if pr.re_review %}<span class="rereview">re-review</span>{% endif %}
+    <li class="row" role="listitem">
+      <div class="row-grid row-grid--review">
+        <a class="row-num" href="{{ pr.slug }}.html">#{{ pr.number }}</a>
+        <div class="row-body">
+          <a class="row-title" href="{{ pr.slug }}.html" title="{{ pr.title }}">{{ pr.title }}</a>
+          <div class="row-meta">
+            <span class="row-author-static">@{{ pr.author }}</span>
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="row-size">{{ pr.size_category }}</span>
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="row-diff">+{{ pr.additions }} / &minus;{{ pr.deletions }}</span>
+            {% if pr.re_review %}
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="row-rereview" title="A previous run already reviewed this PR; the commits changed since.">re-review</span>
+            {% endif %}
+            {% set fc = pr.findings_count or {} %}
+            {% if (fc.critical or 0) or (fc.warning or 0) %}
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="row-meta-quiet">
+              {% if fc.critical %}<span class="v v--r">{{ fc.critical }} critical</span>{% endif %}
+              {% if fc.critical and fc.warning %}, {% endif %}
+              {% if fc.warning %}{{ fc.warning }} warning{{ '' if fc.warning == 1 else 's' }}{% endif %}
+            </span>
+            {% endif %}
+          </div>
+        </div>
+        <div class="row-action">
+          <span class="verdict-pill verdict-pill--inline {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if run.skipped %}
+<section class="run-skipped">
+  <h2 class="section-heading">Skipped</h2>
+  <ul class="plain-list">
+    {% for s in run.skipped %}
+    <li>
+      <span class="mono">#{{ s.number }}</span>
+      <span class="row-sep" aria-hidden="true">·</span>
+      <span class="row-meta-quiet">{{ s.reason }}</span>
     </li>
     {% endfor %}
   </ul>
 </section>
 {% endif %}
 
-{% if run.skipped %}
-<section class="skipped">
-  <h2>Skipped</h2>
-  <ul>
-    {% for s in run.skipped %}
-    <li>#{{ s.number }} — {{ s.reason }}</li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
 {% if run.style_guide %}
-<section class="style-guide">
-  <h2>Review style guide used</h2>
+<section class="run-style">
+  <h2 class="section-heading">Review style guide used</h2>
   {% if run.skip_style_learning %}
-  <p class="meta">Reused from learnings (no fresh study this run).</p>
+  <p class="page-meta">
+    <span class="page-meta-label">reused from learnings; no fresh study this run</span>
+  </p>
   {% endif %}
-  <ul>
+  <ol class="numbered-list">
     {% for bullet in run.style_guide %}
     <li>{{ bullet }}</li>
     {% endfor %}
-  </ul>
+  </ol>
 </section>
 {% endif %}
+
+<p class="page-footnote">AI reviews are commentary, not a substitute for human review.</p>
+
 {% endblock %}

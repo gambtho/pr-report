@@ -1,43 +1,64 @@
 {% extends "base.html" %}
-{% block title %}AI PR Reviews — Daily Index{% endblock %}
+{% block title %}AI reviews of kubernetes-sigs/headlamp{% endblock %}
 {% block content %}
-<nav class="crumbs"><a href="{{ home_prefix }}">Triage</a> / AI reviews</nav>
 
-<section class="intro">
-  <h1>Daily AI reviews of <a href="https://github.com/kubernetes-sigs/headlamp">kubernetes-sigs/headlamp</a></h1>
-  <p>
-    Each morning, a GitHub Action runs the Copilot CLI against open PRs on
-    headlamp that have not yet received human review comments, producing a
-    structured review with verdict, findings, and a brief summary. These
-    are AI commentary — see the <a href="{{ home_prefix }}">triage
-    dashboard</a> for actionable maintainer signals.
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ home_prefix }}">Triage</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <span aria-current="page">AI reviews</span>
+</nav>
+
+<section class="page-intro">
+  <h1 class="page-heading">Daily AI reviews of kubernetes-sigs/headlamp</h1>
+  <p class="page-lede">
+    Each morning, a GitHub Action runs Copilot CLI against open PRs that have not yet received human review. The reviews below are commentary; the <a href="{{ home_prefix }}">triage dashboard</a> is the actionable view.
   </p>
 </section>
 
 {% if runs %}
 <section class="runs">
-  <h2>Recent runs</h2>
-  <ul class="run-list">
+  <h2 class="section-heading">Recent runs</h2>
+  <ol class="row-list" role="list">
     {% for run in runs %}
-    <li>
-      <a href="{{ run.date }}/">
-        <span class="date">{{ run.date }}</span>
-        <span class="count">{{ run.stats.total or run.reviews|length }} PRs</span>
-        <span class="verdicts">
-          <span class="verdict-approve">{{ run.stats.verdicts.approve or 0 }}A</span>
-          <span class="verdict-request">{{ run.stats.verdicts.request_changes or 0 }}R</span>
-          <span class="verdict-discuss">{{ run.stats.verdicts.needs_discussion or 0 }}D</span>
-        </span>
-      </a>
+    {% set v = run.stats.verdicts or {} %}
+    <li class="row" role="listitem">
+      <div class="row-grid row-grid--runs">
+        <a class="row-num" href="{{ run.date }}/">{{ run.date }}</a>
+        <div class="row-body">
+          <a class="row-title" href="{{ run.date }}/">
+            {{ run.stats.total or run.reviews|length }} PR{{ '' if (run.stats.total or run.reviews|length) == 1 else 's' }} reviewed
+          </a>
+          <div class="row-meta">
+            <span class="v v--a" title="approve">{{ v.approve or 0 }} approve</span>
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="v v--r" title="request changes">{{ v.request_changes or 0 }} request</span>
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="v v--d" title="needs discussion">{{ v.needs_discussion or 0 }} discuss</span>
+            {% set f = run.stats.findings or {} %}
+            {% if (f.critical or 0) + (f.warning or 0) %}
+            <span class="row-sep" aria-hidden="true">·</span>
+            <span class="row-meta-quiet">{{ f.critical or 0 }} critical, {{ f.warning or 0 }} warnings</span>
+            {% endif %}
+          </div>
+        </div>
+        <div class="row-action">
+          <a class="chip chip--readmore" href="{{ run.date }}/">
+            <span class="chip-verb">Read</span>
+            <span class="chip-glyph" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
     </li>
     {% endfor %}
-  </ul>
+  </ol>
 </section>
 {% else %}
-<section class="empty">
-  <p>No runs yet. Check back tomorrow.</p>
+<section class="empty empty--nodata">
+  <p class="empty-heading">No runs yet.</p>
+  <p class="empty-meta">The daily action hasn't produced any reviews yet. Check back tomorrow.</p>
 </section>
 {% endif %}
 
-<p class="meta">Site generated {{ generated_at }}</p>
+<p class="page-footnote">AI reviews are commentary, not a substitute for human review. Generated <time datetime="{{ generated_at }}">{{ generated_at|fmt_when }}</time>.</p>
+
 {% endblock %}

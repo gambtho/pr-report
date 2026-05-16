@@ -653,7 +653,8 @@ pre { margin: 0; }
 }
 
 /* ============================================================
-   Legacy /reviews/ pages — minimal restyle in the same system
+   Reviews surface — /reviews/, run pages, PR detail
+   Uses the same row/typographic system as triage.
    ============================================================ */
 
 .crumbs {
@@ -662,136 +663,68 @@ pre { margin: 0; }
   font-family: var(--font-mono);
   font-size: var(--step--1);
   color: var(--ink-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6ch;
 }
-.crumbs a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px dotted var(--rule-strong); }
-.crumbs a:hover { color: var(--accent-strong); }
+.crumbs a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--rule-strong);
+  padding-bottom: 1px;
+}
+.crumbs a:hover { color: var(--accent-strong); border-bottom-color: currentColor; }
+.crumb-sep { color: var(--ink-quiet); }
 
-.intro {
-  width: var(--page-max);
-  margin: var(--space-6) auto 0;
-  max-width: var(--page-max);
-}
-.intro h1 {
+.page-heading {
+  margin: var(--space-3) 0 var(--space-3);
   font-size: var(--step-3);
   font-weight: 600;
   letter-spacing: -0.02em;
-  margin: 0 0 var(--space-3);
-  line-height: 1.15;
+  line-height: 1.1;
   color: var(--ink);
 }
-.intro p { max-width: 65ch; color: var(--ink-muted); margin: 0; }
 
-.meta { color: var(--ink-quiet); font-size: var(--step--1); font-family: var(--font-mono); }
-
-.runs, .pr-list, .skipped, .style-guide, .stats {
+.section-heading {
   width: var(--page-max);
-  margin: var(--space-8) auto 0;
-}
-.runs h2, .pr-list h2, .skipped h2, .style-guide h2 {
+  margin: var(--space-10) auto var(--space-4);
   font-size: var(--step-2);
   font-weight: 600;
   letter-spacing: -0.015em;
   color: var(--ink);
-  margin: 0 0 var(--space-4);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--rule-strong);
 }
 
-.run-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
-.run-list li { border-bottom: 1px solid var(--rule); }
-.run-list a {
-  display: flex;
-  gap: 1.5ch;
-  align-items: baseline;
-  padding: var(--space-3) 0;
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  color: var(--ink);
-  text-decoration: none;
-}
-.run-list a:hover { color: var(--accent-strong); }
-.run-list .date { font-weight: 500; }
-.run-list .count { color: var(--ink-muted); }
-.run-list .verdicts { margin-left: auto; color: var(--ink-muted); display: inline-flex; gap: 1ch; }
+/* Row variants */
 
-.verdict-approve { color: var(--ready); }
-.verdict-request { color: var(--fail); }
-.verdict-discuss { color: var(--accent-strong); }
-.verdict-unknown { color: var(--ink-quiet); }
-
-.verdict-pill {
-  display: inline-block;
-  padding: 0.1rem 0.55rem;
-  border-radius: 4px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  background: var(--surface-sunken);
-  border: 1px solid var(--rule-strong);
-  color: var(--ink);
+.runs, .run-prs, .run-skipped, .run-style {
+  width: var(--page-max);
+  margin: 0 auto;
 }
-.verdict-pill.verdict-approve { background: var(--ready-tint); border-color: var(--ready-edge); color: var(--ready); }
-.verdict-pill.verdict-request { background: var(--fail-tint);  border-color: var(--fail-edge);  color: var(--fail); }
-.verdict-pill.verdict-discuss { background: var(--accent-tint); border-color: var(--accent-edge); color: var(--accent-strong); }
+.runs .row-list, .run-prs .row-list { margin: 0; }
 
-.stats dl {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  gap: var(--space-4) var(--space-5);
-  margin: 0;
-  padding: var(--space-4) 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+.row-grid--runs {
+  grid-template-columns: 7rem 1fr auto;
 }
-.stats dt {
+.row-grid--review {
+  grid-template-columns: 5.5rem 1fr auto;
+}
+
+.row-grid--runs .row-num,
+.row-grid--review .row-num { font-feature-settings: "tnum"; }
+
+.row-meta-quiet { color: var(--ink-quiet); }
+
+.row-author-static,
+.row-size,
+.row-diff {
   color: var(--ink-muted);
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  letter-spacing: 0;
-  text-transform: none;
 }
-.stats dd {
-  margin: var(--space-1) 0 0;
-  font-family: var(--font-mono);
-  font-size: var(--step-1);
-  font-weight: 500;
-  color: var(--ink);
-  font-feature-settings: "tnum";
-}
+.row-diff { font-feature-settings: "tnum"; }
 
-.pr-list ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
-.pr-list li {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8ch;
-  align-items: baseline;
-  padding: var(--space-3) 0;
-  border-bottom: 1px solid var(--rule);
-}
-.pr-list a {
-  display: flex;
-  gap: 0.8ch;
-  align-items: baseline;
-  color: var(--ink);
-  text-decoration: none;
-  flex: 1 1 60%;
-  min-width: 0;
-}
-.pr-list a:hover .title { color: var(--accent-strong); text-decoration: underline; text-underline-offset: 0.18em; }
-.pr-list .num { font-family: var(--font-mono); color: var(--ink-muted); }
-.pr-list .title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: 500;
-}
-.pr-list .author, .pr-list .size {
-  color: var(--ink-muted);
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-}
-.pr-list .rereview {
+.row-rereview {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   border: 1px solid var(--accent-edge);
@@ -799,37 +732,126 @@ pre { margin: 0; }
   color: var(--accent-strong);
   padding: 0.05rem 0.4rem;
   border-radius: 3px;
+  letter-spacing: 0.01em;
 }
 
-.skipped ul, .style-guide ul {
-  margin: 0;
-  padding-left: 1.25rem;
-  font-size: var(--step-0);
+.chip--readmore {
+  background: transparent;
+  border-color: var(--rule-strong);
   color: var(--ink);
 }
-.skipped li, .style-guide li { margin-bottom: var(--space-2); }
+.chip--readmore:hover { border-color: var(--ink); }
+
+/* Verdict pills */
+
+.verdict-pill {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background: var(--surface-sunken);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.verdict-pill.verdict-approve { background: var(--ready-tint); border-color: var(--ready-edge); color: var(--ready); }
+.verdict-pill.verdict-request { background: var(--fail-tint);  border-color: var(--fail-edge);  color: var(--fail); }
+.verdict-pill.verdict-discuss { background: var(--accent-tint); border-color: var(--accent-edge); color: var(--accent-strong); }
+.verdict-pill.verdict-unknown { color: var(--ink-quiet); }
+
+.v--a { color: var(--ready); }
+.v--r { color: var(--fail); }
+.v--d { color: var(--accent-strong); }
+
+/* Skipped + style-guide lists */
+
+.plain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--rule);
+}
+.plain-list li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--step-0);
+  color: var(--ink);
+  display: flex;
+  gap: 0.8ch;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.numbered-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: bullet;
+  max-width: 70ch;
+}
+.numbered-list li {
+  counter-increment: bullet;
+  position: relative;
+  padding: var(--space-2) 0 var(--space-2) 3rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  color: var(--ink);
+}
+.numbered-list li::before {
+  content: counter(bullet, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-quiet);
+  font-feature-settings: "tnum";
+  width: 2.2rem;
+}
 
 /* PR detail */
 
 .pr {
   width: var(--page-max);
-  margin: var(--space-6) auto 0;
+  margin: var(--space-3) auto 0;
+}
+
+.pr-header {
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-6);
   max-width: 75ch;
 }
-.pr header {
-  border-bottom: 1px solid var(--rule-strong);
-  padding-bottom: var(--space-4);
-  margin-bottom: var(--space-5);
+
+.pr-eyebrow {
+  margin: var(--space-4) 0 var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6ch;
+  align-items: baseline;
 }
-.pr h1 {
+.pr-eyebrow a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px dotted var(--rule-strong); padding-bottom: 1px; }
+.pr-eyebrow a:hover { color: var(--accent-strong); border-bottom-color: currentColor; }
+
+.pr-title {
   font-size: var(--step-3);
   font-weight: 600;
   letter-spacing: -0.02em;
-  line-height: 1.15;
-  margin: 0 0 var(--space-3);
+  line-height: 1.12;
+  margin: 0 0 var(--space-4);
   color: var(--ink);
+  max-width: 30ch;
 }
-.pr .pr-meta {
+
+.pr-meta {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -839,24 +861,80 @@ pre { margin: 0; }
   font-size: var(--step--1);
   color: var(--ink-muted);
 }
-.pr-body { font-size: var(--step-0); line-height: 1.65; color: var(--ink); }
-.pr-body :is(h1, h2, h3) {
+.pr-meta .row-author,
+.pr-meta a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--rule-strong);
+  padding-bottom: 1px;
+}
+.pr-meta a:hover { color: var(--accent-strong); border-bottom-color: currentColor; }
+
+/* Rendered markdown body */
+
+.pr-body {
+  font-size: var(--step-0);
+  line-height: 1.65;
+  color: var(--ink);
+  max-width: 70ch;
+}
+.pr-body > :first-child { margin-top: 0; }
+.pr-body h1 {
+  /* The .md file starts with `# PR #N: Title` which duplicates pr-title.
+     Hide it to avoid two H1s on the page. */
+  display: none;
+}
+.pr-body h2 {
+  font-size: var(--step-2);
   font-weight: 600;
   letter-spacing: -0.015em;
   color: var(--ink);
-  margin: var(--space-6) 0 var(--space-3);
+  margin: var(--space-8) 0 var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.2;
 }
-.pr-body h2 { font-size: var(--step-2); }
-.pr-body h3 { font-size: var(--step-1); }
-.pr-body p { max-width: 70ch; margin: 0 0 var(--space-3); }
-.pr-body ul { padding-left: 1.25rem; }
-.pr-body li { margin-bottom: var(--space-2); max-width: 70ch; }
+.pr-body h3 {
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.011em;
+  color: var(--ink);
+  margin: var(--space-6) 0 var(--space-3);
+  line-height: 1.25;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6ch;
+}
+/* Severity glyphs on the finding subheadings. The markdown produces
+   <h3 id="critical">Critical</h3> etc. via the toc extension. */
+.pr-body h3[id="critical"]::before  { content: "✕"; color: var(--fail);   font-family: var(--font-mono); font-size: 0.85em; }
+.pr-body h3[id="warnings"]::before  { content: "○"; color: var(--accent-strong); font-family: var(--font-mono); font-size: 0.85em; }
+.pr-body h3[id="warning"]::before   { content: "○"; color: var(--accent-strong); font-family: var(--font-mono); font-size: 0.85em; }
+.pr-body h3[id="suggestions"]::before { content: "·"; color: var(--ink-muted); font-family: var(--font-mono); font-size: 1em; }
+.pr-body h3[id="suggestion"]::before  { content: "·"; color: var(--ink-muted); font-family: var(--font-mono); font-size: 1em; }
+.pr-body h3[id="positive"]::before  { content: "✓"; color: var(--ready);  font-family: var(--font-mono); font-size: 0.85em; }
+
+.pr-body p { margin: 0 0 var(--space-4); }
+.pr-body p:last-child { margin-bottom: 0; }
+.pr-body strong { font-weight: 600; color: var(--ink); }
+.pr-body a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 0.18em;
+}
+.pr-body a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
+.pr-body ul, .pr-body ol { padding-left: 1.5rem; margin: 0 0 var(--space-4); }
+.pr-body li { margin-bottom: var(--space-3); }
+.pr-body li::marker { color: var(--ink-quiet); }
 .pr-body code {
   background: var(--surface-sunken);
   border: 1px solid var(--rule);
   border-radius: 3px;
-  padding: 0.05rem 0.35rem;
+  padding: 0.05rem 0.4rem;
   font-size: 0.88em;
+  font-family: var(--font-mono);
+  color: var(--ink);
 }
 .pr-body pre {
   background: var(--surface-sunken);
@@ -865,5 +943,62 @@ pre { margin: 0; }
   padding: var(--space-3) var(--space-4);
   overflow-x: auto;
   font-size: 0.9em;
+  margin: 0 0 var(--space-4);
 }
 .pr-body pre code { background: none; border: 0; padding: 0; }
+.pr-body blockquote {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-2) 0 var(--space-2) var(--space-4);
+  border-left: 1px solid var(--rule-strong);
+  color: var(--ink-muted);
+  font-style: normal;
+}
+.pr-body table {
+  border-collapse: collapse;
+  margin: 0 0 var(--space-4);
+  font-size: var(--step--1);
+}
+.pr-body th, .pr-body td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--rule);
+}
+.pr-body th { font-weight: 600; color: var(--ink); border-bottom-color: var(--rule-strong); }
+
+/* Reviews-page responsive */
+
+@media (max-width: 1023px) {
+  .row-grid--runs {
+    grid-template-columns: 6rem 1fr auto;
+  }
+  .row-grid--review {
+    grid-template-columns: 4.5rem 1fr;
+    grid-template-areas:
+      "num   body"
+      "act   act";
+    row-gap: var(--space-2);
+  }
+  .row-grid--review .row-num { grid-area: num; }
+  .row-grid--review .row-body { grid-area: body; }
+  .row-grid--review .row-action { grid-area: act; justify-self: start; padding-left: 4.5rem; }
+  .pr-title { font-size: var(--step-2); }
+}
+
+@media (max-width: 639px) {
+  .page-heading { font-size: var(--step-2); }
+  .row-grid--runs {
+    grid-template-columns: 5rem 1fr;
+    grid-template-areas:
+      "num   body"
+      "act   act";
+    row-gap: var(--space-2);
+  }
+  .row-grid--runs .row-num { grid-area: num; }
+  .row-grid--runs .row-body { grid-area: body; }
+  .row-grid--runs .row-action { grid-area: act; justify-self: start; padding-left: 5rem; }
+  .row-grid--review .row-action { padding-left: 4rem; }
+  .row-grid--review { grid-template-columns: 4rem 1fr; }
+  .pr-title { font-size: var(--step-1); max-width: none; }
+  .pr-body { font-size: var(--step-0); }
+}
+

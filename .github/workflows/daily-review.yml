@@ -28,7 +28,7 @@ jobs:
       committed: ${{ steps.commit.outputs.committed }}
     steps:
       - name: Check out site repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.SITE_PUSH_TOKEN || github.token }}
@@ -38,7 +38,7 @@ jobs:
           git clone --depth=50 https://github.com/kubernetes-sigs/headlamp.git ./headlamp
 
       - name: Set up Node (for Copilot CLI)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20"
 
@@ -95,7 +95,7 @@ jobs:
 
       - name: Upload copilot log
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: copilot-log
           path: copilot.log
@@ -108,13 +108,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out (post-commit)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Pull the just-committed reviews if any.
           ref: ${{ github.ref }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -125,7 +125,7 @@ jobs:
         run: python scripts/build_site.py
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/_build
 
@@ -138,4 +138,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

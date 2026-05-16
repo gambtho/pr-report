@@ -1,25 +1,45 @@
 {% extends "base.html" %}
-{% block title %}PR #{{ pr.number }}: {{ pr.title }} — Headlamp{% endblock %}
+{% block title %}#{{ pr.number }} · {{ pr.title }} · AI review{% endblock %}
 {% block content %}
-<nav class="crumbs">
-  <a href="../../">All runs</a> /
-  <a href="./">{{ run.date }}</a> /
-  #{{ pr.number }}
+
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ home_prefix }}">Triage</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <a href="../">AI reviews</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <a href="./">{{ run.date }}</a>
+  <span class="crumb-sep" aria-hidden="true">/</span>
+  <span aria-current="page" class="mono">#{{ pr.number }}</span>
 </nav>
 
 <article class="pr">
-  <header>
-    <h1>PR #{{ pr.number }}: {{ pr.title }}</h1>
+  <header class="pr-header">
+    <p class="pr-eyebrow">
+      <span class="mono">#{{ pr.number }}</span>
+      <span class="row-sep" aria-hidden="true">·</span>
+      <a href="{{ pr.url }}" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a>
+    </p>
+    <h1 class="pr-title">{{ pr.title }}</h1>
     <p class="pr-meta">
-      <a href="{{ pr.url }}">View on GitHub →</a>
-      · <span class="verdict-pill {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
-      · {{ pr.size_category }}
-      · +{{ pr.additions }} / −{{ pr.deletions }}
-      · @{{ pr.author }}
+      <span class="verdict-pill {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
+      <span class="row-sep" aria-hidden="true">·</span>
+      <span class="row-size">{{ pr.size_category }}</span>
+      <span class="row-sep" aria-hidden="true">·</span>
+      <span class="row-diff">+{{ pr.additions }} / &minus;{{ pr.deletions }} across {{ pr.files_changed }} file{{ '' if pr.files_changed == 1 else 's' }}</span>
+      <span class="row-sep" aria-hidden="true">·</span>
+      <a class="row-author" href="https://github.com/{{ pr.author }}" rel="noopener">@{{ pr.author }}</a>
+      {% if pr.re_review %}
+      <span class="row-sep" aria-hidden="true">·</span>
+      <span class="row-rereview">re-review</span>
+      {% endif %}
     </p>
   </header>
+
   <div class="pr-body">
     {{ pr.body_html|safe }}
   </div>
 </article>
+
+<p class="page-footnote">AI review, not a substitute for human review.</p>
+
 {% endblock %}
