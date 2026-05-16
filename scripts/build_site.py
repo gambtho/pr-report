@@ -218,6 +218,20 @@ def main() -> int:
         "NEEDS_DISCUSSION": "verdict-discuss",
     }.get(v, "verdict-unknown")
 
+    def fmt_when(iso: str) -> str:
+        """Format an ISO-8601 timestamp as 'May 15, 13:00 UTC' for display."""
+        if not iso:
+            return ""
+        try:
+            dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        except ValueError:
+            return iso
+        dt = dt.astimezone(timezone.utc)
+        return dt.strftime("%b %-d, %H:%M UTC")
+
+    env.filters["fmt_when"] = fmt_when
+    env.filters["pluralize"] = lambda n, s, p=None: s if n == 1 else (p or s + "s")
+
     runs = load_runs()
     triage = load_triage()
     render(env, runs, triage)

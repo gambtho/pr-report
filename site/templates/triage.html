@@ -1,131 +1,200 @@
 {% extends "base.html" %}
-{% block title %}Headlamp PR Triage{% endblock %}
+{% block title %}Headlamp PR triage{% endblock %}
 {% block content %}
 
-<section class="intro">
-  <h1>Headlamp PR triage</h1>
-  <p class="subtitle">
-    Quick-action dashboard for <a href="https://github.com/kubernetes-sigs/headlamp">kubernetes-sigs/headlamp</a>.
-    Every open PR that needs a maintainer's attention, grouped by what's
-    blocking it.
-  </p>
+{% set HEADLAMP = "https://github.com/kubernetes-sigs/headlamp" %}
+{% set bucket_meta = {
+  "needs_rebase":        {"ord": 1, "title": "Needs rebase",        "blurb": "Merge conflicts with the base branch. Author has to rebase before anything else moves."},
+  "ci_failing":          {"ord": 2, "title": "CI failing",          "blurb": "Latest commit has failing checks. Author needs to push a fix."},
+  "waiting_on_reviewer": {"ord": 3, "title": "Waiting on reviewer", "blurb": "Author pushed new commits since the last review. A reviewer should take another look."},
+  "waiting_on_author":   {"ord": 4, "title": "Waiting on author",   "blurb": "Reviewer requested changes or asked a question; no author response since."},
+  "stale":               {"ord": 5, "title": "Stale",               "blurb": "No activity in 30+ days. Close, ping, or commit to picking up."},
+  "approved_mergeable":  {"ord": 6, "title": "Ready to merge",      "blurb": "Approved, no conflicts, CI green. A maintainer just needs to click merge."}
+} %}
+
+<section class="page-intro">
   {% if triage %}
-  <p class="meta">
-    {{ triage.actionable_total }} actionable / {{ triage.open_prs_total }} open
-    · last refreshed {{ triage.generated_at }}
-    · <a href="{{ home_prefix }}reviews/">AI reviews →</a>
+  <p class="page-lede">
+    Every open PR on kubernetes-sigs/headlamp that needs a maintainer's attention, grouped by what blocks it.
+  </p>
+  <p class="page-meta">
+    <span class="page-meta-num">{{ triage.actionable_total }}</span>
+    <span class="page-meta-label">actionable</span>
+    <span class="page-meta-sep" aria-hidden="true">·</span>
+    <span class="page-meta-num">{{ triage.open_prs_total }}</span>
+    <span class="page-meta-label">open</span>
+    <span class="page-meta-sep" aria-hidden="true">·</span>
+    <span class="page-meta-label">refreshed</span>
+    <time class="page-meta-num" datetime="{{ triage.generated_at }}">{{ triage.generated_at|fmt_when }}</time>
   </p>
   {% else %}
-  <p class="meta">Triage data not generated yet. <a href="{{ home_prefix }}reviews/">View AI reviews →</a></p>
+  <p class="page-lede">Triage data has not been generated yet.</p>
   {% endif %}
 </section>
 
-{% set bucket_meta = {
-  "needs_rebase":        {"title": "Needs rebase",        "blurb": "Merge conflicts with the base branch. Author has to rebase before anything else moves."},
-  "ci_failing":          {"title": "CI failing",          "blurb": "Latest commit has failing checks. Author needs to push a fix."},
-  "waiting_on_reviewer": {"title": "Waiting on reviewer", "blurb": "Author pushed new commits since the last review. A reviewer should take another look."},
-  "waiting_on_author":   {"title": "Waiting on author",   "blurb": "Reviewer requested changes or asked a question; no author response since."},
-  "stale":               {"title": "Stale",               "blurb": "No activity in 30+ days. Close, ping, or commit to picking up."},
-  "approved_mergeable":  {"title": "Ready to merge",      "blurb": "Approved, no conflicts, CI green. A maintainer just needs to click merge."}
-} %}
-
 {% if triage %}
+  {% set non_empty_buckets = [] %}
   {% for bucket_id, meta in bucket_meta.items() %}
-    {% set prs = triage.buckets.get(bucket_id, []) %}
-    {% if prs %}
-    <section class="bucket bucket-{{ bucket_id|replace('_', '-') }}">
-      <header>
-        <h2>
-          <span class="bucket-dot"></span>
-          {{ meta.title }}
-          <span class="bucket-count">{{ prs|length }}</span>
-        </h2>
-        <p class="bucket-blurb">{{ meta.blurb }}</p>
-      </header>
-      <table class="pr-table">
-        <thead>
-          <tr>
-            <th class="num">#</th>
-            <th class="title-col">Title</th>
-            <th>Author</th>
-            <th>Last update</th>
-            <th>Recommended action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for pr in prs %}
-          <tr>
-            <td class="num"><a href="{{ pr.url }}">#{{ pr.number }}</a></td>
-            <td class="title-col">
-              <a href="{{ pr.url }}">{{ pr.title }}</a>
-              {% for label in pr.labels %}
-                {% if label.startswith('do-not-merge') or label == 'needs-rebase' or label.startswith('lifecycle/') %}
-                  <span class="label-tag">{{ label }}</span>
-                {% endif %}
-              {% endfor %}
-            </td>
-            <td>@{{ pr.author }}</td>
-            <td class="when">
-              {% if pr.days_since_update is not none %}
-                {{ pr.days_since_update }}d ago
-              {% endif %}
-            </td>
-            <td class="action-cell">
-              {% if pr.action.priority %}
-                <div class="action-priority">{{ pr.action.priority }}</div>
-              {% endif %}
-              {% if pr.action.recommended_label %}
-                <div class="action-detail">
-                  Label:
-                  <code>{{ pr.action.recommended_label }}</code>
-                  {% if pr.action.label_already_applied %}
-                    <span class="badge badge-ok">already applied</span>
-                  {% else %}
-                    <span class="badge badge-todo">not yet applied</span>
-                  {% endif %}
-                </div>
-              {% endif %}
-              {% if pr.action.recommended_comment %}
-                <details class="action-detail">
-                  <summary>Suggested comment</summary>
-                  <blockquote>{{ pr.action.recommended_comment }}</blockquote>
-                </details>
-              {% endif %}
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </section>
+    {% if triage.buckets.get(bucket_id, []) %}
+      {% set _ = non_empty_buckets.append(bucket_id) %}
     {% endif %}
   {% endfor %}
 
-  {% if triage.actionable_total == 0 %}
-  <section class="empty"><p>Nothing actionable. Inbox zero.</p></section>
+  {% if non_empty_buckets %}
+    {% for bucket_id, meta in bucket_meta.items() %}
+      {% set prs = triage.buckets.get(bucket_id, []) %}
+      {% if prs %}
+      <section class="bucket bucket--{{ bucket_id|replace('_', '-') }}" aria-labelledby="bucket-{{ bucket_id }}">
+        <header class="bucket-header">
+          <h2 id="bucket-{{ bucket_id }}" class="bucket-heading">
+            <span class="bucket-ord">{{ meta.ord }} ·</span>
+            <span class="bucket-name">{{ meta.title }}</span>
+            <span class="bucket-count" aria-label="{{ prs|length }} {{ prs|length|pluralize('pull request') }}">{{ prs|length }}</span>
+          </h2>
+          <p class="bucket-blurb">{{ meta.blurb }}</p>
+        </header>
+
+        <ol class="row-list" role="list">
+          {% for pr in prs %}
+          {% set has_label = pr.action.recommended_label %}
+          {% set has_comment = pr.action.recommended_comment %}
+          {% set is_merge = bucket_id == "approved_mergeable" %}
+          {% set comment_id = "cmt-" ~ pr.number %}
+          <li class="row" role="listitem">
+            <div class="row-grid">
+              <a class="row-num" href="{{ pr.url }}" rel="noopener">#{{ pr.number }}</a>
+
+              <div class="row-body">
+                <a class="row-title" href="{{ pr.url }}" rel="noopener" title="{{ pr.title }}">{{ pr.title }}</a>
+                <div class="row-meta">
+                  <a class="row-author" href="https://github.com/{{ pr.author }}" rel="noopener">@{{ pr.author }}</a>
+                  <span class="row-sep" aria-hidden="true">·</span>
+                  {% if pr.days_since_update is not none %}
+                  <a class="row-age" href="{{ pr.url }}/commits" rel="noopener" title="View commits">
+                    {% if pr.days_since_update == 0 %}today{% else %}{{ pr.days_since_update }}d ago{% endif %}
+                  </a>
+                  {% else %}
+                  <span class="row-age row-age--unknown">no recent activity</span>
+                  {% endif %}
+                  {% for label in pr.labels %}
+                    {% if label.startswith('do-not-merge') or label == 'needs-rebase' or label.startswith('lifecycle/') %}
+                    <a class="row-label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ label }}" rel="noopener">{{ label }}</a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="row-action">
+                {% if is_merge %}
+                  <a class="chip chip--merge" href="{{ pr.url }}#merge" rel="noopener" title="Approved, mergeable, CI green. Click to merge on GitHub.">
+                    <span class="chip-verb">Merge</span>
+                    <span class="chip-glyph" aria-hidden="true">↗</span>
+                  </a>
+                {% elif has_label %}
+                  <a class="chip chip--label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ pr.action.recommended_label }}" rel="noopener"
+                     title="Recommended: apply `{{ pr.action.recommended_label }}`. Click to see other PRs in this state.">
+                    <span class="chip-verb">Apply</span>
+                    <span class="chip-label-name">{{ pr.action.recommended_label }}</span>
+                  </a>
+                {% elif has_comment %}
+                  <button class="chip chip--comment" type="button"
+                          aria-expanded="false" aria-controls="{{ comment_id }}"
+                          data-comment-toggle="{{ comment_id }}"
+                          aria-label="Suggested comment for #{{ pr.number }}">
+                    <span class="chip-verb">Suggested comment</span>
+                    <span class="chip-glyph" aria-hidden="true">▾</span>
+                  </button>
+                {% else %}
+                  <span class="chip chip--noop" aria-hidden="true">No action</span>
+                {% endif %}
+              </div>
+
+              <div class="row-status">
+                {% if has_label %}
+                  {% if pr.action.label_already_applied %}
+                  <span class="status status--applied" title="The recommended label is already on this PR.">
+                    <span class="status-glyph" aria-hidden="true">●</span>
+                    <span class="status-text">applied</span>
+                  </span>
+                  {% else %}
+                  <span class="status status--pending" title="The recommended label has not been applied.">
+                    <span class="status-glyph" aria-hidden="true">○</span>
+                    <span class="status-text">not applied</span>
+                  </span>
+                  {% endif %}
+                {% endif %}
+              </div>
+            </div>
+
+            {% if has_comment and not is_merge %}
+            <div class="row-expand" id="{{ comment_id }}" hidden>
+              <pre class="row-comment">{{ pr.action.recommended_comment.rstrip() }}</pre>
+              <p class="row-expand-meta">Suggested comment. Read-only; nothing is posted automatically.</p>
+            </div>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <section class="empty empty--zero">
+      <p class="empty-heading">Inbox zero.</p>
+      <p class="empty-meta">No actionable PRs right now. Refreshed
+        <time datetime="{{ triage.generated_at }}">{{ triage.generated_at|fmt_when }}</time>; next run within the hour.</p>
+    </section>
   {% endif %}
+
 {% else %}
-<section class="empty">
-  <h2>No triage data yet</h2>
-  <p>Run <code>python scripts/collect_triage.py</code> or wait for the hourly Action.</p>
-</section>
+  <section class="empty empty--nodata">
+    <p class="empty-heading">No triage data yet.</p>
+    <p class="empty-meta">Run the classifier locally, or wait for the hourly Action:</p>
+    <pre class="empty-cmd">python scripts/collect_triage.py</pre>
+  </section>
 {% endif %}
 
 {% if runs %}
-<section class="reviews-teaser">
-  <h2>Recent AI reviews</h2>
-  <ul class="run-list">
+<section class="teaser" aria-labelledby="recent-reviews">
+  <h2 id="recent-reviews" class="teaser-heading">Recent AI reviews</h2>
+  <ul class="teaser-list" role="list">
     {% for run in runs %}
-    <li>
-      <a href="{{ home_prefix }}reviews/{{ run.date }}/">
-        <span class="date">{{ run.date }}</span>
-        <span class="count">{{ run.stats.total or run.reviews|length }} PRs</span>
+    <li class="teaser-item">
+      <a class="teaser-link" href="{{ home_prefix }}reviews/{{ run.date }}/">
+        <span class="teaser-date">{{ run.date }}</span>
+        <span class="teaser-sep" aria-hidden="true">·</span>
+        <span class="teaser-count">{{ run.stats.total or run.reviews|length }} PRs</span>
+        {% set v = run.stats.verdicts or {} %}
+        {% if v %}
+        <span class="teaser-verdicts">
+          <span class="v v--a" title="approve">{{ v.approve or 0 }}A</span>
+          <span class="v v--r" title="request changes">{{ v.request_changes or 0 }}R</span>
+          <span class="v v--d" title="needs discussion">{{ v.needs_discussion or 0 }}D</span>
+        </span>
+        {% endif %}
       </a>
     </li>
     {% endfor %}
   </ul>
-  <p class="meta"><a href="{{ home_prefix }}reviews/">All AI reviews →</a></p>
+  <p class="teaser-more"><a href="{{ home_prefix }}reviews/">All AI reviews <span aria-hidden="true">→</span></a></p>
 </section>
 {% endif %}
 
-<p class="meta footer-meta">Site generated {{ generated_at }} · Read-only — no labels or comments are applied yet.</p>
+<p class="page-footnote">Read-only. Recommendations are shown, not applied; the future write-side workflow will act on these same rows.</p>
+
+<script>
+  (function () {
+    document.querySelectorAll('[data-comment-toggle]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-comment-toggle');
+        var panel = document.getElementById(id);
+        if (!panel) return;
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+        if (open) panel.setAttribute('hidden', '');
+        else panel.removeAttribute('hidden');
+      });
+    });
+  })();
+</script>
 {% endblock %}

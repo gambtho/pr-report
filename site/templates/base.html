@@ -3,23 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Headlamp PR Reviews{% endblock %}</title>
+  <title>{% block title %}Headlamp PR triage{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="{{ static_prefix }}static/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{{ home_prefix }}">Headlamp PR Triage</a>
-    <nav>
-      <a href="{{ home_prefix }}">Triage</a>
-      <a href="{{ home_prefix }}reviews/">AI reviews</a>
-      <a href="https://github.com/kubernetes-sigs/headlamp">headlamp ↗</a>
-    </nav>
+    <div class="site-header-inner">
+      <a class="brand" href="{{ home_prefix }}">
+        <span class="brand-mark">hr</span>
+        <span class="brand-name">headrep</span>
+        <span class="brand-sep" aria-hidden="true">·</span>
+        <span class="brand-sub">kubernetes-sigs/headlamp</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ home_prefix }}">Triage</a>
+        <a href="{{ home_prefix }}reviews/">AI reviews</a>
+        <a href="https://github.com/kubernetes-sigs/headlamp" rel="noopener">headlamp <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
   <main>
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <p>AI-generated reviews. Not a substitute for human review. Updated daily.</p>
+    <p>AI reviews are commentary, not a substitute for human review. Triage is read-only; no labels or comments are applied.</p>
   </footer>
 </body>
 </html>
