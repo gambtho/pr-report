@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T13:40:08+00:00",
+  "generated_at": "2026-05-16T14:35:41+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 184,
+  "open_prs_total": 185,
   "open_drafts_total": 49,
-  "actionable_total": 170,
+  "actionable_total": 168,
   "buckets": {
     "needs_rebase": [
       {
@@ -291,7 +291,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-04-29T14:28:08Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -1044,7 +1044,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-15T14:08:26Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "helm",
           "charts",
@@ -1321,29 +1321,6 @@
         }
       },
       {
-        "number": 5640,
-        "title": "backend: config: Replace os.Exit with error return",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5640",
-        "author": "NAME-ASHWANIYADAV",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T10:00:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5642,
         "title": "backend: config: Validate options and env override",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5642",
@@ -1538,29 +1515,6 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5695,
-        "title": "frontend: i18n: Add UI support for RTL languages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5695",
-        "author": "mahmoodalisha",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T13:19:20Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -2197,7 +2151,7 @@
         "author": "sniok",
         "bucket": "ci_failing",
         "updated_at": "2026-05-15T13:56:19Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -2480,28 +2434,6 @@
         }
       },
       {
-        "number": 5570,
-        "title": "frontend: Clean up raw Kubernetes API error messages in snackbar",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5570",
-        "author": "RajPrakash681",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T10:38:14Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5602,
         "title": "frontend: DateLabel: Show full creation timestamp as tooltip on age hover",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5602",
@@ -2559,6 +2491,50 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5680,
+        "title": "backend: headlamp: filter sensitive headers in external proxy",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
+        "author": "ayushmaan-16",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T14:27:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5695,
+        "title": "frontend: i18n: Add UI support for RTL languages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5695",
+        "author": "mahmoodalisha",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T14:30:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3192,12 +3168,12 @@
         }
       },
       {
-        "number": 5647,
-        "title": "backend: portforward: Fix data race on Status and Error fields",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5647",
-        "author": "NAME-ASHWANIYADAV",
+        "number": 5570,
+        "title": "frontend: Clean up raw Kubernetes API error messages in snackbar",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5570",
+        "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T13:03:42Z",
+        "updated_at": "2026-05-16T13:53:53Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3743,28 +3719,6 @@
           "oidc",
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n"
-        }
-      },
-      {
-        "number": 5680,
-        "title": "backend: headlamp: filter sensitive headers in external proxy",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
-        "author": "ayushmaan-16",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-16T10:03:50Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
