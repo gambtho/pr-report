@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}PR #{{ pr.number }}: {{ pr.title }} — Headlamp{% endblock %}
+{% block content %}
+<nav class="crumbs">
+  <a href="../../">All runs</a> /
+  <a href="./">{{ run.date }}</a> /
+  #{{ pr.number }}
+</nav>
+
+<article class="pr">
+  <header>
+    <h1>PR #{{ pr.number }}: {{ pr.title }}</h1>
+    <p class="pr-meta">
+      <a href="{{ pr.url }}">View on GitHub →</a>
+      · <span class="verdict-pill {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
+      · {{ pr.size_category }}
+      · +{{ pr.additions }} / −{{ pr.deletions }}
+      · @{{ pr.author }}
+    </p>
+  </header>
+  <div class="pr-body">
+    {{ pr.body_html|safe }}
+  </div>
+</article>
+{% endblock %}

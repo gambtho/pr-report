@@ -1,0 +1,141 @@
+name: Daily PR Review
+
+on:
+  schedule:
+    # 06:17 UTC daily — avoids the top-of-hour cron stampede.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+    inputs:
+      max_prs:
+        description: "Maximum PRs to review"
+        required: false
+        default: "10"
+
+permissions:
+  contents: write   # commit reviews/state back to the site repo
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-pr-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    name: Run Copilot CLI review
+    runs-on: ubuntu-latest
+    outputs:
+      committed: ${{ steps.commit.outputs.committed }}
+    steps:
+      - name: Check out site repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.SITE_PUSH_TOKEN || github.token }}
+
+      - name: Clone kubernetes-sigs/headlamp
+        run: |
+          git clone --depth=50 https://github.com/kubernetes-sigs/headlamp.git ./headlamp
+
+      - name: Set up Node (for Copilot CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "headlamp-review-bot"
+          git config user.email "headlamp-review-bot@users.noreply.github.com"
+
+      - name: Run review
+        env:
+          # Fine-grained PAT with "Copilot Requests" permission.
+          # See README for setup. Copilot CLI uses GH_TOKEN for both
+          # Copilot auth and gh CLI calls.
+          GH_TOKEN: ${{ secrets.COPILOT_PAT }}
+          MAX_PRS: ${{ github.event.inputs.max_prs || '10' }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "ERROR: COPILOT_PAT secret is not set." >&2
+            exit 1
+          fi
+          # Sanity-check auth before burning a Copilot session on a misconfig.
+          gh auth status
+          # Headless invocation. --allow-all-tools lets Copilot use shell/
+          # filesystem freely; this runner is ephemeral so the blast radius
+          # is the workspace.
+          copilot \
+            --prompt "$(cat prompts/review.md)" \
+            --allow-all-tools \
+            --no-color \
+            2>&1 | tee copilot.log
+
+      - name: Commit reviews + state
+        id: commit
+        run: |
+          set -euo pipefail
+          git add reviews state
+          if git diff --cached --quiet; then
+            echo "No new review output to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          DATE=$(date -u +%Y-%m-%d)
+          # Use neutral commit verbs — kubernetes-org rules ban
+          # fix/close/resolve keywords in commit messages, and while this
+          # repo is not part of the k8s org, we keep the convention to
+          # stay consistent with the project being reviewed.
+          git commit -m "Add daily PR review for ${DATE}"
+          git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Upload copilot log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: copilot-log
+          path: copilot.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+  build:
+    name: Build site
+    needs: review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out (post-commit)
+        uses: actions/checkout@v4
+        with:
+          # Pull the just-committed reviews if any.
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Build site
+        run: python scripts/build_site.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_build
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

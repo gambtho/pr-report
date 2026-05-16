@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Reviews for {{ run.date }} — Headlamp{% endblock %}
+{% block content %}
+<nav class="crumbs"><a href="../../">All runs</a> / {{ run.date }}</nav>
+
+<h1>Reviews — {{ run.date }}</h1>
+<p class="meta">Generated {{ run.generated_at }}</p>
+
+<section class="stats">
+  <dl>
+    <dt>Total</dt><dd>{{ run.stats.total or run.reviews|length }}</dd>
+    <dt>Approve</dt><dd>{{ run.stats.verdicts.approve or 0 }}</dd>
+    <dt>Request changes</dt><dd>{{ run.stats.verdicts.request_changes or 0 }}</dd>
+    <dt>Needs discussion</dt><dd>{{ run.stats.verdicts.needs_discussion or 0 }}</dd>
+    <dt>Critical findings</dt><dd>{{ run.stats.findings.critical or 0 }}</dd>
+    <dt>Warnings</dt><dd>{{ run.stats.findings.warning or 0 }}</dd>
+  </dl>
+</section>
+
+{% if run.reviews %}
+<section class="pr-list">
+  <h2>PRs reviewed</h2>
+  <ul>
+    {% for pr in run.reviews %}
+    <li class="{{ pr.verdict|verdict_class }}">
+      <a href="{{ pr.slug }}.html">
+        <span class="num">#{{ pr.number }}</span>
+        <span class="title">{{ pr.title }}</span>
+      </a>
+      <span class="author">@{{ pr.author }}</span>
+      <span class="size">{{ pr.size_category }}</span>
+      <span class="verdict-pill {{ pr.verdict|verdict_class }}">{{ pr.verdict }}</span>
+      {% if pr.re_review %}<span class="rereview">re-review</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if run.skipped %}
+<section class="skipped">
+  <h2>Skipped</h2>
+  <ul>
+    {% for s in run.skipped %}
+    <li>#{{ s.number }} — {{ s.reason }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if run.style_guide %}
+<section class="style-guide">
+  <h2>Review style guide used</h2>
+  {% if run.skip_style_learning %}
+  <p class="meta">Reused from learnings (no fresh study this run).</p>
+  {% endif %}
+  <ul>
+    {% for bullet in run.style_guide %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}
