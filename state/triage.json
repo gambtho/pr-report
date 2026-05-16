@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T18:30:26+00:00",
+  "generated_at": "2026-05-16T19:33:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 188,
   "open_drafts_total": 49,
-  "actionable_total": 170,
+  "actionable_total": 169,
   "buckets": {
     "needs_rebase": [
       {
@@ -337,7 +337,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:45Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -360,7 +360,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:53Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -386,7 +386,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:55Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "backend",
           "resourceMap",
@@ -601,7 +601,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1229,29 +1229,6 @@
         }
       },
       {
-        "number": 5495,
-        "title": "backend: Stream HTTP proxy responses to prevent OOM",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5495",
-        "author": "VijayabaskarR-06",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T09:56:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5574,
         "title": " frontend: Add generic API resource picker, list and details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5574",
@@ -1424,52 +1401,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5593,
-        "title": "backend: portforward: Fix data race on Status and Error fields",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T17:04:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T17:04:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -1689,7 +1620,7 @@
         "author": "YotamKorah",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:15:28Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2048,7 +1979,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -2156,7 +2087,7 @@
         "author": "anoopw3bdev",
         "bucket": "ci_failing",
         "updated_at": "2026-05-15T18:40:56Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2371,28 +2302,6 @@
         }
       },
       {
-        "number": 5597,
-        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T14:59:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5465,
         "title": "security: Add ReadHeaderTimeout to http.Server to mitigate Slowloris DoS attacks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5465",
@@ -2504,19 +2413,41 @@
         }
       },
       {
-        "number": 5699,
-        "title": "backend: add a simple ApplyMeDefaults testcase",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5699",
-        "author": "nikunjkumar05",
+        "number": 5597,
+        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
+        "author": "YadavAkhileshh",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-16T17:00:46Z",
+        "updated_at": "2026-05-16T19:18:07Z",
         "days_since_update": 0,
         "labels": [
-          "cncf-cla: no",
-          "size/S"
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5593,
+        "title": "backend: portforward: Fix data race on Status and Error fields",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T19:22:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3146,6 +3077,51 @@
           "label_already_applied": false,
           "recommended_comment": null
         }
+      },
+      {
+        "number": 5495,
+        "title": "backend: Stream HTTP proxy responses to prevent OOM",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5495",
+        "author": "VijayabaskarR-06",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T19:30:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "do-not-merge/invalid-commit-message",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5511,
+        "title": "backend: cmd: Return errors from file utilities instead of exiting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T19:32:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
       }
     ],
     "waiting_on_author": [
@@ -3379,7 +3355,7 @@
         "author": "illume",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T19:27:56Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "a11y",
           "cncf-cla: yes",
@@ -3584,7 +3560,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-15T18:43:18Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
