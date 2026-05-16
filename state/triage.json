@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T10:36:30+00:00",
+  "generated_at": "2026-05-16T11:29:20+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 184,
   "open_drafts_total": 49,
-  "actionable_total": 172,
+  "actionable_total": 171,
   "buckets": {
     "needs_rebase": [
       {
@@ -519,28 +519,6 @@
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
           "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
-        "number": 5383,
-        "title": "frontend: show all container probes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5383",
-        "author": "sakshyasinha",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-07T19:34:52Z",
-        "days_since_update": 8,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
         }
       },
@@ -1456,6 +1434,29 @@
           "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
         }
+      },
+      {
+        "number": 5383,
+        "title": "frontend: show all container probes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5383",
+        "author": "sakshyasinha",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-16T11:04:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
+        }
       }
     ],
     "ci_failing": [
@@ -2213,28 +2214,6 @@
         }
       },
       {
-        "number": 5686,
-        "title": "frontend: optimize recent cluster lookup with Map-based lookup",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5686",
-        "author": "DashratRajpurohit",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-16T09:56:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5461,
         "title": "frontend: Add target container support to debug containers (#4914)",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
@@ -2476,6 +2455,28 @@
           "label_already_applied": false,
           "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
         }
+      },
+      {
+        "number": 5570,
+        "title": "frontend: Clean up raw Kubernetes API error messages in snackbar",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5570",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T10:38:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2680,28 +2681,6 @@
         }
       },
       {
-        "number": 5541,
-        "title": "Frontend: fix unstable React reconciliation in ContainerInfo ports list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5541",
-        "author": "gouravi19",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-15T05:50:05Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
         "number": 5609,
         "title": "frontend: lib: Add JSDoc comments to useKubeObjectList exported functions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5609",
@@ -2756,28 +2735,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
-        "number": 5612,
-        "title": "i18n: add missing French UI translations",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5612",
-        "author": "mahmoodalisha",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T08:14:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3058,29 +3015,6 @@
         }
       },
       {
-        "number": 5669,
-        "title": "frontend: editor: add aria-controls to action buttons",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5669",
-        "author": "DashratRajpurohit",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T10:33:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "do-not-merge/invalid-commit-message",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
         "number": 5413,
         "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
@@ -3103,12 +3037,34 @@
         }
       },
       {
-        "number": 5120,
-        "title": "helm: add authentication support to Helm repository operations",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5120",
-        "author": "Athang69",
+        "number": 5541,
+        "title": "Frontend: fix unstable React reconciliation in ContainerInfo ports list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5541",
+        "author": "gouravi19",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T10:36:05Z",
+        "updated_at": "2026-05-16T10:38:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5521,
+        "title": "Frontend: Add connected Pods section to Service details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5521",
+        "author": "gouravi19",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T10:44:16Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3125,16 +3081,106 @@
         }
       },
       {
-        "number": 5570,
-        "title": "frontend: Clean up raw Kubernetes API error messages in snackbar",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5570",
-        "author": "RajPrakash681",
+        "number": 5612,
+        "title": "i18n: add missing French UI translations",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5612",
+        "author": "mahmoodalisha",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T10:36:15Z",
+        "updated_at": "2026-05-16T10:44:29Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5641,
+        "title": "fix(frontend): resolve owner references using apiVersion+kind to prevent wrong resource links",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5641",
+        "author": "DashratRajpurohit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T10:49:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "do-not-merge/invalid-commit-message",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5120,
+        "title": "helm: add authentication support to Helm repository operations",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5120",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T10:54:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5686,
+        "title": "frontend: optimize recent cluster lookup with Map-based lookup",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5686",
+        "author": "DashratRajpurohit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T10:54:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5669,
+        "title": "frontend: editor: add aria-controls to action buttons",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5669",
+        "author": "DashratRajpurohit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T10:54:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "do-not-merge/invalid-commit-message",
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3511,28 +3557,6 @@
         }
       },
       {
-        "number": 5526,
-        "title": "docs: align runtime prerequisite versions with repository configuration",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5526",
-        "author": "gouravi19",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-11T11:25:29Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n"
-        }
-      },
-      {
         "number": 5490,
         "title": "backend: replace string error checks with errors.Is()",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5490",
@@ -3605,28 +3629,6 @@
         "author": "Joshna907",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-15T06:17:19Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n"
-        }
-      },
-      {
-        "number": 5521,
-        "title": "Frontend: Add connected Pods section to Service details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5521",
-        "author": "gouravi19",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-15T06:18:51Z",
         "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
@@ -3719,29 +3721,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n"
-        }
-      },
-      {
-        "number": 5641,
-        "title": "fix(frontend): resolve owner references using apiVersion+kind to prevent wrong resource links",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5641",
-        "author": "DashratRajpurohit",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-16T09:57:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "do-not-merge/invalid-commit-message",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
