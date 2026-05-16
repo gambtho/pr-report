@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T07:00:19+00:00",
+  "generated_at": "2026-05-16T07:43:35+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 184,
+  "open_prs_total": 186,
   "open_drafts_total": 50,
-  "actionable_total": 170,
+  "actionable_total": 171,
   "buckets": {
     "needs_rebase": [
       {
@@ -625,7 +625,7 @@
         "author": "hxrshxz",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:09Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -649,7 +649,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:11Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -673,7 +673,7 @@
         "author": "tylergmuir",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:12Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -697,7 +697,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:15Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -1319,29 +1319,6 @@
         }
       },
       {
-        "number": 5461,
-        "title": "frontend: Add target container support to debug containers (#4914)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
-        "author": "yush-1018",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T04:45:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5574,
         "title": " frontend: Add generic API resource picker, list and details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5574",
@@ -1579,7 +1556,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-04-27T07:15:38Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1822,7 +1799,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-10T07:16:09Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2214,35 +2191,13 @@
         }
       },
       {
-        "number": 5593,
-        "title": "backend: portforward: Fix data race on Status and Error fields",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-15T06:13:46Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5641,
         "title": "fix(frontend): resolve owner references using apiVersion+kind to prevent wrong resource links",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5641",
         "author": "DashratRajpurohit",
         "bucket": "ci_failing",
         "updated_at": "2026-05-15T07:26:18Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "do-not-merge/invalid-commit-message",
@@ -2457,6 +2412,50 @@
           "label_already_applied": false,
           "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
         }
+      },
+      {
+        "number": 5593,
+        "title": "backend: portforward: Fix data race on Status and Error fields",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T07:03:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
+      },
+      {
+        "number": 5686,
+        "title": "frontend: optimize recent cluster lookup with Map-based lookup",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5686",
+        "author": "DashratRajpurohit",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-16T07:35:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2535,7 +2534,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-10T07:32:08Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3268,11 +3267,33 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5669",
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-16T06:57:23Z",
+        "updated_at": "2026-05-16T07:04:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5461,
+        "title": "frontend: Add target container support to debug containers (#4914)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
+        "author": "yush-1018",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-16T07:38:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3584,7 +3605,7 @@
         "author": "aaradhychinche-alt",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:10Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3608,7 +3629,7 @@
         "author": "kunaldevsahu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:20Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3631,7 +3652,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:44Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/feature",
           "oidc",
