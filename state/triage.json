@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T19:34:41+00:00",
+  "generated_at": "2026-05-17T20:25:47+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 183,
   "open_drafts_total": 47,
-  "actionable_total": 165,
+  "actionable_total": 164,
   "buckets": {
     "needs_rebase": [
       {
@@ -1686,7 +1686,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:36:04Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -1708,7 +1708,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:37:21Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -1997,7 +1997,7 @@
         "author": "Kayd-06",
         "bucket": "ci_failing",
         "updated_at": "2026-05-14T19:54:14Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2065,7 +2065,7 @@
         "author": "vikash7485",
         "bucket": "ci_failing",
         "updated_at": "2026-05-15T19:44:59Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2213,28 +2213,6 @@
         }
       },
       {
-        "number": 5524,
-        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5524",
-        "author": "ManthanNimodiya",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-17T10:41:39Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
         "number": 5366,
         "title": "Fix hooks order in AuthVisible component to comply with rules",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5366",
@@ -2289,28 +2267,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
-        }
-      },
-      {
-        "number": 5698,
-        "title": "frontend: daemonset/List: add missing Storybook states",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5698",
-        "author": "sudhidutta7694",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-17T18:55:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2485,7 +2441,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5371",
         "author": "prabindersinghh",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-17T19:32:45Z",
+        "updated_at": "2026-05-17T19:46:52Z",
         "days_since_update": 0,
         "labels": [
           "oidc",
@@ -2884,28 +2840,6 @@
         }
       },
       {
-        "number": 5615,
-        "title": "fix(AuthVisible): move hooks above early return to satisfy Rules of H\u2026",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5615",
-        "author": "kashish00208",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-17T18:52:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
         "number": 5422,
         "title": "frontend: OauthPopup: Clean up storage listener",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5422",
@@ -3214,6 +3148,72 @@
           "label_already_applied": false,
           "recommended_comment": null
         }
+      },
+      {
+        "number": 5615,
+        "title": "fix(AuthVisible): move hooks above early return to satisfy Rules of H\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5615",
+        "author": "kashish00208",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-17T19:42:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5524,
+        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5524",
+        "author": "ManthanNimodiya",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-17T19:47:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
+      },
+      {
+        "number": 5343,
+        "title": "multiplexer: Improve WebSocket stability",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5343",
+        "author": "PrakharJain345",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-17T19:52:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null
+        }
       }
     ],
     "waiting_on_author": [
@@ -3224,7 +3224,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-02-18T20:06:00Z",
-        "days_since_update": 87,
+        "days_since_update": 88,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -3657,28 +3657,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n"
-        }
-      },
-      {
-        "number": 5343,
-        "title": "multiplexer: Improve WebSocket stability",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5343",
-        "author": "PrakharJain345",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-17T18:57:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
