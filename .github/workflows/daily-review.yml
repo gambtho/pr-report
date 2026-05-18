@@ -9,7 +9,7 @@ on:
       max_prs:
         description: "Maximum PRs to review"
         required: false
-        default: "250"
+        default: "300"
 
 permissions:
   contents: write   # commit reviews/state back to the site repo
@@ -56,7 +56,7 @@ jobs:
           # See README for setup. Copilot CLI uses GH_TOKEN for both
           # Copilot auth and gh CLI calls.
           GH_TOKEN: ${{ secrets.COPILOT_PAT }}
-          MAX_PRS: ${{ github.event.inputs.max_prs || '10' }}
+          MAX_PRS: ${{ github.event.inputs.max_prs || '300' }}
         run: |
           set -euo pipefail
           if [ -z "${GH_TOKEN:-}" ]; then
