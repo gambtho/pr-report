@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T16:20:51Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [],
+  "skipped": [{"number": null, "reason": "All 182 non-draft open PRs already have human review activity (reviews or comments present). 46 additional PRs were drafts and excluded."}],
+  "stats": {
+    "total": 0,
+    "verdicts": {"approve": 0, "request_changes": 0, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 0, "suggestion": 0, "positive": 0},
+    "sizes": {"lockfile_only": 0, "small": 0, "medium": 0, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description must start with a capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief — `🎉 thanks!` is the standard merge acknowledgment from maintainers.",
+    "Reviewer @illume is the primary maintainer and is very responsive; requests CHANGES_REQUESTED for commit guideline violations before approving.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs; its reviews count as review activity.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — refactors without justification are not accepted.",
+    "Frontend: TypeScript/React; fix exhaustive-deps lint violations rather than suppressing them with eslint-disable.",
+    "Backend: Go — use comma-ok type assertions rather than unsafe panicking assertions; structured logging with slog.",
+    "Tests required for both frontend (Vitest) and backend (Go test) changes that touch logic."
+  ],
+  "skip_style_learning": false
+}
