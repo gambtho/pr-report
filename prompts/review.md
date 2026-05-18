@@ -19,7 +19,7 @@ and `gh` is authenticated against it.
 - `TARGET_DIR` = `./headlamp` (working tree of the project under review)
 - `STATE_DIR` = `./state` (committed back into the site repo)
 - `OUTPUT_DIR` = `./reviews/{YYYY-MM-DD}` (created fresh each run)
-- `MAX_PRS` = 10
+- `MAX_PRS` = value of the `MAX_PRS` environment variable, or `300` if unset
 
 All paths are relative to the site repo root, which is your current working
 directory.
@@ -109,7 +109,7 @@ cover.
 
 ## Phase 4: Discover Candidates
 
-1. `gh -R kubernetes-sigs/headlamp pr list --state open --limit 50 \
+1. `gh -R kubernetes-sigs/headlamp pr list --state open --limit "$MAX_PRS" \
    --json number,title,author,createdAt,labels,body,headRefName,headRefOid,changedFiles,additions,deletions,isDraft`
 2. Drop drafts, drop PRs in `SKIP_SET`. Keep PRs from `REREVIEW_SET` (mark
    them `re_review=true`).
