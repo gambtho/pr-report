@@ -717,6 +717,7 @@ pre { margin: 0; }
   user-select: none;
 }
 .tracked-disclosure > summary::-webkit-details-marker { display: none; }
+.tracked-disclosure > summary::marker { content: ""; }
 .tracked-disclosure > summary::before {
   content: "▸";
   display: inline-block;
