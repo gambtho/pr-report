@@ -251,6 +251,29 @@ def summarize_pr(
     action = actions.get(bucket, {}) or {}
     recommended_label = action.get("label")
     recommended_comment = action.get("comment")
+    label_already_applied = (
+        recommended_label is not None and recommended_label in labels
+    )
+    # `verifiable` = can we tell from PR metadata whether the
+    # recommendation has been satisfied? Label-based buckets are
+    # verifiable (the label is on the PR or it isn't). Comment-only
+    # buckets are not — we cannot observe whether the suggested comment
+    # was ever posted — so we never mark those tracked.
+    # `is_tracked` = the recommendation is satisfied right now and the
+    # row needs no fresh action. `approved_mergeable` is verifiable in
+    # principle (we'd know once merged), but its recommendation is
+    # always "merge now," with no intermediate satisfied state — so it
+    # is never tracked.
+    if bucket in ("needs_rebase", "waiting_on_reviewer", "stale"):
+        verifiable = True
+        is_tracked = label_already_applied
+    elif bucket == "approved_mergeable":
+        verifiable = True
+        is_tracked = False
+    else:
+        # ci_failing, waiting_on_author — comment-only.
+        verifiable = False
+        is_tracked = False
     return {
         "number": pr["number"],
         "title": pr["title"],
@@ -266,10 +289,10 @@ def summarize_pr(
         "action": {
             "priority": action.get("priority"),
             "recommended_label": recommended_label,
-            "label_already_applied": (
-                recommended_label is not None and recommended_label in labels
-            ),
+            "label_already_applied": label_already_applied,
             "recommended_comment": recommended_comment,
+            "is_tracked": is_tracked,
+            "verifiable": verifiable,
         },
     }
 
@@ -305,23 +328,38 @@ def main() -> int:
         buckets[bucket].append(summarize_pr(pr, bucket, now, actions))
         classified += 1
 
-    # Sort each bucket: oldest-updated first (so the most-stuck rises).
+    # Sort each bucket: untracked rows first, then tracked; within each
+    # group, oldest-updated first (so the most-stuck rises).
     for bucket in buckets.values():
-        bucket.sort(key=lambda p: p["updated_at"] or "")
+        bucket.sort(
+            key=lambda p: (
+                bool(p["action"].get("is_tracked")),
+                p["updated_at"] or "",
+            )
+        )
+
+    tracked_total = sum(
+        1
+        for rows in buckets.values()
+        for pr in rows
+        if pr["action"].get("is_tracked")
+    )
 
     out = {
         "generated_at": now.isoformat(timespec="seconds"),
         "repo": f"{OWNER}/{REPO}",
         "open_prs_total": sum(1 for pr in prs if not pr.get("isDraft")),
         "open_drafts_total": sum(1 for pr in prs if pr.get("isDraft")),
-        "actionable_total": classified,
+        "actionable_total": classified - tracked_total,
+        "tracked_total": tracked_total,
         "buckets": buckets,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8")
     print(
         f"Wrote {OUT_PATH.relative_to(ROOT)} — "
-        f"{classified} actionable / {out['open_prs_total']} open"
+        f"{out['actionable_total']} actionable / "
+        f"{tracked_total} tracked / {out['open_prs_total']} open"
     )
     return 0
 

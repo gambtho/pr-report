@@ -12,6 +12,88 @@
   "approved_mergeable":  {"ord": 6, "title": "Ready to merge",      "blurb": "Approved, no conflicts, CI green. A maintainer just needs to click merge."}
 } %}
 
+{% macro render_row(pr, bucket_id) -%}
+  {% set has_label = pr.action.recommended_label %}
+  {% set has_comment = pr.action.recommended_comment %}
+  {% set is_merge = bucket_id == "approved_mergeable" %}
+  {% set comment_id = "cmt-" ~ pr.number %}
+  <li class="row{% if pr.action.is_tracked %} row--tracked{% endif %}" role="listitem">
+    <div class="row-grid">
+      <a class="row-num" href="{{ pr.url }}" rel="noopener">#{{ pr.number }}</a>
+
+      <div class="row-body">
+        <a class="row-title" href="{{ pr.url }}" rel="noopener" title="{{ pr.title }}">{{ pr.title }}</a>
+
+        <div class="row-action">
+        {% if is_merge %}
+          <a class="chip chip--merge" href="{{ pr.url }}#merge" rel="noopener" title="Approved, mergeable, CI green. Click to see other PRs in this state.">
+            <span class="chip-glyph" aria-hidden="true">→</span>
+            <span class="chip-label-name">ready to merge</span>
+            <span class="chip-glyph" aria-hidden="true">↗</span>
+          </a>
+        {% elif has_label %}
+          <a class="chip chip--label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ pr.action.recommended_label }}" rel="noopener"
+             title="Recommended label: `{{ pr.action.recommended_label }}`. Click to see other PRs in this state.">
+            <span class="chip-glyph" aria-hidden="true">→</span>
+            <span class="chip-label-name">{{ pr.action.recommended_label }}</span>
+          </a>
+        {% elif has_comment %}
+          <button class="chip chip--comment" type="button"
+                  aria-expanded="false" aria-controls="{{ comment_id }}"
+                  data-comment-toggle="{{ comment_id }}"
+                  aria-label="Suggested comment for #{{ pr.number }}">
+            <span class="chip-glyph" aria-hidden="true">▾</span>
+            <span class="chip-label-name">suggested comment</span>
+          </button>
+        {% else %}
+          <span class="chip chip--noop" aria-hidden="true">No action</span>
+        {% endif %}
+        </div>
+
+        <div class="row-meta">
+          <a class="row-author" href="https://github.com/{{ pr.author }}" rel="noopener">@{{ pr.author }}</a>
+          <span class="row-sep" aria-hidden="true">·</span>
+          {% if pr.days_since_update is not none %}
+          <a class="row-age" href="{{ pr.url }}/commits" rel="noopener" title="View commits">
+            {% if pr.days_since_update == 0 %}today{% else %}{{ pr.days_since_update }}d ago{% endif %}
+          </a>
+          {% else %}
+          <span class="row-age row-age--unknown">no recent activity</span>
+          {% endif %}
+          {% for label in pr.labels %}
+            {% if label.startswith('do-not-merge') or label == 'needs-rebase' or label.startswith('lifecycle/') %}
+            <a class="row-label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ label }}" rel="noopener">{{ label }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="row-status">
+        {% if has_label %}
+          {% if pr.action.label_already_applied %}
+          <span class="status status--applied" title="The recommended label is already on this PR.">
+            <span class="status-glyph" aria-hidden="true">●</span>
+            <span class="status-text">applied</span>
+          </span>
+          {% else %}
+          <span class="status status--pending" title="The recommended label has not been applied.">
+            <span class="status-glyph" aria-hidden="true">○</span>
+            <span class="status-text">not applied</span>
+          </span>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+
+    {% if has_comment and not is_merge %}
+    <div class="row-expand" id="{{ comment_id }}" hidden>
+      <pre class="row-comment">{{ pr.action.recommended_comment.rstrip() }}</pre>
+      <p class="row-expand-meta">Suggested comment. Read-only; nothing is posted automatically.</p>
+    </div>
+    {% endif %}
+  </li>
+{%- endmacro %}
+
 <section class="page-intro">
   {% if triage %}
   <p class="page-lede">
@@ -20,6 +102,11 @@
   <p class="page-meta">
     <span class="page-meta-num">{{ triage.actionable_total }}</span>
     <span class="page-meta-label">actionable</span>
+    {% if triage.tracked_total %}
+    <span class="page-meta-sep" aria-hidden="true">·</span>
+    <span class="page-meta-tracked">{{ triage.tracked_total }}</span>
+    <span class="page-meta-label">tracked</span>
+    {% endif %}
     <span class="page-meta-sep" aria-hidden="true">·</span>
     <span class="page-meta-num">{{ triage.open_prs_total }}</span>
     <span class="page-meta-label">open</span>
@@ -27,6 +114,17 @@
     <span class="page-meta-label">refreshed</span>
     <time class="page-meta-num" datetime="{{ triage.generated_at }}">{{ triage.generated_at|fmt_when }}</time>
   </p>
+  {% set _jump = [] %}
+  {% for bucket_id, meta in bucket_meta.items() %}
+    {% if triage.buckets.get(bucket_id, []) %}{% set _ = _jump.append((bucket_id, meta, triage.buckets.get(bucket_id, []))) %}{% endif %}
+  {% endfor %}
+  {% if _jump %}
+  <nav class="page-jump" aria-label="Jump to bucket">
+    {% for bucket_id, meta, prs in _jump %}
+      <a class="page-jump-link" href="#bucket-{{ bucket_id }}"><span class="page-jump-ord">{{ meta.ord }}</span> <span class="page-jump-slug">{{ bucket_id|replace('_', '-') }}</span> <span class="page-jump-count">{{ prs|length }}</span></a>{% if not loop.last %}<span class="page-jump-sep" aria-hidden="true"> · </span>{% endif %}
+    {% endfor %}
+  </nav>
+  {% endif %}
   {% else %}
   <p class="page-lede">Triage data has not been generated yet.</p>
   {% endif %}
@@ -44,104 +142,48 @@
     {% for bucket_id, meta in bucket_meta.items() %}
       {% set prs = triage.buckets.get(bucket_id, []) %}
       {% if prs %}
+      {% set untracked = [] %}
+      {% set tracked = [] %}
+      {% for pr in prs %}
+        {% if pr.action.is_tracked %}{% set _ = tracked.append(pr) %}{% else %}{% set _ = untracked.append(pr) %}{% endif %}
+      {% endfor %}
       <section class="bucket bucket--{{ bucket_id|replace('_', '-') }}" aria-labelledby="bucket-{{ bucket_id }}">
         <header class="bucket-header">
           <h2 id="bucket-{{ bucket_id }}" class="bucket-heading">
             <span class="bucket-ord">{{ meta.ord }} ·</span>
             <span class="bucket-name">{{ meta.title }}</span>
+            {% if tracked|length > 0 and untracked|length > 0 %}
+            <span class="bucket-count" aria-label="{{ untracked|length }} need {{ untracked|length|pluralize('action') }}, {{ tracked|length }} tracked"><span class="bucket-count-actionable">{{ untracked|length }}</span><span class="bucket-count-sep" aria-hidden="true">/</span><span class="bucket-count-total">{{ prs|length }}</span></span>
+            {% else %}
             <span class="bucket-count" aria-label="{{ prs|length }} {{ prs|length|pluralize('pull request') }}">{{ prs|length }}</span>
+            {% endif %}
           </h2>
-          <p class="bucket-blurb">{{ meta.blurb }}</p>
+          <p class="bucket-blurb">{{ meta.blurb }}{% if prs and prs[0].action.verifiable == false %} <span class="bucket-verifiable-note">Comment recommendations cannot be verified as posted yet.</span>{% endif %}{% if tracked|length > 0 and untracked|length > 0 %}
+            <span class="bucket-tracked-note">· {{ untracked|length }} need{% if untracked|length == 1 %}s{% endif %} action · {{ tracked|length }} tracked</span>
+          {% endif %}</p>
         </header>
 
         <ol class="row-list" role="list">
-          {% for pr in prs %}
-          {% set has_label = pr.action.recommended_label %}
-          {% set has_comment = pr.action.recommended_comment %}
-          {% set is_merge = bucket_id == "approved_mergeable" %}
-          {% set comment_id = "cmt-" ~ pr.number %}
-          <li class="row" role="listitem">
-            <div class="row-grid">
-              <a class="row-num" href="{{ pr.url }}" rel="noopener">#{{ pr.number }}</a>
-
-              <div class="row-body">
-                <a class="row-title" href="{{ pr.url }}" rel="noopener" title="{{ pr.title }}">{{ pr.title }}</a>
-                <div class="row-meta">
-                  <a class="row-author" href="https://github.com/{{ pr.author }}" rel="noopener">@{{ pr.author }}</a>
-                  <span class="row-sep" aria-hidden="true">·</span>
-                  {% if pr.days_since_update is not none %}
-                  <a class="row-age" href="{{ pr.url }}/commits" rel="noopener" title="View commits">
-                    {% if pr.days_since_update == 0 %}today{% else %}{{ pr.days_since_update }}d ago{% endif %}
-                  </a>
-                  {% else %}
-                  <span class="row-age row-age--unknown">no recent activity</span>
-                  {% endif %}
-                  {% for label in pr.labels %}
-                    {% if label.startswith('do-not-merge') or label == 'needs-rebase' or label.startswith('lifecycle/') %}
-                    <a class="row-label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ label }}" rel="noopener">{{ label }}</a>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </div>
-
-              <div class="row-action">
-                {% if is_merge %}
-                  <a class="chip chip--merge" href="{{ pr.url }}#merge" rel="noopener" title="Approved, mergeable, CI green. Click to merge on GitHub.">
-                    <span class="chip-verb">Merge</span>
-                    <span class="chip-glyph" aria-hidden="true">↗</span>
-                  </a>
-                {% elif has_label %}
-                  <a class="chip chip--label" href="{{ HEADLAMP }}/pulls?q=is%3Apr+is%3Aopen+label%3A{{ pr.action.recommended_label }}" rel="noopener"
-                     title="Recommended: apply `{{ pr.action.recommended_label }}`. Click to see other PRs in this state.">
-                    <span class="chip-verb">Apply</span>
-                    <span class="chip-label-name">{{ pr.action.recommended_label }}</span>
-                  </a>
-                {% elif has_comment %}
-                  <button class="chip chip--comment" type="button"
-                          aria-expanded="false" aria-controls="{{ comment_id }}"
-                          data-comment-toggle="{{ comment_id }}"
-                          aria-label="Suggested comment for #{{ pr.number }}">
-                    <span class="chip-verb">Suggested comment</span>
-                    <span class="chip-glyph" aria-hidden="true">▾</span>
-                  </button>
-                {% else %}
-                  <span class="chip chip--noop" aria-hidden="true">No action</span>
-                {% endif %}
-              </div>
-
-              <div class="row-status">
-                {% if has_label %}
-                  {% if pr.action.label_already_applied %}
-                  <span class="status status--applied" title="The recommended label is already on this PR.">
-                    <span class="status-glyph" aria-hidden="true">●</span>
-                    <span class="status-text">applied</span>
-                  </span>
-                  {% else %}
-                  <span class="status status--pending" title="The recommended label has not been applied.">
-                    <span class="status-glyph" aria-hidden="true">○</span>
-                    <span class="status-text">not applied</span>
-                  </span>
-                  {% endif %}
-                {% endif %}
-              </div>
-            </div>
-
-            {% if has_comment and not is_merge %}
-            <div class="row-expand" id="{{ comment_id }}" hidden>
-              <pre class="row-comment">{{ pr.action.recommended_comment.rstrip() }}</pre>
-              <p class="row-expand-meta">Suggested comment. Read-only; nothing is posted automatically.</p>
-            </div>
-            {% endif %}
-          </li>
-          {% endfor %}
+          {% for pr in untracked %}{{ render_row(pr, bucket_id) }}{% endfor %}
+          {% if tracked|length > 0 and not (tracked|length >= 5 and untracked|length > 0) %}
+            {% for pr in tracked %}{{ render_row(pr, bucket_id) }}{% endfor %}
+          {% endif %}
         </ol>
+        {% if tracked|length >= 5 and untracked|length > 0 %}
+        <details class="tracked-disclosure">
+          <summary>Show {{ tracked|length }} tracked</summary>
+          <ol class="row-list row-list--nested" role="list">
+            {% for pr in tracked %}{{ render_row(pr, bucket_id) }}{% endfor %}
+          </ol>
+        </details>
+        {% endif %}
       </section>
       {% endif %}
     {% endfor %}
   {% else %}
     <section class="empty empty--zero">
-      <p class="empty-heading">Inbox zero.</p>
-      <p class="empty-meta">No actionable PRs right now. Refreshed
+      <p class="empty-heading">No actionable PRs.</p>
+      <p class="empty-meta">Refreshed
         <time datetime="{{ triage.generated_at }}">{{ triage.generated_at|fmt_when }}</time>; next run within the hour.</p>
     </section>
   {% endif %}
