@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-18T03:23:14+00:00",
+  "generated_at": "2026-05-18T05:34:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 179,
+  "open_prs_total": 180,
   "open_drafts_total": 47,
-  "actionable_total": 109,
+  "actionable_total": 108,
   "tracked_total": 50,
   "buckets": {
     "needs_rebase": [
@@ -159,7 +159,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1159,7 +1159,7 @@
         "author": "vyncent-t",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T05:04:15Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1661,7 +1661,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-04-27T04:39:25Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2601,16 +2601,16 @@
         }
       },
       {
-        "number": 4577,
-        "title": "cluster-inventory: Add ClusterProfile discovery for in-cluster mode",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4577",
-        "author": "kahirokunn",
+        "number": 5626,
+        "title": "backend: Fix port-forward cache key collisions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5626",
+        "author": "harrshita123",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-18T02:38:56Z",
+        "updated_at": "2026-05-18T04:44:22Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2733,30 +2733,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5609,
-        "title": "frontend: lib: Add JSDoc comments to useKubeObjectList exported functions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5609",
-        "author": "itvi-1234",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-15T06:41:21Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3184,30 +3160,6 @@
         }
       },
       {
-        "number": 5626,
-        "title": "backend: Fix port-forward cache key collisions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5626",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-17T19:06:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5615,
         "title": "fix(AuthVisible): move hooks above early return to satisfy Rules of H\u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5615",
@@ -3333,7 +3285,79 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5695",
         "author": "mahmoodalisha",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T03:16:23Z",
+        "updated_at": "2026-05-18T04:06:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5609,
+        "title": "frontend: lib: Add JSDoc comments to useKubeObjectList exported functions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5609",
+        "author": "itvi-1234",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T04:35:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5646,
+        "title": "frontend: Add mutating admission policy resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
+        "author": "harrshita123",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T04:56:10Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4577,
+        "title": "cluster-inventory: Add ClusterProfile discovery for in-cluster mode",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4577",
+        "author": "kahirokunn",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T05:32:22Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3530,7 +3554,7 @@
         "author": "jedbillyb",
         "bucket": "waiting_on_author",
         "updated_at": "2026-04-27T04:38:01Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3555,7 +3579,7 @@
         "author": "kajal-jotwani",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3579,7 +3603,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3845,60 +3869,12 @@
         }
       },
       {
-        "number": 5646,
-        "title": "frontend: Add mutating admission policy resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
-        "author": "harrshita123",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-17T19:02:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5641,
         "title": "fix(frontend): resolve owner references using apiVersion+kind to prevent wrong resource links",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5641",
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-17T19:02:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5120,
-        "title": "helm: add authentication support to Helm repository operations",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5120",
-        "author": "Athang69",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-17T21:26:05Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
