@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-17T23:27:04+00:00",
+  "generated_at": "2026-05-18T01:14:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 179,
+  "open_prs_total": 180,
   "open_drafts_total": 47,
   "actionable_total": 159,
   "buckets": {
@@ -1179,28 +1179,6 @@
         }
       },
       {
-        "number": 4577,
-        "title": "cluster-inventory: Add ClusterProfile discovery for in-cluster mode",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4577",
-        "author": "kahirokunn",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-16T10:34:16Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
-        }
-      },
-      {
         "number": 5593,
         "title": "backend: portforward: Fix data race on Status and Error fields",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
@@ -1474,6 +1452,28 @@
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
           "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
+        }
+      },
+      {
+        "number": 4577,
+        "title": "cluster-inventory: Add ClusterProfile discovery for in-cluster mode",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4577",
+        "author": "kahirokunn",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-18T00:27:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n"
         }
       }
@@ -2412,6 +2412,28 @@
           "label_already_applied": false,
           "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
         }
+      },
+      {
+        "number": 5531,
+        "title": "Add disclaimers regarding `Event` lifetime",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
+        "author": "dabico",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T00:26:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n"
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3025,28 +3047,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null
-        }
-      },
-      {
-        "number": 5531,
-        "title": "Add disclaimers regarding `Event` lifetime",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
-        "author": "dabico",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-17T23:25:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
