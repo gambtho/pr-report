@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-18T18:48:46+00:00",
+  "generated_at": "2026-05-18T19:41:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 182,
-  "open_drafts_total": 46,
+  "open_drafts_total": 47,
   "actionable_total": 120,
   "tracked_total": 41,
   "buckets": {
@@ -488,7 +488,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:45Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -513,7 +513,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:53Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -541,7 +541,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:55Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "backend",
           "resourceMap",
@@ -700,7 +700,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1233,7 +1233,7 @@
         "author": "dabico",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-17T18:49:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1258,7 +1258,7 @@
         "author": "codeurluce",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-17T18:50:26Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1480,7 +1480,7 @@
         "author": "YotamKorah",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:15:28Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -1504,7 +1504,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:36:04Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -1528,7 +1528,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:37:21Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2222,30 +2222,6 @@
         }
       },
       {
-        "number": 5509,
-        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-18T16:06:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5622,
         "title": "frontend: `EditMetadataMultipleButton`: Add batch edit labels & annotations for multi-selected resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5622",
@@ -2368,16 +2344,16 @@
         }
       },
       {
-        "number": 5735,
-        "title": "backend: Fix drain node goroutine to use server shutdown context instead of context.Background()",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5735",
+        "number": 5737,
+        "title": "backend: Fix node drain to use ownerReferences instead of deprecated kubernetes.io/created-by label",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5737",
         "author": "RajPrakash681",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-18T18:38:13Z",
+        "updated_at": "2026-05-18T19:35:13Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2594,7 +2570,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-17T19:00:08Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2836,30 +2812,6 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T16:02:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5413,
-        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T16:02:17Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3243,16 +3195,64 @@
         }
       },
       {
-        "number": 5737,
-        "title": "backend: Fix node drain to use ownerReferences instead of deprecated kubernetes.io/created-by label",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5737",
-        "author": "RajPrakash681",
+        "number": 5413,
+        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
+        "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T18:46:43Z",
+        "updated_at": "2026-05-18T18:52:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5509,
+        "title": "fix: Return error from GetDefaultKubeConfigPath instead of calling os.Exit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5509",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T19:32:23Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5735,
+        "title": "backend: Fix drain node goroutine to use server shutdown context instead of context.Background()",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5735",
+        "author": "RajPrakash681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T19:38:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3518,7 +3518,7 @@
         "author": "illume",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T19:27:56Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "a11y",
           "cncf-cla: yes",
