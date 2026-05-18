@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-18T19:41:44+00:00",
+  "generated_at": "2026-05-18T20:41:02+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 182,
+  "open_prs_total": 183,
   "open_drafts_total": 47,
-  "actionable_total": 120,
-  "tracked_total": 41,
+  "actionable_total": 125,
+  "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
       {
@@ -647,7 +647,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-07T20:34:00Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "windows",
           "app",
@@ -1025,31 +1025,6 @@
         }
       },
       {
-        "number": 5462,
-        "title": "frontend: KubeConfigLoader: Show server URL and user in cluster selection",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5462",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-15T23:04:49Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 4709,
         "title": "frontend: Add Storybook stories for DeleteMultipleButton",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4709",
@@ -1137,82 +1112,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5593,
-        "title": "backend: portforward: Fix data race on Status and Error fields",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5593",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-17T11:07:52Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-17T17:08:12Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5465,
-        "title": "security: Add ReadHeaderTimeout to http.Server to mitigate Slowloris DoS attacks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5465",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-17T17:08:15Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/S",
-          "needs review"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -1571,31 +1470,6 @@
         }
       },
       {
-        "number": 5506,
-        "title": "fix: Replace deprecated trimLeft() with trimStart() in EditorDialog",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5506",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-10T07:16:09Z",
-        "days_since_update": 8,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "APPROVED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5538,
         "title": "frontend: ContainerInfo: Fix key prop placement in ports list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5538",
@@ -1843,7 +1717,7 @@
         "author": "Kayd-06",
         "bucket": "ci_failing",
         "updated_at": "2026-05-14T19:54:14Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1991,30 +1865,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5597,
-        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-17T10:51:01Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2198,54 +2048,6 @@
         }
       },
       {
-        "number": 5660,
-        "title": "feat: fix pod list oom",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5660",
-        "author": "drewbailey",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-18T16:05:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5622,
-        "title": "frontend: `EditMetadataMultipleButton`: Add batch edit labels & annotations for multi-selected resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5622",
-        "author": "RajPrakash681",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-18T16:07:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5619,
         "title": "frontend: NamespacesAutocomplete: Clear stale namespaces from localStorage on cluster load",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5619",
@@ -2354,6 +2156,176 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5735,
+        "title": "backend: Fix drain node goroutine to use server shutdown context instead of context.Background()",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5735",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T19:55:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5745,
+        "title": "(fix #5187) Fix react-hooks/rules-of-hooks early return",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5745",
+        "author": "HarK-github",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:01:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "do-not-merge/invalid-commit-message",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5746,
+        "title": "feat(helm): Add valueFrom support for environment variables in chart \u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5746",
+        "author": "HarK-github",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:06:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5465,
+        "title": "security: Add ReadHeaderTimeout to http.Server to mitigate Slowloris DoS attacks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5465",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:10:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5511,
+        "title": "backend: cmd: Return errors from file utilities instead of exiting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:19:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5462,
+        "title": "frontend: KubeConfigLoader: Show server URL and user in cluster selection",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5462",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:28:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5622,
+        "title": "frontend: `EditMetadataMultipleButton`: Add batch edit labels & annotations for multi-selected resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5622",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-18T20:39:43Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2718,30 +2690,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5680,
-        "title": "backend: headlamp: filter sensitive headers in external proxy",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
-        "author": "ayushmaan-16",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T11:47:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3243,16 +3191,89 @@
         }
       },
       {
-        "number": 5735,
-        "title": "backend: Fix drain node goroutine to use server shutdown context instead of context.Background()",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5735",
-        "author": "RajPrakash681",
+        "number": 5597,
+        "title": "fix: Validate port, log level, and TLS paths in Config.Validate()",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5597",
+        "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T19:38:55Z",
+        "updated_at": "2026-05-18T19:45:57Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5680,
+        "title": "backend: headlamp: filter sensitive headers in external proxy",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
+        "author": "ayushmaan-16",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T20:02:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5506,
+        "title": "fix: Replace deprecated trimLeft() with trimStart() in EditorDialog",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5506",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T20:10:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5660,
+        "title": "feat: fix pod list oom",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5660",
+        "author": "drewbailey",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T20:40:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3275,7 +3296,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-02-18T20:06:00Z",
-        "days_since_update": 88,
+        "days_since_update": 89,
         "labels": [
           "cncf-cla: yes",
           "approved",
