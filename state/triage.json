@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-19T01:14:37+00:00",
+  "generated_at": "2026-05-19T03:21:28+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 183,
+  "open_prs_total": 184,
   "open_drafts_total": 47,
-  "actionable_total": 125,
+  "actionable_total": 126,
   "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
@@ -233,7 +233,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-14T01:42:48Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -675,7 +675,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T01:16:57Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2146,31 +2146,6 @@
         }
       },
       {
-        "number": 5745,
-        "title": "(fix #5187) Fix react-hooks/rules-of-hooks early return",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5745",
-        "author": "HarK-github",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-18T20:01:25Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "do-not-merge/invalid-commit-message",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5746,
         "title": "feat(helm): Add valueFrom support for environment variables in chart \u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5746",
@@ -2292,12 +2267,60 @@
         }
       },
       {
+        "number": 5747,
+        "title": "frontend: nodes: add upgrade visualization for aks node upgrade",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5747",
+        "author": "Jenniferyingni",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-19T01:05:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5748,
+        "title": "Automatically switch theme based on OS theme",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5748",
+        "author": "rforced",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-19T02:00:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 5622,
         "title": "frontend: `EditMetadataMultipleButton`: Add batch edit labels & annotations for multi-selected resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5622",
         "author": "RajPrakash681",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-19T00:57:46Z",
+        "updated_at": "2026-05-19T02:24:09Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -2316,19 +2339,44 @@
         }
       },
       {
-        "number": 5747,
-        "title": "frontend: nodes: add upgrade visualization for aks node upgrade",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5747",
-        "author": "Jenniferyingni",
+        "number": 5745,
+        "title": "(fix #5187) Fix react-hooks/rules-of-hooks early return",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5745",
+        "author": "HarK-github",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-19T01:05:46Z",
+        "updated_at": "2026-05-19T02:35:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
-          "size/XXL"
+          "do-not-merge/invalid-commit-message",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5396,
+        "title": "frontend: Refactor RequestParams to RequestOptions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
+        "author": "Joshna907",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-19T03:07:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2826,30 +2874,6 @@
         }
       },
       {
-        "number": 5396,
-        "title": "frontend: Refactor RequestParams to RequestOptions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
-        "author": "Joshna907",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T16:05:48Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5019,
         "title": "frontend: Upgrade to Vite 8 and vitest 4",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5019",
@@ -3269,7 +3293,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5728",
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-19T01:14:35Z",
+        "updated_at": "2026-05-19T02:23:40Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
