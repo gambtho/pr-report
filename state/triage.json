@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-18T23:31:44+00:00",
+  "generated_at": "2026-05-19T01:14:37+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 182,
+  "open_prs_total": 183,
   "open_drafts_total": 47,
-  "actionable_total": 124,
+  "actionable_total": 125,
   "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
@@ -1928,30 +1928,6 @@
         }
       },
       {
-        "number": 4988,
-        "title": "frontend: EditButton: Use JSON Patch instead of PUT to avoid 409 conflicts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4988",
-        "author": "gambtho",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-18T15:58:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5738,
         "title": "frontend: plugin: Add registerResourceStatusProvider API and ResourceStatusBadge",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5738",
@@ -2321,7 +2297,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5622",
         "author": "RajPrakash681",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-18T21:59:54Z",
+        "updated_at": "2026-05-19T00:57:46Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -2329,6 +2305,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5747,
+        "title": "frontend: nodes: add upgrade visualization for aks node upgrade",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5747",
+        "author": "Jenniferyingni",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-19T01:05:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3119,30 +3119,6 @@
         }
       },
       {
-        "number": 5728,
-        "title": "frontend: Table: Add keyboard navigation (ArrowUp/ArrowDown)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5728",
-        "author": "RajPrakash681",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-18T18:38:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5413,
         "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
@@ -3253,6 +3229,54 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4988,
+        "title": "frontend: EditButton: Use JSON Patch instead of PUT to avoid 409 conflicts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4988",
+        "author": "gambtho",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-18T23:37:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5728,
+        "title": "frontend: Table: Add keyboard navigation (ArrowUp/ArrowDown)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5728",
+        "author": "RajPrakash681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-19T01:14:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
