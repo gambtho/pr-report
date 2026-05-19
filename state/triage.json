@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T21:39:36+00:00",
+  "generated_at": "2026-05-19T22:37:09+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 185,
   "open_drafts_total": 48,
@@ -2659,6 +2659,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5717,
+        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
+        "author": "WasThatRudy",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-19T22:35:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2693,7 +2717,7 @@
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-04-25T22:27:00Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3277,30 +3301,6 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-19T18:52:52Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5717,
-        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
-        "author": "WasThatRudy",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-19T19:28:15Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
