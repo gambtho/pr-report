@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T07:45:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5538, "title": "frontend: ContainerInfo: Fix key prop placement in ports list", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5731, "title": "backend: kubeconfig: Stop treating empty path and missing file as load errors", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5746, "title": "feat(helm): Add valueFrom support for environment variables in chart", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5748, "title": "Automatically switch theme based on OS theme", "verdict": "NEEDS_DISCUSSION", "size": "Medium"},
+    {"number": 5408, "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial", "verdict": "APPROVE", "size": "Very Large"}
+  ],
+  "skipped": [
+    {"number": -1, "reason": "178 non-draft open PRs skipped — all had human review activity (reviews or comments from non-bot users)"}
+  ],
+  "stats": {
+    "total": 5,
+    "verdicts": {"approve": 3, "request_changes": 1, "needs_discussion": 1},
+    "findings": {"critical": 0, "warning": 5, "suggestion": 6, "positive": 13},
+    "sizes": {"lockfile_only": 0, "small": 3, "medium": 1, "large": 0, "very_large": 1}
+  },
+  "style_guide": [
+    "Commit subject format: `area: SubArea: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`).",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief: maintainer uses 🎉 thanks! as the standard merge acknowledgment.",
+    "Reviewer @illume is the primary maintainer and very responsive; requests CHANGES_REQUESTED for commit guideline violations before final APPROVE.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — pure stylistic refactors without justification are not accepted per AGENTS.md.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing with `eslint-disable`; Material-UI v5 patterns used.",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog; test-first, risk-averse style per AGENTS.md.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic."
+  ],
+  "skip_style_learning": true
+}

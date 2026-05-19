@@ -1,0 +1,35 @@
+{
+  "pr_number": 5538,
+  "title": "frontend: ContainerInfo: Fix key prop placement in ports list",
+  "author": "iashutoshyadav",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5538",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 3,
+  "deletions": 3,
+  "re_review": false,
+  "date": "2026-05-19",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/Resource.tsx",
+      "line": 1652,
+      "description": "Correct use of <React.Fragment key={...}> instead of shorthand fragment; key now on the outermost map-returned element as React requires."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": null,
+      "line": null,
+      "description": "PR description includes precise before/after code snippet and clear reproduction steps."
+    }
+  ]
+}

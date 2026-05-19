@@ -1,0 +1,56 @@
+{
+  "pr_number": 5731,
+  "title": "backend: kubeconfig: Stop treating empty path and missing file as load errors",
+  "author": "govindup63",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5731",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 52,
+  "deletions": 11,
+  "re_review": false,
+  "date": "2026-05-19",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": 476,
+      "description": "Silently suppressing ErrNotExist means a mistyped --kubeconfig path will produce no error and no contexts. Consider adding a slog.Debug/Info at the call sites in createHeadlampHandler to preserve debuggability without reinstating ERROR spam. PR description acknowledges this tradeoff but leaves it open."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": 474,
+      "description": "errors.Is(err, fs.ErrNotExist) correctly distinguishes missing-file from other OS errors (permissions, malformed path), so non-trivial errors still propagate."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": 481,
+      "description": "Upgrades %v to %w error wrapping, enabling errors.Is/errors.As for callers in the future."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig_test.go",
+      "line": 80,
+      "description": "Existing invalid_file subtests correctly renamed to missing_file with assertions flipped to NoError, accurately describing what they exercise."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig_test.go",
+      "line": 87,
+      "description": "New empty_path subtests directly cover the in-cluster scenario; TestLoadAndStoreKubeConfigs/empty_path also asserts the store is empty after the no-op call."
+    }
+  ]
+}

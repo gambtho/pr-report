@@ -1,0 +1,49 @@
+{
+  "pr_number": 5746,
+  "title": "feat(helm): Add valueFrom support for environment variables in chart",
+  "author": "HarK-github",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5746",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 66,
+  "deletions": 1,
+  "re_review": false,
+  "date": "2026-05-19",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.schema.json",
+      "line": null,
+      "description": "PR title/commit uses 'feat(helm): ...' (Conventional Commits) instead of project convention 'helm: env: Add valueFrom support'. Maintainer actively requests commit-guideline fixes before approving."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.schema.json",
+      "line": 284,
+      "description": "valueFrom schema only defines configMapKeyRef and secretKeyRef with additionalProperties: false. Kubernetes EnvVarSource also supports fieldRef (Pod metadata) and resourceFieldRef (container resource limits). Users passing these valid Kubernetes types will get a schema validation failure. Either add the missing ref types or remove additionalProperties: false from the valueFrom wrapper."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.schema.json",
+      "line": null,
+      "description": "No accompanying Helm chart test or helm lint example to confirm the schema validates correctly end-to-end. A test case in charts/headlamp/tests/ would increase confidence before chart publication."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.schema.json",
+      "line": 271,
+      "description": "oneOf: [{required: [value]}, {required: [valueFrom]}] correctly enforces mutual exclusivity matching the Kubernetes API contract."
+    }
+  ]
+}

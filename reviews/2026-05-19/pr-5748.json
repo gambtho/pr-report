@@ -1,0 +1,70 @@
+{
+  "pr_number": 5748,
+  "title": "Automatically switch theme based on OS theme",
+  "author": "rforced",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5748",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 6,
+  "additions": 129,
+  "deletions": 11,
+  "re_review": false,
+  "date": "2026-05-19",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 2,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Settings/__snapshots__/Settings.General.stories.storyshot",
+      "line": null,
+      "description": "autoTheme added to defaultAppThemes but Settings.General.stories.storyshot snapshot was not regenerated. If storyshot tests run in CI this will fail. Run 'npm run storyshots -- -u' to update."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": null,
+      "line": null,
+      "description": "PR title 'Automatically switch theme based on OS theme' does not follow 'area: Component: Description' project convention (e.g. 'frontend: Settings: Add auto OS theme'). Maintainer requests commit-guideline fixes before approving."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/App.tsx",
+      "line": 53,
+      "description": "osColorScheme in useMemo deps is redundant — currentAppTheme is already reactive to OS changes via usePrefersColorScheme() inside useCurrentAppTheme(). The eslint-disable comment could also be removed."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/lib/themes.ts",
+      "line": 566,
+      "description": "getOsColorScheme() duplicates the synchronous window.matchMedia check from usePrefersColorScheme(). Minor duplication; consider extracting a shared helper."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Settings/ThemePreview.tsx",
+      "line": 124,
+      "description": "ThemePreview correctly renders split light/dark preview for auto tile without ever passing unresolved autoTheme to createMuiTheme."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/lib/themes.test.ts",
+      "line": 94,
+      "description": "Four new getThemeName test cases cover OS-dark, OS-light, and backend defaultDarkTheme/defaultLightTheme overrides for the auto preference."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/defaultAppThemes.ts",
+      "line": 163,
+      "description": "autoTheme placed first in defaultAppThemes, making it the most prominent option — good UX positioning."
+    }
+  ]
+}

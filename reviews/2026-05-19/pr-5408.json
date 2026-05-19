@@ -1,0 +1,70 @@
+{
+  "pr_number": 5408,
+  "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial",
+  "author": "illume",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5408",
+  "verdict": "APPROVE",
+  "size_category": "Very Large",
+  "files_changed": 24,
+  "additions": 1488,
+  "deletions": 100,
+  "re_review": false,
+  "date": "2026-05-19",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": ".github/workflows/dex-oauth2-proxy-e2e.yml",
+      "line": 28,
+      "description": "push trigger has no paths filter, so every push to main/rc-*/testing-rc-* (including unrelated changes) triggers a full Dex go build + Minikube startup + Playwright run (~10-15 min). The pull_request trigger correctly uses paths; the same filter should be added to the push trigger."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "e2e-tests/tests/dexOauth2Proxy.spec.ts",
+      "line": null,
+      "description": "No test.setTimeout() override. Default Playwright timeout (30s) may be insufficient for tests waiting on Minikube pod readiness (kubectl wait can take 2-3 min). Consider test.setTimeout(120_000) or a beforeAll readiness wait."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "docs/installation/in-cluster/dex/test-scripts/README.md",
+      "line": 591,
+      "description": "README shows 'dex version' as a sanity check but the Dex binary built from source does not support a 'version' subcommand in v2.45 (exits non-zero). Use 'dex --version' or 'which dex' instead."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "docs/installation/in-cluster/dex/test-scripts/cleanup.sh",
+      "line": 744,
+      "description": "Pidfile-based process management validates ps -p PID -o args= against a specific command pattern before signalling, preventing accidental SIGTERM to recycled PIDs."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "e2e-tests/tests/dexOauth2Proxy.spec.ts",
+      "line": null,
+      "description": "CSRF-state tampering rejection test (test #14) verifies forged OAuth2 callback is rejected with 4xx and no session cookie — a meaningful security regression guard."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "docs/installation/in-cluster/dex/index.md",
+      "line": null,
+      "description": "New tutorial architecture diagram (ASCII + prose) accurately explains the OAuth2-Proxy → Dex → Headlamp flow with screen reader alt text."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "docs/installation/in-cluster/dex/test-scripts/run.sh",
+      "line": null,
+      "description": "Port-forward readiness check uses three-step verification (process alive, PID matches, port accepting TCP) before declaring stack ready, avoiding fragile sleep-based waits."
+    }
+  ]
+}
