@@ -1,0 +1,63 @@
+{
+  "pr_number": 5748,
+  "title": "Automatically switch theme based on OS theme",
+  "author": "rforced",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5748",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Very Large",
+  "files_changed": 128,
+  "additions": 797,
+  "deletions": 3183,
+  "re_review": true,
+  "date": "2026-05-20",
+  "findings_count": {
+    "critical": 0,
+    "warning": 4,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "(PR labels)",
+      "line": null,
+      "description": "do-not-merge/work-in-progress label is present; the PR is explicitly not ready to merge."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "(PR labels)",
+      "line": null,
+      "description": "cncf-cla: no — author has not signed the CNCF CLA; required before merging any kubernetes-sigs contribution."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "(PR labels)",
+      "line": null,
+      "description": "needs-rebase — the branch has merge conflicts with HEAD; storyshots will likely need regeneration after rebase."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/App.tsx",
+      "line": 52,
+      "description": "Stale eslint-disable-next-line react-hooks/exhaustive-deps comment: osColorScheme was added to useMemo deps; verify suppression is still necessary."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/lib/themes.ts",
+      "line": 565,
+      "description": "Orphaned JSDoc block '/** Hook gets theme based on user preference, and also OS/Browser preference. */' left after refactoring; creates duplicate documentation before the real JSDoc for getThemeName."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/App/themeSlice.ts",
+      "line": 113,
+      "description": "usePrefersColorScheme() return value intentionally discarded in useCurrentAppTheme; add inline comment explaining it is called only for its re-render side effect."
+    }
+  ]
+}

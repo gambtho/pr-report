@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T07:33:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {
+      "number": 5748,
+      "title": "Automatically switch theme based on OS theme",
+      "verdict": "REQUEST_CHANGES",
+      "size": "Very Large"
+    }
+  ],
+  "skipped": [
+    {
+      "number": 5538,
+      "reason": "head_sha unchanged since 2026-05-19 review (SKIP_SET)"
+    },
+    {
+      "number": 5731,
+      "reason": "head_sha unchanged since 2026-05-19 review (SKIP_SET)"
+    },
+    {
+      "number": 5746,
+      "reason": "head_sha unchanged since 2026-05-19 review (SKIP_SET)"
+    },
+    {
+      "number": 5408,
+      "reason": "head_sha unchanged since 2026-05-19 review (SKIP_SET)"
+    },
+    {
+      "number": -1,
+      "reason": "177 other non-draft open PRs skipped: all had human review activity (reviews or comments > 0)"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "verdicts": {
+      "approve": 0,
+      "request_changes": 1,
+      "needs_discussion": 0
+    },
+    "findings": {
+      "critical": 0,
+      "warning": 4,
+      "suggestion": 2,
+      "positive": 4
+    },
+    "sizes": {
+      "lockfile_only": 0,
+      "small": 0,
+      "medium": 0,
+      "large": 0,
+      "very_large": 1
+    }
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment from maintainers.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does NOT count as human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — pure stylistic refactors without justification are not accepted.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing with `eslint-disable`; Material-UI v5 patterns used.",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA must be signed before any contribution can be merged."
+  ],
+  "skip_style_learning": true
+}
