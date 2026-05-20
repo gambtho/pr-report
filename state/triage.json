@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-20T21:42:45+00:00",
+  "generated_at": "2026-05-20T22:38:57+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 189,
+  "open_prs_total": 191,
   "open_drafts_total": 49,
-  "actionable_total": 122,
+  "actionable_total": 123,
   "tracked_total": 42,
   "buckets": {
     "needs_rebase": [
@@ -2104,55 +2104,6 @@
         }
       },
       {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-19T15:16:02Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5465,
-        "title": "security: Add ReadHeaderTimeout to http.Server to mitigate Slowloris DoS attacks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5465",
-        "author": "YadavAkhileshh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-19T15:18:15Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5746,
         "title": "feat(helm): Add valueFrom support for environment variables in chart \u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5746",
@@ -2442,6 +2393,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5785,
+        "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-20T22:24:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2476,7 +2451,7 @@
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-04-25T22:27:00Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3463,12 +3438,61 @@
         }
       },
       {
+        "number": 5511,
+        "title": "backend: cmd: Return errors from file utilities instead of exiting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-20T21:44:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5465,
+        "title": "security: Add ReadHeaderTimeout to http.Server to mitigate Slowloris DoS attacks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5465",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-20T21:51:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 5717,
         "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-20T19:42:59Z",
+        "updated_at": "2026-05-20T22:37:16Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
