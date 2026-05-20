@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-20T01:15:48+00:00",
+  "generated_at": "2026-05-20T03:21:27+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 185,
-  "open_drafts_total": 48,
-  "actionable_total": 117,
+  "open_prs_total": 184,
+  "open_drafts_total": 49,
+  "actionable_total": 116,
   "tracked_total": 48,
   "buckets": {
     "needs_rebase": [
@@ -281,7 +281,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-14T01:42:48Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -747,7 +747,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T01:16:57Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2256,30 +2256,6 @@
         }
       },
       {
-        "number": 5337,
-        "title": "frontend(multiplexer): Fix connect setInterval leak",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5337",
-        "author": "Utkarshpandey0001",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-19T14:32:33Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5681,
         "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
@@ -2473,30 +2449,6 @@
         }
       },
       {
-        "number": 5748,
-        "title": "Automatically switch theme based on OS theme",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5748",
-        "author": "rforced",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-19T15:19:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5745,
         "title": "(fix #5187) Fix react-hooks/rules-of-hooks early return",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5745",
@@ -2674,6 +2626,30 @@
         "author": "WasThatRudy",
         "bucket": "ci_failing",
         "updated_at": "2026-05-19T22:38:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5337,
+        "title": "frontend(multiplexer): Fix connect setInterval leak",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5337",
+        "author": "Utkarshpandey0001",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-20T01:45:28Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3157,31 +3133,6 @@
         }
       },
       {
-        "number": 5298,
-        "title": "frontend: lib: Fix unit comparison blindness and decimal CPU truncation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5298",
-        "author": "Joshna907",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-19T16:03:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "do-not-merge/invalid-commit-message",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5719,
         "title": "backend: k8cache: Fix named resource authorization",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5719",
@@ -3432,6 +3383,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5298,
+        "title": "frontend: lib: Fix unit comparison blindness and decimal CPU truncation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5298",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-20T03:01:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
