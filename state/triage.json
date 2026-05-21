@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-21T03:22:12+00:00",
+  "generated_at": "2026-05-21T05:36:29+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 191,
   "open_drafts_total": 49,
-  "actionable_total": 124,
-  "tracked_total": 41,
+  "actionable_total": 123,
+  "tracked_total": 42,
   "buckets": {
     "needs_rebase": [
       {
@@ -183,7 +183,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1400,6 +1400,31 @@
           "is_tracked": true,
           "verifiable": true
         }
+      },
+      {
+        "number": 5752,
+        "title": "frontend: plugin: Implement registerResourceActionProvider API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5752",
+        "author": "Joshna907",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-21T04:37:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
       }
     ],
     "ci_failing": [
@@ -1482,7 +1507,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-04-27T04:39:25Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2392,54 +2417,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 5675,
-        "title": "frontend: Add disk/storage column to nodes list view",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5675",
-        "author": "aabhinavvvvvvv",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-21T03:05:56Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5752,
-        "title": "frontend: plugin: Implement registerResourceActionProvider API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5752",
-        "author": "Joshna907",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-21T03:15:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2642,7 +2619,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T04:35:27Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3438,30 +3415,6 @@
         }
       },
       {
-        "number": 5717,
-        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
-        "author": "WasThatRudy",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-20T23:13:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5298,
         "title": "frontend: lib: Fix unit comparison blindness and decimal CPU truncation",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5298",
@@ -3496,6 +3449,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5675,
+        "title": "frontend: Add disk/storage column to nodes list view",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5675",
+        "author": "aabhinavvvvvvv",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-21T04:26:10Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5717,
+        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
+        "author": "WasThatRudy",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-21T05:15:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3639,7 +3640,7 @@
         "author": "jedbillyb",
         "bucket": "waiting_on_author",
         "updated_at": "2026-04-27T04:38:01Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3664,7 +3665,7 @@
         "author": "kajal-jotwani",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3688,7 +3689,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/L"
