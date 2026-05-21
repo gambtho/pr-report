@@ -1,0 +1,63 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 16,
+  "additions": 275,
+  "deletions": 4,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 2,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": 94,
+      "description": "oidc_auto_login_attempted flag in sessionStorage is only cleared on successful OIDC callback (full-page flow). Explicit logout without a callback leaves the flag set, preventing auto-redirect on the next visit until the tab is closed. Consider clearing on logout."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "LOW",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": 97,
+      "description": "oidcUrl.searchParams.set('dt', Date()) appends a human-readable date string to the OIDC redirect URL. Non-standard, intent unclear, and strict OIDC providers may reject unknown query params. Use Date.now() or remove if not required."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": null,
+      "description": "No frontend test covers the auto-redirect behavior. A unit test with mocked window.location would verify the oidcAutoLogin + auth_type === 'oidc' condition and sessionStorage loop-prevention guard."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/cmd/headlamp.go",
+      "line": 2158,
+      "description": "Author noted backend Go tests were not run locally. CI should be confirmed green before merge, especially TestGetConfigIncludesOidcAutoLogin."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": null,
+      "description": "sessionStorage loop-prevention mechanism is well-conceived and correctly prevents infinite redirects when the user cancels at the IdP."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/i18n/ThemeProviderNexti18n.tsx",
+      "line": null,
+      "description": "getLocale early-return on falsy locale and useState(i18n.language || 'en') initialization are genuine defensive improvements that stand on their own merits."
+    }
+  ]
+}

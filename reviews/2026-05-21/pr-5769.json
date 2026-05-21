@@ -1,0 +1,35 @@
+{
+  "pr_number": 5769,
+  "title": "frontend: MetadataDisplay: Fix owner ref link when apiVersion mismatch",
+  "author": "ManthanNimodiya",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5769",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 8,
+  "deletions": 2,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/Resource/MetadataDisplay.tsx",
+      "line": 69,
+      "description": "resourceClass.apiVersion === ownerRef.apiVersion uses strict equality. A comment noting that this relies on consistent apiVersion format parity between the resource class registry and the Kubernetes API response would help future maintainers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/MetadataDisplay.tsx",
+      "line": null,
+      "description": "Minimal, well-targeted fix. Refactoring the repeated ResourceClasses lookup into a const variable reduces redundancy. Plain-text fallback for mismatched apiVersion is the correct safe behavior."
+    }
+  ]
+}

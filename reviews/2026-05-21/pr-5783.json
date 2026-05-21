@@ -1,0 +1,35 @@
+{
+  "pr_number": 5783,
+  "title": "helm: Fix file descriptor leak in createFullPath",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5783",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 10,
+  "deletions": 6,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/helm/repository.go",
+      "line": 233,
+      "description": "O_TRUNC flag included even though the function is only called after confirming the file does not exist. Omitting O_TRUNC (use os.O_CREATE|os.O_WRONLY) would be more precise, avoiding accidental clobber of a file created between the Stat and OpenFile calls."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/helm/repository.go",
+      "line": null,
+      "description": "Clean fix of the fd leak. Switching from os.Create (implicit 0666) to os.OpenFile with defaultNewConfigFileMode (0o644) is a minor security improvement."
+    }
+  ]
+}

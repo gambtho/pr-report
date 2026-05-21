@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-21T07:45:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5786, "title": "backend: changed format verb %v with %w", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5785, "title": "frontend: themes: Replace deprecated MediaQueryList listener methods", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5783, "title": "helm: Fix file descriptor leak in createFullPath", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5781, "title": "frontend: deps: Bump yaml from 2.8.3 to 2.9.0", "verdict": "APPROVE", "size": "Lockfile-only"},
+    {"number": 5779, "title": "frontend: Add @typescript/native-preview and use it for type checking", "verdict": "NEEDS_DISCUSSION", "size": "Medium"},
+    {"number": 5778, "title": "feat: Add configurable external links to sidebar via Helm values", "verdict": "REQUEST_CHANGES", "size": "Medium"},
+    {"number": 5777, "title": "backend: Fix all-namespace cache invalidation", "verdict": "NEEDS_DISCUSSION", "size": "Small"},
+    {"number": 5775, "title": "frontend: Fix Backstage receiver listener leak on Home remount", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5774, "title": "frontend: Chart: fix react-hooks/refs violation", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5769, "title": "frontend: MetadataDisplay: Fix owner ref link when apiVersion mismatch", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5768, "title": "frontend: App: Remove unused themeName dependency", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5767, "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5764, "title": "backend/frontend/helm: Add --oidc-auto-login support", "verdict": "NEEDS_DISCUSSION", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": 5748, "reason": "head_sha unchanged since last review (2026-05-20)"},
+    {"number": 5538, "reason": "head_sha unchanged since last review (2026-05-19)"},
+    {"number": 5731, "reason": "head_sha unchanged since last review (2026-05-19)"},
+    {"number": 5746, "reason": "head_sha unchanged since last review (2026-05-19)"},
+    {"number": 5408, "reason": "head_sha unchanged since last review (2026-05-19)"}
+  ],
+  "stats": {
+    "total": 13,
+    "verdicts": {"approve": 9, "request_changes": 1, "needs_discussion": 3},
+    "findings": {"critical": 1, "warning": 8, "suggestion": 9, "positive": 14},
+    "sizes": {"lockfile_only": 1, "small": 9, "medium": 3, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter",
+    "Keep commit subject under 72 characters",
+    "Do NOT include Fixes #NN, closes #NN auto-close keywords in commit messages",
+    "Approval style is warm and brief; maintainer @illume is primary reviewer",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — not human review",
+    "Frontend: fix exhaustive-deps violations rather than suppressing with eslint-disable",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need",
+    "Material-UI v5 patterns used throughout frontend"
+  ],
+  "skip_style_learning": true
+}

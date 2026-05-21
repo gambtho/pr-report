@@ -1,0 +1,56 @@
+{
+  "pr_number": 5778,
+  "title": "feat: Add configurable external links to sidebar via Helm values",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 11,
+  "additions": 129,
+  "deletions": 9,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 1,
+    "warning": 1,
+    "suggestion": 2,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Critical",
+      "confidence": "HIGH",
+      "file": "backend/cmd/server.go",
+      "line": 98,
+      "description": "Unresolved Git merge conflict markers (<<<<<<< HEAD, =======, >>>>>>>) present in backend/cmd/server.go, backend/pkg/config/config.go, and backend/pkg/headlampconfig/headlampConfig.go. The Go compiler will reject these files. Must rebase and resolve conflicts."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "backend/cmd/headlamp.go",
+      "line": null,
+      "description": "Commit title uses Conventional Commits format ('feat: ...') instead of project convention 'area: Component: Description'."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/cmd/headlamp.go",
+      "line": 2156,
+      "description": "External links JSON parsed on every /config request. Parsing at startup and failing fast would surface misconfiguration earlier."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/Sidebar/useSidebarItems.tsx",
+      "line": 453,
+      "description": "Sidebar group icon ('mdi:link-variant') and per-link fallback icon ('mdi:link') are hardcoded. ExternalLink already has an optional icon field; consider documenting or making the group icon configurable."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/redux/configSlice.ts",
+      "line": null,
+      "description": "Redux slice, Storybook fixtures, and unit test are well-structured. Frontend correctly guards against empty externalLinks array before rendering the sidebar group."
+    }
+  ]
+}

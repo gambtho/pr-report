@@ -1,0 +1,42 @@
+{
+  "pr_number": 5777,
+  "title": "backend: Fix all-namespace cache invalidation",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 13,
+  "deletions": 4,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": null,
+      "description": "Author explicitly states they could not run 'go test ./pkg/k8cache' locally due to disk space constraints. A cache-invalidation correctness fix must have passing tests before merge. CI must be green."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": 289,
+      "description": "Log message 'key will be deleted from the cache' refers to the namespace-scoped key only, but DeleteKeys also evicts the all-namespace entry. Update log to reflect both keys being invalidated."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": null,
+      "description": "Correct approach: reuses DeleteKeys helper for consistent invalidation semantics. Test additions properly cover the all-namespace scenario."
+    }
+  ]
+}

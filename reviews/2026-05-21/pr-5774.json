@@ -1,0 +1,28 @@
+{
+  "pr_number": 5774,
+  "title": "frontend: Chart: fix react-hooks/refs violation",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5774",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 14,
+  "deletions": 6,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Chart.tsx",
+      "line": null,
+      "description": "Idiomatic fix: wrapping ref.current access in a useCallback with [] deps defers the call to event time, correctly resolving the react-hooks/refs violation without changing behavior."
+    }
+  ]
+}

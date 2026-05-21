@@ -1,0 +1,28 @@
+{
+  "pr_number": 5781,
+  "title": "frontend: deps: Bump yaml from 2.8.3 to 2.9.0",
+  "author": "vyncent-t",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5781",
+  "verdict": "APPROVE",
+  "size_category": "Lockfile-only",
+  "files_changed": 1,
+  "additions": 3,
+  "deletions": 3,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/package-lock.json",
+      "line": null,
+      "description": "Clean lockfile-only bump with correct version and updated integrity hash. No functional code touched."
+    }
+  ]
+}

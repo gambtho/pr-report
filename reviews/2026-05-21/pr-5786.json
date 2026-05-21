@@ -1,0 +1,35 @@
+{
+  "pr_number": 5786,
+  "title": "backend: changed format verb %v with %w",
+  "author": "vmridul",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5786",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 7,
+  "deletions": 7,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": null,
+      "description": "Commit title uses lowercase verb 'changed' and is missing a SubArea component. Project convention is 'area: SubArea: Description' with Description starting with a capital letter (e.g. 'backend: kubeconfig: Change format verb %v to %w')."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": null,
+      "description": "All six %v → %w substitutions are correct and improve error-chain inspectability via errors.Is/errors.As."
+    }
+  ]
+}

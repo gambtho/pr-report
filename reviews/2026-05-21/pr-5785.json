@@ -1,0 +1,35 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 18,
+  "deletions": 10,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/lib/themes.ts",
+      "line": 581,
+      "description": "The eslint-disable comment above the empty [] dep array is intentional but undocumented. A brief inline note like '// intentional: register once on mount' would aid future readers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/lib/themes.ts",
+      "line": null,
+      "description": "Clean migration from deprecated addListener/removeListener to standard addEventListener/removeEventListener. Handler type correctly narrowed to MediaQueryListEvent. Tests updated in lock-step."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pr_number": 5768,
+  "title": "frontend: App: Remove unused themeName dependency",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5768",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 1,
+  "deletions": 2,
+  "re_review": false,
+  "date": "2026-05-21",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/App.tsx",
+      "line": null,
+      "description": "Correct removal of spurious themeName dep and its eslint-disable comment. currentAppTheme alone is sufficient and semantically correct."
+    }
+  ]
+}
