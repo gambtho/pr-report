@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T23:36:59+00:00",
+  "generated_at": "2026-05-21T01:16:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 191,
   "open_drafts_total": 49,
@@ -1181,7 +1181,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:05Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1206,7 +1206,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:18Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -2032,30 +2032,6 @@
         }
       },
       {
-        "number": 5681,
-        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
-        "author": "jgsuess",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-19T14:35:06Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4342,
         "title": "Frontend Blocker: Storage Pools and Snapshot pages broken due to Headlamp v0.39 CRD rendering crash",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4342",
@@ -2408,6 +2384,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5681,
+        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
+        "author": "jgsuess",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-21T00:18:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
