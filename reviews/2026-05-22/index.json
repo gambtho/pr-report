@@ -1,0 +1,173 @@
+{
+  "date": "2026-05-22",
+  "generated_at": "2026-05-22T07:40:50.057147+00:00",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {
+      "number": 5746,
+      "title": "feat(helm): Add valueFrom support for environment variables in chart",
+      "verdict": "REQUEST_CHANGES",
+      "size": "Small"
+    },
+    {
+      "number": 5764,
+      "title": "backend/frontend/helm: Add --oidc-auto-login support",
+      "verdict": "NEEDS_DISCUSSION",
+      "size": "Medium"
+    },
+    {
+      "number": 5767,
+      "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5768,
+      "title": "frontend: App: Remove unused themeName dependency",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5774,
+      "title": "frontend: Chart: fix react-hooks/refs violation",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5777,
+      "title": "backend: Fix all-namespace cache invalidation",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5783,
+      "title": "helm: Fix file descriptor leak in createFullPath",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5785,
+      "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5786,
+      "title": "backend: changed format verb %v with %w",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5794,
+      "title": "backend: auth/kubeconfig: Skip empty OIDC CA cert instead of failing",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5795,
+      "title": "github: app-artifacts-mac: Notarize via electron-builder",
+      "verdict": "APPROVE",
+      "size": "Medium"
+    },
+    {
+      "number": 5798,
+      "title": "backend: k8cache: Bypass non-API cluster paths",
+      "verdict": "APPROVE",
+      "size": "Medium"
+    },
+    {
+      "number": 5803,
+      "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5804,
+      "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5805,
+      "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5809,
+      "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+      "verdict": "APPROVE",
+      "size": "Small"
+    },
+    {
+      "number": 5820,
+      "title": "frontend: ScaleButton: Memoize replica count computation",
+      "verdict": "APPROVE",
+      "size": "Small"
+    }
+  ],
+  "skipped": [
+    {
+      "number": 5408,
+      "reason": "head_sha unchanged since 2026-05-19"
+    },
+    {
+      "number": 5538,
+      "reason": "head_sha unchanged since 2026-05-19"
+    },
+    {
+      "number": 5731,
+      "reason": "head_sha unchanged since 2026-05-19"
+    },
+    {
+      "number": 5775,
+      "reason": "head_sha unchanged since 2026-05-21"
+    },
+    {
+      "number": 5778,
+      "reason": "head_sha unchanged since 2026-05-21"
+    },
+    {
+      "number": 5779,
+      "reason": "head_sha unchanged since 2026-05-21"
+    },
+    {
+      "number": 5781,
+      "reason": "head_sha unchanged since 2026-05-21"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "verdicts": {
+      "approve": 15,
+      "request_changes": 1,
+      "needs_discussion": 1
+    },
+    "findings": {
+      "critical": 0,
+      "warning": 4,
+      "suggestion": 7,
+      "positive": 18
+    },
+    "sizes": {
+      "lockfile_only": 0,
+      "small": 14,
+      "medium": 3,
+      "large": 0,
+      "very_large": 0
+    }
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` \u2014 description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief: `\ud83c\udf89 thanks!` is the standard merge acknowledgment from maintainers.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs; its presence does NOT indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need \u2014 pure stylistic refactors without justification are not accepted.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing with `eslint-disable`; Material-UI v5 patterns used.",
+    "Backend (Go): use comma-ok type assertions; structured logging via slog; test-first, risk-averse style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "k8s-ci-robot posts automated IssueComments on every PR \u2014 these are bot comments and do not count as human review activity."
+  ],
+  "skip_style_learning": true
+}

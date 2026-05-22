@@ -1,0 +1,28 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 25,
+  "deletions": 14,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Test cases now also assert the correct event name (`'change'`) and verify the exact handler function reference is passed to removeEventListener \u2014 stronger coverage than the prior tests."
+    }
+  ]
+}

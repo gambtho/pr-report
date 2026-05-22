@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-05-21*
+*Last updated: 2026-05-22*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -24,37 +24,46 @@
 - **Other:** Electron desktop app (app/), plugin system (plugins/), i18n tooling (tools/i18n/)
 
 ## Common Issues
-- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 2 sessions).
-- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746).
+- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 3 sessions).
+- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews).
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
 - CI workflow `push` triggers without `paths` filter causing unnecessary full-stack e2e runs on unrelated commits (seen in PR #5408).
 - Missing storyshot regeneration when `defaultAppThemes` array changes (seen in PR #5748).
-- Commit title lowercase verb + missing SubArea (seen in PR #5786 — `backend: changed format verb` should be `backend: kubeconfig: Change format verb`).
+- Commit title lowercase verb + missing SubArea (seen in PR #5786 — `backend: changed format verb %v with %w` should be `backend: kubeconfig: Change format verb %v to %w`).
 - Unresolved Git merge conflict markers in PRs (seen in PR #5778 — `backend/cmd/server.go`, `backend/pkg/config/config.go`, `backend/pkg/headlampconfig/headlampConfig.go`).
 - PRs where author cannot run tests locally (seen in PR #5777 — disk space; PR #5764 — no Go toolchain). CI must confirm green before merge.
-- `sessionStorage` used for OIDC loop-prevention (PR #5764) needs careful scoping: flag should be cleared on explicit logout, not just on successful OIDC callback.
+- `useMemo(() => value, [])` anti-pattern used as a one-shot initialiser instead of lazy `useState(() => value)` (seen in PR #5767, #5803; 2 sessions). Fix is to use lazy useState.
+- Render-phase state updates (`setState` called unconditionally during render body) causing React to drop and re-run the render (seen in PR #5805 — setPage(0); fix: move to useEffect).
+- Two sequential `setState` calls in the same render for the same piece of state, causing the second to overwrite the first (seen in PR #5804 — useKubeObjectList; fix: use functional updater).
+- Missing frontend Vitest tests for new behavioral flows (seen in PR #5764 — OIDC auto-login useEffect not tested).
 
 ## False Positives / Project Conventions
 - copilot-pull-request-reviewer[bot] auto-reviews every PR; this is NOT human review activity and should not count as a filter criterion for "has human review". The GraphQL review filter must check `author.__typename == "User"` to distinguish human from bot reviews.
 - k8s-ci-robot posts automated comments (APPROVALNOTIFIER, welcome messages) on every PR — these are bot comments and do not count as human review activity.
 - @illume reviews PRs very quickly after opening, so PRs that appear unreviewed often already have a review within hours.
-- `addListener`/`removeListener` on MediaQueryList is pre-existing code in `frontend/src/lib/themes.ts` — not a new issue and is suppressed via eslint-disable already; do not flag as new issue (PR #5785 fixed it).
+- `addListener`/`removeListener` on MediaQueryList is pre-existing code in `frontend/src/lib/themes.ts` — fixed in PR #5785; no longer present.
 - Theme names are displayed via `capitalize(it.name)` in Settings.tsx — no dedicated displayName/label field needed; 'auto' → 'Auto' is acceptable.
 - `useCallback` with `[]` dep array wrapping a `ref.current` access is the correct pattern for the react-hooks/refs rule — not a stale closure issue since ref objects are stable.
 - Redux `dispatch` from `useDispatch()` is guaranteed stable across renders; adding it to `useEffect`/`useMemo` deps is correct and does not cause extra re-runs.
+- `IsAuthBypassURL` in the k8cache package returns `true` for paths that require full auth-error handling (i.e. normal Kubernetes resource API paths), contrary to what the name implies. Do not flag this as a bug — flag the naming as a Suggestion.
 
 ## Author Notes
 - @illume: Primary maintainer; approves promptly but requests commit-guideline fixes first; warm/encouraging tone. Authored PR #5408 (large doc+e2e update for Dex/OAuth2-Proxy tutorial).
 - @iashutoshyadav: Clean small fix style; good PR description with before/after code.
 - @govindup63: Well-documented PR with detailed step-by-step test instructions and full backend test coverage; thorough author.
 - @rforced: Feature contributor; needs reminder about project commit convention.
-- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance).
-- @YadavAkhileshh: Two PRs in one session (#5785, #5783) — clean small fixes, good PR descriptions, follows project conventions.
-- @kishore08-07: Three PRs in one session (#5774, #5768, #5767) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, no commit format issues.
-- @Rohith-Saran: Two PRs in one session (#5778, #5775) — #5775 was clean; #5778 had unresolved merge conflicts and Conventional Commits format.
+- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 3 sessions — fieldRef/resourceFieldRef still missing.
+- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions.
+- @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format.
+- @ayushmaan-16: Three PRs in 2026-05-22 session (#5805, #5804, #5803) — all React hooks/render-phase fixes; clean descriptions with clear before/after rationale; correct commit format.
+- @Rohith-Saran: PR #5775 was clean; PR #5778 had unresolved merge conflicts and Conventional Commits format.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker, which needs team discussion.
-- @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company; backend tests not run locally.
-- @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format.
+- @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company; backend tests not run locally. PR updated with sessionStorage fixes.
+- @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
+- @Nabsku: Backend contributor; PR #5777 (cache invalidation fix, solid tests) and PR #5798 (k8cache bypass, good refactor).
+- @yu-heejin: New contributor; PR #5809 (milli-bytes parsing fix) — clean fix with tests.
+- @joaquimrocha: Core maintainer/contributor; PR #5795 simplifies Mac notarization CI — tested in branch.
+- @beep-boopp: New contributor; PR #5794 (empty OIDC CA cert fix) — correct defence-in-depth fix.
 
 ## Session Log
 ### 2026-05-18
@@ -76,3 +85,8 @@
 - Reviewed 13 PRs: #5786 (APPROVE), #5785 (APPROVE), #5783 (APPROVE), #5781 (APPROVE), #5779 (NEEDS_DISCUSSION), #5778 (REQUEST_CHANGES), #5777 (NEEDS_DISCUSSION), #5775 (APPROVE), #5774 (APPROVE), #5769 (APPROVE), #5768 (APPROVE), #5767 (APPROVE), #5764 (NEEDS_DISCUSSION)
 - Skipped: 5 PRs in SKIP_SET (head_sha unchanged); ~178 other non-draft PRs had human review activity (k8s-ci-robot bot comments only on the 13 reviewed PRs, all with no formal User reviews)
 - New observations: k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review. Unresolved merge conflicts found in PR #5778 (critical). Large hooks-cleanup initiative (#5183) spawning many small sub-issue PRs. Experimental tsgo compiler being introduced as dev tooling (PR #5779 — needs maintainer discussion). OIDC auto-login feature (PR #5764) well-structured but sessionStorage logout edge case needs attention.
+
+### 2026-05-22
+- Reviewed 17 PRs: #5786 (APPROVE re-review), #5785 (APPROVE re-review), #5783 (APPROVE re-review), #5777 (APPROVE re-review), #5774 (APPROVE re-review), #5768 (APPROVE re-review), #5767 (APPROVE re-review), #5764 (NEEDS_DISCUSSION re-review), #5746 (REQUEST_CHANGES re-review), #5820 (APPROVE), #5809 (APPROVE), #5805 (APPROVE), #5804 (APPROVE), #5803 (APPROVE), #5798 (APPROVE), #5795 (APPROVE), #5794 (APPROVE)
+- Skipped: 7 PRs in SKIP_SET (head_sha unchanged: #5408, #5538, #5731, #5775, #5778, #5779, #5781); ~171 other non-draft PRs had human review activity
+- New observations: Render-phase setState anti-pattern cluster: 3 new PRs by @ayushmaan-16 fix different forms of the same issue. k8cache bypass fix (#5798) introduces `IsKubernetesResourceAPIPath` — potentially confusing `IsAuthBypassURL` naming. Mac notarization CI simplified by maintainer (#5795). OIDC empty CA cert was a silent breakage for all public OIDC providers (#5794).

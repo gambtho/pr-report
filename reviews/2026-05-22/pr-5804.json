@@ -1,0 +1,35 @@
+{
+  "pr_number": 5804,
+  "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 16,
+  "deletions": 6,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Using the functional updater form `setListsToWatch(prev => ...)` is the correct React pattern for state updates that depend on current state \u2014 avoids the stale closure issue entirely."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Structural equality check `.some(stop => stop.cluster === it.cluster && stop.namespace === it.namespace)` is more robust than the previous reference equality \u2014 correctly handles new object instances with the same logical identity."
+    }
+  ]
+}

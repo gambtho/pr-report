@@ -1,0 +1,35 @@
+{
+  "pr_number": 5795,
+  "title": "github: app-artifacts-mac: Notarize via electron-builder",
+  "author": "joaquimrocha",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5795",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 2,
+  "additions": 7,
+  "deletions": 105,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": ".github/workflows/app-artifacts-mac.yml",
+      "line": "51",
+      "description": "Three new secret names are used (`APPLEID`, `APPLEIDPASS`, `APPLETEAMID`) which differ from the previous `APPLE_TEAM_ID`. Ensure these secrets are configured in the repo/org settings before merging, or the signed build step will silently use empty values and produce an unsigned artifact."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Removes ~93 lines of Windows-runner ESRP infrastructure \u2014 significant reduction in CI complexity and attack surface."
+    }
+  ]
+}

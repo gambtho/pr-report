@@ -1,0 +1,28 @@
+{
+  "pr_number": 5794,
+  "title": "backend: auth/kubeconfig: Skip empty OIDC CA cert instead of failing",
+  "author": "beep-boopp",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5794",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 3,
+  "additions": 16,
+  "deletions": 2,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Defence-in-depth: the fix is applied both at the point of pointer creation (`kubeconfig.go`) and at the point of use (`auth.go`), so neither layer alone is a single point of failure."
+    }
+  ]
+}

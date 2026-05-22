@@ -1,0 +1,35 @@
+{
+  "pr_number": 5746,
+  "title": "feat(helm): Add valueFrom support for environment variables in chart",
+  "author": "HarK-github",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5746",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 66,
+  "deletions": 1,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 0,
+    "positive": 0
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.schema.json",
+      "line": "",
+      "description": "`valueFrom` only covers `configMapKeyRef` and `secretKeyRef`. Kubernetes `EnvVarSource` also supports `fieldRef` (Downward API \u2014 Pod metadata) and `resourceFieldRef` (container resource limits/requests). Omitting them means valid Kubernetes env-var configs will fail Helm schema validation. Add both `fieldRef` and `resourceFieldRef` as additional `oneOf` alternatives, or remove `additionalProperties: false` from the `valueFrom` object."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.schema.json",
+      "line": "",
+      "description": "Commit title `feat(helm): Add valueFrom support for environment variables in chart` uses Conventional Commits style. Project convention is `helm: deployment: Add valueFrom support for env vars`. This will likely trigger a CHANGES_REQUESTED from the maintainer before merge."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pr_number": 5783,
+  "title": "helm: Fix file descriptor leak in createFullPath",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5783",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 45,
+  "deletions": 6,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "The test comment `// verifies no leaked descriptor locking the file, esp on Windows` correctly motivates the third test case, which would have caught the original bug."
+    }
+  ]
+}

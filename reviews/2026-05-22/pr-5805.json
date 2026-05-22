@@ -1,0 +1,28 @@
+{
+  "pr_number": 5805,
+  "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5805",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 15,
+  "deletions": 12,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Memoising `filteredData` as a prerequisite for the effect is a thoughtful design \u2014 avoids a potential double-trigger where both the render and the effect recompute the filtered list independently."
+    }
+  ]
+}

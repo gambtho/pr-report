@@ -1,0 +1,35 @@
+{
+  "pr_number": 5777,
+  "title": "backend: Fix all-namespace cache invalidation",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 45,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Test uses `assert.Eventually` with a generous 2 s timeout \u2014 robust against scheduler jitter without being brittle."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": "",
+      "description": "Log message 'and any namespace-stripped variant will be deleted from the cache' is grammatically awkward; consider 'will delete both the namespaced key and the all-namespace variant'."
+    }
+  ]
+}

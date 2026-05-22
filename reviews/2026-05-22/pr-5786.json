@@ -1,0 +1,35 @@
+{
+  "pr_number": 5786,
+  "title": "backend: changed format verb %v with %w",
+  "author": "vmridul",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5786",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 7,
+  "deletions": 7,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": "",
+      "description": "Commit subject `backend: changed format verb %v with %w` uses a lowercase verb; project convention is capitalised description and a SubArea, e.g. `backend: kubeconfig: Change format verb %v to %w`."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Consistent replacement across both kubeconfig.go and watcher.go; no call sites missed."
+    }
+  ]
+}

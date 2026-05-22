@@ -1,0 +1,42 @@
+{
+  "pr_number": 5798,
+  "title": "backend: k8cache: Bypass non-API cluster paths",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 167,
+  "deletions": 21,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/cmd/server.go",
+      "line": "241",
+      "description": "The condition `shouldUseCache := k8cache.IsKubernetesResourceAPIPath(r.URL.Path) && k8cache.IsAuthBypassURL(r.URL.Path)` is potentially confusing: `IsAuthBypassURL` returns `true` for paths that should be cached (i.e. are NOT auth-bypass endpoints). The naming implies the opposite. Consider renaming to `IsAuthRequiredURL` or `RequiresAuthErrorHandling` for clarity."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Refactoring `apiIdx` logic into `kubernetesResourceAPIPathIndex` eliminates three copies of the same pattern in `GetAPIGroup`, `ExtractNamespace`, and the new function \u2014 reduces drift risk."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "New test cases for `GetAPIGroup` with direct `/api/v1/pods` and `/apis/apps/v1/deployments` paths fill a gap where only `/clusters/...` paths were previously tested."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "pr_number": 5809,
+  "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+  "author": "yu-heejin",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 11,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/lib/units.ts",
+      "line": "41",
+      "description": "Using `parseInt(value, 10)` before dividing by 1000 is safe for the values seen in practice (up to ~1.47e13, well within JS safe-integer range). A brief comment noting this is fine for Kubernetes resource quantities would help future maintainers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "The early-return guard `/^\\d+m$/.test(value)` runs before the general regex, preventing any ambiguity with the megabyte `M` suffix (separate regex branch)."
+    }
+  ]
+}

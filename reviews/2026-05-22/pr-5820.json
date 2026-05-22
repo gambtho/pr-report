@@ -1,0 +1,28 @@
+{
+  "pr_number": 5820,
+  "title": "frontend: ScaleButton: Memoize replica count computation",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5820",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 10,
+  "deletions": 10,
+  "re_review": false,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Lazy `useState(() => getNumReplicas(resource))` correctly captures the initial replica count at mount without a stale closure \u2014 clean migration."
+    }
+  ]
+}

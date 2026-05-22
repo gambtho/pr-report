@@ -1,0 +1,28 @@
+{
+  "pr_number": 5767,
+  "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5767",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 10,
+  "deletions": 15,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Switching `defaultRowsPerPageValue` from useMemo to lazy useState correctly captures `defaultValue` at mount time \u2014 semantically equivalent and idiomatically cleaner."
+    }
+  ]
+}

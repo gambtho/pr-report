@@ -1,0 +1,56 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 16,
+  "additions": 286,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-22",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 2,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": "82",
+      "description": "No Vitest test covers the auto-login `useEffect` path in `AuthChooser`. This is a critical flow (automatic redirect) \u2014 missing test coverage means regressions won't be caught. A test should mock `sessionStorage`, `window.location`, and the `oidcAutoLogin` selector."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": "95",
+      "description": "`window.location.href = oidcUrl.toString()` performs a hard navigation that bypasses React Router. This is intentional for the full-page OIDC redirect, but a comment explaining the choice would aid future readers."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/oidcauth/index.tsx",
+      "line": "28",
+      "description": "`new URL(window.location.href).searchParams.get('cluster')` is used via `useLocation` \u2014 the `cluster` variable is already validated non-null before the `if (!window.opener)` branch, which is good. Consider adding a JSDoc comment explaining the two-flow distinction (popup vs. full-page redirect)."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "The previous sessionStorage edge case (flag not cleared after successful OIDC auth) is now fixed: `sessionStorage.removeItem` is called in both `oidcauth/index.tsx` (successful callback) and `authchooser/index.tsx` (manual sign-in click)."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "",
+      "file": "",
+      "line": "",
+      "description": "Bonus fix in `ThemeProviderNexti18n.tsx` guards `getLocale('')` with an early return, preventing a crash when `i18n.language` is falsy."
+    }
+  ]
+}
