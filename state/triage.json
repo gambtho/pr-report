@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T23:30:41+00:00",
+  "generated_at": "2026-05-22T01:15:12+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 197,
   "open_drafts_total": 48,
@@ -1157,7 +1157,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:05Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1182,7 +1182,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:18Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -2225,32 +2225,6 @@
         }
       },
       {
-        "number": 5371,
-        "title": "frontend: warn user before token expiry and auto-logout on session end",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5371",
-        "author": "prabindersinghh",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-21T13:04:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "oidc",
-          "cncf-cla: yes",
-          "size/XL",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5462,
         "title": "frontend: KubeConfigLoader: Show server URL and user in cluster selection",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5462",
@@ -2333,6 +2307,32 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5371,
+        "title": "frontend: warn user before token expiry and auto-logout on session end",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5371",
+        "author": "prabindersinghh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-22T00:07:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "oidc",
+          "cncf-cla: yes",
+          "size/XL",
+          "needs review"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3316,30 +3316,6 @@
         }
       },
       {
-        "number": 4938,
-        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
-        "author": "cmcgalliard",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-21T14:28:50Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5786,
         "title": "backend: changed format verb %v with %w",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5786",
@@ -3518,6 +3494,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4938,
+        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
+        "author": "cmcgalliard",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-22T01:08:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
