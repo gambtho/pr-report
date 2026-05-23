@@ -1,0 +1,42 @@
+{
+  "pr_number": 5803,
+  "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5803",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 10,
+  "deletions": 2,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 184,
+      "description": "URL param key reconstructed manually as prefix.perPage — verify this matches useURLState's internal key composition to avoid a missed URL-param check."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 178,
+      "description": "useMemo with empty deps (stale initializer anti-pattern) removed; direct computation makes defaultRowsPerPage reactive."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 186,
+      "description": "useEffect syncs rowsPerPage only when URL param is absent — avoids overriding explicit URL state."
+    }
+  ]
+}

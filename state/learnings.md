@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-05-22*
+*Last updated: 2026-05-23*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -24,18 +24,20 @@
 - **Other:** Electron desktop app (app/), plugin system (plugins/), i18n tooling (tools/i18n/)
 
 ## Common Issues
-- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 3 sessions).
-- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews).
+- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 4 sessions). PR #5778 by @Rohith-Saran persists after 3 re-reviews.
+- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json`.
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
 - CI workflow `push` triggers without `paths` filter causing unnecessary full-stack e2e runs on unrelated commits (seen in PR #5408).
 - Missing storyshot regeneration when `defaultAppThemes` array changes (seen in PR #5748).
 - Commit title lowercase verb + missing SubArea (seen in PR #5786 — `backend: changed format verb %v with %w` should be `backend: kubeconfig: Change format verb %v to %w`).
-- Unresolved Git merge conflict markers in PRs (seen in PR #5778 — `backend/cmd/server.go`, `backend/pkg/config/config.go`, `backend/pkg/headlampconfig/headlampConfig.go`).
+- Unresolved Git merge conflict markers in PRs (seen in PR #5778 — resolved in 2026-05-23 re-review).
 - PRs where author cannot run tests locally (seen in PR #5777 — disk space; PR #5764 — no Go toolchain). CI must confirm green before merge.
-- `useMemo(() => value, [])` anti-pattern used as a one-shot initialiser instead of lazy `useState(() => value)` (seen in PR #5767, #5803; 2 sessions). Fix is to use lazy useState.
+- `useMemo(() => value, [])` anti-pattern used as a one-shot initialiser instead of lazy `useState(() => value)` (seen in PR #5767, #5803; 2 sessions). Fix is to use direct computation when the value should be reactive.
 - Render-phase state updates (`setState` called unconditionally during render body) causing React to drop and re-run the render (seen in PR #5805 — setPage(0); fix: move to useEffect).
-- Two sequential `setState` calls in the same render for the same piece of state, causing the second to overwrite the first (seen in PR #5804 — useKubeObjectList; fix: use functional updater).
+- Two sequential `setState` calls in the same render for the same piece of state, causing the second to overwrite the first (seen in PR #5804 — useKubeObjectList; fix: use functional updater + structural identity comparison).
 - Missing frontend Vitest tests for new behavioral flows (seen in PR #5764 — OIDC auto-login useEffect not tested).
+- Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778; schema lacks `additionalProperties: false` for config so won't hard-fail, but IDE auto-complete broken).
+- PR body containing unresolved placeholder `#<issue-number>` instead of real issue reference (seen in PR #5778).
 
 ## False Positives / Project Conventions
 - copilot-pull-request-reviewer[bot] auto-reviews every PR; this is NOT human review activity and should not count as a filter criterion for "has human review". The GraphQL review filter must check `author.__typename == "User"` to distinguish human from bot reviews.
@@ -46,24 +48,27 @@
 - `useCallback` with `[]` dep array wrapping a `ref.current` access is the correct pattern for the react-hooks/refs rule — not a stale closure issue since ref objects are stable.
 - Redux `dispatch` from `useDispatch()` is guaranteed stable across renders; adding it to `useEffect`/`useMemo` deps is correct and does not cause extra re-runs.
 - `IsAuthBypassURL` in the k8cache package returns `true` for paths that require full auth-error handling (i.e. normal Kubernetes resource API paths), contrary to what the name implies. Do not flag this as a bug — flag the naming as a Suggestion.
+- `normalizedData = data ?? null` in SimpleTable is a render-body computation (not memoized); reference instability is a pre-existing concern from before the PR and is not introduced by the fix. Do not flag as a new bug — flag only as a low-priority suggestion for callers to stabilize the data prop.
+- URL key format in `useURLState` with prefix: manually reconstructed as `prefix.perPage`. If the key format mismatch is discovered, it's a Suggestion, not a Warning.
 
 ## Author Notes
 - @illume: Primary maintainer; approves promptly but requests commit-guideline fixes first; warm/encouraging tone. Authored PR #5408 (large doc+e2e update for Dex/OAuth2-Proxy tutorial).
 - @iashutoshyadav: Clean small fix style; good PR description with before/after code.
 - @govindup63: Well-documented PR with detailed step-by-step test instructions and full backend test coverage; thorough author.
 - @rforced: Feature contributor; needs reminder about project commit convention.
-- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 3 sessions — fieldRef/resourceFieldRef still missing.
-- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions.
+- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 4 sessions — fieldRef/resourceFieldRef still missing.
+- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions; PR #5783 resolved properly with `os.IsExist` race guard.
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format.
-- @ayushmaan-16: Three PRs in 2026-05-22 session (#5805, #5804, #5803) — all React hooks/render-phase fixes; clean descriptions with clear before/after rationale; correct commit format.
-- @Rohith-Saran: PR #5775 was clean; PR #5778 had unresolved merge conflicts and Conventional Commits format.
+- @ayushmaan-16: Five PRs in 2026-05-22/23 sessions (#5805, #5804, #5803) — all React hooks/render-phase fixes; clean descriptions with clear before/after rationale; correct commit format. All approved.
+- @Rohith-Saran: PR #5775 clean fix (approved); PR #5778 persistent commit format violation (feat: Conventional Commits style instead of project format) after 3 re-reviews — REQUEST_CHANGES maintained. Merge conflicts resolved in 2026-05-23 re-review.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker, which needs team discussion.
 - @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company; backend tests not run locally. PR updated with sessionStorage fixes.
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
-- @Nabsku: Backend contributor; PR #5777 (cache invalidation fix, solid tests) and PR #5798 (k8cache bypass, good refactor).
+- @Nabsku: Backend contributor; PR #5777 (cache invalidation fix, solid tests) and PR #5798 (k8cache bypass, comprehensive refactor + tests) — both approved. Strong test author.
+- @harrshita123: Backend contributor; PR #5777 (all-namespace cache invalidation) updated with `DeleteKeys` delegation and regression test — approved 2026-05-23.
 - @yu-heejin: New contributor; PR #5809 (milli-bytes parsing fix) — clean fix with tests.
-- @joaquimrocha: Core maintainer/contributor; PR #5795 simplifies Mac notarization CI — tested in branch.
-- @beep-boopp: New contributor; PR #5794 (empty OIDC CA cert fix) — correct defence-in-depth fix.
+- @joaquimrocha: Core maintainer/contributor; PR #5795 simplifies Mac notarization CI — merged.
+- @beep-boopp: New contributor; PR #5794 (empty OIDC CA cert fix) — merged.
 
 ## Session Log
 ### 2026-05-18
@@ -90,3 +95,8 @@
 - Reviewed 17 PRs: #5786 (APPROVE re-review), #5785 (APPROVE re-review), #5783 (APPROVE re-review), #5777 (APPROVE re-review), #5774 (APPROVE re-review), #5768 (APPROVE re-review), #5767 (APPROVE re-review), #5764 (NEEDS_DISCUSSION re-review), #5746 (REQUEST_CHANGES re-review), #5820 (APPROVE), #5809 (APPROVE), #5805 (APPROVE), #5804 (APPROVE), #5803 (APPROVE), #5798 (APPROVE), #5795 (APPROVE), #5794 (APPROVE)
 - Skipped: 7 PRs in SKIP_SET (head_sha unchanged: #5408, #5538, #5731, #5775, #5778, #5779, #5781); ~171 other non-draft PRs had human review activity
 - New observations: Render-phase setState anti-pattern cluster: 3 new PRs by @ayushmaan-16 fix different forms of the same issue. k8cache bypass fix (#5798) introduces `IsKubernetesResourceAPIPath` — potentially confusing `IsAuthBypassURL` naming. Mac notarization CI simplified by maintainer (#5795). OIDC empty CA cert was a silent breakage for all public OIDC providers (#5794).
+
+### 2026-05-23
+- Reviewed 8 PRs: #5783 (APPROVE re-review), #5777 (APPROVE re-review), #5775 (APPROVE re-review), #5805 (APPROVE re-review), #5804 (APPROVE re-review), #5803 (APPROVE re-review), #5798 (APPROVE re-review), #5778 (REQUEST_CHANGES re-review)
+- Skipped: 15 PRs in SKIP_SET (head_sha unchanged); 2 merged (#5795, #5794); 1 closed (#5769); 178 new non-draft PRs all had human review activity
+- New observations: @Rohith-Saran's PR #5778 resolved merge conflicts but retains `feat:` Conventional Commits format — 3rd REQUEST_CHANGES for same format issue. PR #5778 also missing `externalLinks` from Helm values.schema.json. @harrshita123's PR #5777 (all-namespace cache invalidation) updated with DeleteKeys delegation and regression test — clean approval. @ayushmaan-16's three SimpleTable/useKubeObjectList PRs all updated (APPROVE on re-review). @Nabsku's PR #5798 refactored with DRY kubernetesResourceAPIPathIndex helper — strong improvement. PR body placeholders (`#<issue-number>`) should be flagged as Warning.

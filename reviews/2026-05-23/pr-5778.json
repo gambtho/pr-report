@@ -1,0 +1,77 @@
+{
+  "pr_number": 5778,
+  "title": "feat: Add configurable external links to sidebar via Helm values",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 12,
+  "additions": 151,
+  "deletions": 43,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/templates/deployment.yaml",
+      "line": 1,
+      "description": "Commit title uses Conventional Commits style (feat:) instead of project format (area: SubArea: Description). Hard blocker — maintainer will request changes."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.schema.json",
+      "line": 1,
+      "description": "externalLinks not added to Helm values JSON schema under config properties. Schema is incomplete for IDE auto-complete and CI linting."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/cmd/headlamp.go",
+      "line": 2231,
+      "description": "On Unmarshal failure, externalLinks remains nil (marshals to JSON null). Assign []ExternalLink{} after logging error so client always receives an array."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/config/config.go",
+      "line": 112,
+      "description": "Verify HEADLAMP_CONFIG_EXTERNAL_LINKS env var name matches koanf's env-to-key mapping for the external-links koanf key."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/Sidebar/useSidebarItems.tsx",
+      "line": 55,
+      "description": "safeLinkUrl validates URLs to ^https?:// preventing javascript:/data: injection."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/Sidebar/ListItemLink.tsx",
+      "line": 81,
+      "description": "Existing target=_blank rel=noopener noreferrer handling in ListItemLink correctly renders external links."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/redux/configSlice.test.ts",
+      "line": 79,
+      "description": "Redux configSlice test covers setConfig with externalLinks; backend test exercises JSON round-trip."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/Sidebar/useSidebarItems.tsx",
+      "line": 463,
+      "description": "icon: link.icon || 'mdi:link' provides sensible default icon when none specified."
+    }
+  ]
+}

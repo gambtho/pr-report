@@ -1,0 +1,42 @@
+{
+  "pr_number": 5804,
+  "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 72,
+  "deletions": 6,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts",
+      "line": 538,
+      "description": "Single functional updater merges add+remove atomically — correct React pattern for dependent state."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts",
+      "line": 543,
+      "description": "listsToStopWatching filter uses structural comparison (cluster+namespace) instead of reference equality."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.test.tsx",
+      "line": 350,
+      "description": "New test covers simultaneous namespace add+remove in one render cycle — exact regression test for the bug."
+    }
+  ]
+}

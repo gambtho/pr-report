@@ -1,0 +1,35 @@
+{
+  "pr_number": 5775,
+  "title": "frontend: Fix Backstage receiver listener leak on Home remount",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5775",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 9,
+  "deletions": 3,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/helpers/backstageMessageReceiver.ts",
+      "line": 120,
+      "description": "Return type changed to () => void, enforcing the cleanup contract at the type level."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Home/index.tsx",
+      "line": 116,
+      "description": "useEffect now returns setupBackstageMessageReceiver() directly — correct React cleanup pattern."
+    }
+  ]
+}

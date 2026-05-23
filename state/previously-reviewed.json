@@ -1,5 +1,53 @@
 [
   {
+    "number": 5783,
+    "head_sha": "f00a57afd9ca8ae585d9fb94c5278c9b89f556af",
+    "date": "2026-05-23",
+    "title": "helm: Fix file descriptor leak in createFullPath"
+  },
+  {
+    "number": 5777,
+    "head_sha": "a207207395e639c7cdea02ec394ff9a231ef7dde",
+    "date": "2026-05-23",
+    "title": "backend: Fix all-namespace cache invalidation"
+  },
+  {
+    "number": 5805,
+    "head_sha": "324bdb3d30f3ad14b225309b8f8efcf4c78788da",
+    "date": "2026-05-23",
+    "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render"
+  },
+  {
+    "number": 5804,
+    "head_sha": "f16e884810cfd6aca0e0fc68453895cbe7adc7e8",
+    "date": "2026-05-23",
+    "title": "frontend: useKubeObjectList: Fix state overwrite during render"
+  },
+  {
+    "number": 5803,
+    "head_sha": "cdcb75566ac096bfbdad9f356da3a7570d8d9148",
+    "date": "2026-05-23",
+    "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change"
+  },
+  {
+    "number": 5798,
+    "head_sha": "6b490a53cef74f75c1f999cb0ecb8d24b04e0174",
+    "date": "2026-05-23",
+    "title": "backend: k8cache: Bypass non-API cluster paths"
+  },
+  {
+    "number": 5775,
+    "head_sha": "2c02054c8d8cfad757254204ce8a0b0d3747b2eb",
+    "date": "2026-05-23",
+    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
+  },
+  {
+    "number": 5778,
+    "head_sha": "4a6d86d91a1e6405172cfb8241c3d512cc5b7802",
+    "date": "2026-05-23",
+    "title": "feat: Add configurable external links to sidebar via Helm values"
+  },
+  {
     "number": 5786,
     "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
     "date": "2026-05-22",
@@ -10,18 +58,6 @@
     "head_sha": "279de138e8ccb04f8d76677b8aba0e17357cc72c",
     "date": "2026-05-22",
     "title": "frontend: themes: Replace deprecated MediaQueryList listener methods"
-  },
-  {
-    "number": 5783,
-    "head_sha": "5e364e1154da990d08db2135269e0873db46b819",
-    "date": "2026-05-22",
-    "title": "helm: Fix file descriptor leak in createFullPath"
-  },
-  {
-    "number": 5777,
-    "head_sha": "bd1b4b8056ae18dbdd7be97eab088ff5d19aa2a6",
-    "date": "2026-05-22",
-    "title": "backend: Fix all-namespace cache invalidation"
   },
   {
     "number": 5774,
@@ -66,30 +102,6 @@
     "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
   },
   {
-    "number": 5805,
-    "head_sha": "4401cd15533f5c7e3a08488cfae897e9750c20ee",
-    "date": "2026-05-22",
-    "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render"
-  },
-  {
-    "number": 5804,
-    "head_sha": "9e0552377494ff9ab170f1f7fb550ebfaaa057f8",
-    "date": "2026-05-22",
-    "title": "frontend: useKubeObjectList: Fix state overwrite during render"
-  },
-  {
-    "number": 5803,
-    "head_sha": "a24ffef9ffee52fde310961269a382dc31337539",
-    "date": "2026-05-22",
-    "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change"
-  },
-  {
-    "number": 5798,
-    "head_sha": "244e2c41d624e3e2865a39c033307ec6537507de",
-    "date": "2026-05-22",
-    "title": "backend: k8cache: Bypass non-API cluster paths"
-  },
-  {
     "number": 5795,
     "head_sha": "f29d931960cbb2fddb9ac000941a36a1f2135728",
     "date": "2026-05-22",
@@ -100,6 +112,24 @@
     "head_sha": "4503f376ee1b5afb37349462b414ce38b4e8f6d0",
     "date": "2026-05-22",
     "title": "backend: auth/kubeconfig: Skip empty OIDC CA cert instead of failing"
+  },
+  {
+    "number": 5779,
+    "head_sha": "455105d98e98a76a1db83b2d753efe66f34cd347",
+    "date": "2026-05-21",
+    "title": "frontend: Add @typescript/native-preview and use it for type checking"
+  },
+  {
+    "number": 5781,
+    "head_sha": "b5161284c0568c9c42742bde89863240f12af56c",
+    "date": "2026-05-21",
+    "title": "frontend: deps: Bump yaml from 2.8.3 to 2.9.0"
+  },
+  {
+    "number": 5748,
+    "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
+    "date": "2026-05-20",
+    "title": "Automatically switch theme based on OS theme"
   },
   {
     "number": 5408,
@@ -118,41 +148,5 @@
     "head_sha": "19f15a72955a349a42914798df63652c2f4702a6",
     "date": "2026-05-19",
     "title": "backend: kubeconfig: Stop treating empty path and missing file as load errors"
-  },
-  {
-    "number": 5748,
-    "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
-    "date": "2026-05-20",
-    "title": "Automatically switch theme based on OS theme"
-  },
-  {
-    "number": 5769,
-    "head_sha": "91bb66ff89a50bbbf40bce4121952749b4fefc62",
-    "date": "2026-05-21",
-    "title": "frontend: MetadataDisplay: Fix owner ref link when apiVersion mismatch"
-  },
-  {
-    "number": 5775,
-    "head_sha": "0f4a45e15b587c01103294adc3d7079a12daa198",
-    "date": "2026-05-21",
-    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
-  },
-  {
-    "number": 5778,
-    "head_sha": "4bb03cddc26ce28c71841ffe07a8ac7bb186f200",
-    "date": "2026-05-21",
-    "title": "feat: Add configurable external links to sidebar via Helm values"
-  },
-  {
-    "number": 5779,
-    "head_sha": "455105d98e98a76a1db83b2d753efe66f34cd347",
-    "date": "2026-05-21",
-    "title": "frontend: Add @typescript/native-preview and use it for type checking"
-  },
-  {
-    "number": 5781,
-    "head_sha": "b5161284c0568c9c42742bde89863240f12af56c",
-    "date": "2026-05-21",
-    "title": "frontend: deps: Bump yaml from 2.8.3 to 2.9.0"
   }
 ]

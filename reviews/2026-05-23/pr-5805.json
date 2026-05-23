@@ -1,0 +1,49 @@
+{
+  "pr_number": 5805,
+  "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5805",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 20,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 172,
+      "description": "normalizedData recomputed each render; if parent passes fresh array reference, currentData === normalizedData will fire the update effect too eagerly. Consider documenting that callers should stabilize the data prop."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 327,
+      "description": "filteredData hoisted into useMemo outside the null-check block — eliminates duplicated filter logic."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 333,
+      "description": "useEffect for setPage(0) has correct dep array [filteredData, page, rowsPerPage, setPage]."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 334,
+      "description": "filteredData && guard correctly handles null/loading state before checking length."
+    }
+  ]
+}

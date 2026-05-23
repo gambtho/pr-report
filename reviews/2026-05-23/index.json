@@ -1,0 +1,59 @@
+{
+  "date": "2026-05-23",
+  "generated_at": "2026-05-23T07:20:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5783, "title": "helm: Fix file descriptor leak in createFullPath", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5777, "title": "backend: Fix all-namespace cache invalidation", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5775, "title": "frontend: Fix Backstage receiver listener leak on Home remount", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5805, "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5804, "title": "frontend: useKubeObjectList: Fix state overwrite during render", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5803, "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5798, "title": "backend: k8cache: Bypass non-API cluster paths", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5778, "title": "feat: Add configurable external links to sidebar via Helm values", "verdict": "REQUEST_CHANGES", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": 5786, "reason": "head_sha unchanged since last review"},
+    {"number": 5785, "reason": "head_sha unchanged since last review"},
+    {"number": 5774, "reason": "head_sha unchanged since last review"},
+    {"number": 5768, "reason": "head_sha unchanged since last review"},
+    {"number": 5767, "reason": "head_sha unchanged since last review"},
+    {"number": 5764, "reason": "head_sha unchanged since last review"},
+    {"number": 5746, "reason": "head_sha unchanged since last review"},
+    {"number": 5820, "reason": "head_sha unchanged since last review"},
+    {"number": 5809, "reason": "head_sha unchanged since last review"},
+    {"number": 5408, "reason": "head_sha unchanged since last review"},
+    {"number": 5538, "reason": "head_sha unchanged since last review"},
+    {"number": 5731, "reason": "head_sha unchanged since last review"},
+    {"number": 5748, "reason": "head_sha unchanged since last review"},
+    {"number": 5779, "reason": "head_sha unchanged since last review"},
+    {"number": 5781, "reason": "head_sha unchanged since last review"},
+    {"number": 5795, "reason": "merged"},
+    {"number": 5794, "reason": "merged"},
+    {"number": 5769, "reason": "closed"},
+    {"number": 5837, "reason": "has human review activity"},
+    {"number": 5836, "reason": "has human review activity"},
+    {"number": 5835, "reason": "has human review activity"},
+    {"number": 5834, "reason": "has human review activity"},
+    {"number": 5833, "reason": "has human review activity (178 new PRs total)"}
+  ],
+  "stats": {
+    "total": 8,
+    "verdicts": {"approve": 7, "request_changes": 1, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 2, "suggestion": 6, "positive": 21},
+    "sizes": {"lockfile_only": 0, "small": 6, "medium": 2, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`)",
+    "Keep commit subject under 72 characters (soft limit)",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages",
+    "Approval style is warm and brief: 🎉 thanks! is the standard merge acknowledgment from maintainers",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs; its presence does not indicate human review",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — pure stylistic refactors without justification are not accepted",
+    "Frontend (TypeScript/React): fix exhaustive-deps lint violations rather than suppressing; Material-UI v5 patterns used",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog; test-first style",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "Conventional Commits style (feat:, fix:) is NOT used — project uses area: SubArea: Description format"
+  ],
+  "skip_style_learning": true
+}

@@ -1,0 +1,42 @@
+{
+  "pr_number": 5777,
+  "title": "backend: Fix all-namespace cache invalidation",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 47,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": 290,
+      "description": "Delegates to DeleteKeys — reuses existing correct dual-key invalidation rather than duplicating."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": 288,
+      "description": "Updated log message accurately describes the namespace-stripped variant deletion."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation_test.go",
+      "line": 380,
+      "description": "TestRunInformerToWatchDeletesAllNamespaceKey covers the exact bug: both namespaced and all-namespace keys evicted on informer event."
+    }
+  ]
+}

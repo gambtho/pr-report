@@ -1,0 +1,49 @@
+{
+  "pr_number": 5783,
+  "title": "helm: Fix file descriptor leak in createFullPath",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5783",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 47,
+  "deletions": 10,
+  "re_review": true,
+  "date": "2026-05-23",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/helm/repository.go",
+      "line": 263,
+      "description": "os.OpenFile without O_TRUNC leaves existing files unchanged — intentional per the os.IsExist guard, but worth documenting that createFullPath is idempotent by design."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/helm/repository.go",
+      "line": 74,
+      "description": "createFileIfNotThere now correctly distinguishes os.IsNotExist from other stat errors."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/helm/repository.go",
+      "line": 260,
+      "description": "Replaced os.Create (0666) with os.OpenFile using defaultNewConfigFileMode (0o644) for consistent permissions."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/helm/repository_internal_test.go",
+      "line": 68,
+      "description": "TestCreateFileIfNotThere covers creation, removability (fd-leak detection), and idempotency."
+    }
+  ]
+}
