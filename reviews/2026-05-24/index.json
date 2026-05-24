@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-24",
+  "generated_at": "2026-05-24T07:28:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5785, "title": "frontend: themes: Replace deprecated MediaQueryList listener methods", "verdict": "APPROVE", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": 5408, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5538, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5731, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5746, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5764, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5767, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5768, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5774, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5775, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5777, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5778, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5779, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5781, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5783, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5786, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5798, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5803, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5804, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5805, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5809, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": 5820, "reason": "head_sha unchanged (SKIP_SET)"},
+    {"number": -1, "reason": "182 new/other open non-draft PRs all had human review activity"}
+  ],
+  "stats": {
+    "total": 1,
+    "verdicts": {"approve": 1, "request_changes": 0, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 0, "suggestion": 1, "positive": 3},
+    "sizes": {"lockfile_only": 0, "small": 1, "medium": 0, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`).",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment from maintainers.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs and posts a PR overview as a COMMENTED review — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — pure stylistic refactors without justification are not accepted per AGENTS.md.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing with `eslint-disable`; Material-UI v5 patterns used.",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog; test-first, risk-averse style per AGENTS.md.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker in kubernetes-sigs repos.",
+    "k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review."
+  ],
+  "skip_style_learning": true
+}

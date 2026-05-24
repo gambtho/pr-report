@@ -1,0 +1,28 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 25,
+  "deletions": 14,
+  "re_review": true,
+  "date": "2026-05-24",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/lib/themes.ts",
+      "line": null,
+      "description": "Commit message missing SubArea and exceeds 72-char soft limit. 'frontend: Replace deprecated MediaQueryList.addListener/removeListener in usePrefersColorScheme' (91 chars) should match PR title format 'frontend: themes: Replace deprecated MediaQueryList listener methods' (63 chars)."
+    }
+  ]
+}
