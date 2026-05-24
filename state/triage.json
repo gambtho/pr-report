@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T21:26:54+00:00",
+  "generated_at": "2026-05-24T22:27:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 207,
   "open_drafts_total": 48,
@@ -2273,30 +2273,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 5531,
-        "title": "Add disclaimers regarding `Event` lifetime",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
-        "author": "dabico",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-24T21:26:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2331,7 +2307,7 @@
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-04-25T22:27:00Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3414,7 +3390,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-23T21:55:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3514,6 +3490,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5531,
+        "title": "Add disclaimers regarding `Event` lifetime",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
+        "author": "dabico",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-24T22:03:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
