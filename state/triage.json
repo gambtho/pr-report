@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-24T19:37:14+00:00",
+  "generated_at": "2026-05-24T20:28:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 207,
   "open_drafts_total": 48,
-  "actionable_total": 124,
-  "tracked_total": 39,
+  "actionable_total": 125,
+  "tracked_total": 38,
   "buckets": {
     "needs_rebase": [
       {
@@ -1202,31 +1202,6 @@
         }
       },
       {
-        "number": 5531,
-        "title": "Add disclaimers regarding `Event` lifetime",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
-        "author": "dabico",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-20T12:22:52Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5461,
         "title": "frontend: Add target container support to debug containers (#4914)",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5461",
@@ -1554,7 +1529,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T19:37:21Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2282,6 +2257,30 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-24T18:15:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5531,
+        "title": "Add disclaimers regarding `Event` lifetime",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5531",
+        "author": "dabico",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-24T20:22:37Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3930,7 +3929,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
