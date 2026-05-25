@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T19:40:43+00:00",
+  "generated_at": "2026-05-25T20:39:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 210,
   "open_drafts_total": 48,
@@ -745,7 +745,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-07T20:34:00Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "windows",
           "app",
@@ -2200,30 +2200,6 @@
         }
       },
       {
-        "number": 5549,
-        "title": "Fix theme naming and embedded editor theme inconsistencies",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5549",
-        "author": "dabico",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-25T08:07:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5854,
         "title": "backend: stop cluster delete after kubeconfig removal error",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5854",
@@ -3524,6 +3500,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5549,
+        "title": "Fix theme naming and embedded editor theme inconsistencies",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5549",
+        "author": "dabico",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-25T20:39:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -3927,7 +3927,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
