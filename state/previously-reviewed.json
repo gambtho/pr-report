@@ -1,5 +1,125 @@
 [
   {
+    "number": 5809,
+    "head_sha": "f1f315b13d750964a59319067163a73da6915612",
+    "date": "2026-05-25",
+    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
+  },
+  {
+    "number": 5845,
+    "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
+    "date": "2026-05-25",
+    "title": "frontend: Add plugin extension registry"
+  },
+  {
+    "number": 5844,
+    "head_sha": "9cd183aad763dd0732ce12e64a068709b5246758",
+    "date": "2026-05-25",
+    "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths."
+  },
+  {
+    "number": 5843,
+    "head_sha": "0d5a26381e51f1ee51ce9392398dbdee1abbff5b",
+    "date": "2026-05-25",
+    "title": "frontend: Export ApiError from K8s package for plugin access"
+  },
+  {
+    "number": 5842,
+    "head_sha": "0dfe2f563d9609c1f418d0324389ad5394eada0a",
+    "date": "2026-05-25",
+    "title": "frontend: fix react-hooks/rules-of-hooks in AuthVisible"
+  },
+  {
+    "number": 5841,
+    "head_sha": "0864332c7446af979f826ea455f9d8ac580ab19d",
+    "date": "2026-05-25",
+    "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton"
+  },
+  {
+    "number": 5840,
+    "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
+    "date": "2026-05-25",
+    "title": "backend: helm: Mark failed install verification"
+  },
+  {
+    "number": 5838,
+    "head_sha": "c761cb80000872b9606ae4aac625dfebd52afed5",
+    "date": "2026-05-25",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+  },
+  {
+    "number": 5837,
+    "head_sha": "53861ec5eb94b388169986d3312acab1169794ba",
+    "date": "2026-05-25",
+    "title": "build(deps-dev): bump qs from 6.14.2 to 6.15.2 in /plugins/examples/pod-counter"
+  },
+  {
+    "number": 5836,
+    "head_sha": "e5ddd8a8ff8d40f6a9d22efe7dad2e2c853f19f7",
+    "date": "2026-05-25",
+    "title": "build(deps-dev): bump qs from 6.14.2 to 6.15.2 in /plugins/examples/tables"
+  },
+  {
+    "number": 5835,
+    "head_sha": "29d654d5b4a35d7e8b70dd8bae1e5cb69bbc7dbe",
+    "date": "2026-05-25",
+    "title": "build(deps-dev): bump qs from 6.14.2 to 6.15.2 in /plugins/examples/projects"
+  },
+  {
+    "number": 5834,
+    "head_sha": "ef29fcd0ee90fedae9b40e7870805a9dace87259",
+    "date": "2026-05-25",
+    "title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /plugins/headlamp-plugin"
+  },
+  {
+    "number": 5833,
+    "head_sha": "564d201751d84e2ac2c2b0c3b98991d7fb677ccc",
+    "date": "2026-05-25",
+    "title": "build(deps-dev): bump qs from 6.14.2 to 6.15.2 in /plugins/examples/ui-panels"
+  },
+  {
+    "number": 5832,
+    "head_sha": "a9a94740f24aabd3665862b339ab38ab086009ea",
+    "date": "2026-05-25",
+    "title": "backend: Reject unsupported Jaeger tracing endpoint"
+  },
+  {
+    "number": 5831,
+    "head_sha": "00b7d5707a2e5ecf5dca81212ea65ccb638dc00e",
+    "date": "2026-05-25",
+    "title": "frontend: recentClusters: Add unit tests"
+  },
+  {
+    "number": 5830,
+    "head_sha": "3d82fe704c72f55777369a5c282ef9e0969e5d15",
+    "date": "2026-05-25",
+    "title": "frontend: podContainer: Add unit tests"
+  },
+  {
+    "number": 5829,
+    "head_sha": "4d7552e9da0a4ee8c706a0acab8a70b4044d0c09",
+    "date": "2026-05-25",
+    "title": "frontend: clusterSettings: Add unit tests"
+  },
+  {
+    "number": 5824,
+    "head_sha": "60569784f7d8c91caa2e61d72da6306327a61a79",
+    "date": "2026-05-25",
+    "title": "frontend: ObjectEventList: Guard optional event source in From column"
+  },
+  {
+    "number": 5822,
+    "head_sha": "8c40c57897341484e5ea61d6d51ba32a3e8bc87f",
+    "date": "2026-05-25",
+    "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field"
+  },
+  {
+    "number": 5772,
+    "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
+    "date": "2026-05-25",
+    "title": "Bump fast-uri, brace-expansion, ws, containerd"
+  },
+  {
     "number": 5785,
     "head_sha": "4466952563bc30ae29c09b2c5544872adabfc288",
     "date": "2026-05-24",
@@ -94,12 +214,6 @@
     "head_sha": "2b0be2ac177c491ec6647f5d06e3c69709fc4692",
     "date": "2026-05-22",
     "title": "frontend: ScaleButton: Memoize replica count computation"
-  },
-  {
-    "number": 5809,
-    "head_sha": "67d4f7d29526c8c882175e6124214f47169d2774",
-    "date": "2026-05-22",
-    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
   },
   {
     "number": 5795,

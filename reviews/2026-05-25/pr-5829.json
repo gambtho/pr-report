@@ -1,0 +1,18 @@
+{
+  "pr_number": 5829,
+  "title": "frontend: clusterSettings: Add unit tests",
+  "author": "RajPrakash681",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5829",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 1,
+  "additions": 130,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/clusterSettings.test.ts", "line": 40, "description": "Full round-trip test covers all ClusterSettings nested fields including terminal and appearance sub-objects." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/clusterSettings.test.ts", "line": 55, "description": "Per-cluster isolation test guards against key-construction bugs." }
+  ]
+}

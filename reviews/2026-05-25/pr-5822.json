@@ -1,0 +1,20 @@
+{
+  "pr_number": 5822,
+  "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field",
+  "author": "WasThatRudy",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5822",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 2,
+  "additions": 129,
+  "deletions": 58,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 3 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/common/Resource/CreateResourceForm.tsx", "line": 414, "description": "safeValue computed inline on every render; when value is non-array, [] is a new reference each render. Stable in practice (length always 0), but consider useMemo if this pattern is reused." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.tsx", "line": 476, "description": "Inline normalization handles null, primitives, and nested arrays — all three crash-inducing js-yaml intermediate shapes documented in the PR." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.tsx", "line": 462, "description": "getPort uses container?.containerPort optional chaining, closing a second null-dereference path." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.test.tsx", "line": 28, "description": "vi.mock for lib/k8s/namespace correctly avoids circular barrel import; documented with a clear comment." }
+  ]
+}

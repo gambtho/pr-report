@@ -1,0 +1,20 @@
+{
+  "pr_number": 5832,
+  "title": "backend: Reject unsupported Jaeger tracing endpoint",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 4,
+  "additions": 75,
+  "deletions": 20,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 1, "suggestion": 1, "positive": 2 },
+  "findings": [
+    { "severity": "Warning", "confidence": "MEDIUM", "file": "backend/pkg/config/config.go", "line": 157, "description": "Commit subject missing SubArea. Expected: 'backend: telemetry: Reject unsupported Jaeger endpoint; add --jaeger-endpoint flag'." },
+    { "severity": "Suggestion", "confidence": "LOW", "file": "backend/pkg/config/config.go", "line": 176, "description": "Pre-existing logic issue in 'at least one exporter' check: condition fires when StdoutTraceEnabled is true (meaning stdout IS configured), so the error can never actually fire when intended. Suggest a follow-up issue." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/config/config.go", "line": 168, "description": "Extracting validateTracing() as a helper improves readability before adding Jaeger-specific validation." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/config/config.go", "line": 636, "description": "--jaeger-endpoint flag description 'Jaeger collector endpoint (unsupported; use otlp-endpoint)' surfaces the deprecation clearly at startup." }
+  ]
+}

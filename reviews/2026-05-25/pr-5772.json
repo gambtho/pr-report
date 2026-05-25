@@ -1,0 +1,18 @@
+{
+  "pr_number": 5772,
+  "title": "Bump fast-uri, brace-expansion, ws, containerd",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5772",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Small",
+  "files_changed": 7,
+  "additions": 18,
+  "deletions": 18,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 1, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "backend/go.mod", "line": 1, "description": "PR title/commit subject missing area prefix. Expected 'deps: Bump fast-uri, brace-expansion, ws, containerd' or similar." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/package-lock.json", "line": 1, "description": "Consolidates multiple security-relevant patches (ws, containerd) in a single PR; efficient for review." }
+  ]
+}

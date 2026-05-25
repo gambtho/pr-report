@@ -1,0 +1,18 @@
+{
+  "pr_number": 5841,
+  "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton",
+  "author": "Naga15",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5841",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 5,
+  "deletions": 10,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 1, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/RestartButton.tsx", "line": 49, "description": "Commit subject has lowercase verb and missing SubArea. Expected: 'frontend: Resource: Fix react-hooks/rules-of-hooks violation in RestartButton'." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/RestartButton.tsx", "line": 46, "description": "All five hooks moved above the early-return guard; all four eslint-disable comments removed cleanly." }
+  ]
+}

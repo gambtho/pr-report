@@ -1,0 +1,17 @@
+{
+  "pr_number": 5824,
+  "title": "frontend: ObjectEventList: Guard optional event source in From column",
+  "author": "anurag-p6",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5824",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 1,
+  "deletions": 1,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/ObjectEventList.tsx", "line": 122, "description": "item.source?.component ?? '' handles both missing source and missing component fields per Kubernetes API spec." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pr_number": 5831,
+  "title": "frontend: recentClusters: Add unit tests",
+  "author": "RajPrakash681",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5831",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 1,
+  "additions": 112,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 2 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/helpers/recentClusters.test.ts", "line": 11, "description": "STORAGE_KEY hardcoded as 'recent_clusters'; add a comment noting this is the expected storage key contract." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/recentClusters.test.ts", "line": 40, "description": "Tests cover both string and Cluster-object input signatures — no gaps in polymorphic input coverage." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/recentClusters.test.ts", "line": 100, "description": "Throws-on-invalid-JSON test explicitly documents current behavior contract, making any future defensive change visible." }
+  ]
+}

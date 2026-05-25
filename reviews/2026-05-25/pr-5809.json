@@ -1,0 +1,18 @@
+{
+  "pr_number": 5809,
+  "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+  "author": "yu-heejin",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 13,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/units.ts", "line": 41, "description": "Regex correctly scoped to integer/decimal milli-byte values ending in m; no conflict with existing SI-prefix parser." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/units.test.ts", "line": 37, "description": "Four test cases cover integer, large integer, exact, and decimal milli-byte values — thorough edge-case coverage." }
+  ]
+}

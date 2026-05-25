@@ -1,0 +1,19 @@
+{
+  "pr_number": 5842,
+  "title": "frontend: fix react-hooks/rules-of-hooks in AuthVisible",
+  "author": "Naga15",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5842",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 9,
+  "deletions": 10,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 1, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/AuthVisible.tsx", "line": 56, "description": "Commit subject has lowercase verb and missing SubArea. Expected: 'frontend: Resource: Fix react-hooks/rules-of-hooks violation in AuthVisible'." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/AuthVisible.tsx", "line": 65, "description": "enabled: !!item && isValidVerb correctly gates the query without violating hooks rules." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/AuthVisible.tsx", "line": 70, "description": "Optional chaining on itemClass?.apiName/?.apiVersion closes latent null-dereference in queryKey." }
+  ]
+}

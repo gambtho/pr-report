@@ -1,0 +1,19 @@
+{
+  "pr_number": 5843,
+  "title": "frontend: Export ApiError from K8s package for plugin access",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5843",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 6,
+  "additions": 36,
+  "deletions": 1,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 2, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "frontend/src/lib/k8s/index.ts", "line": 25, "description": "Commit subject missing SubArea segment. Expected: 'frontend: k8s: Export ApiError from K8s package for plugin access'. Project convention requires area: SubArea: Description." },
+    { "severity": "Warning", "confidence": "MEDIUM", "file": "frontend/src/components/common/Table/__snapshots__/Table.WithGlobalFilter.stories.storyshot", "line": 1, "description": "Three storyshot files contain unrelated structural ARIA-element changes (aria-live divs, 'No results found' text) not related to the ApiError export. Likely snapshot drift from base branch. Regenerate from clean main or explain these changes." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/config/vite.config.mjs", "line": 37, "description": "Minimal fix: one export + one Vite mapping correctly resolves the plugin crash. pluginLib.snapshot confirms ApiError is now accessible under K8s namespace." }
+  ]
+}

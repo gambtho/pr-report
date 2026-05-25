@@ -1,0 +1,17 @@
+{
+  "pr_number": 5838,
+  "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel",
+  "author": "Swastik19Nit",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5838",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 3,
+  "deletions": 2,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/ObjectEventList.tsx", "line": 157, "description": "whiteSpace: normal + overflowWrap: anywhere correctly overrides HoverInfoLabel's default nowrap in constrained drawer widths." }
+  ]
+}

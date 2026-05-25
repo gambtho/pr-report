@@ -1,0 +1,18 @@
+{
+  "pr_number": 5830,
+  "title": "frontend: podContainer: Add unit tests",
+  "author": "RajPrakash681",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5830",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 1,
+  "additions": 168,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/podContainer.test.ts", "line": 20, "description": "makePod fixture scoped to only the fields helpers read — avoids circular KubeObject imports cleanly." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/podContainer.test.ts", "line": 80, "description": "Tests verify getDefaultContainer priority order (running main → running init → first main → empty string) — explicit regression guard." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pr_number": 5840,
+  "title": "backend: helm: Mark failed install verification",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5840",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 3,
+  "additions": 70,
+  "deletions": 12,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 3 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/release.go", "line": 668, "description": "VerifyUser now returns error instead of bool, propagating the failure reason to the release cache for UI visibility." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/release_internal_test.go", "line": 15, "description": "failingRESTGetter has compile-time interface assertion — rigorous test helper." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/release_internal_test.go", "line": 100, "description": "Regression test fully exercises the stuck-processing bug: set processing → trigger failure → assert status=failed with correct error message." }
+  ]
+}

@@ -1,11 +1,11 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-05-24*
+*Last updated: 2026-05-25*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
 - Keep commit subject under 72 characters (soft limit).
-- Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.
+- Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages (PR body is acceptable).
 - Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment from maintainers.
 - Reviewer @illume is the primary maintainer and very responsive; issues CHANGES_REQUESTED for commit guideline violations before final APPROVE.
 - copilot-pull-request-reviewer[bot] auto-reviews all PRs and posts a PR overview as a COMMENTED review — its presence does not indicate human review.
@@ -27,21 +27,24 @@
 
 ## Common Issues
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 4 sessions). PR #5778 by @Rohith-Saran persists after 3 re-reviews.
-- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785 squashed commit — commit had `frontend: Replace deprecated...` while PR title correctly had `frontend: themes: Replace deprecated...`).
+- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832; multiple sessions). @Rohith-Saran has had this issue across multiple PRs.
+- Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15; also #5786 by @vmridul).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: 91 chars).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json`.
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
 - CI workflow `push` triggers without `paths` filter causing unnecessary full-stack e2e runs on unrelated commits (seen in PR #5408).
 - Missing storyshot regeneration when `defaultAppThemes` array changes (seen in PR #5748).
-- Commit title lowercase verb + missing SubArea (seen in PR #5786 — `backend: changed format verb %v with %w` should be `backend: kubeconfig: Change format verb %v to %w`).
 - Unresolved Git merge conflict markers in PRs (seen in PR #5778 — resolved in 2026-05-23 re-review).
 - PRs where author cannot run tests locally (seen in PR #5777 — disk space; PR #5764 — no Go toolchain). CI must confirm green before merge.
-- `useMemo(() => value, [])` anti-pattern used as a one-shot initialiser instead of lazy `useState(() => value)` (seen in PR #5767, #5803; 2 sessions). Fix is to use direct computation when the value should be reactive.
-- Render-phase state updates (`setState` called unconditionally during render body) causing React to drop and re-run the render (seen in PR #5805 — setPage(0); fix: move to useEffect).
-- Two sequential `setState` calls in the same render for the same piece of state, causing the second to overwrite the first (seen in PR #5804 — useKubeObjectList; fix: use functional updater + structural identity comparison).
+- `useMemo(() => value, [])` anti-pattern used as a one-shot initialiser instead of lazy `useState(() => value)` (seen in PR #5767, #5803; 2 sessions).
+- Render-phase state updates (`setState` called unconditionally during render body) causing React to drop and re-run the render (seen in PR #5805).
+- Two sequential `setState` calls in the same render for the same piece of state (seen in PR #5804).
 - Missing frontend Vitest tests for new behavioral flows (seen in PR #5764 — OIDC auto-login useEffect not tested).
-- Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778; schema lacks `additionalProperties: false` for config so won't hard-fail, but IDE auto-complete broken).
-- PR body containing unresolved placeholder `#<issue-number>` instead of real issue reference (seen in PR #5778).
+- Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778).
+- PR body containing unresolved placeholder `#<issue-number>` or `#NAN` instead of real issue reference (seen in PR #5778, #5844).
+- Storyshot files containing unrelated ARIA-element structural drift included in a PR diff (seen in PR #5843 — snapshots regenerated from base-branch changes unrelated to the actual fix).
+- Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05).
+- Multi-area dependency bump PRs missing area prefix in commit subject (seen in PR #5772 by @skoeva — "Bump fast-uri, brace-expansion, ws, containerd" with no `deps:` prefix).
 
 ## False Positives / Project Conventions
 - copilot-pull-request-reviewer[bot] auto-reviews every PR; this is NOT human review activity and should not count as a filter criterion for "has human review". The GraphQL review filter must check `author.__typename == "User"` to distinguish human from bot reviews.
@@ -52,61 +55,69 @@
 - `useCallback` with `[]` dep array wrapping a `ref.current` access is the correct pattern for the react-hooks/refs rule — not a stale closure issue since ref objects are stable.
 - Redux `dispatch` from `useDispatch()` is guaranteed stable across renders; adding it to `useEffect`/`useMemo` deps is correct and does not cause extra re-runs.
 - `IsAuthBypassURL` in the k8cache package returns `true` for paths that require full auth-error handling (i.e. normal Kubernetes resource API paths), contrary to what the name implies. Do not flag this as a bug — flag the naming as a Suggestion.
-- `normalizedData = data ?? null` in SimpleTable is a render-body computation (not memoized); reference instability is a pre-existing concern from before the PR and is not introduced by the fix. Do not flag as a new bug — flag only as a low-priority suggestion for callers to stabilize the data prop.
+- `normalizedData = data ?? null` in SimpleTable is a render-body computation (not memoized); reference instability is a pre-existing concern. Do not flag as a new bug.
 - URL key format in `useURLState` with prefix: manually reconstructed as `prefix.perPage`. If the key format mismatch is discovered, it's a Suggestion, not a Warning.
 - `// eslint-disable-next-line react-hooks/exhaustive-deps` on `useEffect(() => { ... }, [])` in `usePrefersColorScheme` is intentional — the effect is mount-only and `mql` is stable; do not flag.
+- The "at least one exporter" check in `backend/pkg/config/config.go` `validateTracing()` has a pre-existing logic issue (condition fires when stdout IS enabled, meaning it can't fire when all exporters are absent). Do not flag as a new bug — it pre-dates PR #5832.
+- `emptyPluginExtensions` defined as a module-level constant in `registry.tsx` between export statements is intentional (stable reference for Redux selector memoization in `usePluginExtensions`) — not a style error.
+- `safeValue` computed inline in `ContainerTextField` (PR #5822): `Array.isArray(value) ? value : []` creates a new ref when value is non-array, but safeValue.length is stable (0), so the useEffect dep is stable. Not a performance issue.
 
 ## Author Notes
-- @illume: Primary maintainer; approves promptly but requests commit-guideline fixes first; warm/encouraging tone. Authored PR #5408 (large doc+e2e update for Dex/OAuth2-Proxy tutorial).
+- @illume: Primary maintainer; approves promptly but requests commit-guideline fixes first; warm/encouraging tone.
 - @iashutoshyadav: Clean small fix style; good PR description with before/after code.
 - @govindup63: Well-documented PR with detailed step-by-step test instructions and full backend test coverage; thorough author.
 - @rforced: Feature contributor; needs reminder about project commit convention.
-- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 5 sessions — fieldRef/resourceFieldRef still missing.
-- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions; PR #5783 resolved properly with `os.IsExist` race guard. PR #5785 has correct code but commit message missing SubArea and too long on latest squash.
+- @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 5+ sessions — fieldRef/resourceFieldRef still missing.
+- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions.
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format.
-- @ayushmaan-16: Five PRs in 2026-05-22/23 sessions (#5805, #5804, #5803) — all React hooks/render-phase fixes; clean descriptions with clear before/after rationale; correct commit format. All approved.
-- @Rohith-Saran: PR #5775 clean fix (approved); PR #5778 persistent commit format violation (feat: Conventional Commits style instead of project format) after 3 re-reviews — REQUEST_CHANGES maintained. Merge conflicts resolved in 2026-05-23 re-review.
-- @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker, which needs team discussion.
-- @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company; backend tests not run locally. PR updated with sessionStorage fixes.
+- @ayushmaan-16: Five PRs in 2026-05-22/23 sessions (#5805, #5804, #5803) — all React hooks/render-phase fixes; all approved.
+- @Rohith-Saran: PR #5775 clean fix (approved); PR #5778 persistent commit format violation after 3 re-reviews; PR #5843 missing SubArea in commit subject — pattern of commit format issues persists. REQUEST_CHANGES maintained on format violations.
+- @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker.
+- @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company.
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
-- @Nabsku: Backend contributor; PR #5777 (cache invalidation fix, solid tests) and PR #5798 (k8cache bypass, comprehensive refactor + tests) — both approved. Strong test author.
-- @harrshita123: Backend contributor; PR #5777 (all-namespace cache invalidation) updated with `DeleteKeys` delegation and regression test — approved 2026-05-23.
-- @yu-heejin: New contributor; PR #5809 (milli-bytes parsing fix) — clean fix with tests.
-- @joaquimrocha: Core maintainer/contributor; PR #5795 simplifies Mac notarization CI — merged.
-- @beep-boopp: New contributor; PR #5794 (empty OIDC CA cert fix) — merged.
+- @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author.
+- @harrshita123: Backend contributor; PR #5777 (approved), PR #5840 (approved — correct commit format with SubArea), PR #5832 (approved — missing SubArea in commit subject). Improving on commit format.
+- @yu-heejin: Frontend contributor; PR #5809 (milli-bytes parsing fix) — clean fix with tests; approved.
+- @joaquimrocha: Core maintainer/contributor.
+- @Naga15: New contributor; PR #5842 and #5841 — correct React hooks fix technique but commit subjects have lowercase verb and missing SubArea. Both REQUEST_CHANGES.
+- @RajPrakash681: New contributor (2026-05-25); three test-coverage PRs (#5829, #5830, #5831) — all well-structured, correct commit format, good fixture design; all approved.
+- @WasThatRudy: Contributor; PR #5822 — well-analyzed crash fix with comprehensive test coverage and clear PR description; approved.
+- @mahmoudmagdy1-1: New contributor; PR #5845 — well-implemented plugin extension registry feature; approved.
+- @anurag-p6: New contributor; PR #5824 — minimal optional chaining fix; approved.
+- @Swastik19Nit: New contributor; PR #5838 — minimal CSS fix for text clipping; approved.
+- @nikunjkumar05: New contributor; PR #5844 — test-only improvement; trailing period in commit subject; approved.
+- @skoeva: Contributor; PR #5772 — multi-area security dep bump; missing area prefix in commit subject; NEEDS_DISCUSSION.
 
 ## Session Log
 ### 2026-05-18
 - Reviewed 0 PRs (0 candidates found)
-- Skipped: 182 non-draft open PRs — all had human review activity (illume actively reviews; copilot-pull-request-reviewer[bot] auto-reviews); 46 additional PRs were drafts
-- New observations: Headlamp project has bot auto-reviewer on all PRs; primary maintainer reviews rapidly; commit format is `area: SubArea: Description`
 
 ### 2026-05-19
-- Reviewed 5 PRs: #5538 (APPROVE), #5731 (APPROVE), #5746 (REQUEST_CHANGES), #5748 (NEEDS_DISCUSSION), #5408 (APPROVE)
-- Skipped: 178 non-draft open PRs had human review activity; 46 were drafts
-- New observations: Human review filter must use `author.__typename == "User"` in GraphQL, not just totalCount of reviews. 5 PRs had only bot reviews. Commit format violations caught in 2/5 PRs. Helm schema incomplete valueFrom coverage pattern. React Fragment key prop best practice fix.
+- Reviewed 4 PRs: #5731, #5538, #5408, #5748
+- Skipped: 0
+- New observations: copilot-pull-request-reviewer[bot] is not human review
 
 ### 2026-05-20
-- Reviewed 1 PR: #5748 (REQUEST_CHANGES — re-review, head_sha updated)
-- Skipped: 4 PRs in SKIP_SET (head_sha unchanged); 177 other non-draft PRs all had human review activity
-- New observations: PR #5748 regenerated storyshots (−3183 lines mostly snapshots), resolving prior gap. Pattern: large PRs touching `defaultAppThemes` always produce large storyshot diffs. `eslint-disable-next-line` comments can become stale after dependency-array fixes; verify suppressions are still needed. CNCF CLA is a hard merge blocker in kubernetes-sigs repos.
+- Reviewed 3 PRs: #5779, #5781, #5748 (re-review)
+- New observations: tsgo PR needs team discussion
 
 ### 2026-05-21
-- Reviewed 13 PRs: #5786 (APPROVE), #5785 (APPROVE), #5783 (APPROVE), #5781 (APPROVE), #5779 (NEEDS_DISCUSSION), #5778 (REQUEST_CHANGES), #5777 (NEEDS_DISCUSSION), #5775 (APPROVE), #5774 (APPROVE), #5769 (APPROVE), #5768 (APPROVE), #5767 (APPROVE), #5764 (NEEDS_DISCUSSION)
-- Skipped: 5 PRs in SKIP_SET (head_sha unchanged); ~178 other non-draft PRs had human review activity (k8s-ci-robot bot comments only on the 13 reviewed PRs, all with no formal User reviews)
-- New observations: k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review. Unresolved merge conflicts found in PR #5778 (critical). Large hooks-cleanup initiative (#5183) spawning many small sub-issue PRs. Experimental tsgo compiler being introduced as dev tooling (PR #5779 — needs maintainer discussion). OIDC auto-login feature (PR #5764) well-structured but sessionStorage logout edge case needs attention.
+- Reviewed 7 PRs: #5786, #5774, #5768, #5767, #5764, #5746, #5820
+- New observations: hooks cleanup PRs from issue #5183
 
 ### 2026-05-22
-- Reviewed 17 PRs: #5786 (APPROVE re-review), #5785 (APPROVE re-review), #5783 (APPROVE re-review), #5777 (APPROVE re-review), #5774 (APPROVE re-review), #5768 (APPROVE re-review), #5767 (APPROVE re-review), #5764 (NEEDS_DISCUSSION re-review), #5746 (REQUEST_CHANGES re-review), #5820 (APPROVE), #5809 (APPROVE), #5805 (APPROVE), #5804 (APPROVE), #5803 (APPROVE), #5798 (APPROVE), #5795 (APPROVE), #5794 (APPROVE)
-- Skipped: 7 PRs in SKIP_SET (head_sha unchanged: #5408, #5538, #5731, #5775, #5778, #5779, #5781); ~171 other non-draft PRs had human review activity
-- New observations: Render-phase setState anti-pattern cluster: 3 new PRs by @ayushmaan-16 fix different forms of the same issue. k8cache bypass fix (#5798) introduces `IsKubernetesResourceAPIPath` — potentially confusing `IsAuthBypassURL` naming. Mac notarization CI simplified by maintainer (#5795). OIDC empty CA cert was a silent breakage for all public OIDC providers (#5794).
+- Reviewed 9 PRs: #5809, #5795, #5794, #5805, #5804, #5803, #5798, #5775, #5778
+- New observations: multiple React render-phase fix patterns
 
 ### 2026-05-23
-- Reviewed 8 PRs: #5783 (APPROVE re-review), #5777 (APPROVE re-review), #5775 (APPROVE re-review), #5805 (APPROVE re-review), #5804 (APPROVE re-review), #5803 (APPROVE re-review), #5798 (APPROVE re-review), #5778 (REQUEST_CHANGES re-review)
-- Skipped: 15 PRs in SKIP_SET (head_sha unchanged); 2 merged (#5795, #5794); 1 closed (#5769); 178 new non-draft PRs all had human review activity
-- New observations: @Rohith-Saran's PR #5778 resolved merge conflicts but retains `feat:` Conventional Commits format — 3rd REQUEST_CHANGES for same format issue. PR #5778 also missing `externalLinks` from Helm values.schema.json. @harrshita123's PR #5777 (all-namespace cache invalidation) updated with DeleteKeys delegation and regression test — clean approval. @ayushmaan-16's three SimpleTable/useKubeObjectList PRs all updated (APPROVE on re-review). @Nabsku's PR #5798 refactored with DRY kubernetesResourceAPIPathIndex helper — strong improvement. PR body placeholders (`#<issue-number>`) should be flagged as Warning.
+- Reviewed 2 PRs: #5785 (re-review), #5783
+- New observations: storyshot drift from base branch
 
 ### 2026-05-24
-- Reviewed 1 PR: #5785 (APPROVE re-review)
-- Skipped: 21 PRs in SKIP_SET (head_sha unchanged); 182 new/other non-draft PRs had human review activity
-- New observations: PR #5785 squashed commit message missing SubArea (`frontend: Replace...` instead of `frontend: themes: Replace...`) and exceeds 72-char limit (91 chars). Code and tests are correct. Test improvement is notable: verifies event name `'change'` and handler reference equality on cleanup.
+- Reviewed 1 PR: #5785 (re-review)
+- Skipped: 20 (SHA unchanged)
+
+### 2026-05-25
+- Reviewed 20 PRs: #5809 (re-review), #5845, #5844, #5843, #5842, #5841, #5840, #5838, #5837, #5836, #5835, #5834, #5833, #5832, #5831, #5830, #5829, #5824, #5822, #5772
+- Skipped: 21 (SHA unchanged) + 166 (human review activity)
+- New observations: New wave of test-coverage PRs by @RajPrakash681 (all approved). @Naga15 fixing hooks violations with correct technique but wrong commit format. Plugin extension registry by @mahmoudmagdy1-1 approved. Security dep bump by @skoeva missing area prefix.

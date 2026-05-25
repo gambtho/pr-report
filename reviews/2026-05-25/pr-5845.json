@@ -1,0 +1,21 @@
+{
+  "pr_number": 5845,
+  "title": "frontend: Add plugin extension registry",
+  "author": "mahmoudmagdy1-1",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5845",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 7,
+  "additions": 265,
+  "deletions": 1,
+  "re_review": false,
+  "date": "2026-05-25",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 2, "positive": 3 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "MEDIUM", "file": "frontend/src/plugin/registry.tsx", "line": 153, "description": "emptyPluginExtensions constant is placed between export statements in the middle of the file; move it adjacent to its usage functions for clarity." },
+    { "severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/plugin/registry.tsx", "line": 761, "description": "The `as T[]` cast erases the concrete extension type at runtime. Document in JSDoc that callers are responsible for type consistency at the call site." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/plugin/pluginExtensionsSlice.ts", "line": 38, "description": "Upsert-by-id semantics in addPluginExtension allow idempotent re-registration and are tested explicitly." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/plugin/registry.tsx", "line": 775, "description": "usePluginExtensions correctly uses useMemo([extensions]); stable emptyPluginExtensions fallback prevents spurious re-memos." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/plugin/registry.tsx", "line": 729, "description": "Guard clauses on both extensionPoint and value.id prevent silent failures." }
+  ]
+}
