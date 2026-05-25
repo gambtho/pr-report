@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-25T01:17:42+00:00",
+  "generated_at": "2026-05-25T03:23:57+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 207,
+  "open_prs_total": 208,
   "open_drafts_total": 48,
-  "actionable_total": 125,
-  "tracked_total": 38,
+  "actionable_total": 127,
+  "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
       {
@@ -1326,31 +1326,6 @@
           "is_tracked": true,
           "verifiable": true
         }
-      },
-      {
-        "number": 5337,
-        "title": "frontend(multiplexer): Fix connect setInterval leak",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5337",
-        "author": "Utkarshpandey0001",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-22T23:30:34Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
       }
     ],
     "ci_failing": [
@@ -2264,6 +2239,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5849,
+        "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-25T02:56:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3514,6 +3513,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5337,
+        "title": "frontend(multiplexer): Fix connect setInterval leak",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5337",
+        "author": "Utkarshpandey0001",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-25T02:05:49Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
