@@ -1,0 +1,28 @@
+{
+  "pr_number": 5809,
+  "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+  "author": "yu-heejin",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 13,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-05-26",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "commit history",
+      "line": null,
+      "description": "'Merge branch main into main' commit should be dropped via rebase before merge to keep history clean."
+    }
+  ]
+}

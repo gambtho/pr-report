@@ -1,0 +1,28 @@
+{
+  "pr_number": 5842,
+  "title": "frontend: fix react-hooks/rules-of-hooks in AuthVisible",
+  "author": "Naga15",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5842",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 9,
+  "deletions": 10,
+  "re_review": true,
+  "date": "2026-05-26",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "commit subject",
+      "line": null,
+      "description": "Missing SubArea segment. 'frontend: Fix react-hooks/rules-of-hooks in AuthVisible' should be 'frontend: AuthVisible: Fix react-hooks/rules-of-hooks violation'. Verb is now correctly capitalised but SubArea is absent."
+    }
+  ]
+}

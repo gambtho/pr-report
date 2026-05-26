@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-26",
+  "generated_at": "2026-05-26T07:33:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5842, "title": "frontend: fix react-hooks/rules-of-hooks in AuthVisible", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5841, "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5822, "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5809, "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5764, "title": "backend/frontend/helm: Add --oidc-auto-login support", "verdict": "NEEDS_DISCUSSION", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": 35, "reason": "SHA unchanged since last review (skip_set)"},
+    {"number": 169, "reason": "Already has human review activity (illume reviewed)"}
+  ],
+  "stats": {
+    "total": 5,
+    "verdicts": {"approve": 2, "request_changes": 2, "needs_discussion": 1},
+    "findings": {"critical": 0, "warning": 4, "suggestion": 3, "positive": 12},
+    "sizes": {"lockfile_only": 0, "small": 3, "medium": 2, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: area: SubArea: Description — description starts with capital letter",
+    "Keep commit subject under 72 characters",
+    "Do NOT include auto-close keywords in commit messages",
+    "Approval style is warm and brief; maintainer @illume enforces commit guidelines before APPROVE",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — not human review",
+    "Frontend (TypeScript/React): fix exhaustive-deps violations, MUI v5 patterns",
+    "Backend (Go): comma-ok assertions, slog structured logging, test-first style",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "CNCF CLA is a hard merge blocker",
+    "k8s-ci-robot posts bot IssueComments — not human review activity"
+  ],
+  "skip_style_learning": true
+}

@@ -1,0 +1,49 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 15,
+  "additions": 308,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-26",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "commit history",
+      "line": null,
+      "description": "Two commits with vague subject 'Address Copilot review comments'. Should be squashed or renamed to describe the actual change."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": 85,
+      "description": "Auto-redirect useEffect with sessionStorage loop-prevention has no Vitest test. A test mocking window.location and verifying the storageKey guard would close the gap flagged in the previous review."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/i18n/ThemeProviderNexti18n.tsx",
+      "line": 108,
+      "description": "useState(i18n.language || 'en') change is unrelated to OIDC auto-login. Deserves its own commit or PR with a clear justification."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/authchooser/index.tsx",
+      "line": 98,
+      "description": "Date() as cache-buster produces a locale string. new Date().toISOString() would be more conventional and URL-safe."
+    }
+  ]
+}
