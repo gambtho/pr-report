@@ -1,0 +1,21 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 28,
+  "deletions": 12,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 2, "suggestion": 1, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Missing SubArea in commit subject; should be 'frontend: themes: Replace deprecated MediaQueryList listener methods'."},
+    {"severity": "Warning", "confidence": "MEDIUM", "file": "frontend/src/lib/themes.ts", "line": 584, "description": "Legacy fallback addListener/removeListener calls may still trigger ESLint; verify CI lint passes or add targeted eslint-disable with justification."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/lib/themes.test.ts", "line": null, "description": "Add a test case exercising the legacy addListener/removeListener fallback path."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.ts", "line": 582, "description": "typeof mql.addEventListener === 'function' guard prevents TypeError in legacy WebViews."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.test.ts", "line": 162, "description": "Test verifies handler identity for both addEventListener and removeEventListener calls."}
+  ]
+}

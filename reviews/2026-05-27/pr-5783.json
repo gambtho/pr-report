@@ -1,0 +1,21 @@
+{
+  "pr_number": 5783,
+  "title": "helm: Fix file descriptor leak in createFullPath",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5783",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 47,
+  "deletions": 10,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 2, "suggestion": 1, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "backend/pkg/helm/repository.go", "line": 263, "description": "os.OpenFile with O_CREATE|O_WRONLY never returns EEXIST; os.IsExist(err) branch is dead code. Remove or switch to O_CREATE|O_EXCL|O_WRONLY."},
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit 'helm: Fix file descriptor leak in createFullPath' missing SubArea — e.g. 'helm: repository: Fix file descriptor leak in createFullPath'."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "backend/pkg/helm/repository_internal_test.go", "line": 77, "description": "Add a comment explaining os.Remove check guards against Windows FD-leak regression."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/repository.go", "line": 72, "description": "createFileIfNotThere now propagates non-IsNotExist os.Stat errors instead of masking them."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/repository_internal_test.go", "line": 66, "description": "TestCreateFileIfNotThere covers creation, FD-free removal, and idempotent re-call without truncation."}
+  ]
+}

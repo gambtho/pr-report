@@ -1,0 +1,21 @@
+{
+  "pr_number": 5798,
+  "title": "backend: k8cache: Bypass non-API cluster paths",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 7,
+  "additions": 236,
+  "deletions": 32,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 0, "suggestion": 1, "positive": 4},
+  "findings": [
+    {"severity": "Suggestion", "confidence": "MEDIUM", "file": "backend/pkg/k8cache/authErrResp.go", "line": 45, "description": "clusterRelativePathSegments handling of non-/clusters/ paths could benefit from a clarifying comment explaining the segment layout."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/server.go", "line": 247, "description": "IsKubernetesResourceAPIPath && IsAuthBypassURL cleanly separates two orthogonal concerns."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/k8cache/authErrResp.go", "line": 31, "description": "Segment-based parsing eliminates false positives for resources named 'version' or 'healthz'."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/k8cache/cacheStore.go", "line": 40, "description": "kubernetesResourceAPIPathIndex extracted as shared helper, removing duplicated index-detection logic."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/k8cache/cacheStore_test.go", "line": 340, "description": "Comprehensive test coverage for both proxied and direct API path formats."}
+  ]
+}

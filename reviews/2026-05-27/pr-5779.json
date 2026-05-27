@@ -1,0 +1,20 @@
+{
+  "pr_number": 5779,
+  "title": "frontend: Add @typescript/native-preview and use it for type checking",
+  "author": "sniok",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5779",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 138,
+  "deletions": 2,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 1, "suggestion": 2, "positive": 1},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "frontend/package.json", "line": null, "description": "Branch carries 'needs-rebase' label; must be rebased onto main before merge."},
+    {"severity": "Suggestion", "confidence": "MEDIUM", "file": "frontend/tsconfig.json", "line": 12, "description": "moduleResolution change from 'node' to 'bundler' may affect plugin build semantics; confirm plugins unaffected."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/package.json", "line": 44, "description": "Pinned to nightly dev build 7.0.0-dev.20260519.1; document upgrade plan for stable release."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/dependencies-sync.js", "line": 77, "description": "Correctly excludes @typescript/native-preview from plugin dependency syncing."}
+  ]
+}

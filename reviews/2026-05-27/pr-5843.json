@@ -1,0 +1,19 @@
+{
+  "pr_number": 5843,
+  "title": "frontend: Export ApiError from K8s package for plugin access",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5843",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 3,
+  "additions": 3,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 1, "suggestion": 0, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit subject uses lowercase verb 'fix'; must be 'Fix' per project convention."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/config/vite.config.mjs", "line": 37, "description": "Correct Vite external-module alias ensures ApiError resolves to pluginLib.K8s without re-bundling."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/plugin/__snapshots__/pluginLib.snapshot", "line": null, "description": "Snapshot updated confirming end-to-end export wiring."}
+  ]
+}

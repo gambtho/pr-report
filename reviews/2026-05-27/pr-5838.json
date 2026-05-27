@@ -1,0 +1,19 @@
+{
+  "pr_number": 5838,
+  "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel",
+  "author": "Swastik19Nit",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5838",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Small",
+  "files_changed": 3,
+  "additions": 29,
+  "deletions": 2,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 1, "suggestion": 0, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "PR metadata", "line": null, "description": "Label 'cncf-cla: no' — CNCF CLA not signed; hard merge blocker for kubernetes-sigs."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/ObjectEventList.tsx", "line": 157, "description": "Minimal, targeted CSS fix for Age column text overflow."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/ObjectEventList.stories.tsx", "line": 100, "description": "Third event added to story improves coverage of multi-event scenarios."}
+  ]
+}

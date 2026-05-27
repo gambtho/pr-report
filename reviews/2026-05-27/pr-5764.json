@@ -1,0 +1,23 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 17,
+  "additions": 308,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 3, "suggestion": 1, "positive": 3},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commits", "line": null, "description": "Four Merge branch 'main' into feature/oidc-auto-login commits present; rebase requested by @illume twice."},
+    {"severity": "Warning", "confidence": "HIGH", "file": "commits", "line": null, "description": "Vague commit subjects 'frontend/helm: Address Copilot review comments' and 'frontend/backend: Address Copilot review comments' should describe the actual changes."},
+    {"severity": "Warning", "confidence": "MEDIUM", "file": "frontend/src/components/authchooser/index.tsx", "line": 82, "description": "No component-level Vitest test for the auto-login useEffect covering redirect, skip-if-attempted, and skip-if-non-oidc scenarios — open since 2026-05-21 review."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/oidcauth/index.tsx", "line": 29, "description": "Verify eslint exhaustive-deps passes after adding history to useEffect deps."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/redux/configSlice.ts", "line": 205, "description": "'oidcAutoLogin' in action.payload guard prevents partial setConfig from resetting the flag."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/oidcauth/index.tsx", "line": null, "description": "Full-page OIDC return clears sessionStorage flag before navigating to cluster page."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp_test.go", "line": 175, "description": "TestGetConfigIncludesOidcAutoLogin covers backend /config serialisation for the new field."}
+  ]
+}

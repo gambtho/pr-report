@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "2026-05-27T07:50:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5764, "title": "backend/frontend/helm: Add --oidc-auto-login support", "verdict": "REQUEST_CHANGES", "size": "Medium"},
+    {"number": 5775, "title": "frontend: Fix Backstage receiver listener leak on Home remount", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5778, "title": "feat: Add configurable external links to sidebar via Helm values", "verdict": "REQUEST_CHANGES", "size": "Medium"},
+    {"number": 5779, "title": "frontend: Add @typescript/native-preview and use it for type checking", "verdict": "NEEDS_DISCUSSION", "size": "Medium"},
+    {"number": 5783, "title": "helm: Fix file descriptor leak in createFullPath", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5785, "title": "frontend: themes: Replace deprecated MediaQueryList listener methods", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5798, "title": "backend: k8cache: Bypass non-API cluster paths", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5809, "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5830, "title": "frontend: podContainer: Add unit tests", "verdict": "REQUEST_CHANGES", "size": "Medium"},
+    {"number": 5838, "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel", "verdict": "NEEDS_DISCUSSION", "size": "Small"},
+    {"number": 5843, "title": "frontend: Export ApiError from K8s package for plugin access", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5844, "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths.", "verdict": "REQUEST_CHANGES", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": 5822, "reason": "SHA unchanged since last review"},
+    {"number": 5841, "reason": "SHA unchanged since last review"},
+    {"number": 5842, "reason": "SHA unchanged since last review"},
+    {"number": 5845, "reason": "SHA unchanged since last review"}
+  ],
+  "stats": {
+    "total": 12,
+    "verdicts": {"approve": 2, "request_changes": 8, "needs_discussion": 2},
+    "findings": {"critical": 0, "warning": 20, "suggestion": 8, "positive": 23},
+    "sizes": {"lockfile_only": 0, "small": 7, "medium": 5, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include auto-close keywords in commit messages.",
+    "Approval style is warm and brief; @illume is primary maintainer.",
+    "copilot-pull-request-reviewer[bot] is NOT human review activity.",
+    "k8s-ci-robot posts bot comments — do not count as human review.",
+    "Frontend: fix exhaustive-deps violations; Material-UI v5 patterns.",
+    "Backend: comma-ok type assertions; structured logging via slog.",
+    "Tests required for both frontend (Vitest) and backend (Go test).",
+    "CNCF CLA is a hard merge blocker.",
+    "@illume reviews PRs very quickly; rebase-main requested consistently.",
+    "PRs with merge-main commits will receive rebase request from @illume."
+  ],
+  "skip_style_learning": true
+}

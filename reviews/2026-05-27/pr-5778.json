@@ -1,0 +1,22 @@
+{
+  "pr_number": 5778,
+  "title": "feat: Add configurable external links to sidebar via Helm values",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 13,
+  "additions": 155,
+  "deletions": 43,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 3, "suggestion": 1, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Conventional Commits format 'feat: add ...' — must use project format e.g. 'frontend: Sidebar: Add configurable external links via Helm values'."},
+    {"severity": "Warning", "confidence": "HIGH", "file": "frontend/src/components/Sidebar/useSidebarItems.tsx", "line": 55, "description": "safeLinkUrl returns url.toLowerCase() — lowercases case-sensitive URL paths. Should return original url: return lower.startsWith('http://') || lower.startsWith('https://') ? url : null."},
+    {"severity": "Warning", "confidence": "MEDIUM", "file": "CI", "line": null, "description": "Backend CI tests reported failing by @illume; verify cd backend && go test ./... passes."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "charts/headlamp/templates/deployment.yaml", "line": null, "description": "Confirm koanf HEADLAMP_CONFIG_EXTERNAL_LINKS env var maps correctly to external-links key."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp.go", "line": 2229, "description": "externalLinks initialised as empty slice (not nil) ensures JSON always emits [] not null."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "charts/headlamp/values.schema.json", "line": null, "description": "externalLinks added to Helm JSON schema with correct type for operator validation."}
+  ]
+}

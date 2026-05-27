@@ -1,0 +1,19 @@
+{
+  "pr_number": 5844,
+  "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths.",
+  "author": "nikunjkumar05",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5844",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 6,
+  "deletions": 3,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 1, "suggestion": 1, "positive": 1},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Trailing period in commit subject 'backend: config: Add a testcase for Headlamp kubeconfig paths.' — remove the period."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "PR body", "line": null, "description": "Issue reference '#NAN' is a placeholder; replace with a real issue number or note it as standalone."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/config/config_test.go", "line": 900, "description": "Exact equality assertion with OS-conditional expected path is more precise than HasPrefix."}
+  ]
+}

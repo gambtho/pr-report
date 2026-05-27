@@ -1,0 +1,20 @@
+{
+  "pr_number": 5775,
+  "title": "frontend: Fix Backstage receiver listener leak on Home remount",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5775",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 11,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 2, "suggestion": 0, "positive": 2},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit 'frontend: Fix Backstage receiver listener leak on Home remount' missing SubArea — e.g. 'frontend: Home: Fix Backstage receiver listener leak on remount'."},
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit 'frontend: Fix JSDoc for setupBackstageMessageReceiver' missing SubArea — e.g. 'frontend: backstageMessageReceiver: Fix JSDoc'."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/App/Home/index.tsx", "line": 116, "description": "return setupBackstageMessageReceiver() correctly wires cleanup into useEffect return value."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/backstageMessageReceiver.ts", "line": 147, "description": "Both Backstage and non-Backstage paths return () => void making the contract complete."}
+  ]
+}

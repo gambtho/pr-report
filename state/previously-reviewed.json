@@ -1,5 +1,77 @@
 [
   {
+    "number": 5764,
+    "head_sha": "292fa5e1e2f8c48cd883b755da72eeec3981fff7",
+    "date": "2026-05-27",
+    "title": "backend/frontend/helm: Add --oidc-auto-login support"
+  },
+  {
+    "number": 5775,
+    "head_sha": "66fbe422cd66f8ffb5ca16b080ed33cf54188821",
+    "date": "2026-05-27",
+    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
+  },
+  {
+    "number": 5778,
+    "head_sha": "5cf3d594ff400a8811aed52cbab8a45e55871283",
+    "date": "2026-05-27",
+    "title": "feat: Add configurable external links to sidebar via Helm values"
+  },
+  {
+    "number": 5779,
+    "head_sha": "a6094add95d8d592409f2067322e55d8b82f98a1",
+    "date": "2026-05-27",
+    "title": "frontend: Add @typescript/native-preview and use it for type checking"
+  },
+  {
+    "number": 5783,
+    "head_sha": "7f54a27c28f50123bd5d03647b07774a72a1c3a2",
+    "date": "2026-05-27",
+    "title": "helm: Fix file descriptor leak in createFullPath"
+  },
+  {
+    "number": 5785,
+    "head_sha": "9c42a4e77966f54c823b124bbd2c82934e5fad5a",
+    "date": "2026-05-27",
+    "title": "frontend: themes: Replace deprecated MediaQueryList listener methods"
+  },
+  {
+    "number": 5798,
+    "head_sha": "3133bcd6c42506fb7d03bf2750559a3bf4dce3a9",
+    "date": "2026-05-27",
+    "title": "backend: k8cache: Bypass non-API cluster paths"
+  },
+  {
+    "number": 5809,
+    "head_sha": "cc6162e33f64e7f6fbb41f7cb007e47f3effb311",
+    "date": "2026-05-27",
+    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
+  },
+  {
+    "number": 5830,
+    "head_sha": "6f5ffba1fee6ac3c9c3f51f472c520766a2d27f9",
+    "date": "2026-05-27",
+    "title": "frontend: podContainer: Add unit tests"
+  },
+  {
+    "number": 5838,
+    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
+    "date": "2026-05-27",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+  },
+  {
+    "number": 5843,
+    "head_sha": "08ca74e6e673cd3e93161e6e6681872e3f37cb65",
+    "date": "2026-05-27",
+    "title": "frontend: Export ApiError from K8s package for plugin access"
+  },
+  {
+    "number": 5844,
+    "head_sha": "9c8afdf6527a021b9bc9668fac88340c1144ac3b",
+    "date": "2026-05-27",
+    "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths."
+  },
+  {
     "number": 5842,
     "head_sha": "56e43662e8ecad33d81dd4eb239c3438ff8fc756",
     "date": "2026-05-26",
@@ -18,64 +90,16 @@
     "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field"
   },
   {
-    "number": 5809,
-    "head_sha": "b43e5ce47291c22fd95f87ae5b24db83e6ffb9cf",
-    "date": "2026-05-26",
-    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
-  },
-  {
-    "number": 5764,
-    "head_sha": "250792f0f6e11020b7dc9c918d7db7a0e57429ba",
-    "date": "2026-05-26",
-    "title": "backend/frontend/helm: Add --oidc-auto-login support"
-  },
-  {
-    "number": 5809,
-    "head_sha": "f1f315b13d750964a59319067163a73da6915612",
-    "date": "2026-05-25",
-    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
-  },
-  {
     "number": 5845,
     "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
     "date": "2026-05-25",
     "title": "frontend: Add plugin extension registry"
   },
   {
-    "number": 5844,
-    "head_sha": "9cd183aad763dd0732ce12e64a068709b5246758",
-    "date": "2026-05-25",
-    "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths."
-  },
-  {
-    "number": 5843,
-    "head_sha": "0d5a26381e51f1ee51ce9392398dbdee1abbff5b",
-    "date": "2026-05-25",
-    "title": "frontend: Export ApiError from K8s package for plugin access"
-  },
-  {
-    "number": 5842,
-    "head_sha": "0dfe2f563d9609c1f418d0324389ad5394eada0a",
-    "date": "2026-05-25",
-    "title": "frontend: fix react-hooks/rules-of-hooks in AuthVisible"
-  },
-  {
-    "number": 5841,
-    "head_sha": "0864332c7446af979f826ea455f9d8ac580ab19d",
-    "date": "2026-05-25",
-    "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton"
-  },
-  {
     "number": 5840,
     "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
     "date": "2026-05-25",
     "title": "backend: helm: Mark failed install verification"
-  },
-  {
-    "number": 5838,
-    "head_sha": "c761cb80000872b9606ae4aac625dfebd52afed5",
-    "date": "2026-05-25",
-    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
   },
   {
     "number": 5837,
@@ -120,12 +144,6 @@
     "title": "frontend: recentClusters: Add unit tests"
   },
   {
-    "number": 5830,
-    "head_sha": "3d82fe704c72f55777369a5c282ef9e0969e5d15",
-    "date": "2026-05-25",
-    "title": "frontend: podContainer: Add unit tests"
-  },
-  {
     "number": 5829,
     "head_sha": "4d7552e9da0a4ee8c706a0acab8a70b4044d0c09",
     "date": "2026-05-25",
@@ -138,28 +156,10 @@
     "title": "frontend: ObjectEventList: Guard optional event source in From column"
   },
   {
-    "number": 5822,
-    "head_sha": "8c40c57897341484e5ea61d6d51ba32a3e8bc87f",
-    "date": "2026-05-25",
-    "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field"
-  },
-  {
     "number": 5772,
     "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
     "date": "2026-05-25",
     "title": "Bump fast-uri, brace-expansion, ws, containerd"
-  },
-  {
-    "number": 5785,
-    "head_sha": "4466952563bc30ae29c09b2c5544872adabfc288",
-    "date": "2026-05-24",
-    "title": "frontend: themes: Replace deprecated MediaQueryList listener methods"
-  },
-  {
-    "number": 5783,
-    "head_sha": "f00a57afd9ca8ae585d9fb94c5278c9b89f556af",
-    "date": "2026-05-23",
-    "title": "helm: Fix file descriptor leak in createFullPath"
   },
   {
     "number": 5777,
@@ -186,24 +186,6 @@
     "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change"
   },
   {
-    "number": 5798,
-    "head_sha": "6b490a53cef74f75c1f999cb0ecb8d24b04e0174",
-    "date": "2026-05-23",
-    "title": "backend: k8cache: Bypass non-API cluster paths"
-  },
-  {
-    "number": 5775,
-    "head_sha": "2c02054c8d8cfad757254204ce8a0b0d3747b2eb",
-    "date": "2026-05-23",
-    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
-  },
-  {
-    "number": 5778,
-    "head_sha": "4a6d86d91a1e6405172cfb8241c3d512cc5b7802",
-    "date": "2026-05-23",
-    "title": "feat: Add configurable external links to sidebar via Helm values"
-  },
-  {
     "number": 5786,
     "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
     "date": "2026-05-22",
@@ -228,12 +210,6 @@
     "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps "
   },
   {
-    "number": 5764,
-    "head_sha": "913ba2978a8bc47427ed1bd2a8426e8917324349",
-    "date": "2026-05-22",
-    "title": "backend/frontend/helm: Add --oidc-auto-login support"
-  },
-  {
     "number": 5746,
     "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
     "date": "2026-05-22",
@@ -256,12 +232,6 @@
     "head_sha": "4503f376ee1b5afb37349462b414ce38b4e8f6d0",
     "date": "2026-05-22",
     "title": "backend: auth/kubeconfig: Skip empty OIDC CA cert instead of failing"
-  },
-  {
-    "number": 5779,
-    "head_sha": "455105d98e98a76a1db83b2d753efe66f34cd347",
-    "date": "2026-05-21",
-    "title": "frontend: Add @typescript/native-preview and use it for type checking"
   },
   {
     "number": 5781,

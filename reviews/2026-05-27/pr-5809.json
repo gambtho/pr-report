@@ -1,0 +1,19 @@
+{
+  "pr_number": 5809,
+  "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+  "author": "yu-heejin",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 13,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 0, "suggestion": 1, "positive": 2},
+  "findings": [
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/lib/units.ts", "line": null, "description": "Two commits for a single logical fix could be squashed into one atomic commit."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/units.ts", "line": 41, "description": "Regex guards milli-byte fast path before general matcher — no false positives for 'M'/'Mi'."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/units.test.ts", "line": 38, "description": "Four test cases covering integer, large, precision, and decimal milli-byte values."}
+  ]
+}

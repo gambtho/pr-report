@@ -1,0 +1,20 @@
+{
+  "pr_number": 5830,
+  "title": "frontend: podContainer: Add unit tests",
+  "author": "RajPrakash681",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5830",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 1,
+  "additions": 168,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-05-27",
+  "findings_count": {"critical": 0, "warning": 1, "suggestion": 0, "positive": 3},
+  "findings": [
+    {"severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Merge-main commit 'Merge branch main into feat/pod-container-tests' present; rebase onto origin/main and force-push."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/podContainer.test.ts", "line": 52, "description": "getAllContainers fully exercised across no-spec, main-only, combined, init-only, and undefined-spec cases."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/podContainer.test.ts", "line": 80, "description": "getDefaultContainer covers null/undefined, running-main preference, main-over-init priority, init fallback, and empty-containers."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/helpers/podContainer.test.ts", "line": 28, "description": "Minimal makePod fixture populates only fields the helpers under test read."}
+  ]
+}
