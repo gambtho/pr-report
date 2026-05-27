@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T19:48:58+00:00",
+  "generated_at": "2026-05-27T20:52:08+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 198,
   "open_drafts_total": 50,
@@ -2202,7 +2202,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-26T19:58:39Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3239,7 +3239,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T19:50:32Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3465,6 +3465,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5804,
+        "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+        "author": "ayushmaan-16",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-27T20:07:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -3828,7 +3852,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -3906,30 +3930,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5804,
-        "title": "frontend: useKubeObjectList: Fix state overwrite during render",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
-        "author": "ayushmaan-16",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-26T06:58:05Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
