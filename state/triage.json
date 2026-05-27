@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-27T01:16:44+00:00",
+  "generated_at": "2026-05-27T03:22:51+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 196,
   "open_drafts_total": 50,
-  "actionable_total": 126,
-  "tracked_total": 39,
+  "actionable_total": 128,
+  "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
       {
@@ -822,7 +822,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T01:16:57Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -943,62 +943,12 @@
         }
       },
       {
-        "number": 5442,
-        "title": "frontend: Add Readiness/Startup probes and fix probe display logic",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5442",
-        "author": "Joshna907",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-12T17:59:12Z",
-        "days_since_update": 14,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5358,
         "title": "frontend: Fix stale ScaleDialog state and log clusterRequest network errors",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5358",
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-12T18:01:22Z",
-        "days_since_update": 14,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5318,
-        "title": "frontend: Terminal: Fix stale shell state and race conditions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
-        "author": "Joshna907",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-12T18:02:52Z",
         "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
@@ -2323,6 +2273,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5318,
+        "title": "frontend: Terminal: Fix stale shell state and race conditions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
+        "author": "Joshna907",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-27T03:03:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3516,6 +3490,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5442,
+        "title": "frontend: Add Readiness/Startup probes and fix probe display logic",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5442",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-27T02:42:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
