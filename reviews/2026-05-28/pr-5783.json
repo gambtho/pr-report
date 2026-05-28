@@ -1,0 +1,20 @@
+{
+  "pr_number": 5783,
+  "title": "helm: Fix file descriptor leak in createFullPath",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5783",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 47,
+  "deletions": 10,
+  "re_review": true,
+  "date": "2026-05-28",
+  "findings_count": { "critical": 0, "warning": 2, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "backend/pkg/helm/repository.go", "line": 258, "description": "os.IsExist(err) branch is dead code: OpenFile with O_CREATE|O_WRONLY (no O_EXCL) never returns EEXIST" },
+    { "severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit subject missing SubArea; should be 'helm: repository: Fix file descriptor leak in createFullPath'" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/repository.go", "line": null, "description": "createFullPath now returns error and closes the file internally, eliminating the caller-side leak" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/helm/repository_internal_test.go", "line": null, "description": "Test step 2 (remove file after create) verifies no leaked descriptor — important on Windows" }
+  ]
+}

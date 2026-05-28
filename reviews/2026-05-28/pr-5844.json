@@ -1,0 +1,19 @@
+{
+  "pr_number": 5844,
+  "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths.",
+  "author": "nikunjkumar05",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5844",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 6,
+  "deletions": 3,
+  "re_review": true,
+  "date": "2026-05-28",
+  "findings_count": { "critical": 0, "warning": 2, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Trailing period in commit subject still present after 2+ reviews: 'backend: config: Add a testcase for Headlamp kubeconfig paths.'" },
+    { "severity": "Warning", "confidence": "HIGH", "file": "PR body", "line": null, "description": "Related Issue field still contains unresolved placeholder '#NAN'" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/config/config_test.go", "line": null, "description": "Exact path assertions replace prefix checks, giving precise OS-specific coverage" }
+  ]
+}

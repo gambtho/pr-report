@@ -1,0 +1,19 @@
+{
+  "pr_number": 5805,
+  "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5805",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 21,
+  "deletions": 22,
+  "re_review": true,
+  "date": "2026-05-28",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 3 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "filteredData moved to useMemo and page-reset moved to useEffect — no more render-phase state mutation" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "filteredData.length <= page * rowsPerPage with && page !== 0 guard is correct and loops safely" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "getSortData refactored to pure function — no hidden setDisplayData side effect during render" }
+  ]
+}

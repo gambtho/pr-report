@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-05-27*
+*Last updated: 2026-05-28*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -30,7 +30,7 @@
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 5 sessions). PR #5778 by @Rohith-Saran persists after 4 re-reviews.
 - Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844; multiple sessions).
 - Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul).
-- Commit subject exceeding 72-char soft limit (seen in PR #5785: 91 chars).
+- Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-28 re-review).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json` — now fixed.
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
 - CI workflow `push` triggers without `paths` filter causing unnecessary full-stack e2e runs on unrelated commits (seen in PR #5408).
@@ -42,14 +42,14 @@
 - Two sequential `setState` calls in the same render for the same piece of state (seen in PR #5804).
 - Missing frontend Vitest tests for new behavioral flows (seen in PR #5764 — OIDC auto-login AuthChooser useEffect still not tested after 5 re-reviews).
 - Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778 — now added).
-- PR body containing unresolved placeholder `#<issue-number>` or `#NAN` instead of real issue reference (seen in PR #5778, #5844).
+- PR body containing unresolved placeholder `#<issue-number>` or `#NAN` instead of real issue reference (seen in PR #5778, #5844 — #5844 still has #NAN after 3 re-reviews).
 - Storyshot files containing unrelated ARIA-element structural drift included in a PR diff (seen in PR #5843 — resolved in 2026-05-27 re-review).
-- Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05; persistent after 2 re-reviews).
+- Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05; persistent after 3 re-reviews).
 - Multi-area dependency bump PRs missing area prefix in commit subject (seen in PR #5772 by @skoeva — "Bump fast-uri, brace-expansion, ws, containerd" with no `deps:` prefix).
 - Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 5 re-reviews).
 - Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — 4 merge commits still present; PR #5830 by @RajPrakash681 — 1 merge commit).
 - Unrelated single-line fix bundled into a feature PR (seen in PR #5764: `ThemeProviderNexti18n.tsx` fallback lang change unrelated to OIDC auto-login).
-- Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — `OpenFile` with this combination never returns `EEXIST`. Seen in PR #5783.
+- Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — `OpenFile` with this combination never returns `EEXIST`. Seen in PR #5783; still present in 2026-05-28 re-review.
 - URL-lowercasing bug: `safeLinkUrl` returns `url.toLowerCase()` instead of original `url` for case-sensitive path components (seen in PR #5778 — still open).
 
 ## False Positives / Project Conventions
@@ -69,6 +69,7 @@
 - `safeValue` computed inline in `ContainerTextField` (PR #5822): `Array.isArray(value) ? value : []` creates a new ref when value is non-array, but safeValue.length is stable (0), so the useEffect dep is stable. Not a performance issue.
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention (PR #5764) is intentional — sessionStorage (not localStorage) correctly clears on tab close, so the auto-login fires once per session per cluster per tab.
 - `koanf` env var mapping: `HEADLAMP_CONFIG_EXTERNAL_LINKS` maps to `external-links` key via the koanf env provider (uppercase `_` → lowercase `-` transformation with `HEADLAMP_CONFIG_` prefix stripped). This is a project convention, not a bug.
+- `os.O_CREATE|os.O_WRONLY` without `O_EXCL` never returns EEXIST — `os.IsExist(err)` guard after such OpenFile call is dead code. Flag as Warning in any PR that adds this pattern.
 
 ## Author Notes
 - @illume: Primary maintainer; approves promptly but requests commit-guideline fixes first; warm/encouraging tone. Consistently requests rebase to remove merge-main commits.
@@ -76,24 +77,24 @@
 - @govindup63: Well-documented PR with detailed step-by-step test instructions and full backend test coverage; thorough author.
 - @rforced: Feature contributor; needs reminder about project commit convention.
 - @HarK-github: Helm chart contributor using Conventional Commits style (needs commit format guidance); PR #5746 pending for 5+ sessions — fieldRef/resourceFieldRef still missing.
-- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions. Persistent SubArea omissions in commit subjects; getting closer.
+- @YadavAkhileshh: Multiple PRs (#5785, #5783) — clean fixes, good PR descriptions, follows project conventions. Persistent SubArea omissions in commit subjects; commit subject length also an issue in #5785. Not making progress on commit format despite repeated feedback.
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format.
-- @ayushmaan-16: Five PRs in 2026-05-22/23 sessions (#5805, #5804, #5803) — all React hooks/render-phase fixes; all approved.
+- @ayushmaan-16: Five PRs in 2026-05-22/23 sessions (#5805, #5804, #5803) — all React hooks/render-phase fixes; all now approved in 2026-05-28 re-review after fixes. Strong technical author; minor commit SubArea omission in one commit of #5804.
 - @Rohith-Saran: PR #5775 (listener leak — SubArea missing in 2/3 commits); PR #5778 (external links — commit format still Conventional Commits after 4 re-reviews + safeLinkUrl bug); PR #5843 (ApiError export — lowercase verb in commit). Pattern of commit format issues persists across all PRs.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker — awaiting team discussion.
 - @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company. Vague commit subjects and merge-main commits persist after 5 re-reviews; component-level test still missing.
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
 - @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author. PR #5798 is a well-structured refactoring of the k8cache URL path handling.
 - @harrshita123: Backend contributor; PR #5777 (approved), PR #5840 (approved — correct commit format with SubArea), PR #5832 (approved — missing SubArea in commit subject). Improving on commit format.
-- @yu-heejin: Frontend contributor; PR #5809 — rebased (no more merge commits), decimal milli-bytes support added; approved in 2026-05-27 re-review.
+- @yu-heejin: Frontend contributor; PR #5809 — approved in 2026-05-27 re-review (rebase done + decimal milli-bytes support added).
 - @joaquimrocha: Core maintainer/contributor.
-- @Naga15: Persistent commit format issue — PRs #5842 and #5841 skipped (SHA unchanged) in 2026-05-27 session.
-- @RajPrakash681: New contributor (2026-05-25); four test-coverage PRs (#5829, #5830, #5831, #5844... wait #5829, #5830, #5831 all approved); PR #5830 now has a merge-main commit needing rebase.
-- @WasThatRudy: Contributor; PR #5822 skipped (SHA unchanged) in 2026-05-27 session.
-- @mahmoudmagdy1-1: New contributor; PR #5845 skipped (SHA unchanged) in 2026-05-27 session.
-- @anurag-p6: New contributor; PR #5824 skipped (SHA unchanged).
+- @Naga15: Persistent commit format issue — PRs #5842 and #5841 skipped (SHA unchanged) in 2026-05-28 session.
+- @RajPrakash681: New contributor (2026-05-25); four test-coverage PRs (#5829, #5830, #5831 all approved); PR #5830 had merge-main commit.
+- @WasThatRudy: Contributor; PR #5822 approved in 2026-05-26 session after adding tests.
+- @mahmoudmagdy1-1: New contributor; PR #5845 — SHA unchanged in 2026-05-28 session.
+- @anurag-p6: New contributor; PR #5824 — SHA unchanged.
 - @Swastik19Nit: New contributor; PR #5838 — CLA not signed (`cncf-cla: no`); hard merge blocker. Implementation is correct.
-- @nikunjkumar05: New contributor; PR #5844 — trailing period persists in commit subject after 2 re-reviews; exact path assertions are good improvement.
+- @nikunjkumar05: New contributor; PR #5844 — trailing period and #NAN placeholder persist after 3 re-reviews. Code quality (exact path assertions) is improving but commit hygiene remains unaddressed.
 - @skoeva: Contributor; PR #5772 — merged (main branch updated in 2026-05-27 session).
 
 ## Session Log
@@ -139,3 +140,8 @@
 - Reviewed 12 PRs (all re-reviews): #5764, #5775, #5778, #5779, #5783, #5785, #5798, #5809, #5830, #5838, #5843, #5844
 - Skipped: 4 (SHA unchanged: #5822, #5841, #5842, #5845) + 150 (all new candidates had human review activity)
 - New observations: PR #5798 (@Nabsku) approved — well-structured k8cache refactor; PR #5809 (@yu-heejin) approved — rebase done + decimal support. PR #5838 (@Swastik19Nit) NEEDS_DISCUSSION — `cncf-cla: no` hard blocker. Dead `os.IsExist` code found in PR #5783. URL-lowercasing bug found in PR #5778 `safeLinkUrl`. PR #5843 (@Rohith-Saran) REQUEST_CHANGES for lowercase commit verb.
+
+### 2026-05-28
+- Reviewed 6 PRs (all re-reviews): #5783, #5785, #5803, #5804, #5805, #5844
+- Skipped: 26 (SHA unchanged) + 178 (all new candidates had human review activity)
+- New observations: @ayushmaan-16 all three SimpleTable/useKubeObjectList PRs (#5803, #5804, #5805) now approved after solid fixes — functional state updates, pure getSortData, useMemo filteredData, useEffect page-reset, direct defaultRowsPerPage call. @YadavAkhileshh still not fixing SubArea and commit length in #5785 or dead os.IsExist in #5783 despite repeated flagging. @nikunjkumar05 PR #5844 still has trailing period + #NAN after 3 re-reviews.

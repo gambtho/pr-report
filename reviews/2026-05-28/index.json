@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T07:45:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5783, "title": "helm: Fix file descriptor leak in createFullPath", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5785, "title": "frontend: themes: Replace deprecated MediaQueryList listener methods", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5803, "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5804, "title": "frontend: useKubeObjectList: Fix state overwrite during render", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5805, "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5844, "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths.", "verdict": "REQUEST_CHANGES", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": 5538, "reason": "SHA unchanged"},
+    {"number": 5731, "reason": "SHA unchanged"},
+    {"number": 5746, "reason": "SHA unchanged"},
+    {"number": 5764, "reason": "SHA unchanged"},
+    {"number": 5767, "reason": "SHA unchanged"},
+    {"number": 5768, "reason": "SHA unchanged"},
+    {"number": 5774, "reason": "SHA unchanged"},
+    {"number": 5775, "reason": "SHA unchanged"},
+    {"number": 5777, "reason": "SHA unchanged"},
+    {"number": 5778, "reason": "SHA unchanged"},
+    {"number": 5786, "reason": "SHA unchanged"},
+    {"number": 5798, "reason": "SHA unchanged"},
+    {"number": 5809, "reason": "SHA unchanged"},
+    {"number": 5820, "reason": "SHA unchanged"},
+    {"number": 5822, "reason": "SHA unchanged"},
+    {"number": 5824, "reason": "SHA unchanged"},
+    {"number": 5829, "reason": "SHA unchanged"},
+    {"number": 5830, "reason": "SHA unchanged"},
+    {"number": 5831, "reason": "SHA unchanged"},
+    {"number": 5832, "reason": "SHA unchanged"},
+    {"number": 5838, "reason": "SHA unchanged"},
+    {"number": 5840, "reason": "SHA unchanged"},
+    {"number": 5841, "reason": "SHA unchanged"},
+    {"number": 5842, "reason": "SHA unchanged"},
+    {"number": 5843, "reason": "SHA unchanged"},
+    {"number": 5845, "reason": "SHA unchanged"},
+    {"number": null, "reason": "178 new candidates all had human review activity (all 178 checked)"}
+  ],
+  "stats": {
+    "total": 6,
+    "verdicts": {"approve": 3, "request_changes": 3, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 6, "suggestion": 2, "positive": 10},
+    "sizes": {"lockfile_only": 0, "small": 5, "medium": 1, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: area: SubArea: Description (capital first word after last colon)",
+    "Keep commit subject under 72 characters (soft limit)",
+    "No trailing period in commit subject",
+    "Approval style is warm and brief; CHANGES_REQUESTED for commit guideline violations before APPROVE",
+    "Reviewer @illume reviews PRs very quickly; copilot-pull-request-reviewer[bot] is not human review",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "Fix exhaustive-deps lint violations rather than suppressing with eslint-disable",
+    "Render-phase state mutations (setState during render) are anti-pattern; move to useEffect",
+    "useMemo with empty dep array as one-shot initialiser is anti-pattern; use lazy useState or direct call",
+    "CNCF CLA required; k8s-ci-robot bot comments do not count as human review"
+  ],
+  "skip_style_learning": true
+}

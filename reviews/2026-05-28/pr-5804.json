@@ -1,0 +1,20 @@
+{
+  "pr_number": 5804,
+  "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 2,
+  "additions": 105,
+  "deletions": 6,
+  "re_review": true,
+  "date": "2026-05-28",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 3 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "commit", "line": null, "description": "Second commit missing SubArea: 'frontend: Add useKubeObjectList state update regression test' should include 'useKubeObjectList:'" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts", "line": 535, "description": "Functional update setListsToWatch(prev => ...) avoids stale-closure reads from batched render-phase updates" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts", "line": 543, "description": "Early return when additions and removals both zero avoids unnecessary re-render" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.test.tsx", "line": 350, "description": "Regression test covers simultaneous add 'c' and remove 'a' — exactly the previously broken scenario" }
+  ]
+}

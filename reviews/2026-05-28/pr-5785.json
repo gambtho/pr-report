@@ -1,0 +1,20 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 28,
+  "deletions": 12,
+  "re_review": true,
+  "date": "2026-05-28",
+  "findings_count": { "critical": 0, "warning": 2, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "commit", "line": null, "description": "Commit subject missing SubArea segment; should be 'frontend: themes: Replace deprecated MediaQueryList listener methods'" },
+    { "severity": "Warning", "confidence": "MEDIUM", "file": "commit", "line": null, "description": "Commit subject ~90 chars exceeds 72-char soft limit" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.ts", "line": 582, "description": "typeof guard cleanly preserves legacy fallback without breaking modern browsers" },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.test.ts", "line": 178, "description": "Tests now verify exact event name 'change' and same handler reference on cleanup" }
+  ]
+}
