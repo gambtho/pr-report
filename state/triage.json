@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T07:39:31+00:00",
+  "generated_at": "2026-05-28T09:31:06+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 204,
   "open_drafts_total": 50,
@@ -353,7 +353,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-25T09:24:57Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -971,7 +971,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1887,7 +1887,7 @@
         "author": "drewbailey",
         "bucket": "ci_failing",
         "updated_at": "2026-05-21T08:19:43Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2151,11 +2151,35 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5524",
         "author": "ManthanNimodiya",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-28T07:16:42Z",
+        "updated_at": "2026-05-28T07:39:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5318,
+        "title": "frontend: Terminal: Fix stale shell state and race conditions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
+        "author": "Joshna907",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-28T07:43:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2175,7 +2199,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5864",
         "author": "ManthanNimodiya",
         "bucket": "ci_failing",
-        "updated_at": "2026-05-28T07:25:59Z",
+        "updated_at": "2026-05-28T07:49:15Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -2442,7 +2466,7 @@
         "author": "aabhinavvvvvvv",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-22T08:42:45Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -2466,7 +2490,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-24T09:17:35Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2490,7 +2514,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-24T09:18:15Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2828,7 +2852,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T07:41:13Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2852,7 +2876,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:02:30Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2876,7 +2900,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2900,7 +2924,7 @@
         "author": "Vikaspal8923",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:51:52Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3282,30 +3306,6 @@
         }
       },
       {
-        "number": 5453,
-        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
-        "author": "Joshna907",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-28T07:16:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5717,
         "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
@@ -3426,16 +3426,16 @@
         }
       },
       {
-        "number": 5318,
-        "title": "frontend: Terminal: Fix stale shell state and race conditions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
-        "author": "Joshna907",
+        "number": 5754,
+        "title": "app: Add a setting to disable the system tray icon",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5754",
+        "author": "VlatkoMilisav",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-28T07:22:30Z",
+        "updated_at": "2026-05-28T07:27:52Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3450,16 +3450,64 @@
         }
       },
       {
-        "number": 5754,
-        "title": "app: Add a setting to disable the system tray icon",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5754",
-        "author": "VlatkoMilisav",
+        "number": 5858,
+        "title": "docs: update build system references and document vitest testing setup",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5858",
+        "author": "Fahmid-Arman",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-28T07:27:52Z",
+        "updated_at": "2026-05-28T07:51:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5396,
+        "title": "frontend: Refactor RequestParams to RequestOptions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-28T08:12:36Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5453,
+        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-28T09:01:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3777,7 +3825,7 @@
         "author": "ChandanKT-git",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-18T09:27:45Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/M",
@@ -4041,30 +4089,6 @@
         }
       },
       {
-        "number": 5858,
-        "title": "docs: update build system references and document vitest testing setup",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5858",
-        "author": "Fahmid-Arman",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T07:21:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5859,
         "title": "docs: update development runtime requirements",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5859",
@@ -4099,30 +4123,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5396,
-        "title": "frontend: Refactor RequestParams to RequestOptions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
-        "author": "Joshna907",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T07:22:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
