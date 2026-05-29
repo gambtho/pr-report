@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-29T03:22:51+00:00",
+  "generated_at": "2026-05-29T05:38:40+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 208,
   "open_drafts_total": 50,
-  "actionable_total": 139,
-  "tracked_total": 34,
+  "actionable_total": 138,
+  "tracked_total": 35,
   "buckets": {
     "needs_rebase": [
       {
@@ -183,7 +183,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -207,7 +207,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1245,6 +1245,31 @@
           "is_tracked": true,
           "verifiable": true
         }
+      },
+      {
+        "number": 5318,
+        "title": "frontend: Terminal: Fix stale shell state and race conditions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
+        "author": "Joshna907",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-29T05:30:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
       }
     ],
     "ci_failing": [
@@ -1327,7 +1352,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-04-27T04:39:25Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2165,30 +2190,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 5318,
-        "title": "frontend: Terminal: Fix stale shell state and race conditions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
-        "author": "Joshna907",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-29T02:26:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2319,7 +2320,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T04:35:27Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3084,30 +3085,6 @@
         }
       },
       {
-        "number": 5809,
-        "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
-        "author": "yu-heejin",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-27T05:21:33Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5655,
         "title": "frontend: pluginLib: Extend snapshot test with more information about classes and functions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5655",
@@ -3494,6 +3471,126 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5809,
+        "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5809",
+        "author": "yu-heejin",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T03:30:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5462,
+        "title": "frontend: KubeConfigLoader: Show server URL and user in cluster selection",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5462",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T03:42:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5868,
+        "title": "frontend: authchooser: Make back button keyboard-accessible",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5868",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T04:04:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5785,
+        "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T04:12:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5764,
+        "title": "backend/frontend/helm: Add --oidc-auto-login support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+        "author": "menardorama",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T05:33:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -3625,7 +3722,7 @@
         "author": "jedbillyb",
         "bucket": "waiting_on_author",
         "updated_at": "2026-04-27T04:38:01Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3650,7 +3747,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4039,30 +4136,6 @@
         }
       },
       {
-        "number": 5462,
-        "title": "frontend: KubeConfigLoader: Show server URL and user in cluster selection",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5462",
-        "author": "YadavAkhileshh",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:19:12Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5511,
         "title": "backend: cmd: Return errors from file utilities instead of exiting",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
@@ -4087,84 +4160,12 @@
         }
       },
       {
-        "number": 5764,
-        "title": "backend/frontend/helm: Add --oidc-auto-login support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
-        "author": "menardorama",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:19:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5870,
         "title": "frontend: resource-editor: Fix missing/incorrect aria-controls on action buttons",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5870",
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-28T18:21:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5785,
-        "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
-        "author": "YadavAkhileshh",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:21:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5868,
-        "title": "frontend: authchooser: Make back button keyboard-accessible",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5868",
-        "author": "YadavAkhileshh",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:21:42Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
