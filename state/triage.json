@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T01:18:26+00:00",
+  "generated_at": "2026-05-29T03:22:51+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 208,
   "open_drafts_total": 50,
@@ -2045,30 +2045,6 @@
         }
       },
       {
-        "number": 5318,
-        "title": "frontend: Terminal: Fix stale shell state and race conditions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
-        "author": "Joshna907",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-28T18:15:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5610,
         "title": "frontend: jobset: Add dedicated Details component and documentation",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5610",
@@ -2177,6 +2153,30 @@
         "labels": [
           "cncf-cla: no",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5318,
+        "title": "frontend: Terminal: Fix stale shell state and race conditions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5318",
+        "author": "Joshna907",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-29T02:26:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2539,30 +2539,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5737,
-        "title": "backend: Fix node drain to use ownerReferences instead of deprecated kubernetes.io/created-by label",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5737",
-        "author": "RajPrakash681",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-26T06:44:27Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3090,7 +3066,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-27T02:42:03Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3304,54 +3280,6 @@
         }
       },
       {
-        "number": 5453,
-        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
-        "author": "Joshna907",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-28T18:21:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5396,
-        "title": "frontend: Refactor RequestParams to RequestOptions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
-        "author": "Joshna907",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-28T18:21:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5872,
         "title": "frontend: metadatadisplay: Fix expandable annotations button text",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5872",
@@ -3482,6 +3410,78 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5396,
+        "title": "frontend: Refactor RequestParams to RequestOptions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5396",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T01:49:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5737,
+        "title": "backend: Fix node drain to use ownerReferences instead of deprecated kubernetes.io/created-by label",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5737",
+        "author": "RajPrakash681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T01:51:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5453,
+        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-29T01:54:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
