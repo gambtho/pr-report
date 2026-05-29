@@ -1,0 +1,19 @@
+{
+  "pr_number": 5877,
+  "title": "backend: auth: Extract IncrementRequestCounter from headlamp.go",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 3,
+  "additions": 96,
+  "deletions": 12,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 3 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/auth/auth.go", "line": null, "description": "Added metrics.RequestCounter == nil guard that the original headlamp.go method was missing." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/auth/auth_test.go", "line": null, "description": "ManualReader-based test asserts emitted metric data points with exact attribute values." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/auth/auth_test.go", "line": null, "description": "TestIncrementRequestCounter_NoMetrics covers both nil struct and nil-counter-inside-struct cases." }
+  ]
+}

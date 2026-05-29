@@ -1,0 +1,19 @@
+{
+  "pr_number": 5861,
+  "title": "headlamp-plugin: Spawn .cmd shims through a shell on Windows",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5861",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 13,
+  "deletions": 6,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 2 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js", "line": 1487, "description": "Glob pattern 'src/**/*.{ts,tsx,js,jsx}' passed as arg with shell:true on Windows — cmd.exe does not expand globs. i18next-scanner handles it, but worth a comment for future maintainers." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js", "line": null, "description": "winShell boolean defined once and reused consistently at all five call sites." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js", "line": null, "description": "Fixes the regression from PR #4850 which added .cmd suffix but omitted shell: true." }
+  ]
+}

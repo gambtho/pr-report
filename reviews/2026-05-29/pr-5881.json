@@ -1,0 +1,20 @@
+{
+  "pr_number": 5881,
+  "title": "ci: validate workflow run SHA before uploading release assets",
+  "author": "skools-here",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 27,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 2, "positive": 2 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "MEDIUM", "file": ".github/workflows/push-release-assets.yml", "line": null, "description": "inputs.run_ids injected directly into shell here-string; store in env var first to avoid shell metacharacter issues." },
+    { "severity": "Suggestion", "confidence": "LOW", "file": ".github/workflows/push-release-assets.yml", "line": null, "description": "run_id=$(echo $run_id | xargs) should quote $run_id to prevent word splitting." },
+    { "severity": "Positive", "confidence": "HIGH", "file": ".github/workflows/push-release-assets.yml", "line": null, "description": "Uses git rev-list locally to resolve tag SHA — no extra API call needed." },
+    { "severity": "Positive", "confidence": "HIGH", "file": ".github/workflows/push-release-assets.yml", "line": null, "description": "Fail-fast on first SHA mismatch prevents partial artifact uploads." }
+  ]
+}

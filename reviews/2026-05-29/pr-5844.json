@@ -1,0 +1,20 @@
+{
+  "pr_number": 5844,
+  "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths.",
+  "author": "nikunjkumar05",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5844",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 8,
+  "deletions": 3,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 3, "suggestion": 0, "positive": 1 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "commit subject", "line": null, "description": "Trailing period in commit subject 'backend: config: Add a testcase for Headlamp kubeconfig paths.' — remove the period." },
+    { "severity": "Warning", "confidence": "HIGH", "file": "PR body", "line": null, "description": "#NAN placeholder still present in Related Issue field; replace with a real issue number or N/A." },
+    { "severity": "Warning", "confidence": "HIGH", "file": "git history", "line": null, "description": "Branch still contains a merge commit — please rebase to linearise history." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/config/config_test.go", "line": null, "description": "Test now uses assert.Equal with exact per-OS paths (including macOS Library/Application Support) — substantially stronger than the old HasPrefix check." }
+  ]
+}

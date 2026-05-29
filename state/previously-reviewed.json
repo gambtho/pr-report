@@ -1,27 +1,81 @@
 [
   {
+    "number": 5881,
+    "head_sha": "1767b0dc6f4205dc541707c0d2d976b3cf747f2b",
+    "date": "2026-05-29",
+    "title": "ci: validate workflow run SHA before uploading release assets"
+  },
+  {
+    "number": 5880,
+    "head_sha": "e923c1515a654842fe863275a7f14c535ae019f0",
+    "date": "2026-05-29",
+    "title": "frontend: useKubeObjectList: Fix kind name replacement for individual items with List in their name"
+  },
+  {
+    "number": 5877,
+    "head_sha": "3a9cb74396a45bdfc5e51cbb8128721fd4a1c5bb",
+    "date": "2026-05-29",
+    "title": "backend: auth: Extract IncrementRequestCounter from headlamp.go"
+  },
+  {
+    "number": 5874,
+    "head_sha": "ce28dbc220af03a5e826def21b9df3855a15b37b",
+    "date": "2026-05-29",
+    "title": "charts: Use official Cluster Inventory secretreader images"
+  },
+  {
+    "number": 5866,
+    "head_sha": "e3267ea7cc8882ccc71290e9cb9e114ca45309f5",
+    "date": "2026-05-29",
+    "title": "backend: oidc: Evict abandoned state tokens to prevent memory leak"
+  },
+  {
+    "number": 5861,
+    "head_sha": "85450fbf6878a2865f08cbfc7f33223c81a9fdc7",
+    "date": "2026-05-29",
+    "title": "headlamp-plugin: Spawn .cmd shims through a shell on Windows"
+  },
+  {
+    "number": 5844,
+    "head_sha": "d89b0e079e9a20a1466b13ec0818ee9c1a526770",
+    "date": "2026-05-29",
+    "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths."
+  },
+  {
+    "number": 5822,
+    "head_sha": "4f65a28293cebe7367e68fafa0e85d3c803f14e5",
+    "date": "2026-05-29",
+    "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field"
+  },
+  {
+    "number": 5804,
+    "head_sha": "5b87697e29cdd2e1310555396fd71f9e52edf782",
+    "date": "2026-05-29",
+    "title": "frontend: useKubeObjectList: Fix state overwrite during render"
+  },
+  {
+    "number": 5803,
+    "head_sha": "9fe207bdec5d1ea8dd2a1c19d3dcb80d3d79ebcb",
+    "date": "2026-05-29",
+    "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change"
+  },
+  {
+    "number": 5785,
+    "head_sha": "22df39f937db062cd84a9ddb83499c78f3ef574a",
+    "date": "2026-05-29",
+    "title": "frontend: themes: Replace deprecated MediaQueryList listener methods"
+  },
+  {
+    "number": 5764,
+    "head_sha": "da9888f1169059584958a243f228467f5c19aa6c",
+    "date": "2026-05-29",
+    "title": "backend/frontend/helm: Add --oidc-auto-login support"
+  },
+  {
     "number": 5783,
     "head_sha": "f44ebe7e50c986cf474462b971ee1a91330f92d0",
     "date": "2026-05-28",
     "title": "helm: Fix file descriptor leak in createFullPath"
-  },
-  {
-    "number": 5785,
-    "head_sha": "7a77fb367c889b3adb27424cc719dc968cbd8705",
-    "date": "2026-05-28",
-    "title": "frontend: themes: Replace deprecated MediaQueryList listener methods"
-  },
-  {
-    "number": 5803,
-    "head_sha": "fbdb84538fc8f324501d666c14d8ae41d93ca8eb",
-    "date": "2026-05-28",
-    "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change"
-  },
-  {
-    "number": 5804,
-    "head_sha": "acb966bd5f94025f001217585fdb955516edce58",
-    "date": "2026-05-28",
-    "title": "frontend: useKubeObjectList: Fix state overwrite during render"
   },
   {
     "number": 5805,
@@ -30,58 +84,16 @@
     "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render"
   },
   {
-    "number": 5844,
-    "head_sha": "8459e6dc9f7c4e2af7dc55a3577b63b001f68192",
-    "date": "2026-05-28",
-    "title": "backend: Config: Add a testcase for Headlamp kubeconfig paths."
+    "number": 5845,
+    "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
+    "date": "2026-05-25",
+    "title": "frontend: Add plugin extension registry"
   },
   {
-    "number": 5764,
-    "head_sha": "292fa5e1e2f8c48cd883b755da72eeec3981fff7",
-    "date": "2026-05-27",
-    "title": "backend/frontend/helm: Add --oidc-auto-login support"
-  },
-  {
-    "number": 5775,
-    "head_sha": "66fbe422cd66f8ffb5ca16b080ed33cf54188821",
-    "date": "2026-05-27",
-    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
-  },
-  {
-    "number": 5778,
-    "head_sha": "5cf3d594ff400a8811aed52cbab8a45e55871283",
-    "date": "2026-05-27",
-    "title": "feat: Add configurable external links to sidebar via Helm values"
-  },
-  {
-    "number": 5779,
-    "head_sha": "a6094add95d8d592409f2067322e55d8b82f98a1",
-    "date": "2026-05-27",
-    "title": "frontend: Add @typescript/native-preview and use it for type checking"
-  },
-  {
-    "number": 5798,
-    "head_sha": "3133bcd6c42506fb7d03bf2750559a3bf4dce3a9",
-    "date": "2026-05-27",
-    "title": "backend: k8cache: Bypass non-API cluster paths"
-  },
-  {
-    "number": 5809,
-    "head_sha": "cc6162e33f64e7f6fbb41f7cb007e47f3effb311",
-    "date": "2026-05-27",
-    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
-  },
-  {
-    "number": 5830,
-    "head_sha": "6f5ffba1fee6ac3c9c3f51f472c520766a2d27f9",
-    "date": "2026-05-27",
-    "title": "frontend: podContainer: Add unit tests"
-  },
-  {
-    "number": 5838,
-    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
-    "date": "2026-05-27",
-    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+    "number": 5840,
+    "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
+    "date": "2026-05-25",
+    "title": "backend: helm: Mark failed install verification"
   },
   {
     "number": 5843,
@@ -102,22 +114,10 @@
     "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton"
   },
   {
-    "number": 5822,
-    "head_sha": "54f19d8cda56e51c12ae6059bfd4545ef02545c6",
-    "date": "2026-05-26",
-    "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field"
-  },
-  {
-    "number": 5845,
-    "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
-    "date": "2026-05-25",
-    "title": "frontend: Add plugin extension registry"
-  },
-  {
-    "number": 5840,
-    "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
-    "date": "2026-05-25",
-    "title": "backend: helm: Mark failed install verification"
+    "number": 5838,
+    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
+    "date": "2026-05-27",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
   },
   {
     "number": 5837,
@@ -162,6 +162,12 @@
     "title": "frontend: recentClusters: Add unit tests"
   },
   {
+    "number": 5830,
+    "head_sha": "6f5ffba1fee6ac3c9c3f51f472c520766a2d27f9",
+    "date": "2026-05-27",
+    "title": "frontend: podContainer: Add unit tests"
+  },
+  {
     "number": 5829,
     "head_sha": "4d7552e9da0a4ee8c706a0acab8a70b4044d0c09",
     "date": "2026-05-25",
@@ -174,16 +180,22 @@
     "title": "frontend: ObjectEventList: Guard optional event source in From column"
   },
   {
-    "number": 5772,
-    "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
-    "date": "2026-05-25",
-    "title": "Bump fast-uri, brace-expansion, ws, containerd"
+    "number": 5820,
+    "head_sha": "2b0be2ac177c491ec6647f5d06e3c69709fc4692",
+    "date": "2026-05-22",
+    "title": "frontend: ScaleButton: Memoize replica count computation"
   },
   {
-    "number": 5777,
-    "head_sha": "a207207395e639c7cdea02ec394ff9a231ef7dde",
-    "date": "2026-05-23",
-    "title": "backend: Fix all-namespace cache invalidation"
+    "number": 5809,
+    "head_sha": "cc6162e33f64e7f6fbb41f7cb007e47f3effb311",
+    "date": "2026-05-27",
+    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
+  },
+  {
+    "number": 5798,
+    "head_sha": "3133bcd6c42506fb7d03bf2750559a3bf4dce3a9",
+    "date": "2026-05-27",
+    "title": "backend: k8cache: Bypass non-API cluster paths"
   },
   {
     "number": 5786,
@@ -192,10 +204,46 @@
     "title": "backend: changed format verb %v with %w"
   },
   {
+    "number": 5783,
+    "head_sha": "f44ebe7e50c986cf474462b971ee1a91330f92d0",
+    "date": "2026-05-28",
+    "title": "helm: Fix file descriptor leak in createFullPath"
+  },
+  {
+    "number": 5779,
+    "head_sha": "a6094add95d8d592409f2067322e55d8b82f98a1",
+    "date": "2026-05-27",
+    "title": "frontend: Add @typescript/native-preview and use it for type checking"
+  },
+  {
+    "number": 5778,
+    "head_sha": "5cf3d594ff400a8811aed52cbab8a45e55871283",
+    "date": "2026-05-27",
+    "title": "feat: Add configurable external links to sidebar via Helm values"
+  },
+  {
+    "number": 5777,
+    "head_sha": "a207207395e639c7cdea02ec394ff9a231ef7dde",
+    "date": "2026-05-23",
+    "title": "backend: Fix all-namespace cache invalidation"
+  },
+  {
+    "number": 5775,
+    "head_sha": "66fbe422cd66f8ffb5ca16b080ed33cf54188821",
+    "date": "2026-05-27",
+    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
+  },
+  {
     "number": 5774,
     "head_sha": "3f79c711dbef32de6272dccb3436a8e40da031e0",
     "date": "2026-05-22",
     "title": "frontend: Chart: fix react-hooks/refs violation"
+  },
+  {
+    "number": 5772,
+    "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
+    "date": "2026-05-25",
+    "title": "Bump fast-uri, brace-expansion, ws, containerd"
   },
   {
     "number": 5768,
@@ -210,46 +258,16 @@
     "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps "
   },
   {
-    "number": 5746,
-    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
-    "date": "2026-05-22",
-    "title": "feat(helm): Add valueFrom support for environment variables in chart \u2026"
-  },
-  {
-    "number": 5820,
-    "head_sha": "2b0be2ac177c491ec6647f5d06e3c69709fc4692",
-    "date": "2026-05-22",
-    "title": "frontend: ScaleButton: Memoize replica count computation"
-  },
-  {
-    "number": 5795,
-    "head_sha": "f29d931960cbb2fddb9ac000941a36a1f2135728",
-    "date": "2026-05-22",
-    "title": "github: app-artifacts-mac: Notarize via electron-builder"
-  },
-  {
-    "number": 5794,
-    "head_sha": "4503f376ee1b5afb37349462b414ce38b4e8f6d0",
-    "date": "2026-05-22",
-    "title": "backend: auth/kubeconfig: Skip empty OIDC CA cert instead of failing"
-  },
-  {
-    "number": 5781,
-    "head_sha": "b5161284c0568c9c42742bde89863240f12af56c",
-    "date": "2026-05-21",
-    "title": "frontend: deps: Bump yaml from 2.8.3 to 2.9.0"
-  },
-  {
     "number": 5748,
     "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
     "date": "2026-05-20",
     "title": "Automatically switch theme based on OS theme"
   },
   {
-    "number": 5408,
-    "head_sha": "192a315cfb028a1ef812ce5ac7f9e4a71242ea85",
-    "date": "2026-05-19",
-    "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial"
+    "number": 5746,
+    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
+    "date": "2026-05-22",
+    "title": "feat(helm): Add valueFrom support for environment variables in chart"
   },
   {
     "number": 5538,
@@ -258,9 +276,9 @@
     "title": "frontend: ContainerInfo: Fix key prop placement in ports list"
   },
   {
-    "number": 5731,
-    "head_sha": "19f15a72955a349a42914798df63652c2f4702a6",
+    "number": 5408,
+    "head_sha": "192a315cfb028a1ef812ce5ac7f9e4a71242ea85",
     "date": "2026-05-19",
-    "title": "backend: kubeconfig: Stop treating empty path and missing file as load errors"
+    "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial"
   }
 ]

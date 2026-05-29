@@ -1,0 +1,20 @@
+{
+  "pr_number": 5866,
+  "title": "backend: oidc: Evict abandoned state tokens to prevent memory leak",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5866",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 81,
+  "deletions": 4,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 4 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp.go", "line": null, "description": "evictExpiredOidcStates extracted as a package-level function so tests call production codepath directly." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp.go", "line": null, "description": "Ticker at OidcStateTTL/2 with defer ticker.Stop() ensures timely eviction without goroutine leak." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp.go", "line": null, "description": "Goroutine selects on ctx.Done() for clean server shutdown." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "backend/cmd/headlamp_test.go", "line": null, "description": "Deterministic test with stale/fresh entries directly exercises the eviction boundary condition." }
+  ]
+}

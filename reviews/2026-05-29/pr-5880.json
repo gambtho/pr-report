@@ -1,0 +1,19 @@
+{
+  "pr_number": 5880,
+  "title": "frontend: useKubeObjectList: Fix kind name replacement for individual items with List in their name",
+  "author": "sniok",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5880",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 41,
+  "deletions": 3,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 3 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts", "line": 100, "description": "/List$/ anchored regex is the minimal correct fix — only removes trailing List suffix." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.test.tsx", "line": null, "description": "MockedFunction<typeof clusterFetch> helper enables isolated testing of item kind mapping." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.test.tsx", "line": null, "description": "Regression test directly covers the EventListenerList -> EventListener case from the reported Slack bug." }
+  ]
+}

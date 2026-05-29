@@ -1,0 +1,19 @@
+{
+  "pr_number": 5874,
+  "title": "charts: Use official Cluster Inventory secretreader images",
+  "author": "kahirokunn",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5874",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 9,
+  "additions": 90,
+  "deletions": 25,
+  "re_review": false,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 2 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "charts/headlamp/values.schema.json", "line": 299, "description": "\"pattern\": \"^\\/\" unnecessarily escapes /; use \"^/\" for consistency with the original." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "charts/headlamp/templates/cluster-inventory-configmap.yaml", "line": null, "description": "Validation upgraded from exact dir match to hasPrefix — correctly allows binaries in subdirectories of mount paths." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "charts/headlamp/values.yaml", "line": null, "description": "interactiveMode: Never added to exec credential configs — recommended for non-interactive access providers." }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Large",
+  "files_changed": 51,
+  "additions": 437,
+  "deletions": 193,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 4, "suggestion": 2, "positive": 3 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "charts/headlamp/values.yaml", "line": 131, "description": "Duplicate clusterInventory: key — YAML will silently ignore the first occurrence; remove the spurious blank entry." },
+    { "severity": "Warning", "confidence": "HIGH", "file": "charts/headlamp/values.schema.json", "line": 322, "description": "Extra } added after noCRDCacheTTL closing brace makes the JSON schema invalid — helm lint will fail." },
+    { "severity": "Warning", "confidence": "MEDIUM", "file": "commit subjects", "line": null, "description": "Two commits titled 'Address Copilot review comments' are vague and must describe the actual change." },
+    { "severity": "Warning", "confidence": "MEDIUM", "file": "commit subjects", "line": null, "description": "Commits 'backend: wire Cluster Inventory configuration' and 'cluster-inventory: show ClusterProfile health conditions' do not follow area: SubArea: Description format." },
+    { "severity": "Suggestion", "confidence": "MEDIUM", "file": "frontend/src/components/authchooser/index.tsx", "line": 95, "description": "Date() returns a verbose human-readable string; use Date.now().toString() for a cleaner cache-buster." },
+    { "severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/authchooser/index.tsx", "line": null, "description": "No unit test for the auto-redirect useEffect; a Vitest test would prevent regressions." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/redux/configSlice.ts", "line": null, "description": "'oidcAutoLogin' in action.payload guard prevents partial setConfig from resetting the flag." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/oidcauth/index.tsx", "line": null, "description": "OIDCAuth correctly branches on window.opener to separate popup and full-page redirect flows." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/authchooser/index.tsx", "line": null, "description": "sessionStorage (not localStorage) for loop prevention correctly scopes to tab and clears on close." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pr_number": 5803,
+  "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5803",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 21,
+  "deletions": 2,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 2 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "defaultRowsPerPage is computed inline every render. A brief comment that this is a stable primitive from settings would aid readability." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "Replaces useMemo(() => value, []) anti-pattern with direct call, correctly re-synced via useEffect." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "URL-reflected branch guards against resetting when perPage param is already present in URL." }
+  ]
+}

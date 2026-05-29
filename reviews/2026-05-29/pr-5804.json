@@ -1,0 +1,20 @@
+{
+  "pr_number": 5804,
+  "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 91,
+  "deletions": 6,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 1, "positive": 3 },
+  "findings": [
+    { "severity": "Suggestion", "confidence": "LOW", "file": "commit subject", "line": null, "description": "Second commit 'frontend: Add useKubeObjectList state update regression test' missing useKubeObjectList: SubArea." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts", "line": null, "description": "Two separate setListsToWatch calls consolidated into a single functional updater — eliminates render-phase state overwrite." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.ts", "line": null, "description": "Map-based O(1) deduplication replaces the previous O(n^2) findIndex pattern." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/k8s/api/v2/useKubeObjectList.test.tsx", "line": null, "description": "Regression test for simultaneous namespace add+remove directly verifies convergence to the expected watched set." }
+  ]
+}

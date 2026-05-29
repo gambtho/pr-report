@@ -1,0 +1,19 @@
+{
+  "pr_number": 5822,
+  "title": "frontend: CreateResourceForm: Tolerate partial YAML in container field",
+  "author": "WasThatRudy",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5822",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 2,
+  "additions": 129,
+  "deletions": 58,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 0, "suggestion": 0, "positive": 3 },
+  "findings": [
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.tsx", "line": null, "description": "safeValue guard handles all non-array inputs (string, null, object) preventing crashes." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.tsx", "line": null, "description": "Per-row null normalisation handles mid-edit null YAML entries from js-yaml." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/CreateResourceForm.test.tsx", "line": null, "description": "Five Vitest tests directly reproduce the crash paths from issue #5780." }
+  ]
+}

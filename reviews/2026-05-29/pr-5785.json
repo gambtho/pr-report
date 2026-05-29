@@ -1,0 +1,19 @@
+{
+  "pr_number": 5785,
+  "title": "frontend: themes: Replace deprecated MediaQueryList listener methods",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5785",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 44,
+  "deletions": 7,
+  "re_review": true,
+  "date": "2026-05-29",
+  "findings_count": { "critical": 0, "warning": 1, "suggestion": 0, "positive": 2 },
+  "findings": [
+    { "severity": "Warning", "confidence": "HIGH", "file": "commit subject", "line": null, "description": "First commit missing themes: SubArea — should be 'frontend: themes: Replace deprecated MediaQueryList listener methods'." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.ts", "line": null, "description": "Correct runtime feature detection (typeof mql.addEventListener === 'function') with legacy fallback. Handler type narrowed appropriately." },
+    { "severity": "Positive", "confidence": "HIGH", "file": "frontend/src/lib/themes.test.ts", "line": null, "description": "Both modern addEventListener and legacy addListener paths are tested with handler reference verification." }
+  ]
+}
