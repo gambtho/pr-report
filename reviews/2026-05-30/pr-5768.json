@@ -1,0 +1,23 @@
+{
+  "pr_number": 5768,
+  "title": "frontend: App: Remove unused themeName dependency ",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5768",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 1,
+  "deletions": 2,
+  "re_review": true,
+  "date": "2026-05-30",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/App.tsx", "line": 49, "description": "themeName correctly removed from useMemo deps; currentAppTheme alone is the correct dependency."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "commits", "line": null, "description": "Single-purpose change with correct commit format; eslint-disable comment cleanly removed."}
+  ]
+}

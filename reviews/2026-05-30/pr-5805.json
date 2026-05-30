@@ -1,0 +1,27 @@
+{
+  "pr_number": 5805,
+  "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5805",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 1,
+  "additions": 19,
+  "deletions": 22,
+  "re_review": true,
+  "date": "2026-05-30",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {"severity": "Suggestion", "confidence": "MEDIUM", "file": "PR description", "line": null, "description": "Description says 'useEffect hook' but final implementation uses render-phase setPage(0); description should be updated."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/common/SimpleTable.tsx", "line": 253, "description": "eslint-disable suppression on useEffect dep array may no longer be needed now that normalizedData replaces data; verify and remove if possible."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "normalizedData = data ?? null cleanly normalises undefined input so all downstream null-checks are consistent."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "filteredData in React.useMemo above the early return ensures pagination checks work regardless of displayData null state."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "Render-phase setPage(0) stabilises in two renders (second render has page=0, condition is false); no infinite loop risk."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/SimpleTable.tsx", "line": null, "description": "getSortData refactored to a pure function returning sorted array makes it composable and avoids hidden setState side effects."}
+  ]
+}

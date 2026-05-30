@@ -1,0 +1,26 @@
+{
+  "pr_number": 5820,
+  "title": "frontend: ScaleButton: Memoize replica count computation",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5820",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 12,
+  "deletions": 10,
+  "re_review": true,
+  "date": "2026-05-30",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 4
+  },
+  "findings": [
+    {"severity": "Suggestion", "confidence": "LOW", "file": "PR title/description", "line": null, "description": "Title says 'Memoize' and description mentions React.useMemo for currentNumReplicas, but final implementation uses a direct call; title/description should reflect the actual implementation."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/ScaleButton.tsx", "line": null, "description": "parseInt(replicas, 10) with explicit radix and Number.isFinite guard is strictly safer than the old parseInt without radix."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/ScaleButton.tsx", "line": null, "description": "Module-scope placement makes getNumReplicas independently testable without mounting a component."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/ScaleButton.tsx", "line": null, "description": "Lazy useState initializer correctly freezes the dialog's initial replica count at open time, preserving user edits across live resource updates."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/common/Resource/ScaleButton.tsx", "line": null, "description": "Explicit typeof replicas === 'string' branch handles both string and number spec.replicas values correctly."}
+  ]
+}

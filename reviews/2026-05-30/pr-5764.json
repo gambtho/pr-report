@@ -1,0 +1,34 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Very Large",
+  "files_changed": 51,
+  "additions": 437,
+  "deletions": 193,
+  "re_review": true,
+  "date": "2026-05-30",
+  "findings_count": {
+    "critical": 2,
+    "warning": 3,
+    "suggestion": 3,
+    "positive": 5
+  },
+  "findings": [
+    {"severity": "Critical", "confidence": "HIGH", "file": "charts/headlamp/values.yaml", "line": 134, "description": "Duplicate YAML key: `clusterInventory:` appears twice in succession. YAML parsers silently discard the first; Helm will lose all values under the first block."},
+    {"severity": "Critical", "confidence": "HIGH", "file": "charts/headlamp/values.schema.json", "line": null, "description": "Extra closing brace `}` added after the clusterInventory section produces invalid JSON; Helm will reject the chart with a JSON parse error."},
+    {"severity": "Warning", "confidence": "HIGH", "file": "backend/pkg/kubeconfig/kubeconfig.go", "line": 1173, "description": "CACert regression: `CACert: &oidcCACert` now always passes a pointer (to empty string when not set) instead of nil. Downstream nil-checks will incorrectly see a non-nil pointer when no CA cert is configured."},
+    {"severity": "Warning", "confidence": "MEDIUM", "file": "feature/oidc-auto-login (branch)", "line": null, "description": "Merge commit 'Merge branch main into feature/oidc-auto-login' still present; should be rebased away per project convention."},
+    {"severity": "Warning", "confidence": "MEDIUM", "file": "commits", "line": null, "description": "Two commits with subject 'Address Copilot review comments' violate project convention of meaningful commit subjects; should be squashed or rewritten."},
+    {"severity": "Suggestion", "confidence": "MEDIUM", "file": "frontend/src/components/authchooser/index.tsx", "line": 82, "description": "OIDC auto-login useEffect still lacks Vitest component tests; requested in multiple previous re-reviews."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "frontend/src/components/authchooser/index.tsx", "line": 91, "description": "`oidcUrl.searchParams.set('dt', Date())` uses Date() string representation; prefer `Date.now().toString()` for a compact URL-safe cache-buster."},
+    {"severity": "Suggestion", "confidence": "LOW", "file": "backend/pkg/clusterinventory/clusterinventory.go", "line": null, "description": "All godoc comments stripped from exported and internal functions; Go convention requires godoc on exported symbols."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "backend/pkg/kubeconfig/kubeconfig.go", "line": null, "description": "Promoting inventorymetadata types into the kubeconfig package eliminates a sub-package and simplifies import graph."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/redux/configSlice.test.ts", "line": null, "description": "Three new unit tests covering oidcAutoLogin set/preserve/clear semantics validate the payload-key guard correctly."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/oidcauth/index.tsx", "line": null, "description": "window.opener detection correctly differentiates popup vs full-page OIDC flows."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/authchooser/index.tsx", "line": null, "description": "sessionStorage (not localStorage) usage for loop prevention correctly clears on tab close."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/i18n/ThemeProviderNexti18n.tsx", "line": null, "description": "Fallback to 'en' when i18n.language is falsy is a safe defensive fix for the race condition during OIDC redirect."}
+  ]
+}

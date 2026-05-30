@@ -1,0 +1,25 @@
+{
+  "pr_number": 5767,
+  "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps ",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5767",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 10,
+  "deletions": 15,
+  "re_review": true,
+  "date": "2026-05-30",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {"severity": "Suggestion", "confidence": "LOW", "file": "PR title", "line": null, "description": "PR title has a trailing space after 'exhaustive-deps'; cosmetic but worth trimming."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/App/Settings/NumRowsInput.tsx", "line": null, "description": "Replacing useMemo(() => init, []) with useState(() => init) is the correct lazy-initialization pattern."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "frontend/src/components/App/Settings/NumRowsInput.tsx", "line": null, "description": "Using defaultValue.includes(val) directly instead of the intermediate options variable is cleaner."},
+    {"severity": "Positive", "confidence": "HIGH", "file": "commits", "line": null, "description": "Commit messages follow project format correctly."}
+  ]
+}
