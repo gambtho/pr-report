@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-30T13:40:35+00:00",
+  "generated_at": "2026-05-30T14:40:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 208,
   "open_drafts_total": 48,
-  "actionable_total": 132,
-  "tracked_total": 40,
+  "actionable_total": 133,
+  "tracked_total": 39,
   "buckets": {
     "needs_rebase": [
       {
@@ -159,7 +159,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-04-29T14:28:08Z",
-        "days_since_update": 30,
+        "days_since_update": 31,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -1273,31 +1273,6 @@
         }
       },
       {
-        "number": 5826,
-        "title": "frontend: Pod: Show resolved environment variables for running containers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5826",
-        "author": "VijayabaskarR-06",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-30T01:26:39Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5675,
         "title": "frontend: Add disk/storage column to nodes list view",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5675",
@@ -1744,7 +1719,7 @@
         "author": "illume",
         "bucket": "ci_failing",
         "updated_at": "2026-05-14T14:38:56Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1866,7 +1841,7 @@
         "author": "datacore-gjanoti",
         "bucket": "ci_failing",
         "updated_at": "2026-05-19T14:35:49Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2108,7 +2083,7 @@
         "author": "prabindersinghh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-29T13:46:00Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3604,6 +3579,30 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-30T11:54:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5826,
+        "title": "frontend: Pod: Show resolved environment variables for running containers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5826",
+        "author": "VijayabaskarR-06",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-30T14:24:40Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
