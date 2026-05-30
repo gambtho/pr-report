@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-30T03:19:37+00:00",
+  "generated_at": "2026-05-30T05:27:05+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 209,
+  "open_prs_total": 208,
   "open_drafts_total": 48,
   "actionable_total": 130,
-  "tracked_total": 43,
+  "tracked_total": 42,
   "buckets": {
     "needs_rebase": [
       {
@@ -183,7 +183,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -207,7 +207,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1449,31 +1449,6 @@
         }
       },
       {
-        "number": 5524,
-        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5524",
-        "author": "ManthanNimodiya",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-30T01:26:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5333,
         "title": "frontend: PVC creation form ui",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5333",
@@ -1579,7 +1554,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-04-27T04:39:25Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -1631,54 +1606,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5352,
-        "title": "fix(project): move setSelectedTab into useEffect to avoid render-phase state update",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5352",
-        "author": "Varadraj75",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-07T19:36:04Z",
-        "days_since_update": 22,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5387,
-        "title": "backend: propagate request context to Helm background goroutines",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5387",
-        "author": "Varadraj75",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-07T19:37:21Z",
-        "days_since_update": 22,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2274,6 +2201,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5524,
+        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5524",
+        "author": "ManthanNimodiya",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-30T05:11:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2404,7 +2355,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T04:35:27Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3271,7 +3222,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3295,7 +3246,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:42:20Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3319,7 +3270,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T04:04:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3343,7 +3294,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T04:12:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3623,6 +3574,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5870,
+        "title": "frontend: resource-editor: Fix missing/incorrect aria-controls on action buttons",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5870",
+        "author": "YadavAkhileshh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-30T05:15:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -3754,7 +3729,7 @@
         "author": "jedbillyb",
         "bucket": "waiting_on_author",
         "updated_at": "2026-04-27T04:38:01Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3779,7 +3754,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4168,16 +4143,16 @@
         }
       },
       {
-        "number": 5870,
-        "title": "frontend: resource-editor: Fix missing/incorrect aria-controls on action buttons",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5870",
-        "author": "YadavAkhileshh",
+        "number": 5804,
+        "title": "frontend: useKubeObjectList: Fix state overwrite during render",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
+        "author": "ayushmaan-16",
         "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:21:21Z",
+        "updated_at": "2026-05-28T18:31:07Z",
         "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4192,16 +4167,17 @@
         }
       },
       {
-        "number": 5804,
-        "title": "frontend: useKubeObjectList: Fix state overwrite during render",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5804",
-        "author": "ayushmaan-16",
+        "number": 5457,
+        "title": "backend: helm: preserve async release execution context semantics",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5457",
+        "author": "RustamSheoran",
         "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:31:07Z",
-        "days_since_update": 1,
+        "updated_at": "2026-05-30T03:40:48Z",
+        "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/M"
+          "size/L",
+          "needs review"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
