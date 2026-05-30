@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-30T05:27:05+00:00",
+  "generated_at": "2026-05-30T07:15:48+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 208,
   "open_drafts_total": 48,
-  "actionable_total": 130,
-  "tracked_total": 42,
+  "actionable_total": 131,
+  "tracked_total": 41,
   "buckets": {
     "needs_rebase": [
       {
@@ -135,7 +135,7 @@
         "author": "ipsitapp8",
         "bucket": "needs_rebase",
         "updated_at": "2026-04-27T07:15:38Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -232,7 +232,7 @@
         "author": "aadhil2k4",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T06:04:58Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -329,7 +329,7 @@
         "author": "Vikaspal8923",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-23T06:06:03Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -818,7 +818,7 @@
         "author": "hxrshxz",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:09Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -844,7 +844,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:11Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -1128,7 +1128,7 @@
         "author": "yush-1018",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-22T06:21:19Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1284,31 +1284,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5760,
-        "title": "frontend: Replace implicit any types with proper TypeScript types",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5760",
-        "author": "RajPrakash681",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-05-30T01:26:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -1602,7 +1577,7 @@
         "author": "Kush172005",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T06:41:35Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1965,7 +1940,7 @@
         "author": "HarK-github",
         "bucket": "ci_failing",
         "updated_at": "2026-05-22T06:16:46Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2037,7 +2012,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T07:14:21Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2061,7 +2036,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T07:15:15Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/M",
@@ -2213,6 +2188,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5511,
+        "title": "backend: cmd: Return errors from file utilities instead of exiting",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
+        "author": "YadavAkhileshh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-05-30T06:47:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2403,7 +2402,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-22T06:10:50Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2451,7 +2450,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:41:53Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2475,7 +2474,7 @@
         "author": "dabico",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:42:58Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -2499,7 +2498,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:49:05Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2523,7 +2522,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:49:53Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2547,7 +2546,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:50:07Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2571,7 +2570,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:51:21Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2595,7 +2594,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:53:30Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2619,7 +2618,7 @@
         "author": "YotamKorah",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:55:35Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2643,7 +2642,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:58:44Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3581,11 +3580,35 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5870",
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-05-30T05:15:29Z",
+        "updated_at": "2026-05-30T05:39:47Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5760,
+        "title": "frontend: Replace implicit any types with proper TypeScript types",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5760",
+        "author": "RajPrakash681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-05-30T06:10:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3778,7 +3801,7 @@
         "author": "aaradhychinche-alt",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:10Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3804,7 +3827,7 @@
         "author": "kunaldevsahu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:20Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3829,7 +3852,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:44Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "kind/feature",
           "oidc",
@@ -3978,7 +4001,7 @@
         "author": "HarK-github",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-22T06:16:25Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4105,30 +4128,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-28T18:19:26Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
