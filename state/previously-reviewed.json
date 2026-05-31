@@ -102,22 +102,58 @@
     "title": "helm: Fix file descriptor leak in createFullPath"
   },
   {
-    "number": 5845,
-    "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
-    "date": "2026-05-25",
-    "title": "frontend: Add plugin extension registry"
-  },
-  {
-    "number": 5840,
-    "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
-    "date": "2026-05-25",
-    "title": "backend: helm: Mark failed install verification"
+    "number": 5783,
+    "head_sha": "f44ebe7e50c986cf474462b971ee1a91330f92d0",
+    "date": "2026-05-28",
+    "title": "helm: Fix file descriptor leak in createFullPath"
   },
   {
     "number": 5843,
     "head_sha": "08ca74e6e673cd3e93161e6e6681872e3f37cb65",
     "date": "2026-05-27",
     "title": "frontend: Export ApiError from K8s package for plugin access"
+  },
+  {
+    "number": 5838,
+    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
+    "date": "2026-05-27",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+  },
+  {
+    "number": 5830,
+    "head_sha": "6f5ffba1fee6ac3c9c3f51f472c520766a2d27f9",
+    "date": "2026-05-27",
+    "title": "frontend: podContainer: Add unit tests"
+  },
+  {
+    "number": 5809,
+    "head_sha": "cc6162e33f64e7f6fbb41f7cb007e47f3effb311",
+    "date": "2026-05-27",
+    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
+  },
+  {
+    "number": 5798,
+    "head_sha": "3133bcd6c42506fb7d03bf2750559a3bf4dce3a9",
+    "date": "2026-05-27",
+    "title": "backend: k8cache: Bypass non-API cluster paths"
+  },
+  {
+    "number": 5779,
+    "head_sha": "a6094add95d8d592409f2067322e55d8b82f98a1",
+    "date": "2026-05-27",
+    "title": "frontend: Add @typescript/native-preview and use it for type checking"
+  },
+  {
+    "number": 5778,
+    "head_sha": "5cf3d594ff400a8811aed52cbab8a45e55871283",
+    "date": "2026-05-27",
+    "title": "feat: Add configurable external links to sidebar via Helm values"
+  },
+  {
+    "number": 5775,
+    "head_sha": "66fbe422cd66f8ffb5ca16b080ed33cf54188821",
+    "date": "2026-05-27",
+    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
   },
   {
     "number": 5842,
@@ -132,10 +168,16 @@
     "title": "frontend: fix react-hooks/rules-of-hooks in RestartButton"
   },
   {
-    "number": 5838,
-    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
-    "date": "2026-05-27",
-    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+    "number": 5845,
+    "head_sha": "aebd108f4e66e3cb134867700d66cbffab57141d",
+    "date": "2026-05-25",
+    "title": "frontend: Add plugin extension registry"
+  },
+  {
+    "number": 5840,
+    "head_sha": "83a824422ecc78ebcea6971c2d688ec1419f62ee",
+    "date": "2026-05-25",
+    "title": "backend: helm: Mark failed install verification"
   },
   {
     "number": 5837,
@@ -180,12 +222,6 @@
     "title": "frontend: recentClusters: Add unit tests"
   },
   {
-    "number": 5830,
-    "head_sha": "6f5ffba1fee6ac3c9c3f51f472c520766a2d27f9",
-    "date": "2026-05-27",
-    "title": "frontend: podContainer: Add unit tests"
-  },
-  {
     "number": 5829,
     "head_sha": "4d7552e9da0a4ee8c706a0acab8a70b4044d0c09",
     "date": "2026-05-25",
@@ -198,40 +234,10 @@
     "title": "frontend: ObjectEventList: Guard optional event source in From column"
   },
   {
-    "number": 5809,
-    "head_sha": "cc6162e33f64e7f6fbb41f7cb007e47f3effb311",
-    "date": "2026-05-27",
-    "title": "frontend: units: Fix parseRam not handling milli-bytes (m) suffix"
-  },
-  {
-    "number": 5798,
-    "head_sha": "3133bcd6c42506fb7d03bf2750559a3bf4dce3a9",
-    "date": "2026-05-27",
-    "title": "backend: k8cache: Bypass non-API cluster paths"
-  },
-  {
-    "number": 5786,
-    "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
-    "date": "2026-05-22",
-    "title": "backend: changed format verb %v with %w"
-  },
-  {
-    "number": 5783,
-    "head_sha": "f44ebe7e50c986cf474462b971ee1a91330f92d0",
-    "date": "2026-05-28",
-    "title": "helm: Fix file descriptor leak in createFullPath"
-  },
-  {
-    "number": 5779,
-    "head_sha": "a6094add95d8d592409f2067322e55d8b82f98a1",
-    "date": "2026-05-27",
-    "title": "frontend: Add @typescript/native-preview and use it for type checking"
-  },
-  {
-    "number": 5778,
-    "head_sha": "5cf3d594ff400a8811aed52cbab8a45e55871283",
-    "date": "2026-05-27",
-    "title": "feat: Add configurable external links to sidebar via Helm values"
+    "number": 5772,
+    "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
+    "date": "2026-05-25",
+    "title": "Bump fast-uri, brace-expansion, ws, containerd"
   },
   {
     "number": 5777,
@@ -240,10 +246,10 @@
     "title": "backend: Fix all-namespace cache invalidation"
   },
   {
-    "number": 5775,
-    "head_sha": "66fbe422cd66f8ffb5ca16b080ed33cf54188821",
-    "date": "2026-05-27",
-    "title": "frontend: Fix Backstage receiver listener leak on Home remount"
+    "number": 5786,
+    "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
+    "date": "2026-05-22",
+    "title": "backend: changed format verb %v with %w"
   },
   {
     "number": 5774,
@@ -252,22 +258,16 @@
     "title": "frontend: Chart: fix react-hooks/refs violation"
   },
   {
-    "number": 5772,
-    "head_sha": "9eccce2d39acc87bff216cadf52030e7677a8cfd",
-    "date": "2026-05-25",
-    "title": "Bump fast-uri, brace-expansion, ws, containerd"
+    "number": 5746,
+    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
+    "date": "2026-05-22",
+    "title": "feat(helm): Add valueFrom support for environment variables in chart"
   },
   {
     "number": 5748,
     "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
     "date": "2026-05-20",
     "title": "Automatically switch theme based on OS theme"
-  },
-  {
-    "number": 5746,
-    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
-    "date": "2026-05-22",
-    "title": "feat(helm): Add valueFrom support for environment variables in chart"
   },
   {
     "number": 5538,
