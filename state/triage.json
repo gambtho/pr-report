@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-01T18:13:24+00:00",
+  "generated_at": "2026-06-01T20:35:00+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 210,
+  "open_prs_total": 214,
   "open_drafts_total": 48,
-  "actionable_total": 136,
+  "actionable_total": 138,
   "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
@@ -609,7 +609,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:45Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -634,7 +634,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:53Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -662,7 +662,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:55Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "backend",
           "resourceMap",
@@ -793,7 +793,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1597,7 +1597,7 @@
         "author": "iashutoshyadav",
         "bucket": "ci_failing",
         "updated_at": "2026-05-12T18:29:50Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1888,7 +1888,7 @@
         "author": "Swastik19Nit",
         "bucket": "ci_failing",
         "updated_at": "2026-05-26T19:11:13Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -1912,7 +1912,7 @@
         "author": "itvi-1234",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T18:15:59Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -1936,7 +1936,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T18:20:27Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1960,7 +1960,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2010,7 +2010,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-05-29T18:22:49Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -2163,6 +2163,58 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5899,
+        "title": "build(deps-dev): bump vitest from 3.2.4 to 4.1.0 in /app",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5899",
+        "author": "dependabot",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-01T19:03:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "dependencies",
+          "javascript",
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5901,
+        "title": "build(deps-dev): bump vitest and @vitest/coverage-istanbul in /frontend",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5901",
+        "author": "dependabot",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-01T19:18:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "dependencies",
+          "javascript",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2856,7 +2908,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:14:06Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2880,7 +2932,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:14:53Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2904,7 +2956,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:17:15Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2928,7 +2980,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:22:11Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2952,7 +3004,7 @@
         "author": "Fahmid-Arman",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:22:18Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2976,7 +3028,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3000,7 +3052,7 @@
         "author": "VlatkoMilisav",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T20:30:29Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3971,7 +4023,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -4144,7 +4196,7 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-28T18:15:53Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4168,7 +4220,7 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-28T18:31:07Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
