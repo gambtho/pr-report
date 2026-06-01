@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T08:30:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5764, "title": "backend/frontend/helm: Add --oidc-auto-login support", "verdict": "REQUEST_CHANGES", "size": "Large"},
+    {"number": 5798, "title": "backend: k8cache: Bypass non-API cluster paths", "verdict": "APPROVE", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": 0, "reason": "33 PRs skipped: SHA unchanged since last review (skip_set)"},
+    {"number": 0, "reason": "48 PRs skipped: draft"},
+    {"number": 0, "reason": "175 new non-draft PRs skipped: all had human review activity (reviews or comments > 0)"}
+  ],
+  "stats": {
+    "total": 2,
+    "verdicts": {"approve": 1, "request_changes": 1, "needs_discussion": 0},
+    "findings": {"critical": 1, "warning": 5, "suggestion": 4, "positive": 7},
+    "sizes": {"lockfile_only": 0, "small": 0, "medium": 1, "large": 1, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include auto-close keywords (Fixes #NN, closes #NN) in commit messages.",
+    "Approval style is warm and brief: 🎉 thanks! is the standard merge acknowledgment.",
+    "Reviewer @illume is primary maintainer; consistently requests rebase to remove merge-main commits.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — does not count as human review.",
+    "PRs must fix a real bug, add a feature, or address a maintenance need.",
+    "Frontend: fix exhaustive-deps lint violations rather than suppressing with eslint-disable.",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic."
+  ],
+  "skip_style_learning": true
+}

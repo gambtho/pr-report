@@ -1,0 +1,105 @@
+{
+  "pr_number": 5764,
+  "title": "backend/frontend/helm: Add --oidc-auto-login support",
+  "author": "menardorama",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5764",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Large",
+  "files_changed": 51,
+  "additions": 437,
+  "deletions": 193,
+  "re_review": true,
+  "date": "2026-06-01",
+  "findings_count": {
+    "critical": 1,
+    "warning": 5,
+    "suggestion": 3,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Critical",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.schema.json",
+      "line": 325,
+      "description": "Extra closing brace added in this diff creates invalid JSON. Helm schema validation will fail for all chart users. Flagged in 3 prior re-reviews and unresolved."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.yaml",
+      "line": 132,
+      "description": "Duplicate clusterInventory: key introduced by the diff. Strict YAML parsers error; lenient parsers silently drop the bare entry. Flagged in 3 prior re-reviews and unresolved."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "(commit history)",
+      "line": null,
+      "description": "Two merge-main commits (37c37067, f65051b8) still in branch. Project convention requires rebase before merge."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "(commit history)",
+      "line": null,
+      "description": "Commits 1d1bb7fa and da9888f1 have vague subjects 'Address Copilot review comments' without describing what changed. Flagged in every re-review since 2026-05-27."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "(commit history)",
+      "line": null,
+      "description": "Commit deecfffb missing SubArea; commit a8f8d966 uses non-standard area prefix 'cluster-inventory' and lowercase verb."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/kubeconfig/kubeconfig.go",
+      "line": 1135,
+      "description": "CACert: &oidcCACert passes pointer to empty string when no cert configured, breaking nil-as-absence convention. No functional regression today but fragile for future callers."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/clusterinventory/clusterinventory.go",
+      "line": 1,
+      "description": "Package-level godoc comment and Options struct field comments were removed; retain them for contributor orientation."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "charts/headlamp/values.schema.json",
+      "line": 299,
+      "description": "Unnecessary forward-slash escape in pattern: \"^\\/\" should be \"^/\" in JSON schema."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/redux/configSlice.ts",
+      "line": 205,
+      "description": "if ('oidcAutoLogin' in action.payload) guard correctly distinguishes explicit false from omitted key in partial setConfig calls."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/oidcauth/index.tsx",
+      "line": 17,
+      "description": "Clean disambiguation of popup flow (localStorage signal) vs full-page redirect flow (sessionStorage clear + history.replace) using window.opener."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/redux/configSlice.test.ts",
+      "line": 138,
+      "description": "Three targeted tests give precise coverage of the oidcAutoLogin payload guard logic."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/cmd/headlamp_test.go",
+      "line": 174,
+      "description": "TestGetConfigIncludesOidcAutoLogin validates end-to-end serialisation of new field through getConfig handler."
+    }
+  ]
+}

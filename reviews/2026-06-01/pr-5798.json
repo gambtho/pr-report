@@ -1,0 +1,49 @@
+{
+  "pr_number": 5798,
+  "title": "backend: k8cache: Bypass non-API cluster paths",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 158,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-01",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/cmd/server.go",
+      "line": 288,
+      "description": "Bypass condition uses both !IsKubernetesResourceAPIPath and !IsAuthBypassURL joined with ||. The logic is correct but non-obvious; a brief comment explaining the dual intent would aid future readers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheStore.go",
+      "line": 40,
+      "description": "kubernetesAPIPathIndex cleanly consolidates the duplicated index-detection logic from GetAPIGroup and ExtractNamespace, reducing future drift."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/cmd/headlamp_test.go",
+      "line": 2274,
+      "description": "TestCacheMiddleware_BypassesNonKubernetesAPIPaths uses a full router harness and asserts X-HEADLAMP-CACHE header absence, giving strong end-to-end confidence."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheStore_test.go",
+      "line": 349,
+      "description": "TestIsKubernetesResourceAPIPath covers all four valid path forms plus two expected-false cases, providing full predicate coverage."
+    }
+  ]
+}

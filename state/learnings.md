@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-05-31*
+*Last updated: 2026-06-01*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -46,8 +46,8 @@
 - Storyshot files containing unrelated ARIA-element structural drift included in a PR diff (seen in PR #5843 — resolved in 2026-05-27 re-review).
 - Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05; persistent after 4 re-reviews).
 - Multi-area dependency bump PRs missing area prefix in commit subject (seen in PR #5772 by @skoeva — "Bump fast-uri, brace-expansion, ws, containerd" with no `deps:` prefix).
-- Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 7 re-reviews).
-- Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — still present in 2026-05-30 re-review; PR #5844 by @nikunjkumar05 — still present after 4 re-reviews).
+- Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 8 re-reviews).
+- Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — still present in 2026-06-01 re-review (2 merge commits); PR #5844 by @nikunjkumar05 — still present after 4 re-reviews).
 - Unrelated single-line fix bundled into a feature PR (seen in PR #5764: `ThemeProviderNexti18n.tsx` fallback lang change unrelated to OIDC auto-login — now rationalized as related race condition fix).
 - Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — `OpenFile` with this combination never returns `EEXIST`. Seen in PR #5783; still present in 2026-05-29 re-review (SHA unchanged).
 - URL-lowercasing bug: `safeLinkUrl` returns `url.toLowerCase()` instead of original `url` for case-sensitive path components (seen in PR #5778 — still open, SHA unchanged).
@@ -67,22 +67,27 @@
 - `os.O_CREATE|os.O_WRONLY` without `O_EXCL` never returns EEXIST — `os.IsExist(err)` guard after such OpenFile call is dead code. Flag as Warning in any PR that adds this pattern.
 - Helm variable reassignment `{{- $matched = true }}` inside a range block is valid Helm 3.1+ syntax — not a bug.
 - `winShell = process.platform === 'win32'` in headlamp-plugin: glob patterns passed as execFileSync args with `shell: true` on Windows are handled by the downstream tool (i18next-scanner) rather than cmd.exe glob expansion. Do not flag as a bug.
-- Render-phase `if (condition) setState(value)` in React is an explicitly supported derived-state pattern when the condition depends on the current render's computed values and naturally stabilises after one extra render (seen in PR #5805 SimpleTable setPage — approved pattern, not an anti-pattern).
+- `CACert: &oidcCACert` (pointer to empty string when no cert configured) in `kubeconfig.newInClusterContextFromConfig` — all current consumers use `caCert != nil && *caCert != ""` double-guard, so no observable functional regression. Still flag as Suggestion for convention clarity (nil should mean absence for optional pointer fields).
 
 ## Author Notes
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format. Consistently high quality.
 - @ayushmaan-16: Multiple PRs — all React hooks/render-phase fixes or backend memory fixes. PRs #5803, #5804, #5805 approved across multiple sessions. PR #5866 (OIDC state eviction) approved — very strong technical author with correct commit format and production-quality tests.
 - @Rohith-Saran: PR #5775 (listener leak — SubArea missing in 2/3 commits); PR #5778 (external links — commit format still Conventional Commits after 4 re-reviews + safeLinkUrl bug); PR #5843 (ApiError export — lowercase verb in commit). Pattern of commit format issues persists across all PRs.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker — awaiting team discussion. PR #5880 (kind name regex fix) approved — clean and precise.
-- @menardorama: Feature contributor (PR #5764 OIDC auto-login); deployed to production at their company. Vague commit subjects and merge-main commits persist after 7 re-reviews; AuthChooser component-level test still missing; structural bugs (duplicate YAML key, extra JSON brace, CACert pointer regression) unresolved.
+- @menardorama: Feature contributor (PR #5764 OIDC auto-login + cluster inventory wiring); deployed to production at their company. Vague commit subjects and merge-main commits persist after 8 re-reviews; AuthChooser component-level test still missing; structural bugs (duplicate YAML key, extra JSON brace, CACert pointer regression) unresolved through 2026-06-01. New cluster inventory commits added but also have commit format issues (missing SubArea, non-standard area prefix).
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
-- @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author. PR #5798 is a well-structured refactoring of the k8cache URL path handling.
+- @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author. PR #5798 fix for k8cache non-API path bypass squashed cleanly (re-approved 2026-06-01 after SHA update — added tests and server.go bypass condition).
 - @harrshita123: Backend contributor; PR #5777 (approved), PR #5840 (approved — correct commit format with SubArea), PR #5832 (approved — missing SubArea in commit subject). Improving on commit format.
 - @yu-heejin: Frontend contributor; PR #5809 — approved in 2026-05-27 re-review (rebase done + decimal milli-bytes support added).
 - @joaquimrocha: Core maintainer/contributor.
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews. Author may need direct maintainer intervention.
 
 ## Session Log
+### 2026-06-01
+- Reviewed 2 PRs (all re-reviews): #5764 (REQUEST_CHANGES), #5798 (APPROVE)
+- Skipped: 33 SHA unchanged + 48 drafts + 175 new candidates (all had human review activity)
+- New observations: @Nabsku PR #5798 re-approved — author squashed into single clean commit with new tests and actual server.go bypass condition. @menardorama PR #5764 still REQUEST_CHANGES after 8th re-review: duplicate YAML key, extra JSON brace, vague commits, merge-main commits all persist. New cluster-inventory commits added with additional format issues. The `if ('oidcAutoLogin' in action.payload)` guard in configSlice and OIDCAuth popup/redirect disambiguation are now solid positives.
+
 ### 2026-05-31
 - Reviewed 0 PRs
 - Skipped: 257 total (48 drafts, 35 sha_unchanged, 174 had human review activity)
