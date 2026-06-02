@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-02",
+  "generated_at": "2026-06-02T00:00:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5783, "title": "backend: Fix backend data race / config file handling", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5887, "title": "frontend: Fix Chart useRef hook placement", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5898, "title": "frontend: NumRowsInput: Refactor state initialization using lazy state initializers", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5895, "title": "ci: Parallelize and speed up plugins-test", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5894, "title": "frontend: EditorDialog: Show a warning when content differs from the latest version", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5893, "title": "frontend: Add DeleteButton Storybook stories", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5900, "title": "app: plugins: tools/releaser: Bump tmp to 0.2.6", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5884, "title": "build(deps): bump tmp from 0.2.5 to 0.2.6 in /plugins/pluginctl", "verdict": "APPROVE", "size": "Lockfile-only"},
+    {"number": 5901, "title": "build(deps-dev): bump vitest and @vitest/coverage-istanbul in /frontend", "verdict": "NEEDS_DISCUSSION", "size": "Lockfile-only"},
+    {"number": 5899, "title": "build(deps-dev): bump vitest from 3.2.4 to 4.1.0 in /app", "verdict": "NEEDS_DISCUSSION", "size": "Lockfile-only"},
+    {"number": 5886, "title": "frontend: Add RBAC access inspector", "verdict": "NEEDS_DISCUSSION", "size": "Large"}
+  ],
+  "skipped": [],
+  "stats": {
+    "total": 11,
+    "verdicts": {"approve": 7, "request_changes": 1, "needs_discussion": 3},
+    "findings": {"critical": 0, "warning": 9, "suggestion": 12, "positive": 10},
+    "sizes": {"lockfile_only": 3, "small": 7, "medium": 0, "large": 1, "very_large": 0}
+  },
+  "style_guide": [
+    "Be concise but specific — reference exact file and line numbers for every finding",
+    "Commit format: 'area: SubArea: Description' with body for why, not just what",
+    "Flag missing trailing newlines in new files as a low-severity suggestion",
+    "Prefer 'Positive' findings for well-tested utilities and clean API design",
+    "Major version dependency bumps always require explicit CI verification note",
+    "React hooks rules (hooks must not be inside conditionals/loops) are HIGH priority",
+    "Missing error-state UI in query results is a Warning, not just a Suggestion",
+    "AuthVisible / RBAC patterns are authoritative for permission gating; deviations are HIGH",
+    "Storybook stories for shared components are welcomed — note trailing newline only",
+    "Lockfile-only PRs get APPROVE unless there is a major version bump or conflict",
+    "Dependabot duplicate / superseded PRs: note the conflict as Suggestion only"
+  ],
+  "skip_style_learning": true
+}

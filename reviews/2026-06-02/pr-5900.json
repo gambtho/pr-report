@@ -1,0 +1,35 @@
+{
+  "pr_number": 5900,
+  "title": "app: plugins: tools/releaser: Bump tmp to 0.2.6",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5900",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 20,
+  "additions": 60,
+  "deletions": 60,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "plugins/pluginctl/package-lock.json",
+      "line": 1,
+      "description": "Dependabot PR #5884 also bumps tmp in pluginctl only; merging this PR first will supersede it. Close #5884 after merge."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "app/package-lock.json",
+      "line": 1,
+      "description": "All workspaces updated in a single PR rather than 20+ dependabot bumps — efficient and consistent."
+    }
+  ]
+}

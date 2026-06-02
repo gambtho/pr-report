@@ -1,0 +1,56 @@
+{
+  "pr_number": 5894,
+  "title": "frontend: EditorDialog: Warn when resource modified during edit",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 76,
+  "deletions": 11,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 2,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": 167,
+      "description": "No Vitest test covers the new conflict detection path (resourceVersionsDiffer && userHasEdits). A unit test simulating external item update with unsaved edits would prevent regressions."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": 537,
+      "description": "resourceModifiedWarning Alert placement could be above the editor for better visibility in small-viewport activity panels."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": 95,
+      "description": "isActivityOpenRef correctly guards Activity.update calls when editor is not open."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": 173,
+      "description": "previousVersionRef updated on conflict detection prevents repeated warning for same version change."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": 56,
+      "description": "409 error message improved from generic 'Conflicts when trying to perform operation (code 409)' to actionable user guidance."
+    }
+  ]
+}

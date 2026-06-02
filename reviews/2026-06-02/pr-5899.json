@@ -1,0 +1,35 @@
+{
+  "pr_number": 5899,
+  "title": "build(deps-dev): bump vitest from 3.2.4 to 4.1.0 in /app",
+  "author": "app/dependabot",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5899",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Lockfile-only",
+  "files_changed": 2,
+  "additions": 1158,
+  "deletions": 1740,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 0
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "app/package-lock.json",
+      "line": 1,
+      "description": "Major version bump vitest 3.x -> 4.x. Coordinate with PR #5901 (/frontend). CI must pass before merge."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "app/package-lock.json",
+      "line": 1,
+      "description": "This targets 4.1.0 while #5901 targets 4.1.8. Align both workspaces to the same vitest patch version."
+    }
+  ]
+}

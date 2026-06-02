@@ -1,0 +1,42 @@
+{
+  "pr_number": 5887,
+  "title": "frontend: Chart: Fix react-hooks/refs violation",
+  "author": "kishore08-07",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5887",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 42,
+  "deletions": 39,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Chart.tsx",
+      "line": 201,
+      "description": "containerRect captured on mouseEnter; stale if container scrolls/resizes between mouseEnter and tooltip render. Minor UX concern only."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Chart.tsx",
+      "line": 222,
+      "description": "eslint-disable comment removed; ref.current access moved to onMouseEnter handler — architecturally correct fix."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Chart.tsx",
+      "line": 261,
+      "description": "PaperTooltipProps updated cleanly from containerRef to containerRect, no downstream breakage."
+    }
+  ]
+}

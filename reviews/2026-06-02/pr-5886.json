@@ -1,0 +1,91 @@
+{
+  "pr_number": 5886,
+  "title": "frontend: Add RBAC access inspector",
+  "author": "Utkarshpandey0001",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5886",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Large",
+  "files_changed": 51,
+  "additions": 1169,
+  "deletions": 132,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 3,
+    "suggestion": 3,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 226,
+      "description": "rulesQuery.error is silently ignored. When SelfSubjectRulesReview fails (403/404), the table shows all 'No' (denied) without indicating an error. Add an Alert when rulesQuery.isError is true."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 1,
+      "description": "Commit subjects 'frontend: Add RBAC access inspector' and 'frontend: Update RBAC access translations' are missing SubArea. Use 'frontend: Security: Add RBAC access inspector' and 'frontend: i18n: Update RBAC access translations'."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 203,
+      "description": "namespace state initialised to 'default' triggers an API call before the namespace list loads. If 'default' does not exist in the cluster, produces an unhandled error. Initialise to null and gate the query on namespace !== null."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 1,
+      "description": "No component-level Vitest tests for Permissions.tsx. Add renderWithProviders + mocked useQuery responses to cover loading, error, and populated table states."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/AuthVisible.tsx",
+      "line": 1,
+      "description": "Changes to AuthVisible, DeleteButton, EditButton, RestartButton, RollbackButton, ScaleButton, PortForward expand the PR scope significantly. Consider splitting auth-visible enhancements into a separate PR."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/lib/k8s/api/v1/clusterApi.ts",
+      "line": 74,
+      "description": "getSelfSubjectRulesReview passes empty spec ({}) when namespace is falsy. Not currently reachable but should be documented or type-guarded."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/access/permissionUtils.ts",
+      "line": 1,
+      "description": "Wildcard handling (verbs/apiGroups/resources: ['*']) and named-resource 'limited' state correctly implemented, with unit tests for all branches."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/access/permissionUtils.ts",
+      "line": 56,
+      "description": "sortResourcesForPermissions puts high-traffic resources (pods, deployments, etc.) first — good UX default."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 215,
+      "description": "Query staleTime settings (60s for rules, 5min for userInfo/apiDiscovery) are sensible and reduce unnecessary API calls."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/access/Permissions.tsx",
+      "line": 302,
+      "description": "rulesStatus.incomplete alert surfaces the Kubernetes evaluation-limit flag, which is important for clusters with complex RBAC."
+    }
+  ]
+}

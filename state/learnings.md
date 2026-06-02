@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-02*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -49,7 +49,10 @@
 - Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 8 re-reviews).
 - Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — still present in 2026-06-01 re-review (2 merge commits); PR #5844 by @nikunjkumar05 — still present after 4 re-reviews).
 - Unrelated single-line fix bundled into a feature PR (seen in PR #5764: `ThemeProviderNexti18n.tsx` fallback lang change unrelated to OIDC auto-login — now rationalized as related race condition fix).
-- Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — `OpenFile` with this combination never returns `EEXIST`. Seen in PR #5783; still present in 2026-05-29 re-review (SHA unchanged).
+- Vitest major version bump (3.x → 4.x): dependabot PRs for vitest 4 require explicit CI-green verification before merge due to breaking changes in vi.mock hoisting, snapshot serialization, and browser mode (seen in PRs #5901, #5899; 2026-06-02).
+- New feature PRs without error-state UI: when a useQuery/useEffect can fail (e.g., 403, 404), the failure must surface to the user via Alert or similar — a silent empty state is misleading (seen in PR #5886 Permissions.tsx rulesQuery.error; 2026-06-02).
+- Namespace state initialised to 'default' in new namespace-selector components causes a premature API call before the namespace list loads; initialise to null and gate queries on namespace !== null (seen in PR #5886; 2026-06-02).
+- Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — `OpenFile` with this combination never returns `EEXIST`. Seen in PR #5783; still present in 2026-05-29, 2026-06-02 re-reviews.
 - URL-lowercasing bug: `safeLinkUrl` returns `url.toLowerCase()` instead of original `url` for case-sensitive path components (seen in PR #5778 — still open, SHA unchanged).
 - Duplicate YAML key in values.yaml from bad merge/rebase (seen in PR #5764 — duplicate `clusterInventory:` key persists in 2026-05-30 re-review).
 - Extra `}` in values.schema.json making JSON schema invalid (seen in PR #5764 — persists in 2026-05-30 re-review).
@@ -70,7 +73,8 @@
 - `CACert: &oidcCACert` (pointer to empty string when no cert configured) in `kubeconfig.newInClusterContextFromConfig` — all current consumers use `caCert != nil && *caCert != ""` double-guard, so no observable functional regression. Still flag as Suggestion for convention clarity (nil should mean absence for optional pointer fields).
 
 ## Author Notes
-- @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format. Consistently high quality.
+- @Utkarshpandey0001: PR #5886 (RBAC access inspector, 2026-06-02) — strong algorithmic implementation (permissionUtils.ts with full wildcard coverage + unit tests) but missing error-state UI, namespace default 'default' causes spurious API call, commit SubArea missing in both commits, no component-level tests. First reviewed PR; shows promise.
+- @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820, #5887) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format. Consistently high quality.
 - @ayushmaan-16: Multiple PRs — all React hooks/render-phase fixes or backend memory fixes. PRs #5803, #5804, #5805 approved across multiple sessions. PR #5866 (OIDC state eviction) approved — very strong technical author with correct commit format and production-quality tests.
 - @Rohith-Saran: PR #5775 (listener leak — SubArea missing in 2/3 commits); PR #5778 (external links — commit format still Conventional Commits after 4 re-reviews + safeLinkUrl bug); PR #5843 (ApiError export — lowercase verb in commit). Pattern of commit format issues persists across all PRs.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker — awaiting team discussion. PR #5880 (kind name regex fix) approved — clean and precise.
@@ -83,6 +87,11 @@
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews. Author may need direct maintainer intervention.
 
 ## Session Log
+### 2026-06-02
+- Reviewed 11 PRs: #5783 (re-review, REQUEST_CHANGES), #5887 (APPROVE), #5898 (APPROVE), #5895 (APPROVE), #5894 (APPROVE), #5893 (APPROVE), #5900 (APPROVE), #5884 (APPROVE), #5901 (NEEDS_DISCUSSION), #5899 (NEEDS_DISCUSSION), #5886 (NEEDS_DISCUSSION)
+- Skipped: 34 SHA-unchanged re-review candidates + 48 drafts + ~170 candidates with human review activity
+- New observations: PR #5886 (@Utkarshpandey0001): first RBAC inspector PR — missing error Alert on SelfSubjectRulesReview failure (shows all-denied silently), namespace initialised to 'default' causing spurious API call before namespace list loads, missing SubArea in both commit subjects, no component-level Vitest tests. PRs #5901/#5899: vitest 3.x→4.x major bumps need explicit CI verification before merge and should be coordinated. PRs #5900/#5884: duplicate tmp 0.2.6 bumps — 5900 (comprehensive, all workspaces) supersedes 5884 (dependabot pluginctl only). PR #5887 (@kishore08-07): clean Chart useRef fix (continuing hooks-cleanup #5183 streak). PR #5898 (@YadavAkhileshh): NumRowsInput lazy state init — commit subject still exceeds 72-char limit.
+
 ### 2026-06-01
 - Reviewed 2 PRs (all re-reviews): #5764 (REQUEST_CHANGES), #5798 (APPROVE)
 - Skipped: 33 SHA unchanged + 48 drafts + 175 new candidates (all had human review activity)

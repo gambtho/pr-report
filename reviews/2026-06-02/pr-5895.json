@@ -1,0 +1,56 @@
+{
+  "pr_number": 5895,
+  "title": "CI: Parallelize and speed up plugins-test",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5895",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 3,
+  "additions": 98,
+  "deletions": 26,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": ".github/workflows/frontend.yml",
+      "line": 113,
+      "description": "Commit subject 'CI: Parallelize and speed up plugins-test' uses uppercase prefix and is missing SubArea. Should be 'ci: plugins-test: Parallelize and speed up'."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "Makefile",
+      "line": 352,
+      "description": "make plugins-test no longer runs npm ci for headlamp-plugin before test-headlamp-plugin.js. Local runs on a fresh checkout may fail without documented prerequisite."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": ".github/workflows/frontend.yml",
+      "line": 129,
+      "description": "Three parallel CI jobs with separate cache-dependency-path entries improve cache hit rate."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "plugins/headlamp-plugin/test-plugins-examples.sh",
+      "line": 12,
+      "description": "TARBALL path resolved before cd to avoid worker race conditions in xargs -P parallelism."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "Makefile",
+      "line": 355,
+      "description": "npm install replaced by npm ci for reproducible installs from lockfile."
+    }
+  ]
+}

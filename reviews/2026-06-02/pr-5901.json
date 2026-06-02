@@ -1,0 +1,35 @@
+{
+  "pr_number": 5901,
+  "title": "build(deps-dev): bump vitest and @vitest/coverage-istanbul in /frontend",
+  "author": "app/dependabot",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5901",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Lockfile-only",
+  "files_changed": 2,
+  "additions": 366,
+  "deletions": 195,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 0
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/package-lock.json",
+      "line": 1,
+      "description": "Major version bump vitest 3.x -> 4.x. Breaking changes in vi.mock hoisting, snapshot serialization, browser mode API. CI must pass before merge. Coordinate with PR #5899."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/package-lock.json",
+      "line": 1,
+      "description": "Consider pinning to 4.0.x first, then bumping to 4.1.8, to make any regression bisecting easier."
+    }
+  ]
+}

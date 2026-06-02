@@ -1,0 +1,49 @@
+{
+  "pr_number": 5898,
+  "title": "frontend: NumRowsInput: Refactor state initialization using lazy state initializers",
+  "author": "YadavAkhileshh",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5898",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 9,
+  "deletions": 15,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/App/Settings/NumRowsInput.tsx",
+      "line": 1,
+      "description": "Commit subject is 84 chars, exceeding 72-char soft limit. Shorten the subject line."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/App/Settings/NumRowsInput.tsx",
+      "line": 1,
+      "description": "PR #5767 also modifies NumRowsInput.tsx and is still open — potential merge conflict after either lands."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Settings/NumRowsInput.tsx",
+      "line": 51,
+      "description": "useMemo(..., []) anti-patterns correctly replaced with lazy useState(() => ...) initializers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Settings/NumRowsInput.tsx",
+      "line": 52,
+      "description": "Two eslint-disable-next-line react-hooks/exhaustive-deps comments removed."
+    }
+  ]
+}

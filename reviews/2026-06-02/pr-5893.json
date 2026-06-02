@@ -1,0 +1,42 @@
+{
+  "pr_number": 5893,
+  "title": "frontend: common/Resource/DeleteButton: Add Storybook stories",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5893",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 6,
+  "additions": 185,
+  "deletions": 0,
+  "re_review": false,
+  "date": "2026-06-02",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/__snapshots__/DeleteButton.Default.stories.storyshot",
+      "line": 16,
+      "description": "All five storyshot files are missing trailing newlines. Run prettier to normalize EOL and avoid noisy future diffs."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/DeleteButton.stories.tsx",
+      "line": 38,
+      "description": "createMockItem correctly provides all required KubeObject methods for isolated story rendering."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/DeleteButton.stories.tsx",
+      "line": 86,
+      "description": "PodEvict story documents eviction-vs-deletion distinction as living documentation."
+    }
+  ]
+}
