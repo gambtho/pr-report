@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-02T15:36:52+00:00",
+  "generated_at": "2026-06-02T17:44:40+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 214,
   "open_drafts_total": 48,
-  "actionable_total": 138,
+  "actionable_total": 139,
   "tracked_total": 37,
   "buckets": {
     "needs_rebase": [
@@ -1767,7 +1767,7 @@
         "author": "vikash7485",
         "bucket": "ci_failing",
         "updated_at": "2026-05-18T16:08:47Z",
-        "days_since_update": 14,
+        "days_since_update": 15,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -1864,7 +1864,7 @@
         "author": "harrshita123",
         "bucket": "ci_failing",
         "updated_at": "2026-05-26T17:03:14Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2205,13 +2205,40 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5901",
         "author": "dependabot",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-01T19:18:32Z",
+        "updated_at": "2026-06-02T16:21:46Z",
         "days_since_update": 0,
         "labels": [
           "dependencies",
           "javascript",
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5895,
+        "title": "CI: Parallelize and speed up plugins-test",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5895",
+        "author": "skoeva",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-02T16:34:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "quality",
+          "CI",
+          "github_actions",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -3388,7 +3415,7 @@
         "author": "mystic-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T16:31:57Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4074,7 +4101,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
