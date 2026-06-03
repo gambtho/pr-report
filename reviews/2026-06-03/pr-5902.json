@@ -1,0 +1,35 @@
+{
+  "pr_number": 5902,
+  "title": "frontend: Improve French translations",
+  "author": "codeurluce",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5902",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 1,
+  "deletions": 1,
+  "re_review": false,
+  "date": "2026-06-03",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/i18n/locales/fr/app.json",
+      "line": null,
+      "description": "Commit subject 'frontend: Improve French translations' missing SubArea. Convention: 'frontend: i18n: Improve French translations'."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/i18n/locales/fr/app.json",
+      "line": null,
+      "description": "Consider consolidating with PR #5903 (same author, same language, both French i18n) to reduce review overhead."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pr_number": 5903,
+  "title": "i18n: improve the translations of the French glossary",
+  "author": "codeurluce",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5903",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 21,
+  "deletions": 21,
+  "re_review": false,
+  "date": "2026-06-03",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/i18n/locales/fr/glossary.json",
+      "line": null,
+      "description": "Commit subject 'i18n: improve French translations' — lowercase verb 'improve' (should be 'Improve') and missing SubArea segment. Convention: 'i18n: fr: Improve French glossary translations'."
+    }
+  ]
+}

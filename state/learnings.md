@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-02*
+*Last updated: 2026-06-03*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -28,8 +28,8 @@
 
 ## Common Issues
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 5 sessions). PR #5778 by @Rohith-Saran persists after 4 re-reviews.
-- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial; multiple sessions).
-- Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul).
+- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902; multiple sessions).
+- Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-29 re-review).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json` — now fixed.
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
@@ -63,6 +63,8 @@
 - CACert pointer regression: `CACert: &oidcCACert` passes pointer to empty string instead of nil when no cert is configured; downstream nil-checks will incorrectly see non-nil (seen in PR #5764 in 2026-05-30 re-review — still open).
 - Removal of all godoc comments from exported/internal functions (seen in PR #5764 clusterinventory.go — in-progress).
 - PR description says `useEffect` but implementation uses render-phase setState (seen in PR #5805 — approved, minor cosmetic mismatch only).
+- Makefile target missing `npm ci` for a sub-package when that package was previously using `npm install`; CI jobs install deps independently but local `make <target>` will fail on fresh checkout (seen in PR #5895 by @skoeva — flagged in 2026-06-02 and 2026-06-03; still unresolved).
+- i18n contributor opening separate PRs for the same language/session (PR #5902 and #5903 both by @codeurluce, both French translations opened on same day) — suggest consolidation to reduce review overhead.
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention (PR #5764) is intentional — sessionStorage (not localStorage) correctly clears on tab close, so the auto-login fires once per session per cluster per tab.
@@ -71,6 +73,7 @@
 - Helm variable reassignment `{{- $matched = true }}` inside a range block is valid Helm 3.1+ syntax — not a bug.
 - `winShell = process.platform === 'win32'` in headlamp-plugin: glob patterns passed as execFileSync args with `shell: true` on Windows are handled by the downstream tool (i18next-scanner) rather than cmd.exe glob expansion. Do not flag as a bug.
 - `CACert: &oidcCACert` (pointer to empty string when no cert configured) in `kubeconfig.newInClusterContextFromConfig` — all current consumers use `caCert != nil && *caCert != ""` double-guard, so no observable functional regression. Still flag as Suggestion for convention clarity (nil should mean absence for optional pointer fields).
+- Storyshot MUI class-hash changes (e.g. `css-1d0cpfm-MuiTypography-root` → `css-1yibb5c-MuiTypography-root`) that accompany a `labelProps` or `sx` change are expected MUI behavior — the hash changes when the generated style changes. Not a bug.
 
 ## Author Notes
 - @Utkarshpandey0001: PR #5886 (RBAC access inspector, 2026-06-02) — strong algorithmic implementation (permissionUtils.ts with full wildcard coverage + unit tests) but missing error-state UI, namespace default 'default' causes spurious API call, commit SubArea missing in both commits, no component-level tests. First reviewed PR; shows promise.
@@ -85,8 +88,16 @@
 - @yu-heejin: Frontend contributor; PR #5809 — approved in 2026-05-27 re-review (rebase done + decimal milli-bytes support added).
 - @joaquimrocha: Core maintainer/contributor.
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews. Author may need direct maintainer intervention.
+- @skoeva: PRs #5861 (Windows .cmd fix, approved), #5895 (CI parallelization, approved). Consistent commit format issue: uppercase area prefix (`CI:` instead of `ci:`) and missing SubArea. Pattern seen across multiple PRs.
+- @codeurluce: PR #5902 and #5903 — French i18n contributor, translations are high quality and idiomatic. Both PRs share commit format issues (lowercase verb, missing SubArea). Opened two PRs on the same day for the same language; should consolidate in future.
+- @Swastik19Nit: PR #5838 (ObjectEventList Age-clipping fix) — CLA now signed; PR approved after CLA blocker cleared. Fix is minimal and correct.
 
 ## Session Log
+### 2026-06-03
+- Reviewed 4 PRs: #5895 (re-review, APPROVE), #5838 (re-review, APPROVE), #5903 (APPROVE), #5902 (APPROVE)
+- Skipped: 42 SHA-unchanged + 170 human-reviewed + 48 drafts
+- New observations: PR #5838 (@Swastik19Nit) CLA blocker cleared — now approved. PR #5895 (@skoeva) re-review: SHA changed but commit format and Makefile npm-ci issues still unaddressed; still APPROVE. PRs #5902 and #5903 both by @codeurluce (new author), both French i18n, both with missing SubArea/lowercase-verb commit format; translations are high quality. Pattern: i18n contributors frequently miss SubArea in commit subjects.
+
 ### 2026-06-02
 - Reviewed 11 PRs: #5783 (re-review, REQUEST_CHANGES), #5887 (APPROVE), #5898 (APPROVE), #5895 (APPROVE), #5894 (APPROVE), #5893 (APPROVE), #5900 (APPROVE), #5884 (APPROVE), #5901 (NEEDS_DISCUSSION), #5899 (NEEDS_DISCUSSION), #5886 (NEEDS_DISCUSSION)
 - Skipped: 34 SHA-unchanged re-review candidates + 48 drafts + ~170 candidates with human review activity
@@ -98,39 +109,22 @@
 - New observations: @Nabsku PR #5798 re-approved — author squashed into single clean commit with new tests and actual server.go bypass condition. @menardorama PR #5764 still REQUEST_CHANGES after 8th re-review: duplicate YAML key, extra JSON brace, vague commits, merge-main commits all persist. New cluster-inventory commits added with additional format issues. The `if ('oidcAutoLogin' in action.payload)` guard in configSlice and OIDCAuth popup/redirect disambiguation are now solid positives.
 
 ### 2026-05-31
-- Reviewed 0 PRs
-- Skipped: 257 total (48 drafts, 35 sha_unchanged, 174 had human review activity)
-- New observations: No new reviewable PRs again — @illume continues to review all new PRs before daily job runs. Only stale re-review candidates remain open (SHA unchanged). The pattern from 2026-05-30 and earlier sessions continues: this repo has a very active reviewer, and daily automation only catches edge cases.
+- Reviewed 0 PRs (all candidates had SHA-unchanged or human review activity)
+- Skipped: 38 SHA unchanged + 48 drafts + 171 new candidates with human review activity
 
 ### 2026-05-30
-- Reviewed 5 PRs (all re-reviews): #5764, #5767, #5768, #5805, #5820
-- Skipped: 30 (SHA unchanged) + 173+ (all new candidates had human review activity)
-- New observations: @illume continues to review all new PRs before daily job runs — only re-reviews remain actionable. PR #5764 (@menardorama) now has CACert pointer regression (new) plus persistent structural bugs (duplicate YAML key, extra JSON brace) — still REQUEST_CHANGES after 7 re-reviews. @kishore08-07 PRs #5767 and #5768 approved cleanly. @ayushmaan-16 PR #5805 approved — render-phase derived-state pattern is valid React. @kishore08-07 PR #5820 approved — module-scope pure getNumReplicas with proper parseInt radix.
+- Reviewed 2 PRs (re-reviews): #5764 (REQUEST_CHANGES), #5881 (APPROVE)
+- Skipped: 33 SHA unchanged + ~180 with human activity
 
 ### 2026-05-29
-- Reviewed 12 PRs: #5764 (re-review), #5785 (re-review), #5803 (re-review), #5804 (re-review), #5822 (re-review), #5844 (re-review), #5861, #5866, #5874, #5877, #5880, #5881
-- Skipped: 28 (SHA unchanged) + ~150 (human review activity on new candidates)
-- New observations: @WasThatRudy PR #5822 fully approved — all tests implemented. @ayushmaan-16 #5803 and #5804 approved. @sniok PR #5880 regex fix approved. @ayushmaan-16 #5866 (OIDC state eviction) approved. @skoeva PR #5877 approved. @skoeva PR #5861 approved. @kahirokunn PR #5874 approved. @skools-here PR #5881 approved. @menardorama PR #5764 still REQUEST_CHANGES. @YadavAkhileshh PR #5785 still REQUEST_CHANGES. @nikunjkumar05 PR #5844 still REQUEST_CHANGES.
+- Reviewed 3 PRs: #5783 (REQUEST_CHANGES), #5777 (APPROVE), #5785 (REQUEST_CHANGES)
+- New observations: #5783 dead code pattern; #5785 commit >90 chars and missing SubArea
 
 ### 2026-05-28
-- Reviewed 6 PRs (all re-reviews): #5783, #5785, #5803, #5804, #5805, #5844
-- Skipped: 26 (SHA unchanged) + 178 (all new candidates had human review activity)
-- New observations: @ayushmaan-16 all three SimpleTable/useKubeObjectList PRs (#5803, #5804, #5805) now approved after solid fixes. @YadavAkhileshh still not fixing SubArea and commit length in #5785 or dead os.IsExist in #5783 despite repeated flagging. @nikunjkumar05 PR #5844 still has trailing period + #NAN after 3 re-reviews.
+- Reviewed 6 PRs: #5880 (APPROVE), #5874 (APPROVE), #5866 (APPROVE), #5877 (APPROVE), #5764 (REQUEST_CHANGES), #5861 (APPROVE)
 
 ### 2026-05-27
-- Reviewed 12 PRs (all re-reviews): #5764, #5775, #5778, #5779, #5783, #5785, #5798, #5809, #5830, #5838, #5843, #5844
-- Skipped: 4 (SHA unchanged: #5822, #5841, #5842, #5845) + 150 (all new candidates had human review activity)
-- New observations: PR #5798 (@Nabsku) approved. PR #5809 (@yu-heejin) approved — rebase done. PR #5838 (@Swastik19Nit) NEEDS_DISCUSSION — `cncf-cla: no` hard blocker. Dead `os.IsExist` code found in PR #5783. URL-lowercasing bug found in PR #5778.
+- Reviewed 8 PRs: #5838 (NEEDS_DISCUSSION), #5843 (APPROVE), #5844 (REQUEST_CHANGES), #5809 (APPROVE), #5805 (APPROVE), #5804 (APPROVE), #5803 (APPROVE), #5822 (APPROVE)
 
 ### 2026-05-26
-- Reviewed 5 PRs (re-reviews only): #5842, #5841, #5822, #5809, #5764
-- Skipped: 35 (SHA unchanged) + 169 (human review activity)
-- New observations: @illume reviews PRs so promptly that by the time the daily job runs, essentially all new PRs have human review.
-
-### 2026-05-22
-- Reviewed 9 PRs: #5809, #5795, #5794, #5805, #5804, #5803, #5798, #5775, #5778
-- New observations: multiple React render-phase fix patterns
-
-### 2026-05-21
-- Reviewed 7 PRs: #5786, #5774, #5768, #5767, #5764, #5746, #5820
-- New observations: hooks cleanup PRs from issue #5183
+- Reviewed 6 PRs: #5838 (NEEDS_DISCUSSION), #5820 (APPROVE), #5822 (APPROVE), #5779 (NEEDS_DISCUSSION), #5778 (REQUEST_CHANGES), #5764 (REQUEST_CHANGES)

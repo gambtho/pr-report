@@ -1,27 +1,51 @@
 [
   {
-    "number": 5783,
-    "head_sha": "8479d9c077a2289218e3fcd043a9589129c9088c",
-    "date": "2026-06-02",
-    "title": "helm: Fix file descriptor leak in createFullPath"
+    "number": 5903,
+    "head_sha": "5f78b8a0db3d97841ceb9d5a74c61d982d7ef71f",
+    "date": "2026-06-03",
+    "title": "i18n: improve the translations of the French glossary"
   },
   {
-    "number": 5887,
-    "head_sha": "74efb8cec17037951f25407d544f6e8a4ac8de40",
+    "number": 5902,
+    "head_sha": "e0e962758d12d8d6094f700ec992930bbfafa6ad",
+    "date": "2026-06-03",
+    "title": "frontend: Improve French translations"
+  },
+  {
+    "number": 5895,
+    "head_sha": "b0e380c60e7a928fc25851d635a0b3d6241d955b",
+    "date": "2026-06-03",
+    "title": "CI: Parallelize and speed up plugins-test"
+  },
+  {
+    "number": 5838,
+    "head_sha": "573d4fac1f389067299acc31c08a303bab2b7030",
+    "date": "2026-06-03",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
+  },
+  {
+    "number": 5901,
+    "head_sha": "42cb43168aee30fa4039b6c46c03f9a8b11b8ab3",
     "date": "2026-06-02",
-    "title": "frontend: Chart: Fix react-hooks/refs violation in Chart"
+    "title": "build(deps-dev): bump vitest and @vitest/coverage-istanbul in /frontend"
+  },
+  {
+    "number": 5900,
+    "head_sha": "d3f53e66e41bd4493c33bd327d98a0c5c343d2fb",
+    "date": "2026-06-02",
+    "title": "app: plugins: tools/releaser: Bump tmp to 0.2.6"
+  },
+  {
+    "number": 5899,
+    "head_sha": "db417052fa574355ec350d3de63f750774ea53ab",
+    "date": "2026-06-02",
+    "title": "build(deps-dev): bump vitest from 3.2.4 to 4.1.0 in /app"
   },
   {
     "number": 5898,
     "head_sha": "9b0ac152b251d427c7d534352848a182ffc49e57",
     "date": "2026-06-02",
     "title": "frontend: NumRowsInput: Refactor state initialization using lazy state initializers"
-  },
-  {
-    "number": 5895,
-    "head_sha": "7cbed84fa9a8aa64e87581439740f0dc1542c411",
-    "date": "2026-06-02",
-    "title": "ci: Parallelize and speed up plugins-test"
   },
   {
     "number": 5894,
@@ -36,28 +60,10 @@
     "title": "frontend: Add DeleteButton Storybook stories"
   },
   {
-    "number": 5900,
-    "head_sha": "d3f53e66e41bd4493c33bd327d98a0c5c343d2fb",
+    "number": 5887,
+    "head_sha": "74efb8cec17037951f25407d544f6e8a4ac8de40",
     "date": "2026-06-02",
-    "title": "app: plugins: tools/releaser: Bump tmp to 0.2.6"
-  },
-  {
-    "number": 5884,
-    "head_sha": "0a9a384e8937f3880f281390139940b9a6ff7c63",
-    "date": "2026-06-02",
-    "title": "build(deps): bump tmp from 0.2.5 to 0.2.6 in /plugins/pluginctl"
-  },
-  {
-    "number": 5901,
-    "head_sha": "42cb43168aee30fa4039b6c46c03f9a8b11b8ab3",
-    "date": "2026-06-02",
-    "title": "build(deps-dev): bump vitest and @vitest/coverage-istanbul in /frontend"
-  },
-  {
-    "number": 5899,
-    "head_sha": "db417052fa574355ec350d3de63f750774ea53ab",
-    "date": "2026-06-02",
-    "title": "build(deps-dev): bump vitest from 3.2.4 to 4.1.0 in /app"
+    "title": "frontend: Chart: Fix react-hooks/refs violation in Chart"
   },
   {
     "number": 5886,
@@ -66,10 +72,16 @@
     "title": "frontend: Add RBAC access inspector"
   },
   {
-    "number": 5764,
-    "head_sha": "f65051b8d0435a67d15b865fdd0d9a71da27185a",
-    "date": "2026-06-01",
-    "title": "backend/frontend/helm: Add --oidc-auto-login support"
+    "number": 5884,
+    "head_sha": "0a9a384e8937f3880f281390139940b9a6ff7c63",
+    "date": "2026-06-02",
+    "title": "build(deps): bump tmp from 0.2.5 to 0.2.6 in /plugins/pluginctl"
+  },
+  {
+    "number": 5783,
+    "head_sha": "8479d9c077a2289218e3fcd043a9589129c9088c",
+    "date": "2026-06-02",
+    "title": "helm: Fix file descriptor leak in createFullPath"
   },
   {
     "number": 5798,
@@ -78,16 +90,16 @@
     "title": "backend: k8cache: Bypass non-API cluster paths"
   },
   {
-    "number": 5767,
-    "head_sha": "c6a9541cc3c8cba23a74f549e32fc23d5298cea3",
-    "date": "2026-05-30",
-    "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps"
+    "number": 5764,
+    "head_sha": "f65051b8d0435a67d15b865fdd0d9a71da27185a",
+    "date": "2026-06-01",
+    "title": "backend/frontend/helm: Add --oidc-auto-login support"
   },
   {
-    "number": 5768,
-    "head_sha": "8fbc5a8a574cb2888f121763019d46dd26e0741d",
+    "number": 5820,
+    "head_sha": "877b28f9ba624d863aaa6cfa5a84ac6dcb163c40",
     "date": "2026-05-30",
-    "title": "frontend: App: Remove unused themeName dependency"
+    "title": "frontend: ScaleButton: Memoize replica count computation"
   },
   {
     "number": 5805,
@@ -96,10 +108,16 @@
     "title": "frontend: SimpleTable: Fix synchronous setPage(0) during render"
   },
   {
-    "number": 5820,
-    "head_sha": "877b28f9ba624d863aaa6cfa5a84ac6dcb163c40",
+    "number": 5768,
+    "head_sha": "8fbc5a8a574cb2888f121763019d46dd26e0741d",
     "date": "2026-05-30",
-    "title": "frontend: ScaleButton: Memoize replica count computation"
+    "title": "frontend: App: Remove unused themeName dependency"
+  },
+  {
+    "number": 5767,
+    "head_sha": "c6a9541cc3c8cba23a74f549e32fc23d5298cea3",
+    "date": "2026-05-30",
+    "title": "frontend: NumRowsInput: Fix react-hooks/exhaustive-deps"
   },
   {
     "number": 5881,
@@ -172,12 +190,6 @@
     "head_sha": "08ca74e6e673cd3e93161e6e6681872e3f37cb65",
     "date": "2026-05-27",
     "title": "frontend: Export ApiError from K8s package for plugin access"
-  },
-  {
-    "number": 5838,
-    "head_sha": "1058609a4a5baf2a0a9795c1c4c6e2f6acec32d7",
-    "date": "2026-05-27",
-    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
   },
   {
     "number": 5830,

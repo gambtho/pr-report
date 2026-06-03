@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T08:15:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5895, "title": "CI: Parallelize and speed up plugins-test", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5838, "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5903, "title": "i18n: improve the translations of the French glossary", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5902, "title": "frontend: Improve French translations", "verdict": "APPROVE", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": null, "reason": "42 PRs: sha_unchanged (no new commits since last review)"},
+    {"number": null, "reason": "170 PRs: human_reviewed (already have human review activity)"},
+    {"number": null, "reason": "48 PRs: draft"}
+  ],
+  "stats": {
+    "total": 4,
+    "verdicts": {"approve": 4, "request_changes": 0, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 4, "suggestion": 2, "positive": 10},
+    "sizes": {"lockfile_only": 0, "small": 3, "medium": 1, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief; issues CHANGES_REQUESTED for commit guideline violations before final APPROVE.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need.",
+    "Frontend (TypeScript/React): fix exhaustive-deps lint violations rather than suppressing.",
+    "Backend (Go): use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker in kubernetes-sigs repos."
+  ],
+  "skip_style_learning": true
+}
