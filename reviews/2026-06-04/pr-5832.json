@@ -1,0 +1,56 @@
+{
+  "pr_number": 5832,
+  "title": "backend: Reject unsupported Jaeger tracing endpoint",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 4,
+  "additions": 75,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-04",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "git history",
+      "line": null,
+      "description": "PR branch contains merge commit 'Merge branch main into fix-5799-jaeger-endpoint'. Project convention requires rebase onto main. Run: git rebase origin/main && git push --force-with-lease."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "commit subject",
+      "line": null,
+      "description": "Commit 'backend: Reject unsupported Jaeger tracing endpoint' missing SubArea segment. Suggest: 'backend: telemetry: Reject unsupported Jaeger tracing endpoint'."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/config/config.go",
+      "line": null,
+      "description": "validateTracing() cleanly extracted; rejects Jaeger when stdout not enabled, consistent with runtime precedence in createTracingExporter."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/telemetry/telemetry.go",
+      "line": null,
+      "description": "Runtime Jaeger guard placed after stdout early-return, correctly preserving stdout-priority behavior."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/config/config_test.go",
+      "line": null,
+      "description": "New test cases cover both the rejection path and the stdout-priority path with correct error message assertions."
+    }
+  ]
+}

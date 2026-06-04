@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-03*
+*Last updated: 2026-06-04*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -28,7 +28,7 @@
 
 ## Common Issues
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 5 sessions). PR #5778 by @Rohith-Saran persists after 4 re-reviews.
-- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902; multiple sessions).
+- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902, #5777; multiple sessions).
 - Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-29 re-review).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json` — now fixed.
@@ -47,7 +47,7 @@
 - Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05; persistent after 4 re-reviews).
 - Multi-area dependency bump PRs missing area prefix in commit subject (seen in PR #5772 by @skoeva — "Bump fast-uri, brace-expansion, ws, containerd" with no `deps:` prefix).
 - Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 8 re-reviews).
-- Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — still present in 2026-06-01 re-review (2 merge commits); PR #5844 by @nikunjkumar05 — still present after 4 re-reviews).
+- Merge commit "Merge branch 'main' into ..." included in PR branch (seen in PR #5809 by @yu-heejin — resolved 2026-05-27; PR #5764 by @menardorama — still present; PR #5844 by @nikunjkumar05 — still present; PR #5832 by @harrshita123 — new merge commit appeared in 2026-06-04 re-review).
 - Unrelated single-line fix bundled into a feature PR (seen in PR #5764: `ThemeProviderNexti18n.tsx` fallback lang change unrelated to OIDC auto-login — now rationalized as related race condition fix).
 - Vitest major version bump (3.x → 4.x): dependabot PRs for vitest 4 require explicit CI-green verification before merge due to breaking changes in vi.mock hoisting, snapshot serialization, and browser mode (seen in PRs #5901, #5899; 2026-06-02).
 - New feature PRs without error-state UI: when a useQuery/useEffect can fail (e.g., 403, 404), the failure must surface to the user via Alert or similar — a silent empty state is misleading (seen in PR #5886 Permissions.tsx rulesQuery.error; 2026-06-02).
@@ -63,8 +63,9 @@
 - CACert pointer regression: `CACert: &oidcCACert` passes pointer to empty string instead of nil when no cert is configured; downstream nil-checks will incorrectly see non-nil (seen in PR #5764 in 2026-05-30 re-review — still open).
 - Removal of all godoc comments from exported/internal functions (seen in PR #5764 clusterinventory.go — in-progress).
 - PR description says `useEffect` but implementation uses render-phase setState (seen in PR #5805 — approved, minor cosmetic mismatch only).
-- Makefile target missing `npm ci` for a sub-package when that package was previously using `npm install`; CI jobs install deps independently but local `make <target>` will fail on fresh checkout (seen in PR #5895 by @skoeva — flagged in 2026-06-02 and 2026-06-03; still unresolved).
+- Makefile target missing `npm ci` for a sub-package when that package was previously using `npm install`; CI jobs install deps independently but local `make <target>` will fail on fresh checkout (seen in PR #5895 by @skoeva — flagged in 2026-06-02 and 2026-06-03; resolved in 2026-06-04: test-headlamp-plugin.js installs internally, npm ci added for pluginctl in Makefile).
 - i18n contributor opening separate PRs for the same language/session (PR #5902 and #5903 both by @codeurluce, both French translations opened on same day) — suggest consolidation to reduce review overhead.
+- `VerifyUser` bool return discarded on error path in installRelease — fixed in PR #5840 by changing return type to error and wiring failure to setReleaseStatusSilent (2026-06-04).
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention (PR #5764) is intentional — sessionStorage (not localStorage) correctly clears on tab close, so the auto-login fires once per session per cluster per tab.
@@ -74,6 +75,7 @@
 - `winShell = process.platform === 'win32'` in headlamp-plugin: glob patterns passed as execFileSync args with `shell: true` on Windows are handled by the downstream tool (i18next-scanner) rather than cmd.exe glob expansion. Do not flag as a bug.
 - `CACert: &oidcCACert` (pointer to empty string when no cert configured) in `kubeconfig.newInClusterContextFromConfig` — all current consumers use `caCert != nil && *caCert != ""` double-guard, so no observable functional regression. Still flag as Suggestion for convention clarity (nil should mean absence for optional pointer fields).
 - Storyshot MUI class-hash changes (e.g. `css-1d0cpfm-MuiTypography-root` → `css-1yibb5c-MuiTypography-root`) that accompany a `labelProps` or `sx` change are expected MUI behavior — the hash changes when the generated style changes. Not a bug.
+- PR #5895 (CI parallelization): `test-headlamp-plugin.js` runs `npm ci` internally so removing the outer `npm install` in the Makefile `plugins-test` target is safe. Do not re-flag as missing `npm ci`.
 
 ## Author Notes
 - @Utkarshpandey0001: PR #5886 (RBAC access inspector, 2026-06-02) — strong algorithmic implementation (permissionUtils.ts with full wildcard coverage + unit tests) but missing error-state UI, namespace default 'default' causes spurious API call, commit SubArea missing in both commits, no component-level tests. First reviewed PR; shows promise.
@@ -84,15 +86,20 @@
 - @menardorama: Feature contributor (PR #5764 OIDC auto-login + cluster inventory wiring); deployed to production at their company. Vague commit subjects and merge-main commits persist after 8 re-reviews; AuthChooser component-level test still missing; structural bugs (duplicate YAML key, extra JSON brace, CACert pointer regression) unresolved through 2026-06-01. New cluster inventory commits added but also have commit format issues (missing SubArea, non-standard area prefix).
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
 - @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author. PR #5798 fix for k8cache non-API path bypass squashed cleanly (re-approved 2026-06-01 after SHA update — added tests and server.go bypass condition).
-- @harrshita123: Backend contributor; PR #5777 (approved), PR #5840 (approved — correct commit format with SubArea), PR #5832 (approved — missing SubArea in commit subject). Improving on commit format.
+- @harrshita123: Backend contributor; PRs #5777 (APPROVE 2026-06-04 — clean fix with new guard + tests), #5840 (APPROVE 2026-06-04 — VerifyUser error propagation, correct commit format), #5832 (REQUEST_CHANGES 2026-06-04 — merge commit added, SubArea missing), #5840 (approved). Improving on commit format (5840 now has correct SubArea). Pattern: merge-main commits appear after main rebases.
 - @yu-heejin: Frontend contributor; PR #5809 — approved in 2026-05-27 re-review (rebase done + decimal milli-bytes support added).
 - @joaquimrocha: Core maintainer/contributor.
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews. Author may need direct maintainer intervention.
-- @skoeva: PRs #5861 (Windows .cmd fix, approved), #5895 (CI parallelization, approved). Consistent commit format issue: uppercase area prefix (`CI:` instead of `ci:`) and missing SubArea. Pattern seen across multiple PRs.
+- @skoeva: PRs #5861 (Windows .cmd fix, approved), #5895 (CI parallelization, approved 2026-06-04 re-review — content is solid). Consistent commit format issue: uppercase area prefix (`CI:` instead of `ci:`) and missing SubArea. Pattern seen across multiple PRs.
 - @codeurluce: PR #5902 and #5903 — French i18n contributor, translations are high quality and idiomatic. Both PRs share commit format issues (lowercase verb, missing SubArea). Opened two PRs on the same day for the same language; should consolidate in future.
 - @Swastik19Nit: PR #5838 (ObjectEventList Age-clipping fix) — CLA now signed; PR approved after CLA blocker cleared. Fix is minimal and correct.
 
 ## Session Log
+### 2026-06-04
+- Reviewed 4 PRs: #5895 (re-review, APPROVE), #5840 (re-review, APPROVE), #5832 (re-review, REQUEST_CHANGES), #5777 (re-review, APPROVE)
+- Skipped: 38 SHA-unchanged + 174 new PRs all had human review activity + 43 drafts
+- New observations: PR #5840 (@harrshita123) now has correct commit format with SubArea (`backend: helm: Mark failed install verification`) — improvement from previous reviews. PR #5832 (@harrshita123) acquired a merge commit since last APPROVE (2026-05-25) — now REQUEST_CHANGES. PR #5777 (@harrshita123) updated with cluster-scoped key guard and comprehensive informer test — clean re-approval. PR #5895 (@skoeva) commit format still `CI:` + missing SubArea despite 3 prior re-reviews; approved on content merit.
+
 ### 2026-06-03
 - Reviewed 4 PRs: #5895 (re-review, APPROVE), #5838 (re-review, APPROVE), #5903 (APPROVE), #5902 (APPROVE)
 - Skipped: 42 SHA-unchanged + 170 human-reviewed + 48 drafts

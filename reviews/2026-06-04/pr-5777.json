@@ -1,0 +1,56 @@
+{
+  "pr_number": 5777,
+  "title": "backend: Fix all-namespace cache invalidation",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 2,
+  "additions": 69,
+  "deletions": 8,
+  "re_review": true,
+  "date": "2026-06-04",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "commit subject",
+      "line": null,
+      "description": "Commit 'backend: Fix all-namespace cache invalidation' is missing SubArea. Suggest: 'backend: k8cache: Fix all-namespace cache invalidation'."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": 54,
+      "description": "Guard 'if keyPart[2] == \"\" { return }' correctly prevents DeleteKeys from treating a cluster-scoped key as if it also has an all-namespace variant to delete."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation.go",
+      "line": null,
+      "description": "handleKeyGenerationAndDeletion now delegates to DeleteKeys, unifying invalidation logic and fixing the all-namespace eviction gap."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation_test.go",
+      "line": null,
+      "description": "New TestDeleteKeys case 'cluster scoped key does not delete namespaced key' directly validates the guard added in this PR."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheInvalidation_test.go",
+      "line": null,
+      "description": "TestRunInformerToWatchDeletesAllNamespaceKey uses assert.Eventually with 50ms poll, exercises full informer-event path, and asserts eviction of both namespace-specific and all-namespace keys."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T07:58:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5895, "title": "CI: Parallelize and speed up plugins-test", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5840, "title": "backend: helm: Mark failed install verification", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5832, "title": "backend: Reject unsupported Jaeger tracing endpoint", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5777, "title": "backend: Fix all-namespace cache invalidation", "verdict": "APPROVE", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": null, "reason": "38 PRs: SHA unchanged since last review"},
+    {"number": null, "reason": "174 new open PRs: all had human review activity (reviews or comments > 0)"},
+    {"number": null, "reason": "43 draft PRs: excluded by rule"}
+  ],
+  "stats": {
+    "total": 4,
+    "verdicts": {"approve": 3, "request_changes": 1, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 3, "suggestion": 1, "positive": 14},
+    "sizes": {"lockfile_only": 0, "small": 3, "medium": 1, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `area: SubArea: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include auto-close keywords (Fixes, closes) in commit messages — PR body is acceptable.",
+    "Approval style is warm and brief: maintainers merge with minimal ceremony.",
+    "copilot-pull-request-reviewer[bot] reviews do NOT count as human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need.",
+    "Frontend: fix exhaustive-deps lint violations rather than suppressing with eslint-disable.",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker."
+  ],
+  "skip_style_learning": true
+}
