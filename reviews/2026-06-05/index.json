@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T07:53:04Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5832, "title": "backend: Reject unsupported Jaeger tracing endpoint", "verdict": "REQUEST_CHANGES", "size": "Small"},
+    {"number": 5877, "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go", "verdict": "APPROVE", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": 0, "reason": "39 PRs SHA-unchanged (no new commits since last review)"},
+    {"number": 0, "reason": "178 new open PRs all had human review activity"},
+    {"number": 0, "reason": "42 draft PRs excluded"}
+  ],
+  "stats": {
+    "total": 2,
+    "verdicts": {"approve": 1, "request_changes": 1, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 2, "suggestion": 0, "positive": 6},
+    "sizes": {"lockfile_only": 0, "small": 2, "medium": 0, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: area: SubArea: Description (description starts with capital letter)",
+    "Keep commit subject under 72 characters (soft limit)",
+    "Do NOT include auto-close keywords (Fixes #NN) in commit messages",
+    "Approval style is warm and brief: maintainers use '🎉 thanks!' for merges",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need",
+    "Frontend: fix exhaustive-deps lint violations rather than suppressing with eslint-disable",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "CNCF CLA is a hard merge blocker in kubernetes-sigs repos",
+    "Rebase-only merges; no merge commits from main in PR branches"
+  ],
+  "skip_style_learning": true
+}

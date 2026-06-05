@@ -1,0 +1,35 @@
+{
+  "pr_number": 5832,
+  "title": "backend: Reject unsupported Jaeger tracing endpoint",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Small",
+  "files_changed": 4,
+  "additions": 75,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-05",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "commit history",
+      "line": null,
+      "description": "Branch contains two merge commits from main ('Merge branch main into fix-5799-jaeger-endpoint' at 54db56aa and 95a03698). A second merge commit was added since the 2026-06-04 REQUEST_CHANGES. Must rebase onto current main and clean history before merge."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "commit subject",
+      "line": null,
+      "description": "Commit subject missing SubArea segment: 'backend: Reject ...' should be 'backend: config: Reject ...' or 'backend: telemetry: Reject ...' per project convention."
+    }
+  ]
+}
