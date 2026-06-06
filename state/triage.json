@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T12:42:31+00:00",
+  "generated_at": "2026-06-06T13:40:50+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 194,
   "open_drafts_total": 43,
@@ -921,7 +921,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T13:26:54Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "backend",
           "oidc",
@@ -1856,6 +1856,54 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5599,
+        "title": "backend: Stop parseKubeConfig after bad JSON",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5599",
+        "author": "harrshita123",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-06T12:51:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5535,
+        "title": "frontend: improve unavailable cluster feedback",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5535",
+        "author": "harrshita123",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-06T12:51:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2106,7 +2154,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T12:57:43Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2130,7 +2178,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T13:04:48Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2586,7 +2634,7 @@
         "author": "kishore08-07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T13:22:23Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2610,7 +2658,7 @@
         "author": "kishore08-07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T13:24:49Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2941,78 +2989,6 @@
         }
       },
       {
-        "number": 5626,
-        "title": "backend: Fix port-forward cache key collisions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5626",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-03T15:16:53Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5591,
-        "title": "backend: config: Preserve plugin watch env",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5591",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-03T15:17:07Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5599,
-        "title": "backend: Stop parseKubeConfig after bad JSON",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5599",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-03T15:17:12Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5777,
         "title": "backend: Fix all-namespace cache invalidation",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
@@ -3091,30 +3067,6 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5535,
-        "title": "frontend: improve unavailable cluster feedback",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5535",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-04T11:56:33Z",
         "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
@@ -3411,6 +3363,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5626,
+        "title": "backend: Fix port-forward cache key collisions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5626",
+        "author": "harrshita123",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-06T12:51:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5591,
+        "title": "backend: config: Preserve plugin watch env",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5591",
+        "author": "harrshita123",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-06T12:51:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
