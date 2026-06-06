@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T18:38:40+00:00",
+  "generated_at": "2026-06-06T19:39:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 194,
   "open_drafts_total": 43,
@@ -585,7 +585,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:45Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -610,7 +610,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:53Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -638,7 +638,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:55Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "backend",
           "resourceMap",
@@ -744,7 +744,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1622,7 +1622,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -1762,30 +1762,6 @@
         }
       },
       {
-        "number": 5922,
-        "title": "frontend: migrate Event resource to events.k8s.io/v1",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
-        "author": "skools-here",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-05T13:41:48Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5692,
         "title": "refactor: rename stopOrDelete parameter for better readability",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5692",
@@ -1911,11 +1887,11 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
         "author": "sudhidutta7694",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-06T16:16:58Z",
+        "updated_at": "2026-06-06T19:39:40Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/M"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -2442,7 +2418,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3438,6 +3414,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5922,
+        "title": "frontend: migrate Event resource to events.k8s.io/v1",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-06T19:06:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
