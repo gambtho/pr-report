@@ -1,0 +1,49 @@
+{
+  "pr_number": 5803,
+  "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change",
+  "author": "ayushmaan-16",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5803",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 23,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-06-06",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 1,
+    "positive": 1
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": 181,
+      "description": "defaultRowsPerPage memoized with empty deps [] so it never changes when settings update; both useEffect hooks keyed on it only run once on mount. The stated bug (stale default after settings change) may not actually be fixed."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": null,
+      "description": "PR description says useMemo was removed and eslint-disable comment was removed, but both are still present in the diff. Description reflects an earlier commit that was subsequently changed."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": null,
+      "line": null,
+      "description": "Five commits in branch; consider squashing to one before merge with a message that accurately describes the final approach."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/SimpleTable.tsx",
+      "line": null,
+      "description": "Author correctly switched from useLocation() to window.location.search to avoid re-renders on every route change — performance-conscious approach."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-06",
+  "generated_at": "2026-06-06T07:25:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5832, "title": "backend: Reject unsupported Jaeger tracing endpoint", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5861, "title": "headlamp-plugin: Spawn Windows .cmd shims via cmd.exe", "verdict": "APPROVE", "size": "Small"},
+    {"number": 5803, "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change", "verdict": "NEEDS_DISCUSSION", "size": "Small"},
+    {"number": 5900, "title": "app: plugins: tools/releaser: Bump tmp 0.2.6, hono 4.12.23", "verdict": "APPROVE", "size": "Lockfile-only"}
+  ],
+  "skipped": [
+    {"number": null, "reason": "31 PRs in SKIP_SET (SHA unchanged since last review)"},
+    {"number": null, "reason": "165 non-draft, non-skip PRs all had human review activity (reviews or comments > 0)"},
+    {"number": null, "reason": "43 draft PRs excluded"}
+  ],
+  "stats": {
+    "total": 4,
+    "verdicts": {"approve": 3, "request_changes": 0, "needs_discussion": 1},
+    "findings": {"critical": 0, "warning": 2, "suggestion": 3, "positive": 8},
+    "sizes": {"lockfile_only": 1, "small": 2, "medium": 1, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages (PR body is acceptable).",
+    "Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment from maintainers.",
+    "Reviewer @illume is the primary maintainer; issues CHANGES_REQUESTED for commit guideline violations. Consistently requests rebase to remove merge-main commits.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs and posts a PR overview as a COMMENTED review — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need — pure stylistic refactors without justification are not accepted per AGENTS.md.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing with `eslint-disable`; Material-UI v5 patterns used.",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog; test-first, risk-averse style per AGENTS.md.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker in kubernetes-sigs repos.",
+    "k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review.",
+    "@illume reviews PRs very quickly after opening; by the time the daily job runs, essentially all new PRs have human review."
+  ],
+  "skip_style_learning": true
+}

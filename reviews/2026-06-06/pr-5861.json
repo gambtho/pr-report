@@ -1,0 +1,49 @@
+{
+  "pr_number": 5861,
+  "title": "headlamp-plugin: Spawn Windows .cmd shims via cmd.exe",
+  "author": "skoeva",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5861",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 51,
+  "deletions": 19,
+  "re_review": true,
+  "date": "2026-06-06",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js",
+      "line": null,
+      "description": "Commit subject missing SubArea: 'headlamp-plugin: bin: Spawn Windows .cmd shims via cmd.exe' would be more precise."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js",
+      "line": null,
+      "description": "viaCmd() helper is clean, well-documented with JSDoc, and a transparent no-op on non-Windows platforms."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js",
+      "line": null,
+      "description": "Uses cmd.exe /d /s /c (Node.js-recommended) rather than shell: true, correctly avoiding DEP0190 deprecation."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "plugins/headlamp-plugin/bin/headlamp-plugin.js",
+      "line": null,
+      "description": "All call sites comprehensively updated: npm link (x2), npm view, runScriptOnPackages loop, i18next path, and npx --prefix."
+    }
+  ]
+}

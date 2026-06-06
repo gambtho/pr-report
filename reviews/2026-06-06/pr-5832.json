@@ -1,0 +1,49 @@
+{
+  "pr_number": 5832,
+  "title": "backend: Reject unsupported Jaeger tracing endpoint",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 86,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-06",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/config/config.go",
+      "line": null,
+      "description": "Commit subject missing SubArea: 'backend: Reject...' should be 'backend: config: Reject...' or 'backend: telemetry: Reject...'"
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": null,
+      "line": null,
+      "description": "Author rebased cleanly to a single commit — merge-main commits that blocked previous reviews are resolved."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/config/config_test.go",
+      "line": null,
+      "description": "Three new config validation tests + one telemetry-layer test cover all key scenarios: stdout-only, Jaeger-without-stdout rejection, Jaeger-with-stdout (stdout wins), and telemetry-layer rejection."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/config/config.go",
+      "line": 636,
+      "description": "jaeger-endpoint flag registered with self-documenting description so users get a clear startup error instead of silent OTLP fallback."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-05*
+*Last updated: 2026-06-06*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -67,6 +67,7 @@
 - i18n contributor opening separate PRs for the same language/session (PR #5902 and #5903 both by @codeurluce, both French translations opened on same day) — suggest consolidation to reduce review overhead.
 - `VerifyUser` bool return discarded on error path in installRelease — fixed in PR #5840 by changing return type to error and wiring failure to setReleaseStatusSilent (2026-06-04).
 - Duplicate metric increment: `incrementRequestCounter` in OIDCTokenRefreshMiddleware was incrementing the same metric already covered by `RequestCounterMiddleware` in `pkg/telemetry/metrics.go`; removed in PR #5877 by @skoeva (approved 2026-06-05).
+- PR description left stale/outdated after iterative commits: PR #5803 description says "removed useMemo and eslint-disable comment" but final implementation keeps both and adds useEffect hooks instead. Always verify PR description matches final diff (2026-06-06).
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention (PR #5764) is intentional — sessionStorage (not localStorage) correctly clears on tab close, so the auto-login fires once per session per cluster per tab.
@@ -77,26 +78,31 @@
 - `CACert: &oidcCACert` (pointer to empty string when no cert configured) in `kubeconfig.newInClusterContextFromConfig` — all current consumers use `caCert != nil && *caCert != ""` double-guard, so no observable functional regression. Still flag as Suggestion for convention clarity (nil should mean absence for optional pointer fields).
 - Storyshot MUI class-hash changes (e.g. `css-1d0cpfm-MuiTypography-root` → `css-1yibb5c-MuiTypography-root`) that accompany a `labelProps` or `sx` change are expected MUI behavior — the hash changes when the generated style changes. Not a bug.
 - PR #5895 (CI parallelization): `test-headlamp-plugin.js` runs `npm ci` internally so removing the outer `npm install` in the Makefile `plugins-test` target is safe. Do not re-flag as missing `npm ci`.
-- In `validateTracing()` (PR #5832), the second condition `(JaegerEndpoint == "") && (OTLPEndpoint == "") && (StdoutTraceEnabled == true)` appears to fire an "at least one exporter required" error when stdout IS enabled. This is a pre-existing logic issue from the original code; `otlp-endpoint` defaults to "localhost:4317" so `OTLPEndpoint == ""` virtually never holds in practice. Do not flag as a new bug in this PR.
+- In `validateTracing()` (PR #5832): the old logic issue with the "at least one exporter" condition is now resolved — the new implementation correctly checks `(JaegerEndpoint == nil || *JaegerEndpoint == "") && (OTLPEndpoint == nil || *OTLPEndpoint == "") && (StdoutTraceEnabled == nil || !*StdoutTraceEnabled)`. PR #5832 approved 2026-06-06. Do not re-flag the old logic.
 
 ## Author Notes
 - @Utkarshpandey0001: PR #5886 (RBAC access inspector, 2026-06-02) — strong algorithmic implementation (permissionUtils.ts with full wildcard coverage + unit tests) but missing error-state UI, namespace default 'default' causes spurious API call, commit SubArea missing in both commits, no component-level tests. First reviewed PR; shows promise.
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820, #5887) — all hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format. Consistently high quality.
-- @ayushmaan-16: Multiple PRs — all React hooks/render-phase fixes or backend memory fixes. PRs #5803, #5804, #5805 approved across multiple sessions. PR #5866 (OIDC state eviction) approved — very strong technical author with correct commit format and production-quality tests.
+- @ayushmaan-16: Multiple PRs — all React hooks/render-phase fixes or backend memory fixes. PRs #5804, #5805 approved. PR #5866 (OIDC state eviction) approved — very strong technical author with correct commit format and production-quality tests. PR #5803 (2026-06-06 re-review, NEEDS_DISCUSSION): implementation diverged from PR description after iterative commits — keeps useMemo with empty deps contrary to description; needs clarification on whether fix actually addresses settings-change staleness.
 - @Rohith-Saran: PR #5775 (listener leak — SubArea missing in 2/3 commits); PR #5778 (external links — commit format still Conventional Commits after 4 re-reviews + safeLinkUrl bug); PR #5843 (ApiError export — lowercase verb in commit). Pattern of commit format issues persists across all PRs.
 - @sniok: Core contributor (maintainer-adjacent); PR #5779 adds experimental tsgo compiler as primary type-checker — awaiting team discussion. PR #5880 (kind name regex fix) approved — clean and precise.
 - @menardorama: Feature contributor (PR #5764 OIDC auto-login + cluster inventory wiring); deployed to production at their company. Vague commit subjects and merge-main commits persist after 8 re-reviews; AuthChooser component-level test still missing; structural bugs (duplicate YAML key, extra JSON brace, CACert pointer regression) unresolved through 2026-06-01. New cluster inventory commits added but also have commit format issues (missing SubArea, non-standard area prefix).
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format (PR #5786).
 - @Nabsku: Backend contributor; PR #5777 and PR #5798 both approved. Strong test author. PR #5798 fix for k8cache non-API path bypass squashed cleanly (re-approved 2026-06-01 after SHA update — added tests and server.go bypass condition).
-- @harrshita123: Backend contributor; PRs #5777 (APPROVE 2026-06-04 — clean fix with new guard + tests), #5840 (APPROVE 2026-06-04 — VerifyUser error propagation, correct commit format), #5832 (REQUEST_CHANGES 2026-06-05 — now has TWO merge commits, SubArea still missing; content is good). Pattern: merge-main commits accumulate rather than being squashed out after rebase requests.
+- @harrshita123: Backend contributor; PRs #5777 (APPROVE 2026-06-04 — clean fix with new guard + tests), #5840 (APPROVE 2026-06-04 — VerifyUser error propagation, correct commit format), #5832 (APPROVE 2026-06-06 — rebased cleanly to single commit, two merge-main commits now gone; SubArea still missing in commit subject). Pattern: merge-main commits accumulate but author responds to rebase requests.
 - @yu-heejin: Frontend contributor; PR #5809 — approved in 2026-05-27 re-review (rebase done + decimal milli-bytes support added).
 - @joaquimrocha: Core maintainer/contributor.
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews. Author may need direct maintainer intervention.
-- @skoeva: PRs #5861 (Windows .cmd fix, approved), #5895 (CI parallelization, approved 2026-06-04 re-review — content is solid), #5877 (Drop IncrementRequestCounter, APPROVE 2026-06-05 — clean single commit with correct format). Note: PR #5877 represents a change in scope from the originally-reviewed version (extract → drop); the dropped code was genuinely redundant with RequestCounterMiddleware. Consistent commit format improvement visible between #5895 (uppercase CI:) and #5877 (correct format). Pattern of missing SubArea seen in earlier PRs; #5877 has correct SubArea.
+- @skoeva: PRs #5861 (Windows .cmd fix, APPROVE 2026-06-06 re-review — viaCmd() helper correct and comprehensive), #5895 (CI parallelization, approved 2026-06-04 re-review — content is solid), #5877 (Drop IncrementRequestCounter, APPROVE 2026-06-05 — clean single commit with correct format), #5900 (multi-workspace dep bumps, APPROVE 2026-06-06 — all lockfiles consistent). Note: PR #5877 represents a change in scope from the originally-reviewed version (extract → drop); the dropped code was genuinely redundant with RequestCounterMiddleware. Consistent quality across all PRs; missing SubArea in earlier commits but improving.
 - @codeurluce: PR #5902 and #5903 — French i18n contributor, translations are high quality and idiomatic. Both PRs share commit format issues (lowercase verb, missing SubArea). Opened two PRs on the same day for the same language; should consolidate in future.
 - @Swastik19Nit: PR #5838 (ObjectEventList Age-clipping fix) — CLA now signed; PR approved after CLA blocker cleared. Fix is minimal and correct.
 
 ## Session Log
+### 2026-06-06
+- Reviewed 4 PRs: #5832 (re-review, APPROVE), #5861 (re-review, APPROVE), #5900 (re-review, APPROVE), #5803 (re-review, NEEDS_DISCUSSION)
+- Skipped: 31 SHA-unchanged + 165 non-draft PRs all had human review activity + 43 drafts
+- New observations: PR #5832 (@harrshita123) rebased cleanly — single commit, no merge-main commits; approved. PR #5861 (@skoeva) updated with viaCmd() helper correctly routing .cmd shims through cmd.exe /d /s /c — comprehensive all call-sites fix; approved. PR #5900 (@skoeva) hono and fast-uri added to already-approved tmp bump; pure lockfile changes; approved. PR #5803 (@ayushmaan-16) implementation diverged significantly from PR description after iterative commits (5 commits): description says useMemo removed but it's still there with empty deps; the two useEffect hooks keyed on stable defaultRowsPerPage won't re-fire when settings change; NEEDS_DISCUSSION.
+
 ### 2026-06-05
 - Reviewed 2 PRs: #5832 (re-review, REQUEST_CHANGES), #5877 (re-review, APPROVE)
 - Skipped: 39 SHA-unchanged + 178 new PRs all had human review activity + 42 drafts
