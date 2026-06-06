@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-06T10:46:01+00:00",
+  "generated_at": "2026-06-06T11:39:13+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 193,
+  "open_prs_total": 194,
   "open_drafts_total": 43,
-  "actionable_total": 124,
+  "actionable_total": 125,
   "tracked_total": 35,
   "buckets": {
     "needs_rebase": [
@@ -1500,7 +1500,7 @@
         "author": "Dharmiksarvaiya24",
         "bucket": "ci_failing",
         "updated_at": "2026-05-17T10:49:28Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1823,6 +1823,31 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5931,
+        "title": "helm: Fix file descriptor leak in createFullPath and createFileIfNotThere",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-06T11:35:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/S",
+          "do-not-merge/invalid-commit-message"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3235,7 +3260,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-05T11:11:50Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "backend",
           "auth",
