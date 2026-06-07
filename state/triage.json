@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-07T18:39:15+00:00",
+  "generated_at": "2026-06-07T19:39:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 201,
+  "open_prs_total": 203,
   "open_drafts_total": 44,
-  "actionable_total": 136,
+  "actionable_total": 135,
   "tracked_total": 35,
   "buckets": {
     "needs_rebase": [
@@ -585,7 +585,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:45Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -610,7 +610,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:53Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -638,7 +638,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T19:27:55Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "backend",
           "resourceMap",
@@ -744,7 +744,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 29,
+        "days_since_update": 30,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1622,7 +1622,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -1906,30 +1906,6 @@
         }
       },
       {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T16:45:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5945,
         "title": "frontend: GlobalSearchContent: Add Storybook stories",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5945",
@@ -1978,19 +1954,19 @@
         }
       },
       {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
+        "number": 5950,
+        "title": "Frontend: replaced useMemo with lazy useState in NumRowsInput",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5950",
+        "author": "piyusshkumar",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-07T17:29:46Z",
+        "updated_at": "2026-06-07T19:32:47Z",
         "days_since_update": 0,
         "labels": [
-          "cncf-cla: yes",
-          "size/L"
+          "cncf-cla: no",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2442,7 +2418,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3450,16 +3426,16 @@
         }
       },
       {
-        "number": 5931,
-        "title": "helm: Fix file descriptor leak in createFullPath and createFileIfNotThere",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
+        "number": 5937,
+        "title": "frontend: pod: Add target container support to debug containers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5937",
+        "author": "yush-1018",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T18:07:47Z",
+        "updated_at": "2026-06-07T18:17:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3474,16 +3450,40 @@
         }
       },
       {
-        "number": 5937,
-        "title": "frontend: pod: Add target container support to debug containers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5937",
-        "author": "yush-1018",
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T18:17:33Z",
+        "updated_at": "2026-06-07T19:01:58Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-07T19:15:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4047,30 +4047,6 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T09:37:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5893,
-        "title": "frontend: common/Resource/DeleteButton: Add Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5893",
-        "author": "sudhidutta7694",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-07T09:37:54Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
