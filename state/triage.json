@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-07T15:38:23+00:00",
+  "generated_at": "2026-06-07T16:39:41+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 199,
   "open_drafts_total": 45,
-  "actionable_total": 134,
-  "tracked_total": 35,
+  "actionable_total": 133,
+  "tracked_total": 36,
   "buckets": {
     "needs_rebase": [
       {
@@ -1273,6 +1273,31 @@
           "is_tracked": true,
           "verifiable": true
         }
+      },
+      {
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-07T16:35:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
       }
     ],
     "ci_failing": [
@@ -1786,30 +1811,6 @@
         }
       },
       {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T08:47:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5919,
         "title": "frontend: Fix malformed i18n interpolation strings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5919",
@@ -1959,7 +1960,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
         "author": "goingforstudying-ctrl",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-07T11:34:57Z",
+        "updated_at": "2026-06-07T16:08:00Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
@@ -2706,7 +2707,7 @@
         "author": "mystic-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T16:31:57Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2947,7 +2948,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-03T16:14:51Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2971,7 +2972,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-03T16:29:31Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3431,7 +3432,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
         "author": "sudhidutta7694",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T15:35:11Z",
+        "updated_at": "2026-06-07T16:38:45Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -3730,7 +3731,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
