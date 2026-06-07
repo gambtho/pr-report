@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-06*
+*Last updated: 2026-06-07*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -96,8 +96,14 @@
 - @skoeva: PRs #5861 (Windows .cmd fix, APPROVE 2026-06-06 re-review — viaCmd() helper correct and comprehensive), #5895 (CI parallelization, approved 2026-06-04 re-review — content is solid), #5877 (Drop IncrementRequestCounter, APPROVE 2026-06-05 — clean single commit with correct format), #5900 (multi-workspace dep bumps, APPROVE 2026-06-06 — all lockfiles consistent). Note: PR #5877 represents a change in scope from the originally-reviewed version (extract → drop); the dropped code was genuinely redundant with RequestCounterMiddleware. Consistent quality across all PRs; missing SubArea in earlier commits but improving.
 - @codeurluce: PR #5902 and #5903 — French i18n contributor, translations are high quality and idiomatic. Both PRs share commit format issues (lowercase verb, missing SubArea). Opened two PRs on the same day for the same language; should consolidate in future.
 - @Swastik19Nit: PR #5838 (ObjectEventList Age-clipping fix) — CLA now signed; PR approved after CLA blocker cleared. Fix is minimal and correct.
+- @sudhidutta7694: PR #5894 (EditorDialog conflict-detection) — first review (2026-06-02) APPROVE on original impl using isActivityOpenRef; SHA updated to add ResourceWatcher component refactor — REQUEST_CHANGES (2026-06-07) for eslint-disable exhaustive-deps suppression and missing Vitest tests.
 
 ## Session Log
+### 2026-06-07
+- Reviewed 1 PR: #5894 (re-review, REQUEST_CHANGES)
+- Skipped: 34 SHA-unchanged + 165 non-re-review candidates all had human review activity + ~42 drafts
+- New observations: PR #5894 (@sudhidutta7694) — SHA updated to add ResourceWatcher component refactor. New component adds eslint-disable exhaustive-deps suppression (missing deps: onClose, handleSave, setErrorMessage, activityId). Project convention requires fixing via useCallback rather than suppressing. Vitest tests still absent (flagged since 2026-06-02). Core conflict-detection logic in EditorDialog.tsx remains sound.
+
 ### 2026-06-06
 - Reviewed 4 PRs: #5832 (re-review, APPROVE), #5861 (re-review, APPROVE), #5900 (re-review, APPROVE), #5803 (re-review, NEEDS_DISCUSSION)
 - Skipped: 31 SHA-unchanged + 165 non-draft PRs all had human review activity + 43 drafts

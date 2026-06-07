@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07T07:42:44Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5894, "title": "frontend: EditorDialog: Warn when resource modified during edit", "verdict": "REQUEST_CHANGES", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": -1, "reason": "34 PRs skipped (sha_unchanged), 165 non-re-review candidates all had human review activity, ~42 drafts"}
+  ],
+  "stats": {
+    "total": 1,
+    "verdicts": {"approve": 0, "request_changes": 1, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 1, "suggestion": 2, "positive": 4},
+    "sizes": {"lockfile_only": 0, "small": 0, "medium": 1, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include auto-close keywords (Fixes #NN, closes #NN) in commit messages (PR body is acceptable).",
+    "Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment.",
+    "Reviewer @illume is the primary maintainer; issues CHANGES_REQUESTED for commit guideline violations.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need.",
+    "Frontend: fix `exhaustive-deps` violations rather than suppressing with `eslint-disable`.",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker.",
+    "k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review."
+  ],
+  "skip_style_learning": true
+}

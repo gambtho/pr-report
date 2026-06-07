@@ -1,0 +1,70 @@
+{
+  "pr_number": 5894,
+  "title": "frontend: EditorDialog: Warn when resource modified during edit",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 2,
+  "additions": 108,
+  "deletions": 12,
+  "re_review": true,
+  "date": "2026-06-07",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 2,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": 67,
+      "description": "ResourceWatcher.useEffect suppresses exhaustive-deps via eslint-disable comment. Missing deps: onClose, handleSave, setErrorMessage, activityId. Project convention requires fixing (wrap handleClose and handleSave in useCallback, add all to deps array) rather than suppressing."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "No Vitest tests for the new ResourceWatcher component or the updated conflict-detection flow in EditorDialog.tsx. A unit test verifying watchedItem changes call Activity.update with the correct item prop would guard against regressions."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": 52,
+      "description": "Inline onEditorChanged arrow function () => setErrorMessage('') inside Activity.update JSX creates a new reference on each watch event. Minor: hoist or wrap in useCallback for clarity."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "ResourceWatcher only mounts when isEditorOpen=true, preventing unnecessary WebSocket connections when the pencil button is rendered in list views or Storybook."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "store.getState() guard in ResourceWatcher.useEffect correctly avoids the isActivityOpenRef reset-on-remount bug described in the PR. Direct store access is justified in this non-render context."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "handleClose sets isEditorOpen=false before Activity.close, correctly unmounting ResourceWatcher and tearing down the WebSocket watch to prevent leaks."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "Both new commit subjects follow project convention: correct area:SubArea:Verb format, capitalised verb, under 72 characters."
+    }
+  ]
+}
