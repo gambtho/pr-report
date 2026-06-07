@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-07T12:46:27+00:00",
+  "generated_at": "2026-06-07T13:41:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 198,
+  "open_prs_total": 199,
   "open_drafts_total": 45,
-  "actionable_total": 135,
+  "actionable_total": 133,
   "tracked_total": 35,
   "buckets": {
     "needs_rebase": [
@@ -921,7 +921,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T13:26:54Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "backend",
           "oidc",
@@ -1882,30 +1882,6 @@
         }
       },
       {
-        "number": 5923,
-        "title": "frontend: resourceMap: Fix Space key not activating graph nodes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5923",
-        "author": "vtushar06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T10:37:20Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
@@ -1988,6 +1964,30 @@
         "labels": [
           "cncf-cla: no",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-07T12:49:22Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2250,7 +2250,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T12:57:43Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2274,7 +2274,7 @@
         "author": "Joshna907",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T13:04:48Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2730,7 +2730,7 @@
         "author": "kishore08-07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T13:22:23Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2754,7 +2754,7 @@
         "author": "kishore08-07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T13:24:49Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3402,16 +3402,16 @@
         }
       },
       {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
+        "number": 5923,
+        "title": "frontend: resourceMap: Fix Space key not activating graph nodes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5923",
+        "author": "vtushar06",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T12:41:56Z",
+        "updated_at": "2026-06-07T13:20:31Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/L"
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3945,30 +3945,6 @@
         }
       },
       {
-        "number": 5933,
-        "title": "chart: Support deploymentLabels and additional templated values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5933",
-        "author": "treydock",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-07T08:46:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5803,
         "title": "frontend: SimpleTable: Fix stale defaultRowsPerPage after settings change",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5803",
@@ -4023,30 +3999,6 @@
         "author": "sudhidutta7694",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T09:37:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-07T09:38:05Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
