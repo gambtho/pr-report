@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T10:53:39+00:00",
+  "generated_at": "2026-06-07T11:42:34+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 198,
   "open_drafts_total": 45,
@@ -1858,30 +1858,6 @@
         }
       },
       {
-        "number": 5942,
-        "title": "frontend: node: Add Storybook stories for Details and Charts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5942",
-        "author": "xonas1101",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T10:34:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5535,
         "title": "frontend: improve unavailable cluster feedback",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5535",
@@ -1978,54 +1954,6 @@
         }
       },
       {
-        "number": 5922,
-        "title": "frontend: migrate Event resource to events.k8s.io/v1",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
-        "author": "skools-here",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T10:37:45Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5931,
-        "title": "helm: Fix file descriptor leak in createFullPath and createFileIfNotThere",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T10:38:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
@@ -2060,6 +1988,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5942,
+        "title": "frontend: node: Add Storybook stories for Details and Charts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5942",
+        "author": "xonas1101",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-07T11:25:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5931,
+        "title": "helm: Fix file descriptor leak in createFullPath and createFileIfNotThere",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-07T11:34:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3331,7 +3307,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-05T11:11:50Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "backend",
           "auth",
@@ -3388,6 +3364,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5922,
+        "title": "frontend: migrate Event resource to events.k8s.io/v1",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-07T11:40:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
