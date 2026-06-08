@@ -1,0 +1,42 @@
+{
+  "pr_number": 5838,
+  "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel",
+  "author": "Swastik19Nit",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5838",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 69,
+  "additions": 210,
+  "deletions": 138,
+  "re_review": true,
+  "date": "2026-06-08",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Label.tsx",
+      "line": null,
+      "description": "MUI v5 sx array merging correctly handles undefined, object, and array forms of labelProps.sx."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/ObjectEventList.tsx",
+      "line": null,
+      "description": "overflowWrap: 'anywhere' is more appropriate than break-word for timestamp strings that lack natural break points."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/ObjectEventList.stories.tsx",
+      "line": null,
+      "description": "New mock event with source.component field validates the source-guard logic from PR #5824."
+    }
+  ]
+}

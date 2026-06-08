@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T08:15:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5894, "title": "frontend: EditorDialog: Warn when resource modified during edit", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5893, "title": "frontend: common/Resource/DeleteButton: Add Storybook stories", "verdict": "APPROVE", "size": "Medium"},
+    {"number": 5838, "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel", "verdict": "APPROVE", "size": "Medium"}
+  ],
+  "skipped": [
+    {"number": null, "reason": "171 other candidates all had existing human review activity (reviews or comments > 0); 32 PRs skipped as already reviewed with unchanged SHA"}
+  ],
+  "stats": {
+    "total": 3,
+    "verdicts": {"approve": 3, "request_changes": 0, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 0, "suggestion": 3, "positive": 8},
+    "sizes": {"lockfile_only": 0, "small": 0, "medium": 3, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief; `🎉 thanks!` is the standard merge acknowledgment.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need.",
+    "Frontend: fix exhaustive-deps lint violations rather than suppressing; MUI v5 patterns.",
+    "Backend: use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for frontend (Vitest) and backend (Go test) when changing logic.",
+    "CNCF CLA is a hard merge blocker in kubernetes-sigs repos.",
+    "k8s-ci-robot posts IssueComment (not Review) on every PR — do not count as human review.",
+    "@illume reviews PRs quickly; by daily job run, essentially all new PRs have human review."
+  ],
+  "skip_style_learning": true
+}

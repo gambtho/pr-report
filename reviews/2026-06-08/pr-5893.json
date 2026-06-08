@@ -1,0 +1,42 @@
+{
+  "pr_number": 5893,
+  "title": "frontend: common/Resource/DeleteButton: Add Storybook stories",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5893",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 6,
+  "additions": 184,
+  "deletions": 0,
+  "re_review": true,
+  "date": "2026-06-08",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/DeleteButton.stories.tsx",
+      "line": 88,
+      "description": "PodEvict story description says the Evict label requires useEvict cluster setting to be enabled, but the snapshot shows it renders as Evict for any Pod item without that setting. Slightly misleading — clarify the condition."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Resource/DeleteButton.stories.tsx",
+      "line": null,
+      "description": "Five stories cover all major visual states of DeleteButton including the null-render case."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Resource/DeleteButton.stories.tsx",
+      "line": null,
+      "description": "Mock item follows established pattern from ScaleMultipleButton.stories.tsx — no new patterns introduced."
+    }
+  ]
+}

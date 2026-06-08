@@ -1,0 +1,56 @@
+{
+  "pr_number": 5894,
+  "title": "frontend: EditorDialog: Warn when resource modified during edit",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 22,
+  "additions": 264,
+  "deletions": 56,
+  "re_review": true,
+  "date": "2026-06-08",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 2,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": null,
+      "description": "After a successful handleSave, resourceModifiedWarning is never explicitly cleared. The warning persists until manually closed even after a successful save. Consider calling setResourceModifiedWarning(false) inside handleSave after dispatching the clusterAction."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": 137,
+      "description": "Pre-existing eslint-disable-next-line react-hooks/exhaustive-deps on the applyFunc useCallback could be removed in a follow-up now that handleSave is properly memoized."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "ResourceWatcher as a null-rendering child component is a clean pattern that avoids spurious WebSocket connections when the editor is not open."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": null,
+      "description": "Conflict detection correctly gates on four conditions covering edge cases for form-driven changes and read-only mode."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": "frontend/src/components/common/Resource/EditorDialog.test.tsx",
+      "line": null,
+      "description": "The new test covers the complete conflict scenario: user edits → external resourceVersion bump → alert appears and edits are preserved."
+    }
+  ]
+}
