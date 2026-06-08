@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T05:47:26+00:00",
+  "generated_at": "2026-06-08T08:04:20+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 203,
+  "open_prs_total": 204,
   "open_drafts_total": 44,
-  "actionable_total": 136,
+  "actionable_total": 137,
   "tracked_total": 35,
   "buckets": {
     "needs_rebase": [
@@ -111,7 +111,7 @@
         "author": "ipsitapp8",
         "bucket": "needs_rebase",
         "updated_at": "2026-04-27T07:15:38Z",
-        "days_since_update": 41,
+        "days_since_update": 42,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -208,7 +208,7 @@
         "author": "aadhil2k4",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T06:04:58Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -305,7 +305,7 @@
         "author": "Vikaspal8923",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-23T06:06:03Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -769,7 +769,7 @@
         "author": "hxrshxz",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:09Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -795,7 +795,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:11Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -1105,7 +1105,7 @@
         "author": "sakshyasinha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-28T07:15:59Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1379,7 +1379,7 @@
         "author": "Kush172005",
         "bucket": "ci_failing",
         "updated_at": "2026-05-07T06:41:35Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1524,7 +1524,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-05-18T07:15:56Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/XL",
@@ -1695,7 +1695,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-05-30T06:47:37Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1786,30 +1786,6 @@
         }
       },
       {
-        "number": 5838,
-        "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5838",
-        "author": "Swastik19Nit",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-07T10:36:48Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
@@ -1858,16 +1834,16 @@
         }
       },
       {
-        "number": 5942,
-        "title": "frontend: node: Add Storybook stories for Details and Charts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5942",
-        "author": "xonas1101",
+        "number": 5937,
+        "title": "frontend: pod: Add target container support to debug containers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5937",
+        "author": "yush-1018",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-07T11:25:39Z",
+        "updated_at": "2026-06-07T18:17:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -1916,6 +1892,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5949,
+        "title": "frontend: Add Storybook stories for ServiceAccount Details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-08T06:53:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5952,
+        "title": "frontend: ResourceTable: Stable row id when metadata.uid is missing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5952",
+        "author": "WasThatRudy",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-08T07:13:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -1986,7 +2010,7 @@
         "author": "Swastik19Nit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T07:17:27Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2010,7 +2034,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-22T06:10:50Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2034,7 +2058,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:41:53Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2058,7 +2082,7 @@
         "author": "dabico",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:42:58Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -2082,7 +2106,7 @@
         "author": "YotamKorah",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T06:55:35Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2106,7 +2130,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T07:41:13Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2130,7 +2154,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:02:30Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2730,7 +2754,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-30T06:10:12Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2802,7 +2826,7 @@
         "author": "Nabsku",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-01T07:16:51Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3067,7 +3091,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-05T07:19:29Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3091,7 +3115,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-05T07:20:02Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3354,30 +3378,6 @@
         }
       },
       {
-        "number": 5937,
-        "title": "frontend: pod: Add target container support to debug containers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5937",
-        "author": "yush-1018",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T18:17:33Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5894,
         "title": "frontend: EditorDialog: Warn when resource modified during edit",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
@@ -3450,30 +3450,6 @@
         }
       },
       {
-        "number": 5949,
-        "title": "frontend: Add Storybook stories for ServiceAccount Details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-08T05:25:25Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5919,
         "title": "frontend: Fix malformed i18n interpolation strings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5919",
@@ -3508,6 +3484,78 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5942,
+        "title": "frontend: node: Add Storybook stories for Details and Charts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5942",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-08T05:53:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5747,
+        "title": "frontend: nodes: add upgrade visualization for aks node upgrade",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5747",
+        "author": "Jenniferyingni",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-08T06:11:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5838,
+        "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5838",
+        "author": "Swastik19Nit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-08T06:54:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3676,7 +3724,7 @@
         "author": "aaradhychinche-alt",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:10Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -3702,7 +3750,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-10T07:02:44Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "kind/feature",
           "oidc",
@@ -3752,7 +3800,7 @@
         "author": "gouravi19",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-18T07:17:17Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3826,7 +3874,7 @@
         "author": "HarK-github",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-22T06:16:25Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3927,30 +3975,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5747,
-        "title": "frontend: nodes: add upgrade visualization for aks node upgrade",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5747",
-        "author": "Jenniferyingni",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-04T18:00:28Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4196,7 +4220,7 @@
         "author": "ipsitapp8",
         "bucket": "stale",
         "updated_at": "2026-04-27T07:24:31Z",
-        "days_since_update": 41,
+        "days_since_update": 42,
         "labels": [
           "cncf-cla: yes",
           "size/S"
