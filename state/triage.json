@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T08:04:20+00:00",
+  "generated_at": "2026-06-08T09:50:19+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 204,
   "open_drafts_total": 44,
@@ -329,7 +329,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-25T09:24:57Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -948,7 +948,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1719,7 +1719,7 @@
         "author": "Vikaspal8923",
         "bucket": "ci_failing",
         "updated_at": "2026-05-31T09:23:37Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -1895,30 +1895,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5949,
-        "title": "frontend: Add Storybook stories for ServiceAccount Details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-08T06:53:45Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2178,7 +2154,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2850,7 +2826,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-01T08:59:47Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XXL",
@@ -2899,7 +2875,7 @@
         "author": "ChunyiLyu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-02T09:27:45Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2995,7 +2971,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3196,30 +3172,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5922,
-        "title": "frontend: migrate Event resource to events.k8s.io/v1",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-07T11:40:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3556,6 +3508,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5922,
+        "title": "frontend: migrate Event resource to events.k8s.io/v1",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-08T08:05:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5949,
+        "title": "frontend: Add Storybook stories for ServiceAccount Details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-08T09:19:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4023,7 +4023,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:34:12Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4047,7 +4047,7 @@
         "author": "mishradwaterlaw",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:43:53Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4071,7 +4071,7 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T09:37:17Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4095,7 +4095,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T09:37:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
