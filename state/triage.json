@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T21:47:15+00:00",
+  "generated_at": "2026-06-10T22:43:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 214,
   "open_drafts_total": 42,
-  "actionable_total": 138,
-  "tracked_total": 39,
+  "actionable_total": 136,
+  "tracked_total": 41,
   "buckets": {
     "needs_rebase": [
       {
@@ -345,6 +345,56 @@
           "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
           "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5001,
+        "title": "fix: show error notification when cluster deletion fails",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5001",
+        "author": "XxSURYANSHxX",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-04-25T12:05:46Z",
+        "days_since_update": 46,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4856,
+        "title": "Add GCP OAuth authentication support for GKE clusters",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4856",
+        "author": "itpick",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-04-25T12:07:11Z",
+        "days_since_update": 46,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
           "verifiable": true
         }
       },
@@ -1352,56 +1402,6 @@
       }
     ],
     "ci_failing": [
-      {
-        "number": 5001,
-        "title": "fix: show error notification when cluster deletion fails",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5001",
-        "author": "XxSURYANSHxX",
-        "bucket": "ci_failing",
-        "updated_at": "2026-04-25T12:05:46Z",
-        "days_since_update": 46,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 4856,
-        "title": "Add GCP OAuth authentication support for GKE clusters",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4856",
-        "author": "itpick",
-        "bucket": "ci_failing",
-        "updated_at": "2026-04-25T12:07:11Z",
-        "days_since_update": 46,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
       {
         "number": 4670,
         "title": "backend(k8cache): filter gvrList with important resources to spawning less go routines for the given context",
