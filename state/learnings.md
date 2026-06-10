@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-09*
+*Last updated: 2026-06-10*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -27,11 +27,11 @@
 - **Other:** Electron desktop app (app/), plugin system (plugins/), i18n tooling (tools/i18n/)
 
 ## Common Issues
-- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 5 sessions). PR #5778 by @Rohith-Saran persists after 4 re-reviews.
+- Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 6 sessions). PR #5778 by @Rohith-Saran persists after 5 re-reviews.
 - Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902, #5777; multiple sessions).
 - Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-29 re-review).
-- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 also missing `externalLinks` from `values.schema.json` — now fixed.
+- Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 missing `externalLinks` from `values.schema.json` (config.additionalProperties is not false so not a hard block, but still a best-practice gap).
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
 - CI workflow `push` triggers without `paths` filter causing unnecessary full-stack e2e runs on unrelated commits (seen in PR #5408).
 - Missing storyshot regeneration when `defaultAppThemes` array changes (seen in PR #5748).
@@ -41,8 +41,8 @@
 - Render-phase state updates (`setState` called unconditionally during render body) causing React to drop and re-run the render (seen in PR #5805 — now resolved).
 - Two sequential `setState` calls in the same render for the same piece of state (seen in PR #5804 — now fixed with Map consolidation).
 - Missing frontend Vitest tests for new behavioral flows (seen in PR #5764 — OIDC auto-login AuthChooser useEffect still not tested after 7 re-reviews).
-- Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778 — now added).
-- PR body containing unresolved placeholder `#<issue-number>` or `#NAN` instead of real issue reference (seen in PR #5778, #5844 — #5844 still has #NAN after 4 re-reviews).
+- Helm `externalLinks`/feature config fields not added to `values.schema.json` (seen in PR #5778 — additionalProperties not false so no hard failure, but best practice gap remains).
+- PR body containing unresolved placeholder `#<issue-number>` or `#NAN` instead of real issue reference (seen in PR #5778, #5844 — #5778 still has placeholder after 5 re-reviews; #5775 references its own PR number instead of issue #5417).
 - Trailing period in commit/PR title subject (seen in PR #5844 by @nikunjkumar05; persistent after 4 re-reviews).
 - Multi-area dependency bump PRs missing area prefix in commit subject (seen in PR #5772 by @skoeva).
 - Vague "Address Copilot review comments" commit subjects without describing the actual change (seen in PR #5764 by @menardorama; persistent after 8 re-reviews).
@@ -51,14 +51,16 @@
 - New feature PRs without error-state UI: when a useQuery/useEffect can fail (e.g., 403, 404), failure must surface via Alert — silent empty state is misleading (seen in PR #5886; 2026-06-02).
 - Namespace state initialised to 'default' in new namespace-selector components causes premature API calls; initialise to null (seen in PR #5886; 2026-06-02).
 - Dead code: `os.IsExist(err)` branch unreachable when using `os.O_CREATE|os.O_WRONLY` (no O_EXCL) — seen in PR #5783; still present in multiple re-reviews.
-- URL-lowercasing bug: `safeLinkUrl` returns `url.toLowerCase()` instead of original `url` for case-sensitive paths (seen in PR #5778 — still open).
+- URL-lowercasing bug: `safeLinkUrl` was returning `url.toLowerCase()` instead of original `url` for case-sensitive paths (seen in PR #5778 — fixed in 2026-06-09 commit; now correctly lowercases only the scheme).
 - Duplicate YAML key in values.yaml from bad merge/rebase (seen in PR #5764 — persists).
 - Extra `}` in values.schema.json making JSON schema invalid (seen in PR #5764 — persists).
 - Abandoned OIDC state tokens never evicted from `oauthRequestMap` — use background goroutine with TTL-based eviction (seen in PR #5866 — fixed).
 - CACert pointer regression: `CACert: &oidcCACert` passes pointer to empty string instead of nil when no cert (seen in PR #5764 — still open).
 - PR description left stale after iterative commits (seen in PR #5803 — approved 2026-06-06; always verify description matches final diff).
-- `resourceModifiedWarning` state not cleared after successful save in EditorDialog — persists until manually closed (seen in PR #5894 — suggestion flagged 2026-06-08).
+- `resourceModifiedWarning` state not cleared after successful save in EditorDialog — persists until manually closed (seen in PR #5894 — suggestion flagged 2026-06-08 and 2026-06-10; non-blocking UX rough edge).
 - Storybook story description text that mischaracterises triggering conditions (seen in PR #5893 PodEvict story — Evict renders for any Pod, not only when useEvict setting is enabled; flagged 2026-06-08).
+- Helm template mountPath not normalized before prefix-match validation: `printf "%s/" $mountPath` produces double-slash when mountPath has a trailing slash, causing validation to fail for legitimate configs (seen in PR #5874 — flagged 2026-06-10).
+- root `package-lock.json` changes that add unrelated dev dependencies without matching `package.json` update: can introduce major-version mismatches with workspace sub-packages (seen in PR #5775 — cross-env@10.1.0 added to root lock while frontend/package.json pins ^7.0.3; flagged 2026-06-10).
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention is intentional — clears on tab close.
@@ -70,13 +72,15 @@
 - In `validateTracing()` (PR #5832): the new implementation correctly checks all exporter conditions. PR approved 2026-06-06.
 - `CACert: &oidcCACert` (pointer to empty string) — all current consumers use double-guard `caCert != nil && *caCert != ""`. Flag as Suggestion for convention clarity only.
 - MUI sx array merging (`sx={[defaultSx, ...(Array.isArray(labelSx) ? labelSx : labelSx ? [labelSx] : [])]}`) in PRs touching `HoverInfoLabel` is the correct MUI v5 pattern for merging sx props. Not a bug.
+- `!IsKubernetesResourceAPIPath || !IsAuthBypassURL` condition in cache middleware (PR #5798): `IsAuthBypassURL` returns false for `/version`, `/healthz`, `/selfsubjectrulesreviews`, `/selfsubjectaccessreviews` — these should also bypass caching even under `/apis/` paths. The `||` is intentional and correct.
+- `values.schema.json` `config` section has no `additionalProperties: false` — adding new fields to `values.yaml` without updating the schema will not cause `helm lint` to fail. Still good practice to update the schema.
 
 ## Author Notes
-- @sudhidutta7694: PRs #5894 and #5893. PR #5894 (EditorDialog conflict-detection) — original 2026-06-02 APPROVE; 2026-06-07 REQUEST_CHANGES for eslint-disable suppression + missing tests; 2026-06-08 APPROVE after SHA update — `handleSave` and `onClose` now properly memoized with `useCallback`, comprehensive Vitest test added, ResourceWatcher null-render pattern is clean. PR #5893 (DeleteButton stories) — clean additive stories with one minor doc nit. Strong upward trajectory.
+- @sudhidutta7694: PRs #5894 and #5893. PR #5894 (EditorDialog conflict-detection) — APPROVE 2026-06-10 (i18n update only since last APPROVE 2026-06-08). PR #5893 (DeleteButton stories) — APPROVE 2026-06-08. Strong upward trajectory; thorough test coverage.
 - @Swastik19Nit: PR #5838 (ObjectEventList Age-clipping fix) — CLA cleared; approved 2026-06-08. Fix is minimal and correct using MUI sx array merging.
 - @kishore08-07: Multiple PRs (#5774, #5768, #5767, #5820, #5887) — hooks-cleanup sub-issues (#5183); clean targeted fixes, correct commit format. Consistently high quality.
 - @ayushmaan-16: Multiple PRs — React hooks/render-phase fixes and backend memory fixes. PR #5866 (OIDC state eviction) approved — strong technical author. PR #5803 (NEEDS_DISCUSSION 2026-06-06 re-review) — implementation diverged from PR description.
-- @Rohith-Saran: PRs #5775, #5778, #5843 — commit format issues (Conventional Commits style, lowercase verb, missing SubArea) persist across all PRs.
+- @Rohith-Saran: PRs #5775, #5778 — commit format issues persist across both PRs (Conventional Commits style on first commit of #5778, `#<issue-number>` placeholder, wrong issue reference in #5775 body). Core fixes are technically correct but always requires format cleanup.
 - @sniok: Core contributor; PR #5779 adds experimental tsgo compiler; PR #5880 (kind name regex fix) approved.
 - @menardorama: PR #5764 OIDC auto-login — vague commit subjects, merge-main commits, structural bugs persist after 8+ re-reviews.
 - @harrshita123: PRs #5777, #5840, #5832 — responds to rebase requests; SubArea still missing; overall improving.
@@ -84,9 +88,15 @@
 - @codeurluce: PRs #5902, #5903 — French i18n, high quality translations; commit format issues (lowercase verb, missing SubArea).
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews.
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format.
-- @Nabsku: Backend contributor; PRs #5777, #5798 both approved. Strong test author.
+- @Nabsku: Backend contributor; PRs #5777, #5798 both approved. Strong test author. PR #5798 SHA changed due to rebase 2026-06-10 — content verified unchanged.
+- @kahirokunn: PR #5874 (Cluster Inventory charts) — NEEDS_DISCUSSION 2026-06-10 due to potential trailing-slash bug in Helm validation. PR was substantially reworked 2026-06-10 with 4 new commits. Previously approved 2026-05-28 (different content).
 
 ## Session Log
+### 2026-06-10
+- Reviewed 5 PRs: #5894 (re-review, APPROVE), #5874 (re-review, NEEDS_DISCUSSION), #5798 (re-review, APPROVE), #5778 (re-review, REQUEST_CHANGES), #5775 (re-review, REQUEST_CHANGES)
+- Skipped: 30 SHA-unchanged + 179 new candidates all had human review activity (reviews or comments > 0) + 44 drafts
+- New observations: PR #5874 substantially reworked today with 4 commits; potential Helm mountPath trailing-slash normalization bug. PR #5775 has unexplained root package-lock.json changes adding cross-env@10.1.0 (major version mismatch with frontend ^7.0.3). PR #5778 safeLinkUrl bug fixed in new commit but commit format and placeholder issues persist. PR #5798 SHA change is pure rebase — content verified correct.
+
 ### 2026-06-09
 - Reviewed 0 PRs
 - Skipped: 33 SHA-unchanged + 176 new candidates all had human review activity (reviews or comments > 0) + 44 drafts

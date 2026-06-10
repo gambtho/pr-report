@@ -1,0 +1,49 @@
+{
+  "pr_number": 5798,
+  "title": "backend: k8cache: Bypass non-API cluster paths",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 158,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-10",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "backend/cmd/server.go",
+      "line": 288,
+      "description": "Combined condition !IsKubernetesResourceAPIPath || !IsAuthBypassURL is correct but non-obvious. A brief comment explaining why both conditions are needed would help future readers."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheStore.go",
+      "line": null,
+      "description": "kubernetesAPIPathIndex correctly handles both direct and proxied path forms, removing duplicated logic from GetAPIGroup and ExtractNamespace."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/pkg/k8cache/cacheStore_test.go",
+      "line": null,
+      "description": "New TestIsKubernetesResourceAPIPath table-driven test covers direct, proxied, and non-API paths comprehensively."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/cmd/headlamp_test.go",
+      "line": null,
+      "description": "New TestCacheMiddleware_BypassesNonKubernetesAPIPaths integration test confirms end-to-end bypass for /healthz and /readyz."
+    }
+  ]
+}

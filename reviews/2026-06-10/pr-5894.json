@@ -1,0 +1,49 @@
+{
+  "pr_number": 5894,
+  "title": "frontend: EditorDialog: Warn when resource modified during edit",
+  "author": "sudhidutta7694",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+  "verdict": "APPROVE",
+  "size_category": "Medium",
+  "files_changed": 19,
+  "additions": 248,
+  "deletions": 56,
+  "re_review": true,
+  "date": "2026-06-10",
+  "findings_count": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/common/Resource/EditorDialog.tsx",
+      "line": null,
+      "description": "resourceModifiedWarning is not cleared after a successful save — banner can persist on the minimized activity. Consider calling setResourceModifiedWarning(false) inside handleSave."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/i18n/locales",
+      "line": null,
+      "description": "i18n update is thorough — all 15 locale files updated consistently."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "ResourceWatcher component cleanly separates WebSocket lifecycle from EditButton rendering."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/common/Resource/EditButton.tsx",
+      "line": null,
+      "description": "handleSave and handleClose are correctly wrapped in useCallback with complete dependency arrays."
+    }
+  ]
+}

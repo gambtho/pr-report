@@ -1,0 +1,63 @@
+{
+  "pr_number": 5778,
+  "title": "feat: Add configurable external links to sidebar via Helm values",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 14,
+  "additions": 168,
+  "deletions": 44,
+  "re_review": true,
+  "date": "2026-06-10",
+  "findings_count": {
+    "critical": 0,
+    "warning": 3,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "git commit",
+      "line": null,
+      "description": "First commit subject 'feat: add configurable external links...' uses Conventional Commits style instead of required 'area: SubArea: Description' format. Rebase and amend needed."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "PR body",
+      "line": null,
+      "description": "PR body still contains unresolved placeholder 'Fixes #<issue-number>'. Replace with real issue number or remove."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.schema.json",
+      "line": null,
+      "description": "externalLinks not added to config.properties in values.schema.json. Adding an array schema entry would enable IDE autocomplete and document the field."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "frontend/src/components/Sidebar/useSidebarItems.tsx",
+      "line": null,
+      "description": "safeLinkUrl: add a brief comment explaining that only the scheme is lowercased to prevent future lowercase regression."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/Sidebar/useSidebarItems.tsx",
+      "line": null,
+      "description": "safeLinkUrl fix correctly limits lowercasing to scheme only, preserving case-sensitive path components."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "backend/cmd/headlamp.go",
+      "line": null,
+      "description": "getConfig initialises externalLinks to []ExternalLink{} (not nil) before encoding — frontend always receives an array, never null."
+    }
+  ]
+}

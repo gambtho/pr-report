@@ -1,0 +1,63 @@
+{
+  "pr_number": 5874,
+  "title": "charts: Use official Cluster Inventory secretreader images",
+  "author": "kahirokunn",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5874",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 10,
+  "additions": 105,
+  "deletions": 25,
+  "re_review": true,
+  "date": "2026-06-10",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 1,
+    "positive": 3
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/templates/cluster-inventory-configmap.yaml",
+      "line": null,
+      "description": "mountPath not normalized with | clean before building $mountPaths list. When mountPath has a trailing slash, printf \"%s/\" produces a double-slash prefix that never matches $cmd. The test_cases file uses trailing-slash mountPaths — test would fail. Fix: apply | clean to $mountPath when building the list."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/tests/test_cases/cluster-inventory-plugins.yaml",
+      "line": null,
+      "description": "Test case uses mountPath with trailing slash. May fail make helm-template-test due to double-slash bug in validation. Please confirm by running make helm-template-test."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "MEDIUM",
+      "file": "charts/headlamp/values.yaml",
+      "line": null,
+      "description": "interactiveMode and provideClusterInfo fields in execConfig examples are not reflected in values.schema.json. Consider adding them to improve helm lint coverage."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/values.yaml",
+      "line": null,
+      "description": "Image pins include sha256 digests providing supply-chain security guarantees."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/templates/cluster-inventory-configmap.yaml",
+      "line": null,
+      "description": "Shift from directory-equality to prefix-match validation is semantically correct for the new /bin/ path structure."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "charts/headlamp/tests/failing_test_cases/cluster-inventory-plugin-command-equals-mount-path.yaml",
+      "line": null,
+      "description": "New failing test case correctly catches edge case where command == mountPath with no / separator."
+    }
+  ]
+}

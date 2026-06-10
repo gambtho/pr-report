@@ -1,0 +1,49 @@
+{
+  "pr_number": 5775,
+  "title": "frontend: Fix Backstage receiver listener leak on Home remount",
+  "author": "Rohith-Saran",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5775",
+  "verdict": "REQUEST_CHANGES",
+  "size_category": "Medium",
+  "files_changed": 3,
+  "additions": 107,
+  "deletions": 5,
+  "re_review": true,
+  "date": "2026-06-10",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "HIGH",
+      "file": "package-lock.json",
+      "line": null,
+      "description": "Root package-lock.json gains cross-env@10.1.0 and its dependency tree without any corresponding package.json change. frontend/package.json pins cross-env@^7.0.3 — major version mismatch. Appears to be spurious artifact from an unrelated npm install run. Remove these changes or provide a matching package.json update."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "PR body",
+      "line": null,
+      "description": "PR body says 'Fixes #5775' which is the PR number itself. Branch name is 'bug#5417' suggesting issue #5417 is the intended reference. Update to 'Fixes #5417'."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/helpers/backstageMessageReceiver.ts",
+      "line": null,
+      "description": "setupBackstageMessageReceiver correctly returns cleanup function when isBackstage() is true, and no-op otherwise — robust for non-Backstage contexts."
+    },
+    {
+      "severity": "Positive",
+      "confidence": "HIGH",
+      "file": "frontend/src/components/App/Home/index.tsx",
+      "line": 116,
+      "description": "useEffect change is a single-line idiomatic 'return setupBackstageMessageReceiver()' — clean and hard to misread."
+    }
+  ]
+}
