@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T19:08:00+00:00",
+  "generated_at": "2026-06-10T21:47:15+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 213,
+  "open_prs_total": 214,
   "open_drafts_total": 42,
-  "actionable_total": 136,
-  "tracked_total": 41,
+  "actionable_total": 138,
+  "tracked_total": 39,
   "buckets": {
     "needs_rebase": [
       {
@@ -232,7 +232,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -345,56 +345,6 @@
           "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
           "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5001,
-        "title": "fix: show error notification when cluster deletion fails",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5001",
-        "author": "XxSURYANSHxX",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-04-25T12:05:46Z",
-        "days_since_update": 46,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4856,
-        "title": "Add GCP OAuth authentication support for GKE clusters",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4856",
-        "author": "itpick",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-04-25T12:07:11Z",
-        "days_since_update": 46,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
           "verifiable": true
         }
       },
@@ -1146,7 +1096,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T20:11:06Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1402,6 +1352,56 @@
       }
     ],
     "ci_failing": [
+      {
+        "number": 5001,
+        "title": "fix: show error notification when cluster deletion fails",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5001",
+        "author": "XxSURYANSHxX",
+        "bucket": "ci_failing",
+        "updated_at": "2026-04-25T12:05:46Z",
+        "days_since_update": 46,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4856,
+        "title": "Add GCP OAuth authentication support for GKE clusters",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4856",
+        "author": "itpick",
+        "bucket": "ci_failing",
+        "updated_at": "2026-04-25T12:07:11Z",
+        "days_since_update": 46,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
       {
         "number": 4670,
         "title": "backend(k8cache): filter gvrList with important resources to spawning less go routines for the given context",
@@ -2375,7 +2375,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T21:23:52Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3069,30 +3069,6 @@
         }
       },
       {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-09T13:13:11Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5849,
         "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
@@ -3340,7 +3316,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-09T19:52:41Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3364,7 +3340,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-09T20:21:45Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3598,30 +3574,6 @@
         }
       },
       {
-        "number": 5931,
-        "title": "backend: helm: Avoid truncating repo config on create",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-10T17:10:25Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5832,
         "title": "backend: Reject unsupported Jaeger tracing endpoint",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
@@ -3656,6 +3608,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-10T19:26:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5931,
+        "title": "backend: helm: Avoid truncating repo config on create",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-10T21:39:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3824,7 +3824,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3872,7 +3872,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
