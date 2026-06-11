@@ -1,0 +1,42 @@
+{
+  "pr_number": 5798,
+  "title": "backend: k8cache: Bypass non-API cluster paths",
+  "author": "Nabsku",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 158,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-11",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 0,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/k8cache/authErrResp.go",
+      "line": 36,
+      "description": "IsAuthBypassURL still uses strings.Contains for /version, /healthz, etc. A resource named 'version-tracker' at a valid API path would match the /version substring check, causing the new cacheMiddlewareHandler bypass to fire for a legitimate cacheable resource. The promised path-structure fix has not been committed."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": null,
+      "line": null,
+      "description": "IsKubernetesResourceAPIPath cleanly handles both direct and proxied API paths with 6 explicit test cases."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": null,
+      "line": null,
+      "description": "TestCacheMiddleware_BypassesNonKubernetesAPIPaths regression test directly covers the reported /healthz and /readyz failure scenarios."
+    }
+  ]
+}

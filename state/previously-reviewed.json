@@ -1,5 +1,17 @@
 [
   {
+    "number": 5832,
+    "head_sha": "eddf63ac56dd24ec33da2e7b23b6dc6fc20be5d1",
+    "date": "2026-06-11",
+    "title": "backend: Reject unsupported Jaeger tracing endpoint"
+  },
+  {
+    "number": 5798,
+    "head_sha": "ac4c3eaf03644688e5137c2e719ab03fb594ad6b",
+    "date": "2026-06-11",
+    "title": "backend: k8cache: Bypass non-API cluster paths"
+  },
+  {
     "number": 5894,
     "head_sha": "b983c64980c15bd414eee6b36e623930011d2399",
     "date": "2026-06-10",
@@ -10,12 +22,6 @@
     "head_sha": "e0416ad0c4cd3d95cd26dacb4d0b1a911f327514",
     "date": "2026-06-10",
     "title": "charts: Use official Cluster Inventory secretreader images"
-  },
-  {
-    "number": 5798,
-    "head_sha": "ac4c3eaf03644688e5137c2e719ab03fb594ab6b",
-    "date": "2026-06-10",
-    "title": "backend: k8cache: Bypass non-API cluster paths"
   },
   {
     "number": 5778,
@@ -30,10 +36,16 @@
     "title": "frontend: Fix Backstage receiver listener leak on Home remount"
   },
   {
-    "number": 5832,
-    "head_sha": "b11b9822a600c32bb93a28e9411e3e8adc65f12e",
-    "date": "2026-06-06",
-    "title": "backend: Reject unsupported Jaeger tracing endpoint"
+    "number": 5893,
+    "head_sha": "6677328893456e74201c501b5183a463b3440cc9",
+    "date": "2026-06-08",
+    "title": "frontend: common/Resource/DeleteButton: Add Storybook stories"
+  },
+  {
+    "number": 5838,
+    "head_sha": "b08bb39af5d2b82d35555a48c248500c0d299192",
+    "date": "2026-06-08",
+    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
   },
   {
     "number": 5861,
@@ -52,18 +64,6 @@
     "head_sha": "472738b2680396941b2c1b9c713e2594493f3be8",
     "date": "2026-06-06",
     "title": "app: plugins: tools/releaser: Bump tmp 0.2.6, hono 4.12.23"
-  },
-  {
-    "number": 5893,
-    "head_sha": "6677328893456e74201c501b5183a463b3440cc9",
-    "date": "2026-06-08",
-    "title": "frontend: common/Resource/DeleteButton: Add Storybook stories"
-  },
-  {
-    "number": 5838,
-    "head_sha": "b08bb39af5d2b82d35555a48c248500c0d299192",
-    "date": "2026-06-08",
-    "title": "frontend: ObjectEventList: Fix Age column text clipping in details panel"
   },
   {
     "number": 5877,
@@ -142,6 +142,12 @@
     "head_sha": "8479d9c077a2289218e3fcd043a9589129c9088c",
     "date": "2026-06-02",
     "title": "helm: Fix file descriptor leak in createFullPath"
+  },
+  {
+    "number": 5764,
+    "head_sha": "f65051b8d0435a67d15b865fdd0d9a71da27185a",
+    "date": "2026-06-01",
+    "title": "backend/frontend/helm: Add --oidc-auto-login support"
   },
   {
     "number": 5820,
@@ -252,48 +258,6 @@
     "title": "frontend: Add plugin extension registry"
   },
   {
-    "number": 5774,
-    "head_sha": "3f79c711dbef32de6272dccb3436a8e40da031e0",
-    "date": "2026-05-22",
-    "title": "frontend: Chart: fix react-hooks/refs violation"
-  },
-  {
-    "number": 5746,
-    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
-    "date": "2026-05-22",
-    "title": "feat(helm): Add valueFrom support for environment variables in chart"
-  },
-  {
-    "number": 5748,
-    "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
-    "date": "2026-05-20",
-    "title": "Automatically switch theme based on OS theme"
-  },
-  {
-    "number": 5538,
-    "head_sha": "312036cafb7e937142e0ff89e2a916dc22047334",
-    "date": "2026-05-19",
-    "title": "frontend: ContainerInfo: Fix key prop placement in ports list"
-  },
-  {
-    "number": 5408,
-    "head_sha": "192a315cfb028a1ef812ce5ac7f9e4a71242ea85",
-    "date": "2026-05-19",
-    "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial"
-  },
-  {
-    "number": 5764,
-    "head_sha": "f65051b8d0435a67d15b865fdd0d9a71da27185a",
-    "date": "2026-06-01",
-    "title": "backend/frontend/helm: Add --oidc-auto-login support"
-  },
-  {
-    "number": 5786,
-    "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
-    "date": "2026-05-22",
-    "title": "backend: changed format verb %v with %w"
-  },
-  {
     "number": 5831,
     "head_sha": "00b7d5707a2e5ecf5dca81212ea65ccb638dc00e",
     "date": "2026-05-25",
@@ -325,7 +289,7 @@
   },
   {
     "number": 5834,
-    "head_sha": "ef29fcd0ee90fedae9b40e7870805a9dace87259",
+    "head_sha": "ef29fcd0ae90fedae9b40e7870805a9dace87259",
     "date": "2026-05-25",
     "title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /plugins/headlamp-plugin"
   },
@@ -346,5 +310,41 @@
     "head_sha": "53861ec5eb94b388169986d3312acab1169794ba",
     "date": "2026-05-25",
     "title": "build(deps-dev): bump qs from 6.14.2 to 6.15.2 in /plugins/examples/pod-counter"
+  },
+  {
+    "number": 5774,
+    "head_sha": "3f79c711dbef32de6272dccb3436a8e40da031e0",
+    "date": "2026-05-22",
+    "title": "frontend: Chart: fix react-hooks/refs violation"
+  },
+  {
+    "number": 5746,
+    "head_sha": "658a301bd22054be8a07b89b2383c4a095cda147",
+    "date": "2026-05-22",
+    "title": "feat(helm): Add valueFrom support for environment variables in chart"
+  },
+  {
+    "number": 5786,
+    "head_sha": "f574eb61593eb941fbe9b1d0e107f778aa8c82f4",
+    "date": "2026-05-22",
+    "title": "backend: changed format verb %v with %w"
+  },
+  {
+    "number": 5748,
+    "head_sha": "63478120dfc5dd769a9195301eda36e477b5c45d",
+    "date": "2026-05-20",
+    "title": "Automatically switch theme based on OS theme"
+  },
+  {
+    "number": 5538,
+    "head_sha": "312036cafb7e937142e0ff89e2a916dc22047334",
+    "date": "2026-05-19",
+    "title": "frontend: ContainerInfo: Fix key prop placement in ports list"
+  },
+  {
+    "number": 5408,
+    "head_sha": "192a315cfb028a1ef812ce5ac7f9e4a71242ea85",
+    "date": "2026-05-19",
+    "title": "docs: e2e-tests: ci: Add new OIDC e2e tests with Dex + Oauth tutorial"
   }
 ]

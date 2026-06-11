@@ -1,0 +1,56 @@
+{
+  "pr_number": 5832,
+  "title": "backend: Reject unsupported Jaeger tracing endpoint",
+  "author": "harrshita123",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+  "verdict": "NEEDS_DISCUSSION",
+  "size_category": "Medium",
+  "files_changed": 4,
+  "additions": 97,
+  "deletions": 20,
+  "re_review": true,
+  "date": "2026-06-11",
+  "findings_count": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 1,
+    "positive": 2
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": "backend/pkg/telemetry/telemetry.go",
+      "line": 207,
+      "description": "When isJaegerConfigured && stdoutEnabled, the Jaeger branch increments enabledExporters and appends 'Jaeger' to enabledTypes but no actual Jaeger exporter is constructed. Telemetry logs will report Jaeger as active when it is silently overridden by stdout."
+    },
+    {
+      "severity": "Warning",
+      "confidence": "LOW",
+      "file": "backend/pkg/config/config.go",
+      "line": null,
+      "description": "Second commit subject 'backend: Fix tracing exporter validation' missing SubArea segment. Convention: 'area: SubArea: Description' (e.g. 'backend: config: Fix tracing exporter validation')."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": "backend/pkg/config/config.go",
+      "line": null,
+      "description": "The --jaeger-endpoint flag description could mention stdout as an alternative alongside otlp-endpoint, for consistency with validation error wording."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": null,
+      "line": null,
+      "description": "validateTracing() extraction is clean; new test cases cover all new branches including jaeger-only rejected, jaeger+stdout allowed, stdout-only allowed, no-exporter error."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": null,
+      "line": null,
+      "description": "Second commit correctly fixes the previously-inverted 'at least one exporter' validation that Copilot flagged on the first commit."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-10*
+*Last updated: 2026-06-11*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -28,7 +28,7 @@
 
 ## Common Issues
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 6 sessions). PR #5778 by @Rohith-Saran persists after 5 re-reviews.
-- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902, #5777; multiple sessions).
+- Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902, #5777; multiple sessions). PR #5832 second commit also has this issue (2026-06-11).
 - Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-29 re-review).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 missing `externalLinks` from `values.schema.json` (config.additionalProperties is not false so not a hard block, but still a best-practice gap).
@@ -61,6 +61,8 @@
 - Storybook story description text that mischaracterises triggering conditions (seen in PR #5893 PodEvict story — Evict renders for any Pod, not only when useEvict setting is enabled; flagged 2026-06-08).
 - Helm template mountPath not normalized before prefix-match validation: `printf "%s/" $mountPath` produces double-slash when mountPath has a trailing slash, causing validation to fail for legitimate configs (seen in PR #5874 — flagged 2026-06-10).
 - root `package-lock.json` changes that add unrelated dev dependencies without matching `package.json` update: can introduce major-version mismatches with workspace sub-packages (seen in PR #5775 — cross-env@10.1.0 added to root lock while frontend/package.json pins ^7.0.3; flagged 2026-06-10).
+- Promised fix not committed: author responds to review comment claiming a fix is in place, but the actual commit does not include the change (seen in PR #5798 — @Nabsku claimed IsAuthBypassURL was updated to path-structure checks, but strings.Contains still present; 2026-06-11).
+- When telemetry Jaeger+stdout fallback is allowed but no actual Jaeger exporter is constructed, `enabledTypes` still reports "Jaeger" as active — misleading log output (seen in PR #5832 second commit; 2026-06-11).
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention is intentional — clears on tab close.
@@ -69,10 +71,10 @@
 - Helm variable reassignment `{{- $matched = true }}` inside a range block is valid Helm 3.1+ syntax.
 - Storyshot MUI class-hash changes that accompany a `labelProps` or `sx` change are expected MUI behavior — the hash changes when the generated style changes. Not a bug.
 - PR #5895 (CI parallelization): `test-headlamp-plugin.js` runs `npm ci` internally so removing outer `npm install` in the Makefile `plugins-test` target is safe. Do not re-flag.
-- In `validateTracing()` (PR #5832): the new implementation correctly checks all exporter conditions. PR approved 2026-06-06.
+- In `validateTracing()` (PR #5832): the second commit (eddf63ac) correctly fixes the previously-inverted "at least one exporter" validation. The Copilot review comments about inversion were on the first commit; the second commit addresses them. Verify each re-review against the current cumulative diff, not the old comments.
 - `CACert: &oidcCACert` (pointer to empty string) — all current consumers use double-guard `caCert != nil && *caCert != ""`. Flag as Suggestion for convention clarity only.
 - MUI sx array merging (`sx={[defaultSx, ...(Array.isArray(labelSx) ? labelSx : labelSx ? [labelSx] : [])]}`) in PRs touching `HoverInfoLabel` is the correct MUI v5 pattern for merging sx props. Not a bug.
-- `!IsKubernetesResourceAPIPath || !IsAuthBypassURL` condition in cache middleware (PR #5798): `IsAuthBypassURL` returns false for `/version`, `/healthz`, `/selfsubjectrulesreviews`, `/selfsubjectaccessreviews` — these should also bypass caching even under `/apis/` paths. The `||` is intentional and correct.
+- `!IsKubernetesResourceAPIPath || !IsAuthBypassURL` condition in cache middleware (PR #5798): `IsAuthBypassURL` returns false for `/version`, `/healthz`, `/selfsubjectrulesreviews`, `/selfsubjectaccessreviews` — these should also bypass caching even under `/apis/` paths. The `||` is intentional and correct. However, the `strings.Contains` implementation in `IsAuthBypassURL` is a pre-existing concern for resources whose names include "/version" or "/healthz" as substrings — flag if @Nabsku's promised path-structure fix lands.
 - `values.schema.json` `config` section has no `additionalProperties: false` — adding new fields to `values.yaml` without updating the schema will not cause `helm lint` to fail. Still good practice to update the schema.
 
 ## Author Notes
@@ -83,15 +85,20 @@
 - @Rohith-Saran: PRs #5775, #5778 — commit format issues persist across both PRs (Conventional Commits style on first commit of #5778, `#<issue-number>` placeholder, wrong issue reference in #5775 body). Core fixes are technically correct but always requires format cleanup.
 - @sniok: Core contributor; PR #5779 adds experimental tsgo compiler; PR #5880 (kind name regex fix) approved.
 - @menardorama: PR #5764 OIDC auto-login — vague commit subjects, merge-main commits, structural bugs persist after 8+ re-reviews.
-- @harrshita123: PRs #5777, #5840, #5832 — responds to rebase requests; SubArea still missing; overall improving.
+- @harrshita123: PRs #5777, #5840, #5832 — responds to rebase requests; SubArea still missing in new commits; overall improving. PR #5832 second commit still missing SubArea (2026-06-11).
 - @skoeva: PRs #5861, #5895, #5877, #5900 — consistently solid quality; SubArea usage improving.
 - @codeurluce: PRs #5902, #5903 — French i18n, high quality translations; commit format issues (lowercase verb, missing SubArea).
 - @nikunjkumar05: PR #5844 — trailing period + #NAN placeholder + merge commit persist after 4+ re-reviews.
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format.
-- @Nabsku: Backend contributor; PRs #5777, #5798 both approved. Strong test author. PR #5798 SHA changed due to rebase 2026-06-10 — content verified unchanged.
+- @Nabsku: Backend contributor; PRs #5777, #5798 both approved functionally. Strong test author. PR #5798 NEEDS_DISCUSSION 2026-06-11 — author claimed IsAuthBypassURL was updated to path-structure checks but no such commit present; strings.Contains still in place.
 - @kahirokunn: PR #5874 (Cluster Inventory charts) — NEEDS_DISCUSSION 2026-06-10 due to potential trailing-slash bug in Helm validation. PR was substantially reworked 2026-06-10 with 4 new commits. Previously approved 2026-05-28 (different content).
 
 ## Session Log
+### 2026-06-11
+- Reviewed 2 PRs: #5832 (re-review, NEEDS_DISCUSSION), #5798 (re-review, NEEDS_DISCUSSION)
+- Skipped: 30 SHA-unchanged + 184 non-re-review candidates all had human review activity (reviews or comments > 0) + 42 drafts
+- New observations: PR #5832 — second commit eddf63ac ("Fix tracing exporter validation") addresses the inverted "at least one exporter" logic from prior Copilot review, but @illume's CHANGES_REQUESTED still open and the Jaeger+stdout path produces misleading "Jaeger" log entries. PR #5798 — trivial rebase (content unchanged from 2026-06-10 APPROVE); @illume's CHANGES_REQUESTED still open and author's promised IsAuthBypassURL path-structure fix not yet committed.
+
 ### 2026-06-10
 - Reviewed 5 PRs: #5894 (re-review, APPROVE), #5874 (re-review, NEEDS_DISCUSSION), #5798 (re-review, APPROVE), #5778 (re-review, REQUEST_CHANGES), #5775 (re-review, REQUEST_CHANGES)
 - Skipped: 30 SHA-unchanged + 179 new candidates all had human review activity (reviews or comments > 0) + 44 drafts
