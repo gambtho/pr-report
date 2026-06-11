@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-06-11T07:59:10+00:00",
+  "generated_at": "2026-06-11T09:43:28+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 214,
+  "open_prs_total": 213,
   "open_drafts_total": 42,
   "actionable_total": 175,
-  "tracked_total": 0,
+  "tracked_total": 1,
   "buckets": {
-    "needs_rebase": [],
+    "needs_rebase": [
+      {
+        "number": 5293,
+        "title": "backend: helm: Add authentication support for repositories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5293",
+        "author": "Kayd-06",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-22T11:59:10Z",
+        "days_since_update": 19,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      }
+    ],
     "ci_failing": [
       {
         "number": 5001,
@@ -711,7 +737,7 @@
         "author": "mastermaxx03",
         "bucket": "ci_failing",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 25,
+        "days_since_update": 26,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -959,31 +985,6 @@
         }
       },
       {
-        "number": 5293,
-        "title": "backend: helm: Add authentication support for repositories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5293",
-        "author": "Kayd-06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-22T11:59:10Z",
-        "days_since_update": 19,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5118,
         "title": "frontend: Settings: make websocket multiplexer a setting",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5118",
@@ -1211,7 +1212,7 @@
         "author": "Vikaspal8923",
         "bucket": "ci_failing",
         "updated_at": "2026-05-31T09:23:37Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -1914,7 +1915,7 @@
         "author": "joaquimrocha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-25T09:24:57Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2016,7 +2017,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2035,7 +2036,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:02:30Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2059,7 +2060,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2613,7 +2614,7 @@
         "author": "ChunyiLyu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-02T09:27:45Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2709,7 +2710,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3338,7 +3339,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-10T08:31:26Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3500,30 +3501,6 @@
         }
       },
       {
-        "number": 5931,
-        "title": "backend: helm: Avoid truncating repo config on create",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-11T05:35:14Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5690,
         "title": "backend: Skip DaemonSet pods during drain",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5690",
@@ -3559,7 +3536,31 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5931,
+        "title": "backend: helm: Avoid truncating repo config on create",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-11T08:58:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3577,11 +3578,39 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5970",
         "author": "CygnusMaximillian",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-11T07:58:20Z",
+        "updated_at": "2026-06-11T09:20:18Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4742,
+        "title": "app: Makefile: .github/app: Add Windows Arm64 builds",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4742",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-11T09:43:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "windows",
+          "app",
+          "cncf-cla: yes",
+          "approved",
+          "size/L",
+          "needs review"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4066,7 +4095,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:34:12Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4170,7 +4199,7 @@
           "approved",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "APPROVED",
         "check_state": "PENDING",
         "action": {
