@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-12T21:41:35+00:00",
+  "generated_at": "2026-06-12T22:40:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 220,
+  "open_prs_total": 221,
   "open_drafts_total": 43,
-  "actionable_total": 137,
+  "actionable_total": 136,
   "tracked_total": 44,
   "buckets": {
     "needs_rebase": [
@@ -2106,30 +2106,6 @@
         }
       },
       {
-        "number": 5996,
-        "title": "frontend: Gateway: Fix crash when spec.listeners is undefined",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5996",
-        "author": "Anjali-Chauhan1",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-12T15:45:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5690,
         "title": "backend: Skip DaemonSet pods during drain",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5690",
@@ -3698,30 +3674,6 @@
         }
       },
       {
-        "number": 5931,
-        "title": "backend: helm: Avoid truncating repo config on create",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-12T18:10:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5955,
         "title": "frontend: Add Storybook stories for ServiceAccount List",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
@@ -3752,6 +3704,30 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-12T20:39:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5931,
+        "title": "backend: helm: Avoid truncating repo config on create",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-12T22:08:19Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
