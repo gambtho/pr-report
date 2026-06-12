@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-11*
+*Last updated: 2026-06-12*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -94,6 +94,11 @@
 - @kahirokunn: PR #5874 (Cluster Inventory charts) — NEEDS_DISCUSSION 2026-06-10 due to potential trailing-slash bug in Helm validation. PR was substantially reworked 2026-06-10 with 4 new commits. Previously approved 2026-05-28 (different content).
 
 ## Session Log
+### 2026-06-12
+- Reviewed 0 PRs
+- Skipped: 42 drafts + 15 SHA-unchanged (SKIP_SET) + 204 non-draft non-skip candidates all had human review activity (reviews or comments > 0)
+- New observations: No actionable PRs found. REREVIEW_SET empty (no SHA changes). @illume continues to review all new PRs rapidly before daily job runs.
+
 ### 2026-06-11
 - Reviewed 2 PRs: #5832 (re-review, NEEDS_DISCUSSION), #5798 (re-review, NEEDS_DISCUSSION)
 - Skipped: 30 SHA-unchanged + 184 non-re-review candidates all had human review activity (reviews or comments > 0) + 42 drafts

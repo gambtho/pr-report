@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T08:00:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [],
+  "skipped": [
+    {
+      "number": "drafts",
+      "reason": "42 draft PRs skipped"
+    },
+    {
+      "number": "sha-unchanged",
+      "reason": "15 previously-reviewed PRs with unchanged SHA skipped (SKIP_SET)"
+    },
+    {
+      "number": "human-reviewed",
+      "reason": "204 non-draft non-skip candidates all had existing human review activity (reviews or comments > 0)"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "verdicts": {
+      "approve": 0,
+      "request_changes": 0,
+      "needs_discussion": 0
+    },
+    "findings": {
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 0,
+      "positive": 0
+    },
+    "sizes": {
+      "lockfile_only": 0,
+      "small": 0,
+      "medium": 0,
+      "large": 0,
+      "very_large": 0
+    }
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` \u2014 description starts with capital letter",
+    "Keep commit subject under 72 characters (soft limit)",
+    "Do NOT include auto-close keywords (fixes, closes, resolves) in commit messages",
+    "Approval style is warm and brief: \ud83c\udf89 thanks! is the standard merge acknowledgment",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need",
+    "Frontend: fix exhaustive-deps lint violations rather than suppressing with eslint-disable",
+    "Backend (Go): use comma-ok type assertions to avoid panics; structured logging via slog",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic",
+    "CNCF CLA is a hard merge blocker",
+    "Reviewer @illume is primary maintainer and consistently requests rebase to remove merge-main commits"
+  ],
+  "skip_style_learning": true
+}
