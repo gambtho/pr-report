@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-12T19:46:21+00:00",
+  "generated_at": "2026-06-12T20:53:50+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 219,
+  "open_prs_total": 220,
   "open_drafts_total": 43,
-  "actionable_total": 138,
+  "actionable_total": 137,
   "tracked_total": 44,
   "buckets": {
     "needs_rebase": [
@@ -1146,7 +1146,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T20:11:06Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2140,30 +2140,6 @@
         "labels": [
           "cncf-cla: no",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5949,
-        "title": "frontend: Add Storybook stories for ServiceAccount Details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-12T17:37:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3343,34 +3319,10 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-09T20:21:45Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-10T03:08:55Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3698,30 +3650,6 @@
         }
       },
       {
-        "number": 5956,
-        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-12T16:20:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5993,
         "title": "frontend: logs: persist follow and showTimestamps to localStorage",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5993",
@@ -3780,6 +3708,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5955,
+        "title": "frontend: Add Storybook stories for ServiceAccount List",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-12T20:05:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5956,
+        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-12T20:39:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3996,7 +3972,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
