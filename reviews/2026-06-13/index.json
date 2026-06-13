@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-13",
+  "generated_at": "2026-06-13T07:37:00Z",
+  "repo": "kubernetes-sigs/headlamp",
+  "prs_reviewed": [
+    {"number": 5881, "title": "ci: validate workflow run SHA before uploading release assets", "verdict": "APPROVE", "size": "Small"}
+  ],
+  "skipped": [
+    {"number": 0, "reason": "43 draft PRs excluded"},
+    {"number": 0, "reason": "31 PRs in SKIP_SET (SHA unchanged)"},
+    {"number": 0, "reason": "191 non-draft non-skip candidates all had human review activity (reviews or comments > 0)"}
+  ],
+  "stats": {
+    "total": 1,
+    "verdicts": {"approve": 1, "request_changes": 0, "needs_discussion": 0},
+    "findings": {"critical": 0, "warning": 1, "suggestion": 1, "positive": 4},
+    "sizes": {"lockfile_only": 0, "small": 1, "medium": 0, "large": 0, "very_large": 0}
+  },
+  "style_guide": [
+    "Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter.",
+    "Keep commit subject under 72 characters (soft limit).",
+    "Do NOT include `Fixes #NN`, `closes #NN`, or similar auto-close keywords in commit messages.",
+    "Approval style is warm and brief: `🎉 thanks!` is the standard merge acknowledgment.",
+    "Reviewer @illume is the primary maintainer; issues CHANGES_REQUESTED for commit guideline violations before final APPROVE.",
+    "copilot-pull-request-reviewer[bot] auto-reviews all PRs — its presence does not indicate human review.",
+    "PRs must fix a real bug, add a feature, or address a clear maintenance need.",
+    "Frontend (TypeScript/React): fix `exhaustive-deps` lint violations rather than suppressing.",
+    "Backend (Go): use comma-ok type assertions; structured logging via slog; test-first style.",
+    "Tests required for both frontend (Vitest) and backend (Go test) when changing logic."
+  ],
+  "skip_style_learning": true
+}

@@ -1,6 +1,6 @@
 # PR Review Learnings — kubernetes-sigs/headlamp
 
-*Last updated: 2026-06-12*
+*Last updated: 2026-06-13*
 
 ## Review Style Guide
 - Commit subject format: `<area>: <SubArea>: Description` — description starts with capital letter (e.g. `frontend: NodeDetails: Fix drain status polling leak`, `backend: auth: Bound FuzzSanitizeClusterName input`).
@@ -29,7 +29,7 @@
 ## Common Issues
 - Commit message format violations: `feat(area): ...` (Conventional Commits style) instead of `area: Component: Description` (seen in PR #5746, #5778; 6 sessions). PR #5778 by @Rohith-Saran persists after 5 re-reviews.
 - Commit message missing SubArea segment: `area: Description` instead of `area: SubArea: Description` (seen in PR #5785, #5843, #5832, #5842, #5841, #5775, #5783, #5844, #5804, #5877 partial, #5895, #5903, #5902, #5777; multiple sessions). PR #5832 second commit also has this issue (2026-06-11).
-- Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce).
+- Commit subject lowercase verb: `frontend: fix ...` instead of `frontend: Fix ...` (seen in PR #5841, #5842 by @Naga15 — now fixed; also #5843 by @Rohith-Saran; also #5786 by @vmridul; also #5903 by @codeurluce; also original commit of #5881 by @skools-here — fixed in re-review).
 - Commit subject exceeding 72-char soft limit (seen in PR #5785: >90 chars; PR #5785 still unfixed in 2026-05-29 re-review).
 - Helm schema `additionalProperties: false` with incomplete field coverage (fieldRef/resourceFieldRef missing from valueFrom in PR #5746; outstanding after 3 reviews). PR #5778 missing `externalLinks` from `values.schema.json` (config.additionalProperties is not false so not a hard block, but still a best-practice gap).
 - React shorthand `<>` fragments receiving `key` props (seen in PR #5538 — fix was to use `<React.Fragment key={...}>`).
@@ -63,6 +63,7 @@
 - root `package-lock.json` changes that add unrelated dev dependencies without matching `package.json` update: can introduce major-version mismatches with workspace sub-packages (seen in PR #5775 — cross-env@10.1.0 added to root lock while frontend/package.json pins ^7.0.3; flagged 2026-06-10).
 - Promised fix not committed: author responds to review comment claiming a fix is in place, but the actual commit does not include the change (seen in PR #5798 — @Nabsku claimed IsAuthBypassURL was updated to path-structure checks, but strings.Contains still present; 2026-06-11).
 - When telemetry Jaeger+stdout fallback is allowed but no actual Jaeger exporter is constructed, `enabledTypes` still reports "Jaeger" as active — misleading log output (seen in PR #5832 second commit; 2026-06-11).
+- GitHub Actions script injection: inline `${{ inputs.<name> }}` expressions inside bash run steps can be exploited if the input contains shell metacharacters. Safer pattern: assign to env var in the step's `env:` block and reference the env var in the script. (seen in PR #5881 ARGS+= pattern; flagged 2026-06-13 — pre-existing pattern, partially mitigated by workflow_dispatch write-access requirement).
 
 ## False Positives / Project Conventions
 - `sessionStorage` usage in `AuthChooser` for OIDC auto-login loop prevention is intentional — clears on tab close.
@@ -76,6 +77,7 @@
 - MUI sx array merging (`sx={[defaultSx, ...(Array.isArray(labelSx) ? labelSx : labelSx ? [labelSx] : [])]}`) in PRs touching `HoverInfoLabel` is the correct MUI v5 pattern for merging sx props. Not a bug.
 - `!IsKubernetesResourceAPIPath || !IsAuthBypassURL` condition in cache middleware (PR #5798): `IsAuthBypassURL` returns false for `/version`, `/healthz`, `/selfsubjectrulesreviews`, `/selfsubjectaccessreviews` — these should also bypass caching even under `/apis/` paths. The `||` is intentional and correct. However, the `strings.Contains` implementation in `IsAuthBypassURL` is a pre-existing concern for resources whose names include "/version" or "/healthz" as substrings — flag if @Nabsku's promised path-structure fix lands.
 - `values.schema.json` `config` section has no `additionalProperties: false` — adding new fields to `values.yaml` without updating the schema will not cause `helm lint` to fail. Still good practice to update the schema.
+- GitHub Actions workflow_dispatch `${{ inputs.* }}` expressions used directly in gh CLI arguments (e.g. `gh release download "${{ inputs.release_name }}"`) are pre-existing project pattern. Flag inline use in complex bash logic (arrays, string manipulation) as Warning; simple single-argument use in gh CLI commands is lower risk due to write-access-only dispatch.
 
 ## Author Notes
 - @sudhidutta7694: PRs #5894 and #5893. PR #5894 (EditorDialog conflict-detection) — APPROVE 2026-06-10 (i18n update only since last APPROVE 2026-06-08). PR #5893 (DeleteButton stories) — APPROVE 2026-06-08. Strong upward trajectory; thorough test coverage.
@@ -92,8 +94,14 @@
 - @vmridul: Small Go fix contributor; needs reminder about commit subject capitalization and SubArea format.
 - @Nabsku: Backend contributor; PRs #5777, #5798 both approved functionally. Strong test author. PR #5798 NEEDS_DISCUSSION 2026-06-11 — author claimed IsAuthBypassURL was updated to path-structure checks but no such commit present; strings.Contains still in place.
 - @kahirokunn: PR #5874 (Cluster Inventory charts) — NEEDS_DISCUSSION 2026-06-10 due to potential trailing-slash bug in Helm validation. PR was substantially reworked 2026-06-10 with 4 new commits. Previously approved 2026-05-28 (different content).
+- @skools-here: PR #5881 (CI SHA validation) — APPROVE 2026-06-13 (re-review). Addressed @illume's CHANGES_REQUESTED (commit capitalization). Strong security improvements (eval removal, find -print0 array). Residual: inline ${{ inputs.release_name }} in bash array should use env var pattern.
 
 ## Session Log
+### 2026-06-13
+- Reviewed 1 PR: #5881 (re-review, APPROVE)
+- Skipped: 43 drafts + 31 SHA-unchanged (SKIP_SET) + 191 non-draft non-skip candidates all had human review activity (reviews or comments > 0)
+- New observations: PR #5881 — @skools-here addressed @illume's CHANGES_REQUESTED (lowercase commit 'v'). PR now has two commits; second adds eval removal and array-safe asset handling. Residual: ${{ inputs.release_name }} still inlined in bash array syntax — suggest env var pattern. Overall: approvable.
+
 ### 2026-06-12
 - Reviewed 0 PRs
 - Skipped: 42 drafts + 15 SHA-unchanged (SKIP_SET) + 204 non-draft non-skip candidates all had human review activity (reviews or comments > 0)

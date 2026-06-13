@@ -1,0 +1,63 @@
+{
+  "pr_number": 5881,
+  "title": "ci: validate workflow run SHA before uploading release assets",
+  "author": "skools-here",
+  "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
+  "verdict": "APPROVE",
+  "size_category": "Small",
+  "files_changed": 1,
+  "additions": 61,
+  "deletions": 18,
+  "re_review": true,
+  "date": "2026-06-13",
+  "findings_count": {
+    "critical": 0,
+    "warning": 1,
+    "suggestion": 1,
+    "positive": 4
+  },
+  "findings": [
+    {
+      "severity": "Warning",
+      "confidence": "MEDIUM",
+      "file": ".github/workflows/push-release-assets.yml",
+      "line": 175,
+      "description": "ARGS+=(\"${{ inputs.release_name }}\") uses an inline GitHub Actions expression inside a bash body. If release_name contains shell metacharacters (quotes, semicolons), it can break array syntax or inject commands. Fix: assign to env var RELEASE_NAME and use ARGS+=(\"$RELEASE_NAME\")."
+    },
+    {
+      "severity": "Suggestion",
+      "confidence": "LOW",
+      "file": ".github/workflows/push-release-assets.yml",
+      "line": null,
+      "description": "Two commits where the second is a fixup of the first; consider squashing into one atomic commit."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": ".github/workflows/push-release-assets.yml",
+      "line": null,
+      "description": "eval $CMD replaced with proper bash array node push-release-assets.js \"${ARGS[@]}\" — eliminates command injection via string concatenation."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": ".github/workflows/push-release-assets.yml",
+      "line": null,
+      "description": "ASSETS=($(ls -1 ...)) replaced with find -print0 / null-delimited read loop — safe for filenames with spaces."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": ".github/workflows/push-release-assets.yml",
+      "line": null,
+      "description": "New SHA validation step checks each workflow run's headSha against the release tag commit SHA — supply-chain provenance improvement."
+    },
+    {
+      "severity": "Positive",
+      "confidence": null,
+      "file": null,
+      "line": null,
+      "description": "CNCF CLA signed; @illume CHANGES_REQUESTED (lowercase commit subject) resolved in updated commits."
+    }
+  ]
+}
