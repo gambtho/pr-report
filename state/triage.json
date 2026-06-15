@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T20:17:16+00:00",
+  "generated_at": "2026-06-15T21:58:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 234,
-  "open_drafts_total": 44,
+  "open_prs_total": 236,
+  "open_drafts_total": 42,
   "actionable_total": 129,
-  "tracked_total": 59,
+  "tracked_total": 58,
   "buckets": {
     "needs_rebase": [
       {
@@ -232,7 +232,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1550,31 +1550,6 @@
         }
       },
       {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-15T18:03:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5875,
         "title": "frontend: resourceQuota: Add visual usage indicators for quota pressu\u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5875",
@@ -2802,7 +2777,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T21:23:52Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3228,34 +3203,6 @@
         }
       },
       {
-        "number": 5877,
-        "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
-        "author": "skoeva",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-05T11:11:50Z",
-        "days_since_update": 10,
-        "labels": [
-          "backend",
-          "auth",
-          "quality",
-          "oidc",
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5619,
         "title": "frontend: NamespacesAutocomplete: Clear stale namespaces from localStorage on cluster load",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5619",
@@ -3647,7 +3594,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-12T20:39:15Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4101,6 +4048,58 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-15T20:38:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5877,
+        "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
+        "author": "skoeva",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-15T21:27:22Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "auth",
+          "quality",
+          "oidc",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4232,7 +4231,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4256,7 +4255,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
@@ -4561,30 +4560,6 @@
           "javascript",
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6037,
-        "title": "fix: getPercentStr renders spurious trailing .0 for whole-number percentages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6037",
-        "author": "aryanraj45",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-15T20:12:13Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
