@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-15T18:40:43+00:00",
+  "generated_at": "2026-06-15T20:17:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 234,
-  "open_drafts_total": 43,
+  "open_drafts_total": 44,
   "actionable_total": 129,
   "tracked_total": 59,
   "buckets": {
@@ -584,7 +584,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 37,
+        "days_since_update": 38,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1170,7 +1170,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T20:11:06Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2199,7 +2199,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2778,7 +2778,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3623,7 +3623,7 @@
         "author": "Shahazadi-Shaguftha-Syed",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-12T20:05:52Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -4101,31 +4101,6 @@
           "is_tracked": false,
           "verifiable": true
         }
-      },
-      {
-        "number": 6036,
-        "title": "frontend: stateless: Fix various issues",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6036",
-        "author": "sniok",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-15T18:19:08Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
       }
     ],
     "waiting_on_author": [
@@ -4586,6 +4561,30 @@
           "javascript",
           "cncf-cla: yes",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6037,
+        "title": "fix: getPercentStr renders spurious trailing .0 for whole-number percentages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6037",
+        "author": "aryanraj45",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-06-15T20:12:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
