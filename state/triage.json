@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-17T19:50:51+00:00",
+  "generated_at": "2026-06-17T20:53:23+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 228,
   "open_drafts_total": 46,
-  "actionable_total": 143,
+  "actionable_total": 144,
   "tracked_total": 53,
   "buckets": {
     "needs_rebase": [
@@ -1314,7 +1314,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T20:11:06Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2674,6 +2674,54 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5955,
+        "title": "frontend: Add Storybook stories for ServiceAccount List",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-17T19:53:50Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5949,
+        "title": "frontend: Add Storybook stories for ServiceAccount Details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5949",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-17T19:53:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3398,30 +3446,6 @@
         }
       },
       {
-        "number": 5950,
-        "title": "Frontend: use lazy useState in NumRowsInput",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5950",
-        "author": "piyusshkumar",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-09T11:35:07Z",
-        "days_since_update": 8,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5933,
         "title": "chart: Support deploymentLabels and additional templated values",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5933",
@@ -3648,30 +3672,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-12T20:05:52Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4268,6 +4268,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5950,
+        "title": "Frontend: use lazy useState in NumRowsInput",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5950",
+        "author": "piyusshkumar",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-17T20:04:05Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4398,7 +4422,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "lifecycle/stale",
