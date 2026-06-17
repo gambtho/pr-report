@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-17T03:23:24+00:00",
+  "generated_at": "2026-06-17T05:52:47+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 249,
-  "open_drafts_total": 41,
-  "actionable_total": 141,
+  "open_prs_total": 248,
+  "open_drafts_total": 42,
+  "actionable_total": 140,
   "tracked_total": 54,
   "buckets": {
     "needs_rebase": [
@@ -159,7 +159,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 42,
+        "days_since_update": 43,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -183,7 +183,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 39,
+        "days_since_update": 40,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2357,31 +2357,6 @@
         }
       },
       {
-        "number": 6050,
-        "title": "headlamp-plugin: add opt-in --with-claude-skills to create/upgrade",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6050",
-        "author": "yolossn",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-16T13:02:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5945,
         "title": "frontend: GlobalSearchContent: Add Storybook stories",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5945",
@@ -2420,6 +2395,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5717,
+        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
+        "author": "WasThatRudy",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-17T05:24:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2799,7 +2798,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2823,7 +2822,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T04:12:31Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2943,7 +2942,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-30T05:39:47Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2991,7 +2990,7 @@
         "author": "ManthanNimodiya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-02T05:00:04Z",
-        "days_since_update": 14,
+        "days_since_update": 15,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3063,7 +3062,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T05:10:57Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3111,7 +3110,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-05T05:29:42Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4171,38 +4170,14 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6033",
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-17T02:27:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5717,
-        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
-        "author": "WasThatRudy",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-17T02:47:44Z",
+        "updated_at": "2026-06-17T05:27:44Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4219,7 +4194,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
         "author": "goingforstudying-ctrl",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-17T03:09:56Z",
+        "updated_at": "2026-06-17T05:32:48Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4343,7 +4318,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 42,
+        "days_since_update": 43,
         "labels": [
           "cncf-cla: yes",
           "size/L"
