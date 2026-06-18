@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-18T07:59:35+00:00",
+  "generated_at": "2026-06-18T09:42:29+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 227,
   "open_drafts_total": 46,
-  "actionable_total": 136,
+  "actionable_total": 135,
   "tracked_total": 60,
   "buckets": {
     "needs_rebase": [
@@ -328,7 +328,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-25T09:24:57Z",
-        "days_since_update": 23,
+        "days_since_update": 24,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -785,7 +785,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2811,7 +2811,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3291,7 +3291,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3651,7 +3651,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-13T08:12:16Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3675,7 +3675,7 @@
         "author": "ibshafique",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-13T08:19:58Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3849,30 +3849,6 @@
         "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T14:28:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5956,
-        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-17T14:35:42Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4109,30 +4085,6 @@
         }
       },
       {
-        "number": 5798,
-        "title": "backend: k8cache: Bypass non-API cluster paths",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
-        "author": "Nabsku",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-17T17:01:03Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5866,
         "title": "backend: oidc: Evict abandoned state tokens to prevent memory leak",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5866",
@@ -4263,6 +4215,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5798,
+        "title": "backend: k8cache: Bypass non-API cluster paths",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5798",
+        "author": "Nabsku",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-18T09:17:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5956,
+        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-18T09:30:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4552,7 +4552,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:34:12Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4658,30 +4658,6 @@
           "javascript",
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5754,
-        "title": "app: Add a setting to disable the system tray icon",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5754",
-        "author": "VlatkoMilisav",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-17T10:22:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
