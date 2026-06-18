@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T22:46:52+00:00",
+  "generated_at": "2026-06-18T23:41:50+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 230,
   "open_drafts_total": 47,
@@ -1682,7 +1682,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:25Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "dependencies",
@@ -1713,7 +1713,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:28Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2515,30 +2515,6 @@
         }
       },
       {
-        "number": 5931,
-        "title": "backend: helm: refactor createFullPath to avoid truncating existing repo config",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
-        "author": "goingforstudying-ctrl",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-18T16:19:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5955,
         "title": "frontend: Add Storybook stories for ServiceAccount List",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
@@ -2573,6 +2549,30 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5931,
+        "title": "backend: helm: refactor createFullPath to avoid truncating existing repo config",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5931",
+        "author": "goingforstudying-ctrl",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-18T23:14:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
