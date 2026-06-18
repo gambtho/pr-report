@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-18T19:51:49+00:00",
+  "generated_at": "2026-06-18T21:01:03+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 228,
   "open_drafts_total": 47,
-  "actionable_total": 134,
+  "actionable_total": 136,
   "tracked_total": 60,
   "buckets": {
     "needs_rebase": [
@@ -1091,7 +1091,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T20:11:06Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2539,12 +2539,36 @@
         }
       },
       {
+        "number": 5955,
+        "title": "frontend: Add Storybook stories for ServiceAccount List",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-18T20:11:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 6075,
         "title": "backend: headlampconfig: Add unit tests for config types",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6075",
         "author": "Aamod007",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-18T16:28:27Z",
+        "updated_at": "2026-06-18T20:27:36Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
@@ -3705,7 +3729,7 @@
         "author": "piyusshkumar",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T20:04:05Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4205,16 +4229,16 @@
         }
       },
       {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
+        "number": 5990,
+        "title": "backend: portforward: Reject duplicate IDs to prevent resource leaks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5990",
+        "author": "Nyx128",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-18T19:49:11Z",
+        "updated_at": "2026-06-18T19:55:31Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4340,32 +4364,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 4698,
-        "title": "frontend: PortForward: Add stories for various connection states",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4698",
-        "author": "aravind4799",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-19T20:20:55Z",
-        "days_since_update": 29,
-        "labels": [
-          "cncf-cla: yes",
-          "lifecycle/stale",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "APPROVED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
@@ -4712,6 +4710,57 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6079,
+        "title": "releaser: Sign mac binaries by default when triggering app builds",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6079",
+        "author": "sniok",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-06-18T20:00:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4698,
+        "title": "frontend: PortForward: Add stories for various connection states",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4698",
+        "author": "aravind4799",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-06-18T20:30:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "lifecycle/rotten",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "APPROVED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
