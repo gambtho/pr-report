@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-18T19:01:16+00:00",
+  "generated_at": "2026-06-18T19:51:49+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 228,
-  "open_drafts_total": 46,
-  "actionable_total": 135,
+  "open_drafts_total": 47,
+  "actionable_total": 134,
   "tracked_total": 60,
   "buckets": {
     "needs_rebase": [
@@ -584,7 +584,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 40,
+        "days_since_update": 41,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2182,7 +2182,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2417,30 +2417,6 @@
         }
       },
       {
-        "number": 5990,
-        "title": "backend: portforward: Reject duplicate IDs to prevent resource leaks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5990",
-        "author": "Nyx128",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-17T14:24:32Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6010,
         "title": "build(deps-dev): bump esbuild from 0.25.12 to 0.28.1 in /app",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6010",
@@ -2573,30 +2549,6 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-18T16:43:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4242,6 +4194,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5955,
+        "title": "frontend: Add Storybook stories for ServiceAccount List",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-18T19:49:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
