@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T20:39:46+00:00",
+  "generated_at": "2026-06-19T21:33:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 237,
+  "open_prs_total": 236,
   "open_drafts_total": 47,
   "actionable_total": 147,
-  "tracked_total": 59,
+  "tracked_total": 58,
   "buckets": {
     "needs_rebase": [
       {
@@ -232,7 +232,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 36,
+        "days_since_update": 37,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1833,31 +1833,6 @@
         }
       },
       {
-        "number": 5511,
-        "title": "backend: cmd: Return errors from file utilities instead of exiting",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5511",
-        "author": "YadavAkhileshh",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-19T14:23:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5849,
         "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
@@ -2514,30 +2489,6 @@
         }
       },
       {
-        "number": 5954,
-        "title": "frontend: Highlight YAML syntax errors using Monaco editor markers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5954",
-        "author": "Psykii22",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-19T15:23:52Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6096,
         "title": "headlamp-plugin: add opt-in --with-claude-skills to create/upgrade",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6096",
@@ -2979,7 +2930,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T21:23:52Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4279,6 +4230,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5954,
+        "title": "frontend: Highlight YAML syntax errors using Monaco editor markers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5954",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-19T21:32:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4385,7 +4360,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 36,
+        "days_since_update": 37,
         "labels": [
           "cncf-cla: yes",
           "size/L"
