@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-20T03:20:23+00:00",
+  "generated_at": "2026-06-20T05:40:59+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 236,
+  "open_prs_total": 239,
   "open_drafts_total": 47,
-  "actionable_total": 147,
+  "actionable_total": 148,
   "tracked_total": 58,
   "buckets": {
     "needs_rebase": [
@@ -159,7 +159,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 45,
+        "days_since_update": 46,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -183,7 +183,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 42,
+        "days_since_update": 43,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2465,30 +2465,6 @@
         }
       },
       {
-        "number": 5646,
-        "title": "frontend: Add mutating admission policy resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
-        "author": "harrshita123",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-19T15:21:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6096,
         "title": "headlamp-plugin: add opt-in --with-claude-skills to create/upgrade",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6096",
@@ -2562,54 +2538,6 @@
         }
       },
       {
-        "number": 6061,
-        "title": "backend: Add test coverage for logger error type handling",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6061",
-        "author": "Aamod-Dev",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-19T18:08:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6020,
-        "title": "app: Persist Electron zoom across navigation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6020",
-        "author": "Aamod-Dev",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-19T18:09:12Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5955,
         "title": "frontend: Add Storybook stories for ServiceAccount List",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
@@ -2647,6 +2575,126 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6020,
+        "title": "app: Persist Electron zoom across navigation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6020",
+        "author": "Aamod-Dev",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-20T04:00:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6109,
+        "title": "backend: portforward: Fix context key to match rest of backend",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6109",
+        "author": "r0hansaxena",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-20T04:06:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6061,
+        "title": "backend: Add test coverage for logger error type handling",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6061",
+        "author": "Aamod-Dev",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-20T05:09:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6024,
+        "title": "frontend: Handle invalid cluster settings storage",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6024",
+        "author": "Aamod-Dev",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-20T05:13:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5646,
+        "title": "frontend: Add mutating admission policy resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
+        "author": "harrshita123",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-20T05:33:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2978,7 +3026,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3002,7 +3050,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T04:12:31Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3122,7 +3170,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-30T05:39:47Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3170,7 +3218,7 @@
         "author": "ManthanNimodiya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-02T05:00:04Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3242,7 +3290,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T05:10:57Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3362,30 +3410,6 @@
         "author": "treydock",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-09T14:34:51Z",
-        "days_since_update": 10,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5908,
-        "title": "fix: check 'patch' instead of 'update' permission for Restart button",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
-        "author": "mishradwaterlaw",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-09T16:55:50Z",
         "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
@@ -3756,30 +3780,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5956,
-        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-18T14:05:46Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4302,6 +4302,78 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5956,
+        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-20T04:57:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6068,
+        "title": "frontend: util: Add unit tests for compareUnits",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6068",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-20T05:06:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5908,
+        "title": "fix: check 'patch' instead of 'update' permission for Restart button",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
+        "author": "mishradwaterlaw",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-20T05:09:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4384,7 +4456,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 45,
+        "days_since_update": 46,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4799,30 +4871,6 @@
         }
       },
       {
-        "number": 6097,
-        "title": "docs: fix command of the Keycloak OIDC tutorial",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6097",
-        "author": "yuki681",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-19T14:10:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5952,
         "title": "frontend: ResourceTable: Stable row id when metadata.uid is missing",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5952",
@@ -4857,30 +4905,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6068,
-        "title": "frontend: util: Add unit tests for compareUnits",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6068",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-19T15:21:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
