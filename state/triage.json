@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-20T07:34:51+00:00",
+  "generated_at": "2026-06-20T09:15:59+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 241,
+  "open_prs_total": 243,
   "open_drafts_total": 47,
-  "actionable_total": 149,
+  "actionable_total": 148,
   "tracked_total": 58,
   "buckets": {
     "needs_rebase": [
@@ -761,7 +761,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2704,30 +2704,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 6109,
-        "title": "backend: portforward: Fix context key to match rest of backend",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6109",
-        "author": "r0hansaxena",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-20T07:23:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2858,7 +2834,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3338,7 +3314,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3602,7 +3578,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-13T08:12:16Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3626,7 +3602,7 @@
         "author": "ibshafique",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-13T08:19:58Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3977,30 +3953,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6051,
-        "title": "frontend: job: Add Storybook stories for Details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6051",
-        "author": "xonas1101",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-19T14:16:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4398,6 +4350,54 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6088,
+        "title": "frontend: tests: Centralize hardcoded backend URL as API_BASE",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6088",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-20T07:48:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6051,
+        "title": "frontend: job: Add Storybook stories for Details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6051",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-20T07:48:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4649,7 +4649,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:34:12Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4977,30 +4977,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6088,
-        "title": "frontend: tests: Centralize hardcoded backend URL as API_BASE",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6088",
-        "author": "xonas1101",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-19T15:24:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
