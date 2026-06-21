@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-21T13:43:10+00:00",
+  "generated_at": "2026-06-21T14:55:00+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 252,
   "open_drafts_total": 47,
-  "actionable_total": 149,
-  "tracked_total": 55,
+  "actionable_total": 150,
+  "tracked_total": 54,
   "buckets": {
     "needs_rebase": [
       {
@@ -135,7 +135,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "needs_rebase",
         "updated_at": "2026-04-29T14:28:08Z",
-        "days_since_update": 52,
+        "days_since_update": 53,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -965,7 +965,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-03T14:07:59Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -990,7 +990,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-03T14:08:01Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1041,7 +1041,7 @@
         "author": "YadavAkhileshh",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T14:11:30Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1066,7 +1066,7 @@
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-09T14:11:32Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1335,31 +1335,6 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5778,
-        "title": "feat: Add configurable external links to sidebar via Helm values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
-        "author": "Rohith-Saran",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-12T18:21:47Z",
-        "days_since_update": 8,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -1984,7 +1959,7 @@
         "author": "datacore-gjanoti",
         "bucket": "ci_failing",
         "updated_at": "2026-05-19T14:35:49Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2081,7 +2056,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-06-01T14:36:04Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "size/M",
@@ -2318,37 +2293,13 @@
         }
       },
       {
-        "number": 5775,
-        "title": "frontend: Fix Backstage receiver listener leak on Home remount",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5775",
-        "author": "Rohith-Saran",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-19T14:20:16Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5333,
         "title": "frontend: PVC creation form ui",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5333",
         "author": "anoopw3bdev",
         "bucket": "ci_failing",
         "updated_at": "2026-06-19T14:21:58Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -2593,6 +2544,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5778,
+        "title": "feat: Add configurable external links to sidebar via Helm values",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+        "author": "Rohith-Saran",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-21T14:23:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3311,7 +3286,7 @@
         "author": "treydock",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-09T14:34:51Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3629,7 +3604,7 @@
         "author": "Athang69",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-18T13:46:26Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3653,7 +3628,7 @@
         "author": "cgiraldo",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-18T13:47:54Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3677,7 +3652,7 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-18T13:59:21Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3826,7 +3801,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-19T14:14:48Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3850,7 +3825,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-19T14:21:34Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3874,7 +3849,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-19T14:22:11Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3898,7 +3873,7 @@
         "author": "yuki681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-19T14:24:54Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XXL",
@@ -4371,6 +4346,54 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5775,
+        "title": "frontend: Fix Backstage receiver listener leak on Home remount",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5775",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-21T14:08:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-21T14:14:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4598,7 +4621,7 @@
         "author": "kishore08-07",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-04T14:08:37Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4772,7 +4795,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-17T13:46:44Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "dependencies",
           "javascript",
@@ -4874,7 +4897,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-19T14:12:16Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4902,30 +4925,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-19T15:22:19Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
