@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T22:42:13+00:00",
+  "generated_at": "2026-06-22T23:38:47+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 256,
+  "open_prs_total": 258,
   "open_drafts_total": 46,
-  "actionable_total": 163,
-  "tracked_total": 53,
+  "actionable_total": 162,
+  "tracked_total": 55,
   "buckets": {
     "needs_rebase": [
       {
@@ -349,30 +349,6 @@
         }
       },
       {
-        "number": 5968,
-        "title": "frontend: common: Add ConditionList, PhaseLabel and getReadyCondition",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5968",
-        "author": "Athang69",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-10T06:33:31Z",
-        "days_since_update": 12,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5050,
         "title": "fix: add securityContext support to ephemeral debug containers for restricted PodSecurity namespaces",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5050",
@@ -411,30 +387,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-19T19:19:03Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -1679,7 +1631,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:25Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "dependencies",
@@ -1710,7 +1662,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:28Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1787,6 +1739,56 @@
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T13:42:36Z",
         "days_since_update": 4,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5968,
+        "title": "frontend: common: Add ConditionList, PhaseLabel and getReadyCondition",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5968",
+        "author": "Athang69",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-22T22:57:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-22T22:57:54Z",
+        "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2642,6 +2644,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6146,
+        "title": "frontend: add CreateEndpointForm for Endpoints Network resource",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6146",
+        "author": "ayesigaisaac",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-22T23:28:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -4034,54 +4060,6 @@
         }
       },
       {
-        "number": 5956,
-        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-20T04:57:47Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6068,
-        "title": "frontend: util: Add unit tests for compareUnits",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6068",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-20T05:06:19Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5908,
         "title": "fix: check 'patch' instead of 'update' permission for Restart button",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
@@ -4383,6 +4361,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6068,
+        "title": "frontend: util: Add unit tests for compareUnits",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6068",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-22T23:15:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5956,
+        "title": "frontend: EditorDialog: Fix aria-controls to reference the actual editor textarea",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5956",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-22T23:15:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
