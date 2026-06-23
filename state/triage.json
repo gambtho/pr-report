@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-23T18:54:39+00:00",
+  "generated_at": "2026-06-23T19:44:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 247,
   "open_drafts_total": 51,
-  "actionable_total": 160,
+  "actionable_total": 158,
   "tracked_total": 58,
   "buckets": {
     "needs_rebase": [
@@ -608,7 +608,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 45,
+        "days_since_update": 46,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2156,7 +2156,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-05-28T19:03:44Z",
-        "days_since_update": 25,
+        "days_since_update": 26,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2490,30 +2490,6 @@
         }
       },
       {
-        "number": 5881,
-        "title": "ci: validate workflow run SHA before uploading release assets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
-        "author": "skools-here",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-23T14:48:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5413,
         "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
@@ -2527,30 +2503,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6139,
-        "title": "frontend: k8s: Extract KubeObject hooks into standalone hook functions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6139",
-        "author": "therealharshit",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-23T14:53:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2903,31 +2855,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6146",
         "author": "ayesigaisaac",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-23T18:49:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6113,
-        "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
-        "author": "Pragati5-DEBUG",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-23T18:51:12Z",
+        "updated_at": "2026-06-23T19:06:49Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
@@ -4402,32 +4330,6 @@
         }
       },
       {
-        "number": 6014,
-        "title": "frontend: Resource YAML: Fetch latest object before opening",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6014",
-        "author": "ayushmaan-16",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-23T17:26:12Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "cncf-cla: yes",
-          "size/L",
-          "priority/critical-urgent"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6155,
         "title": "frontend: Add AI_ASSISTANT_OPEN HeadlampEvent for plugin-to-AI-Assistant communication",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6155",
@@ -4510,6 +4412,80 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6014,
+        "title": "frontend: Resource YAML: Fetch latest object before opening",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6014",
+        "author": "ayushmaan-16",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-23T19:00:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "cncf-cla: yes",
+          "size/L",
+          "priority/critical-urgent"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6113,
+        "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
+        "author": "Pragati5-DEBUG",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-23T19:21:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5881,
+        "title": "ci: validate workflow run SHA before uploading release assets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-23T19:24:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5096,30 +5072,6 @@
         "author": "Nyx128",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-23T10:53:27Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6092,
-        "title": "frontend: AuthVisible: Fix rules-of-hooks violation by moving hooks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6092",
-        "author": "therealharshit",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-23T12:49:11Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
