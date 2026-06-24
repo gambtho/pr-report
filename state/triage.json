@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T23:31:33+00:00",
+  "generated_at": "2026-06-24T01:10:22+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 250,
   "open_drafts_total": 49,
@@ -256,7 +256,7 @@
         "author": "cmcgalliard",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-22T01:08:32Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -835,7 +835,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:18Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -1606,7 +1606,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:25Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "frontend",
           "dependencies",
@@ -1637,7 +1637,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:28Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2754,30 +2754,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-23T15:34:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6145,
         "title": "frontend: KubeObject: Safely access nested properties",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6145",
@@ -2860,6 +2836,30 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-24T01:10:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
