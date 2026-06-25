@@ -1,62 +1,12 @@
 {
-  "generated_at": "2026-06-25T18:55:44+00:00",
+  "generated_at": "2026-06-25T19:42:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 236,
+  "open_prs_total": 234,
   "open_drafts_total": 47,
-  "actionable_total": 207,
-  "tracked_total": 1,
+  "actionable_total": 205,
+  "tracked_total": 0,
   "buckets": {
-    "needs_rebase": [
-      {
-        "number": 5957,
-        "title": "backend: k8cache: Add unit tests for resource filtering",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5957",
-        "author": "Pragati5-DEBUG",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-24T18:57:07Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-24T15:18:10Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      }
-    ],
+    "needs_rebase": [],
     "ci_failing": [
       {
         "number": 5001,
@@ -560,7 +510,7 @@
         "author": "zyzzmohit",
         "bucket": "ci_failing",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 47,
+        "days_since_update": 48,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1239,7 +1189,7 @@
           "size/M",
           "needs review"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -2232,6 +2182,31 @@
         }
       },
       {
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-24T15:18:10Z",
+        "days_since_update": 1,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 5877,
         "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
@@ -2690,7 +2665,7 @@
         "author": "vikash7485",
         "bucket": "ci_failing",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2810,7 +2785,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
         "author": "illume",
         "bucket": "ci_failing",
-        "updated_at": "2026-06-25T18:52:56Z",
+        "updated_at": "2026-06-25T19:25:46Z",
         "days_since_update": 0,
         "labels": [
           "backend",
@@ -3545,7 +3520,7 @@
           "size/S",
           "needs review"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3565,30 +3540,6 @@
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T20:04:05Z",
         "days_since_update": 7,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6016,
-        "title": "e2e: add accessibility checks for Services and Security pages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6016",
-        "author": "srajang1805",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-21T17:15:42Z",
-        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3667,54 +3618,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6159,
-        "title": "cleanup: frontend: NodeShellAction: Fix namepsace typo and remove dead code",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6159",
-        "author": "srajang1805",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-24T16:11:46Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6163,
-        "title": "frontend: LogsButton: Fix translation key case mismatch",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6163",
-        "author": "srajang1805",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-24T16:11:55Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -3897,13 +3800,37 @@
         }
       },
       {
+        "number": 5957,
+        "title": "backend: k8cache: Add unit tests for resource filtering",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5957",
+        "author": "Pragati5-DEBUG",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-24T18:57:07Z",
+        "days_since_update": 1,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6113,
         "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
         "author": "Pragati5-DEBUG",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-24T18:58:14Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3927,7 +3854,7 @@
         "author": "ayushmaan-16",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-24T19:08:34Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "cncf-cla: yes",
@@ -4054,7 +3981,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "PENDING",
         "action": {
@@ -4078,7 +4005,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4102,7 +4029,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4150,7 +4077,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4387,13 +4314,13 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6127",
         "author": "sid200727",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-25T18:04:10Z",
+        "updated_at": "2026-06-25T18:56:36Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4827,30 +4754,6 @@
         }
       },
       {
-        "number": 6082,
-        "title": "test(frontend): add unit tests for Ingress model class",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6082",
-        "author": "srajang1805",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-22T14:43:22Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5886,
         "title": "frontend: Add RBAC access inspector",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5886",
@@ -4912,7 +4815,7 @@
           "size/L",
           "needs review"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4936,7 +4839,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5084,6 +4987,30 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6082,
+        "title": "test(frontend): add unit tests for Ingress model class",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6082",
+        "author": "srajang1805",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-06-25T19:34:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
