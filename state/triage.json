@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T07:27:46+00:00",
+  "generated_at": "2026-06-25T09:18:15+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 236,
-  "open_drafts_total": 48,
-  "actionable_total": 151,
+  "open_prs_total": 238,
+  "open_drafts_total": 47,
+  "actionable_total": 152,
   "tracked_total": 62,
   "buckets": {
     "needs_rebase": [
@@ -761,7 +761,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 39,
+        "days_since_update": 40,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2499,30 +2499,6 @@
         }
       },
       {
-        "number": 5968,
-        "title": "frontend: common: Add ConditionList, PhaseLabel and getReadyCondition",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5968",
-        "author": "Athang69",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-24T13:20:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6117,
         "title": "frontend: limitRange: Add maxLimitRequestRatio to the detail view",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6117",
@@ -2905,6 +2881,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6186,
+        "title": "ci: codeql: Add SAST workflow for Go and TypeScript",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6186",
+        "author": "Athang69",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-25T08:32:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3035,7 +3035,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 29,
+        "days_since_update": 30,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3443,7 +3443,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3760,30 +3760,6 @@
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-23T14:54:45Z",
         "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5917,
-        "title": "frontend: home: Fix missing key on ErrorBoundary and untranslated strings in cluster components",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5917",
-        "author": "Athang69",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-24T13:20:02Z",
-        "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4357,30 +4333,6 @@
         }
       },
       {
-        "number": 6167,
-        "title": "backend: multiplexer: add tests for exponential backoff connection retries",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6167",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-25T06:17:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6111,
         "title": "frontend: sidebar: Add ability to filter items for HOME sidebar",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6111",
@@ -4435,6 +4387,78 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-25T06:18:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5917,
+        "title": "frontend: home: Fix missing key on ErrorBoundary and untranslated strings in cluster components",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5917",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-25T08:27:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5968,
+        "title": "frontend: common: Add ConditionList, PhaseLabel and getReadyCondition",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5968",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-25T08:49:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6167,
+        "title": "backend: multiplexer: add tests for exponential backoff connection retries",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6167",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-25T09:14:10Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4678,7 +4702,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-07T08:34:12Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/L"
