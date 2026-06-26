@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-26T18:48:30+00:00",
+  "generated_at": "2026-06-26T19:41:25+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 220,
-  "open_drafts_total": 48,
-  "actionable_total": 134,
-  "tracked_total": 69,
+  "open_prs_total": 222,
+  "open_drafts_total": 47,
+  "actionable_total": 135,
+  "tracked_total": 68,
   "buckets": {
     "needs_rebase": [
       {
@@ -681,7 +681,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 48,
+        "days_since_update": 49,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1881,7 +1881,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2192,31 +2192,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6086,
-        "title": "frontend: ViewButton: Fix react-hooks/exhaustive-deps \u2014 use ref for i\u2026",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6086",
-        "author": "JoSParker",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-26T18:48:03Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/S"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "SUCCESS",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -2726,30 +2701,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6009,
-        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6009",
-        "author": "Slambot01",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-26T06:36:27Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3937,30 +3888,6 @@
         }
       },
       {
-        "number": 6179,
-        "title": "plugins: Add rollback support for failed plugin updates",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6179",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T16:53:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5790,
         "title": "frontend: ResourceTable: Fix react-hooks purity and exhaustive-deps",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5790",
@@ -4081,31 +4008,6 @@
         }
       },
       {
-        "number": 5929,
-        "title": "backend: broadcast OIDC token across kubeconfig contexts sharing same IdP",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
-        "author": "Naga15",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T17:27:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6202,
         "title": "frontend: EditButton: fix react-hooks/exhaustive-deps",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6202",
@@ -4116,30 +4018,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5881,
-        "title": "ci: validate workflow run SHA before uploading release assets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T17:51:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4202,54 +4080,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T18:14:29Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5413,
-        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T18:36:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6113,
         "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
@@ -4284,6 +4114,175 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6179,
+        "title": "plugins: Add rollback support for failed plugin updates",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6179",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T18:55:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6009,
+        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6009",
+        "author": "Slambot01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T18:56:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5881,
+        "title": "ci: validate workflow run SHA before uploading release assets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T18:56:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6086,
+        "title": "frontend: ViewButton: Fix react-hooks/exhaustive-deps \u2014 use ref for i\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6086",
+        "author": "JoSParker",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T18:58:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T19:09:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5413,
+        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T19:22:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5929,
+        "title": "backend: broadcast OIDC token across kubeconfig contexts sharing same IdP",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
+        "author": "Naga15",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-26T19:30:41Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
