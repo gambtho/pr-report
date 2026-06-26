@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T22:34:35+00:00",
+  "generated_at": "2026-06-26T23:33:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 225,
   "open_drafts_total": 47,
@@ -2879,6 +2879,36 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-26T22:55:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4280,36 +4310,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4763,
-        "title": "Add websocket-mode config with websockets/multiplexer/off modes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T21:41:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "performance",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
