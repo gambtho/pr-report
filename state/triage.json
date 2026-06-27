@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T12:42:00+00:00",
+  "generated_at": "2026-06-27T13:40:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 231,
   "open_drafts_total": 46,
@@ -1570,7 +1570,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T13:16:04Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/bug",
           "frontend",
@@ -1650,7 +1650,7 @@
         "author": "Dharmiksarvaiya24",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T13:39:15Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1700,7 +1700,7 @@
         "author": "CygnusMaximillian",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T13:04:18Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2451,7 +2451,7 @@
         "author": "Swastik19Nit",
         "bucket": "ci_failing",
         "updated_at": "2026-06-09T12:54:42Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2598,7 +2598,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-24T13:14:45Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2622,7 +2622,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-24T13:19:24Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2767,7 +2767,7 @@
         "author": "CygnusMaximillian",
         "bucket": "ci_failing",
         "updated_at": "2026-06-26T12:58:16Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2795,30 +2795,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5908,
-        "title": "fix: check 'patch' instead of 'update' permission for Restart button",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
-        "author": "mishradwaterlaw",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-26T16:52:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3788,7 +3764,7 @@
         "author": "CygnusMaximillian",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T12:58:12Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3812,7 +3788,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T13:16:08Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4511,6 +4487,54 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6145,
+        "title": "frontend: KubeObject: Safely access nested properties",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6145",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-27T13:34:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5908,
+        "title": "fix: check 'patch' instead of 'update' permission for Restart button",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
+        "author": "mishradwaterlaw",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-27T13:38:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4869,7 +4893,7 @@
         "author": "sudhidutta7694",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:18:42Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -4893,7 +4917,7 @@
         "author": "r0hansaxena",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:19:49Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4917,7 +4941,7 @@
         "author": "r0hansaxena",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:20:27Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4993,30 +5017,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6145,
-        "title": "frontend: KubeObject: Safely access nested properties",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6145",
-        "author": "Psykii22",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-26T16:54:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
