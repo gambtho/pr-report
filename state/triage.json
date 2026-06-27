@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-27T14:40:44+00:00",
+  "generated_at": "2026-06-27T15:35:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 233,
   "open_drafts_total": 46,
-  "actionable_total": 139,
+  "actionable_total": 140,
   "tracked_total": 68,
   "buckets": {
     "needs_rebase": [
@@ -401,7 +401,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 30,
+        "days_since_update": 31,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1750,7 +1750,7 @@
         "author": "sudhidutta7694",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:18:10Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1775,7 +1775,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "backend",
           "auth",
@@ -2881,36 +2881,6 @@
         }
       },
       {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-27T11:14:09Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "performance",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6231,
         "title": "frontend: Gateway: Add vitest coverage for resource components",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6231",
@@ -2933,6 +2903,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6233,
+        "title": "frontend: Sidebar: Optimize rendering to fix massive UI lag on sidebar",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6233",
+        "author": "Psykii22",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-27T14:57:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2943,7 +2937,7 @@
         "author": "Shreya2005-2005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-11T15:32:32Z",
-        "days_since_update": 46,
+        "days_since_update": 47,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3567,7 +3561,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3619,7 +3613,7 @@
         "author": "kashish00208",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-22T14:41:09Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3643,7 +3637,7 @@
         "author": "mystic-06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-22T14:45:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3812,7 +3806,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T14:57:22Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "dependencies",
@@ -3842,7 +3836,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T15:21:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -4526,6 +4520,36 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-27T15:34:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
