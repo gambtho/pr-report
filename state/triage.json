@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T10:47:23+00:00",
+  "generated_at": "2026-06-27T11:39:24+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 230,
   "open_drafts_total": 46,
@@ -1188,7 +1188,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:37Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1213,7 +1213,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:39Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1238,7 +1238,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:40Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1263,7 +1263,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:41Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "backend",
           "oidc",
@@ -1290,7 +1290,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:43Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "resourceMap",
           "cncf-cla: yes",
@@ -1316,7 +1316,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:45Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1625,7 +1625,7 @@
         "author": "KumarADITHYA123",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T11:36:29Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2881,36 +2881,6 @@
         }
       },
       {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-26T22:55:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "performance",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6224,
         "title": "backend: replace fmt.Println with structured logger in startup",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6224",
@@ -2948,6 +2918,36 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-27T11:14:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3740,7 +3740,7 @@
         "author": "Athang69",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T10:54:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4439,6 +4439,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-27T11:32:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4667,7 +4691,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-10T11:12:36Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "kind/feature",
           "oidc",
@@ -4897,30 +4921,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-26T11:13:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
