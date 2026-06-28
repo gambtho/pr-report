@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T18:36:13+00:00",
+  "generated_at": "2026-06-28T19:39:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 240,
-  "open_drafts_total": 45,
+  "open_drafts_total": 46,
   "actionable_total": 145,
   "tracked_total": 65,
   "buckets": {
@@ -681,7 +681,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 50,
+        "days_since_update": 51,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1881,7 +1881,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2686,30 +2686,6 @@
         }
       },
       {
-        "number": 5964,
-        "title": "frontend: diagnostics: Re-add workload diagnostics section, reworked, with stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5964",
-        "author": "xonas1101",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-28T10:56:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6086,
         "title": "frontend: ViewButton: Fix react-hooks/exhaustive-deps \u2014 use ref for i\u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6086",
@@ -2867,6 +2843,36 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-28T19:36:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3078,7 +3084,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 30,
+        "days_since_update": 31,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4215,36 +4221,6 @@
         }
       },
       {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-28T17:28:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "performance",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6179,
         "title": "plugins: Add rollback support for failed plugin updates",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6179",
@@ -4341,12 +4317,84 @@
         }
       },
       {
+        "number": 6185,
+        "title": "frontend: workload: Fix Jobs, CronJobs, JobSets overview charts stuck at 100%",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6185",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T18:46:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6242,
+        "title": "frontend: fix AppLogo themeName documentation typo",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6242",
+        "author": "sushilbhattarai45",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T18:47:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5964,
+        "title": "frontend: diagnostics: Re-add workload diagnostics section, reworked, with stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5964",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T18:52:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 5929,
         "title": "backend: broadcast OIDC token across kubeconfig contexts sharing same IdP",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
         "author": "Naga15",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-28T18:24:05Z",
+        "updated_at": "2026-06-28T19:29:39Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -5014,54 +5062,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6185,
-        "title": "frontend: workload: Fix Jobs, CronJobs, JobSets overview charts stuck at 100%",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6185",
-        "author": "xonas1101",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T11:00:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6242,
-        "title": "frontend: fix AppLogo themeName documentation typo",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6242",
-        "author": "sushilbhattarai45",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T11:02:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
