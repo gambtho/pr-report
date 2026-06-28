@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T20:35:50+00:00",
+  "generated_at": "2026-06-28T21:31:01+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 241,
   "open_drafts_total": 46,
@@ -280,7 +280,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 45,
+        "days_since_update": 46,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1906,7 +1906,7 @@
         "author": "Aamod007",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-25T21:19:09Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "needs-rebase",
           "cncf-cla: no",
@@ -2852,6 +2852,37 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-28T20:51:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "blocker",
+          "resourceMap",
+          "cncf-cla: yes",
+          "approved",
+          "size/XXL",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3078,7 +3109,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T21:23:52Z",
-        "days_since_update": 30,
+        "days_since_update": 31,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4382,37 +4413,6 @@
           "is_tracked": false,
           "verifiable": true
         }
-      },
-      {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-28T20:34:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "performance",
-          "blocker",
-          "resourceMap",
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
       }
     ],
     "waiting_on_author": [
@@ -4495,7 +4495,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 45,
+        "days_since_update": 46,
         "labels": [
           "cncf-cla: yes",
           "size/L"
