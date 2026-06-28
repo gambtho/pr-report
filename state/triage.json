@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-28T22:30:11+00:00",
+  "generated_at": "2026-06-28T23:31:14+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 241,
+  "open_prs_total": 242,
   "open_drafts_total": 46,
-  "actionable_total": 145,
+  "actionable_total": 146,
   "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
@@ -2871,6 +2871,30 @@
           "size/XXL",
           "dashboard",
           "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6255,
+        "title": "feat: network-resilient log streaming with auto-reconnect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6255",
+        "author": "ayesigaisaac",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-28T22:51:10Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
