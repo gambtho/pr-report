@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T16:35:43+00:00",
+  "generated_at": "2026-06-28T17:34:13+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 239,
   "open_drafts_total": 45,
@@ -2424,7 +2424,7 @@
         "author": "harrshita123",
         "bucket": "ci_failing",
         "updated_at": "2026-06-12T17:17:17Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2498,7 +2498,7 @@
         "author": "yolossn",
         "bucket": "ci_failing",
         "updated_at": "2026-06-19T17:27:16Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2595,7 +2595,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T17:29:25Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2864,6 +2864,30 @@
         "labels": [
           "cncf-cla: no",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5778,
+        "title": "feat: Add configurable external links to sidebar via Helm values",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+        "author": "Rohith-Saran",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-28T17:30:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3807,36 +3831,6 @@
         }
       },
       {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-27T16:35:09Z",
-        "days_since_update": 1,
-        "labels": [
-          "backend",
-          "performance",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "dashboard",
-          "websockets"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5908,
         "title": "fix: check 'patch' instead of 'update' permission for Restart button",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5908",
@@ -4234,6 +4228,84 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5756,
+        "title": "backend: Fix stateless cluster key cache collisions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5756",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T17:15:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6179,
+        "title": "plugins: Add rollback support for failed plugin updates",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6179",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T17:24:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4763,
+        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-28T17:28:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "performance",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "dashboard",
+          "websockets"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4721,7 +4793,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-26T17:18:26Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -4797,30 +4869,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5756,
-        "title": "backend: Fix stateless cluster key cache collisions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5756",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T10:22:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4918,30 +4966,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5778,
-        "title": "feat: Add configurable external links to sidebar via Helm values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T10:59:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5082,30 +5106,6 @@
         "author": "skools-here",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-28T14:22:20Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6179,
-        "title": "plugins: Add rollback support for failed plugin updates",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6179",
-        "author": "skools-here",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T14:22:43Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
