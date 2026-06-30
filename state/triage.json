@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T15:03:53+00:00",
+  "generated_at": "2026-06-30T15:59:28+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 248,
   "open_drafts_total": 44,
@@ -401,7 +401,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -476,7 +476,7 @@
         "author": "harshitrwt",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-12T15:45:37Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -1822,7 +1822,7 @@
         "author": "sudhidutta7694",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:18:10Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1847,7 +1847,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "backend",
           "auth",
@@ -2497,7 +2497,7 @@
         "author": "harrshita123",
         "bucket": "ci_failing",
         "updated_at": "2026-06-12T15:42:24Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: no",
           "size/S"
@@ -2973,6 +2973,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6254,
+        "title": "frontend: runCommand: Fix IPC listener leak on command exit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6254",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-30T15:28:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2983,7 +3007,7 @@
         "author": "Shreya2005-2005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-11T15:32:32Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3535,7 +3559,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-12T15:50:06Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3559,7 +3583,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -4047,31 +4071,6 @@
         }
       },
       {
-        "number": 5929,
-        "title": "backend: Broadcast OIDC token across kubeconfig contexts with same IdP",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
-        "author": "Naga15",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T09:41:08Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6282,
         "title": "frontend: Fix token paste blocked in Chrome on password input",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6282",
@@ -4274,30 +4273,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5790,
-        "title": "frontend: ResourceTable: Fix react-hooks purity and exhaustive-deps",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5790",
-        "author": "kishore08-07",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T11:58:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4600,6 +4575,55 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5929,
+        "title": "backend: Broadcast OIDC token across kubeconfig contexts with same IdP",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
+        "author": "Naga15",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-30T15:14:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5790,
+        "title": "frontend: ResourceTable: Fix react-hooks purity and exhaustive-deps",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5790",
+        "author": "kishore08-07",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-30T15:37:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4706,7 +4730,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 39,
+        "days_since_update": 40,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -4854,7 +4878,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-12T15:57:21Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "dependencies",
           "javascript",
@@ -5198,30 +5222,6 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-30T09:38:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6254,
-        "title": "frontend: runCommand: Fix IPC listener leak on command exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6254",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-30T09:38:42Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
