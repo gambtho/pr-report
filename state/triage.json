@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T18:49:29+00:00",
+  "generated_at": "2026-06-30T19:42:15+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 249,
   "open_drafts_total": 44,
@@ -705,7 +705,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 52,
+        "days_since_update": 53,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1905,7 +1905,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2963,6 +2963,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6213,
+        "title": "e2e-tests: pluginSetting: Enable accessibility checks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6213",
+        "author": "PrakharJain345",
+        "bucket": "ci_failing",
+        "updated_at": "2026-06-30T18:41:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4614,30 +4638,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6213,
-        "title": "e2e-tests: pluginSetting: Enable accessibility checks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6213",
-        "author": "PrakharJain345",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T18:41:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
