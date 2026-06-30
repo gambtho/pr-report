@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-30T07:34:40+00:00",
+  "generated_at": "2026-06-30T09:20:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 249,
+  "open_prs_total": 250,
   "open_drafts_total": 44,
   "actionable_total": 146,
   "tracked_total": 66,
@@ -858,7 +858,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2644,7 +2644,7 @@
         "author": "YadavAkhileshh",
         "bucket": "ci_failing",
         "updated_at": "2026-06-26T09:05:18Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M",
@@ -2669,7 +2669,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-26T09:11:12Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -3007,7 +3007,7 @@
         "author": "karimzakzouk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-26T08:12:42Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3367,7 +3367,7 @@
         "author": "DashratRajpurohit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-04T08:25:28Z",
-        "days_since_update": 25,
+        "days_since_update": 26,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3926,30 +3926,6 @@
         }
       },
       {
-        "number": 6113,
-        "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
-        "author": "Pragati5-DEBUG",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-29T11:39:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6233,
         "title": "frontend: Sidebar: Optimize rendering to fix UI lag on sidebar",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6233",
@@ -4335,32 +4311,6 @@
         }
       },
       {
-        "number": 6169,
-        "title": "frontend: Home: Connect only to recently-used clusters",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6169",
-        "author": "skoeva",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T06:58:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "cncf-cla: yes",
-          "size/XL",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6167,
         "title": "backend: multiplexer: add tests for exponential backoff connection retries",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6167",
@@ -4439,7 +4389,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5875",
         "author": "beep-boopp",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T07:30:54Z",
+        "updated_at": "2026-06-30T08:00:45Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4447,6 +4397,80 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6113,
+        "title": "backend: k8cache: purge cache and clientsets when kube context is removed",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6113",
+        "author": "Pragati5-DEBUG",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-30T08:27:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5790,
+        "title": "frontend: ResourceTable: Fix react-hooks purity and exhaustive-deps",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5790",
+        "author": "kishore08-07",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-30T08:47:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6169,
+        "title": "frontend: Home: Connect only to recently-used clusters",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6169",
+        "author": "skoeva",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-06-30T09:18:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "cncf-cla: yes",
+          "size/XL",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4914,30 +4938,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5790,
-        "title": "frontend: ResourceTable: Fix react-hooks purity and exhaustive-deps",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5790",
-        "author": "kishore08-07",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-06-28T10:08:49Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
