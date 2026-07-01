@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-01T22:37:27+00:00",
+  "generated_at": "2026-07-01T23:37:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 240,
+  "open_prs_total": 241,
   "open_drafts_total": 43,
-  "actionable_total": 140,
+  "actionable_total": 141,
   "tracked_total": 71,
   "buckets": {
     "needs_rebase": [
@@ -1648,7 +1648,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-17T23:36:28Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3074,6 +3074,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6322,
+        "title": "frontend: pod: Fix lexicographical sorting bugs in Restarts and Ready columns",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6322",
+        "author": "Priyanshu-rgbb",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-01T23:25:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4364,16 +4388,16 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
+        "number": 4938,
+        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
+        "author": "cmcgalliard",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-01T19:17:58Z",
+        "updated_at": "2026-07-01T21:11:49Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4388,16 +4412,16 @@
         }
       },
       {
-        "number": 4938,
-        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
-        "author": "cmcgalliard",
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-01T21:11:49Z",
+        "updated_at": "2026-07-01T23:10:39Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/L"
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
