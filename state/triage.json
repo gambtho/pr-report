@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-01T18:50:54+00:00",
+  "generated_at": "2026-07-01T19:41:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 238,
+  "open_prs_total": 239,
   "open_drafts_total": 43,
   "actionable_total": 140,
   "tracked_total": 71,
@@ -730,7 +730,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1905,7 +1905,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3004,30 +3004,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-01T15:09:14Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
@@ -3081,11 +3057,11 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
         "author": "Psykii22",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-01T18:09:58Z",
+        "updated_at": "2026-07-01T19:01:34Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4398,6 +4374,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-01T19:17:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
