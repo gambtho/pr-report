@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-01T03:21:52+00:00",
+  "generated_at": "2026-07-01T05:44:28+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 249,
+  "open_prs_total": 250,
   "open_drafts_total": 44,
-  "actionable_total": 150,
+  "actionable_total": 151,
   "tracked_total": 68,
   "buckets": {
     "needs_rebase": [
@@ -207,7 +207,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 56,
+        "days_since_update": 57,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -231,7 +231,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2646,7 +2646,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T04:13:32Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2999,6 +2999,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6298,
+        "title": "`frontend: tableSettings: Unguarded JSON.parse crashes all resource list views on corrupt localStorage`",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6298",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-01T03:44:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3273,7 +3297,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3297,7 +3321,7 @@
         "author": "YadavAkhileshh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T04:12:31Z",
-        "days_since_update": 32,
+        "days_since_update": 33,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3393,7 +3417,7 @@
         "author": "ManthanNimodiya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-02T05:00:04Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3641,31 +3665,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5717,
-        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
-        "author": "WasThatRudy",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-26T06:47:55Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL",
-          "needs review"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3990,30 +3989,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "APPROVED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6009,
-        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6009",
-        "author": "Slambot01",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T09:36:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4505,32 +4480,6 @@
         }
       },
       {
-        "number": 6169,
-        "title": "frontend: Home: Connect only to recently-used clusters",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6169",
-        "author": "skoeva",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-06-30T14:30:27Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "cncf-cla: yes",
-          "size/XL",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5929,
         "title": "backend: Broadcast OIDC token across kubeconfig contexts with same IdP",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
@@ -4674,6 +4623,81 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6169,
+        "title": "frontend: Home: Connect only to recently-used clusters",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6169",
+        "author": "skoeva",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-01T05:06:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "cncf-cla: yes",
+          "size/XL",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6009,
+        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6009",
+        "author": "Slambot01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-01T05:07:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5717,
+        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
+        "author": "WasThatRudy",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-01T05:37:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4732,7 +4756,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 56,
+        "days_since_update": 57,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5370,7 +5394,7 @@
         "author": "Varadraj75",
         "bucket": "stale",
         "updated_at": "2026-05-30T04:00:06Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "size/S"
