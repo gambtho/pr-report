@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T14:53:42+00:00",
+  "generated_at": "2026-07-02T15:53:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 245,
+  "open_prs_total": 246,
   "open_drafts_total": 44,
-  "actionable_total": 147,
+  "actionable_total": 146,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -401,7 +401,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 35,
+        "days_since_update": 36,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -452,7 +452,7 @@
         "author": "harshitrwt",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-12T15:45:37Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -1744,7 +1744,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "backend",
           "auth",
@@ -2177,7 +2177,7 @@
         "author": "r0hansaxena",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-01T15:16:07Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2469,7 +2469,7 @@
         "author": "harrshita123",
         "bucket": "ci_failing",
         "updated_at": "2026-06-12T15:42:24Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: no",
           "size/S"
@@ -2922,30 +2922,6 @@
         }
       },
       {
-        "number": 6277,
-        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
-        "author": "Psykii22",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-02T09:01:59Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5739,
         "title": "frontend: Fix multiple mobile UI issues",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5739",
@@ -2999,30 +2975,6 @@
         }
       },
       {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount Details and List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-02T13:41:10Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6331,
         "title": "frontend: EnvVarGrid: Support inline secret value preview for secretKeyRef",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6331",
@@ -3045,6 +2997,54 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5955,
+        "title": "frontend: Add Storybook stories for ServiceAccount Details and List",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-02T15:06:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6277,
+        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
+        "author": "Psykii22",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-02T15:27:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3055,7 +3055,7 @@
         "author": "Shreya2005-2005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-11T15:32:32Z",
-        "days_since_update": 51,
+        "days_since_update": 52,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3583,7 +3583,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-12T15:50:06Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3607,7 +3607,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 14,
+        "days_since_update": 15,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3683,7 +3683,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T14:57:22Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "frontend",
           "dependencies",
@@ -3764,7 +3764,7 @@
         "author": "Naga15",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-01T15:07:42Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "cncf-cla: yes",
@@ -3789,7 +3789,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-01T15:09:43Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3813,7 +3813,7 @@
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-01T15:26:24Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3986,30 +3986,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6213,
-        "title": "e2e-tests: pluginSetting: Enable accessibility checks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6213",
-        "author": "PrakharJain345",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-02T09:00:50Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4485,7 +4461,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-02T14:37:14Z",
+        "updated_at": "2026-07-02T14:57:31Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4504,16 +4480,40 @@
         }
       },
       {
-        "number": 6254,
-        "title": "frontend: runCommand: Fix IPC listener leak on command exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6254",
-        "author": "Shahazadi-Shaguftha-Syed",
+        "number": 6213,
+        "title": "e2e-tests: pluginSetting: Enable accessibility checks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6213",
+        "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-02T14:51:00Z",
+        "updated_at": "2026-07-02T15:28:38Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/L"
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5925,
+        "title": "backend: logging: Clean format strings and normalize defer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5925",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-02T15:38:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4632,7 +4632,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 41,
+        "days_since_update": 42,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -5124,31 +5124,7 @@
         "author": "karthik120710",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-01T15:05:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5925,
-        "title": "backend: logging: Clean format strings and normalize defer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5925",
-        "author": "Psykii22",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-02T08:55:29Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
