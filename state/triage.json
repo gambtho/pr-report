@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T18:39:17+00:00",
+  "generated_at": "2026-07-02T19:39:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 249,
+  "open_prs_total": 252,
   "open_drafts_total": 44,
-  "actionable_total": 143,
+  "actionable_total": 146,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -730,7 +730,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 54,
+        "days_since_update": 55,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1850,7 +1850,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2973,6 +2973,53 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6340,
+        "title": "backend: Fix telemetry metrics duration and Jaeger config bug",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6340",
+        "author": "Psykii22",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-02T18:47:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6342,
+        "title": "backend: kubeconfig: derive in-cluster name from kubeadm-config",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6342",
+        "author": "Anjali-Chauhan1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-02T19:12:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3175,7 +3222,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-28T18:44:41Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4469,6 +4516,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6308,
+        "title": "Stop showing `undefined` for volume expansion in the `StorageClass` list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6308",
+        "author": "dabico",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-02T18:58:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
