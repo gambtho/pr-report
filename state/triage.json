@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T20:35:58+00:00",
+  "generated_at": "2026-07-02T21:32:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 254,
   "open_drafts_total": 44,
-  "actionable_total": 146,
+  "actionable_total": 147,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -304,7 +304,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -1875,7 +1875,7 @@
         "author": "Aamod007",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-25T21:19:09Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "needs-rebase",
           "cncf-cla: no",
@@ -2999,12 +2999,36 @@
         }
       },
       {
+        "number": 6342,
+        "title": "backend: kubeconfig: derive in-cluster name from kubeadm-config",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6342",
+        "author": "Anjali-Chauhan1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-02T20:32:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 6343,
         "title": "frontend: Add create form for Jobs",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6343",
         "author": "vyncent-t",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-02T20:31:00Z",
+        "updated_at": "2026-07-02T20:38:57Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4550,6 +4574,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6139,
+        "title": "frontend: k8s: Extract KubeObject hooks into standalone hook functions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6139",
+        "author": "therealharshit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-02T20:58:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4632,7 +4680,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5032,30 +5080,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6139,
-        "title": "frontend: k8s: Extract KubeObject hooks into standalone hook functions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6139",
-        "author": "therealharshit",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-01T06:29:04Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
