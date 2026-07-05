@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-05T15:34:56+00:00",
+  "generated_at": "2026-07-05T16:29:48+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 268,
   "open_drafts_total": 44,
-  "actionable_total": 167,
+  "actionable_total": 166,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -1501,7 +1501,7 @@
         "author": "HarK-github",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T16:06:12Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1527,7 +1527,7 @@
         "author": "harrshita123",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T16:14:40Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1552,7 +1552,7 @@
         "author": "HarK-github",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T16:17:13Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2831,30 +2831,6 @@
         }
       },
       {
-        "number": 6354,
-        "title": "lib/k8s: fix stale connection race in useWebSockets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-05T10:23:13Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5619,
         "title": "frontend: NamespacesAutocomplete: Clear stale namespaces from localStorage on cluster load",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5619",
@@ -3060,6 +3036,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6354,
+        "title": "lib/k8s: fix stale connection race in useWebSockets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-05T16:10:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3401,7 +3401,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T15:59:50Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "app",
           "cncf-cla: yes",
@@ -4119,30 +4119,6 @@
         }
       },
       {
-        "number": 5933,
-        "title": "chart: Support deploymentLabels and additional templated values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5933",
-        "author": "treydock",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T13:54:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5777,
         "title": "backend: Fix all-namespace cache invalidation",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5777",
@@ -4201,30 +4177,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6139,
-        "title": "frontend: k8s: Extract KubeObject hooks into standalone hook functions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6139",
-        "author": "therealharshit",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T13:56:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4381,6 +4333,78 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6139,
+        "title": "frontend: k8s: Extract KubeObject hooks into standalone hook functions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6139",
+        "author": "therealharshit",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T15:35:56Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5933,
+        "title": "chart: Support deploymentLabels and additional templated values",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5933",
+        "author": "treydock",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T16:03:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5413,
+        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T16:04:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4487,7 +4511,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -4587,7 +4611,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-12T15:57:21Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "dependencies",
           "javascript",
@@ -5152,54 +5176,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5413,
-        "title": "tests: Add Playwright a11y checks and stabilize pluginctl tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5413",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T07:53:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6254,
-        "title": "frontend: runCommand: Fix IPC listener leak on command exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6254",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T08:27:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
