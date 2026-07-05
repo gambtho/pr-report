@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-05T14:40:42+00:00",
+  "generated_at": "2026-07-05T15:34:56+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 267,
+  "open_prs_total": 268,
   "open_drafts_total": 44,
   "actionable_total": 167,
   "tracked_total": 66,
@@ -376,7 +376,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 38,
+        "days_since_update": 39,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1471,7 +1471,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "backend",
           "auth",
@@ -1879,7 +1879,7 @@
         "author": "r0hansaxena",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-01T15:16:07Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2620,7 +2620,7 @@
         "author": "joaquimrocha",
         "bucket": "ci_failing",
         "updated_at": "2026-07-03T15:27:19Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2721,30 +2721,6 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5955,
-        "title": "frontend: Add Storybook stories for ServiceAccount Details and List",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5955",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-05T07:46:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3069,6 +3045,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6379,
+        "title": "app: electron: Add TLS proxy certificate support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6379",
+        "author": "Anjali-Chauhan1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-05T15:30:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3079,7 +3079,7 @@
         "author": "Shreya2005-2005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-11T15:32:32Z",
-        "days_since_update": 54,
+        "days_since_update": 55,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3295,7 +3295,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3371,7 +3371,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T14:57:22Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "frontend",
           "dependencies",
@@ -3927,30 +3927,6 @@
         }
       },
       {
-        "number": 6335,
-        "title": "backend: telemetry: Fix metrics gauge leak and double-count in panic recovery",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6335",
-        "author": "srajang1805",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T10:09:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6351,
         "title": "frontend: plugins: Show error notification when plugin loading fails",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6351",
@@ -4263,30 +4239,6 @@
         }
       },
       {
-        "number": 6365,
-        "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
-        "author": "SaikiaMan",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T14:04:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6167,
         "title": "backend: multiplexer: add tests for exponential backoff connection retries",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6167",
@@ -4311,12 +4263,36 @@
         }
       },
       {
+        "number": 6256,
+        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T14:33:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6367,
-        "title": "app: Terminate zombie headlamp-server process",
+        "title": "app: main: Terminate zombie headlamp-server process",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6367",
         "author": "Aryainguz",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T14:19:03Z",
+        "updated_at": "2026-07-05T14:45:15Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4335,16 +4311,64 @@
         }
       },
       {
-        "number": 6256,
-        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
-        "author": "Suyog241005",
+        "number": 6365,
+        "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
+        "author": "SaikiaMan",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T14:33:15Z",
+        "updated_at": "2026-07-05T14:48:01Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6335,
+        "title": "backend: telemetry: Fix metrics gauge leak and double-count in panic recovery",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6335",
+        "author": "srajang1805",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T14:56:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6361,
+        "title": "frontend: multiplexer: Reconnect after unexpected disconnect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6361",
+        "author": "beep-boopp",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T14:57:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5632,30 +5656,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6361,
-        "title": "frontend: multiplexer: Reconnect after unexpected disconnect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6361",
-        "author": "beep-boopp",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T13:57:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
