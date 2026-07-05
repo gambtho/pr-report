@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-05T16:29:48+00:00",
+  "generated_at": "2026-07-05T17:32:08+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 268,
   "open_drafts_total": 44,
-  "actionable_total": 166,
+  "actionable_total": 162,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -2350,7 +2350,7 @@
         "author": "yolossn",
         "bucket": "ci_failing",
         "updated_at": "2026-06-19T17:27:16Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2423,7 +2423,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T17:29:25Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2975,30 +2975,6 @@
         }
       },
       {
-        "number": 5778,
-        "title": "feat: Add configurable external links to sidebar via Helm values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
-        "author": "Rohith-Saran",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-05T14:06:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6378,
         "title": "backend: kubeconfig: Pre-allocate slices in contextStore methods",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6378",
@@ -3009,30 +2985,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6379,
-        "title": "app: electron: Add TLS proxy certificate support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6379",
-        "author": "Anjali-Chauhan1",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-05T15:30:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -4239,30 +4191,6 @@
         }
       },
       {
-        "number": 6367,
-        "title": "app: main: Terminate zombie headlamp-server process",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6367",
-        "author": "Aryainguz",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T14:45:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6365,
         "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
@@ -4297,30 +4225,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6361,
-        "title": "frontend: multiplexer: Reconnect after unexpected disconnect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6361",
-        "author": "beep-boopp",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-05T14:57:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4393,6 +4297,102 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5778,
+        "title": "feat: Add configurable external links to sidebar via Helm values",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T17:04:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6361,
+        "title": "frontend: multiplexer: Reconnect after unexpected disconnect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6361",
+        "author": "beep-boopp",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T17:09:49Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5756,
+        "title": "backend: Fix stateless cluster key cache collisions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5756",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T17:14:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-05T17:28:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4877,37 +4877,13 @@
         }
       },
       {
-        "number": 5887,
-        "title": "frontend: Chart: Fix react-hooks/refs violation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5887",
-        "author": "kishore08-07",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-01T10:27:53Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6293,
         "title": "frontend: Sidebar: Minimize activities and close details drawer on click",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6293",
         "author": "Rohith-Saran",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-02T16:57:08Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -5224,30 +5200,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5820,
-        "title": "frontend: ScaleButton: Memoize replica count computation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5820",
-        "author": "kishore08-07",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T09:00:58Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5632,54 +5584,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5756,
-        "title": "backend: Fix stateless cluster key cache collisions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5756",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T13:58:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T13:59:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
