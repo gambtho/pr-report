@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-06T20:45:04+00:00",
+  "generated_at": "2026-07-06T21:39:33+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 272,
   "open_drafts_total": 44,
-  "actionable_total": 163,
-  "tracked_total": 67,
+  "actionable_total": 159,
+  "tracked_total": 71,
   "buckets": {
     "needs_rebase": [
       {
@@ -304,7 +304,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -445,30 +445,6 @@
         }
       },
       {
-        "number": 6146,
-        "title": "frontend: add CreateEndpointForm for Endpoints Network resource",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6146",
-        "author": "ayesigaisaac",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-06-29T11:02:39Z",
-        "days_since_update": 7,
-        "labels": [
-          "cncf-cla: no",
-          "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 4763,
         "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
@@ -489,55 +465,6 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6084,
-        "title": "Create Form: Add form tab for Jobs, CronJobs, Job Sets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6084",
-        "author": "vyncent-t",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-02T17:29:17Z",
-        "days_since_update": 4,
-        "labels": [
-          "frontend",
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5964,
-        "title": "frontend: diagnostics: Re-add workload diagnostics section, reworked, with stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5964",
-        "author": "xonas1101",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-05T07:41:14Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
@@ -586,31 +513,6 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6271,
-        "title": "frontend: i18n: Restore translations removed by Diagnostics revert",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6271",
-        "author": "sniok",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-06T17:05:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "APPROVED",
         "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
@@ -1803,7 +1705,7 @@
         "author": "Aamod007",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-25T21:19:09Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "needs-rebase",
           "cncf-cla: no",
@@ -2311,6 +2213,108 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/XL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6271,
+        "title": "frontend: i18n: Restore translations removed by Diagnostics revert",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6271",
+        "author": "sniok",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-06T20:57:30Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "APPROVED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6146,
+        "title": "frontend: add CreateEndpointForm for Endpoints Network resource",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6146",
+        "author": "ayesigaisaac",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-06T20:59:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "needs-rebase",
+          "cncf-cla: no",
+          "size/XL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6084,
+        "title": "Create Form: Add form tab for Jobs, CronJobs, Job Sets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6084",
+        "author": "vyncent-t",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-06T20:59:50Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5964,
+        "title": "frontend: diagnostics: Re-add workload diagnostics section, reworked, with stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5964",
+        "author": "xonas1101",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-06T21:00:30Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -4737,7 +4741,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5271,30 +5275,6 @@
         }
       },
       {
-        "number": 6308,
-        "title": "Stop showing `undefined` for volume expansion in the `StorageClass` list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6308",
-        "author": "dabico",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-05T07:13:32Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6040,
         "title": "frontend: serviceaccount/Details: Show referencing role bindings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6040",
@@ -5637,6 +5617,30 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-06T12:29:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6308,
+        "title": "Stop showing `undefined` for volume expansion in the `StorageClass` list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6308",
+        "author": "dabico",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-07-06T20:57:30Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
