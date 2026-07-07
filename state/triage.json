@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T13:00:25+00:00",
+  "generated_at": "2026-07-07T13:50:29+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 273,
   "open_drafts_total": 44,
@@ -427,7 +427,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-29T13:46:58Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "backend",
           "performance",
@@ -1426,7 +1426,7 @@
         "author": "Dharmiksarvaiya24",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T13:39:15Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1451,7 +1451,7 @@
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T13:42:36Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1476,7 +1476,7 @@
         "author": "CygnusMaximillian",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T13:04:18Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2557,7 +2557,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-24T13:19:24Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2701,7 +2701,7 @@
         "author": "akshatsinghai6682-sketch",
         "bucket": "ci_failing",
         "updated_at": "2026-07-01T13:50:03Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3167,30 +3167,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-07T09:29:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3755,7 +3731,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T13:22:23Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4019,7 +3995,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-06T13:49:38Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4421,30 +4397,6 @@
         }
       },
       {
-        "number": 6379,
-        "title": "app: electron: Add TLS proxy certificate support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6379",
-        "author": "Anjali-Chauhan1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-07T09:30:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6256,
         "title": "backend/frontend: Add network-resilient logs and terminal sessions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
@@ -4690,11 +4642,83 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6328",
         "author": "abdulhusainahk",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-07T12:55:56Z",
+        "updated_at": "2026-07-07T13:02:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6415,
+        "title": "backend: fail rename when kubeconfig context is missing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6415",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-07T13:20:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6379,
+        "title": "app: electron: Add TLS proxy certificate support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6379",
+        "author": "Anjali-Chauhan1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-07T13:40:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-07T13:43:56Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4939,7 +4963,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-17T13:46:44Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "dependencies",
           "javascript",
@@ -5017,7 +5041,7 @@
         "author": "r0hansaxena",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:19:49Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5041,7 +5065,7 @@
         "author": "VijayabaskarR-06",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:44:20Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5573,30 +5597,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6415,
-        "title": "backend: fail rename when kubeconfig context is missing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6415",
-        "author": "rootp1",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-07T09:17:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
