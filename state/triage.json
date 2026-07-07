@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T16:55:30+00:00",
+  "generated_at": "2026-07-07T17:45:48+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 273,
+  "open_prs_total": 274,
   "open_drafts_total": 44,
   "actionable_total": 163,
   "tracked_total": 71,
@@ -2506,7 +2506,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-06-17T17:38:12Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "dependencies",
           "javascript",
@@ -2532,7 +2532,7 @@
         "author": "yolossn",
         "bucket": "ci_failing",
         "updated_at": "2026-06-19T17:27:16Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2605,7 +2605,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T17:29:25Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2999,30 +2999,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6378,
-        "title": "backend: kubeconfig: Pre-allocate slices in contextStore methods",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6378",
-        "author": "CygnusMaximillian",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-07T09:25:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4067,7 +4043,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-06T17:08:26Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4091,7 +4067,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-06T17:10:02Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4263,30 +4239,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5881,
-        "title": "ci: validate workflow run SHA before uploading release assets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-07T09:26:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4738,11 +4690,59 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6341",
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-07T16:15:58Z",
+        "updated_at": "2026-07-07T17:06:48Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6378,
+        "title": "backend: kubeconfig: Pre-allocate slices in contextStore methods",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6378",
+        "author": "CygnusMaximillian",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-07T17:10:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5881,
+        "title": "ci: validate workflow run SHA before uploading release assets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5881",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-07T17:18:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5233,7 +5233,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-02T16:57:08Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/S"
