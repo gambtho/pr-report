@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T12:45:25+00:00",
+  "generated_at": "2026-07-08T13:42:19+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 281,
-  "open_drafts_total": 45,
-  "actionable_total": 169,
+  "open_prs_total": 282,
+  "open_drafts_total": 44,
+  "actionable_total": 168,
   "tracked_total": 72,
   "buckets": {
     "needs_rebase": [
@@ -1426,7 +1426,7 @@
         "author": "Dharmiksarvaiya24",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-18T13:39:15Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1476,7 +1476,7 @@
         "author": "CygnusMaximillian",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T13:04:18Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2507,7 +2507,7 @@
         "author": "Swastik19Nit",
         "bucket": "ci_failing",
         "updated_at": "2026-06-09T12:54:42Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2582,7 +2582,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-24T13:19:24Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -3254,30 +3254,6 @@
         }
       },
       {
-        "number": 6188,
-        "title": "portforward: handler: Fix cluster name exposing userID suffix in response",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6188",
-        "author": "Athang69",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-08T11:54:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6417,
         "title": "backend: reject ambiguous DNS-friendly context matches",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
@@ -3302,40 +3278,16 @@
         }
       },
       {
-        "number": 6428,
-        "title": "backend: reject colliding custom context names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
-        "author": "rootp1",
+        "number": 6188,
+        "title": "portforward: handler: Fix cluster name exposing userID suffix in response",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6188",
+        "author": "Athang69",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-08T12:19:29Z",
+        "updated_at": "2026-07-08T13:10:18Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6418,
-        "title": "Plugin Manager for clustered installation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6418",
-        "author": "MErevGe",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-08T12:35:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3804,7 +3756,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T13:22:23Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4804,6 +4756,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6424,
+        "title": "frontend: Fix MULTI_HOME_ENABLED always being true regardless of env var",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6424",
+        "author": "ssz2605",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T13:09:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -5114,7 +5090,7 @@
         "author": "r0hansaxena",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-24T13:19:49Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "size/L"
