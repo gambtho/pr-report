@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T03:12:35+00:00",
+  "generated_at": "2026-07-08T05:12:07+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 275,
+  "open_prs_total": 276,
   "open_drafts_total": 44,
-  "actionable_total": 162,
+  "actionable_total": 163,
   "tracked_total": 72,
   "buckets": {
     "needs_rebase": [
@@ -231,7 +231,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 63,
+        "days_since_update": 64,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -255,7 +255,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -2606,7 +2606,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T04:13:32Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2828,7 +2828,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-07-05T04:08:35Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2852,7 +2852,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-07-05T04:08:47Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -3228,6 +3228,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6423,
+        "title": "backend: config: Add jaeger-endpoint CLI flag",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6423",
+        "author": "Harsh63870",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-08T05:06:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3406,7 +3430,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 39,
+        "days_since_update": 40,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3660,7 +3684,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T04:07:45Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4542,30 +4566,6 @@
         }
       },
       {
-        "number": 6415,
-        "title": "backend: fail rename when kubeconfig context is missing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6415",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-07T14:40:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5589,
         "title": "backend: serviceproxy: Preserve upstream status codes",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5589",
@@ -4756,6 +4756,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6415,
+        "title": "backend: fail rename when kubeconfig context is missing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6415",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T04:06:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4814,7 +4838,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 63,
+        "days_since_update": 64,
         "labels": [
           "cncf-cla: yes",
           "size/L"
