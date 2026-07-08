@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T18:38:04+00:00",
+  "generated_at": "2026-07-08T19:39:48+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 282,
-  "open_drafts_total": 44,
-  "actionable_total": 167,
+  "open_drafts_total": 45,
+  "actionable_total": 169,
   "tracked_total": 72,
   "buckets": {
     "needs_rebase": [
@@ -687,7 +687,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1632,7 +1632,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3182,30 +3182,6 @@
         }
       },
       {
-        "number": 6420,
-        "title": "perf(k8cache): Reduce allocations in cache store hot path",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6420",
-        "author": "Slambot01",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-08T10:31:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5535,
         "title": "frontend: improve unavailable cluster feedback",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5535",
@@ -3291,6 +3267,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6432,
+        "title": "frontend: globalSearch: Fix namespace query flooding search results",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6432",
+        "author": "Priyanshu-rgbb",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-08T19:17:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -4566,30 +4566,6 @@
         }
       },
       {
-        "number": 6424,
-        "title": "frontend: Fix MULTI_HOME_ENABLED always being true regardless of env var",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6424",
-        "author": "ssz2605",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-08T13:43:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6282,
         "title": "frontend: Fix token paste blocked in Chrome on password input",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6282",
@@ -4816,6 +4792,78 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6424,
+        "title": "frontend: Fix MULTI_HOME_ENABLED always being true regardless of env var",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6424",
+        "author": "ssz2605",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T18:43:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6422,
+        "title": "frontend: CreateCronJobForm: Add create form for cron jobs",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6422",
+        "author": "vyncent-t",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T19:30:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6040,
+        "title": "frontend: serviceaccount/Details: Show referencing role bindings",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6040",
+        "author": "sudhidutta7694",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T19:31:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
