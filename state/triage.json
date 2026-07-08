@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:48:39+00:00",
+  "generated_at": "2026-07-08T11:42:04+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 279,
   "open_drafts_total": 44,
@@ -1069,7 +1069,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:37Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1094,7 +1094,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:39Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1119,7 +1119,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:40Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1144,7 +1144,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:41Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "backend",
           "oidc",
@@ -1171,7 +1171,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:43Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "resourceMap",
           "cncf-cla: yes",
@@ -1197,7 +1197,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:45Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1807,7 +1807,7 @@
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-28T10:54:51Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3372,30 +3372,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 6188,
-        "title": "portforward: handler: Fix cluster name exposing userID suffix in response",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6188",
-        "author": "Athang69",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-08T10:41:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4758,12 +4734,60 @@
         }
       },
       {
+        "number": 6277,
+        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T10:39:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6341,
         "title": " frontend: PortForward: Translate hardcoded tooltip, secure links, and safely parse storage",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6341",
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-08T10:36:02Z",
+        "updated_at": "2026-07-08T11:01:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6188,
+        "title": "portforward: handler: Fix cluster name exposing userID suffix in response",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6188",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-08T11:09:12Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4787,35 +4811,11 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-08T10:39:17Z",
+        "updated_at": "2026-07-08T11:16:50Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6277,
-        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
-        "author": "Psykii22",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-08T10:39:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5008,7 +5008,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-10T11:12:36Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "kind/feature",
           "oidc",
@@ -5210,7 +5210,7 @@
         "author": "govindup63",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-28T10:59:32Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -5234,7 +5234,7 @@
         "author": "sushilbhattarai45",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-28T10:59:40Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
