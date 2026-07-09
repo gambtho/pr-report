@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T03:15:48+00:00",
+  "generated_at": "2026-07-09T05:32:41+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 285,
-  "open_drafts_total": 45,
-  "actionable_total": 168,
-  "tracked_total": 72,
+  "open_prs_total": 287,
+  "open_drafts_total": 46,
+  "actionable_total": 170,
+  "tracked_total": 71,
   "buckets": {
     "needs_rebase": [
       {
@@ -231,7 +231,7 @@
         "author": "kajal-jotwani",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-05T03:38:16Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -255,7 +255,7 @@
         "author": "joaquimrocha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T04:39:27Z",
-        "days_since_update": 61,
+        "days_since_update": 62,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -1878,31 +1878,6 @@
         }
       },
       {
-        "number": 5917,
-        "title": "frontend: home: Fix missing key on ErrorBoundary and untranslated strings in cluster components",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5917",
-        "author": "Athang69",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-01T09:03:52Z",
-        "days_since_update": 7,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5849,
         "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
@@ -2606,7 +2581,7 @@
         "author": "Aamod007",
         "bucket": "ci_failing",
         "updated_at": "2026-06-25T04:13:32Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: no",
           "size/L"
@@ -2768,35 +2743,6 @@
         }
       },
       {
-        "number": 5739,
-        "title": "frontend: Fix multiple mobile UI issues",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5739",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-02T09:27:50Z",
-        "days_since_update": 6,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "mobile",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4899,
         "title": "Distributed settings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4899",
@@ -2828,7 +2774,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-07-05T04:08:35Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2852,7 +2798,7 @@
         "author": "kashish00208",
         "bucket": "ci_failing",
         "updated_at": "2026-07-05T04:08:47Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -3300,6 +3246,59 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 5739,
+        "title": "frontend: Fix multiple mobile UI issues",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5739",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-09T04:39:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "mobile",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6441,
+        "title": "backend: deps: Bump golang.org/x/crypto, oras-go, and Go toolchain to fix Scorecard vulnerabilities",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6441",
+        "author": "Athang69",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-09T05:13:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3478,7 +3477,7 @@
         "author": "yu-heejin",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T03:30:35Z",
-        "days_since_update": 40,
+        "days_since_update": 41,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3708,7 +3707,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T04:07:45Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3732,7 +3731,7 @@
         "author": "Psykii22",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T05:24:13Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -4048,30 +4047,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6307,
-        "title": "frontend: globalSearch: Add try/catch to useLocalStorageState for resilience",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6307",
-        "author": "Kakumanu-Harshitha",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-06T17:10:02Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4782,30 +4757,6 @@
         }
       },
       {
-        "number": 6432,
-        "title": "frontend: globalSearch: Fix namespace query flooding search results",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6432",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-08T20:02:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6277,
         "title": "frontend: ReplicaSet: limit selector labels and truncate length",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
@@ -4843,6 +4794,78 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5917,
+        "title": "frontend: home: Fix missing key on ErrorBoundary and untranslated strings in cluster components",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5917",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-09T04:29:05Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6307,
+        "title": "frontend: globalSearch: Add try/catch to useLocalStorageState for resilience",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6307",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-09T04:41:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6432,
+        "title": "frontend: globalSearch: Fix namespace query flooding search results",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6432",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-09T05:00:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4910,7 +4933,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-05T03:44:12Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "cncf-cla: yes",
           "size/L"
