@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T15:02:01+00:00",
+  "generated_at": "2026-07-10T15:55:24+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 289,
-  "open_drafts_total": 45,
+  "open_prs_total": 290,
+  "open_drafts_total": 44,
   "actionable_total": 176,
   "tracked_total": 69,
   "buckets": {
@@ -376,7 +376,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 43,
+        "days_since_update": 44,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1500,7 +1500,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "backend",
           "auth",
@@ -1883,7 +1883,7 @@
         "author": "r0hansaxena",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-01T15:16:07Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2698,7 +2698,7 @@
         "author": "joaquimrocha",
         "bucket": "ci_failing",
         "updated_at": "2026-07-03T15:27:19Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -3224,6 +3224,54 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6432,
+        "title": "frontend: globalSearch: Fix namespace query flooding search results",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6432",
+        "author": "Priyanshu-rgbb",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-10T15:06:49Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6451,
+        "title": "frontend: secret: add unit tests for details and list views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6451",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-10T15:29:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3234,7 +3282,7 @@
         "author": "Shreya2005-2005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-11T15:32:32Z",
-        "days_since_update": 59,
+        "days_since_update": 60,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3402,7 +3450,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -4322,30 +4370,6 @@
         }
       },
       {
-        "number": 5589,
-        "title": "backend: serviceproxy: Preserve upstream status codes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5589",
-        "author": "harrshita123",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-10T11:15:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6435,
         "title": "frontend: use console.error for kubeconfig load failures",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6435",
@@ -4431,30 +4455,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6422,
-        "title": "frontend: CreateCronJobForm: Add create form for cron jobs",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6422",
-        "author": "vyncent-t",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-10T14:04:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -4680,6 +4680,102 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5589,
+        "title": "backend: serviceproxy: Preserve upstream status codes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5589",
+        "author": "harrshita123",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-10T15:08:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5832,
+        "title": "backend: Reject unsupported Jaeger tracing endpoint",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
+        "author": "harrshita123",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-10T15:09:10Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6441,
+        "title": "backend: deps: Bump golang.org/x/crypto, oras-go, and Go toolchain to fix Scorecard vulnerabilities",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6441",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-10T15:15:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6430,
+        "title": "frontend: common: Add ReadyStatusLabel component",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6430",
+        "author": "Athang69",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-10T15:23:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4786,7 +4882,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -5606,30 +5702,6 @@
         }
       },
       {
-        "number": 6441,
-        "title": "backend: deps: Bump golang.org/x/crypto, oras-go, and Go toolchain to fix Scorecard vulnerabilities",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6441",
-        "author": "Athang69",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-10T11:19:50Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6436,
         "title": "frontend: ProjectDeleteDialog: Add storybook stories",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6436",
@@ -5684,30 +5756,6 @@
         "author": "Psykii22",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-10T14:24:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6430,
-        "title": "frontend: common: Add ReadyStatusLabel component",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6430",
-        "author": "Athang69",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-10T14:24:41Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -5832,54 +5880,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6432,
-        "title": "frontend: globalSearch: Fix namespace query flooding search results",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6432",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-10T14:26:29Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5832,
-        "title": "backend: Reject unsupported Jaeger tracing endpoint",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5832",
-        "author": "harrshita123",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-10T14:26:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
