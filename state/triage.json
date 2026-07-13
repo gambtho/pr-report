@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T20:33:40+00:00",
+  "generated_at": "2026-07-13T21:26:39+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 278,
   "open_drafts_total": 43,
-  "actionable_total": 170,
+  "actionable_total": 171,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -159,7 +159,7 @@
         "author": "itvi-1234",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-13T21:12:08Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -394,31 +394,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6300,
-        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6300",
-        "author": "Slambot01",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-13T14:02:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L",
-          "needs review"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -1533,7 +1508,7 @@
         "author": "Aamod007",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-25T21:19:09Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "needs-rebase",
           "cncf-cla: no",
@@ -1986,7 +1961,7 @@
         "author": "ayesigaisaac",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-06T20:59:11Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "needs-rebase",
           "cncf-cla: no",
@@ -2390,30 +2365,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5291,
-        "title": "frontend: e2e: Add e2e tests for CreateResourceForm",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5291",
-        "author": "vyncent-t",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-25T17:29:25Z",
-        "days_since_update": 18,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3055,16 +3006,16 @@
         }
       },
       {
-        "number": 6496,
-        "title": "backend: kubeconfig: Add test for missing context removal",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6496",
-        "author": "CygnusMaximillian",
+        "number": 5291,
+        "title": "frontend: e2e: Add e2e tests for CreateResourceForm",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5291",
+        "author": "vyncent-t",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-13T16:58:24Z",
+        "updated_at": "2026-07-13T20:46:01Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -3079,19 +3030,19 @@
         }
       },
       {
-        "number": 6410,
-        "title": "frontend: Tabs: Fix defaultindex always initialising at zero",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6410",
-        "author": "skools-here",
+        "number": 6496,
+        "title": "backend: kubeconfig: Add test for missing context removal",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6496",
+        "author": "CygnusMaximillian",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-13T16:59:45Z",
+        "updated_at": "2026-07-13T21:19:05Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/L"
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -4634,6 +4585,55 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6410,
+        "title": "frontend: Tabs: Fix defaultindex always initialising at zero",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6410",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-13T20:44:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6300,
+        "title": "fix: serialize concurrent WebSocket writes to cluster connections to prevent data race",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6300",
+        "author": "Slambot01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-13T20:50:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4692,7 +4692,7 @@
         "author": "itvi-1234",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-13T21:10:52Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5738,6 +5738,30 @@
           "cncf-cla: yes",
           "size/S",
           "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6479,
+        "title": "frontend: Backlink: Remove redundant useffect hook",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6479",
+        "author": "skools-here",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-07-13T21:20:22Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
