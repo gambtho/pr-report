@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T16:35:30+00:00",
+  "generated_at": "2026-07-14T17:33:37+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 276,
   "open_drafts_total": 43,
@@ -2262,7 +2262,7 @@
         "author": "yolossn",
         "bucket": "ci_failing",
         "updated_at": "2026-06-19T17:27:16Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -3065,6 +3065,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6241,
+        "title": "frontend: Add PortForward Storybook stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6241",
+        "author": "jainarjav80-sys",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-14T15:54:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4634,6 +4658,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6387,
+        "title": "pluginsManager: Sidecar container missing liveness probe and resource\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6387",
+        "author": "Dhruv-Kumar-Singh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T17:12:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4988,7 +5036,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-02T16:57:08Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -5666,54 +5714,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6387,
-        "title": "pluginsManager: Sidecar container missing liveness probe and resource\u2026",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6387",
-        "author": "Dhruv-Kumar-Singh",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-14T08:52:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6241,
-        "title": "frontend: Add PortForward Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6241",
-        "author": "jainarjav80-sys",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-14T15:54:25Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
