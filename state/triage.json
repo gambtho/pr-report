@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T10:41:14+00:00",
+  "generated_at": "2026-07-14T11:38:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 274,
   "open_drafts_total": 43,
@@ -920,7 +920,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:37Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -945,7 +945,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:39Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -970,7 +970,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:40Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -995,7 +995,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:41Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "backend",
           "oidc",
@@ -1022,7 +1022,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:43Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "resourceMap",
           "cncf-cla: yes",
@@ -1048,7 +1048,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-10T11:12:45Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -1557,7 +1557,7 @@
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-28T10:54:51Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2652,7 +2652,7 @@
         "author": "abdulhusainahk",
         "bucket": "ci_failing",
         "updated_at": "2026-07-10T11:16:45Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2676,7 +2676,7 @@
         "author": "Shahazadi-Shaguftha-Syed",
         "bucket": "ci_failing",
         "updated_at": "2026-07-13T11:20:32Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3088,6 +3088,30 @@
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6410,
+        "title": "frontend: Tabs: Fix defaultindex always initialising at zero",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6410",
+        "author": "skools-here",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-14T11:33:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
           "size/L"
         ],
         "mergeable": "MERGEABLE",
@@ -4081,30 +4105,6 @@
         }
       },
       {
-        "number": 6479,
-        "title": "frontend: Backlink: Remove redundant useffect hook",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6479",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T08:37:25Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6492,
         "title": "docs: clarify generated API docs are checked in",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
@@ -4115,54 +4115,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6227,
-        "title": "Fix/releaser bump helm chart",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6227",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T08:40:52Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6410,
-        "title": "frontend: Tabs: Fix defaultindex always initialising at zero",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6410",
-        "author": "skools-here",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T08:41:45Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4299,31 +4251,6 @@
         }
       },
       {
-        "number": 5845,
-        "title": "frontend: Add plugin extension registry",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5845",
-        "author": "mahmoudmagdy1-1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T08:49:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6288,
         "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
@@ -4358,30 +4285,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6256,
-        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T08:52:26Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4514,6 +4417,127 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6479,
+        "title": "frontend: Backlink: Remove redundant useffect hook",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6479",
+        "author": "skools-here",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T10:42:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6227,
+        "title": "Fix/releaser bump helm chart",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6227",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T10:55:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6500,
+        "title": "frontend: ingress: fix stale cachedRules by invalidating on resourceVersion change",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6500",
+        "author": "AarishMansur",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T11:02:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6256,
+        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T11:04:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5845,
+        "title": "frontend: Add plugin extension registry",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5845",
+        "author": "mahmoudmagdy1-1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T11:10:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4620,7 +4644,7 @@
         "author": "rushrs",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-10T11:12:36Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "kind/feature",
           "oidc",
@@ -4796,7 +4820,7 @@
         "author": "govindup63",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-28T10:59:32Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4820,7 +4844,7 @@
         "author": "sushilbhattarai45",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-28T10:59:40Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -5570,30 +5594,6 @@
           "cncf-cla: yes",
           "size/S",
           "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6500,
-        "title": "frontend: ingress: fix stale cachedRules by invalidating on resourceVersion change",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6500",
-        "author": "AarishMansur",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-14T08:41:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
