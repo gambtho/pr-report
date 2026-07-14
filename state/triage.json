@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-14T18:32:31+00:00",
+  "generated_at": "2026-07-14T19:38:26+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 277,
+  "open_prs_total": 276,
   "open_drafts_total": 43,
-  "actionable_total": 168,
+  "actionable_total": 166,
   "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
@@ -566,7 +566,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 66,
+        "days_since_update": 67,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1408,7 +1408,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1458,7 +1458,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-26T18:33:59Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1911,7 +1911,7 @@
         "author": "sudhidutta7694",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-10T19:23:03Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2646,30 +2646,6 @@
         }
       },
       {
-        "number": 6354,
-        "title": "lib/k8s: fix stale connection race in useWebSockets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-13T11:20:32Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5745,
         "title": "(fix #5187) Fix react-hooks/rules-of-hooks early return",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5745",
@@ -2756,30 +2732,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5291,
-        "title": "frontend: e2e: Add e2e tests for CreateResourceForm",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5291",
-        "author": "vyncent-t",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-13T22:31:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3079,16 +3031,16 @@
         }
       },
       {
-        "number": 6498,
-        "title": "backend: server: Route --version output through structured logger",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6498",
-        "author": "ahmad-kashkoush",
+        "number": 5291,
+        "title": "frontend: e2e: Add e2e tests for CreateResourceForm",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5291",
+        "author": "vyncent-t",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-14T18:30:02Z",
+        "updated_at": "2026-07-14T19:00:57Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XS"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -4682,6 +4634,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6354,
+        "title": "lib/k8s: fix stale connection race in useWebSockets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-14T19:05:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -5496,30 +5472,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6254,
-        "title": "frontend: runCommand: Fix IPC listener leak on command exit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6254",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-13T10:33:30Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
