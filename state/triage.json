@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-14T19:38:26+00:00",
+  "generated_at": "2026-07-14T20:32:19+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 276,
+  "open_prs_total": 277,
   "open_drafts_total": 43,
   "actionable_total": 166,
   "tracked_total": 65,
@@ -419,6 +419,30 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6509,
+        "title": "frontend: ClusterSettings: Handle invalid json and add unit test",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6509",
+        "author": "skools-here",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-14T20:26:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -4641,7 +4665,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
         "author": "Shahazadi-Shaguftha-Syed",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-14T19:05:54Z",
+        "updated_at": "2026-07-14T19:42:28Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4842,7 +4866,7 @@
         "author": "aravind4799",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-18T20:30:39Z",
-        "days_since_update": 25,
+        "days_since_update": 26,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -5468,30 +5492,6 @@
         "author": "bhuvan-somisetty",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-13T07:08:04Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6219,
-        "title": "frontend: Activity: Fix pointermove listener leak on pointercancel",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6219",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-13T13:18:01Z",
         "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
