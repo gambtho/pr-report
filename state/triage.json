@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-15T18:32:37+00:00",
+  "generated_at": "2026-07-15T19:34:10+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 293,
+  "open_prs_total": 294,
   "open_drafts_total": 43,
-  "actionable_total": 165,
-  "tracked_total": 64,
+  "actionable_total": 166,
+  "tracked_total": 63,
   "buckets": {
     "needs_rebase": [
       {
@@ -566,7 +566,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-08T19:06:39Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1408,7 +1408,7 @@
         "author": "vikash7485",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T19:04:20Z",
-        "days_since_update": 20,
+        "days_since_update": 21,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1458,7 +1458,7 @@
         "author": "Utkarshpandey0001",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-26T18:33:59Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1891,31 +1891,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/S"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5894,
-        "title": "frontend: EditorDialog: Warn when resource modified during edit",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
-        "author": "sudhidutta7694",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-10T19:23:03Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -2916,7 +2891,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-07-14T19:00:57Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4597,6 +4572,31 @@
           "cncf-cla: yes",
           "size/L",
           "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5894,
+        "title": "frontend: EditorDialog: Warn when resource modified during edit",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5894",
+        "author": "sudhidutta7694",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-15T18:46:43Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
