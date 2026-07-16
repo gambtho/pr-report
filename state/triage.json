@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T15:39:54+00:00",
+  "generated_at": "2026-07-16T16:37:01+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 296,
-  "open_drafts_total": 43,
-  "actionable_total": 170,
-  "tracked_total": 63,
+  "open_drafts_total": 44,
+  "actionable_total": 172,
+  "tracked_total": 62,
   "buckets": {
     "needs_rebase": [
       {
@@ -1359,7 +1359,7 @@
         "author": "HarK-github",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T16:17:13Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1867,31 +1867,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/S"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5395,
-        "title": "frontend: GatewayAPI: update resources to support v1.5",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5395",
-        "author": "YotamKorah",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-13T07:06:48Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -2699,7 +2674,7 @@
         "author": "jainarjav80-sys",
         "bucket": "ci_failing",
         "updated_at": "2026-07-14T15:54:25Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -2909,16 +2884,64 @@
         }
       },
       {
-        "number": 5778,
-        "title": "feat: Add configurable external links to sidebar via Helm values",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
-        "author": "Rohith-Saran",
+        "number": 6417,
+        "title": "backend: reject ambiguous DNS-friendly context matches",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
+        "author": "rootp1",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-16T15:26:11Z",
+        "updated_at": "2026-07-16T15:35:17Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6428,
+        "title": "backend: reject colliding custom context names",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
+        "author": "rootp1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-16T15:37:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6282,
+        "title": "frontend: Fix token paste blocked in Chrome on password input",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6282",
+        "author": "bhuvan-somisetty",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-16T16:13:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3357,7 +3380,7 @@
         "author": "karthik120710",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-07T16:07:57Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3429,7 +3452,7 @@
         "author": "KumarADITHYA123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-08T16:05:52Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3501,7 +3524,7 @@
         "author": "joaquimrocha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-12T16:16:39Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -4488,102 +4511,6 @@
         }
       },
       {
-        "number": 6282,
-        "title": "frontend: Fix token paste blocked in Chrome on password input",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6282",
-        "author": "bhuvan-somisetty",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T15:07:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T15:30:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6417,
-        "title": "backend: reject ambiguous DNS-friendly context matches",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T15:35:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6428,
-        "title": "backend: reject colliding custom context names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T15:37:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6449,
         "title": "app: runCommand: Add aws to the allowlist for EKS/SSO workflows",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6449",
@@ -4726,6 +4653,78 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-16T15:55:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5395,
+        "title": "frontend: GatewayAPI: update resources to support v1.5",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5395",
+        "author": "YotamKorah",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-16T15:56:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5778,
+        "title": "feat: Add configurable external links to sidebar via Helm values",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5778",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-16T16:19:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -4808,7 +4807,7 @@
         "author": "vmridul",
         "bucket": "waiting_on_author",
         "updated_at": "2026-05-21T15:46:30Z",
-        "days_since_update": 55,
+        "days_since_update": 56,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -4858,7 +4857,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-06-12T15:57:21Z",
-        "days_since_update": 33,
+        "days_since_update": 34,
         "labels": [
           "dependencies",
           "javascript",
@@ -5741,6 +5740,35 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping or close",
+          "recommended_label": "lifecycle/stale",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has been inactive for 30+ days. If you're still working on\nit, please push an update or leave a comment. Otherwise it may be\nclosed in the near future.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6004,
+        "title": "frontend: backend: brotli-precompress static assets and serve .br sidecars",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6004",
+        "author": "illume",
+        "bucket": "stale",
+        "updated_at": "2026-06-16T16:16:35Z",
+        "days_since_update": 30,
+        "labels": [
+          "backend",
+          "frontend",
+          "security",
+          "performance",
+          "cncf-cla: yes",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping or close",
