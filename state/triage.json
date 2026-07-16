@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T07:47:43+00:00",
+  "generated_at": "2026-07-16T08:55:19+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 293,
+  "open_prs_total": 294,
   "open_drafts_total": 43,
-  "actionable_total": 172,
+  "actionable_total": 171,
   "tracked_total": 63,
   "buckets": {
     "needs_rebase": [
@@ -743,7 +743,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-16T08:40:27Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1660,7 +1660,7 @@
         "author": "ManthanNimodiya",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-05T08:52:00Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1685,7 +1685,7 @@
         "author": "harshitrwt",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-05T08:54:03Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1986,7 +1986,7 @@
         "author": "ChayanDass",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-14T08:45:17Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3003,30 +3003,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 6517,
-        "title": "backend: watcher: Watch and reload referenced kubeconfig credential files",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6517",
-        "author": "Suyog241005",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-16T07:17:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3936,7 +3912,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-14T08:41:57Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L",
@@ -3961,7 +3937,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-14T08:46:47Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -3985,7 +3961,7 @@
         "author": "mahmoudmagdy1-1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-14T08:48:55Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -4009,7 +3985,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-14T08:52:42Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -4441,30 +4417,6 @@
         }
       },
       {
-        "number": 6256,
-        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T07:01:33Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6231,
         "title": "frontend: Gateway: Add vitest coverage for resource components",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6231",
@@ -4542,11 +4494,35 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6500",
         "author": "AarishMansur",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T07:45:27Z",
+        "updated_at": "2026-07-16T07:53:31Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6256,
+        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-16T07:57:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5033,7 +5009,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-05T08:34:23Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5515,7 +5491,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-14T08:43:59Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
