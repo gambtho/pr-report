@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T22:27:03+00:00",
+  "generated_at": "2026-07-16T23:25:13+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 297,
+  "open_prs_total": 298,
   "open_drafts_total": 44,
-  "actionable_total": 177,
+  "actionable_total": 178,
   "tracked_total": 62,
   "buckets": {
     "needs_rebase": [
@@ -2921,6 +2921,27 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6549,
+        "title": "Fix missing kubeconfig log ",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6549",
+        "author": "SaikiaMan",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-16T22:44:06Z",
+        "days_since_update": 0,
+        "labels": [],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
