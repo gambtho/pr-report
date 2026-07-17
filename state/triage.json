@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T22:24:14+00:00",
+  "generated_at": "2026-07-17T23:24:44+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 299,
+  "open_prs_total": 300,
   "open_drafts_total": 44,
-  "actionable_total": 180,
+  "actionable_total": 181,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -2902,6 +2902,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6554,
+        "title": "frontend: CreateStatefulSetForm: Add create form for stateful set",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6554",
+        "author": "vyncent-t",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-17T22:28:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
