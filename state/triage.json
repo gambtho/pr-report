@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T01:42:31+00:00",
+  "generated_at": "2026-07-17T03:11:47+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 298,
   "open_drafts_total": 44,
-  "actionable_total": 178,
+  "actionable_total": 179,
   "tracked_total": 62,
   "buckets": {
     "needs_rebase": [
@@ -2913,11 +2913,37 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6549",
         "author": "SaikiaMan",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-17T00:27:08Z",
+        "updated_at": "2026-07-17T02:28:45Z",
         "days_since_update": 0,
-        "labels": [],
+        "labels": [
+          "cncf-cla: no"
+        ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6517,
+        "title": "backend: watcher: Watch and reload referenced kubeconfig credential files",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6517",
+        "author": "Suyog241005",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-17T03:02:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3033,7 +3059,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-29T01:51:21Z",
-        "days_since_update": 48,
+        "days_since_update": 49,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3788,7 +3814,7 @@
         "author": "beep-boopp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-14T02:59:29Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4292,30 +4318,6 @@
         }
       },
       {
-        "number": 6256,
-        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T17:18:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5333,
         "title": "frontend: PVC creation form ui",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5333",
@@ -4466,30 +4468,6 @@
         "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-16T18:27:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6227,
-        "title": "Fix/releaser bump helm chart",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6227",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-16T18:28:23Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4758,6 +4736,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6227,
+        "title": "Fix/releaser bump helm chart",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6227",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-17T02:49:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6256,
+        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-17T02:57:41Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
