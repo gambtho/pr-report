@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-18T06:48:41+00:00",
+  "generated_at": "2026-07-18T07:41:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 300,
+  "open_prs_total": 301,
   "open_drafts_total": 44,
-  "actionable_total": 180,
+  "actionable_total": 182,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -331,7 +331,7 @@
         "author": "ayushmaan-16",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-14T07:08:32Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "security",
           "cncf-cla: yes",
@@ -567,7 +567,7 @@
         "author": "hxrshxz",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:09Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -593,7 +593,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:11Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -847,7 +847,7 @@
         "author": "sakshyasinha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-28T07:15:59Z",
-        "days_since_update": 50,
+        "days_since_update": 51,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1812,7 +1812,7 @@
         "author": "Joshna907",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-06T07:37:30Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2141,7 +2141,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-05-18T07:15:56Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/XL",
@@ -2823,7 +2823,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-07-17T07:23:15Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2847,34 +2847,10 @@
         "author": "SaikiaMan",
         "bucket": "ci_failing",
         "updated_at": "2026-07-17T07:26:38Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: no",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6328,
-        "title": "fix(details): guard the details view against partially-loaded items (multi-cluster crash)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6328",
-        "author": "abdulhusainahk",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-17T12:24:52Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -2935,6 +2911,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6560,
+        "title": "backend: helm: Propagate discovery client creation errors",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6560",
+        "author": "CygnusMaximillian",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-18T06:55:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2969,7 +2969,7 @@
         "author": "Swastik19Nit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T07:17:27Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3506,7 +3506,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-13T07:21:55Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3654,30 +3654,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6340,
-        "title": "backend: Fix telemetry metrics duration and Jaeger config bug",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6340",
-        "author": "Psykii22",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-13T13:55:20Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -3968,7 +3944,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-16T06:50:33Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -4088,7 +4064,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-17T07:23:52Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4112,7 +4088,7 @@
         "author": "rishh09",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-17T07:28:55Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4992,6 +4968,79 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6340,
+        "title": "backend: Fix telemetry metrics duration and Jaeger config bug",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6340",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-18T07:29:56Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5925,
+        "title": "backend: logging: Clean format strings and normalize defer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5925",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-18T07:33:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "APPROVED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6328,
+        "title": "fix(details): guard the details view against partially-loaded items (multi-cluster crash)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6328",
+        "author": "abdulhusainahk",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-18T07:37:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -5322,7 +5371,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-01T07:09:33Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -5902,7 +5951,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:21:41Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5926,7 +5975,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:22:56Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -5950,7 +5999,7 @@
         "author": "Piyushrathoree",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:23:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5974,7 +6023,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:25:33Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -5998,7 +6047,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:26:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
