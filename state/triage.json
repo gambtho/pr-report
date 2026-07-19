@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-19T14:33:44+00:00",
+  "generated_at": "2026-07-19T15:27:48+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 306,
+  "open_prs_total": 307,
   "open_drafts_total": 43,
-  "actionable_total": 185,
+  "actionable_total": 186,
   "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
@@ -207,7 +207,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-27T15:04:07Z",
-        "days_since_update": 52,
+        "days_since_update": 53,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -258,7 +258,7 @@
         "author": "iashutoshyadav",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T14:36:25Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -282,7 +282,7 @@
         "author": "nidhi-9900",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T14:38:00Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -306,7 +306,7 @@
         "author": "achalcipher",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T14:51:54Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XL",
@@ -1329,7 +1329,7 @@
         "author": "skoeva",
         "bucket": "needs_rebase",
         "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 24,
+        "days_since_update": 25,
         "labels": [
           "backend",
           "auth",
@@ -1611,7 +1611,7 @@
         "author": "r0hansaxena",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-01T15:16:07Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1862,7 +1862,7 @@
         "author": "zyzzmohit",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T14:46:29Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1887,7 +1887,7 @@
         "author": "sniok",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T14:52:10Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1913,7 +1913,7 @@
         "author": "mudit06mah",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-13T15:12:07Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2141,7 +2141,7 @@
         "author": "datacore-gjanoti",
         "bucket": "ci_failing",
         "updated_at": "2026-05-19T14:35:49Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2630,7 +2630,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "ci_failing",
         "updated_at": "2026-07-13T14:39:56Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2654,7 +2654,7 @@
         "author": "Vaishnav-Dhaval",
         "bucket": "ci_failing",
         "updated_at": "2026-07-13T14:51:48Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2678,7 +2678,7 @@
         "author": "srajang1805",
         "bucket": "ci_failing",
         "updated_at": "2026-07-14T15:21:01Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2958,6 +2958,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6572,
+        "title": "backend: k8cache: Use SplitN when parsing ClusterID to avoid incorrect context name parsing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6572",
+        "author": "AYUSH-P-SINGH",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-19T15:22:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3112,7 +3136,7 @@
         "author": "PrakharJain345",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-17T15:18:19Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "cncf-cla: yes",
           "size/S",
@@ -3137,7 +3161,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-06-26T14:57:22Z",
-        "days_since_update": 22,
+        "days_since_update": 23,
         "labels": [
           "frontend",
           "dependencies",
@@ -3264,7 +3288,7 @@
         "author": "srajang1805",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-05T14:56:42Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -5848,7 +5872,7 @@
         "author": "skoeva",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-13T15:15:53Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "app",
           "cncf-cla: yes",
@@ -5898,7 +5922,7 @@
         "author": "tejhan",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-15T15:16:24Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L",
