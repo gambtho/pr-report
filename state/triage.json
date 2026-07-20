@@ -1,12 +1,322 @@
 {
-  "generated_at": "2026-07-20T19:41:24+00:00",
+  "generated_at": "2026-07-20T20:36:53+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 308,
+  "open_prs_total": 307,
   "open_drafts_total": 43,
-  "actionable_total": 245,
-  "tracked_total": 0,
+  "actionable_total": 234,
+  "tracked_total": 11,
   "buckets": {
-    "needs_rebase": [],
+    "needs_rebase": [
+      {
+        "number": 5642,
+        "title": "backend: config: Validate options and env override",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5642",
+        "author": "Sambhram1",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-22T11:51:31Z",
+        "days_since_update": 59,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5446,
+        "title": "charts: deployment: Stop overriding OIDC env config",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5446",
+        "author": "Sambhram1",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-05-20T00:22:18Z",
+        "days_since_update": 61,
+        "labels": [
+          "oidc",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XL",
+          "needs review"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5825,
+        "title": "frontend: LogsButton: Show init containers in container dropdown",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5825",
+        "author": "ChunyiLyu",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-15T18:03:46Z",
+        "days_since_update": 35,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5826,
+        "title": "frontend: Pod: Show resolved environment variables for running containers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5826",
+        "author": "VijayabaskarR-06",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-16T09:53:27Z",
+        "days_since_update": 34,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5922,
+        "title": "frontend: migrate Overview/Diagnostics Event resource to events.k8s.io/v1",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
+        "author": "skools-here",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-17T10:21:19Z",
+        "days_since_update": 33,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5927,
+        "title": "make application logo clickable",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5927",
+        "author": "CygnusMaximillian",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-24T13:04:18Z",
+        "days_since_update": 26,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5877,
+        "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
+        "author": "skoeva",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-24T15:19:23Z",
+        "days_since_update": 26,
+        "labels": [
+          "backend",
+          "auth",
+          "quality",
+          "oidc",
+          "needs tests",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/S"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5950,
+        "title": "Frontend: use lazy useState in NumRowsInput",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5950",
+        "author": "piyusshkumar",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-06-26T18:31:07Z",
+        "days_since_update": 24,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/S"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5849,
+        "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
+        "author": "RajPrakash681",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-01T12:04:03Z",
+        "days_since_update": 19,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6468,
+        "title": "frontend: Table: Hide columns to fit width",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6468",
+        "author": "skoeva",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-14T09:58:27Z",
+        "days_since_update": 6,
+        "labels": [
+          "frontend",
+          "Table",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL",
+          "needs review"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6436,
+        "title": "frontend: ProjectDeleteDialog: Add storybook stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6436",
+        "author": "vividwhisp",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-20T10:23:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6553,
+        "title": "backend: serviceproxy: add URL validation to fix gosec G107",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6553",
+        "author": "Harsh63870",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-20T10:28:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      }
+    ],
     "ci_failing": [
       {
         "number": 5001,
@@ -584,33 +894,6 @@
         }
       },
       {
-        "number": 5446,
-        "title": "charts: deployment: Stop overriding OIDC env config",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5446",
-        "author": "Sambhram1",
-        "bucket": "ci_failing",
-        "updated_at": "2026-05-20T00:22:18Z",
-        "days_since_update": 61,
-        "labels": [
-          "oidc",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL",
-          "needs review"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5425,
         "title": "backend: add OIDC API proxy support",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5425",
@@ -941,31 +1224,6 @@
         }
       },
       {
-        "number": 5825,
-        "title": "frontend: LogsButton: Show init containers in container dropdown",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5825",
-        "author": "ChunyiLyu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-15T18:03:46Z",
-        "days_since_update": 35,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5521,
         "title": "Frontend: Add connected Pods section to Service details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5521",
@@ -1017,31 +1275,6 @@
         }
       },
       {
-        "number": 5826,
-        "title": "frontend: Pod: Show resolved environment variables for running containers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5826",
-        "author": "VijayabaskarR-06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-16T09:53:27Z",
-        "days_since_update": 34,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5660,
         "title": "feat: fix pod list oom",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5660",
@@ -1053,31 +1286,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5922,
-        "title": "frontend: migrate Overview/Diagnostics Event resource to events.k8s.io/v1",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5922",
-        "author": "skools-here",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-17T10:21:19Z",
-        "days_since_update": 33,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -1243,31 +1451,6 @@
         }
       },
       {
-        "number": 5927,
-        "title": "make application logo clickable",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5927",
-        "author": "CygnusMaximillian",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-24T13:04:18Z",
-        "days_since_update": 26,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5872,
         "title": "frontend: metadatadisplay: Fix expandable annotations button text",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5872",
@@ -1282,36 +1465,6 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5877,
-        "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
-        "author": "skoeva",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-24T15:19:23Z",
-        "days_since_update": 26,
-        "labels": [
-          "backend",
-          "auth",
-          "quality",
-          "oidc",
-          "needs tests",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/S"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -1384,31 +1537,6 @@
           "cncf-cla: yes",
           "size/M",
           "needs review"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5950,
-        "title": "Frontend: use lazy useState in NumRowsInput",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5950",
-        "author": "piyusshkumar",
-        "bucket": "ci_failing",
-        "updated_at": "2026-06-26T18:31:07Z",
-        "days_since_update": 24,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/S"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -1557,31 +1685,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5849,
-        "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
-        "author": "RajPrakash681",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-01T12:04:03Z",
-        "days_since_update": 19,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -2411,34 +2514,6 @@
         }
       },
       {
-        "number": 6468,
-        "title": "frontend: Table: Hide columns to fit width",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6468",
-        "author": "skoeva",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-14T09:58:27Z",
-        "days_since_update": 6,
-        "labels": [
-          "frontend",
-          "Table",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL",
-          "needs review"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6460,
         "title": "backend: kubeconfig: Fix node drain anonymous auth in OIDC deployments",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6460",
@@ -2450,7 +2525,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -2625,31 +2700,6 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6436,
-        "title": "frontend: ProjectDeleteDialog: Add storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6436",
-        "author": "vividwhisp",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-20T10:23:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
@@ -2672,31 +2722,6 @@
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6553,
-        "title": "backend: serviceproxy: add URL validation to fix gosec G107",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6553",
-        "author": "Harsh63870",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-20T10:28:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
           "size/L"
         ],
         "mergeable": "UNKNOWN",
@@ -2795,7 +2820,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -2893,7 +2918,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2941,7 +2966,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -2996,7 +3021,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "PENDING",
         "action": {
@@ -3045,7 +3070,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3069,7 +3094,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3117,7 +3142,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3189,7 +3214,7 @@
           "cncf-cla: yes",
           "size/XL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3213,7 +3238,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3237,7 +3262,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3261,7 +3286,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3285,7 +3310,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3382,7 +3407,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3406,7 +3431,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3478,7 +3503,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3502,7 +3527,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3673,7 +3698,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3701,7 +3726,7 @@
           "size/L",
           "needs review"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3720,13 +3745,13 @@
         "author": "sudhidutta7694",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-15T20:05:02Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "approved",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "APPROVED",
         "check_state": "PENDING",
         "action": {
@@ -3750,7 +3775,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3774,7 +3799,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3798,7 +3823,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -3990,7 +4015,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4062,7 +4087,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4134,31 +4159,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6547,
-        "title": "frontend: Guard against missing Namespace status in list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6547",
-        "author": "ssz2605",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T10:48:08Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4206,7 +4207,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4374,7 +4375,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4422,7 +4423,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4518,7 +4519,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4555,198 +4556,6 @@
         }
       },
       {
-        "number": 6417,
-        "title": "backend: reject ambiguous DNS-friendly context matches",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:21:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6428,
-        "title": "backend: reject colliding custom context names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:21:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6458,
-        "title": "backend: k8cache: watch discovered list-watch resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:22:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6461,
-        "title": "backend: k8cache: derive real API group/scope in cached auth error responses",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6461",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:22:56Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6536,
-        "title": "app: avoid MCP restarts on cluster reorder",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6536",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:32:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6529,
-        "title": "app: redact MCP debug logging",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6529",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:32:27Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6521,
-        "title": "Limit desktop MCP child process environment",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6521",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:32:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6492,
-        "title": "docs: clarify generated API docs are checked in",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-20T18:32:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6526,
         "title": "frontend: SecretList: Do not crash on corrupt hide-Helm storage value",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6526",
@@ -4758,7 +4567,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4831,6 +4640,198 @@
           "size/XL"
         ],
         "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6536,
+        "title": "app: avoid MCP restarts on cluster reorder",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6536",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6529,
+        "title": "app: redact MCP debug logging",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6529",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6521,
+        "title": "Limit desktop MCP child process environment",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6521",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6492,
+        "title": "docs: clarify generated API docs are checked in",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:50Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6461,
+        "title": "backend: k8cache: derive real API group/scope in cached auth error responses",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6461",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6458,
+        "title": "backend: k8cache: watch discovered list-watch resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6428,
+        "title": "backend: reject colliding custom context names",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6417,
+        "title": "backend: reject ambiguous DNS-friendly context matches",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-20T20:14:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -4965,30 +4966,6 @@
         }
       },
       {
-        "number": 5642,
-        "title": "backend: config: Validate options and env override",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5642",
-        "author": "Sambhram1",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-05-22T11:51:31Z",
-        "days_since_update": 59,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4279,
         "title": "frontend,backend: support exec/teleport/cert based auth to clusters",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4279",
@@ -5028,7 +5005,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5126,7 +5103,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5174,7 +5151,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5298,7 +5275,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5322,7 +5299,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5346,7 +5323,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5442,7 +5419,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5538,7 +5515,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5586,7 +5563,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5634,7 +5611,7 @@
           "cncf-cla: yes",
           "size/XL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5684,7 +5661,7 @@
           "size/S",
           "needs review"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5782,7 +5759,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5830,7 +5807,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "PENDING",
         "action": {
@@ -5902,7 +5879,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5926,7 +5903,7 @@
           "cncf-cla: yes",
           "size/S"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5951,6 +5928,30 @@
           "size/XXL"
         ],
         "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6547,
+        "title": "frontend: Guard against missing Namespace status in list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6547",
+        "author": "ssz2605",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-07-20T19:55:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
