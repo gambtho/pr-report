@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T19:38:23+00:00",
+  "generated_at": "2026-07-22T20:31:55+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 323,
   "open_drafts_total": 42,
@@ -423,30 +423,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6616,
-        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
-        "author": "NAME-ASHWANIYADAV",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-22T19:38:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "SUCCESS",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -2927,6 +2903,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6616,
+        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
+        "author": "NAME-ASHWANIYADAV",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-22T20:07:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3742,7 +3742,7 @@
         "author": "sudhidutta7694",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-15T20:05:02Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "approved",
