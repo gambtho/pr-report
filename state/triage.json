@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T07:02:10+00:00",
+  "generated_at": "2026-07-23T07:55:51+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 323,
   "open_drafts_total": 42,
@@ -331,7 +331,7 @@
         "author": "ayushmaan-16",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-14T07:08:32Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "security",
           "cncf-cla: yes",
@@ -593,7 +593,7 @@
         "author": "dibyanshu-pal-kushwaha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-10T07:02:11Z",
-        "days_since_update": 73,
+        "days_since_update": 74,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -847,7 +847,7 @@
         "author": "sakshyasinha",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-28T07:15:59Z",
-        "days_since_update": 55,
+        "days_since_update": 56,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2091,7 +2091,7 @@
         "author": "ipsitapp8",
         "bucket": "ci_failing",
         "updated_at": "2026-05-18T07:15:56Z",
-        "days_since_update": 65,
+        "days_since_update": 66,
         "labels": [
           "cncf-cla: yes",
           "size/XL",
@@ -2834,30 +2834,6 @@
         }
       },
       {
-        "number": 6559,
-        "title": "a11y: restore and improve a11y storybook testing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
-        "author": "unichronic",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-20T19:37:50Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6586,
         "title": "Watcher Goroutine Churn & Failure Cooldown",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6586",
@@ -2928,6 +2904,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6559,
+        "title": "a11y: restore and improve a11y storybook testing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
+        "author": "unichronic",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-23T07:55:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -2962,7 +2962,7 @@
         "author": "Swastik19Nit",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-05-18T07:17:27Z",
-        "days_since_update": 65,
+        "days_since_update": 66,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -3427,7 +3427,7 @@
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-13T07:21:55Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3786,37 +3786,13 @@
         }
       },
       {
-        "number": 6288,
-        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
-        "author": "vanshika2720",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-17T05:01:00Z",
-        "days_since_update": 6,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6540,
         "title": "Fix WebSocket auth fallback for stale user context keys",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6540",
         "author": "rishh09",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-17T07:28:55Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -5062,6 +5038,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6288,
+        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
+        "author": "vanshika2720",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-23T07:16:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -5366,7 +5366,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-01T07:09:33Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -5896,7 +5896,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-17T07:21:41Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/L"
