@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T23:26:12+00:00",
+  "generated_at": "2026-07-24T00:49:09+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 325,
   "open_drafts_total": 42,
-  "actionable_total": 185,
+  "actionable_total": 186,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -769,7 +769,7 @@
         "author": "Sambhram1",
         "bucket": "needs_rebase",
         "updated_at": "2026-05-20T00:22:18Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "oidc",
           "cncf-cla: yes",
@@ -2834,30 +2834,6 @@
         }
       },
       {
-        "number": 6586,
-        "title": "Watcher Goroutine Churn & Failure Cooldown",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6586",
-        "author": "AYUSH-P-SINGH",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-21T08:12:52Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: no",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6365,
         "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
@@ -2882,19 +2858,19 @@
         }
       },
       {
-        "number": 6616,
-        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
-        "author": "NAME-ASHWANIYADAV",
+        "number": 6559,
+        "title": "a11y: restore and improve a11y storybook testing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
+        "author": "unichronic",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-22T20:07:21Z",
-        "days_since_update": 1,
+        "updated_at": "2026-07-23T08:33:43Z",
+        "days_since_update": 0,
         "labels": [
-          "cncf-cla: yes",
+          "cncf-cla: no",
           "size/XXL"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -2906,16 +2882,40 @@
         }
       },
       {
-        "number": 6559,
-        "title": "a11y: restore and improve a11y storybook testing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
-        "author": "unichronic",
+        "number": 6616,
+        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
+        "author": "NAME-ASHWANIYADAV",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-23T08:33:43Z",
+        "updated_at": "2026-07-24T00:17:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6586,
+        "title": "Watcher Goroutine Churn & Failure Cooldown",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6586",
+        "author": "AYUSH-P-SINGH",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-24T00:18:08Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
-          "size/XXL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6047,6 +6047,31 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6562,
+        "title": "frontend: Add PodGroup and Workload scheduling views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
+        "author": "Anjali-Chauhan1",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-07-24T00:06:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL",
+          "wg/workload-aware-scheduling"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
