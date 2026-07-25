@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T21:25:10+00:00",
+  "generated_at": "2026-07-25T22:25:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 331,
   "open_drafts_total": 42,
-  "actionable_total": 195,
+  "actionable_total": 194,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -456,7 +456,7 @@
         "author": "tejhan",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-22T22:16:06Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3295,30 +3295,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6638,
-        "title": "make: build-plugins-container: Follow host platform by default",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6638",
-        "author": "unlikelyzero",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-25T21:00:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
