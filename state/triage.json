@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T12:29:03+00:00",
+  "generated_at": "2026-07-25T13:39:59+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 328,
   "open_drafts_total": 42,
-  "actionable_total": 196,
+  "actionable_total": 195,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2368,33 +2368,6 @@
     ],
     "ci_failing": [
       {
-        "number": 6516,
-        "title": "backend: externalproxy: Extract module and harden proxy headers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6516",
-        "author": "Pragati5-DEBUG",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-25T12:02:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6519,
         "title": "backend: Add tests for logger log function and SetLogFunc reset",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6519",
@@ -3379,32 +3352,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6505,
-        "title": "frontend: ProjectDeleteButton: Add Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6505",
-        "author": "vividwhisp",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:01:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -5934,6 +5881,59 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6516,
+        "title": "backend: externalproxy: Extract module and harden proxy headers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6516",
+        "author": "Pragati5-DEBUG",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-25T12:49:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6505,
+        "title": "frontend: ProjectDeleteButton: Add Storybook stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6505",
+        "author": "vividwhisp",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-25T12:51:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -6130,33 +6130,6 @@
           "headlamp-plugin",
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6625,
-        "title": "backend: helm: Skip invalid repository cache",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6625",
-        "author": "mukeshdhadhariya",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:02:48Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "charts",
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
