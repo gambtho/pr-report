@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T16:25:12+00:00",
+  "generated_at": "2026-07-25T17:27:04+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 328,
   "open_drafts_total": 42,
-  "actionable_total": 195,
+  "actionable_total": 194,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -21,36 +21,6 @@
           "cncf-cla: yes",
           "lifecycle/stale",
           "size/M",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4723,
-        "title": "Backend: Frontend: Add ability to transfer files to/from containers in pods ",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
-        "author": "mudit06mah",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:03:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "lifecycle/stale",
-          "size/XXL",
           "collab"
         ],
         "mergeable": "CONFLICTING",
@@ -3917,36 +3887,6 @@
         }
       },
       {
-        "number": 6562,
-        "title": "frontend: Add PodGroup and Workload scheduling views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
-        "author": "Anjali-Chauhan1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:42Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search",
-          "wg/workload-aware-scheduling",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6370,
         "title": "Feature/keyboard shortcuts registry",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6370",
@@ -5934,6 +5874,66 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 4723,
+        "title": "Backend: Frontend: Add ability to transfer files to/from containers in pods ",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
+        "author": "mudit06mah",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-25T16:43:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "lifecycle/stale",
+          "size/XXL",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6562,
+        "title": "frontend: Add PodGroup and Workload scheduling views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
+        "author": "Anjali-Chauhan1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-25T17:25:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search",
+          "wg/workload-aware-scheduling",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -6270,34 +6270,6 @@
           "cncf-cla: yes",
           "size/L",
           "search"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6574,
-        "title": "frontend: NetworkPolicy: Resolve and show the pods a policy selects (#4039)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6574",
-        "author": "vtushar06",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:03:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
