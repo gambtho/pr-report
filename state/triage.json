@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-26T17:29:00+00:00",
+  "generated_at": "2026-07-26T18:28:41+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 342,
+  "open_prs_total": 341,
   "open_drafts_total": 42,
   "actionable_total": 195,
   "tracked_total": 63,
@@ -3206,19 +3206,41 @@
         }
       },
       {
-        "number": 6579,
-        "title": "frontend: add native offline asset bundling for air-gapped setups",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
+        "number": 6656,
+        "title": "ci: push-release-assets: Add cosign keyless signing for checksums",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6656",
+        "author": "Athang69",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-26T17:09:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6327,
+        "title": "frontend: serviceaccount: add list stories and unit tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
         "author": "Rucha0901",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-26T15:49:04Z",
+        "updated_at": "2026-07-26T18:04:51Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
           "frontend",
-          "plugins",
           "testing",
-          "headlamp-plugin",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -3236,39 +3258,15 @@
       },
       {
         "number": 6655,
-        "title": "Drop removed extensions/v1beta1 from Ingress apiVersion",
+        "title": "Drop removed-in-1.22 v1beta1 API versions (Ingress, CRD)",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6655",
         "author": "qiangli",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-26T16:44:16Z",
+        "updated_at": "2026-07-26T18:14:56Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: no",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6656,
-        "title": "ci: push-release-assets: Add cosign keyless signing for checksums",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6656",
-        "author": "Athang69",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-26T17:09:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -5213,32 +5211,6 @@
         }
       },
       {
-        "number": 6505,
-        "title": "frontend: ProjectDeleteButton: Add Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6505",
-        "author": "vividwhisp",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:51:48Z",
-        "days_since_update": 1,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6562,
         "title": "frontend: Add PodGroup and Workload scheduling views",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
@@ -5275,7 +5247,7 @@
         "author": "mudit06mah",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T17:46:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "backend",
@@ -5305,7 +5277,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T17:59:52Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "backend",
@@ -5336,7 +5308,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T18:00:06Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5365,7 +5337,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T18:26:18Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6040,6 +6012,61 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6579,
+        "title": "frontend: add native offline asset bundling for air-gapped setups",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T17:52:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6505,
+        "title": "frontend: ProjectDeleteButton: Add Storybook stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6505",
+        "author": "vividwhisp",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T18:12:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -6151,34 +6178,6 @@
           "cncf-cla: yes",
           "size/XXL",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6327,
-        "title": "frontend: serviceaccount: add list stories and unit tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:02:52Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "do-not-merge/invalid-commit-message",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
