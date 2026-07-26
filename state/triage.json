@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26T16:27:20+00:00",
+  "generated_at": "2026-07-26T17:29:00+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 337,
+  "open_prs_total": 342,
   "open_drafts_total": 42,
-  "actionable_total": 193,
+  "actionable_total": 195,
   "tracked_total": 63,
   "buckets": {
     "needs_rebase": [
@@ -3235,29 +3235,43 @@
         }
       },
       {
-        "number": 4760,
-        "title": "frontend: Add label filtering to resource list views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4760",
-        "author": "illume",
+        "number": 6655,
+        "title": "Drop removed extensions/v1beta1 from Ingress apiVersion",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6655",
+        "author": "qiangli",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-26T15:57:00Z",
+        "updated_at": "2026-07-26T16:44:16Z",
         "days_since_update": 0,
         "labels": [
-          "documentation",
-          "kind/feature",
-          "frontend",
-          "a11y",
-          "testing",
-          "cncf-cla: yes",
-          "approved",
-          "priority/important-longterm",
-          "size/XXL",
-          "dashboard",
-          "gatewayAPI",
-          "collab"
+          "cncf-cla: no",
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6656,
+        "title": "ci: push-release-assets: Add cosign keyless signing for checksums",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6656",
+        "author": "Athang69",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-26T17:09:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3316,38 +3330,6 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:03Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "security",
-          "plugins",
-          "testing",
-          "oidc",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5263,7 +5245,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T17:25:12Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5980,6 +5962,72 @@
           "dashboard",
           "websockets",
           "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4760,
+        "title": "frontend: Add label filtering to resource list views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4760",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T16:38:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "frontend",
+          "a11y",
+          "testing",
+          "cncf-cla: yes",
+          "approved",
+          "priority/important-longterm",
+          "size/XXL",
+          "dashboard",
+          "gatewayAPI",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T16:49:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "security",
+          "plugins",
+          "testing",
+          "oidc",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
