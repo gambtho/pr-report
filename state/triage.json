@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26T07:55:58+00:00",
+  "generated_at": "2026-07-26T08:55:33+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 336,
   "open_drafts_total": 42,
-  "actionable_total": 191,
+  "actionable_total": 190,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3996,64 +3996,6 @@
         }
       },
       {
-        "number": 6524,
-        "title": "frontend: Guard loadNotifications against corrupt localStorage JSON",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6524",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:03:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "quality",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6522,
-        "title": "app: Only kill headlamp-server processes owned by current user",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6522",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:03:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "windows",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5933,
         "title": "chart: Support deploymentLabels and additional templated values",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5933",
@@ -5823,35 +5765,6 @@
         }
       },
       {
-        "number": 6502,
-        "title": "app: Fix zoom persistence when switching panes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-26T05:12:26Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6594,
         "title": "backend: plugins: Return 404/400 on delete client errors",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6594",
@@ -5919,6 +5832,93 @@
           "kind/bug",
           "backend",
           "plugins",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6522,
+        "title": "app: Only kill headlamp-server processes owned by current user",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6522",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T08:15:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "windows",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6524,
+        "title": "frontend: Guard loadNotifications against corrupt localStorage JSON",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6524",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T08:16:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "quality",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6502,
+        "title": "app: Fix zoom persistence when switching panes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T08:17:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "app",
           "testing",
           "cncf-cla: yes",
           "size/L",
@@ -6046,35 +6046,6 @@
           "cncf-cla: yes",
           "size/XXL",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6579,
-        "title": "frontend: add native offline asset bundling for air-gapped setups",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:02:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
