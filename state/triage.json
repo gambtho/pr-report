@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26T05:14:58+00:00",
+  "generated_at": "2026-07-26T07:05:11+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 332,
+  "open_prs_total": 336,
   "open_drafts_total": 42,
-  "actionable_total": 194,
+  "actionable_total": 191,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2338,32 +2338,6 @@
     ],
     "ci_failing": [
       {
-        "number": 6519,
-        "title": "backend: Add tests for logger log function and SetLogFunc reset",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6519",
-        "author": "Aamod007",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-25T12:02:10Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6559,
         "title": "a11y: restore and improve a11y storybook testing",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
@@ -3789,34 +3763,6 @@
           "oidc",
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6594,
-        "title": "backend: plugins: Return 404/400 on delete client errors",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6594",
-        "author": "Pritz395",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "plugins",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5961,6 +5907,34 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6594,
+        "title": "backend: plugins: Return 404/400 on delete client errors",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6594",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T06:59:51Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "plugins",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -6025,35 +5999,6 @@
         }
       },
       {
-        "number": 6526,
-        "title": "frontend: SecretList: Do not crash on corrupt hide-Helm storage value",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6526",
-        "author": "Aamod007",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:02:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "charts",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5453,
         "title": "frontend: Implement registerResourceRelationProvider Plugin API",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
@@ -6072,33 +6017,6 @@
           "resourceMap",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6518,
-        "title": "backend: Add unit tests for pkg/headlampconfig",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6518",
-        "author": "Aamod007",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:02:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "kind/regression",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
