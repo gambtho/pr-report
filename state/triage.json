@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-26T18:28:41+00:00",
+  "generated_at": "2026-07-26T19:33:08+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 341,
+  "open_prs_total": 342,
   "open_drafts_total": 42,
   "actionable_total": 195,
   "tracked_total": 63,
@@ -3230,33 +3230,6 @@
         }
       },
       {
-        "number": 6327,
-        "title": "frontend: serviceaccount: add list stories and unit tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-26T18:04:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6655,
         "title": "Drop removed-in-1.22 v1beta1 API versions (Ingress, CRD)",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6655",
@@ -6058,6 +6031,33 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6327,
+        "title": "frontend: serviceaccount: add list stories and unit tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-26T19:00:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
