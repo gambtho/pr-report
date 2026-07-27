@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T21:30:51+00:00",
+  "generated_at": "2026-07-27T22:29:33+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 340,
   "open_drafts_total": 41,
-  "actionable_total": 198,
-  "tracked_total": 72,
+  "actionable_total": 195,
+  "tracked_total": 75,
   "buckets": {
     "needs_rebase": [
       {
@@ -113,59 +113,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6270,
-        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
-        "author": "vanshika2720",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:04:43Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6277,
-        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
-        "author": "Psykii22",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:05:55Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -365,33 +312,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6280,
-        "title": "frontend: Tabs: Fix incorrect initial tab highlight when using defaultIndex",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6280",
-        "author": "Adii-45",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:09:27Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -2928,6 +2848,89 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6280,
+        "title": "frontend: Tabs: Fix incorrect initial tab highlight when using defaultIndex",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6280",
+        "author": "Adii-45",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-27T22:20:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6277,
+        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
+        "author": "Psykii22",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-27T22:22:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6270,
+        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
+        "author": "vanshika2720",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-27T22:25:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
