@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26T23:26:30+00:00",
+  "generated_at": "2026-07-27T00:56:27+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 343,
+  "open_prs_total": 344,
   "open_drafts_total": 42,
-  "actionable_total": 195,
+  "actionable_total": 196,
   "tracked_total": 63,
   "buckets": {
     "needs_rebase": [
@@ -3240,6 +3240,32 @@
         "labels": [
           "cncf-cla: no",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6661,
+        "title": "build(deps): bump tar from 7.5.16 to 7.5.22 in /app",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6661",
+        "author": "dependabot",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-27T00:49:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "dependencies",
+          "javascript",
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
