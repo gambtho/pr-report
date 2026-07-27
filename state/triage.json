@@ -1,59 +1,28 @@
 {
-  "generated_at": "2026-07-27T16:48:38+00:00",
+  "generated_at": "2026-07-27T17:40:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 334,
-  "open_drafts_total": 42,
-  "actionable_total": 267,
+  "open_prs_total": 338,
+  "open_drafts_total": 41,
+  "actionable_total": 265,
   "tracked_total": 1,
   "buckets": {
     "needs_rebase": [
       {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
+        "number": 5927,
+        "title": "make application logo clickable",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5927",
+        "author": "CygnusMaximillian",
         "bucket": "needs_rebase",
-        "updated_at": "2026-07-27T16:46:59Z",
-        "days_since_update": 0,
+        "updated_at": "2026-07-25T12:11:42Z",
+        "days_since_update": 2,
         "labels": [
-          "kind/bug",
           "frontend",
-          "testing",
-          "e2e-tests",
           "cncf-cla: yes",
-          "size/L",
-          "search"
+          "needs-rebase",
+          "size/XXL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6334,
-        "title": "Add tejhan as a reviewer in OWNERS_ALIASES file",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6334",
-        "author": "tejhan",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-22T22:16:06Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "do-not-merge/invalid-owners-file",
-          "approved",
-          "size/XS",
-          "needs review"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "APPROVED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -66,6 +35,34 @@
       }
     ],
     "ci_failing": [
+      {
+        "number": 6334,
+        "title": "Add tejhan as a reviewer in OWNERS_ALIASES file",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6334",
+        "author": "tejhan",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-22T22:16:06Z",
+        "days_since_update": 4,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "do-not-merge/invalid-owners-file",
+          "approved",
+          "size/XS",
+          "needs review"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "APPROVED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
       {
         "number": 6559,
         "title": "a11y: restore and improve a11y storybook testing",
@@ -439,7 +436,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -1817,32 +1814,6 @@
         }
       },
       {
-        "number": 5927,
-        "title": "make application logo clickable",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5927",
-        "author": "CygnusMaximillian",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-25T12:11:42Z",
-        "days_since_update": 2,
-        "labels": [
-          "frontend",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6096,
         "title": "headlamp-plugin: add opt-in --with-claude-skills to create/upgrade",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6096",
@@ -2990,7 +2961,7 @@
           "size/XXL",
           "needs review"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -3751,23 +3722,24 @@
         }
       },
       {
-        "number": 6330,
-        "title": "app: backend: Bump oras-go v2.6.1, i18next-fs-backend v2.6.6",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6330",
-        "author": "skoeva",
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-27T16:03:35Z",
+        "updated_at": "2026-07-27T16:49:42Z",
         "days_since_update": 0,
         "labels": [
-          "backend",
-          "dependencies",
-          "security",
-          "app",
+          "kind/bug",
+          "frontend",
+          "testing",
+          "e2e-tests",
           "cncf-cla: yes",
-          "size/S"
+          "size/L",
+          "search"
         ],
         "mergeable": "UNKNOWN",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -3779,24 +3751,21 @@
         }
       },
       {
-        "number": 5877,
-        "title": "backend: auth: Drop IncrementRequestCounter from headlamp.go",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5877",
+        "number": 6330,
+        "title": "app: backend: Bump oras-go v2.6.1, i18next-fs-backend v2.6.6",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6330",
         "author": "skoeva",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-27T16:44:47Z",
+        "updated_at": "2026-07-27T17:29:58Z",
         "days_since_update": 0,
         "labels": [
           "backend",
-          "auth",
-          "quality",
-          "oidc",
-          "needs tests",
+          "dependencies",
+          "security",
+          "app",
           "cncf-cla: yes",
-          "needs-rebase",
           "size/S",
-          "approved",
-          "collab"
+          "approved"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -4642,7 +4611,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -5827,7 +5796,7 @@
           "websockets",
           "needs review"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -6294,7 +6263,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -6363,22 +6332,25 @@
         }
       },
       {
-        "number": 6642,
-        "title": "frontend: ReleaseNotesModal: Render HTML images from GitHub release notes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6642",
-        "author": "Pragati5-DEBUG",
+        "number": 5739,
+        "title": "frontend: Fix multiple mobile UI issues",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5739",
+        "author": "illume",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-27T16:18:42Z",
+        "updated_at": "2026-07-27T17:03:27Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
           "frontend",
+          "testing",
+          "mobile",
           "cncf-cla: yes",
+          "size/XL",
           "approved",
-          "size/L"
+          "needs review"
         ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "APPROVED",
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -6395,7 +6367,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
         "author": "rrk-dev",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-27T16:43:10Z",
+        "updated_at": "2026-07-27T17:39:11Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -6411,41 +6383,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4991,
-        "title": "load-tests: frontend: resourceMap: Improve performance",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4991",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-27T16:47:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "kind/feature",
-          "frontend",
-          "testing",
-          "performance",
-          "e2e-tests",
-          "resourceMap",
-          "cncf-cla: yes",
-          "lifecycle/stale",
-          "approved",
-          "priority/important-longterm",
-          "size/XXL",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -6478,7 +6415,7 @@
           "size/XXL",
           "collab"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -6595,7 +6532,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
