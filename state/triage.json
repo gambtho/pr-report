@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T07:58:57+00:00",
+  "generated_at": "2026-07-28T09:03:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 339,
-  "open_drafts_total": 41,
-  "actionable_total": 192,
+  "open_prs_total": 340,
+  "open_drafts_total": 42,
+  "actionable_total": 191,
   "tracked_total": 72,
   "buckets": {
     "needs_rebase": [
@@ -2892,34 +2892,6 @@
         }
       },
       {
-        "number": 6270,
-        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
-        "author": "vanshika2720",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-27T22:25:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6609,
         "title": "frontend: scope redux serializable check exceptions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6609",
@@ -2993,6 +2965,34 @@
           "needs-rebase",
           "size/XL",
           "collab"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6270,
+        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
+        "author": "vanshika2720",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-28T09:00:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -4160,45 +4160,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 4763,
-        "title": "Add websocket-mode config with UI toggle (websockets/multiplexer/off)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4763",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-28T07:55:43Z",
-        "days_since_update": 0,
-        "labels": [
-          "documentation",
-          "kind/feature",
-          "backend",
-          "frontend",
-          "plugins",
-          "testing",
-          "performance",
-          "e2e-tests",
-          "charts",
-          "blocker",
-          "resourceMap",
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL",
-          "dashboard",
-          "websockets",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6120,33 +6081,6 @@
         }
       },
       {
-        "number": 6322,
-        "title": "frontend: Pod: Fix lexicographical sorting bugs in Restarts and Ready columns",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6322",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T05:41:58Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "a11y",
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6410,
         "title": "frontend: Tabs: Fix defaultindex always initialising at zero",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6410",
@@ -6500,6 +6434,33 @@
           "testing",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6322,
+        "title": "frontend: Pod: Fix lexicographical sorting bugs in Restarts and Ready columns",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6322",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T09:00:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "a11y",
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -7305,30 +7266,6 @@
         }
       },
       {
-        "number": 6688,
-        "title": "Backend: Don't log errors when no kubeconfig is set",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6688",
-        "author": "tejhan",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-28T07:56:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5864,
         "title": "frontend: guard event source field against undefined in ObjectEventList",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5864",
@@ -7403,6 +7340,30 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6688,
+        "title": "Backend: Don't log errors when no kubeconfig is set",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6688",
+        "author": "tejhan",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-07-28T08:01:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
