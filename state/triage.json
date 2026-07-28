@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T21:31:58+00:00",
+  "generated_at": "2026-07-28T22:28:51+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 344,
+  "open_prs_total": 345,
   "open_drafts_total": 42,
-  "actionable_total": 194,
+  "actionable_total": 195,
   "tracked_total": 68,
   "buckets": {
     "needs_rebase": [
@@ -2728,7 +2728,7 @@
         "author": "Psykii22",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T22:22:42Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6434,6 +6434,31 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6719,
+        "title": "frontend: websocket: fan out shared watch listeners",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6719",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T22:25:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "kind/regression",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
