@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-28T14:57:06+00:00",
+  "generated_at": "2026-07-28T15:52:12+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 341,
-  "open_drafts_total": 42,
+  "open_drafts_total": 43,
   "actionable_total": 194,
   "tracked_total": 69,
   "buckets": {
@@ -4081,36 +4081,12 @@
         }
       },
       {
-        "number": 6707,
-        "title": "frontend: fix useClustersVersion polling when tab is in background",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6707",
-        "author": "shreyas-acharya",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-28T13:47:46Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5453,
         "title": "frontend: Implement registerResourceRelationProvider Plugin API",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
         "author": "Joshna907",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-28T14:32:16Z",
+        "updated_at": "2026-07-28T15:10:14Z",
         "days_since_update": 0,
         "labels": [
           "documentation",
@@ -5477,7 +5453,7 @@
         "author": "tejhan",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-27T15:17:15Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5883,33 +5859,6 @@
           "a11y",
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6270,
-        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
-        "author": "vanshika2720",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T09:09:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6417,12 +6366,40 @@
         }
       },
       {
+        "number": 6602,
+        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T14:55:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6288,
         "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T14:46:52Z",
+        "updated_at": "2026-07-28T15:00:11Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
@@ -6444,20 +6421,43 @@
         }
       },
       {
-        "number": 6602,
-        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
-        "author": "Pritz395",
+        "number": 6270,
+        "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
+        "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T14:55:58Z",
+        "updated_at": "2026-07-28T15:02:43Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
-          "backend",
+          "frontend",
           "testing",
           "cncf-cla: yes",
-          "size/L",
-          "collab"
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6707,
+        "title": "frontend: fix useClustersVersion polling when tab is in background",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6707",
+        "author": "shreyas-acharya",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T15:38:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
