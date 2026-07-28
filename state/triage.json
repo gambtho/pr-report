@@ -1,44 +1,12 @@
 {
-  "generated_at": "2026-07-28T13:42:10+00:00",
+  "generated_at": "2026-07-28T14:57:06+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 340,
+  "open_prs_total": 341,
   "open_drafts_total": 42,
-  "actionable_total": 192,
-  "tracked_total": 72,
+  "actionable_total": 194,
+  "tracked_total": 69,
   "buckets": {
     "needs_rebase": [
-      {
-        "number": 5453,
-        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
-        "author": "Joshna907",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:02:19Z",
-        "days_since_update": 3,
-        "labels": [
-          "documentation",
-          "kind/feature",
-          "backend",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
       {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
@@ -2671,60 +2639,6 @@
         }
       },
       {
-        "number": 6657,
-        "title": "backend: kubeconfig: Resolve relative PKI paths against file dir",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6657",
-        "author": "Pritz395",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-27T18:34:12Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6594,
-        "title": "backend: plugins: Return 404/400 on delete client errors",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6594",
-        "author": "Pritz395",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-27T18:36:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "plugins",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6579,
         "title": "frontend: add native offline asset bundling for air-gapped setups",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
@@ -2818,34 +2732,6 @@
         "days_since_update": 0,
         "labels": [
           "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6288,
-        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
-        "author": "vanshika2720",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-27T18:55:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
           "frontend",
           "testing",
           "cncf-cla: yes",
@@ -4115,30 +4001,6 @@
         }
       },
       {
-        "number": 6707,
-        "title": "frontend: fix useClustersVersion polling when tab is in background",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6707",
-        "author": "shreyas-acharya",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-28T07:54:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4342,
         "title": "Frontend Blocker: Storage Pools and Snapshot pages broken due to Headlamp v0.39 CRD rendering crash",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4342",
@@ -4205,6 +4067,62 @@
         "labels": [
           "cncf-cla: no",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6707,
+        "title": "frontend: fix useClustersVersion polling when tab is in background",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6707",
+        "author": "shreyas-acharya",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-28T13:47:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5453,
+        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
+        "author": "Joshna907",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-28T14:32:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "backend",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5952,34 +5870,6 @@
         }
       },
       {
-        "number": 6602,
-        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
-        "author": "Pritz395",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T07:57:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6322,
         "title": "frontend: Pod: Fix lexicographical sorting bugs in Restarts and Ready columns",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6322",
@@ -6485,6 +6375,89 @@
           "testing",
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6594,
+        "title": "backend: plugins: Return 404/400 on delete client errors",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6594",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T13:46:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "plugins",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6288,
+        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
+        "author": "vanshika2720",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T14:46:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6602,
+        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T14:55:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
