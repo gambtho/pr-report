@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T16:40:06+00:00",
+  "generated_at": "2026-07-28T17:39:30+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 343,
   "open_drafts_total": 42,
@@ -4140,34 +4140,6 @@
         }
       },
       {
-        "number": 6490,
-        "title": "frontend: handle manual closure of cross-origin Oauth popup",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6490",
-        "author": "anushkagupta200615-jpg",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:32Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "oidc",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6596,
         "title": "fix(k8cache): Set informer resyncPeriod to 30m for self-healing cache",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6596",
@@ -4209,34 +4181,6 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6629,
-        "title": "frontend: util: Fix normalizeUnit rendering \"undefined\" for sub-1-byte memory",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6629",
-        "author": "anushkagupta200615-jpg",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:56Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/S",
-          "kind/regression"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6365,33 +6309,6 @@
         }
       },
       {
-        "number": 6288,
-        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
-        "author": "vanshika2720",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T15:00:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6270,
         "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
@@ -6443,12 +6360,95 @@
         }
       },
       {
+        "number": 6629,
+        "title": "frontend: util: Fix normalizeUnit rendering \"undefined\" for sub-1-byte memory",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6629",
+        "author": "anushkagupta200615-jpg",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T17:03:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/S",
+          "kind/regression"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6490,
+        "title": "frontend: handle manual closure of cross-origin Oauth popup",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6490",
+        "author": "anushkagupta200615-jpg",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T17:04:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "oidc",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6288,
+        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
+        "author": "vanshika2720",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T17:26:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6109,
         "title": "backend: portforward: Fix context key to match rest of backend",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6109",
         "author": "r0hansaxena",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T16:35:54Z",
+        "updated_at": "2026-07-28T17:30:12Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
