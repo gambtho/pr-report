@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T17:39:30+00:00",
+  "generated_at": "2026-07-28T18:37:55+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 343,
+  "open_prs_total": 344,
   "open_drafts_total": 42,
-  "actionable_total": 195,
+  "actionable_total": 194,
   "tracked_total": 68,
   "buckets": {
     "needs_rebase": [
@@ -2588,7 +2588,7 @@
         "author": "tejhan",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T18:08:29Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3972,35 +3972,6 @@
         }
       },
       {
-        "number": 4342,
-        "title": "Frontend Blocker: Storage Pools and Snapshot pages broken due to Headlamp v0.39 CRD rendering crash",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4342",
-        "author": "datacore-gjanoti",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-28T07:57:23Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "blocker",
-          "cncf-cla: yes",
-          "size/M",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6616,
         "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
@@ -5174,7 +5145,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T17:59:52Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/feature",
           "backend",
@@ -5205,7 +5176,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T18:00:06Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5234,7 +5205,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T18:26:18Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5261,7 +5232,7 @@
         "author": "vividwhisp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-26T18:12:28Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "frontend",
           "testing",
@@ -5575,34 +5546,6 @@
           "cncf-cla: yes",
           "size/XXL",
           "needs review",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6227,
-        "title": "Fix/releaser bump helm chart",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6227",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T07:57:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "charts",
-          "cncf-cla: yes",
-          "size/L",
           "collab"
         ],
         "mergeable": "MERGEABLE",
@@ -6457,6 +6400,35 @@
           "cncf-cla: yes",
           "kind/regression",
           "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4342,
+        "title": "Frontend Blocker: Storage Pools and Snapshot pages broken due to Headlamp v0.39 CRD rendering crash",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4342",
+        "author": "datacore-gjanoti",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-28T18:23:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "blocker",
+          "cncf-cla: yes",
+          "size/M",
           "collab"
         ],
         "mergeable": "MERGEABLE",
