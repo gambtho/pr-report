@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T20:27:41+00:00",
+  "generated_at": "2026-07-29T21:25:22+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 351,
   "open_drafts_total": 42,
@@ -3842,30 +3842,6 @@
         }
       },
       {
-        "number": 6740,
-        "title": "backend: serve plugins with no-cache when watching for changes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6740",
-        "author": "csuich2",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-29T15:09:46Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6643,
         "title": "frontend: Add Storybook stories for CreateDaemonSetForm and Resource components",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6643",
@@ -3908,6 +3884,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6740,
+        "title": "backend: serve plugins with no-cache when watching for changes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6740",
+        "author": "csuich2",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-29T20:49:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
