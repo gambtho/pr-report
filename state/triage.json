@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T22:26:55+00:00",
+  "generated_at": "2026-07-29T23:27:37+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 351,
   "open_drafts_total": 42,
@@ -2718,36 +2718,6 @@
         }
       },
       {
-        "number": 6609,
-        "title": "frontend: scope redux serializable check exceptions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6609",
-        "author": "rootp1",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-28T04:20:42Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "kind/feature",
-          "frontend",
-          "testing",
-          "resourceMap",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6441,
         "title": "backend: deps: Bump golang.org/x/crypto, oras-go, and Go toolchain to fix Scorecard vulnerabilities",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6441",
@@ -2841,6 +2811,36 @@
           "kind/bug",
           "frontend",
           "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6609,
+        "title": "frontend: scope redux serializable check exceptions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6609",
+        "author": "rootp1",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-07-29T23:16:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "kind/feature",
+          "frontend",
+          "testing",
+          "resourceMap",
           "cncf-cla: yes",
           "needs-rebase",
           "size/L"
@@ -3821,7 +3821,7 @@
         "author": "NAME-ASHWANIYADAV",
         "bucket": "ci_failing",
         "updated_at": "2026-07-28T22:47:41Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5849,33 +5849,6 @@
         }
       },
       {
-        "number": 6618,
-        "title": "app: add MCP permissions center",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6618",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6612,
         "title": "backend: speed up serviceproxy timeout test cleanup",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6612",
@@ -5889,88 +5862,6 @@
           "cncf-cla: yes",
           "size/S",
           "kind/regression"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6591,
-        "title": "frontend: ErrorPage: fix heading nesting for rich messages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6591",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:33Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6584,
-        "title": "frontend: wrap disabled ActionButton tooltip target",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6584",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "kind/regression",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6582,
-        "title": "frontend: initialize i18n in test setup",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6582",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6013,60 +5904,6 @@
         }
       },
       {
-        "number": 6529,
-        "title": "app: redact MCP debug logging",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6529",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6521,
-        "title": "Limit desktop MCP child process environment",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6521",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6492,
         "title": "docs: clarify generated API docs are checked in",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
@@ -6093,32 +5930,6 @@
         }
       },
       {
-        "number": 6461,
-        "title": "backend: k8cache: derive real API group/scope in cached auth error responses",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6461",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:45Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6458,
         "title": "backend: k8cache: watch discovered list-watch resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
@@ -6127,60 +5938,6 @@
         "updated_at": "2026-07-29T10:15:48Z",
         "days_since_update": 0,
         "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6428,
-        "title": "backend: reject colliding custom context names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6417,
-        "title": "backend: reject ambiguous DNS-friendly context matches",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
           "backend",
           "testing",
           "cncf-cla: yes",
@@ -6439,6 +6196,249 @@
           "charts",
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6618,
+        "title": "app: add MCP permissions center",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6618",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6591,
+        "title": "frontend: ErrorPage: fix heading nesting for rich messages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6591",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6584,
+        "title": "frontend: wrap disabled ActionButton tooltip target",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6584",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "kind/regression",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6582,
+        "title": "frontend: initialize i18n in test setup",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6582",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6529,
+        "title": "app: redact MCP debug logging",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6529",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6521,
+        "title": "Limit desktop MCP child process environment",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6521",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:49Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "documentation",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6461,
+        "title": "backend: k8cache: derive real API group/scope in cached auth error responses",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6461",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:51Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6428,
+        "title": "backend: reject colliding custom context names",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6428",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6417,
+        "title": "backend: reject ambiguous DNS-friendly context matches",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6417",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T23:16:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
