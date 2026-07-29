@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-29T09:06:17+00:00",
+  "generated_at": "2026-07-29T10:03:05+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 346,
+  "open_prs_total": 347,
   "open_drafts_total": 42,
   "actionable_total": 194,
   "tracked_total": 69,
@@ -2918,36 +2918,6 @@
     ],
     "ci_failing": [
       {
-        "number": 6559,
-        "title": "a11y: restore and improve a11y storybook testing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
-        "author": "unichronic",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-25T12:03:07Z",
-        "days_since_update": 3,
-        "labels": [
-          "documentation",
-          "frontend",
-          "plugins",
-          "a11y",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: no",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6365,
         "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
@@ -3614,7 +3584,7 @@
         "author": "Suyog241005",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T09:27:42Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3638,7 +3608,7 @@
         "author": "Suyog241005",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T09:27:48Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3662,7 +3632,7 @@
         "author": "Suyog241005",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T09:27:51Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3686,7 +3656,7 @@
         "author": "Suyog241005",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T09:28:20Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/feature",
           "backend",
@@ -6435,6 +6405,36 @@
           "testing",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6559,
+        "title": "a11y: restore and improve a11y storybook testing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6559",
+        "author": "unichronic",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T09:54:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "frontend",
+          "plugins",
+          "a11y",
+          "testing",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
