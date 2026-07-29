@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T03:10:12+00:00",
+  "generated_at": "2026-07-29T05:12:11+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 343,
   "open_drafts_total": 42,
@@ -2755,7 +2755,7 @@
         "author": "rootp1",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-28T04:20:42Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -4048,34 +4048,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6718,
-        "title": "frontend: resourceMap: Fix fit to screen, and resize issues",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6718",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-07-29T01:00:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL",
-          "approved",
-          "kind/regression"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5458,7 +5430,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T03:28:26Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "app",
           "testing",
@@ -5484,7 +5456,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T03:28:29Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5514,7 +5486,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T04:46:19Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "plugins",
@@ -6466,6 +6438,34 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6718,
+        "title": "frontend: resourceMap: Fix fit to screen, and resize issues",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6718",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-29T05:06:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved",
+          "kind/regression"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
