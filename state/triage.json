@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-30T09:02:42+00:00",
+  "generated_at": "2026-07-30T09:57:09+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 355,
   "open_drafts_total": 42,
-  "actionable_total": 196,
+  "actionable_total": 197,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -3848,10 +3848,37 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6749",
         "author": "krsatyamthakur-droid",
         "bucket": "ci_failing",
-        "updated_at": "2026-07-30T08:14:45Z",
+        "updated_at": "2026-07-30T09:39:35Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6627,
+        "title": "backend: k8cache: Use JSON status probe to prevent false-positive Failure cache drops",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6627",
+        "author": "AYUSH-P-SINGH",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-30T09:42:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: no",
           "size/M"
         ],
         "mergeable": "MERGEABLE",
