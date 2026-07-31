@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-31T09:09:28+00:00",
+  "generated_at": "2026-07-31T11:00:39+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 364,
+  "open_prs_total": 365,
   "open_drafts_total": 42,
-  "actionable_total": 197,
+  "actionable_total": 198,
   "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
@@ -3820,7 +3820,7 @@
         "author": "AYUSH-P-SINGH",
         "bucket": "ci_failing",
         "updated_at": "2026-07-30T09:42:27Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "backend",
@@ -3851,6 +3851,30 @@
         "labels": [
           "cncf-cla: yes",
           "do-not-merge/invalid-commit-message",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6769,
+        "title": "frontend: KubeObject: Fix static methods violating React Rules of Hooks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6769",
+        "author": "mishradwaterlaw",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-31T09:51:50Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
           "size/L"
         ],
         "mergeable": "MERGEABLE",
@@ -5353,7 +5377,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T10:12:14Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5632,7 +5656,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-29T10:15:29Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "backend",
           "testing",
@@ -5659,7 +5683,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-29T10:15:38Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "backend",
@@ -5667,58 +5691,6 @@
           "testing",
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6492,
-        "title": "docs: clarify generated API docs are checked in",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:44Z",
-        "days_since_update": 1,
-        "labels": [
-          "documentation",
-          "cncf-cla: yes",
-          "approved",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6458,
-        "title": "backend: k8cache: watch discovered list-watch resources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-29T10:15:48Z",
-        "days_since_update": 1,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6437,6 +6409,58 @@
         "labels": [
           "kind/bug",
           "kind/feature",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6492,
+        "title": "docs: clarify generated API docs are checked in",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6492",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-31T09:26:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "cncf-cla: yes",
+          "approved",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6458,
+        "title": "backend: k8cache: watch discovered list-watch resources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-07-31T10:50:31Z",
+        "days_since_update": 0,
+        "labels": [
           "backend",
           "testing",
           "cncf-cla: yes",
