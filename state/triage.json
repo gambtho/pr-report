@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T12:32:26+00:00",
+  "generated_at": "2026-08-01T13:39:15+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 376,
   "open_drafts_total": 42,
-  "actionable_total": 199,
+  "actionable_total": 200,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2752,7 +2752,7 @@
         "author": "unlikelyzero",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-28T13:20:58Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3786,6 +3786,30 @@
         "bucket": "ci_failing",
         "updated_at": "2026-07-31T09:51:50Z",
         "days_since_update": 1,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6795,
+        "title": "backend: deduplicate concurrent OIDC token refreshes to fix invalid_grant/forced-relogin race",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6795",
+        "author": "bhuvan-somisetty",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-01T12:41:03Z",
+        "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4841,7 +4865,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T12:49:00Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "backend",
