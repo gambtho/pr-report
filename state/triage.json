@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T07:00:03+00:00",
+  "generated_at": "2026-08-01T07:50:20+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 373,
   "open_drafts_total": 43,
-  "actionable_total": 200,
+  "actionable_total": 199,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2695,7 +2695,7 @@
         "author": "Athang69",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-28T07:20:53Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "backend",
@@ -3789,62 +3789,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5453,
-        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
-        "author": "Joshna907",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-01T02:26:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "documentation",
-          "kind/feature",
-          "backend",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6789,
-        "title": "frontend: SimpleTable: Add missing Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6789",
-        "author": "kunaldevsahu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-01T06:33:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -5149,7 +5093,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T07:22:35Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6046,7 +5990,7 @@
         "author": "Harsh63870",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-31T07:40:40Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -6463,6 +6407,38 @@
           "size/XXL",
           "needs review",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5453,
+        "title": "frontend: Implement registerResourceRelationProvider Plugin API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
+        "author": "Joshna907",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-01T07:01:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "backend",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
