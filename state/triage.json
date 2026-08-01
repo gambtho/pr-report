@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T09:45:01+00:00",
+  "generated_at": "2026-08-01T10:40:22+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 375,
   "open_drafts_total": 42,
-  "actionable_total": 200,
+  "actionable_total": 199,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3785,31 +3785,7 @@
         "author": "mishradwaterlaw",
         "bucket": "ci_failing",
         "updated_at": "2026-07-31T09:51:50Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6792,
-        "title": "frontend: DeleteButton: Offer both delete and evict for pods",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6792",
-        "author": "krsatyamthakur-droid",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-01T09:26:35Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5284,7 +5260,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T10:12:14Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5375,34 +5351,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6602,
-        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
-        "author": "Pritz395",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T14:55:58Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6430,6 +6378,34 @@
           "cncf-cla: yes",
           "size/XXL",
           "needs review",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6602,
+        "title": "backend: drainNode: Skip DaemonSet pods via ownerReferences",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6602",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-01T10:34:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
           "collab"
         ],
         "mergeable": "MERGEABLE",
