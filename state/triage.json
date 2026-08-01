@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T14:38:22+00:00",
+  "generated_at": "2026-08-01T15:32:13+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 378,
+  "open_prs_total": 379,
   "open_drafts_total": 42,
-  "actionable_total": 200,
+  "actionable_total": 201,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3825,6 +3825,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6803,
+        "title": "feat(frontend): uniform breakpoints theme system and responsive layout refactoring",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6803",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-01T15:06:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4946,7 +4970,7 @@
         "author": "tejhan",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-27T15:17:15Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5367,7 +5391,7 @@
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T15:02:43Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6443,6 +6467,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6655,
+        "title": "Drop removed-in-1.22 v1beta1 API versions (Ingress, CRD)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6655",
+        "author": "qiangli",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-01T15:15:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -7305,30 +7353,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6655,
-        "title": "Drop removed-in-1.22 v1beta1 API versions (Ingress, CRD)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6655",
-        "author": "qiangli",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-29T02:34:13Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
