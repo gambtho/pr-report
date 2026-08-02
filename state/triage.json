@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T17:28:28+00:00",
+  "generated_at": "2026-08-02T18:27:32+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 385,
+  "open_prs_total": 386,
   "open_drafts_total": 41,
   "actionable_total": 199,
   "tracked_total": 64,
@@ -2557,7 +2557,7 @@
         "author": "tejhan",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T18:08:29Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3745,33 +3745,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 6616,
-        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
-        "author": "NAME-ASHWANIYADAV",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-02T16:59:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "cncf-cla: yes",
-          "size/XXL",
-          "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4757,7 +4730,7 @@
         "author": "vividwhisp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-26T18:12:28Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "frontend",
           "testing",
@@ -5730,36 +5703,6 @@
         }
       },
       {
-        "number": 6562,
-        "title": "frontend: Add PodGroup and Workload scheduling views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
-        "author": "Anjali-Chauhan1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-31T04:05:13Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search",
-          "wg/workload-aware-scheduling",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6553,
         "title": "backend: serviceproxy: add URL validation to fix gosec G107",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6553",
@@ -6430,6 +6373,63 @@
           "documentation",
           "cncf-cla: yes",
           "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6616,
+        "title": "frontend: DetailsGrid: Add sticky header to resource detail pages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6616",
+        "author": "NAME-ASHWANIYADAV",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-02T17:47:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "cncf-cla: yes",
+          "size/XXL",
+          "needs review"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6562,
+        "title": "frontend: Add PodGroup and Workload scheduling views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6562",
+        "author": "Anjali-Chauhan1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-02T17:57:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search",
+          "wg/workload-aware-scheduling",
           "collab"
         ],
         "mergeable": "MERGEABLE",
