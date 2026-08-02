@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-02T12:31:21+00:00",
+  "generated_at": "2026-08-02T13:39:20+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 385,
   "open_drafts_total": 41,
-  "actionable_total": 200,
+  "actionable_total": 199,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2723,7 +2723,7 @@
         "author": "unlikelyzero",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-28T13:20:58Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3772,30 +3772,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 6813,
-        "title": "frontend: LogViewer: Add copy to clipboard action",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
-        "author": "Priyanshu-rgbb",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-02T12:15:26Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -3867,34 +3843,6 @@
           "testing",
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6423,
-        "title": "backend: config: Add jaeger-endpoint CLI flag",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6423",
-        "author": "Harsh63870",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:54Z",
-        "days_since_update": 8,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4164,32 +4112,6 @@
           "backend",
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6407,
-        "title": "docs: Add OpenTelemetry usage guide",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6407",
-        "author": "Harsh63870",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:06:11Z",
-        "days_since_update": 8,
-        "labels": [
-          "documentation",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4808,7 +4730,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-25T12:49:00Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "backend",
@@ -6455,6 +6377,60 @@
           "cncf-cla: yes",
           "approved",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6423,
+        "title": "backend: config: Add jaeger-endpoint CLI flag",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6423",
+        "author": "Harsh63870",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-02T13:11:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6407,
+        "title": "docs: Add OpenTelemetry usage guide",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6407",
+        "author": "Harsh63870",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-02T13:21:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
