@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T21:31:24+00:00",
+  "generated_at": "2026-08-03T22:29:24+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 400,
+  "open_prs_total": 402,
   "open_drafts_total": 45,
-  "actionable_total": 200,
+  "actionable_total": 201,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2581,7 +2581,7 @@
         "author": "Psykii22",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T22:22:42Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3760,6 +3760,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6846,
+        "title": "frontend: Add Copy as kubectl command action to resource detail pages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6846",
+        "author": "rootp1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-03T22:14:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
