@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T09:19:02+00:00",
+  "generated_at": "2026-08-03T11:12:17+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 391,
+  "open_prs_total": 394,
   "open_drafts_total": 41,
-  "actionable_total": 199,
+  "actionable_total": 201,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3702,7 +3702,7 @@
         "author": "AYUSH-P-SINGH",
         "bucket": "ci_failing",
         "updated_at": "2026-07-30T09:42:27Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "backend",
@@ -3729,6 +3729,30 @@
         "author": "mishradwaterlaw",
         "bucket": "ci_failing",
         "updated_at": "2026-08-03T08:02:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6823,
+        "title": "backend: Fix CSWSH vulnerability in Multiplexer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6823",
+        "author": "mishradwaterlaw",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-03T10:52:55Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -5453,40 +5477,13 @@
         }
       },
       {
-        "number": 6354,
-        "title": "lib/k8s: fix stale connection race in useWebSockets",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-30T06:26:41Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6451,
         "title": "frontend: secret: add unit tests for details and list views",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6451",
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-30T11:07:14Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "frontend",
           "testing",
@@ -5512,7 +5509,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-30T11:10:52Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/feature",
           "frontend",
@@ -6119,7 +6116,7 @@
         "author": "Pritz395",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-01T10:34:24Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "backend",
@@ -6147,7 +6144,7 @@
         "author": "Pritz395",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-01T10:43:29Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "backend",
@@ -6284,7 +6281,7 @@
         "author": "joaquimrocha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-02T10:55:18Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "backend",
@@ -6407,6 +6404,57 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6354,
+        "title": "lib/k8s: fix stale connection race in useWebSockets",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6354",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-03T09:30:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6795,
+        "title": "backend: deduplicate concurrent OIDC token refreshes to fix invalid_grant/forced-relogin race",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6795",
+        "author": "bhuvan-somisetty",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-03T10:48:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
