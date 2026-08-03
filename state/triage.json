@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T13:13:06+00:00",
+  "generated_at": "2026-08-03T15:08:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 397,
+  "open_prs_total": 401,
   "open_drafts_total": 43,
-  "actionable_total": 200,
+  "actionable_total": 202,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -2723,7 +2723,7 @@
         "author": "unlikelyzero",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-28T13:20:58Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3757,6 +3757,56 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6833,
+        "title": "0027: Make the column selector keyboard accessible",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6833",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-03T14:20:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6835,
+        "title": "0025: Project tabs high-zoom usability",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6835",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-03T14:57:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -5145,7 +5195,7 @@
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T15:02:43Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5344,7 +5394,7 @@
         "author": "rrk-dev",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-29T13:47:59Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5707,7 +5757,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-31T14:06:26Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -6338,7 +6388,7 @@
         "author": "Harsh63870",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-02T13:21:08Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "documentation",
           "cncf-cla: yes",
@@ -6432,6 +6482,33 @@
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6097,
+        "title": "docs: fix command of the Keycloak OIDC tutorial",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6097",
+        "author": "yuki681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-03T15:07:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "documentation",
+          "oidc",
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "SUCCESS",
         "action": {
           "priority": "ping reviewer for re-review",
           "recommended_label": "needs-review",
@@ -7316,33 +7393,6 @@
         }
       },
       {
-        "number": 6097,
-        "title": "docs: fix command of the Keycloak OIDC tutorial",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6097",
-        "author": "yuki681",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-31T11:42:53Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "oidc",
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5453,
         "title": "frontend: Implement registerResourceRelationProvider Plugin API",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5453",
@@ -7375,19 +7425,16 @@
         }
       },
       {
-        "number": 5964,
-        "title": "frontend: diagnostics: Re-add workload diagnostics section, reworked, with stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5964",
-        "author": "xonas1101",
+        "number": 6739,
+        "title": "docker-ext: bump headlamp base image to v0.44.0",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6739",
+        "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_author",
-        "updated_at": "2026-08-03T08:42:23Z",
+        "updated_at": "2026-08-03T13:47:25Z",
         "days_since_update": 0,
         "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
           "cncf-cla: yes",
-          "size/XXL"
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
