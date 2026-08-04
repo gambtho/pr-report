@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T14:56:59+00:00",
+  "generated_at": "2026-08-04T15:54:58+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 423,
   "open_drafts_total": 47,
-  "actionable_total": 202,
+  "actionable_total": 203,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3799,6 +3799,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6878,
+        "title": "backend: plugins: Hot-Reloading & Live Catalog Update of Backend Plugins",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6878",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-04T14:49:39Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -4812,7 +4836,7 @@
         "author": "tejhan",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-27T15:17:15Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5116,40 +5140,13 @@
         }
       },
       {
-        "number": 4938,
-        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
-        "author": "cmcgalliard",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-28T12:06:48Z",
-        "days_since_update": 7,
-        "labels": [
-          "kind/feature",
-          "testing",
-          "charts",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6270,
         "title": "frontend: fix race condition in useWatchKubeObjectListsMultiplexed",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6270",
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T15:02:43Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5318,7 +5315,7 @@
         "author": "shreyas-acharya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-29T15:53:02Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5705,7 +5702,7 @@
         "author": "qiangli",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-01T15:15:06Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -5981,7 +5978,7 @@
         "author": "yuki681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-03T15:07:39Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "documentation",
@@ -6531,6 +6528,33 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 4938,
+        "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
+        "author": "cmcgalliard",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-04T15:29:58Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "testing",
+          "charts",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
