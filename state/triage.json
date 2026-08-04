@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T16:43:29+00:00",
+  "generated_at": "2026-08-04T17:41:27+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 423,
+  "open_prs_total": 424,
   "open_drafts_total": 47,
-  "actionable_total": 203,
+  "actionable_total": 204,
   "tracked_total": 64,
   "buckets": {
     "needs_rebase": [
@@ -3797,6 +3797,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6878,
+        "title": "backend: plugins: Hot-Reloading & Live Catalog Update of Backend Plugins",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6878",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-04T16:49:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -5147,7 +5171,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T17:03:03Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5175,7 +5199,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T17:04:14Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5203,7 +5227,7 @@
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T17:26:14Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5505,7 +5529,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-30T17:15:01Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "backend",
@@ -5536,7 +5560,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-30T17:15:26Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5565,7 +5589,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-30T17:15:49Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6489,30 +6513,6 @@
         }
       },
       {
-        "number": 6844,
-        "title": "frontend: NodeShellTerminal: Surface pod creation errors",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6844",
-        "author": "YousufFFFF",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-04T14:56:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 4938,
         "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
@@ -6559,6 +6559,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6844,
+        "title": "frontend: NodeShellTerminal: Surface pod creation errors",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6844",
+        "author": "YousufFFFF",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-04T17:01:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
