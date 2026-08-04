@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:54:58+00:00",
+  "generated_at": "2026-08-04T16:43:29+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 423,
   "open_drafts_total": 47,
@@ -706,7 +706,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:06Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "security",
@@ -734,7 +734,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:07Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "security",
@@ -3381,7 +3381,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:01:59Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3407,7 +3407,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:01:59Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3433,7 +3433,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:05Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3459,7 +3459,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:10Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3485,7 +3485,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:13Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3511,7 +3511,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:47Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3537,7 +3537,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:48Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3563,7 +3563,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:02:59Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "javascript",
@@ -3589,7 +3589,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:03:04Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "security",
@@ -3771,45 +3771,19 @@
         }
       },
       {
-        "number": 5717,
-        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
-        "author": "WasThatRudy",
+        "number": 6554,
+        "title": "frontend: CreateStatefulSetForm: Add create form for stateful set",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6554",
+        "author": "vyncent-t",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-04T14:09:47Z",
+        "updated_at": "2026-08-04T16:23:52Z",
         "days_since_update": 0,
         "labels": [
-          "kind/bug",
+          "kind/feature",
           "frontend",
           "testing",
-          "resourceMap",
           "cncf-cla: yes",
-          "size/XXL",
-          "needs review",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6878,
-        "title": "backend: plugins: Hot-Reloading & Live Catalog Update of Backend Plugins",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6878",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-04T14:49:39Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
+          "approved",
           "size/XXL"
         ],
         "mergeable": "MERGEABLE",
@@ -6564,6 +6538,36 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5717,
+        "title": "frontend: crd: Guard against incomplete CRD spec in makeCRClass",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5717",
+        "author": "WasThatRudy",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-04T16:30:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XXL",
+          "needs review",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -7275,7 +7279,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:05Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "dependencies",
           "security",
