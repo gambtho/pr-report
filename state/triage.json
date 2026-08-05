@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-05T20:36:11+00:00",
+  "generated_at": "2026-08-05T22:16:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 453,
   "open_drafts_total": 46,
-  "actionable_total": 264,
+  "actionable_total": 265,
   "tracked_total": 69,
   "buckets": {
     "needs_rebase": [
@@ -3445,7 +3445,7 @@
         "author": "iashutoshyadav",
         "bucket": "ci_failing",
         "updated_at": "2026-08-03T20:41:57Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4192,35 +4192,6 @@
         }
       },
       {
-        "number": 6579,
-        "title": "frontend: add native offline asset bundling for air-gapped setups",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-05T18:29:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6769,
         "title": "frontend: KubeObject: Fix static methods violating React Rules of Hooks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6769",
@@ -4302,33 +4273,6 @@
         }
       },
       {
-        "number": 6710,
-        "title": "telemetry: Add OpenTelemetry cache observability metrics",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6710",
-        "author": "Slambot01",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-05T20:19:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6821,
         "title": "feat(frontend): add label selector and resource type filtering in resource map",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6821",
@@ -4363,12 +4307,41 @@
         }
       },
       {
-        "number": 6636,
-        "title": "backend: k8cache: Add configurable cache watch resources allowlist",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6636",
+        "number": 6579,
+        "title": "frontend: add native offline asset bundling for air-gapped setups",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-05T20:57:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6710,
+        "title": "telemetry: Add OpenTelemetry cache observability metrics",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6710",
         "author": "Slambot01",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-05T20:33:21Z",
+        "updated_at": "2026-08-05T21:25:06Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -7080,38 +7053,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T19:54:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "security",
-          "plugins",
-          "testing",
-          "oidc",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6609,
         "title": "frontend: scope redux serializable check exceptions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6609",
@@ -7678,12 +7619,44 @@
         }
       },
       {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-05T20:41:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "security",
+          "plugins",
+          "testing",
+          "oidc",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6547,
         "title": "frontend: Guard against missing Namespace status in list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6547",
         "author": "ssz2605",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T20:30:08Z",
+        "updated_at": "2026-08-05T20:44:39Z",
         "days_since_update": 0,
         "labels": [
           "frontend",
@@ -7691,6 +7664,63 @@
           "cncf-cla: yes",
           "approved",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6815,
+        "title": "frontend: clusterRequests: Reject with the real request failure",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6815",
+        "author": "Anjali-Chauhan1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-05T21:21:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "frontend",
+          "windows",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6636,
+        "title": "backend: k8cache: Add configurable cache watch resources allowlist",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6636",
+        "author": "Slambot01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-05T21:24:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8824,36 +8854,6 @@
         }
       },
       {
-        "number": 6815,
-        "title": "frontend: clusterRequests: Reject with the real request failure",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6815",
-        "author": "Anjali-Chauhan1",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-05T10:48:46Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "frontend",
-          "windows",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6780,
         "title": "frontend: Fix recent search item eviction",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6780",
@@ -9306,6 +9306,30 @@
           "size/XXL",
           "search",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6923,
+        "title": "frontend: Tabs: Use Math.max instead of Math.min for defaultIndex clamp",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6923",
+        "author": "Pratikdeb07",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-05T20:48:05Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
