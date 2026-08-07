@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-07T13:21:44+00:00",
+  "generated_at": "2026-08-07T15:02:07+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 462,
-  "open_drafts_total": 52,
-  "actionable_total": 273,
+  "open_drafts_total": 53,
+  "actionable_total": 275,
   "tracked_total": 67,
   "buckets": {
     "needs_rebase": [
@@ -620,7 +620,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T14:25:17Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "documentation",
           "kind/feature",
@@ -2412,7 +2412,7 @@
         "author": "iamundefinedguy",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T13:45:15Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "backend",
           "testing",
@@ -2441,7 +2441,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T14:27:27Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -2468,7 +2468,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T14:27:58Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -2495,7 +2495,7 @@
         "author": "pallava-joshi",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T14:28:22Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -6573,7 +6573,7 @@
         "author": "tejhan",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T14:16:38Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "documentation",
@@ -6605,7 +6605,7 @@
         "author": "srajang1805",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T14:25:45Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "plugins",
           "app",
@@ -8199,6 +8199,124 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6783,
+        "title": "frontend: apiProxy: Refactor request options types and error propagation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6783",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T13:30:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "quality",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6827,
+        "title": "app: 0001: Verify external plugin manifests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6827",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T13:34:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "plugins",
+          "app",
+          "testing",
+          "area/provider/azure",
+          "e2e-tests",
+          "cncf-cla: yes",
+          "size/XL",
+          "approved"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6803,
+        "title": "feat(frontend): uniform breakpoints theme system and responsive layout refactoring",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6803",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T14:23:05Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "quality",
+          "headlamp-plugin",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search",
+          "gatewayAPI"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5807,
+        "title": "backend: serviceproxy: Add regression tests for context cancellation propagation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5807",
+        "author": "karimzakzouk",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T14:51:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -8328,34 +8446,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5807,
-        "title": "backend: serviceproxy: Add regression tests for context cancellation propagation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5807",
-        "author": "karimzakzouk",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-07-25T12:08:33Z",
-        "days_since_update": 13,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9211,40 +9301,6 @@
         }
       },
       {
-        "number": 6803,
-        "title": "feat(frontend): uniform breakpoints theme system and responsive layout refactoring",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6803",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-05T18:18:20Z",
-        "days_since_update": 1,
-        "labels": [
-          "documentation",
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "quality",
-          "headlamp-plugin",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search",
-          "gatewayAPI"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6919,
         "title": "docs: Add guide for configuring plugins with Image Volumes",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6919",
@@ -9412,7 +9468,7 @@
         "author": "guillaumebernard84",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-06T14:20:21Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
