@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-07T03:55:20+00:00",
+  "generated_at": "2026-08-07T05:46:49+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 465,
   "open_drafts_total": 50,
-  "actionable_total": 277,
+  "actionable_total": 276,
   "tracked_total": 67,
   "buckets": {
     "needs_rebase": [
@@ -3890,7 +3890,7 @@
         "author": "illume",
         "bucket": "ci_failing",
         "updated_at": "2026-08-06T04:30:24Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -4146,30 +4146,6 @@
         }
       },
       {
-        "number": 6959,
-        "title": "nodes: scope list requests to RBAC-authorized resourceNames",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6959",
-        "author": "ankitsharma101",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-06T18:08:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6872,
         "title": "fix: strip server and meta_data from unauthenticated /config responses",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6872",
@@ -4208,30 +4184,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6963,
-        "title": "backend: Kubeconfig: Let the new config win when merging",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6963",
-        "author": "xonas1101",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-06T18:13:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -4356,7 +4308,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
         "author": "Suyog241005",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-07T03:34:23Z",
+        "updated_at": "2026-08-07T03:55:52Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -4365,6 +4317,30 @@
           "cncf-cla: yes",
           "size/XL",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6959,
+        "title": "nodes: Scope list requests to RBAC-authorized resourceNames",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6959",
+        "author": "ankitsharma101",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-07T05:11:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5200,7 +5176,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T04:46:19Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/bug",
           "plugins",
@@ -6474,7 +6450,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T04:23:45Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -6499,7 +6475,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T04:46:54Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "a11y",
@@ -6553,33 +6529,6 @@
         }
       },
       {
-        "number": 6694,
-        "title": "app: Fix shipped plugins dir in plugin manager list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6694",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:35:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "plugins",
-          "app",
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6702,
         "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
@@ -6592,137 +6541,6 @@
           "frontend",
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6518,
-        "title": "backend: Add unit tests for pkg/headlampconfig",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6518",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:36:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "kind/regression",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6696,
-        "title": "frontend: Fix NaN sort in Deployments Pods column",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:36:37Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6698,
-        "title": "frontend: Guard rollingUpdate field in workload details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:36:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6697,
-        "title": "frontend: Fix actions column id in Table visibility effect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:37:58Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6519,
-        "title": "backend: Add tests for logger log function and SetLogFunc reset",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6519",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T07:38:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8169,12 +7987,39 @@
         }
       },
       {
+        "number": 6625,
+        "title": "backend: helm: Skip invalid repository cache",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6625",
+        "author": "mukeshdhadhariya",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T03:54:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "testing",
+          "charts",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6643,
         "title": "frontend: Add Storybook stories for CreateDaemonSetForm and Resource components",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6643",
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-07T03:53:21Z",
+        "updated_at": "2026-08-07T03:55:21Z",
         "days_since_update": 0,
         "labels": [
           "frontend",
@@ -8195,17 +8040,178 @@
         }
       },
       {
-        "number": 6625,
-        "title": "backend: helm: Skip invalid repository cache",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6625",
-        "author": "mukeshdhadhariya",
+        "number": 6502,
+        "title": "app: Fix zoom persistence when switching panes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
+        "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-07T03:54:48Z",
+        "updated_at": "2026-08-07T04:55:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "approved",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6518,
+        "title": "backend: Add unit tests for pkg/headlampconfig",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6518",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T04:55:07Z",
         "days_since_update": 0,
         "labels": [
           "backend",
           "testing",
-          "charts",
+          "cncf-cla: yes",
+          "kind/regression",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6694,
+        "title": "app: Fix shipped plugins dir in plugin manager list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6694",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T05:05:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "plugins",
+          "app",
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6696,
+        "title": "frontend: Fix NaN sort in Deployments Pods column",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T05:07:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6697,
+        "title": "frontend: Fix actions column id in Table visibility effect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T05:17:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6519,
+        "title": "backend: Add tests for logger log function and SetLogFunc reset",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6519",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T05:32:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6698,
+        "title": "frontend: Guard rollingUpdate field in workload details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-07T05:38:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
           "cncf-cla: yes",
           "size/M"
         ],
@@ -9414,36 +9420,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XS",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6502,
-        "title": "app: Fix zoom persistence when switching panes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
-        "author": "Aamod007",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-06T07:36:48Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "approved",
-          "size/L",
           "collab"
         ],
         "mergeable": "MERGEABLE",
