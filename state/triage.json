@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-08T19:36:43+00:00",
+  "generated_at": "2026-08-08T20:39:14+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 472,
+  "open_prs_total": 473,
   "open_drafts_total": 47,
-  "actionable_total": 274,
+  "actionable_total": 273,
   "tracked_total": 74,
   "buckets": {
     "needs_rebase": [
@@ -2638,7 +2638,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-07T20:20:03Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "testing",
@@ -4233,30 +4233,6 @@
         }
       },
       {
-        "number": 6970,
-        "title": "app: e2e-tests: Fix Release Notes storage-state test suppression and WCAG issues found along the way",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6970",
-        "author": "unlikelyzero",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-08T09:05:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6872,
         "title": "fix: strip server and meta_data from unauthenticated /config responses",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6872",
@@ -4380,30 +4356,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6968,
-        "title": "frontend: Add Reset App State button to Settings",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6968",
-        "author": "vishnukothakapu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-08T19:13:29Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5266,7 +5218,7 @@
         "author": "treydock",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-29T20:18:09Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "charts",
           "cncf-cla: yes",
@@ -5977,7 +5929,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T20:04:38Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6790,7 +6742,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-07T19:59:44Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -7300,30 +7252,6 @@
           "size/XXL",
           "search",
           "gatewayAPI"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6959,
-        "title": "frontend: node: Scope list requests to RBAC-authorized resourceNames",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6959",
-        "author": "ankitsharma101",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T11:23:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8403,6 +8331,54 @@
           "cncf-cla: yes",
           "size/M",
           "search"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6959,
+        "title": "frontend: node: Scope list requests to RBAC-authorized resourceNames",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6959",
+        "author": "ankitsharma101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-08T20:13:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6970,
+        "title": "app: e2e-tests: Fix Release Notes storage-state test suppression and WCAG issues found along the way",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6970",
+        "author": "unlikelyzero",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-08T20:37:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9539,7 +9515,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-06T20:01:17Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/feature",
           "frontend",
