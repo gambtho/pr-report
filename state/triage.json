@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-08T18:51:05+00:00",
+  "generated_at": "2026-08-08T19:36:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 472,
   "open_drafts_total": 47,
-  "actionable_total": 273,
+  "actionable_total": 274,
   "tracked_total": 74,
   "buckets": {
     "needs_rebase": [
@@ -2499,7 +2499,7 @@
         "author": "abdulhusainahk",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-05T19:17:25Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3500,7 +3500,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-07-29T19:00:38Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "frontend",
           "a11y",
@@ -4188,7 +4188,7 @@
         "author": "ashu8912",
         "bucket": "ci_failing",
         "updated_at": "2026-08-07T19:14:49Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -4380,6 +4380,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6968,
+        "title": "frontend: Add Reset App State button to Settings",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6968",
+        "author": "vishnukothakapu",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-08T19:13:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5925,7 +5949,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T19:08:46Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "backend",
@@ -7585,35 +7609,6 @@
         }
       },
       {
-        "number": 5936,
-        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T15:41:59Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "e2e-tests",
-          "cncf-cla: yes",
-          "size/M",
-          "search"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6903,
         "title": "0046: Correct plugin source-map offsets",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6903",
@@ -8337,12 +8332,39 @@
         }
       },
       {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-08T18:41:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 5756,
         "title": "backend: Fix stateless cluster key cache collisions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5756",
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T18:37:23Z",
+        "updated_at": "2026-08-08T18:56:30Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
@@ -8366,19 +8388,21 @@
         }
       },
       {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
+        "number": 5936,
+        "title": "frontend: useLocalStorageState: Fix stale closure in cross-component listener",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T18:41:29Z",
+        "updated_at": "2026-08-08T19:14:59Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
           "frontend",
           "testing",
+          "e2e-tests",
           "cncf-cla: yes",
-          "size/XL"
+          "size/M",
+          "search"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
