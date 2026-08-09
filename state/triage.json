@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T02:21:34+00:00",
+  "generated_at": "2026-08-09T04:24:07+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 475,
   "open_drafts_total": 47,
@@ -4226,35 +4226,6 @@
         }
       },
       {
-        "number": 6256,
-        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
-        "author": "Suyog241005",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-08T14:24:07Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "kind/regression",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6460,
         "title": "backend: kubeconfig: Fix node drain anonymous auth in OIDC deployments",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6460",
@@ -6293,7 +6264,7 @@
         "author": "mukeshdhadhariya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-07T03:54:48Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "backend",
           "testing",
@@ -6393,33 +6364,6 @@
         }
       },
       {
-        "number": 6518,
-        "title": "backend: Add unit tests for pkg/headlampconfig",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6518",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-07T08:49:22Z",
-        "days_since_update": 1,
-        "labels": [
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "kind/regression",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6697,
         "title": "frontend: Fix actions column id in Table visibility effect",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
@@ -6432,36 +6376,6 @@
           "frontend",
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6502,
-        "title": "app: Fix zoom persistence when switching panes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-07T08:50:32Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "approved",
-          "size/L",
-          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -7022,32 +6936,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6646,
-        "title": "frontend: PodList: Add real-time OOM risk and CPU throttling alert indicators",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6646",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T10:08:15Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8378,6 +8266,118 @@
           "size/XXL",
           "search",
           "gatewayAPI"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6502,
+        "title": "app: Fix zoom persistence when switching panes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6502",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T03:32:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "approved",
+          "size/L",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6518,
+        "title": "backend: Add unit tests for pkg/headlampconfig",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6518",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T03:32:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "kind/regression",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6256,
+        "title": "backend/frontend: Add network-resilient logs and terminal sessions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T03:50:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "kind/regression",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6646,
+        "title": "frontend: PodList: Add real-time OOM risk and CPU throttling alert indicators",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6646",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T03:56:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
