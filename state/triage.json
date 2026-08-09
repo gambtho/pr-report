@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-09T15:39:06+00:00",
+  "generated_at": "2026-08-09T16:46:42+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 482,
+  "open_prs_total": 483,
   "open_drafts_total": 46,
-  "actionable_total": 281,
+  "actionable_total": 283,
   "tracked_total": 71,
   "buckets": {
     "needs_rebase": [
@@ -474,7 +474,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:06Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "dependencies",
           "security",
@@ -502,7 +502,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:07Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "dependencies",
           "security",
@@ -3377,7 +3377,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:03:04Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "dependencies",
           "security",
@@ -4248,30 +4248,6 @@
         }
       },
       {
-        "number": 7019,
-        "title": "frontend: Add Dynamic Resource Allocation (DRA) API objects and views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7019",
-        "author": "harshitnub077",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-09T12:50:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7027,
         "title": "frontend: unify test bootstrap and track warning regressions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7027",
@@ -4282,30 +4258,6 @@
         "labels": [
           "cncf-cla: no",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6964,
-        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6964",
-        "author": "harshitnub077",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-09T13:08:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -4405,6 +4357,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7037,
+        "title": "fix(frontend): add missing aria-labels to IconButtons",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7037",
+        "author": "yashveersinghh",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-09T16:45:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6649,33 +6625,6 @@
         }
       },
       {
-        "number": 6288,
-        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
-        "author": "vanshika2720",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-08T09:12:48Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6563,
         "title": "app: runCmd: block command on first consent denial",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6563",
@@ -6893,7 +6842,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-08T16:01:14Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -6918,7 +6867,7 @@
         "author": "CygnusMaximillian",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-08T16:46:38Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "backend",
@@ -7035,30 +6984,6 @@
           "cncf-cla: yes",
           "size/XL",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6970,
-        "title": "app: e2e-tests: Fix Release Notes storage-state test suppression and WCAG issues found along the way",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6970",
-        "author": "unlikelyzero",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T07:13:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -7653,35 +7578,6 @@
           "app",
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5936,
-        "title": "frontend: globalSearch: Improve useLocalStorageState and fix sync bugs",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T12:47:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "e2e-tests",
-          "cncf-cla: yes",
-          "size/L",
-          "search"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8396,12 +8292,36 @@
         }
       },
       {
+        "number": 6964,
+        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6964",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T16:45:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 5646,
         "title": "frontend: Add mutating admission policy resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5646",
         "author": "harrshita123",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T15:35:52Z",
+        "updated_at": "2026-08-09T16:45:48Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -8411,6 +8331,81 @@
           "cncf-cla: yes",
           "size/XXL",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6959,
+        "title": "frontend: node: Scope list requests to RBAC-authorized resourceNames",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6959",
+        "author": "ankitsharma101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T16:46:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6288,
+        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
+        "author": "vanshika2720",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T16:46:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6970,
+        "title": "app: e2e-tests: Fix Release Notes storage-state test suppression and WCAG issues found along the way",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6970",
+        "author": "unlikelyzero",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T16:46:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8996,7 +8991,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:05Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "dependencies",
           "security",
@@ -9715,6 +9710,59 @@
         "labels": [
           "cncf-cla: yes",
           "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7019,
+        "title": "frontend: Add Dynamic Resource Allocation (DRA) API objects and views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7019",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-09T16:45:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5936,
+        "title": "frontend: globalSearch: Improve useLocalStorageState and fix sync bugs",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5936",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-09T16:46:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "e2e-tests",
+          "cncf-cla: yes",
+          "size/L",
+          "search"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
