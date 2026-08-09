@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-09T18:53:22+00:00",
+  "generated_at": "2026-08-09T19:40:09+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 487,
+  "open_prs_total": 488,
   "open_drafts_total": 46,
   "actionable_total": 283,
   "tracked_total": 70,
@@ -2496,7 +2496,7 @@
         "author": "abdulhusainahk",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-05T19:17:25Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3380,7 +3380,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-07-29T19:00:38Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "frontend",
           "a11y",
@@ -4041,7 +4041,7 @@
         "author": "ashu8912",
         "bucket": "ci_failing",
         "updated_at": "2026-08-07T19:14:49Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -4213,91 +4213,6 @@
         }
       },
       {
-        "number": 6980,
-        "title": "Feature: Multi-Cluster Resource Topology Visualizer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6980",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-09T16:52:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6493,
-        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-09T16:52:29Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6821,
-        "title": "feat(frontend): add label selector and resource type filtering in resource map",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6821",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-09T16:52:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "documentation",
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "quality",
-          "headlamp-plugin",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search",
-          "gatewayAPI"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7027,
         "title": "frontend: unify test bootstrap and track warning regressions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7027",
@@ -4308,6 +4223,30 @@
         "labels": [
           "cncf-cla: no",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6980,
+        "title": "Feature: Multi-Cluster Resource Topology Visualizer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6980",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-09T19:36:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5475,86 +5414,6 @@
         }
       },
       {
-        "number": 6327,
-        "title": "frontend: serviceaccount: add list stories and unit tests",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T13:16:15Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6370,
-        "title": "Feature/keyboard shortcuts registry",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6370",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T13:16:44Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6451,
-        "title": "frontend: secret: add unit tests for details and list views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6451",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T13:17:21Z",
-        "days_since_update": 4,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6785,
         "title": "frontend: Table: Keep search focus across data refresh",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6785",
@@ -5622,35 +5481,6 @@
           "dx",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6564,
-        "title": "frontend: Add plugin registration API for custom keyboard shortcuts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6564",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T18:21:32Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5829,7 +5659,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T19:08:46Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "backend",
@@ -8061,30 +7891,6 @@
         }
       },
       {
-        "number": 6977,
-        "title": "frontend: AlertNotification: Do not poll health on hidden routes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6977",
-        "author": "rcny",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T16:52:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6964,
         "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6964",
@@ -8375,12 +8181,12 @@
         }
       },
       {
-        "number": 7006,
-        "title": "feat: implement real-time streaming audit log viewer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7006",
-        "author": "Rucha0901",
+        "number": 6961,
+        "title": "frontend: Overview: Scope charts to the accessible namespaces",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6961",
+        "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T18:37:53Z",
+        "updated_at": "2026-08-09T18:40:10Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -8399,16 +8205,210 @@
         }
       },
       {
-        "number": 6961,
-        "title": "frontend: Overview: Scope charts to the accessible namespaces",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6961",
-        "author": "Anjali-Chauhan1",
+        "number": 7006,
+        "title": "feat: implement real-time streaming audit log viewer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7006",
+        "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T18:40:10Z",
+        "updated_at": "2026-08-09T19:03:33Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6977,
+        "title": "frontend: AlertNotification: Do not poll health on hidden routes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6977",
+        "author": "rcny",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:10:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6327,
+        "title": "frontend: serviceaccount: add list stories and unit tests",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6327",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:10:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6370,
+        "title": "Feature/keyboard shortcuts registry",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6370",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:13:29Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6451,
+        "title": "frontend: secret: add unit tests for details and list views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6451",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:14:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6493,
+        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:15:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6564,
+        "title": "frontend: Add plugin registration API for custom keyboard shortcuts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6564",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:18:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6821,
+        "title": "feat(frontend): add label selector and resource type filtering in resource map",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6821",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-09T19:21:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "quality",
+          "headlamp-plugin",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search",
+          "gatewayAPI"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9487,35 +9487,6 @@
         }
       },
       {
-        "number": 6579,
-        "title": "frontend: add native offline asset bundling for air-gapped setups",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-06T20:01:17Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6540,
         "title": "Fix WebSocket auth fallback for stale user context keys",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6540",
@@ -9736,6 +9707,35 @@
         "updated_at": "2026-08-09T17:17:07Z",
         "days_since_update": 0,
         "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6579,
+        "title": "frontend: add native offline asset bundling for air-gapped setups",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6579",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-09T19:18:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
           "cncf-cla: yes",
           "size/L"
         ],
