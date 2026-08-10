@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-10T22:48:44+00:00",
+  "generated_at": "2026-08-10T23:43:53+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 509,
+  "open_prs_total": 510,
   "open_drafts_total": 50,
   "actionable_total": 292,
   "tracked_total": 70,
@@ -4251,30 +4251,6 @@
         }
       },
       {
-        "number": 7024,
-        "title": "frontend: Preserve cluster context in useKubeObject WebSocket updates",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7024",
-        "author": "kunaldevsahu",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-10T12:30:20Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4099,
         "title": "Remove usage of execSync in scripts",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4099",
@@ -7219,7 +7195,7 @@
         "author": "rcny",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T22:55:55Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7243,7 +7219,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T22:56:29Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "documentation",
           "kind/feature",
@@ -8379,38 +8355,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-10T17:38:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "security",
-          "plugins",
-          "testing",
-          "oidc",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7048,
         "title": "frontend: role: Link the service accounts in the binding list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7048",
@@ -8650,6 +8594,62 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-10T23:35:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "security",
+          "plugins",
+          "testing",
+          "oidc",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7024,
+        "title": "frontend: Preserve cluster context in useKubeObject WebSocket updates",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7024",
+        "author": "kunaldevsahu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-10T23:40:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
