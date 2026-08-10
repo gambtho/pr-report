@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-10T04:46:24+00:00",
+  "generated_at": "2026-08-10T06:16:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 488,
   "open_drafts_total": 46,
-  "actionable_total": 289,
+  "actionable_total": 288,
   "tracked_total": 69,
   "buckets": {
     "needs_rebase": [
@@ -4301,12 +4301,12 @@
         }
       },
       {
-        "number": 7019,
-        "title": "frontend: Add Dynamic Resource Allocation (DRA) API objects and views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7019",
-        "author": "harshitnub077",
+        "number": 6975,
+        "title": "fix: CronJob details page hides Starting deadline when startingDeadlineSeconds is 0",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6975",
+        "author": "jayaprajapatii",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-09T23:00:35Z",
+        "updated_at": "2026-08-09T23:11:55Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -4325,16 +4325,16 @@
         }
       },
       {
-        "number": 6975,
-        "title": "fix: CronJob details page hides Starting deadline when startingDeadlineSeconds is 0",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6975",
-        "author": "jayaprajapatii",
+        "number": 7006,
+        "title": "feat: implement real-time streaming audit log viewer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7006",
+        "author": "Rucha0901",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-09T23:11:55Z",
+        "updated_at": "2026-08-10T05:57:52Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XL"
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8433,6 +8433,57 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 7019,
+        "title": "frontend: Add Dynamic Resource Allocation (DRA) API objects and views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7019",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-10T05:12:51Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6493,
+        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-10T06:09:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -9499,34 +9550,6 @@
         }
       },
       {
-        "number": 6540,
-        "title": "Fix WebSocket auth fallback for stale user context keys",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6540",
-        "author": "rishh09",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-08T12:49:41Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5720,
         "title": "frontend: Notifications: add missing dispatch dep to useEffect",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5720",
@@ -9769,33 +9792,6 @@
         }
       },
       {
-        "number": 6493,
-        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-09T22:57:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5758,
         "title": "frontend: Fix node debugger pod leakage and secure default namespace",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
@@ -9833,30 +9829,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7006,
-        "title": "feat: implement real-time streaming audit log viewer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7006",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-09T22:59:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
