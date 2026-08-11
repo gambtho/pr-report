@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-11T22:53:38+00:00",
+  "generated_at": "2026-08-11T23:51:16+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 531,
   "open_drafts_total": 50,
-  "actionable_total": 301,
-  "tracked_total": 67,
+  "actionable_total": 299,
+  "tracked_total": 69,
   "buckets": {
     "needs_rebase": [
       {
@@ -888,54 +888,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7078,
-        "title": "frontend: storyshots: Normalise useId values in the name attribute",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7078",
-        "author": "Shivanshu-GITH",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-10T20:45:46Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6938,
-        "title": "frontend: Empty: Add quick actions to empty resource list pages",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6938",
-        "author": "WasThatRudy",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-11T06:46:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -2879,6 +2831,56 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7078,
+        "title": "frontend: storyshots: Normalise useId values in the name attribute",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7078",
+        "author": "Shivanshu-GITH",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-11T23:41:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6938,
+        "title": "frontend: Empty: Add quick actions to empty resource list pages",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6938",
+        "author": "WasThatRudy",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-11T23:43:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -6991,7 +6993,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T22:56:29Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "documentation",
           "kind/feature",
@@ -7747,7 +7749,7 @@
         "author": "kunaldevsahu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-10T23:40:11Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8692,33 +8694,6 @@
         }
       },
       {
-        "number": 6763,
-        "title": "frontend: gate Gateway API sidebar entry on cluster API discovery",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6763",
-        "author": "rootp1",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-11T18:28:18Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5699,
         "title": "backend: Tests: Add regression test for ApplyMeDefaults trimming",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5699",
@@ -8816,6 +8791,32 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6763,
+        "title": "frontend: gate Gateway API sidebar entry on cluster API discovery",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6763",
+        "author": "rootp1",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-11T23:46:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
