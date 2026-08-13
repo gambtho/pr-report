@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-12T23:51:31+00:00",
+  "generated_at": "2026-08-13T02:36:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 541,
+  "open_prs_total": 542,
   "open_drafts_total": 51,
-  "actionable_total": 291,
+  "actionable_total": 292,
   "tracked_total": 82,
   "buckets": {
     "needs_rebase": [
@@ -3484,36 +3484,6 @@
         }
       },
       {
-        "number": 6792,
-        "title": "frontend: DeleteButton: Offer both delete and evict for pods",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6792",
-        "author": "krsatyamthakur-droid",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-12T14:34:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L",
-          "needs review",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6748,
         "title": "frontend: StatusCharts: Add interactive red/green query links for filtered list views",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
@@ -3641,6 +3611,36 @@
           "needs-rebase",
           "size/XL",
           "search",
+          "needs review",
+          "collab"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6792,
+        "title": "frontend: DeleteButton: Offer both delete and evict for pods",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6792",
+        "author": "krsatyamthakur-droid",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-12T23:59:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L",
           "needs review",
           "collab"
         ],
@@ -5306,33 +5306,6 @@
         }
       },
       {
-        "number": 6813,
-        "title": "frontend: LogViewer: Add copy to clipboard action",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
-        "author": "Priyanshu-rgbb",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-12T19:31:16Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6785,
         "title": "frontend: Table: Keep search focus across data refresh",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6785",
@@ -5447,6 +5420,57 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7155,
+        "title": "frontend: Apply: Send fieldValidation=Strict on writes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7155",
+        "author": "xonas1101",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-13T01:26:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6813,
+        "title": "frontend: LogViewer: Add copy to clipboard action",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
+        "author": "Priyanshu-rgbb",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-13T01:28:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6495,7 +6519,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T02:05:19Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/bug",
           "frontend",
