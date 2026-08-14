@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-13T23:51:21+00:00",
+  "generated_at": "2026-08-14T02:34:55+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 534,
+  "open_prs_total": 535,
   "open_drafts_total": 52,
-  "actionable_total": 308,
+  "actionable_total": 307,
   "tracked_total": 83,
   "buckets": {
     "needs_rebase": [
@@ -5103,30 +5103,6 @@
         }
       },
       {
-        "number": 6992,
-        "title": "frontend: resourceMap: Expose GraphView and KubeIcon through pluginLib",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6992",
-        "author": "rootp1",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-13T06:22:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6957,
         "title": "frontend: Resourcequota: Show object count quotas in the list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6957",
@@ -5387,30 +5363,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7089,
-        "title": "frontend: i18n: complete and standardize Portuguese (pt) locale",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7089",
-        "author": "TheRazorbill",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-13T16:30:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6506,7 +6458,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T02:05:19Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9240,16 +9192,40 @@
         }
       },
       {
-        "number": 7132,
-        "title": "backend: Support JWT client assertion for OIDC provider",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7132",
-        "author": "toVersus",
+        "number": 6992,
+        "title": "frontend: resourceMap: Expose GraphView and KubeIcon through pluginLib",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6992",
+        "author": "rootp1",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-13T21:53:09Z",
+        "updated_at": "2026-08-14T02:03:02Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7089,
+        "title": "frontend: i18n: complete and standardize Portuguese (pt) locale",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7089",
+        "author": "TheRazorbill",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-14T02:25:04Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
