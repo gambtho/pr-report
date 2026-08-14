@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-14T02:34:55+00:00",
+  "generated_at": "2026-08-14T04:55:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 535,
+  "open_prs_total": 536,
   "open_drafts_total": 52,
   "actionable_total": 307,
   "tracked_total": 83,
@@ -5209,30 +5209,6 @@
         }
       },
       {
-        "number": 7087,
-        "title": "frontend: useSidebarItems: Fix react-hooks/exhaustive-deps",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7087",
-        "author": "Alok-work23",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-13T16:23:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7118,
         "title": "fix: resolve ThemeProvider hook dependencies",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7118",
@@ -6076,7 +6052,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T04:46:19Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "kind/bug",
           "plugins",
@@ -6438,33 +6414,6 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5681,
-        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
-        "author": "jgsuess",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-06T02:05:19Z",
-        "days_since_update": 8,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8851,37 +8800,6 @@
         }
       },
       {
-        "number": 6874,
-        "title": "fix(backend): add X-Frame-Options and Content-Security-Policy headers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6874",
-        "author": "harshitnub077",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-13T18:20:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "kind/feature",
-          "backend",
-          "security",
-          "testing",
-          "oidc",
-          "cncf-cla: yes",
-          "size/M",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7146,
         "title": "frontend: Activity: improve small-screen wrapping",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7146",
@@ -9221,9 +9139,60 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7089",
         "author": "TheRazorbill",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-14T02:25:04Z",
+        "updated_at": "2026-08-14T02:57:37Z",
         "days_since_update": 0,
         "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7087,
+        "title": "frontend: useSidebarItems: Fix react-hooks/exhaustive-deps",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7087",
+        "author": "Alok-work23",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-14T03:55:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5681,
+        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
+        "author": "jgsuess",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-14T04:55:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -10458,30 +10427,6 @@
         }
       },
       {
-        "number": 7071,
-        "title": "frontend: backend: Add OIDC autologin support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-13T16:35:49Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7129,
         "title": "frontend: TooltipLight: Fix dropped styles via slotProps",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7129",
@@ -10578,6 +10523,61 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6874,
+        "title": "fix(backend): add X-Frame-Options and Content-Security-Policy headers",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6874",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-14T03:09:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "kind/feature",
+          "backend",
+          "security",
+          "testing",
+          "oidc",
+          "cncf-cla: yes",
+          "size/M",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7071,
+        "title": "frontend: backend: Add OIDC autologin support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-14T04:54:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
