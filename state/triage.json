@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-14T22:32:22+00:00",
+  "generated_at": "2026-08-14T23:29:01+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 537,
-  "open_drafts_total": 53,
+  "open_prs_total": 538,
+  "open_drafts_total": 52,
   "actionable_total": 312,
-  "tracked_total": 78,
+  "tracked_total": 77,
   "buckets": {
     "needs_rebase": [
       {
@@ -3049,31 +3049,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6922,
-        "title": "frontend: make application logo clickable",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6922",
-        "author": "mohankumar-dev-2002",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-13T16:35:39Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -9279,6 +9254,30 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6922,
+        "title": "frontend: make application logo clickable",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6922",
+        "author": "mohankumar-dev-2002",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-14T23:13:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -10208,30 +10207,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7107,
-        "title": "frontend: Don't leak Secret values through the Details page cache-seed",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7107",
-        "author": "mohankumar-dev-2002",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-13T16:32:15Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
