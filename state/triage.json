@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-15T09:33:22+00:00",
+  "generated_at": "2026-08-15T10:30:55+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 543,
+  "open_prs_total": 547,
   "open_drafts_total": 49,
-  "actionable_total": 322,
-  "tracked_total": 76,
+  "actionable_total": 323,
+  "tracked_total": 78,
   "buckets": {
     "needs_rebase": [
       {
@@ -902,38 +902,13 @@
         }
       },
       {
-        "number": 6908,
-        "title": "0044: app: List plugins without a shell",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6908",
-        "author": "illume",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-10T09:26:42Z",
-        "days_since_update": 5,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6256,
         "title": "backend/frontend: Add network-resilient logs and terminal sessions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6256",
         "author": "Suyog241005",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-10T09:42:04Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "backend",
@@ -1112,31 +1087,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7065,
-        "title": "0061: app: Skip Unix shell lookup on Windows",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7065",
-        "author": "illume",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-14T11:59:26Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -3004,7 +2954,7 @@
         "author": "Rucha0901",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-13T10:30:25Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "documentation",
           "kind/feature",
@@ -3402,6 +3352,58 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7065,
+        "title": "0061: app: Skip Unix shell lookup on Windows",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7065",
+        "author": "illume",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-15T10:30:07Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6908,
+        "title": "0044: app: List plugins without a shell",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6908",
+        "author": "illume",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-15T10:30:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -4987,7 +4989,7 @@
         "author": "srajang1805",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T09:44:48Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -5011,7 +5013,7 @@
         "author": "harshitnub077",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T10:05:03Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -5629,6 +5631,78 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7251,
+        "title": "frontend: DropZoneBox: Fix aria-allowed-role in Upload Files story",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7251",
+        "author": "sarvesh-official",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T10:11:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7254,
+        "title": "frontend: Dialog: Fix aria-dialog-name by forwarding aria-label to Paper",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7254",
+        "author": "sarvesh-official",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T10:14:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7091,
+        "title": "app: Implement graceful shutdown for backend server process",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7091",
+        "author": "vishnukothakapu",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T10:25:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -6692,7 +6766,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-08T10:07:55Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "frontend",
           "testing",
@@ -7093,7 +7167,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-10T09:40:14Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -7985,30 +8059,6 @@
         }
       },
       {
-        "number": 7056,
-        "title": "frontend: add unit tests for PhaseLabel component",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7056",
-        "author": "yashveersinghh",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-13T16:30:58Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7128,
         "title": "i18n: complete Hindi translations for app and glossary",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7128",
@@ -8216,7 +8266,7 @@
         "author": "CygnusMaximillian",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:39:30Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8240,7 +8290,7 @@
         "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:41:42Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "backend",
           "testing",
@@ -8267,7 +8317,7 @@
         "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:41:47Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "backend",
           "testing",
@@ -8293,7 +8343,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:43:43Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "testing",
@@ -8319,7 +8369,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:44:27Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8343,7 +8393,7 @@
         "author": "Prashant-900",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:46:33Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8367,7 +8417,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:51:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -8397,7 +8447,7 @@
         "author": "vanshika2720",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:51:56Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8421,7 +8471,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T09:55:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8445,7 +8495,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T10:15:01Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -8880,30 +8930,6 @@
         }
       },
       {
-        "number": 6968,
-        "title": "frontend: Add Reset App State button to Settings",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6968",
-        "author": "vishnukothakapu",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T06:21:01Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 4938,
         "title": "Helm Chart: Adding support for secrets enabled multi-cluster",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4938",
@@ -9132,33 +9158,6 @@
         }
       },
       {
-        "number": 6543,
-        "title": "frontend: useSettings: Fix state sync when store updates",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6543",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T06:35:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6876,
         "title": "frontend: prevent partial project deletion with mixed RBAC",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6876",
@@ -9338,6 +9337,105 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6543,
+        "title": "frontend: useSettings: Fix state sync when store updates",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6543",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T10:06:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6968,
+        "title": "frontend: Add Reset App State button to Settings",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6968",
+        "author": "vishnukothakapu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T10:08:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7221,
+        "title": "frontend: Map: Gate JobSet and LeaderWorkerSet sources",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7221",
+        "author": "Pritz395",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T10:08:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7056,
+        "title": "frontend: add unit tests for PhaseLabel component",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7056",
+        "author": "yashveersinghh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T10:22:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10426,7 +10524,7 @@
         "author": "Aamod007",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-14T09:41:25Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "plugins",
@@ -10453,7 +10551,7 @@
         "author": "shivamsingh-007",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-14T09:43:56Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10481,7 +10579,7 @@
         "author": "dimaulupov",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-14T10:01:02Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -10505,7 +10603,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-14T10:05:10Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -10605,30 +10703,6 @@
         "labels": [
           "backend",
           "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7221,
-        "title": "frontend: Map: Gate JobSet and LeaderWorkerSet sources",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7221",
-        "author": "Pritz395",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-15T06:21:38Z",
-        "days_since_update": 0,
-        "labels": [
           "cncf-cla: yes",
           "size/L"
         ],
