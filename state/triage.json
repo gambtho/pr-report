@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T21:28:30+00:00",
+  "generated_at": "2026-08-15T22:30:37+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 559,
+  "open_prs_total": 560,
   "open_drafts_total": 49,
   "actionable_total": 331,
   "tracked_total": 73,
@@ -4281,7 +4281,7 @@
         "author": "vyncent-t",
         "bucket": "ci_failing",
         "updated_at": "2026-08-12T21:49:45Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -6653,32 +6653,6 @@
         }
       },
       {
-        "number": 6698,
-        "title": "frontend: Guard rollingUpdate field in workload details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T12:44:53Z",
-        "days_since_update": 6,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6702,
         "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
@@ -6691,32 +6665,6 @@
           "frontend",
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6696,
-        "title": "frontend: Fix NaN sort in Deployments Pods column",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T12:45:38Z",
-        "days_since_update": 6,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -7707,7 +7655,7 @@
         "author": "gambtho",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T21:46:04Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9492,33 +9440,6 @@
         }
       },
       {
-        "number": 6695,
-        "title": "app: Guard artifacthub.title access in plugin list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6695",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T20:55:09Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "plugins",
-          "app",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6697,
         "title": "frontend: Fix actions column id in Table visibility effect",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
@@ -9555,6 +9476,85 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6695,
+        "title": "app: Guard artifacthub.title access in plugin list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6695",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T21:48:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "plugins",
+          "app",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6698,
+        "title": "frontend: Guard rollingUpdate field in workload details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T21:48:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6696,
+        "title": "frontend: Fix NaN sort in Deployments Pods column",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T21:48:32Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
