@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T20:32:07+00:00",
+  "generated_at": "2026-08-15T21:28:30+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 559,
   "open_drafts_total": 49,
@@ -3656,7 +3656,7 @@
         "author": "iashutoshyadav",
         "bucket": "ci_failing",
         "updated_at": "2026-08-03T20:41:57Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4841,7 +4841,7 @@
         "author": "Ata-Ul-Hai",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T21:04:44Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -4949,30 +4949,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7114,
-        "title": "frontend: useKubeObject: Clear query cache on DELETED watch event",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7114",
-        "author": "Sreejesh06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T06:23:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5349,30 +5325,6 @@
         }
       },
       {
-        "number": 7050,
-        "title": "feat: Add User Settings Configuration Export and Import",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7050",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T17:19:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7269,
         "title": "backend: drainNodePods: skip mirror pods and emptyDir pods during nod\u2026",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7269",
@@ -5434,6 +5386,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7050,
+        "title": "feat: Add User Settings Configuration Export and Import",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7050",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T20:52:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6677,32 +6653,6 @@
         }
       },
       {
-        "number": 6697,
-        "title": "frontend: Fix actions column id in Table visibility effect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T12:44:47Z",
-        "days_since_update": 6,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6698,
         "title": "frontend: Guard rollingUpdate field in workload details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
@@ -6767,33 +6717,6 @@
           "frontend",
           "cncf-cla: yes",
           "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6695,
-        "title": "app: Guard artifacthub.title access in plugin list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6695",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-09T12:46:13Z",
-        "days_since_update": 6,
-        "labels": [
-          "kind/bug",
-          "plugins",
-          "app",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -8422,30 +8345,6 @@
         }
       },
       {
-        "number": 7226,
-        "title": "frontend: ResourceTable: Preserve namespace filter options on large lists",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7226",
-        "author": "simonepri",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T06:22:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6936,
         "title": "0051: Project header actions can select tabs",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6936",
@@ -9540,6 +9439,134 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 7114,
+        "title": "frontend: useKubeObject: Clear query cache on DELETED watch event",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7114",
+        "author": "Sreejesh06",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T20:32:20Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6694,
+        "title": "app: Fix shipped plugins dir in plugin manager list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6694",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T20:49:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "plugins",
+          "app",
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6695,
+        "title": "app: Guard artifacthub.title access in plugin list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6695",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T20:55:09Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "plugins",
+          "app",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6697,
+        "title": "frontend: Fix actions column id in Table visibility effect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T20:55:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7226,
+        "title": "frontend: ResourceTable: Preserve namespace filter options on large lists",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7226",
+        "author": "simonepri",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T21:11:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -10569,33 +10596,6 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6694,
-        "title": "app: Fix shipped plugins dir in plugin manager list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6694",
-        "author": "Aamod007",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-14T09:41:25Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "plugins",
-          "app",
-          "cncf-cla: yes",
-          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
