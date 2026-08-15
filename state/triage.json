@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T01:43:27+00:00",
+  "generated_at": "2026-08-15T02:58:38+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 538,
   "open_drafts_total": 52,
@@ -5384,33 +5384,6 @@
         }
       },
       {
-        "number": 6469,
-        "title": "frontend: SelectionBreadcrumbs: Add Storybook stories",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6469",
-        "author": "vividwhisp",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-14T12:55:11Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "testing",
-          "resourceMap",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 4899,
         "title": "Distributed settings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4899",
@@ -9269,6 +9242,33 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6469,
+        "title": "frontend: SelectionBreadcrumbs: Add Storybook stories",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6469",
+        "author": "vividwhisp",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T02:55:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "resourceMap",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
