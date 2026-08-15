@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-15T06:51:39+00:00",
+  "generated_at": "2026-08-15T07:36:32+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 544,
   "open_drafts_total": 48,
-  "actionable_total": 322,
+  "actionable_total": 321,
   "tracked_total": 77,
   "buckets": {
     "needs_rebase": [
@@ -86,35 +86,6 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6365,
-        "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
-        "author": "SaikiaMan",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:05:27Z",
-        "days_since_update": 20,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "frontend",
-          "testing",
-          "cncf-cla: no",
-          "size/XXL",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -756,33 +727,6 @@
         }
       },
       {
-        "number": 6614,
-        "title": "cluster-inventory: render ClusterProfile displayName in cluster picker",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6614",
-        "author": "jalexbarbour",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-05T08:48:05Z",
-        "days_since_update": 9,
-        "labels": [
-          "backend",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 4723,
         "title": "Backend: Frontend: Add ability to transfer files to/from containers in pods ",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
@@ -851,7 +795,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-09T07:30:52Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "frontend",
@@ -880,7 +824,7 @@
         "author": "Adii-45",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-09T07:36:05Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "frontend",
@@ -1166,6 +1110,62 @@
           "testing",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6614,
+        "title": "cluster-inventory: render ClusterProfile displayName in cluster picker",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6614",
+        "author": "jalexbarbour",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-15T07:13:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "backend",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6365,
+        "title": "frontend: Move node hooks out of class to fix rules-of-hooks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6365",
+        "author": "SaikiaMan",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-15T07:28:18Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "documentation",
+          "frontend",
+          "testing",
+          "cncf-cla: no",
+          "size/XXL",
+          "collab"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -2784,7 +2784,7 @@
         "author": "Pratikdeb07",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-09T07:17:55Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3890,7 +3890,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:49Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "javascript",
@@ -3917,7 +3917,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:51Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "javascript",
@@ -3945,7 +3945,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:53Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "javascript",
@@ -3972,7 +3972,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:54Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "security",
@@ -4000,7 +4000,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:56Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "security",
@@ -4028,7 +4028,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:57Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "security",
@@ -4056,7 +4056,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:16:59Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "security",
@@ -4084,7 +4084,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T07:17:00Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "dependencies",
           "security",
@@ -5174,33 +5174,6 @@
         }
       },
       {
-        "number": 6769,
-        "title": "frontend: KubeObject: Fix static methods violating React Rules of Hooks",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6769",
-        "author": "mishradwaterlaw",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T06:13:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/XXL",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7107,
         "title": "frontend: Don't leak Secret values through the Details page cache-seed",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7107",
@@ -5214,30 +5187,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7243,
-        "title": "frontend: a11y: Add accessible name to rows-per-page select",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7243",
-        "author": "yashgkar",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T06:14:13Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5744,6 +5693,33 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6769,
+        "title": "frontend: KubeObject: Fix static methods violating React Rules of Hooks",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6769",
+        "author": "mishradwaterlaw",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T07:10:17Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/XXL",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -6210,7 +6186,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-02T07:27:58Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "kind/bug",
           "backend",
@@ -6929,7 +6905,7 @@
         "author": "mishradwaterlaw",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T07:19:47Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "app",
@@ -6956,7 +6932,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T07:22:13Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "backend",
           "windows",
@@ -6984,7 +6960,7 @@
         "author": "Pritz395",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T07:33:14Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "backend",
@@ -7861,7 +7837,7 @@
         "author": "hazelmayank",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T07:35:27Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8292,7 +8268,7 @@
         "author": "mukeshdhadhariya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T06:59:20Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "backend",
           "testing",
@@ -9343,6 +9319,34 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 6876,
+        "title": "frontend: prevent partial project deletion with mixed RBAC",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6876",
+        "author": "haseeb-muneer",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T07:32:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "security",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -10078,7 +10082,7 @@
         "author": "A-d-i-t-y",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-06T07:34:53Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "frontend",
           "a11y",
@@ -10185,7 +10189,7 @@
         "author": "Mavrickk3",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-09T07:21:25Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10648,34 +10652,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6876,
-        "title": "frontend: prevent partial project deletion with mixed RBAC",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6876",
-        "author": "haseeb-muneer",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-15T06:26:07Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "security",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
