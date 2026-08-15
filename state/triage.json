@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T19:27:43+00:00",
+  "generated_at": "2026-08-15T20:32:07+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 558,
+  "open_prs_total": 559,
   "open_drafts_total": 49,
   "actionable_total": 331,
   "tracked_total": 73,
@@ -4255,7 +4255,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-12T19:35:57Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "dependencies",
           "javascript",
@@ -5159,30 +5159,6 @@
         }
       },
       {
-        "number": 7033,
-        "title": "backend: k8cache: Fix runWatcher defer removing re-registered watcher",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7033",
-        "author": "Sreejesh06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T10:48:08Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5681,
         "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
@@ -5427,6 +5403,30 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "ci_failing",
         "updated_at": "2026-08-15T18:37:51Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7273,
+        "title": "portforward: Auto-reconnect service-backed port-forwards on pod restart",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7273",
+        "author": "Slambot01",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T19:45:47Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -6096,34 +6096,6 @@
         }
       },
       {
-        "number": 6855,
-        "title": "fix(search): prevent eviction of oldest item if selected item is already in recent list",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6855",
-        "author": "harshitnub077",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-05T18:30:36Z",
-        "days_since_update": 10,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M",
-          "search",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6889,
         "title": "fix(frontend): resolve websocket unmount race condition and memory leaks",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6889",
@@ -6182,7 +6154,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T20:04:38Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/bug",
           "frontend",
@@ -7788,7 +7760,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T19:49:03Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -9463,12 +9435,36 @@
         }
       },
       {
+        "number": 7116,
+        "title": "frontend: vpa: re-evaluate enablement on cluster switch",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7116",
+        "author": "yashveersinghh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T19:18:19Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6874,
         "title": "fix(backend): add X-Frame-Options and Content-Security-Policy headers",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6874",
         "author": "harshitnub077",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T18:29:19Z",
+        "updated_at": "2026-08-15T19:54:42Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
@@ -9494,16 +9490,44 @@
         }
       },
       {
-        "number": 7116,
-        "title": "frontend: vpa: re-evaluate enablement on cluster switch",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7116",
-        "author": "yashveersinghh",
+        "number": 7033,
+        "title": "backend: k8cache: Fix runWatcher defer removing re-registered watcher",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7033",
+        "author": "Sreejesh06",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T19:18:19Z",
+        "updated_at": "2026-08-15T20:10:29Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6855,
+        "title": "fix(search): prevent eviction of oldest item if selected item is already in recent list",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6855",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-15T20:23:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L",
+          "search",
+          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10831,30 +10855,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7267,
-        "title": "frontend: ShowHideLabel: Fix aria attributes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7267",
-        "author": "Alok-work23",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-15T19:24:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
