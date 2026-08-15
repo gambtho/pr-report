@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-15T14:30:59+00:00",
+  "generated_at": "2026-08-15T15:28:53+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 554,
+  "open_prs_total": 555,
   "open_drafts_total": 49,
-  "actionable_total": 327,
-  "tracked_total": 77,
+  "actionable_total": 325,
+  "tracked_total": 78,
   "buckets": {
     "needs_rebase": [
       {
@@ -1083,33 +1083,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6288,
-        "title": "frontend: useKubeObjectList: Move list-watch state updates to useEffect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6288",
-        "author": "vanshika2720",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-15T06:33:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -2781,7 +2754,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-12T14:34:20Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2806,7 +2779,7 @@
         "author": "Rucha0901",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-12T14:34:38Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "documentation",
           "kind/feature",
@@ -2841,7 +2814,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-12T14:34:39Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3372,6 +3345,31 @@
           "cncf-cla: yes",
           "needs-rebase",
           "approved",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7266,
+        "title": "frontend: helpers: clusterSettings: Guard localStorage reads against corrupt data",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7266",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-15T15:14:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
           "size/L"
         ],
         "mergeable": "CONFLICTING",
@@ -5191,32 +5189,6 @@
         }
       },
       {
-        "number": 6413,
-        "title": "Reference built-in theme names instead of hard-coding names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6413",
-        "author": "dabico",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T06:21:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7114,
         "title": "frontend: useKubeObject: Clear query cache on DELETED watch event",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7114",
@@ -5546,30 +5518,6 @@
         }
       },
       {
-        "number": 7259,
-        "title": "backend: k8cache: Fix cache poisoning when client disconnects during repopulation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7259",
-        "author": "Kakumanu-Harshitha",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T13:53:59Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7261,
         "title": "frontend: Fix Events table crash when event has no source",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7261",
@@ -5620,12 +5568,39 @@
         }
       },
       {
+        "number": 5849,
+        "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-15T14:16:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 7240,
         "title": "frontend: useKubeLists: Fix maxItems boundary check and add tests",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7240",
         "author": "yashveersinghh",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-15T14:27:46Z",
+        "updated_at": "2026-08-15T14:34:17Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -7229,7 +7204,7 @@
         "author": "rcny",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-11T14:52:13Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9546,19 +9521,18 @@
         }
       },
       {
-        "number": 5849,
-        "title": "frontend: Add \"Used By\" section to ConfigMap and Secret",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5849",
-        "author": "RajPrakash681",
+        "number": 6413,
+        "title": "Reference built-in theme names instead of hard-coding names",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6413",
+        "author": "dabico",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-15T14:16:08Z",
+        "updated_at": "2026-08-15T15:28:50Z",
         "days_since_update": 0,
         "labels": [
-          "kind/feature",
           "frontend",
           "testing",
           "cncf-cla: yes",
-          "size/XXL"
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10412,7 +10386,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-12T14:58:36Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "kind/feature",
