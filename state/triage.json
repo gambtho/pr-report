@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T12:54:23+00:00",
+  "generated_at": "2026-08-16T13:37:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 569,
+  "open_prs_total": 570,
   "open_drafts_total": 48,
   "actionable_total": 335,
   "tracked_total": 66,
@@ -712,36 +712,6 @@
           "charts",
           "cncf-cla: yes",
           "size/M",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4723,
-        "title": "Backend: Frontend: Add ability to transfer files to/from containers in pods ",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
-        "author": "mudit06mah",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-06T12:16:42Z",
-        "days_since_update": 10,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "lifecycle/stale",
-          "size/XXL",
           "collab"
         ],
         "mergeable": "CONFLICTING",
@@ -3711,61 +3681,6 @@
         }
       },
       {
-        "number": 6627,
-        "title": "backend: k8cache: Use JSON status probe to prevent false-positive Failure cache drops",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6627",
-        "author": "AYUSH-P-SINGH",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-05T08:16:43Z",
-        "days_since_update": 11,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: no",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6586,
-        "title": "Watcher Goroutine Churn & Failure Cooldown",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6586",
-        "author": "AYUSH-P-SINGH",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-05T08:32:42Z",
-        "days_since_update": 11,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "quality",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 5204,
         "title": "fix: resolve Rules of Hooks violation in ConfigMap Details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5204",
@@ -3958,7 +3873,7 @@
         "author": "anubhavsingh2106",
         "bucket": "ci_failing",
         "updated_at": "2026-08-09T13:09:51Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4137,7 +4052,7 @@
         "author": "xonas1101",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T13:00:43Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4887,6 +4802,60 @@
           "testing",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7269,
+        "title": "backend: drainNodePods: skip mirror pods and emptyDir pods during nod\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7269",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-16T12:53:43Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4723,
+        "title": "Backend: Frontend: Add ability to transfer files to/from containers in pods ",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
+        "author": "mudit06mah",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-16T13:25:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "lifecycle/stale",
+          "size/XXL",
+          "collab"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6637,7 +6606,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T13:02:21Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "frontend",
           "testing",
@@ -6663,7 +6632,7 @@
         "author": "qiangli",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T13:21:54Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -7614,7 +7583,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-15T13:04:21Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -8581,33 +8550,6 @@
         }
       },
       {
-        "number": 6801,
-        "title": "backend: auth: Fix cluster name cookie collision for long cluster names",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6801",
-        "author": "AYUSH-P-SINGH",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T11:24:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7125,
         "title": "frontend: Diagnostics: Fix unpluralizable pod-failure counts",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7125",
@@ -9167,12 +9109,66 @@
         }
       },
       {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T13:12:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6801,
+        "title": "backend: auth: Fix cluster name cookie collision for long cluster names",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6801",
+        "author": "AYUSH-P-SINGH",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T13:18:54Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6781,
         "title": "app: Make plugin updates atomic to prevent plugin corruption on failed updates",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6781",
         "author": "srajang1805",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T12:52:20Z",
+        "updated_at": "2026-08-16T13:21:00Z",
         "days_since_update": 0,
         "labels": [
           "plugins",
@@ -9193,14 +9189,45 @@
         }
       },
       {
-        "number": 7269,
-        "title": "backend: drainNodePods: skip mirror pods and emptyDir pods during nod\u2026",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7269",
-        "author": "Kakumanu-Harshitha",
+        "number": 6627,
+        "title": "backend: k8cache: Use JSON status probe to prevent false-positive Failure cache drops",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6627",
+        "author": "AYUSH-P-SINGH",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T12:53:43Z",
+        "updated_at": "2026-08-16T13:29:00Z",
         "days_since_update": 0,
         "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6586,
+        "title": "Watcher Goroutine Churn & Failure Cooldown",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6586",
+        "author": "AYUSH-P-SINGH",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T13:36:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "quality",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -9976,7 +10003,7 @@
         "author": "Swastik19Nit",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-08T12:55:57Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/feature",
           "frontend",
@@ -10570,33 +10597,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-16T11:26:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
