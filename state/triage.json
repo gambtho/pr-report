@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T14:31:10+00:00",
+  "generated_at": "2026-08-16T15:29:22+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 573,
+  "open_prs_total": 575,
   "open_drafts_total": 48,
-  "actionable_total": 336,
+  "actionable_total": 337,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -2639,7 +2639,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-12T14:34:39Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4551,7 +4551,7 @@
         "author": "yashveersinghh",
         "bucket": "ci_failing",
         "updated_at": "2026-08-15T14:34:17Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4875,7 +4875,32 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7287",
         "author": "illume",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-16T13:57:08Z",
+        "updated_at": "2026-08-16T15:25:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7291,
+        "title": "0036: app: electron: Expose platform in desktop API",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7291",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-16T15:26:02Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -6263,7 +6288,7 @@
         "author": "rcny",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-11T14:52:13Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8675,30 +8700,6 @@
         }
       },
       {
-        "number": 7116,
-        "title": "frontend: vpa: re-evaluate enablement on cluster switch",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7116",
-        "author": "yashveersinghh",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T11:28:24Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7261,
         "title": "frontend: Fix Events table crash when event has no source",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7261",
@@ -9255,6 +9256,54 @@
           "testing",
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7271,
+        "title": "frontend: ShowHideLabel: fix phantom collapse button on short text",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7271",
+        "author": "unlikelyzero",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T14:58:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7116,
+        "title": "frontend: vpa: re-evaluate enablement on cluster switch",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7116",
+        "author": "yashveersinghh",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T15:09:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10081,7 +10130,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-12T14:58:36Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -10694,30 +10743,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7271,
-        "title": "frontend: ShowHideLabel: fix phantom collapse button on short text",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7271",
-        "author": "unlikelyzero",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-16T11:29:56Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
