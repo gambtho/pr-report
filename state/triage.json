@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T18:39:43+00:00",
+  "generated_at": "2026-08-16T19:26:58+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 578,
-  "open_drafts_total": 48,
-  "actionable_total": 337,
+  "open_prs_total": 576,
+  "open_drafts_total": 51,
+  "actionable_total": 336,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -4798,55 +4798,6 @@
           "is_tracked": false,
           "verifiable": false
         }
-      },
-      {
-        "number": 7294,
-        "title": "0020: app: electron: Report rejected command exits",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7294",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-16T15:58:35Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7269,
-        "title": "backend: drainNodePods: skip mirror pods and fail drain on emptyDir pods",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7269",
-        "author": "Kakumanu-Harshitha",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-16T18:37:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
       }
     ],
     "waiting_on_reviewer": [
@@ -5530,7 +5481,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T19:08:46Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "kind/bug",
           "backend",
@@ -6053,7 +6004,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T19:10:54Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "kind/feature",
           "frontend",
@@ -6080,7 +6031,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T19:14:44Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "frontend",
           "testing",
@@ -6135,7 +6086,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-10T18:54:32Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "app",
           "testing",
@@ -6163,7 +6114,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-10T19:10:38Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -7173,7 +7124,7 @@
         "author": "treydock",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T19:04:44Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "charts",
           "cncf-cla: yes",
@@ -9301,6 +9252,30 @@
         "author": "dee077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T18:32:06Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7269,
+        "title": "backend: drainNodePods: skip mirror pods and fail drain on emptyDir pods",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7269",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T18:45:48Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
