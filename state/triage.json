@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-16T19:26:58+00:00",
+  "generated_at": "2026-08-16T20:31:46+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 576,
-  "open_drafts_total": 51,
-  "actionable_total": 336,
-  "tracked_total": 66,
+  "open_prs_total": 575,
+  "open_drafts_total": 54,
+  "actionable_total": 335,
+  "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
       {
@@ -2746,31 +2746,6 @@
         }
       },
       {
-        "number": 7020,
-        "title": "backend: add rate limiting to auth endpoints",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7020",
-        "author": "anubhavsingh2106",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-13T16:22:46Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6948,
         "title": "frontend: limitRange: Show every spec.limits entry, not just the first",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6948",
@@ -3897,7 +3872,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-08-12T19:35:57Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "dependencies",
           "javascript",
@@ -4725,7 +4700,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/4723",
         "author": "mudit06mah",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-16T13:25:15Z",
+        "updated_at": "2026-08-16T19:30:28Z",
         "days_since_update": 0,
         "labels": [
           "kind/feature",
@@ -4739,56 +4714,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7291,
-        "title": "0036: app: electron: Expose platform in desktop API",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7291",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-16T15:26:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7293,
-        "title": "0026: Keep project grid visible at high zoom",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7293",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-16T15:52:00Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL",
-          "approved"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5509,7 +5434,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T20:04:38Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6715,7 +6640,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T19:49:03Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -9276,6 +9201,30 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T18:45:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7020,
+        "title": "backend: add rate limiting to auth endpoints",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7020",
+        "author": "anubhavsingh2106",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T20:21:49Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
