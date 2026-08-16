@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T22:30:09+00:00",
+  "generated_at": "2026-08-16T23:28:08+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 577,
   "open_drafts_total": 52,
@@ -4376,30 +4376,6 @@
         "author": "anirudhagarwal-dev",
         "bucket": "ci_failing",
         "updated_at": "2026-08-15T06:25:55Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7132,
-        "title": "backend: Support JWT client assertion for OIDC provider",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7132",
-        "author": "toVersus",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T06:31:42Z",
         "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
@@ -9311,6 +9287,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7132,
+        "title": "backend: Support JWT client assertion for OIDC provider",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7132",
+        "author": "toVersus",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T22:50:55Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
