@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T23:28:05+00:00",
+  "generated_at": "2026-08-16T01:51:07+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 560,
+  "open_prs_total": 561,
   "open_drafts_total": 49,
   "actionable_total": 331,
   "tracked_total": 73,
@@ -5135,33 +5135,6 @@
         }
       },
       {
-        "number": 5681,
-        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
-        "author": "jgsuess",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-15T10:50:28Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6823,
         "title": "backend: Fix CSWSH vulnerability in Multiplexer",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6823",
@@ -9553,6 +9526,33 @@
         "labels": [
           "kind/bug",
           "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5681,
+        "title": "fix(ClusterStatus): call registerClusterStatus callbacks as functions so null-check works",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5681",
+        "author": "jgsuess",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T01:17:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
           "cncf-cla: yes",
           "size/L"
         ],
