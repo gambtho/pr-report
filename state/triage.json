@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T13:37:46+00:00",
+  "generated_at": "2026-08-16T14:31:10+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 570,
+  "open_prs_total": 573,
   "open_drafts_total": 48,
-  "actionable_total": 335,
+  "actionable_total": 336,
   "tracked_total": 66,
   "buckets": {
     "needs_rebase": [
@@ -733,7 +733,7 @@
         "author": "tejhan",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T14:16:38Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/bug",
           "documentation",
@@ -2560,7 +2560,7 @@
         "author": "iamundefinedguy",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T13:45:15Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "backend",
           "testing",
@@ -2889,7 +2889,7 @@
         "author": "greedy-wudpeckr",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-14T14:11:27Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4292,7 +4292,7 @@
         "author": "joaquimrocha",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T14:14:39Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/feature",
           "backend",
@@ -4524,7 +4524,7 @@
         "author": "RajPrakash681",
         "bucket": "ci_failing",
         "updated_at": "2026-08-15T14:16:08Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4859,6 +4859,31 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7287,
+        "title": "0049: frontend: Support distribution product versions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7287",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-16T13:57:08Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -9109,33 +9134,6 @@
         }
       },
       {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T13:12:06Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6801,
         "title": "backend: auth: Fix cluster name cookie collision for long cluster names",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6801",
@@ -9230,6 +9228,33 @@
           "quality",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-16T14:11:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10659,30 +10684,6 @@
         }
       },
       {
-        "number": 7045,
-        "title": "feat: add real-time audit log viewer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7045",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-16T11:29:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7050,
         "title": "feat: Add User Settings Configuration Export and Import",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7050",
@@ -10753,6 +10754,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 7045,
+        "title": "feat: add real-time audit log viewer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7045",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_author",
+        "updated_at": "2026-08-16T13:49:12Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping author for response",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "stale": [
@@ -10763,7 +10788,7 @@
         "author": "skoeva",
         "bucket": "stale",
         "updated_at": "2026-07-15T13:49:53Z",
-        "days_since_update": 31,
+        "days_since_update": 32,
         "labels": [
           "CI",
           "github_actions",
