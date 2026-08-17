@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-17T04:52:16+00:00",
+  "generated_at": "2026-08-17T05:41:37+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 577,
   "open_drafts_total": 52,
-  "actionable_total": 335,
+  "actionable_total": 336,
   "tracked_total": 65,
   "buckets": {
     "needs_rebase": [
@@ -727,38 +727,6 @@
         }
       },
       {
-        "number": 6431,
-        "title": "frontend: backend: docs: Fix OIDC token rejection loop",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6431",
-        "author": "tejhan",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-06T14:16:38Z",
-        "days_since_update": 10,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "backend",
-          "frontend",
-          "testing",
-          "oidc",
-          "cncf-cla: yes",
-          "size/L",
-          "needs review",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6320,
         "title": "frontend: globalSearch: Lazy-load searchable resource classes",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6320",
@@ -1059,6 +1027,38 @@
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6431,
+        "title": "frontend: backend: docs: Fix OIDC token rejection loop",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6431",
+        "author": "tejhan",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-17T05:41:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "documentation",
+          "backend",
+          "frontend",
+          "testing",
+          "oidc",
+          "cncf-cla: yes",
+          "size/L",
+          "needs review",
+          "collab"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -7818,30 +7818,6 @@
         }
       },
       {
-        "number": 7238,
-        "title": "frontend: Sidebar/SidebarItem: Fix list structure in Collapsed Section Header story",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7238",
-        "author": "Alok-work23",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T06:42:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7114,
         "title": "frontend: useKubeObject: Clear query cache on DELETED watch event",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7114",
@@ -7956,31 +7932,6 @@
           "cncf-cla: yes",
           "size/XXL",
           "needs review"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7063,
-        "title": "0060: Open View button in split-right",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7063",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-16T09:11:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -9314,6 +9265,79 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7087,
+        "title": "frontend: useSidebarItems: Fix react-hooks/exhaustive-deps",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7087",
+        "author": "Alok-work23",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-17T05:21:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7238,
+        "title": "frontend: Sidebar/SidebarItem: Fix list structure in Collapsed Section Header story",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7238",
+        "author": "Alok-work23",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-17T05:23:30Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7063,
+        "title": "0060: Open View button in split-right",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7063",
+        "author": "illume",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-17T05:40:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
