@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T03:02:59+00:00",
+  "generated_at": "2026-08-18T03:51:23+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 569,
   "open_drafts_total": 47,
@@ -5069,6 +5069,86 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6702,
+        "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
+        "author": "Aamod007",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-17T21:10:53Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6697,
+        "title": "frontend: Fix actions column id in Table visibility effect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
+        "author": "Aamod007",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-17T21:36:59Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5986,
+        "title": "backend: Add configurable favicon support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5986",
+        "author": "guillaumebernard84",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-17T21:50:28Z",
+        "days_since_update": 0,
+        "labels": [
+          "documentation",
+          "kind/feature",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -9005,81 +9085,6 @@
         }
       },
       {
-        "number": 6813,
-        "title": "frontend: LogViewer: Add copy to clipboard action",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T12:08:47Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7125,
-        "title": "frontend: Diagnostics: Fix unpluralizable pod-failure counts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7125",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T12:10:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7031,
-        "title": "frontend: Diagnostics: Fix broken i18next pluralization for warning event counts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7031",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T12:16:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6936,
         "title": "0051: Project header actions can select tabs",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6936",
@@ -9512,32 +9517,6 @@
         }
       },
       {
-        "number": 6702,
-        "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T21:10:53Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6759,
         "title": "frontend: Add allowed namespaces label selector to cluster settings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6759",
@@ -9594,16 +9573,41 @@
         }
       },
       {
-        "number": 6697,
-        "title": "frontend: Fix actions column id in Table visibility effect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
-        "author": "Aamod007",
+        "number": 7112,
+        "title": "frontend: PriorityClass: Render Global Default as translated Yes/No",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7112",
+        "author": "Saloni3494",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T21:36:59Z",
+        "updated_at": "2026-08-18T02:41:02Z",
         "days_since_update": 0,
         "labels": [
-          "kind/bug",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6813,
+        "title": "frontend: LogViewer: Add copy to clipboard action",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-18T03:10:37Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
           "frontend",
+          "testing",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -9620,20 +9624,16 @@
         }
       },
       {
-        "number": 5986,
-        "title": "backend: Add configurable favicon support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5986",
-        "author": "guillaumebernard84",
+        "number": 7125,
+        "title": "frontend: Diagnostics: Fix unpluralizable pod-failure counts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7125",
+        "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-17T21:50:28Z",
+        "updated_at": "2026-08-18T03:10:47Z",
         "days_since_update": 0,
         "labels": [
-          "documentation",
-          "kind/feature",
-          "backend",
-          "testing",
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9648,16 +9648,16 @@
         }
       },
       {
-        "number": 7112,
-        "title": "frontend: PriorityClass: Render Global Default as translated Yes/No",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7112",
-        "author": "Saloni3494",
+        "number": 7031,
+        "title": "frontend: Diagnostics: Fix broken i18next pluralization for warning event counts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7031",
+        "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-18T02:41:02Z",
+        "updated_at": "2026-08-18T03:10:52Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/S"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
