@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T01:44:00+00:00",
+  "generated_at": "2026-08-18T03:02:59+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 569,
   "open_drafts_total": 47,
@@ -4719,30 +4719,6 @@
         }
       },
       {
-        "number": 7112,
-        "title": "frontend: PriorityClass: Render Global Default as translated Yes/No",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7112",
-        "author": "Saloni3494",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-13T16:32:57Z",
-        "days_since_update": 4,
-        "labels": [
-          "cncf-cla: yes",
-          "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7123,
         "title": "backend: Fix incorrect caching behavior for Kubernetes resources containing \"Failure\"",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7123",
@@ -8568,7 +8544,7 @@
         "author": "unlikelyzero",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T02:38:44Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -9658,6 +9634,30 @@
           "testing",
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7112,
+        "title": "frontend: PriorityClass: Render Global Default as translated Yes/No",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7112",
+        "author": "Saloni3494",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-18T02:41:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
