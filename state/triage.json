@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T22:33:19+00:00",
+  "generated_at": "2026-08-19T23:30:28+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 558,
   "open_drafts_total": 45,
@@ -1219,7 +1219,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-14T23:20:24Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5470,30 +5470,6 @@
         }
       },
       {
-        "number": 7337,
-        "title": "frontend: KubeList: Keep resource version on ERROR watch events",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7337",
-        "author": "RajPrakash681",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-19T13:14:58Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7045,
         "title": "feat: add real-time audit log viewer",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7045",
@@ -5623,6 +5599,31 @@
         }
       },
       {
+        "number": 7252,
+        "title": "0009: app: electron: Read protocol scheme from product metadata",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7252",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-19T16:40:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 6431,
         "title": "frontend: backend: docs: Fix OIDC token rejection loop",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6431",
@@ -5644,6 +5645,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7337,
+        "title": "frontend: KubeList: Keep resource version on ERROR watch events",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7337",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-19T22:53:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -8831,7 +8856,7 @@
         "author": "TheRazorbill",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T22:52:03Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9486,31 +9511,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7252,
-        "title": "0009: app: electron: Read protocol scheme from product metadata",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7252",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-19T16:40:33Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
