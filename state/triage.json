@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T23:29:15+00:00",
+  "generated_at": "2026-08-19T01:46:05+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 570,
   "open_drafts_total": 44,
-  "actionable_total": 317,
-  "tracked_total": 90,
+  "actionable_total": 320,
+  "tracked_total": 88,
   "buckets": {
     "needs_rebase": [
       {
@@ -3766,56 +3766,6 @@
         }
       },
       {
-        "number": 7230,
-        "title": "frontend: Add Node Shell \"Chroot to host\" option",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7230",
-        "author": "knktc",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-18T22:30:19Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7132,
-        "title": "backend: Support JWT client assertion for OIDC provider",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7132",
-        "author": "toVersus",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-18T22:30:22Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7128,
         "title": "i18n: complete Hindi translations for app and glossary",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7128",
@@ -5688,6 +5638,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7323,
+        "title": "frontend: k8s: Guard ResourceClasses lookups with an API group match",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7323",
+        "author": "gambtho",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-18T18:42:46Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -8436,7 +8410,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T00:57:50Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9800,6 +9774,54 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7230,
+        "title": "frontend: Add Node Shell \"Chroot to host\" option",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7230",
+        "author": "knktc",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-19T01:16:48Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7132,
+        "title": "backend: Support JWT client assertion for OIDC provider",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7132",
+        "author": "toVersus",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-19T01:35:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
