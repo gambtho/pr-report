@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T03:53:57+00:00",
+  "generated_at": "2026-08-19T04:44:56+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 570,
   "open_drafts_total": 44,
-  "actionable_total": 322,
-  "tracked_total": 86,
+  "actionable_total": 323,
+  "tracked_total": 85,
   "buckets": {
     "needs_rebase": [
       {
@@ -3741,31 +3741,6 @@
         }
       },
       {
-        "number": 7235,
-        "title": "feat: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7235",
-        "author": "SiddharthSingh-iitbhu",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-18T22:30:17Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7128,
         "title": "i18n: complete Hindi translations for app and glossary",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7128",
@@ -4882,30 +4857,6 @@
         }
       },
       {
-        "number": 7155,
-        "title": "frontend: Apply: Send fieldValidation=Strict on writes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7155",
-        "author": "xonas1101",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-13T13:00:43Z",
-        "days_since_update": 5,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7053,
         "title": "Add plugins-config flag for admin-set plugin defaults",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7053",
@@ -5663,6 +5614,54 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7155,
+        "title": "frontend: Apply: Send fieldValidation=Strict on writes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7155",
+        "author": "xonas1101",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-19T04:00:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7259,
+        "title": "backend: k8cache: Fix cache poisoning when client disconnects during repopulation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7259",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-19T04:30:44Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6939,32 +6938,6 @@
         "labels": [
           "kind/bug",
           "frontend",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6848,
-        "title": "frontend: ClusterChooserPopup: Sort recent clusters by recency",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6848",
-        "author": "xonas1101",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-13T13:02:21Z",
-        "days_since_update": 5,
-        "labels": [
-          "frontend",
-          "testing",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -9093,7 +9066,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T04:20:31Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9117,7 +9090,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T04:21:07Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "frontend",
           "testing",
@@ -9820,6 +9793,56 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6848,
+        "title": "frontend: ClusterChooserPopup: Sort recent clusters by recency",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6848",
+        "author": "xonas1101",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-19T03:58:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7235,
+        "title": "feat: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7235",
+        "author": "SiddharthSingh-iitbhu",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-19T04:16:21Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10815,30 +10838,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7259,
-        "title": "backend: k8cache: Fix cache poisoning when client disconnects during repopulation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7259",
-        "author": "Kakumanu-Harshitha",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-16T11:27:58Z",
-        "days_since_update": 2,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
