@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-20T01:44:42+00:00",
+  "generated_at": "2026-08-20T03:04:45+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 560,
   "open_drafts_total": 45,
-  "actionable_total": 312,
-  "tracked_total": 91,
+  "actionable_total": 313,
+  "tracked_total": 89,
   "buckets": {
     "needs_rebase": [
       {
@@ -3475,35 +3475,6 @@
         }
       },
       {
-        "number": 6748,
-        "title": "frontend: StatusCharts: Add interactive red/green query links for filtered list views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
-        "author": "Suyog241005",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-17T07:30:41Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6418,
         "title": "Plugin Manager for clustered installation",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6418",
@@ -4040,31 +4011,6 @@
           "cncf-cla: yes",
           "needs-rebase",
           "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7071,
-        "title": "frontend: backend: Add OIDC autologin support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
-        "author": "Suyog241005",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-19T22:30:40Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XL"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -5624,6 +5570,30 @@
         }
       },
       {
+        "number": 6978,
+        "title": "frontend: plugins: Enforce strict mode and secure argument passing",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6978",
+        "author": "KeerthiKumarR",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-19T20:07:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 6431,
         "title": "frontend: backend: docs: Fix OIDC token rejection loop",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6431",
@@ -5680,19 +5650,23 @@
         }
       },
       {
-        "number": 7352,
-        "title": "backend: auth: Fix auth cookie clearing and cluster name collision",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7352",
-        "author": "bhuvan-somisetty",
+        "number": 6748,
+        "title": "frontend: StatusCharts: Add interactive red/green query links for filtered list views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
+        "author": "Suyog241005",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-20T01:35:47Z",
+        "updated_at": "2026-08-20T01:57:51Z",
         "days_since_update": 0,
         "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
           "cncf-cla: yes",
-          "size/L"
+          "size/XXL",
+          "collab"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -7926,7 +7900,7 @@
         "author": "unlikelyzero",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T02:38:44Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8373,7 +8347,7 @@
         "author": "Saloni3494",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T02:41:02Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -8928,7 +8902,7 @@
         "author": "toVersus",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T02:22:05Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -9728,30 +9702,6 @@
         }
       },
       {
-        "number": 6978,
-        "title": "frontend: plugins: Enforce strict mode and secure argument passing",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6978",
-        "author": "KeerthiKumarR",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-19T20:07:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6819,
         "title": "frontend: workloads: show service account in the details view",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6819",
@@ -9829,6 +9779,30 @@
           "cncf-cla: yes",
           "size/XXL",
           "search"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7071,
+        "title": "frontend: backend: Add OIDC autologin support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-20T01:48:01Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
