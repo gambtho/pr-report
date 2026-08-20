@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-20T14:44:52+00:00",
+  "generated_at": "2026-08-20T15:40:51+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 558,
   "open_drafts_total": 45,
-  "actionable_total": 390,
-  "tracked_total": 3,
+  "actionable_total": 388,
+  "tracked_total": 4,
   "buckets": {
     "needs_rebase": [
       {
@@ -92,6 +92,33 @@
         }
       },
       {
+        "number": 7253,
+        "title": "0017: app: frontend: plugins: Expose namespaced plugin secure storage",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7253",
+        "author": "illume",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-20T10:30:26Z",
+        "days_since_update": 0,
+        "labels": [
+          "security",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6829,
         "title": "0003: app: verify packaged plugin identities",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6829",
@@ -124,29 +151,27 @@
         }
       },
       {
-        "number": 6418,
-        "title": "Plugin Manager for clustered installation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6418",
-        "author": "MErevGe",
+        "number": 6833,
+        "title": "0027: Make the column selector keyboard accessible",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6833",
+        "author": "illume",
         "bucket": "needs_rebase",
-        "updated_at": "2026-08-20T14:34:04Z",
+        "updated_at": "2026-08-20T15:30:44Z",
         "days_since_update": 0,
         "labels": [
-          "documentation",
-          "kind/feature",
-          "backend",
           "frontend",
-          "plugins",
           "testing",
-          "headlamp-plugin",
+          "area/provider/azure",
+          "e2e-tests",
           "cncf-cla: yes",
           "needs-rebase",
-          "size/XXL",
-          "collab"
+          "approved",
+          "size/L",
+          "gatewayAPI"
         ],
         "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
+        "review_decision": "APPROVED",
+        "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
           "recommended_label": "needs-rebase",
@@ -3831,7 +3856,7 @@
           "cncf-cla: yes",
           "size/XL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -4431,7 +4456,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "FAILURE",
         "action": {
@@ -4550,31 +4575,6 @@
         }
       },
       {
-        "number": 7252,
-        "title": "0009: app: electron: Read protocol scheme from product metadata",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7252",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-20T10:26:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7287,
         "title": "0049: frontend: Support distribution product versions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7287",
@@ -4654,33 +4654,6 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7253,
-        "title": "0017: app: frontend: plugins: Expose namespaced plugin secure storage",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7253",
-        "author": "illume",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-20T10:30:26Z",
-        "days_since_update": 0,
-        "labels": [
-          "security",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -4778,6 +4751,32 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7252,
+        "title": "0009: app: electron: Read protocol scheme from product metadata",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7252",
+        "author": "illume",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-20T15:31:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "lgtm",
+          "cncf-cla: yes",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5406,7 +5405,7 @@
           "cncf-cla: yes",
           "size/XS"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -7255,7 +7254,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T15:32:25Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/feature",
           "frontend",
@@ -7625,7 +7624,7 @@
         "author": "Mavrickk3",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T15:20:08Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8218,7 +8217,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -8548,7 +8547,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -8724,7 +8723,7 @@
         "author": "Sreejesh06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T15:35:28Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -9273,36 +9272,6 @@
         }
       },
       {
-        "number": 6833,
-        "title": "0027: Make the column selector keyboard accessible",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6833",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-20T11:49:31Z",
-        "days_since_update": 0,
-        "labels": [
-          "frontend",
-          "testing",
-          "area/provider/azure",
-          "e2e-tests",
-          "cncf-cla: yes",
-          "approved",
-          "size/L",
-          "gatewayAPI"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6968,
         "title": "frontend: Add Reset App State button to Settings",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6968",
@@ -9313,33 +9282,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5758,
-        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
-        "author": "Rohith-Saran",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-20T13:40:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -9425,7 +9367,7 @@
           "approved",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "PENDING",
         "action": {
@@ -9450,6 +9392,33 @@
           "frontend",
           "cncf-cla: yes",
           "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 5758,
+        "title": "frontend: Fix node debugger pod leakage and secure default namespace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5758",
+        "author": "Rohith-Saran",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-20T14:46:33Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -10171,7 +10140,7 @@
         "author": "big-appled",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-12T14:58:36Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -10498,7 +10467,7 @@
           "size/L",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
