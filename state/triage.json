@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-22T10:32:11+00:00",
+  "generated_at": "2026-08-22T11:28:05+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 552,
+  "open_prs_total": 554,
   "open_drafts_total": 45,
   "actionable_total": 301,
   "tracked_total": 89,
@@ -1632,32 +1632,6 @@
         }
       },
       {
-        "number": 6698,
-        "title": "frontend: Guard rollingUpdate field in workload details",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
-        "author": "Aamod007",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-19T10:58:56Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6493,
         "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
@@ -1671,32 +1645,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6702,
-        "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
-        "author": "Aamod007",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-19T12:20:54Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -3630,33 +3578,6 @@
         }
       },
       {
-        "number": 6763,
-        "title": "frontend: gate Gateway API sidebar entry on cluster API discovery",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6763",
-        "author": "rootp1",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-18T22:30:38Z",
-        "days_since_update": 3,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7227,
         "title": "docs: Add Pomerium identity-aware proxy example",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7227",
@@ -4283,6 +4204,33 @@
           "is_tracked": true,
           "verifiable": true
         }
+      },
+      {
+        "number": 6763,
+        "title": "frontend: gate Gateway API sidebar entry on cluster API discovery",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6763",
+        "author": "rootp1",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-22T10:56:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/XXL"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
       }
     ],
     "ci_failing": [
@@ -4787,7 +4735,7 @@
         "author": "Mavrickk3",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T10:47:15Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "kind/bug",
           "backend",
@@ -5522,6 +5470,32 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 6697,
+        "title": "frontend: Fix actions column id in Table visibility effect",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
+        "author": "Aamod007",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-22T11:09:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -6197,7 +6171,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-08T11:00:17Z",
-        "days_since_update": 13,
+        "days_since_update": 14,
         "labels": [
           "frontend",
           "quality",
@@ -6994,7 +6968,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:03:56Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "windows",
@@ -7021,7 +6995,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:05:47Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -7045,7 +7019,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:23:32Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -7074,7 +7048,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:23:47Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "backend",
@@ -7101,7 +7075,7 @@
         "author": "sarvesh-official",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:25:20Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -7125,7 +7099,7 @@
         "author": "Abhishek86798",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:26:53Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -7628,7 +7602,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T11:13:29Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8382,65 +8356,13 @@
         }
       },
       {
-        "number": 6696,
-        "title": "frontend: Fix NaN sort in Deployments Pods column",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-19T09:32:07Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6697,
-        "title": "frontend: Fix actions column id in Table visibility effect",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6697",
-        "author": "Aamod007",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-19T09:51:50Z",
-        "days_since_update": 3,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7223,
         "title": "fix(frontend): LogsButton: Preserve cluster context for related pods",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7223",
         "author": "AbhishekMauryaGEEK",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T10:42:43Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8464,7 +8386,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T11:04:43Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8945,7 +8867,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T10:48:56Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8969,7 +8891,7 @@
         "author": "Pritz395",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T11:18:37Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "backend",
@@ -9287,7 +9209,7 @@
         "author": "vikash7485",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-21T10:53:22Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9529,6 +9451,84 @@
           "backend",
           "testing",
           "charts",
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6702,
+        "title": "fix: use mrt-row-actions id to hide actions column when all others hidden",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6702",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-22T11:00:34Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6696,
+        "title": "frontend: Fix NaN sort in Deployments Pods column",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6696",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-22T11:09:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6698,
+        "title": "frontend: Guard rollingUpdate field in workload details",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6698",
+        "author": "Aamod007",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-22T11:17:38Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
           "cncf-cla: yes",
           "size/M"
         ],
@@ -9958,7 +9958,7 @@
         "author": "jainarjav80-sys",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T10:51:04Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "frontend",
           "testing",
@@ -9984,7 +9984,7 @@
         "author": "saiashok0981",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T10:51:52Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "backend",
           "quality",
@@ -10297,7 +10297,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-16T11:22:52Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "kind/bug",
           "frontend",
