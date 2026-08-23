@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T15:30:26+00:00",
+  "generated_at": "2026-08-23T16:34:54+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 567,
   "open_drafts_total": 45,
-  "actionable_total": 306,
+  "actionable_total": 305,
   "tracked_total": 89,
   "buckets": {
     "needs_rebase": [
@@ -828,7 +828,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:06Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "dependencies",
           "security",
@@ -856,7 +856,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:07Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "dependencies",
           "security",
@@ -3777,32 +3777,6 @@
         }
       },
       {
-        "number": 7287,
-        "title": "0049: frontend: Support distribution product versions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7287",
-        "author": "illume",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-08-20T10:27:00Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "needs-rebase",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5680,
         "title": "backend: headlamp: filter sensitive headers in external proxy",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
@@ -4141,6 +4115,32 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7287,
+        "title": "0049: frontend: Support distribution product versions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7287",
+        "author": "illume",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-23T16:29:03Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/L"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -4839,7 +4839,7 @@
         "author": "khanskr",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:31:44Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: no",
           "size/S"
@@ -4863,7 +4863,7 @@
         "author": "mayurgalhate",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:33:54Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -5335,30 +5335,6 @@
         }
       },
       {
-        "number": 7391,
-        "title": "feat: Implement optimistic UI updates for mutating actions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7391",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-23T08:25:10Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6493,
         "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
@@ -5372,30 +5348,6 @@
           "testing",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6980,
-        "title": "Feature: Multi-Cluster Resource Topology Visualizer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6980",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-23T08:51:32Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5439,7 +5391,55 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7415",
         "author": "Rucha0901",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-23T09:20:56Z",
+        "updated_at": "2026-08-23T15:34:35Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6980,
+        "title": "Feature: Multi-Cluster Resource Topology Visualizer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6980",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-23T15:47:24Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7391,
+        "title": "feat: Implement optimistic UI updates for mutating actions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7391",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-23T16:12:49Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -6574,7 +6574,7 @@
         "author": "Pratham19106",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-14T15:46:28Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -6654,7 +6654,7 @@
         "author": "dabico",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-15T16:14:44Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "frontend",
           "testing",
@@ -7532,7 +7532,7 @@
         "author": "yashveersinghh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T16:30:25Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XS",
@@ -8272,7 +8272,7 @@
         "author": "Sreejesh06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T15:35:28Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8296,7 +8296,7 @@
         "author": "Adi-204",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T15:59:57Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8595,31 +8595,6 @@
         }
       },
       {
-        "number": 7293,
-        "title": "0026: Keep project grid visible at high zoom",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7293",
-        "author": "illume",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-20T10:27:01Z",
-        "days_since_update": 3,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7298,
         "title": "0047: frontend: Include product metadata in document titles",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7298",
@@ -8802,7 +8777,7 @@
         "author": "srajang1805",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T16:17:32Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "plugins",
           "app",
@@ -8828,7 +8803,7 @@
         "author": "Psykii22",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T16:23:43Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8854,7 +8829,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T16:29:02Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "frontend",
           "testing",
@@ -9147,7 +9122,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-21T15:56:54Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9175,7 +9150,7 @@
         "author": "illume",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-21T16:11:26Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "approved",
@@ -9362,7 +9337,7 @@
         "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-22T15:32:50Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9386,7 +9361,7 @@
         "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-22T15:34:14Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9410,7 +9385,7 @@
         "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-22T15:36:24Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9998,7 +9973,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:05Z",
-        "days_since_update": 26,
+        "days_since_update": 27,
         "labels": [
           "dependencies",
           "security",
@@ -10245,7 +10220,7 @@
         "author": "mayurgalhate",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:06Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -10269,7 +10244,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:16Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -10499,7 +10474,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-21T16:18:06Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "kind/bug",
           "frontend",
