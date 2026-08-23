@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T05:36:44+00:00",
+  "generated_at": "2026-08-23T06:54:17+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 561,
+  "open_prs_total": 564,
   "open_drafts_total": 45,
-  "actionable_total": 304,
+  "actionable_total": 306,
   "tracked_total": 89,
   "buckets": {
     "needs_rebase": [
@@ -1214,7 +1214,7 @@
         "author": "Rucha0901",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-13T06:28:05Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/feature",
           "frontend",
@@ -1243,7 +1243,7 @@
         "author": "Rucha0901",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-13T06:28:12Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/feature",
           "frontend",
@@ -1356,7 +1356,7 @@
         "author": "unlikelyzero",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-15T06:18:58Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "app",
@@ -3291,7 +3291,7 @@
         "author": "hazelmayank",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-15T06:19:07Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4839,7 +4839,7 @@
         "author": "csuich2",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T06:22:49Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "backend",
           "plugins",
@@ -4986,7 +4986,7 @@
         "author": "anirudhagarwal-dev",
         "bucket": "ci_failing",
         "updated_at": "2026-08-15T06:25:55Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -5234,30 +5234,6 @@
         }
       },
       {
-        "number": 7391,
-        "title": "feat: Implement optimistic UI updates for mutating actions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7391",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-21T20:23:45Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6430,
         "title": "frontend: common: Add ReadyStatusLabel component",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6430",
@@ -5391,7 +5367,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6980",
         "author": "Rucha0901",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-23T05:22:04Z",
+        "updated_at": "2026-08-23T05:48:52Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -5399,6 +5375,78 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7416,
+        "title": "Update Windows installation documentation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7416",
+        "author": "sheraji7",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-23T05:56:02Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7418,
+        "title": "frontend: ProjectDetails: guard loadTabs against stale results when switching projects",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7418",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-23T06:32:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7391,
+        "title": "feat: Implement optimistic UI updates for mutating actions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7391",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-23T06:33:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6275,7 +6323,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T06:17:38Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "backend",
           "testing",
@@ -6301,7 +6349,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T06:22:58Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6328,7 +6376,7 @@
         "author": "kunaldevsahu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T06:23:20Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -6352,7 +6400,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T06:25:10Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -6578,7 +6626,7 @@
         "author": "cmcgalliard",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-15T06:21:05Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/feature",
           "testing",
@@ -6684,7 +6732,7 @@
         "author": "simonepri",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T06:33:59Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -6708,7 +6756,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T06:36:27Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -6732,7 +6780,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T06:39:04Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -6756,7 +6804,7 @@
         "author": "Sreejesh06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T06:48:25Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7339,7 +7387,7 @@
         "author": "Alok-work23",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T05:45:21Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -7712,7 +7760,7 @@
         "author": "anubhavsingh2106",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T06:31:23Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9228,7 +9276,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-22T05:56:12Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "backend",
@@ -9532,19 +9580,16 @@
         }
       },
       {
-        "number": 6813,
-        "title": "frontend: LogViewer: Add copy to clipboard action",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
-        "author": "Priyanshu-rgbb",
+        "number": 7050,
+        "title": "feat: Add User Settings Configuration Export and Import",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7050",
+        "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-23T05:16:01Z",
+        "updated_at": "2026-08-23T05:27:10Z",
         "days_since_update": 0,
         "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
           "cncf-cla: yes",
-          "size/L"
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9564,7 +9609,7 @@
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6803",
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-23T05:21:24Z",
+        "updated_at": "2026-08-23T05:39:30Z",
         "days_since_update": 0,
         "labels": [
           "documentation",
@@ -9593,16 +9638,19 @@
         }
       },
       {
-        "number": 7050,
-        "title": "feat: Add User Settings Configuration Export and Import",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7050",
-        "author": "Rucha0901",
+        "number": 6813,
+        "title": "frontend: LogViewer: Add copy to clipboard action",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
+        "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-23T05:27:10Z",
+        "updated_at": "2026-08-23T05:42:39Z",
         "days_since_update": 0,
         "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
           "cncf-cla: yes",
-          "size/XL"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10345,7 +10393,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-16T06:36:47Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/M"
