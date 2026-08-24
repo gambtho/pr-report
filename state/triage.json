@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-24T10:45:20+00:00",
+  "generated_at": "2026-08-24T11:36:18+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 573,
   "open_drafts_total": 45,
-  "actionable_total": 334,
-  "tracked_total": 84,
+  "actionable_total": 335,
+  "tracked_total": 85,
   "buckets": {
     "needs_rebase": [
       {
@@ -3961,6 +3961,31 @@
           "is_tracked": true,
           "verifiable": true
         }
+      },
+      {
+        "number": 7370,
+        "title": "fix(frontend): validate container port is within 1-65535 range",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7370",
+        "author": "jayaprajapatii",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-08-24T11:13:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
       }
     ],
     "ci_failing": [
@@ -4465,7 +4490,7 @@
         "author": "Mavrickk3",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T10:47:15Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "kind/bug",
           "backend",
@@ -5330,30 +5355,6 @@
         }
       },
       {
-        "number": 7370,
-        "title": "fix(frontend): validate container port is within 1-65535 range",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7370",
-        "author": "jayaprajapatii",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-24T09:19:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XS"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6957,
         "title": "frontend: Resourcequota: Show object count quotas in the list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6957",
@@ -5637,6 +5638,108 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7135,
+        "title": "frontend: api/v2: Guard WebSocket message JSON parsing against malformed frames",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7135",
+        "author": "krsatyamthakur-droid",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T10:18:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6748,
+        "title": "frontend: StatusCharts: Add interactive red/green query links for filtered list views",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
+        "author": "Suyog241005",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T11:19:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XXL",
+          "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6277,
+        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
+        "author": "Psykii22",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T11:24:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7352,
+        "title": "backend: auth: Fix auth cookie clearing and cluster name collision",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7352",
+        "author": "bhuvan-somisetty",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T11:24:47Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6293,7 +6396,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-08T11:00:17Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "frontend",
           "quality",
@@ -6990,7 +7093,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:03:56Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "windows",
@@ -7017,7 +7120,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:05:47Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -7041,7 +7144,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:23:32Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -7070,7 +7173,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:23:47Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "backend",
@@ -7097,7 +7200,7 @@
         "author": "sarvesh-official",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:25:20Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -7121,7 +7224,7 @@
         "author": "ankitsharma101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T11:31:09Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -7576,7 +7679,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T11:13:29Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7600,7 +7703,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T11:29:13Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -7988,7 +8091,7 @@
         "author": "mohankumar-dev-2002",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T11:35:01Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -8132,7 +8235,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T11:04:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8332,7 +8435,7 @@
         "author": "vikash7485",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-21T10:53:22Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8842,34 +8945,6 @@
         }
       },
       {
-        "number": 6748,
-        "title": "frontend: StatusCharts: Add interactive red/green query links for filtered list views",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6748",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T09:19:08Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XXL",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6768,
         "title": "frontend: VersionButton: Add unit tests and fix race conditions",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6768",
@@ -8904,32 +8979,6 @@
         "updated_at": "2026-08-24T09:20:30Z",
         "days_since_update": 0,
         "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6277,
-        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
-        "author": "Psykii22",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T09:22:54Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
           "cncf-cla: yes",
           "size/L"
         ],
@@ -9465,30 +9514,6 @@
         }
       },
       {
-        "number": 7071,
-        "title": "frontend: backend: Add OIDC autologin support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
-        "author": "Suyog241005",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T10:26:02Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6695,
         "title": "app: Guard artifacthub.title access in plugin list",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6695",
@@ -9557,6 +9582,54 @@
           "cncf-cla: yes",
           "size/L",
           "collab"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7071,
+        "title": "frontend: backend: Add OIDC autologin support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
+        "author": "Suyog241005",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T11:25:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7432,
+        "title": "backend: k8cache: Fix runWatcher panic on invalid discovery client REST config",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7432",
+        "author": "bhuvan-somisetty",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T11:25:36Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9984,7 +10057,7 @@
         "author": "jainarjav80-sys",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T10:51:04Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "frontend",
           "testing",
@@ -10010,7 +10083,7 @@
         "author": "saiashok0981",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T10:51:52Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "backend",
           "quality",
@@ -10323,7 +10396,7 @@
         "author": "jgsuess",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-16T11:22:52Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10510,30 +10583,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7432,
-        "title": "backend: k8cache: Fix runWatcher panic on invalid discovery client REST config",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7432",
-        "author": "bhuvan-somisetty",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-24T09:02:04Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
