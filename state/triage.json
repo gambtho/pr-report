@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-24T15:48:32+00:00",
+  "generated_at": "2026-08-24T16:48:34+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 578,
+  "open_prs_total": 577,
   "open_drafts_total": 45,
-  "actionable_total": 351,
+  "actionable_total": 350,
   "tracked_total": 82,
   "buckets": {
     "needs_rebase": [
@@ -828,7 +828,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:06Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "dependencies",
           "security",
@@ -856,7 +856,7 @@
         "author": "dependabot",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T16:01:07Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "dependencies",
           "security",
@@ -3147,7 +3147,7 @@
         "author": "sarangcreates",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-13T16:43:55Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3610,7 +3610,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-23T16:29:03Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -4600,7 +4600,7 @@
         "author": "khanskr",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:31:44Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: no",
           "size/S"
@@ -4624,7 +4624,7 @@
         "author": "mayurgalhate",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:33:54Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4648,7 +4648,7 @@
         "author": "anubhavsingh2106",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:38:07Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4672,7 +4672,7 @@
         "author": "kehach07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:38:15Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -5124,30 +5124,6 @@
         }
       },
       {
-        "number": 7416,
-        "title": "Update Windows installation documentation",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7416",
-        "author": "sheraji7",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-24T09:09:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: no",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6430,
         "title": "frontend: common: Add ReadyStatusLabel component",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6430",
@@ -5549,23 +5525,43 @@
         }
       },
       {
-        "number": 6601,
-        "title": "backend: externalproxy: strip auth headers before forwarding",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6601",
-        "author": "krsatyamthakur-droid",
+        "number": 7071,
+        "title": "frontend: backend: Add OIDC autologin support",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
+        "author": "Suyog241005",
         "bucket": "ci_failing",
-        "updated_at": "2026-08-24T15:11:01Z",
+        "updated_at": "2026-08-24T15:31:52Z",
         "days_since_update": 0,
         "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "oidc",
           "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7416,
+        "title": "Update Windows installation documentation",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7416",
+        "author": "sheraji7",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T16:46:25Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
           "size/M"
         ],
         "mergeable": "MERGEABLE",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6569,7 +6565,7 @@
         "author": "Khizarshah01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T16:36:42Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -6773,7 +6769,7 @@
         "author": "dabico",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-15T16:14:44Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "frontend",
           "testing",
@@ -7579,7 +7575,7 @@
         "author": "yashveersinghh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T16:30:25Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XS",
@@ -8136,7 +8132,7 @@
         "author": "Adi-204",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-19T15:59:57Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8235,7 +8231,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T16:29:02Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "frontend",
           "testing",
@@ -9058,30 +9054,6 @@
         }
       },
       {
-        "number": 7328,
-        "title": "Fix clusters randomly requiring an ID token after a kubeconfig reload",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7328",
-        "author": "krsatyamthakur-droid",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T13:07:59Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6646,
         "title": "frontend: PodList: Add real-time OOM risk and CPU throttling alert indicators",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6646",
@@ -9287,35 +9259,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6564,
-        "title": "frontend: Add plugin registration API for custom keyboard shortcuts",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6564",
-        "author": "Rucha0901",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T14:01:36Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "plugins",
-          "testing",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9602,16 +9545,16 @@
         }
       },
       {
-        "number": 7071,
-        "title": "frontend: backend: Add OIDC autologin support",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7071",
-        "author": "Suyog241005",
+        "number": 7404,
+        "title": "i18n: enable MUI locale for Czech and Swedish",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7404",
+        "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T15:31:52Z",
+        "updated_at": "2026-08-24T15:37:46Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
-          "size/XXL"
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -9626,16 +9569,73 @@
         }
       },
       {
-        "number": 7404,
-        "title": "i18n: enable MUI locale for Czech and Swedish",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7404",
-        "author": "Rohith-Saran",
+        "number": 7033,
+        "title": "backend: k8cache: Fix runWatcher defer removing re-registered watcher",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7033",
+        "author": "Sreejesh06",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-24T15:37:46Z",
+        "updated_at": "2026-08-24T16:21:56Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6601,
+        "title": "backend: externalproxy: strip auth headers before forwarding",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6601",
+        "author": "krsatyamthakur-droid",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T16:22:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "oidc",
+          "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6564,
+        "title": "frontend: Add plugin registration API for custom keyboard shortcuts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6564",
+        "author": "Rucha0901",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T16:29:45Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "plugins",
+          "testing",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10007,7 +10007,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:05Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "dependencies",
           "security",
@@ -10254,7 +10254,7 @@
         "author": "mayurgalhate",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:06Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -10278,7 +10278,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:16Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -10302,7 +10302,7 @@
         "author": "kehach07",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:38:00Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -10508,7 +10508,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-21T16:18:06Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10914,30 +10914,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7033,
-        "title": "backend: k8cache: Fix runWatcher defer removing re-registered watcher",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7033",
-        "author": "Sreejesh06",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-24T13:09:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
