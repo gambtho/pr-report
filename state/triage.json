@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-24T19:36:21+00:00",
+  "generated_at": "2026-08-24T20:39:55+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 589,
   "open_drafts_total": 45,
-  "actionable_total": 349,
+  "actionable_total": 350,
   "tracked_total": 82,
   "buckets": {
     "needs_rebase": [
@@ -4942,30 +4942,6 @@
         }
       },
       {
-        "number": 7332,
-        "title": "fix(a11y): render DialogTitle wrapper as div to fix heading nesting (#4595)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7332",
-        "author": "tysonyoshikawa06",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-24T09:06:45Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 6493,
         "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
@@ -5279,30 +5255,6 @@
         }
       },
       {
-        "number": 6964,
-        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6964",
-        "author": "harshitnub077",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-24T13:07:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7135,
         "title": "frontend: api/v2: Guard WebSocket message JSON parsing against malformed frames",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7135",
@@ -5511,6 +5463,30 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7367,
+        "title": "backend: telemetry: Fix data race in hijack test",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7367",
+        "author": "RajPrakash681",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-24T20:27:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6538,7 +6514,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T19:49:03Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -9624,6 +9600,78 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 7332,
+        "title": "fix(a11y): render DialogTitle wrapper as div to fix heading nesting (#4595)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7332",
+        "author": "tysonyoshikawa06",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T20:22:50Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7337,
+        "title": "frontend: KubeList: Keep resource version on ERROR watch events",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7337",
+        "author": "RajPrakash681",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T20:25:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6964,
+        "title": "frontend: Add ValidatingAdmissionPolicy and ValidatingAdmissionPolicyBinding",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6964",
+        "author": "harshitnub077",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-24T20:28:57Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -10890,30 +10938,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7337,
-        "title": "frontend: KubeList: Keep resource version on ERROR watch events",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7337",
-        "author": "RajPrakash681",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-24T13:09:57Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
