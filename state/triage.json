@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T20:37:55+00:00",
+  "generated_at": "2026-08-25T21:36:11+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 601,
+  "open_prs_total": 602,
   "open_drafts_total": 43,
   "actionable_total": 362,
   "tracked_total": 73,
@@ -4064,7 +4064,7 @@
         "author": "iashutoshyadav",
         "bucket": "ci_failing",
         "updated_at": "2026-08-03T20:41:57Z",
-        "days_since_update": 21,
+        "days_since_update": 22,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4457,7 +4457,7 @@
         "author": "Ata-Ul-Hai",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T21:04:44Z",
-        "days_since_update": 10,
+        "days_since_update": 11,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -4983,30 +4983,6 @@
           "kind/feature",
           "frontend",
           "testing",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7273,
-        "title": "portforward: Auto-reconnect service-backed port-forwards on pod restart",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7273",
-        "author": "Slambot01",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-25T19:49:31Z",
-        "days_since_update": 0,
-        "labels": [
           "cncf-cla: yes",
           "size/XL"
         ],
@@ -8596,7 +8572,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-24T21:00:37Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9951,6 +9927,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7273,
+        "title": "portforward: Auto-reconnect service-backed port-forwards on pod restart",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7273",
+        "author": "Slambot01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-25T21:35:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
