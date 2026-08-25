@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T17:38:04+00:00",
+  "generated_at": "2026-08-25T18:50:15+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 600,
   "open_drafts_total": 43,
@@ -1050,7 +1050,7 @@
         "author": "ssz2605",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-06T18:08:09Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "frontend",
           "testing",
@@ -2805,7 +2805,7 @@
         "author": "tejhan",
         "bucket": "needs_rebase",
         "updated_at": "2026-07-27T18:08:29Z",
-        "days_since_update": 28,
+        "days_since_update": 29,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -3055,7 +3055,7 @@
         "author": "RafsanNeloy",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-12T17:43:43Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3111,7 +3111,7 @@
         "author": "skools-here",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-13T17:46:15Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4204,7 +4204,7 @@
         "author": "Harsh63870",
         "bucket": "ci_failing",
         "updated_at": "2026-08-05T18:16:15Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -4232,7 +4232,7 @@
         "author": "Pratikdeb07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-06T18:00:44Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -4256,7 +4256,7 @@
         "author": "Pratikdeb07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-06T18:14:19Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -4637,7 +4637,7 @@
         "author": "sarvesh-official",
         "bucket": "ci_failing",
         "updated_at": "2026-08-19T17:57:53Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -4689,33 +4689,6 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6493,
-        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
-        "author": "Rucha0901",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-24T09:06:47Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5021,36 +4994,36 @@
           "is_tracked": false,
           "verifiable": false
         }
-      }
-    ],
-    "waiting_on_reviewer": [
+      },
       {
-        "number": 6340,
-        "title": "backend: Fix telemetry metrics duration and Jaeger config bug",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6340",
-        "author": "Psykii22",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:02:05Z",
-        "days_since_update": 31,
+        "number": 6493,
+        "title": "frontend: shortcuts: Preserve active namespace and cluster context in hotkeys",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6493",
+        "author": "Rucha0901",
+        "bucket": "ci_failing",
+        "updated_at": "2026-08-25T18:17:24Z",
+        "days_since_update": 0,
         "labels": [
-          "kind/bug",
-          "backend",
+          "kind/feature",
+          "frontend",
           "testing",
           "cncf-cla: yes",
-          "size/L"
+          "size/XL"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
+        "check_state": "FAILURE",
         "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
           "label_already_applied": false,
-          "recommended_comment": null,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
           "is_tracked": false,
-          "verifiable": true
+          "verifiable": false
         }
-      },
+      }
+    ],
+    "waiting_on_reviewer": [
       {
         "number": 6572,
         "title": "backend: k8cache: Use SplitN when parsing ClusterID to avoid incorrect context name parsing",
@@ -5065,33 +5038,6 @@
           "testing",
           "cncf-cla: yes",
           "size/S"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5925,
-        "title": "backend: logging: Clean format strings and normalize defer",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5925",
-        "author": "Psykii22",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-07-25T12:04:28Z",
-        "days_since_update": 31,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XS"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -5433,7 +5379,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T18:17:33Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "kind/bug",
           "documentation",
@@ -5490,7 +5436,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T18:14:31Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "kind/feature",
           "backend",
@@ -5517,7 +5463,7 @@
         "author": "beep-boopp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T18:34:26Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "frontend",
           "testing",
@@ -6170,7 +6116,7 @@
         "author": "ankitsharma101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-15T17:40:12Z",
-        "days_since_update": 9,
+        "days_since_update": 10,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -6605,7 +6551,7 @@
         "author": "dee077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-16T18:32:06Z",
-        "days_since_update": 8,
+        "days_since_update": 9,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -6948,7 +6894,7 @@
         "author": "vividwhisp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-17T18:04:32Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "frontend",
           "testing",
@@ -7284,7 +7230,7 @@
         "author": "kehach07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T18:12:46Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -7308,7 +7254,7 @@
         "author": "kehach07",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T18:33:18Z",
-        "days_since_update": 6,
+        "days_since_update": 7,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -9939,6 +9885,84 @@
           "is_tracked": false,
           "verifiable": true
         }
+      },
+      {
+        "number": 5925,
+        "title": "backend: logging: Clean format strings and normalize defer",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5925",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-25T17:50:15Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XS"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6340,
+        "title": "backend: Fix telemetry metrics duration and Jaeger config bug",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6340",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-25T17:50:52Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7374,
+        "title": "frontend: DocsViewer: Guard against stale doc fetches on rapid docSpecs changes",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7374",
+        "author": "Shahazadi-Shaguftha-Syed",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-25T18:13:14Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
       }
     ],
     "waiting_on_author": [
@@ -10353,7 +10377,7 @@
         "author": "JatsuAkaYashvant",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T18:29:14Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "kind/bug",
           "frontend",
@@ -11070,30 +11094,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7374,
-        "title": "frontend: DocsViewer: Guard against stale doc fetches on rapid docSpecs changes",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7374",
-        "author": "Shahazadi-Shaguftha-Syed",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-25T17:28:30Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping author for response",
