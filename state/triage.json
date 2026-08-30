@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T21:39:12+00:00",
+  "generated_at": "2026-08-30T00:07:05+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 614,
   "open_drafts_total": 47,
-  "actionable_total": 390,
+  "actionable_total": 389,
   "tracked_total": 76,
   "buckets": {
     "needs_rebase": [
@@ -999,7 +999,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-14T23:20:24Z",
-        "days_since_update": 14,
+        "days_since_update": 15,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4545,7 +4545,7 @@
         "author": "yashveersinghh",
         "bucket": "ci_failing",
         "updated_at": "2026-08-24T23:33:14Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -6715,7 +6715,7 @@
         "author": "gambtho",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T21:46:04Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7431,7 +7431,7 @@
         "author": "Abhishek86798",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-23T23:19:39Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7455,7 +7455,7 @@
         "author": "Abhishek86798",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-23T23:19:49Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -9237,30 +9237,6 @@
         }
       },
       {
-        "number": 7388,
-        "title": "frontend: k8s: Reject API discovery when no source answers",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7388",
-        "author": "Ralthos",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-08-29T19:51:38Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7441,
         "title": " frontend: Pod: Follow log view live updates smoothly",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7441",
@@ -9371,6 +9347,56 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6277,
+        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
+        "author": "Psykii22",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-29T22:59:27Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7308,
+        "title": "frontend: router: Add regression test for BackendTrafficPolicy route key",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7308",
+        "author": "Kakumanu-Harshitha",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-08-29T23:09:42Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -10490,30 +10516,6 @@
         }
       },
       {
-        "number": 7468,
-        "title": "frontend: ResourceTable: Ignore namespace filter when disabled",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7468",
-        "author": "dlanov",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-29T15:42:52Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7443,
         "title": "frontend: EditorDialog: Confirm before closing with unsaved changes",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7443",
@@ -11433,32 +11435,6 @@
           "frontend",
           "cncf-cla: yes",
           "size/XL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping author for response",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "Friendly ping \u2014 there's reviewer feedback above that's waiting for\na response. Please take a look when you have a moment.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 6277,
-        "title": "frontend: ReplicaSet: limit selector labels and truncate length",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6277",
-        "author": "Psykii22",
-        "bucket": "waiting_on_author",
-        "updated_at": "2026-08-29T18:59:34Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "cncf-cla: yes",
-          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
