@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T20:57:08+00:00",
+  "generated_at": "2026-09-01T23:13:52+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 603,
+  "open_prs_total": 605,
   "open_drafts_total": 47,
-  "actionable_total": 354,
+  "actionable_total": 355,
   "tracked_total": 79,
   "buckets": {
     "needs_rebase": [
@@ -4554,7 +4554,7 @@
         "author": "Ata-Ul-Hai",
         "bucket": "ci_failing",
         "updated_at": "2026-08-14T21:04:44Z",
-        "days_since_update": 17,
+        "days_since_update": 18,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -5442,6 +5442,31 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 7574,
+        "title": "fix: require authentication for GET /plugins endpoint",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7574",
+        "author": "UtkarshAnandd",
+        "bucket": "ci_failing",
+        "updated_at": "2026-09-01T21:57:43Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: no",
+          "do-not-merge/invalid-commit-message",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -6303,7 +6328,7 @@
         "author": "gambtho",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T21:46:04Z",
-        "days_since_update": 18,
+        "days_since_update": 19,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7173,7 +7198,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-24T21:00:37Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8717,7 +8742,7 @@
         "author": "Psykii22",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-30T21:00:26Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8741,7 +8766,7 @@
         "author": "Aamod007",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-30T21:37:50Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8765,7 +8790,7 @@
         "author": "nikunjkumar05",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-30T22:08:46Z",
-        "days_since_update": 1,
+        "days_since_update": 2,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -9652,11 +9677,11 @@
       },
       {
         "number": 7483,
-        "title": "backend: retry safe requests after exec credential refresh",
+        "title": "backend: Retry safe requests after exec credential refresh",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7483",
         "author": "nungster",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-09-01T20:57:07Z",
+        "updated_at": "2026-09-01T21:07:39Z",
         "days_since_update": 0,
         "labels": [
           "cncf-cla: yes",
@@ -9664,7 +9689,7 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "SUCCESS",
+        "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
           "recommended_label": "needs-review",
