@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-06T23:44:52+00:00",
+  "generated_at": "2026-09-07T04:21:43+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 627,
+  "open_prs_total": 628,
   "open_drafts_total": 48,
-  "actionable_total": 376,
+  "actionable_total": 378,
   "tracked_total": 75,
   "buckets": {
     "needs_rebase": [
@@ -3654,7 +3654,7 @@
         "author": "areycruzer",
         "bucket": "needs_rebase",
         "updated_at": "2026-09-01T00:20:06Z",
-        "days_since_update": 5,
+        "days_since_update": 6,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -5290,6 +5290,30 @@
           "is_tracked": false,
           "verifiable": false
         }
+      },
+      {
+        "number": 7610,
+        "title": "fix: Ingress rules show http:// instead of https:// when a TLS entry covers multiple hosts",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7610",
+        "author": "Kunal241207",
+        "bucket": "ci_failing",
+        "updated_at": "2026-09-07T03:35:40Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
       }
     ],
     "waiting_on_reviewer": [
@@ -6531,7 +6555,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T04:21:07Z",
-        "days_since_update": 19,
+        "days_since_update": 20,
         "labels": [
           "frontend",
           "testing",
@@ -8973,7 +8997,7 @@
         "author": "tysonyoshikawa06",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-02T00:51:51Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -8997,7 +9021,7 @@
         "author": "srajang1805",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-02T03:58:56Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9250,7 +9274,7 @@
         "author": "beep-boopp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-04T02:16:57Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -9274,7 +9298,7 @@
         "author": "willuhmjs",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-04T02:51:02Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -9602,7 +9626,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-06T02:24:30Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -9626,7 +9650,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-06T02:24:48Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -11015,7 +11039,7 @@
         "author": "vikash7485",
         "bucket": "waiting_on_author",
         "updated_at": "2026-09-02T04:17:18Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -11916,6 +11940,30 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-07T20:21:02Z",
+        "days_since_update": 30,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping or close",
+          "recommended_label": "lifecycle/stale",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has been inactive for 30+ days. If you're still working on\nit, please push an update or leave a comment. Otherwise it may be\nclosed in the near future.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7000,
+        "title": "backend: lint: Install golangci-lint from a prebuilt release binary",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7000",
+        "author": "gambtho",
+        "bucket": "stale",
+        "updated_at": "2026-08-08T02:02:33Z",
         "days_since_update": 30,
         "labels": [
           "cncf-cla: yes",
