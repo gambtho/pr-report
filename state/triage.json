@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-18T00:07:05+00:00",
+  "generated_at": "2026-09-18T04:35:29+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 643,
+  "open_prs_total": 645,
   "open_drafts_total": 48,
-  "actionable_total": 417,
-  "tracked_total": 76,
+  "actionable_total": 420,
+  "tracked_total": 77,
   "buckets": {
     "needs_rebase": [
       {
@@ -2099,30 +2099,6 @@
         }
       },
       {
-        "number": 7674,
-        "title": "frontend: Add Material UI locales for Czech and Swedish",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7674",
-        "author": "Rucha0901",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-09-17T12:57:55Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 5929,
         "title": "backend: Broadcast OIDC token across kubeconfig contexts with same IdP",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/5929",
@@ -4125,7 +4101,7 @@
         "author": "areycruzer",
         "bucket": "needs_rebase",
         "updated_at": "2026-09-01T00:20:06Z",
-        "days_since_update": 16,
+        "days_since_update": 17,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -4292,6 +4268,31 @@
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to rebase",
+          "recommended_label": "needs-rebase",
+          "label_already_applied": true,
+          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
+          "is_tracked": true,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7674,
+        "title": "frontend: Add Material UI locales for Czech and Swedish",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7674",
+        "author": "Rucha0901",
+        "bucket": "needs_rebase",
+        "updated_at": "2026-09-18T03:18:16Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M"
+        ],
+        "mergeable": "CONFLICTING",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to rebase",
@@ -5690,7 +5691,7 @@
         "author": "Shahazadi-Shaguftha-Syed",
         "bucket": "ci_failing",
         "updated_at": "2026-09-15T04:17:22Z",
-        "days_since_update": 2,
+        "days_since_update": 3,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -5904,6 +5905,30 @@
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7710,
+        "title": "frontend: Sidebar/SidebarItem: Fix color-contrast in SectionHeader st\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7710",
+        "author": "vividwhisp",
+        "bucket": "ci_failing",
+        "updated_at": "2026-09-18T02:55:11Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": null,
@@ -7076,7 +7101,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-18T04:21:07Z",
-        "days_since_update": 30,
+        "days_since_update": 31,
         "labels": [
           "frontend",
           "testing",
@@ -8779,7 +8804,7 @@
         "author": "ManthanNimodiya",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-02T04:25:35Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -8964,7 +8989,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-06T02:24:30Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8988,7 +9013,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-06T02:24:48Z",
-        "days_since_update": 11,
+        "days_since_update": 12,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -10250,38 +10275,6 @@
         }
       },
       {
-        "number": 6150,
-        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
-        "author": "rrk-dev",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-09-17T14:36:21Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "frontend",
-          "security",
-          "plugins",
-          "testing",
-          "oidc",
-          "headlamp-plugin",
-          "cncf-cla: yes",
-          "size/XXL",
-          "search"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7116,
         "title": "frontend: vpa: re-evaluate enablement on cluster switch",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7116",
@@ -10394,6 +10387,62 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6150,
+        "title": "feature: Auto-discover accessible namespaces from RBAC (OIDC / namespace-scoped users)  #6015",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6150",
+        "author": "rrk-dev",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-09-18T01:53:23Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "security",
+          "plugins",
+          "testing",
+          "oidc",
+          "headlamp-plugin",
+          "cncf-cla: yes",
+          "size/XXL",
+          "search"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7687,
+        "title": "frontend: plugin: Fix broken example links in registry docs",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7687",
+        "author": "9p-tech",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-09-18T02:09:13Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/S"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -11515,7 +11564,7 @@
         "author": "vikash7485",
         "bucket": "waiting_on_author",
         "updated_at": "2026-09-02T04:17:18Z",
-        "days_since_update": 15,
+        "days_since_update": 16,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12343,7 +12392,7 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-08T02:02:33Z",
-        "days_since_update": 40,
+        "days_since_update": 41,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -12933,6 +12982,58 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping or close",
+          "recommended_label": "lifecycle/stale",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has been inactive for 30+ days. If you're still working on\nit, please push an update or leave a comment. Otherwise it may be\nclosed in the near future.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6717,
+        "title": "frontend: CircularChart: Show loading state while metrics load",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6717",
+        "author": "xonas1101",
+        "bucket": "stale",
+        "updated_at": "2026-08-19T03:58:54Z",
+        "days_since_update": 30,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping or close",
+          "recommended_label": "lifecycle/stale",
+          "label_already_applied": false,
+          "recommended_comment": "This PR has been inactive for 30+ days. If you're still working on\nit, please push an update or leave a comment. Otherwise it may be\nclosed in the near future.\n",
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 6758,
+        "title": "frontend: Project: Add Storybook stories for ResourceCategoriesList",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6758",
+        "author": "xonas1101",
+        "bucket": "stale",
+        "updated_at": "2026-08-19T03:59:19Z",
+        "days_since_update": 30,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
         "check_state": "PENDING",
         "action": {
           "priority": "ping or close",
