@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T21:33:57+00:00",
+  "generated_at": "2026-10-07T01:24:06+00:00",
   "repo": "kubernetes-sigs/headlamp",
   "open_prs_total": 677,
   "open_drafts_total": 50,
-  "actionable_total": 518,
+  "actionable_total": 517,
   "tracked_total": 84,
   "buckets": {
     "needs_rebase": [
@@ -886,7 +886,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "needs_rebase",
         "updated_at": "2026-08-14T23:20:24Z",
-        "days_since_update": 52,
+        "days_since_update": 53,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3881,7 +3881,7 @@
         "author": "illume",
         "bucket": "needs_rebase",
         "updated_at": "2026-09-29T01:15:19Z",
-        "days_since_update": 7,
+        "days_since_update": 8,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -4144,7 +4144,7 @@
         "author": "mastermaxx03",
         "bucket": "needs_rebase",
         "updated_at": "2026-10-01T21:51:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5386,7 +5386,7 @@
         "author": "9p-tech",
         "bucket": "ci_failing",
         "updated_at": "2026-09-24T01:01:03Z",
-        "days_since_update": 12,
+        "days_since_update": 13,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -6459,30 +6459,6 @@
         }
       },
       {
-        "number": 7409,
-        "title": "frontend: Respect manual column visibility",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7409",
-        "author": "Thegm26",
-        "bucket": "ci_failing",
-        "updated_at": "2026-10-06T12:02:48Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7657,
         "title": "frontend: ProjectResourcesTab: Show zero-desired workloads as Healthy",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7657",
@@ -6957,31 +6933,6 @@
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7666,
-        "title": "frontend: CreateEndpointsForm: Adds create form for endpoints",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7666",
-        "author": "vyncent-t",
-        "bucket": "ci_failing",
-        "updated_at": "2026-10-06T20:54:44Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -7718,7 +7669,7 @@
         "author": "gambtho",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T21:46:04Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -10403,30 +10354,6 @@
         }
       },
       {
-        "number": 7548,
-        "title": "app: Add kubeconfig copy and download actions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7548",
-        "author": "willuhmjs",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-06T17:06:41Z",
-        "days_since_update": 0,
-        "labels": [
-          "cncf-cla: yes",
-          "size/XXL"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 6768,
         "title": "frontend: VersionButton: Add unit tests",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6768",
@@ -10514,6 +10441,55 @@
         "labels": [
           "cncf-cla: yes",
           "size/XL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7666,
+        "title": "frontend: CreateEndpointsForm: Adds create form for endpoints",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7666",
+        "author": "vyncent-t",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-10-06T21:40:56Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "MERGEABLE",
+        "review_decision": null,
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7409,
+        "title": "frontend: Respect manual column visibility",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7409",
+        "author": "Thegm26",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-10-06T21:47:31Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -14093,7 +14069,7 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-13T21:47:42Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -14117,7 +14093,7 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-13T22:06:13Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -14553,7 +14529,7 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-20T23:44:11Z",
-        "days_since_update": 46,
+        "days_since_update": 47,
         "labels": [
           "cncf-cla: yes",
           "size/M"
