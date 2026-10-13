@@ -1,26 +1,28 @@
 {
-  "generated_at": "2026-10-13T15:51:33+00:00",
+  "generated_at": "2026-10-13T21:09:13+00:00",
   "repo": "kubernetes-sigs/headlamp",
-  "open_prs_total": 672,
+  "open_prs_total": 666,
   "open_drafts_total": 50,
   "actionable_total": 594,
-  "tracked_total": 5,
+  "tracked_total": 0,
   "buckets": {
     "needs_rebase": [
       {
-        "number": 6813,
-        "title": "frontend: LogViewer: Add copy to clipboard action",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
-        "author": "Priyanshu-rgbb",
+        "number": 7468,
+        "title": "frontend: ResourceTable: Ignore namespace filter when disabled",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7468",
+        "author": "dlanov",
         "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T06:40:36Z",
-        "days_since_update": 1,
+        "updated_at": "2026-10-08T17:44:22Z",
+        "days_since_update": 5,
         "labels": [
-          "kind/feature",
+          "kind/bug",
+          "documentation",
           "frontend",
           "testing",
           "cncf-cla: yes",
-          "size/L"
+          "size/L",
+          "collab"
         ],
         "mergeable": "CONFLICTING",
         "review_decision": "CHANGES_REQUESTED",
@@ -35,40 +37,17 @@
         }
       },
       {
-        "number": 7423,
-        "title": "frontend: parse lowercase k in parseRam/parseDiskSpace",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7423",
-        "author": "Priyanshu-rgbb",
+        "number": 7656,
+        "title": "frontend: NodeList: Guard against undefined node.status",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7656",
+        "author": "amanmaurya92",
         "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T06:53:08Z",
-        "days_since_update": 1,
+        "updated_at": "2026-10-13T19:49:08Z",
+        "days_since_update": 0,
         "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 6618,
-        "title": "app: MCP: Add permissions center",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6618",
-        "author": "rootp1",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T14:46:16Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/feature",
-          "app",
+          "kind/bug",
+          "documentation",
+          "frontend",
           "testing",
           "cncf-cla: yes",
           "size/XL"
@@ -82,182 +61,6 @@
           "label_already_applied": false,
           "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
           "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7429,
-        "title": "frontend: Activity: Improve panel UX with close options and pin feature",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7429",
-        "author": "rootp1",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T18:51:56Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XL",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": false,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5655,
-        "title": "frontend: pluginLib: Extend snapshot test with more information about classes and functions",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5655",
-        "author": "sniok",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-07-25T12:08:17Z",
-        "days_since_update": 80,
-        "labels": [
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "approved",
-          "size/XXL"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7758,
-        "title": "frontend: NodeShell: Use the node's cluster for the debugger pod",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7758",
-        "author": "GuTS805",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T06:46:01Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "kind/feature",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 4643,
-        "title": "feat: Configure Prometheus endpoint via Helm chart (#4562)",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4643",
-        "author": "zyzzmohit",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T18:38:07Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/feature",
-          "backend",
-          "frontend",
-          "charts",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/M",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7710,
-        "title": "frontend: Sidebar/SidebarItem: Fix color-contrast in SectionHeader st\u2026",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7710",
-        "author": "vividwhisp",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-12T22:41:05Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "a11y",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/S",
-          "collab"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5680,
-        "title": "backend: headlamp: filter sensitive headers in external proxy",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
-        "author": "ayushmaan-16",
-        "bucket": "needs_rebase",
-        "updated_at": "2026-10-13T12:11:51Z",
-        "days_since_update": 0,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "security",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L",
-          "needs review"
-        ],
-        "mergeable": "CONFLICTING",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to rebase",
-          "recommended_label": "needs-rebase",
-          "label_already_applied": true,
-          "recommended_comment": "This PR has merge conflicts with the base branch. Please rebase\nagainst `main` and resolve the conflicts so reviewers can take\nanother look.\n",
-          "is_tracked": true,
           "verifiable": true
         }
       }
@@ -459,6 +262,34 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 5655,
+        "title": "frontend: pluginLib: Extend snapshot test with more information about classes and functions",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5655",
+        "author": "sniok",
+        "bucket": "ci_failing",
+        "updated_at": "2026-07-25T12:08:17Z",
+        "days_since_update": 80,
+        "labels": [
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "approved",
+          "size/XXL"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": null,
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -1900,7 +1731,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T16:01:06Z",
-        "days_since_update": 77,
+        "days_since_update": 78,
         "labels": [
           "dependencies",
           "security",
@@ -1928,7 +1759,7 @@
         "author": "tejhan",
         "bucket": "ci_failing",
         "updated_at": "2026-07-27T18:08:29Z",
-        "days_since_update": 77,
+        "days_since_update": 78,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -1956,7 +1787,7 @@
         "author": "iashutoshyadav",
         "bucket": "ci_failing",
         "updated_at": "2026-08-03T20:41:57Z",
-        "days_since_update": 70,
+        "days_since_update": 71,
         "labels": [
           "kind/bug",
           "frontend",
@@ -2128,7 +1959,7 @@
         "author": "Pratikdeb07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-06T18:00:44Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -2152,7 +1983,7 @@
         "author": "Pratikdeb07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-06T18:14:19Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -2283,7 +2114,7 @@
         "author": "RafsanNeloy",
         "bucket": "ci_failing",
         "updated_at": "2026-08-12T17:43:43Z",
-        "days_since_update": 61,
+        "days_since_update": 62,
         "labels": [
           "kind/feature",
           "frontend",
@@ -2314,7 +2145,7 @@
         "author": "khanskr",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:31:44Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: no",
           "size/S"
@@ -2338,7 +2169,7 @@
         "author": "mayurgalhate",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:33:54Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2362,7 +2193,7 @@
         "author": "kehach07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:38:15Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -2386,7 +2217,7 @@
         "author": "codewithsarang",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T16:43:55Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2411,7 +2242,7 @@
         "author": "PrakharJain345",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T17:34:48Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "frontend",
           "testing",
@@ -2437,7 +2268,7 @@
         "author": "skools-here",
         "bucket": "ci_failing",
         "updated_at": "2026-08-13T17:46:15Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "kind/feature",
           "frontend",
@@ -2679,7 +2510,7 @@
         "author": "sarvesh-official",
         "bucket": "ci_failing",
         "updated_at": "2026-08-19T17:57:53Z",
-        "days_since_update": 54,
+        "days_since_update": 55,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -2806,39 +2637,11 @@
         "author": "kehach07",
         "bucket": "ci_failing",
         "updated_at": "2026-08-27T16:47:35Z",
-        "days_since_update": 46,
+        "days_since_update": 47,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
           "size/XXL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 5091,
-        "title": "frontend: fix editor showing old yaml after save",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5091",
-        "author": "nidhi-9900",
-        "bucket": "ci_failing",
-        "updated_at": "2026-08-27T17:26:24Z",
-        "days_since_update": 46,
-        "labels": [
-          "kind/bug",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/M",
-          "collab"
         ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
@@ -2932,7 +2735,7 @@
         "author": "mishradwaterlaw",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T15:56:35Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "needs-rebase",
@@ -2957,7 +2760,7 @@
         "author": "sheraji7",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:02:29Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: no",
           "size/M"
@@ -2981,7 +2784,7 @@
         "author": "vanshika2720",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:06:21Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -3005,7 +2808,7 @@
         "author": "pratik340",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:09:07Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3029,7 +2832,7 @@
         "author": "Rucha0901",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:11:41Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3053,7 +2856,7 @@
         "author": "mishradwaterlaw",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:16:09Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "app",
@@ -3081,7 +2884,7 @@
         "author": "unichronic",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:17:50Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -3113,7 +2916,7 @@
         "author": "mohankumar-dev-2002",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:21:50Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -3137,7 +2940,7 @@
         "author": "Alok-work23",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T16:25:37Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3161,7 +2964,7 @@
         "author": "Harsh63870",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:03:54Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/feature",
           "backend",
@@ -3190,7 +2993,7 @@
         "author": "Shruti2110-coder",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:36:16Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "app",
@@ -3217,7 +3020,7 @@
         "author": "Varadraj75",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:37:21Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3244,7 +3047,7 @@
         "author": "harrshita123",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:39:14Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -3271,7 +3074,7 @@
         "author": "jainarjav80-sys",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:40:29Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3298,7 +3101,7 @@
         "author": "skools-here",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T17:42:50Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3327,7 +3130,7 @@
         "author": "Kush172005",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:51:24Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3354,7 +3157,7 @@
         "author": "AYUSH-P-SINGH",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:51:49Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -3381,7 +3184,7 @@
         "author": "AYUSH-P-SINGH",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:51:56Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -3409,7 +3212,7 @@
         "author": "AYUSH-P-SINGH",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:52:25Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -3436,7 +3239,7 @@
         "author": "mudit06mah",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:52:47Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/feature",
           "backend",
@@ -3466,7 +3269,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:53:21Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3490,7 +3293,7 @@
         "author": "utkarshalpha",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:53:50Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -3514,7 +3317,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:54:02Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3538,7 +3341,7 @@
         "author": "guillaumebernard84",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:54:18Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "documentation",
           "kind/feature",
@@ -3566,7 +3369,7 @@
         "author": "mohankumar-dev-2002",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T18:56:32Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -3590,7 +3393,7 @@
         "author": "vanshika2720",
         "bucket": "ci_failing",
         "updated_at": "2026-08-29T19:42:31Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "frontend",
@@ -3617,7 +3420,7 @@
         "author": "aabhinavvvvvvv",
         "bucket": "ci_failing",
         "updated_at": "2026-09-03T18:02:41Z",
-        "days_since_update": 39,
+        "days_since_update": 40,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3646,7 +3449,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-09-08T20:02:19Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -3674,7 +3477,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-09-08T20:02:20Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -3961,7 +3764,7 @@
         "author": "Pritz395",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:19:52Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -3992,7 +3795,7 @@
         "author": "areycruzer",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:19:57Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4021,7 +3824,7 @@
         "author": "Pritz395",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:20:01Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4048,7 +3851,7 @@
         "author": "harshitnub077",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:33:16Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4075,7 +3878,7 @@
         "author": "Braundo",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:33:30Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4102,7 +3905,7 @@
         "author": "edvorg",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:33:39Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4129,7 +3932,7 @@
         "author": "h55n",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:34:03Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4157,7 +3960,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:34:23Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -4186,7 +3989,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:34:56Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4214,7 +4017,7 @@
         "author": "CapThunder19",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:35:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -4222,7 +4025,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -4241,7 +4044,7 @@
         "author": "AnisJshK",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:35:39Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4269,7 +4072,7 @@
         "author": "UtkarshAnandd",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:36:23Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "backend",
           "frontend",
@@ -4301,7 +4104,7 @@
         "author": "aniket866",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:36:45Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -4328,7 +4131,7 @@
         "author": "aniket866",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:36:49Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4355,7 +4158,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:36:53Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -4385,7 +4188,7 @@
         "author": "Ralthos",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:37:03Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4412,7 +4215,7 @@
         "author": "Ralthos",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:37:07Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4439,7 +4242,7 @@
         "author": "toVersus",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:37:11Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -4469,7 +4272,7 @@
         "author": "yashgkar",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:37:31Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "a11y",
@@ -4496,7 +4299,7 @@
         "author": "yashgkar",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:37:42Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "a11y",
@@ -4524,7 +4327,7 @@
         "author": "Saloni3494",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:38:02Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "a11y",
@@ -4551,7 +4354,7 @@
         "author": "AbhishekMauryaGEEK",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:38:29Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -4581,7 +4384,7 @@
         "author": "skoeva",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:39:11Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -4612,7 +4415,7 @@
         "author": "yashveersinghh",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:39:48Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4639,7 +4442,7 @@
         "author": "kehach07",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:40:40Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "plugins",
@@ -4669,7 +4472,7 @@
         "author": "nikunjkumar05",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:40:44Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "backend",
           "windows",
@@ -4696,7 +4499,7 @@
         "author": "RounakKumarAgarwal",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:40:50Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -4728,7 +4531,7 @@
         "author": "Dyfintie",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:41:27Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "testing",
@@ -4757,7 +4560,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:41:42Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -4786,7 +4589,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:41:56Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "testing",
@@ -4813,7 +4616,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:01Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4842,7 +4645,7 @@
         "author": "Rogue-says",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:06Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4871,7 +4674,7 @@
         "author": "AdarshG2028",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:11Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4902,7 +4705,7 @@
         "author": "beep-boopp",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:15Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "backend",
@@ -4933,7 +4736,7 @@
         "author": "Ravichandra531",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -4960,7 +4763,7 @@
         "author": "Harsh63870",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:28Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -4989,7 +4792,7 @@
         "author": "Mavrickk3",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:42:55Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -5018,7 +4821,7 @@
         "author": "Saloni3494",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:00Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5046,7 +4849,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:04Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "frontend",
@@ -5073,7 +4876,7 @@
         "author": "Saloni3494",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:08Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5100,7 +4903,7 @@
         "author": "vishnukothakapu",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:11Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5128,7 +4931,7 @@
         "author": "TheRazorbill",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:14Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -5153,7 +4956,7 @@
         "author": "anubhavsingh2106",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "backend",
@@ -5176,42 +4979,13 @@
         }
       },
       {
-        "number": 6529,
-        "title": "app: redact MCP debug logging",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6529",
-        "author": "rootp1",
-        "bucket": "ci_failing",
-        "updated_at": "2026-10-08T17:43:51Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/bug",
-          "security",
-          "app",
-          "testing",
-          "cncf-cla: yes",
-          "needs-rebase",
-          "size/L"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
         "number": 7439,
         "title": "frontend: Add targeted pods section to PDB details",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7439",
         "author": "RounakKumarAgarwal",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:43:55Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5239,7 +5013,7 @@
         "author": "WasThatRudy",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:44:17Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -5269,7 +5043,7 @@
         "author": "simonepri",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:44:54Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5296,7 +5070,7 @@
         "author": "jayaprajapatii",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:44:58Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5323,7 +5097,7 @@
         "author": "areycruzer",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:45:06Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "windows",
@@ -5352,7 +5126,7 @@
         "author": "abhinavgautam01",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:45:49Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5379,7 +5153,7 @@
         "author": "dependabot",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:47:20Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "dependencies",
           "security",
@@ -5408,7 +5182,7 @@
         "author": "sniok",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:47:41Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -5439,7 +5213,7 @@
         "author": "gambtho",
         "bucket": "ci_failing",
         "updated_at": "2026-10-08T17:47:48Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -5452,35 +5226,6 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": null,
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7483,
-        "title": "backend: Retry safe requests after exec credential refresh",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7483",
-        "author": "nungster",
-        "bucket": "ci_failing",
-        "updated_at": "2026-10-08T18:07:10Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "blocker",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -5965,7 +5710,7 @@
           "cncf-cla: no",
           "size/S"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -6032,6 +5777,35 @@
         }
       },
       {
+        "number": 7758,
+        "title": "frontend: NodeShell: Use the node's cluster for the debugger pod",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7758",
+        "author": "GuTS805",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-12T06:46:01Z",
+        "days_since_update": 1,
+        "labels": [
+          "kind/bug",
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": null,
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 6458,
         "title": "backend: k8cache: watch discovered list-watch resources",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6458",
@@ -6045,32 +5819,8 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "FAILURE",
-        "action": {
-          "priority": "ask author to fix CI",
-          "recommended_label": null,
-          "label_already_applied": false,
-          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
-          "is_tracked": false,
-          "verifiable": false
-        }
-      },
-      {
-        "number": 7910,
-        "title": "frontend: SidebarItem: Toggle submenus by clicking group header",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7910",
-        "author": "ubermensch177",
-        "bucket": "ci_failing",
-        "updated_at": "2026-10-12T07:46:44Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/L"
-        ],
         "mergeable": "UNKNOWN",
-        "review_decision": null,
+        "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
           "priority": "ask author to fix CI",
@@ -6098,7 +5848,7 @@
           "size/S",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -6125,7 +5875,34 @@
           "size/XS",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 6618,
+        "title": "app: MCP: Add permissions center",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6618",
+        "author": "rootp1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-12T14:46:16Z",
+        "days_since_update": 1,
+        "labels": [
+          "kind/feature",
+          "app",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL"
+        ],
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -6144,7 +5921,7 @@
         "author": "anurag-p6",
         "bucket": "ci_failing",
         "updated_at": "2026-10-12T16:48:37Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -6168,7 +5945,7 @@
         "author": "AyoubManai01",
         "bucket": "ci_failing",
         "updated_at": "2026-10-12T18:36:59Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "documentation",
           "plugins",
@@ -6176,7 +5953,7 @@
           "size/S",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "FAILURE",
         "action": {
@@ -6195,13 +5972,72 @@
         "author": "joaquimrocha",
         "bucket": "ci_failing",
         "updated_at": "2026-10-12T18:38:07Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
           "cncf-cla: yes",
           "approved",
           "size/L",
+          "collab"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 4643,
+        "title": "feat: Configure Prometheus endpoint via Helm chart (#4562)",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/4643",
+        "author": "zyzzmohit",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-12T18:38:07Z",
+        "days_since_update": 1,
+        "labels": [
+          "kind/feature",
+          "backend",
+          "frontend",
+          "charts",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/M",
+          "collab"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
+        "number": 7429,
+        "title": "frontend: Activity: Improve panel UX with close options and pin feature",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7429",
+        "author": "rootp1",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-12T18:51:56Z",
+        "days_since_update": 1,
+        "labels": [
+          "kind/bug",
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/XL",
           "collab"
         ],
         "mergeable": "UNKNOWN",
@@ -6247,6 +6083,36 @@
         }
       },
       {
+        "number": 7710,
+        "title": "frontend: Sidebar/SidebarItem: Fix color-contrast in SectionHeader st\u2026",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7710",
+        "author": "vividwhisp",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-12T22:41:05Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "frontend",
+          "a11y",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/S",
+          "collab"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 7899,
         "title": "frontend: DetailsDrawer: Add resizable width persisted in localStorage",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7899",
@@ -6271,12 +6137,42 @@
         }
       },
       {
+        "number": 5680,
+        "title": "backend: headlamp: filter sensitive headers in external proxy",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5680",
+        "author": "ayushmaan-16",
+        "bucket": "ci_failing",
+        "updated_at": "2026-10-13T12:11:51Z",
+        "days_since_update": 0,
+        "labels": [
+          "kind/bug",
+          "backend",
+          "security",
+          "testing",
+          "cncf-cla: yes",
+          "needs-rebase",
+          "size/L",
+          "needs review"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "FAILURE",
+        "action": {
+          "priority": "ask author to fix CI",
+          "recommended_label": null,
+          "label_already_applied": false,
+          "recommended_comment": "CI checks are failing on the latest commit. Please review the\nfailed jobs and push a fix.\n",
+          "is_tracked": false,
+          "verifiable": false
+        }
+      },
+      {
         "number": 7505,
         "title": "0071: Add pre-open hooks and Azure proxy lifecycle ready for SSH",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7505",
         "author": "illume",
         "bucket": "ci_failing",
-        "updated_at": "2026-10-13T12:53:55Z",
+        "updated_at": "2026-10-13T16:01:33Z",
         "days_since_update": 0,
         "labels": [
           "documentation",
@@ -6295,7 +6191,7 @@
           "approved",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "APPROVED",
         "check_state": "FAILURE",
         "action": {
@@ -6308,23 +6204,16 @@
         }
       },
       {
-        "number": 5972,
-        "title": "backend: oidc: Add RP-initiated logout",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5972",
-        "author": "big-appled",
+        "number": 7910,
+        "title": "frontend: SidebarItem: Toggle submenus by clicking group header",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7910",
+        "author": "ubermensch177",
         "bucket": "ci_failing",
-        "updated_at": "2026-10-13T14:07:37Z",
+        "updated_at": "2026-10-13T19:10:22Z",
         "days_since_update": 0,
         "labels": [
-          "kind/bug",
-          "kind/feature",
-          "backend",
-          "frontend",
-          "testing",
-          "oidc",
           "cncf-cla: yes",
-          "size/XXL",
-          "collab"
+          "size/L"
         ],
         "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
@@ -6672,7 +6561,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-07-28T17:04:14Z",
-        "days_since_update": 76,
+        "days_since_update": 77,
         "labels": [
           "kind/bug",
           "frontend",
@@ -6782,7 +6671,7 @@
         "author": "skools-here",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T18:17:33Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/bug",
           "documentation",
@@ -6811,7 +6700,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-05T19:08:46Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/bug",
           "backend",
@@ -6839,7 +6728,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T18:14:31Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "kind/feature",
           "backend",
@@ -6866,7 +6755,7 @@
         "author": "beep-boopp",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-06T18:34:26Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "frontend",
           "testing",
@@ -6942,7 +6831,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-09T19:10:54Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "kind/feature",
           "frontend",
@@ -7182,7 +7071,7 @@
         "author": "Khizarshah01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T16:36:42Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -7206,7 +7095,7 @@
         "author": "WasThatRudy",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-13T19:49:03Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -7643,7 +7532,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-20T16:29:02Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "frontend",
           "testing",
@@ -7853,7 +7742,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-24T21:00:37Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -7901,7 +7790,7 @@
         "author": "Psykii22",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-25T17:50:15Z",
-        "days_since_update": 48,
+        "days_since_update": 49,
         "labels": [
           "kind/bug",
           "backend",
@@ -8136,7 +8025,7 @@
         "author": "dimaulupov",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T16:07:20Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8160,7 +8049,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T16:23:59Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -8184,7 +8073,7 @@
         "author": "unlikelyzero",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T16:24:45Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8208,7 +8097,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T18:47:29Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8232,7 +8121,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T18:51:06Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "backend",
@@ -8259,7 +8148,7 @@
         "author": "KeerthiKumarR",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T19:03:32Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8283,7 +8172,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-29T19:32:32Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8358,7 +8247,7 @@
         "author": "ssz2605",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-08-30T19:03:04Z",
-        "days_since_update": 43,
+        "days_since_update": 44,
         "labels": [
           "frontend",
           "resourceMap",
@@ -8384,7 +8273,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-01T20:50:55Z",
-        "days_since_update": 41,
+        "days_since_update": 42,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -8532,7 +8421,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-09-15T16:20:22Z",
-        "days_since_update": 27,
+        "days_since_update": 28,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -8716,7 +8605,7 @@
         "author": "abhishekKokadwar",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:18:40Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8724,7 +8613,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -8743,7 +8632,7 @@
         "author": "abhishekKokadwar",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:18:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8752,7 +8641,7 @@
           "size/L",
           "collab"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -8771,7 +8660,7 @@
         "author": "0PrashantYadav0",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:18:52Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8798,7 +8687,7 @@
         "author": "Anand-240",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:19:02Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -8820,41 +8709,13 @@
         }
       },
       {
-        "number": 7656,
-        "title": "frontend: NodeList: Guard against undefined node.status",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7656",
-        "author": "amanmaurya92",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-08T17:30:21Z",
-        "days_since_update": 4,
-        "labels": [
-          "kind/bug",
-          "documentation",
-          "frontend",
-          "testing",
-          "cncf-cla: yes",
-          "size/XL"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
         "number": 7846,
         "title": "frontend: gateway: Show route filter configuration, not just the type",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7846",
         "author": "eottabom",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:32:32Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -8883,7 +8744,7 @@
         "author": "Kunal241207",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:32:43Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8910,7 +8771,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:32:57Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -8937,7 +8798,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:34:33Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8964,7 +8825,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:34:52Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -8991,7 +8852,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:36:29Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -9019,7 +8880,7 @@
         "author": "verdhanyash",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:37:23Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "testing",
@@ -9047,7 +8908,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:37:51Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -9080,7 +8941,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:38:05Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9108,7 +8969,7 @@
         "author": "mahesh-09-12",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:38:24Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9135,7 +8996,7 @@
         "author": "OmAmbole009",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:38:37Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9163,7 +9024,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:39:45Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -9190,7 +9051,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:39:58Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -9217,7 +9078,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:40:01Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9244,7 +9105,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:40:12Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9271,7 +9132,7 @@
         "author": "Athang69",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:40:36Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -9299,7 +9160,7 @@
         "author": "yashveersinghh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:40:59Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9326,7 +9187,7 @@
         "author": "kaulastudies",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:43:31Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9356,7 +9217,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:44:12Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -9365,7 +9226,7 @@
           "cncf-cla: yes",
           "size/XXL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -9384,7 +9245,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:44:37Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9412,7 +9273,7 @@
         "author": "areycruzer",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:45:02Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "testing",
@@ -9440,7 +9301,7 @@
         "author": "areycruzer",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:45:10Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9468,7 +9329,7 @@
         "author": "areycruzer",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:45:14Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9495,7 +9356,7 @@
         "author": "treydock",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:45:52Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "testing",
@@ -9522,7 +9383,7 @@
         "author": "yashveersinghh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:45:57Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9549,7 +9410,7 @@
         "author": "yashveersinghh",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:46:00Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "testing",
@@ -9575,7 +9436,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T17:47:24Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9602,7 +9463,7 @@
         "author": "Athang69",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-08T19:17:25Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "oidc",
@@ -9639,7 +9500,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -9668,7 +9529,7 @@
           "size/L",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -9687,7 +9548,7 @@
         "author": "Thegm26",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-09T16:26:12Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -9714,7 +9575,7 @@
         "author": "abdulhusainahk",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-09T16:26:27Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "documentation",
@@ -9753,34 +9614,6 @@
         ],
         "mergeable": "UNKNOWN",
         "review_decision": null,
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 5731,
-        "title": "backend: kubeconfig: Quiet the watcher for missing kubeconfigs",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/5731",
-        "author": "govindup63",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-10T20:18:28Z",
-        "days_since_update": 2,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "UNKNOWN",
-        "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
           "priority": "ping reviewer for re-review",
@@ -10171,6 +10004,33 @@
         }
       },
       {
+        "number": 6813,
+        "title": "frontend: LogViewer: Add copy to clipboard action",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6813",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-10-12T06:40:36Z",
+        "days_since_update": 1,
+        "labels": [
+          "kind/feature",
+          "frontend",
+          "testing",
+          "cncf-cla: yes",
+          "size/L"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 6543,
         "title": "frontend: useSettings: Fix state sync when store updates",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/6543",
@@ -10185,7 +10045,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10297,6 +10157,30 @@
         }
       },
       {
+        "number": 7423,
+        "title": "frontend: parse lowercase k in parseRam/parseDiskSpace",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7423",
+        "author": "Priyanshu-rgbb",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-10-12T06:53:08Z",
+        "days_since_update": 1,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
         "number": 7509,
         "title": "frontend: Chart: Make PercentageCircle loading message translatable",
         "url": "https://github.com/kubernetes-sigs/headlamp/pull/7509",
@@ -10364,7 +10248,7 @@
           "search",
           "wg/workload-aware-scheduling"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10483,58 +10367,6 @@
           "size/L",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7797,
-        "title": "backend: auth: Fix /me endpoint 401 when using a base URL",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7797",
-        "author": "Sarthak-Shreshtha01",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-12T12:41:08Z",
-        "days_since_update": 1,
-        "labels": [
-          "kind/bug",
-          "backend",
-          "testing",
-          "cncf-cla: yes",
-          "size/L",
-          "collab"
-        ],
-        "mergeable": "MERGEABLE",
-        "review_decision": "CHANGES_REQUESTED",
-        "check_state": "PENDING",
-        "action": {
-          "priority": "ping reviewer for re-review",
-          "recommended_label": "needs-review",
-          "label_already_applied": false,
-          "recommended_comment": null,
-          "is_tracked": false,
-          "verifiable": true
-        }
-      },
-      {
-        "number": 7908,
-        "title": "frontend: storybook: Normalize xterm ids in injected style tags",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7908",
-        "author": "Priyanshu-rgbb",
-        "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-12T13:04:22Z",
-        "days_since_update": 1,
-        "labels": [
-          "cncf-cla: yes",
-          "size/M"
-        ],
         "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
@@ -10611,7 +10443,7 @@
         "author": "saltbo",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T17:02:21Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/feature",
           "backend",
@@ -10639,7 +10471,7 @@
         "author": "rickbrouwer",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T17:18:58Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10647,7 +10479,7 @@
           "cncf-cla: yes",
           "size/M"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10666,7 +10498,7 @@
         "author": "haseeb-muneer",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T17:36:07Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "frontend",
@@ -10694,7 +10526,7 @@
         "author": "aniket866",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T19:09:46Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "backend",
@@ -10723,7 +10555,7 @@
         "author": "sapnilbiswas",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T19:56:46Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -10734,7 +10566,7 @@
           "cncf-cla: yes",
           "size/XL"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10753,7 +10585,7 @@
         "author": "aniket866",
         "bucket": "waiting_on_reviewer",
         "updated_at": "2026-10-12T20:04:03Z",
-        "days_since_update": 0,
+        "days_since_update": 1,
         "labels": [
           "kind/bug",
           "backend",
@@ -10761,7 +10593,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10843,7 +10675,7 @@
           "size/XXL",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10870,7 +10702,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10899,7 +10731,7 @@
           "size/XL",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -10912,16 +10744,40 @@
         }
       },
       {
-        "number": 6785,
-        "title": "frontend: Table: Keep search focus across data refresh",
-        "url": "https://github.com/kubernetes-sigs/headlamp/pull/6785",
-        "author": "Harsh63870",
+        "number": 7908,
+        "title": "frontend: storybook: Normalize xterm ids in injected style tags",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7908",
+        "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_reviewer",
-        "updated_at": "2026-10-13T15:20:37Z",
+        "updated_at": "2026-10-13T16:21:00Z",
+        "days_since_update": 0,
+        "labels": [
+          "cncf-cla: yes",
+          "size/M"
+        ],
+        "mergeable": "UNKNOWN",
+        "review_decision": "CHANGES_REQUESTED",
+        "check_state": "PENDING",
+        "action": {
+          "priority": "ping reviewer for re-review",
+          "recommended_label": "needs-review",
+          "label_already_applied": false,
+          "recommended_comment": null,
+          "is_tracked": false,
+          "verifiable": true
+        }
+      },
+      {
+        "number": 7797,
+        "title": "backend: auth: Fix /me endpoint 401 when using a base URL",
+        "url": "https://github.com/kubernetes-sigs/headlamp/pull/7797",
+        "author": "Sarthak-Shreshtha01",
+        "bucket": "waiting_on_reviewer",
+        "updated_at": "2026-10-13T18:30:11Z",
         "days_since_update": 0,
         "labels": [
           "kind/bug",
-          "frontend",
+          "backend",
           "testing",
           "cncf-cla: yes",
           "size/L",
@@ -11188,7 +11044,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:05Z",
-        "days_since_update": 77,
+        "days_since_update": 78,
         "labels": [
           "dependencies",
           "security",
@@ -11215,7 +11071,7 @@
         "author": "dependabot",
         "bucket": "waiting_on_author",
         "updated_at": "2026-07-27T16:01:07Z",
-        "days_since_update": 77,
+        "days_since_update": 78,
         "labels": [
           "dependencies",
           "security",
@@ -11325,7 +11181,7 @@
         "author": "JatsuAkaYashvant",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-05T18:29:14Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/bug",
           "frontend",
@@ -11433,7 +11289,7 @@
         "author": "mayurgalhate",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:06Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -11457,7 +11313,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:34:16Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -11481,7 +11337,7 @@
         "author": "kehach07",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-13T16:38:00Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/S"
@@ -11531,7 +11387,7 @@
         "author": "anushkagupta200615-jpg",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-21T16:18:06Z",
-        "days_since_update": 52,
+        "days_since_update": 53,
         "labels": [
           "kind/bug",
           "frontend",
@@ -11636,7 +11492,7 @@
         "author": "Rohith-Saran",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-27T17:28:55Z",
-        "days_since_update": 46,
+        "days_since_update": 47,
         "labels": [
           "kind/feature",
           "frontend",
@@ -11759,7 +11615,7 @@
         "author": "SiddharthSingh-iitbhu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T15:51:43Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -11783,7 +11639,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T15:57:49Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -11807,7 +11663,7 @@
         "author": "Slambot01",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T16:00:43Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -11831,7 +11687,7 @@
         "author": "Pritz395",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T16:09:14Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XS"
@@ -11855,7 +11711,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T16:11:11Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/XXL"
@@ -11879,7 +11735,7 @@
         "author": "sarvesh-official",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T16:26:12Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -11903,7 +11759,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T18:51:41Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "backend",
           "testing",
@@ -11929,7 +11785,7 @@
         "author": "Sreejesh06",
         "bucket": "waiting_on_author",
         "updated_at": "2026-08-29T19:00:55Z",
-        "days_since_update": 44,
+        "days_since_update": 45,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -12145,7 +12001,7 @@
         "author": "Sreejesh06",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:30:17Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12172,7 +12028,7 @@
         "author": "YousufFFFF",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:32:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12199,7 +12055,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:05Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "security",
@@ -12228,7 +12084,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:13Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -12260,7 +12116,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:22Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "testing",
@@ -12287,7 +12143,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:26Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -12317,7 +12173,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:35Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "documentation",
@@ -12346,7 +12202,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:47Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12373,7 +12229,7 @@
         "author": "Kakumanu-Harshitha",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:33:50Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -12400,7 +12256,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:34:11Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -12427,7 +12283,7 @@
         "author": "harshitnub077",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:34:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "backend",
           "security",
@@ -12455,7 +12311,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:34:41Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12482,7 +12338,7 @@
         "author": "GuTS805",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:34:44Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12509,7 +12365,7 @@
         "author": "Manpreets59",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:35:02Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12537,7 +12393,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:35:16Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "charts",
@@ -12564,7 +12420,7 @@
         "author": "Pratham19106",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:35:47Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12592,7 +12448,7 @@
         "author": "xonas1101",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:35:52Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12620,7 +12476,7 @@
         "author": "Anjali-Chauhan1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:37:16Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12648,7 +12504,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:40:19Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "plugins",
@@ -12676,7 +12532,7 @@
         "author": "Priyanshu-rgbb",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:40:23Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "frontend",
           "testing",
@@ -12703,7 +12559,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:40:26Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "backend",
@@ -12732,7 +12588,7 @@
         "author": "vishnukothakapu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:40:32Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12761,7 +12617,7 @@
         "author": "garvit-bhattt",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:41:07Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12789,7 +12645,7 @@
         "author": "Mavrickk3",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:41:17Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12818,7 +12674,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:41:37Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "backend",
           "security",
@@ -12846,7 +12702,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:41:47Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "backend",
           "testing",
@@ -12874,7 +12730,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:41:51Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "kind/feature",
@@ -12904,7 +12760,7 @@
         "author": "Suyog241005",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:42:35Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "documentation",
           "kind/feature",
@@ -12934,7 +12790,7 @@
         "author": "AbhishekMauryaGEEK",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:42:44Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -12963,7 +12819,7 @@
         "author": "RajPrakash681",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:43:18Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -12994,7 +12850,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:43:21Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -13021,7 +12877,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:44:41Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "dx",
           "charts",
@@ -13047,7 +12903,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:44:44Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "backend",
@@ -13076,7 +12932,7 @@
         "author": "Prashant-900",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:44:48Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/feature",
           "frontend",
@@ -13104,7 +12960,7 @@
         "author": "rootp1",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:45:24Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -13131,7 +12987,7 @@
         "author": "Bhargava-Ram-Thunga",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:45:39Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -13159,7 +13015,7 @@
         "author": "Rucha0901",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-08T17:46:48Z",
-        "days_since_update": 4,
+        "days_since_update": 5,
         "labels": [
           "kind/bug",
           "frontend",
@@ -13253,7 +13109,7 @@
           "size/L",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -13272,7 +13128,7 @@
         "author": "Vad1mo",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-09T16:22:33Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -13296,7 +13152,7 @@
         "author": "jhalak101205-cpu",
         "bucket": "waiting_on_author",
         "updated_at": "2026-10-09T16:26:49Z",
-        "days_since_update": 3,
+        "days_since_update": 4,
         "labels": [
           "kind/bug",
           "frontend",
@@ -13493,7 +13349,7 @@
           "size/S",
           "collab"
         ],
-        "mergeable": "MERGEABLE",
+        "mergeable": "UNKNOWN",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -13940,7 +13796,7 @@
         "author": "krsatyamthakur-droid",
         "bucket": "stale",
         "updated_at": "2026-08-05T18:20:07Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -13964,7 +13820,7 @@
         "author": "vanshika2720",
         "bucket": "stale",
         "updated_at": "2026-08-05T18:33:35Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/bug",
           "frontend",
@@ -13992,7 +13848,7 @@
         "author": "Slambot01",
         "bucket": "stale",
         "updated_at": "2026-08-05T18:33:52Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/feature",
           "backend",
@@ -14019,7 +13875,7 @@
         "author": "vanshika2720",
         "bucket": "stale",
         "updated_at": "2026-08-05T18:37:35Z",
-        "days_since_update": 68,
+        "days_since_update": 69,
         "labels": [
           "kind/feature",
           "frontend",
@@ -14142,7 +13998,7 @@
         "author": "codewithsarang",
         "bucket": "stale",
         "updated_at": "2026-08-06T19:28:54Z",
-        "days_since_update": 67,
+        "days_since_update": 68,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -14166,7 +14022,7 @@
         "author": "gambtho",
         "bucket": "stale",
         "updated_at": "2026-08-07T20:21:02Z",
-        "days_since_update": 66,
+        "days_since_update": 67,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -14239,7 +14095,7 @@
         "author": "Suyog241005",
         "bucket": "stale",
         "updated_at": "2026-08-09T16:06:24Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "frontend",
           "a11y",
@@ -14265,7 +14121,7 @@
         "author": "bhuvan-somisetty",
         "bucket": "stale",
         "updated_at": "2026-08-09T17:01:35Z",
-        "days_since_update": 64,
+        "days_since_update": 65,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -14367,7 +14223,7 @@
         "author": "Slambot01",
         "bucket": "stale",
         "updated_at": "2026-08-12T15:55:45Z",
-        "days_since_update": 61,
+        "days_since_update": 62,
         "labels": [
           "kind/feature",
           "backend",
@@ -14442,7 +14298,7 @@
         "author": "beep-boopp",
         "bucket": "stale",
         "updated_at": "2026-08-13T16:25:34Z",
-        "days_since_update": 60,
+        "days_since_update": 61,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -14782,7 +14638,7 @@
         "author": "Pragati5-DEBUG",
         "bucket": "stale",
         "updated_at": "2026-08-18T17:25:13Z",
-        "days_since_update": 55,
+        "days_since_update": 56,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -14832,7 +14688,7 @@
         "author": "xonas1101",
         "bucket": "stale",
         "updated_at": "2026-08-20T16:26:16Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -14856,7 +14712,7 @@
         "author": "xonas1101",
         "bucket": "stale",
         "updated_at": "2026-08-20T16:26:37Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -14880,7 +14736,7 @@
         "author": "xonas1101",
         "bucket": "stale",
         "updated_at": "2026-08-20T16:28:39Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -14904,7 +14760,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-08-20T19:02:08Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "dependencies",
           "security",
@@ -14932,7 +14788,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-08-20T19:02:09Z",
-        "days_since_update": 53,
+        "days_since_update": 54,
         "labels": [
           "dependencies",
           "security",
@@ -15212,7 +15068,7 @@
         "author": "Adi-204",
         "bucket": "stale",
         "updated_at": "2026-08-24T17:22:11Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/L"
@@ -15236,7 +15092,7 @@
         "author": "Adi-204",
         "bucket": "stale",
         "updated_at": "2026-08-24T17:22:32Z",
-        "days_since_update": 49,
+        "days_since_update": 50,
         "labels": [
           "cncf-cla: yes",
           "size/M"
@@ -15284,7 +15140,7 @@
         "author": "xonas1101",
         "bucket": "stale",
         "updated_at": "2026-08-26T17:36:17Z",
-        "days_since_update": 47,
+        "days_since_update": 48,
         "labels": [
           "cncf-cla: yes",
           "size/XL"
@@ -15335,7 +15191,7 @@
         "author": "illume",
         "bucket": "stale",
         "updated_at": "2026-08-27T17:28:03Z",
-        "days_since_update": 46,
+        "days_since_update": 47,
         "labels": [
           "frontend",
           "testing",
@@ -15393,7 +15249,7 @@
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": null,
         "check_state": "PENDING",
         "action": {
@@ -15687,12 +15543,12 @@
         "author": "saltbo",
         "bucket": "stale",
         "updated_at": "2026-08-30T17:11:04Z",
-        "days_since_update": 43,
+        "days_since_update": 44,
         "labels": [
           "cncf-cla: yes",
           "size/L"
         ],
-        "mergeable": "UNKNOWN",
+        "mergeable": "MERGEABLE",
         "review_decision": "CHANGES_REQUESTED",
         "check_state": "PENDING",
         "action": {
@@ -15711,7 +15567,7 @@
         "author": "ssz2605",
         "bucket": "stale",
         "updated_at": "2026-08-30T19:03:24Z",
-        "days_since_update": 43,
+        "days_since_update": 44,
         "labels": [
           "frontend",
           "cncf-cla: yes",
@@ -15846,7 +15702,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:13Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -15874,7 +15730,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:14Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "plugins",
@@ -15901,7 +15757,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:15Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -15929,7 +15785,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:18Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -15957,7 +15813,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:18Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -15985,7 +15841,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:18Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "plugins",
@@ -16012,7 +15868,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:21Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -16041,7 +15897,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:23Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -16070,7 +15926,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:23Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -16099,7 +15955,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:24Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "security",
@@ -16128,7 +15984,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:25Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "javascript",
@@ -16154,7 +16010,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:26Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "javascript",
@@ -16180,7 +16036,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:27Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "javascript",
@@ -16206,7 +16062,7 @@
         "author": "dependabot",
         "bucket": "stale",
         "updated_at": "2026-09-08T20:02:28Z",
-        "days_since_update": 34,
+        "days_since_update": 35,
         "labels": [
           "dependencies",
           "javascript",
